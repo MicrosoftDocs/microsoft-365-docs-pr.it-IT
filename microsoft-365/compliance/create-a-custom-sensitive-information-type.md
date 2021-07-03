@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Informazioni su come creare, modificare, rimuovere e testare tipi di informazioni riservate personalizzati per DLP nel Centro sicurezza & conformità.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e067bc502267e918bd355d9bf8a1982795255846
-ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
+ms.openlocfilehash: f346a32da6f47cadc0ded6d7d045a833bb3b60b0
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "53256724"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287540"
 ---
 # <a name="get-started-with-custom-sensitive-information-types"></a>Introduzione ai tipi di informazione sensibile personalizzati
 
@@ -128,12 +128,14 @@ Usa questa procedura per creare un nuovo tipo di informazione sensibile basato s
 ### <a name="checksum-validator"></a>Checksum validator
 
 Se è necessario eseguire un checksum su una cifra in un'espressione regolare, è possibile utilizzare *il validator del checksum.* Ad esempio, si supponga di dover creare un codice SIT per un numero di licenza a otto cifre in cui l'ultima cifra è una cifra di checksum convalidata utilizzando un calcolo mod 9. L'algoritmo di checksum è stato configurato in questo modo:
- 
+
 Sum = digit 1 * Weight 1 + digit 2 * weight 2 + digit 3 * weight 3 + digit 4 * weight 4 + digit 5 * weight 5 + digit 6 * weight 6 + digit 7 * weight 7 + digit 8 * weight 8 Mod value = Sum % 9 If Mod value == digit 8 Account number is valid If Mod value != digit 8 Account number is invalid
 
 1. Definisci l'elemento primario con questa espressione regolare:
 
-`\d{8}`
+   ```console
+   \d{8}
+   ```
 
 2. Aggiungi quindi il validator del checksum.
 3. Aggiungi i valori di peso separati da virgole, la posizione della cifra di controllo e il valore Mod. Per ulteriori informazioni sull'operazione Modulo, vedere [Operazione modulo](https://en.wikipedia.org/wiki/Modulo_operation).
@@ -145,11 +147,13 @@ Sum = digit 1 * Weight 1 + digit 2 * weight 2 + digit 3 * weight 3 + digit 4 * w
 
 ### <a name="date-validator"></a>Convalida data
 
-Se un valore di data incorporato nell'espressione regolare fa parte di  un nuovo modello che si sta creando, è possibile utilizzare la convalida della data per verificare che soddisfi i criteri specificati. Ad esempio, si supponga di voler creare un SIT per un numero di identificazione del dipendente di nove cifre. Le prime sei cifre sono la data di assunzione in formato DDMMYY e le ultime tre sono numeri generati casualmente. Per verificare che le prime sei cifre siano nel formato corretto. 
+Se un valore di data incorporato nell'espressione regolare fa parte di  un nuovo modello che si sta creando, è possibile utilizzare la convalida della data per verificare che soddisfi i criteri specificati. Ad esempio, si supponga di voler creare un SIT per un numero di identificazione del dipendente di nove cifre. Le prime sei cifre sono la data di assunzione in formato DDMMYY e le ultime tre sono numeri generati casualmente. Per verificare che le prime sei cifre siano nel formato corretto.
 
 1. Definisci l'elemento primario con questa espressione regolare:
 
-`\d{9}`
+   ```console
+   \d{9}
+   ```
 
 2. Aggiungi quindi il validator della data.
 3. Selezionare il formato della data e lo scostamento iniziale. Poiché la stringa della data è la prima sei cifre, l'offset è `0` .

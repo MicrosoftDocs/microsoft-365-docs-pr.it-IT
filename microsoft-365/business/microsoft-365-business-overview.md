@@ -29,12 +29,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Informazioni su Microsoft 365 Business Premium, un servizio di sottoscrizione che include app Office e protezione avanzata dalle minacce informatiche.
-ms.openlocfilehash: e4a182c5dd5444392486dd137e70361e880534bd
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+ms.openlocfilehash: b7b71032ffc19c582f9658b93dae7dd9f89e02eb
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52705523"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287628"
 ---
 # <a name="overview-of-microsoft-365-business-premium"></a>Panoramica di Microsoft 365 Business Premium
 
@@ -44,14 +44,14 @@ Microsoft 365 Business Premium (in precedenza Microsoft 365 Business) è un serv
 
 ## <a name="watch-what-is-microsoft-365-business-premium"></a>Video: che cos'è Microsoft 365 Business Premium
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2mhaA] 
-  
-Se il video è stato utile, vedere la [serie di corsi di formazione completa per piccole imprese e nuovi utenti di Microsoft 365](../business-video/index.yml). 
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2mhaA]
+
+Se il video è stato utile, vedere la [serie di corsi di formazione completa per piccole imprese e nuovi utenti di Microsoft 365](../business-video/index.yml).
 
 Microsoft 365 Business Premium è inteso per un massimo di 300 licenze. Se occorrono più licenze, vedere la documentazione di [Microsoft 365 Enterprise](../enterprise/index.yml) per maggiori informazioni.
 
 Per un elenco completo delle funzionalità, vedere la [descrizione del servizio Microsoft 365 Business Premium](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description).
-  
+
 ## <a name="small-business-security-needs"></a>Esigenze di sicurezza delle piccole imprese
 
 I dati aziendali possono essere compromessi in molti modi. Gli utenti possono compromettere la sicurezza dell'organizzazione quando accedono con credenziali compromesse o visualizzano i dati dell'organizzazione su dispositivi e applicazioni diversi. In particolare, le organizzazioni sono esposte a rischi associati a:
@@ -71,19 +71,19 @@ Microsoft 365 Business Premium aiuta a proteggere i dati in tutte queste circost
 
 Microsoft 365 Business Premium aiuta a **difendersi dalle minacce** mediante:
 
-- Analisi dei collegamenti nei messaggi di posta elettronica e nei documenti in tempo reale per bloccare i siti Web non sicuri (collegamenti sicuri).
+- Analisi dei collegamenti nei messaggi di posta elettronica e nei documenti in tempo reale per bloccare i siti Web non sicuri (Cassaforte collegamenti).
 
-- Esecuzione di un'analisi avanzata degli allegati di posta elettronica in un ambiente sandbox per rilevare il malware appena sviluppato (allegati sicuri). 
+- Esecuzione di un'analisi avanzata degli allegati di posta elettronica in un ambiente sandbox per rilevare il malware appena sviluppato (Cassaforte allegati).
 
-- Abilitazione di criteri anti-phishing che utilizzano modelli di machine learning e rilevamento della rappresentazione per fornire protezione dagli attacchi avanzati (anti-phishing in Defender per Office 365 intelligence). 
+- Abilitazione di criteri anti-phishing che utilizzano modelli di machine learning e rilevamento della rappresentazione per fornire protezione dagli attacchi avanzati (anti-phishing in Defender per Office 365 intelligence).
 
-- Configurazione di criteri avanzati che disabilitano l'accesso da posizioni non attendibili o escludono l'autenticazione a più fattori da posizioni attendibili, ad esempio la rete dell'ufficio (Azure MFA con IP attendibili e accesso condizionale). 
+- Configurazione di criteri avanzati che disabilitano l'accesso da posizioni non attendibili o escludono l'autenticazione a più fattori da posizioni attendibili, ad esempio la rete dell'ufficio (Azure MFA con IP attendibili e accesso condizionale).
 
 - Applicazione della protezione antimalware in tutti i dispositivi Windows 10 dell'organizzazione e protezione dei file nelle principali cartelle di sistema dalle modifiche apportate da ransomware (Windows Defender)
 
 I **dati aziendali** sono protetti mediante:
 
-- Uso del rilevamento automatico per impedire che informazioni riservate, ad esempio codici fiscali o numeri di carte di credito, vengano divulgate all'esterno dell'azienda (prevenzione della perdita dei dati). 
+- Uso del rilevamento automatico per impedire che informazioni riservate, ad esempio codici fiscali o numeri di carte di credito, vengano divulgate all'esterno dell'azienda (prevenzione della perdita dei dati).
 
 - Crittografia dei messaggi di posta elettronica riservati, in modo che sia possibile comunicare in sicurezza con clienti o altre persone esterne all'organizzazione. Questo assicura che solo il destinatario previsto possa aprire e leggere il messaggio (Crittografia messaggi di Office 365).
 

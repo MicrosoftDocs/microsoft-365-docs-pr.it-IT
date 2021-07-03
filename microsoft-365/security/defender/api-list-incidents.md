@@ -1,6 +1,6 @@
 ---
 title: API elenca eventi imprevisti in Microsoft 365 Defender
-description: Scopri come elencare le API per gli eventi imprevisti in Microsoft 365 Defender
+description: Informazioni su come elencare le API per gli eventi imprevisti in Microsoft 365 Defender
 keywords: list, incident, incidents, api
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 833bc1d8284829323cc2f0c391e42f4e563a6948
-ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
+ms.openlocfilehash: 038879e77dfa26d82add20d043a32de117f95b19
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52730883"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287832"
 ---
 # <a name="list-incidents-api-in-microsoft-365-defender"></a>API elenca eventi imprevisti in Microsoft 365 Defender
 
@@ -38,7 +38,6 @@ ms.locfileid: "52730883"
 
 > [!IMPORTANT]
 > Alcune informazioni fanno riferimento alle caratteristiche del prodotto prima del rilascio, e possono essere modificate sostanzialmente prima della distribuzione al pubblico. Microsoft non fornisce alcuna garanzia, esplicita o implicita, in relazione alle informazioni contenute in questo documento.
-
 
 ## <a name="api-description"></a>Descrizione API
 
@@ -57,7 +56,7 @@ L'API supporta gli operatori **OData** seguenti:
 
 ## <a name="permissions"></a>Autorizzazioni
 
-Per chiamare questa API è necessaria una delle autorizzazioni seguenti. Per altre informazioni, inclusa la scelta delle autorizzazioni, vedere [Access Microsoft 365 Defender APIs](api-access.md)
+Per chiamare questa API è necessaria una delle autorizzazioni seguenti. Per altre informazioni, inclusa la scelta delle autorizzazioni, vedi [Api di Microsoft 365 Defender accessi](api-access.md)
 
 Tipo di autorizzazione | Autorizzazione | Nome visualizzato autorizzazione
 -|-|-
@@ -80,7 +79,7 @@ GET /api/incidents
 
 ## <a name="request-headers"></a>Intestazioni di richiesta
 
-Name | Tipo | Descrizione
+Nome | Tipo | Descrizione
 -|-|-
 Autorizzazione | Stringa | Bearer {token}. **Obbligatorio**
 
@@ -151,7 +150,7 @@ osBuild | Versione della build per il sistema operativo in esecuzione nel dispos
 rbacGroupName | Gruppo [di controllo di accesso](/azure/role-based-access-control/overview) basato sui ruoli associato al dispositivo. | WDATP-Ring0
 firstSeen | Ora in cui il dispositivo è stato visualizzato per la prima volta. | 2020-02-06T14:16:01.9330135Z
 healthStatus | Stato di integrità del dispositivo. | Attivazione
-riskScore | Punteggio di rischio per il dispositivo. | Fortemente
+riskScore | Punteggio di rischio per il dispositivo. | Alta
 entità | Tutte le entità identificate come parte o correlate a un determinato avviso. | \[\] (vedi i dettagli sui campi dell'entità di seguito)
 
 ### <a name="entity-format"></a>Formato entità
@@ -192,13 +191,13 @@ deviceId | ID, se presente, del dispositivo correlato all'entità. | 986e5df8b73
 
 ## <a name="example"></a>Esempio
 
-**Richiesta**
+### <a name="request"></a>Richiesta
 
 ```HTTP
 GET https://api.security.microsoft.com/api/incidents
 ```
 
-**Risposta**
+### <a name="response"></a>Risposta
 
 ```json
 {

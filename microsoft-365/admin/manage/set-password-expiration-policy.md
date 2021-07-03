@@ -23,12 +23,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0f54736f-eb22-414c-8273-498a0918678f
 description: Informazioni su come un amministratore può impostare un criterio di scadenza password per account aziendali, scolastici o no profit nell'interfaccia di amministrazione di Microsoft 365.
-ms.openlocfilehash: 7f12918211718b91313c0c89b11eaeb0a8cc3181
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: fdd219e4fc99e2388acb5b19eacb2fc470041f79
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635823"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53286730"
 ---
 # <a name="set-the-password-expiration-policy-for-your-organization"></a>Impostare i criteri di scadenza delle password per l'organizzazione
 
@@ -85,9 +85,10 @@ Per informazioni sulla sincronizzazione degli hash delle password utente da Acti
 
 Il cmdlet Set-MsolPasswordPolicy aggiorna il criterio della password di un dominio o un tenant specifico. Sono necessarie due impostazioni; la prima indica il periodo di validità di una password prima che debba essere cambiata e la seconda indica il numero di giorni prima della data di scadenza della password in cui si attiverà l'invio agli utenti della prima notifica della scadenza.
 
-Per informazioni su come aggiornare i criteri delle password per un dominio o un tenant specifico, vedere [Set-MsolPasswordPolicy](/powershell/module/msonline/set-msolpasswordpolicy?view=azureadps-1.0).
+Per informazioni su come aggiornare i criteri delle password per un dominio o un tenant specifico, vedere [Set-MsolPasswordPolicy](/powershell/module/msonline/set-msolpasswordpolicy).
 
 ## <a name="related-content"></a>Contenuti correlati
 
 [Consentire agli utenti di reimpostare le loro password](../add-users/let-users-reset-passwords.md) (articolo)\
+
 [Reimpostare la password](../add-users/reset-passwords.md) (articolo)

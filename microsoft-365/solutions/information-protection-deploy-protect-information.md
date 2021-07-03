@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Distribuire Microsoft 365 sicurezza e conformità e proteggere le informazioni personali.
-ms.openlocfilehash: 479774069844964e2e603dee5efbc7b8ef867918
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 7325aad0392d559703199c81f2544a582d7eadcb
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53229264"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287748"
 ---
 # <a name="protect-information-subject-to-data-privacy-regulation"></a>Proteggere le informazioni soggette alla normativa sulla privacy dei dati
 
@@ -66,7 +66,6 @@ Per iniziare a usare uno schema di protezione delle informazioni in Microsoft 36
 
 Le [soluzioni di protezione delle](../compliance/information-protection.md) informazioni Microsoft includono una serie di funzionalità integrate Microsoft 365, Microsoft Azure e Microsoft Windows. In Microsoft 365, le soluzioni di protezione delle informazioni includono:
 
-- [Crittografia del servizio con Customer Key](../compliance/customer-key-overview.md)
 - [Tipi di informazioni riservate](../compliance/sensitive-information-type-entity-definitions.md) (descritti nell'articolo valutare i rischi per la privacy dei [dati e identificare gli elementi sensibili)](information-protection-deploy-assess.md)
 - [Etichette di riservatezza](../compliance/sensitivity-labels.md)
   - Servizio/livello contenitore

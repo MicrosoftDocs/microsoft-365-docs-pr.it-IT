@@ -13,16 +13,16 @@ search.appverid: ''
 localization_priority: None
 ROBOTS: ''
 description: Informazioni su come gestire i contratti Microsoft 365 una soluzione SharePoint Syntex, SharePoint elenchi, Microsoft Teams e Power Automate.
-ms.openlocfilehash: d3be12dbddabbcddc41f7c9d882db5473350266e
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: bc2570b08add2fa93637b9f64931c5903795a079
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53054759"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287318"
 ---
 # <a name="manage-contracts-using-a-microsoft-365-solution"></a>Gestire i contratti con una soluzione Microsoft 365
 
-In questo articolo viene descritto come creare una soluzione di gestione dei contratti per l'organizzazione utilizzando SharePoint Syntex e i componenti di Microsoft 365. Offre un framework che consente di pianificare e creare una soluzione adatta alle esigenze aziendali specifiche. Anche se questa soluzione non soddisfa le esigenze aziendali nel suo complesso, alcune parti di essa possono essere adottate nella pianificazione per creare una soluzione di gestione dei contratti personalizzata.
+In questo articolo viene descritto come creare una soluzione di gestione dei contratti per l'organizzazione utilizzando SharePoint Syntex e i componenti di Microsoft 365. Offre un framework che consente di pianificare e creare una soluzione adatta alle esigenze aziendali specifiche. Anche se questa soluzione parla di gestione dei contratti, è possibile adattarla per creare altre soluzioni di gestione dei documenti, ad esempio per le dichiarazioni di lavoro o le fatture.
 
 *Questo set di contenuti documenta una Microsoft 365 soluzione sviluppata da Thomas Molbach con il team modern work solution strategy di Microsoft.*
 
@@ -65,10 +65,10 @@ Questa guida alla soluzione di gestione dei contratti include quattro componenti
       ![Esempio di contratto.](../media/content-understanding/contract.png)
 
 3. In Microsoft Teams, tutte le parti interessate sono membri di un canale Teams sicuro in cui tutti i contratti nella raccolta documenti sono visibili per l'approvazione o il rifiuto. Utilizzando la Teams, tutte le parti interessate vengono avvisate quando è necessario rivedere i nuovi contratti.
- 
-4. Utilizzando il Power Automate, i contratti vengono spostati attraverso il processo di approvazione nel Teams canale. Quando un membro approva un contratto, lo stato del contratto viene modificato per l'approvazione, tutti i membri vengono informati tramite un post di Teams e viene creata una voce per mostrare che il contratto è pronto per i pagamenti. Questo processo può essere esteso per scrivere direttamente a un'applicazione finanziaria di terze parti per il pagamento.
 
-5.  Quando un membro rifiuta un contratto, lo stato viene modificato in rifiutato e tutti i membri vengono avvisati tramite un Teams post.
+4. Utilizzando il Power Automate, i contratti vengono spostati attraverso il processo di approvazione nel Teams canale. Quando un membro approva un contratto, lo stato del contratto viene modificato in approvato, tutti i membri vengono informati tramite un post di Teams e viene creata una voce per mostrare che il contratto è pronto per i pagamenti. Questo processo può essere esteso per scrivere direttamente a un'applicazione finanziaria di terze parti per il pagamento.
+
+5. Quando un membro rifiuta un contratto, lo stato viene modificato in rifiutato e tutti i membri vengono avvisati tramite un Teams post.
 
 6. Il risultato finale di questa soluzione è un processo aziendale automatizzato per l'organizzazione. I dipendenti possono usare facilmente la visualizzazione dei riquadri personalizzati in Teams per avviare e monitorare il flusso di lavoro di approvazione dei documenti. 
 
@@ -78,9 +78,9 @@ Questa guida alla soluzione di gestione dei contratti include quattro componenti
 
 Questa soluzione si basa sulle funzionalità seguenti, tutte disponibili nell'ambito di una licenza di Microsoft 365 Enterprise (E1, E3, E5, F3) o Business (Basic, Standard o Premium):
 
--   Microsoft SharePoint Syntex
--   Microsoft Teams
--   Power Automate
+- Microsoft SharePoint Syntex
+- Microsoft Teams
+- Power Automate
 
 ## <a name="create-the-solution"></a>Creare la soluzione
 

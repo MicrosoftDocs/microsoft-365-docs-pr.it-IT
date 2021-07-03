@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 description: In questo articolo, trovare informazioni dettagliate sull'Microsoft 365 dell'app client per l'autenticazione basata su certificato.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d5ebef7c10aa61ba28c8fb841468be244f6e8542
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: bef1a684ba1ebe2eaba90677cd726cc190e342db
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50905002"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53286574"
 ---
 # <a name="microsoft-365-client-app-support-certificate-based-authentication"></a>Microsoft 365 Supporto app client: autenticazione basata su certificato
 
@@ -46,12 +46,11 @@ Le versioni più recenti dei client e delle piattaforme seguenti supportano l'au
 
 [!INCLUDE [Certificate-based authentication services support table](../includes/microsoft-365-client-support-certificate-based-authentication-include.md)]
 
->[!NOTE]
->Edge per iOS e Android supporta l'autenticazione basata su certificati durante i flussi di aggiunta degli account. Edge per iOS e Android non supporta l'autenticazione basata su certificati quando si esegue l'autenticazione nei siti Web, che in genere sono siti Intranet. <br><br>  In questo scenario, un utente passa a un sito Web (in genere nella intranet) in cui il sito Web richiede all'utente di eseguire l'autenticazione tramite un certificato. Ciò non implica affatto l'autenticazione moderna e non sfrutta una libreria di autenticazione Microsoft. Ciò è dovuto a una limitazione di iOS: iOS impedisce alle app di terze parti di accedere al portachiavi di sistema in cui sono archiviati i certificati (solo le app Apple e il [controller Webview Safari](https://developer.apple.com/documentation/safariservices/sfsafariviewcontroller) possono accedere al portachiavi di sistema). <br><br> Poiché Edge si basa sul framework [WebKit](https://developer.apple.com/documentation/webkit) per il rendering dei siti Web, Edge non è in grado di accedere al portachiavi di sistema e presentare all'utente una scelta di certificato. Questo, purtroppo, è dovuto all'architettura di Apple.
+> [!NOTE]
+> Edge per iOS e Android supporta l'autenticazione basata su certificati durante i flussi di aggiunta degli account. Edge per iOS e Android non supporta l'autenticazione basata su certificati quando si esegue l'autenticazione nei siti Web, che in genere sono siti Intranet. <br><br>  In questo scenario, un utente passa a un sito Web (in genere nella intranet) in cui il sito Web richiede all'utente di eseguire l'autenticazione tramite un certificato. Ciò non implica affatto l'autenticazione moderna e non sfrutta una libreria di autenticazione Microsoft. Ciò è dovuto a una limitazione di iOS: iOS impedisce alle app di terze parti di accedere al portachiavi di sistema in cui sono archiviati i certificati (solo le app Apple e il [controller Webview Safari](https://developer.apple.com/documentation/safariservices/sfsafariviewcontroller) possono accedere al portachiavi di sistema). <br><br> Poiché Edge si basa sul framework [WebKit](https://developer.apple.com/documentation/webkit) per il rendering dei siti Web, Edge non è in grado di accedere al portachiavi di sistema e presentare all'utente una scelta di certificato. Questo, purtroppo, è dovuto all'architettura di Apple.
 
 ## <a name="supported-powershell-modules"></a>Moduli di PowerShell supportati
 
-- [Azure Active Directory PowerShell](/powershell/azure/active-directory/overview?view=azureadps-2.0)
+- [Azure Active Directory PowerShell](/powershell/azure/active-directory/overview)
 - [Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell)
 - [PowerShell per SharePoint Online](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)
-

@@ -10,12 +10,12 @@ audience: ITPro
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
-ms.openlocfilehash: 2facd506497cbdab42f2d8b051fbd50f82432927
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 345ae56a1c328dad7b777468dd03bcab40f9b4e1
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52770602"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53286874"
 ---
 # <a name="access-the-admin-portal"></a>Accedere al portale di amministrazione
 
@@ -35,7 +35,7 @@ L'account amministrativo avrà bisogno di autorizzazioni specifiche per accedere
 |Ruolo Azure AD  |Microsoft Managed Desktop autorizzazioni  |
 |---------|---------|
 |Amministratore globale     | Gli amministratori con questo ruolo avranno le autorizzazioni di lettura e scrittura **per tutte le funzionalità** nel portale Microsoft Managed Desktop di amministrazione.         |
-|Lettore globale     | Gli amministratori con questo ruolo avranno autorizzazioni di sola **lettura per tutte** le funzionalità nel Microsoft Managed Desktop di amministrazione.         |
+|Ruolo con autorizzazioni di lettura globali     | Gli amministratori con questo ruolo avranno autorizzazioni di sola **lettura per tutte** le funzionalità nel Microsoft Managed Desktop di amministrazione.         |
 |Amministratore del servizio Intune     |  Gli amministratori con questo ruolo avranno autorizzazioni di lettura e scrittura per **le** funzionalità non correlate alla sicurezza nel portale Microsoft Managed Desktop di amministrazione.       |
 |Service Support Administrator     | Gli amministratori con questo  ruolo avranno autorizzazioni di sola  lettura per le funzionalità non correlate alle autorizzazioni di sicurezza e scrittura per gestire le richieste di supporto nel Microsoft Managed Desktop di amministrazione.         |
 |Amministratore della sicurezza | Gli amministratori con questo ruolo **avranno** autorizzazioni di sola lettura per tutte le funzionalità e autorizzazioni di scrittura per le funzionalità correlate alla sicurezza **in** Microsoft Managed Desktop nel portale di amministrazione. |
@@ -61,12 +61,12 @@ Per assistenza nell'assegnazione di Azure Active Directory ruoli, vedere [Autori
 ### <a name="assigning-built-in-roles-to-user"></a>Assegnazione di ruoli predefiniti all'utente
 
 Per una gestione semplice dei ruoli predefiniti, è disponibile un gruppo di sicurezza per ogni ruolo personalizzato con il nome "Ruoli moderni dell'area di lavoro _-_ Nome ruolo", ad esempio "Ruoli moderni dell'area di lavoro - Responsabile della sicurezza". Per assegnare gli utenti a uno di questi gruppi di sicurezza, attenersi alla seguente procedura:
-1.  Accedere al Microsoft Endpoint Manager portale.
-2.  Seleziona **Gruppi** sul lato sinistro.
-3.  Cercare Ruoli **moderni dell'area di** lavoro e quindi selezionare il gruppo associato al ruolo che si desidera assegnare. 
-4.  Selezionare **Membri** a sinistra e quindi **+ Aggiungi membri** sulla barra dei comandi.
-5.  Immetti il messaggio di posta elettronica della persona da aggiungere. Se sono guest, è necessario invitarli prima di poter assegnare il gruppo.
-6.  Seleziona **Seleziona** nella parte inferiore.
+1. Accedere al Microsoft Endpoint Manager portale.
+2. Seleziona **Gruppi** sul lato sinistro.
+3. Cercare Ruoli **moderni dell'area di** lavoro e quindi selezionare il gruppo associato al ruolo che si desidera assegnare. 
+4. Selezionare **Membri** a sinistra e quindi **+ Aggiungi membri** sulla barra dei comandi.
+5. Immetti il messaggio di posta elettronica della persona da aggiungere. Se sono guest, è necessario invitarli prima di poter assegnare il gruppo.
+6. Seleziona **Seleziona** nella parte inferiore.
 
 > [!NOTE]
 > L'annidamento dei gruppi di sicurezza per l'assegnazione di ruolo non è attualmente supportato. 
@@ -74,6 +74,7 @@ Per una gestione semplice dei ruoli predefiniti, è disponibile un gruppo di sic
 ### <a name="assigning-built-in-roles-to-groups"></a>Assegnazione di ruoli predefiniti ai gruppi
 
 Se è necessario assegnare uno o più ruoli incorporati a un gruppo esistente, eseguire la procedura seguente:
+
 1. Vai a [portal.azure.com](https://portal.azure.com/).
 2. Cercare e aprire Enterprise **applicazioni**.
 3. Modificare il **filtro Tipo di** applicazione in Applicazioni _Microsoft_ e quindi selezionare **Applica**.

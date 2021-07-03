@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Un Microsoft 365 classificatore è uno strumento che puoi formare per riconoscere diversi tipi di contenuto fornendogli esempi da esaminare. Questo articolo illustra come creare e formare un classificatore personalizzato e come riqualificarli per aumentare l'accuratezza.
-ms.openlocfilehash: 90e47ec94528bbadeb98dc9eb590929e25ae6ff1
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 3053e5154fb4e1ff39ce7db366ce4679bbb8911d
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50918180"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53286634"
 ---
 # <a name="get-started-with-trainable-classifiers"></a>Per iniziare con i classificatori sottoponibili a training
 
@@ -108,7 +108,7 @@ Dopo che il classificatore sotto forma di training ha elaborato campioni positiv
    > [!TIP]
    > Se si crea un nuovo sito e una nuova cartella per i dati di seed, consentire l'indicizzazione di almeno un'ora per tale posizione prima di creare il classificatore trainabile che utilizzerà i dati di seed.
 
-3. Accedere al Centro conformità Microsoft 365 conformità con l'accesso al  ruolo amministratore della conformità o amministratore della sicurezza e aprire Microsoft 365 centro conformità o Microsoft 365 **di** sicurezza  >  **Classificazione dei dati**.
+3. Accedi a Centro conformità Microsoft 365 con l'accesso al ruolo amministratore della conformità o amministratore della sicurezza e **apri** Centro conformità Microsoft 365 o **Microsoft 365 del** centro sicurezza  >  **Classificazione dati**.
 
 4. Scegliere la **scheda Classificatori trainabili.**
 

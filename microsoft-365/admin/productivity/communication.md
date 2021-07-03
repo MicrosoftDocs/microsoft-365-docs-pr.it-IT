@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Dettagli della comunicazione - Punteggio di produttività dell'esperienza utente.
-ms.openlocfilehash: b744f9631deabb9c7bc97ab6a0cf1ba8fc61c5dd
-ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
+ms.openlocfilehash: 3ea17bb859fc02343a97033fa65e830f305b69cf
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52779747"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53286130"
 ---
 # <a name="communication--people-experiences"></a>Comunicazione - Esperienze utente
 
@@ -42,7 +42,7 @@ Per ulteriori informazioni, vedere [assegnare licenze agli utenti.](../manage/as
 
 Dopo che le persone sono state attive nei prodotti di cui sopra almeno una volta negli ultimi 28 giorni, inizi a vedere le informazioni dettagliate.
 
-## <a name="why-your-organizations-communication-score-matters"></a>Perché il punteggio comunicazione dell'organizzazione è importante 
+## <a name="why-your-organizations-communication-score-matters"></a>Perché il punteggio comunicazione dell'organizzazione è importante
 
 Microsoft comprende che le persone hanno esigenze di comunicazione diverse. Per ottenere una risposta rapida a una domanda, è possibile scegliere di inviare un messaggio istantaneo. Se si desidera inviare aggiornamenti di stato ai dirigenti, è possibile scegliere un messaggio di posta elettronica. Per raggiungere un pubblico più ampio, è possibile scegliere di pubblicare un messaggio della community. Microsoft 365 questa flessibilità nelle modalità di comunicazione per soddisfare le esigenze di tutti. La ricerca mostra che l'utilizzo di strumenti di comunicazione in tempo reale crea un'organizzazione più unificata e crea morale, indipendentemente dalla posizione.
 
@@ -62,14 +62,14 @@ Microsoft 365 offre agli utenti la flessibilità necessaria per adattarsi allo s
    - Invio di messaggi tramite Teams
    - Inserimento nelle community in Yammer
 
-   Questa metrica chiave viene visualizzata come percentuale di tutte le persone che usano due o più di Exchange, Teams o Yammer. 
+   Questa metrica chiave viene visualizzata come percentuale di tutte le persone che usano due o più di Exchange, Teams o Yammer.
 
 2. **Corpo:** Fornisce ulteriori informazioni su come la flessibilità nelle modalità di comunicazione sia preziosa per gli utenti dell'organizzazione.
 
 3. **Visualizzazione dello stato corrente:**
 
    - Barra orizzontale in cui la parte blu rappresenta la percentuale espressa nell'intestazione
-   - Highlights il (numeratore/denominatore) utilizzato per calcolare la percentuale espressa nell'intestazione:
+   - Evidenzia il (numeratore/denominatore) utilizzato per calcolare la percentuale espressa nell'intestazione:
      - **Numeratore:** numero di persone che utilizzano più modalità di comunicazione negli ultimi 28 giorni
      - **Denominatore:** numero di persone contrassegnate come abilitate per più di un prodotto di comunicazione negli ultimi 28 giorni
    - **Il valore peer benchmark** della metrica chiave viene visualizzato anche come percentuale
@@ -84,7 +84,7 @@ Microsoft 365 offre agli utenti la flessibilità necessaria per adattarsi allo s
 
 ### <a name="scoring-model"></a>Modello di punteggio
 
-Il punteggio di comunicazione per l'organizzazione misura a livello aggregato (dell'organizzazione) se le persone comunicano in modo coerente utilizzando più modalità tra i post di posta elettronica, chat e community in una finestra di 28 giorni.  
+Il punteggio di comunicazione per l'organizzazione misura a livello aggregato (dell'organizzazione) se le persone comunicano in modo coerente utilizzando più modalità tra i post di posta elettronica, chat e community in una finestra di 28 giorni.
 
 I punteggi non vengono forniti a livello di singolo utente.
 
@@ -96,49 +96,49 @@ Vengono inoltre fornite informazioni che consentono di acquisire visibilità sul
 
 :::image type="content" source="../../media/howpeoplecommunicate.png" alt-text="! [Suddivisione delle modalità di comunicazione.]":::
 
-1. **Intestazione:** Highlights l'obiettivo delle informazioni dettagliate di fornire una suddivisione dettagliata tra le diverse modalità di comunicazione considerate all'interno di Communication.
+1. **Intestazione:** Evidenzia l'obiettivo delle informazioni dettagliate per fornire una suddivisione dettagliata tra le diverse modalità di comunicazione considerate all'interno di Communication.
 
 2. **Corpo:** Fornisce informazioni sul valore dell'utilizzo di diverse modalità per la condivisione delle conoscenze.
 
 3. **Visualizzazione:** La suddivisione rappresenta l'uso per ogni modalità. La parte colorata e la frazione su ogni barra rappresentano il numero di persone che inviano messaggi di posta elettronica, messaggi o post della community come percentuale del numero di persone abilitate per tale modalità:
 
    - **Persone che inviano messaggi di posta elettronica:** La parte colorata e la frazione rappresentano la percentuale di utenti abilitati per Exchange che inviano messaggi di posta elettronica. Questa frazione è costruita da:
-   
+
      - **Numeratore:** persone che inviano messaggi di posta elettronica negli ultimi 28 giorni.
      - **Denominatore:** persone abilitate per Exchange negli ultimi 28 giorni.
-     
+
    - **Persone che inviano messaggi Microsoft Teams:** La parte colorata e la frazione rappresentano la percentuale di utenti abilitati per Microsoft Teams che inviano messaggi. Questa frazione è costruita da:
-   
+
      - **Numeratore:** persone che inviano Microsoft Teams messaggi negli ultimi 28 giorni.
      - **Denominatore:** persone abilitate per Microsoft Teams negli ultimi 28 giorni.
-     
+
    - **Utenti che pubblicano nelle community:** La parte colorata e la frazione rappresentano la percentuale di utenti abilitati Yammer postazione nelle community. Questa frazione è costruita da:
-   
+
      - **Numeratore:** Utenti che pubblicano Yammer community negli ultimi 28 giorni.
      - **Denominatore:** Utenti abilitati Yammer negli ultimi 28 giorni.
-          
+
 4. **Visualizzare il contenuto correlato:** Selezionare questo collegamento per visualizzare i video fascicolati e altri contenuti della Guida correlati.
 
 ### <a name="mentions-in-emails"></a>@mentions nei messaggi di posta elettronica
 
 :::image type="content" source="../../media/emailmentions.png" alt-text="! [Messaggi di posta elettronica con menzioni.]":::
 
-1. **Intestazione:** Highlights l'aumento della frequenza di risposta per i nuovi thread di posta elettronica avviati negli ultimi 28 giorni quando contengono @mentions.
+1. **Intestazione:** Evidenzia l'aumento della frequenza di risposta per i nuovi thread di posta elettronica avviati negli ultimi 28 giorni quando contengono @mentions.
 
 2. **Corpo:** Fornisce informazioni sul valore dell'utilizzo di @mentions nei messaggi di posta elettronica. Inoltre, le persone che @mentions sono espresse come percentuale di tutti gli utenti che hanno inviato un messaggio di posta elettronica negli ultimi 28 giorni.
 
 3. **Visualizzazione:** Suddivide la frequenza di risposta per i nuovi thread di posta elettronica in base al fatto che @mentions o meno:
 
    - Risposte ai messaggi di posta elettronica con **menzioni: \@** la parte colorata e la frazione rappresentano la frequenza di risposta per i nuovi thread di posta elettronica contenenti @mentions. Questa frazione è costruita da:
-   
+
      - **Numeratore:** Nuovi thread di posta elettronica @mentions che sono stati avviati e hanno ricevuto una risposta negli ultimi 28 giorni.
      - **Denominatore:** Nuovi thread di posta elettronica @mentions che sono stati avviati negli ultimi 28 giorni.
-     
+
    - Risposte ai messaggi di posta elettronica senza **\@ menzioni:** la parte colorata e la frazione rappresentano la frequenza di risposta per i nuovi thread di posta elettronica contenenti @mentions. Questa frazione è costruita da:
-   
+
      - **Numeratore:** Nuovi thread di posta elettronica che non contengono @mentions, che sono stati avviati e hanno ricevuto una risposta negli ultimi 28 giorni.
      - **Denominatore:** Nuovi thread di posta elettronica @mentions che sono stati avviati negli ultimi 28 giorni.
-     
+
 4. **Visualizzare il contenuto correlato:** Selezionare questo collegamento per visualizzare i video fascicolati e altri contenuti della Guida correlati.
 
 
@@ -146,29 +146,29 @@ Vengono inoltre fornite informazioni che consentono di acquisire visibilità sul
 
 :::image type="content" source="../../media/teamsmessages.png" alt-text="! [Teams tipi di messaggio.]":::
 
-1. **Intestazione:** Highlights le persone che hanno inviato i messaggi del canale come percentuale di persone che hanno inviato qualsiasi tipo di messaggio (inclusi i messaggi di chat e canali) negli ultimi 28 giorni.
+1. **Intestazione:** Evidenzia le persone che hanno inviato i messaggi del canale come percentuale di persone che hanno inviato qualsiasi tipo di messaggio (inclusi i messaggi di chat e canali) negli ultimi 28 giorni.
 
 2. **Corpo:** Fornisce informazioni sul valore dell'utilizzo dei messaggi di canale all'interno Microsoft Teams.
 
 3. **Visualizzazione:** Suddivide l'uso dei messaggi di chat e canali:
 
       - **Persone che inviano messaggi di chat:** La parte colorata e la frazione rappresentano l'utilizzo dei messaggi di chat all'interno delle persone che hanno inviato messaggi Microsoft Teams. La frazione è costruita da:
-      
+
         - **Numeratore:** Persone che hanno inviato messaggi di chat Microsoft Teams negli ultimi 28 giorni.
         - **Denominatore:** Persone che hanno inviato messaggi Microsoft Teams negli ultimi 28 giorni.
-        
+
       - **Utenti che inviano messaggi di Canale:** La parte colorata e la frazione rappresentano l'uso dei messaggi di canale all'interno delle persone che inviano messaggi Microsoft Teams. La frazione è costruita da:
-      
+
         - **Numeratore:** Persone che hanno inviato messaggi di canale Microsoft Teams negli ultimi 28 giorni.
         - **Denominatore:** Persone che hanno inviato messaggi Microsoft Teams negli ultimi 28 giorni.
-        
+
 4. **Visualizzare il contenuto correlato:** Selezionare questo collegamento per visualizzare i video fascicolati e altri contenuti della Guida correlati.
 
 ### <a name="questions-and-answers-in-yammer"></a>Domande e risposte in Yammer
 
-:::image type="content" source="../../media/yammerqsandas.png" alt-text="[Domande e risposte in Yammer]"::: 
+:::image type="content" source="../../media/yammerqsandas.png" alt-text="[Domande e risposte in Yammer]":::
 
-1. **Intestazione:** Highlights i post contrassegnati come domande su Yammer che hanno ricevuto una risposta contrassegnata come Migliore risposta come percentuale di tutti i post contrassegnati come domande su Yammer negli ultimi &quot; &quot; 28 giorni.
+1. **Intestazione:** Evidenzia i post contrassegnati come domande su Yammer che hanno ricevuto una risposta contrassegnata come Migliore risposta come percentuale di tutti i post contrassegnati come domande su Yammer negli ultimi &quot; &quot; 28 giorni.
 
 2. **Corpo:** Fornisce informazioni sul valore dell'utilizzo di domande e risposte in Yammer condividere conoscenze.
 
@@ -177,7 +177,7 @@ Vengono inoltre fornite informazioni che consentono di acquisire visibilità sul
    - **Domande:** La parte colorata della barra e il numero associato rappresentano il numero totale di post contrassegnati come domande negli ultimi 28 giorni.
    - **Domande con risposte:** La parte colorata della barra e il numero associato rappresentano il numero di post contrassegnati come domande e hanno ricevuto risposte negli ultimi 28 giorni.
    - **Domande con risposte migliori:** La parte colorata della barra e il numero associato rappresentano il numero di post contrassegnati come domande e che hanno ricevuto anche una risposta migliore negli &quot; &quot; ultimi 28 giorni.
-      
+
 4. **Visualizzare il contenuto correlato:** Selezionare questo collegamento per visualizzare i video fascicolati e altri contenuti della Guida correlati.
 
 ## <a name="related-content"></a>Contenuto correlato

@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Seguire questa procedura per eliminare l'account utente di un ex dipendente.
-ms.openlocfilehash: 735821c9c4d6edf3d23fa3535ed9fa6b3d294b8c
-ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
+ms.openlocfilehash: e2e1b234eaee3818321761af8f737bad8d131b62
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52782382"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53286323"
 ---
 # <a name="step-7---delete-a-former-employees-user-account"></a>Passaggio 7 - Eliminare l'account utente di un ex dipendente
 
@@ -48,7 +48,7 @@ Quando si elimina un utente, il suo account diventa inattivo per circa 30 giorni
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfR]
 
-Se il video è stato utile, consultare la [serie di formazione completa per piccole imprese e nuovi utenti di Microsoft 365](../../business-video/index.yml).
+Se il video è stato utile, consultare la [serie di formazione completa a Microsoft 365 per le piccole e nuove imprese](../../business-video/index.yml).
 
 ## <a name="does-your-organization-use-active-directory"></a>L'organizzazione usa Active Directory?
 
@@ -61,28 +61,36 @@ Se si usa Azure Active Directory, vedere il cmdlet [Remove-MsolUser](/powershell
 ## <a name="what-you-need-to-know-about-terminating-an-employees-email-session"></a>Cosa occorre sapere sulla chiusura delle sessione di posta elettronica di un dipendente
 
 Informazioni su come rimuovere un dipendente dalla posta elettronica (Exchange).
-  
-|||
+
+<br>
+
+****
+
+|Cosa è possibile fare|Come farlo|
 |:-----|:-----|
-|**Cosa è possibile fare** <br/> |**Come farlo** <br/> |
-|Terminare una sessione (ad esempio Outlook sul Web, Outlook, Exchange ActiveSync e così via) e forzare l'apertura di una nuova sessione  <br/> |Reimpostare la password  <br/> |
-|Terminare una sessione e bloccare l'accesso a sessioni future (per tutti i protocolli)  <br/> |Disabilitare l'account. Ad esempio, (nell'interfaccia di Exchange o usando PowerShell):  <br/>  `Set-Mailbox user@contoso.com -AccountDisabled:$true` <br/> |
-|Terminare la sessione per un particolare protocollo, ad esempio ActiveSync  <br/> |Disabilitare il protocollo. Ad esempio, (nell'interfaccia di Exchange o usando PowerShell):  <br/>  `Set-CASMailbox user@contoso.com -ActiveSyncEnabled:$false` <br/> |
+|Terminare una sessione (ad esempio Outlook sul Web, Outlook, Exchange ActiveSync e così via) e forzare l'apertura di una nuova sessione|Reimpostare la password|
+|Terminare una sessione e bloccare l'accesso a sessioni future (per tutti i protocolli)|Disabilitare l'account. Ad esempio, (nell'interfaccia di Exchange o usando PowerShell): <p>  `Set-Mailbox user@contoso.com -AccountDisabled:$true`|
+|Terminare la sessione per un particolare protocollo, ad esempio ActiveSync|Disabilitare il protocollo. Ad esempio, (nell'interfaccia di Exchange o usando PowerShell): <p>  `Set-CASMailbox user@contoso.com -ActiveSyncEnabled:$false`|
+|
 
 Le operazioni precedenti possono essere eseguite in tre posizioni:
   
-|||
-|:-----|:-----|
-|**Se si termina la sessione qui** <br/> |**Quanto tempo occorre** <br/> |
-|Nell'interfaccia di amministrazione di Exchange o con PowerShell  <br/> |Il ritardo massimo previsto è di 30 minuti  <br/> |
-|Nell'interfaccia di amministrazione di Azure Active Directory  <br/> |Il ritardo previsto è di 60 minuti  <br/> |
-|In un ambiente locale  <br/> |Il ritardo previsto è di 3 ore o più  <br/> |
+<br>
+
+****
+
+|Se si termina la sessione qui|Quanto tempo occorre|
+|---|---|
+|Nell'interfaccia di amministrazione di Exchange o con PowerShell|Il ritardo massimo previsto è di 30 minuti|
+|Nell'interfaccia di amministrazione di Azure Active Directory|Il ritardo previsto è di 60 minuti|
+|In un ambiente locale|Il ritardo previsto è di 3 ore o più|
+|
 
 ### <a name="how-to-get-fastest-response-for-account-termination"></a>Come ottenere la risposta più rapida per la chiusura di un account
 
- **Metodo più rapido**: usare l'interfaccia di amministrazione di Exchange (usare PowerShell) oppure l'interfaccia di amministrazione di Azure Active Directory. In un ambiente locale, la sincronizzazione delle modifiche con DirSync può richiedere diverse ore.
+**Metodo più rapido**: usare l'interfaccia di amministrazione di Exchange (usare PowerShell) oppure l'interfaccia di amministrazione di Azure Active Directory. In un ambiente locale, la sincronizzazione delle modifiche con DirSync può richiedere diverse ore.
   
- **Metodo più rapido per utenti con presenza locale e nel data center di Exchange**: terminare la sessione con l'interfaccia di amministrazione di Exchange o di Azure Active Directory E apportare le modifiche anche nell'ambiente locale. In caso contrario, le modifiche nell'interfaccia di amministrazione di Exchange o di Azure Active Directory verranno sovrascritte da DirSync.
+**Metodo più rapido per utenti con presenza locale e nel data center di Exchange**: terminare la sessione con l'interfaccia di amministrazione di Exchange o di Azure Active Directory E apportare le modifiche anche nell'ambiente locale. In caso contrario, le modifiche nell'interfaccia di amministrazione di Exchange o di Azure Active Directory verranno sovrascritte da DirSync.
   
 ## <a name="related-content"></a>Contenuto correlato
 

@@ -15,12 +15,12 @@ localization_priority: None
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ce387799a2f9e6d6cdffe063d3adf7310d7e7757
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: eec4869c5ff0b4caeedc52891a56d604c4b54348
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52842723"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53286034"
 ---
 # <a name="define-information-barrier-policies"></a>Definire i criteri delle barriere informative
 
@@ -38,8 +38,8 @@ Quando si definiscono i criteri per le barriere alle informazioni, si lavora con
 - Gli attributi degli account utente sono definiti in Azure Active Directory (o Exchange Online). Questi attributi possono includere reparto, posizione, ubicazione, nome del team e altri dettagli del profilo professionale. 
 - I segmenti sono insiemi di utenti definiti nel Centro sicurezza & conformità utilizzando un attributo **account utente selezionato.** Vedere l'[elenco degli attributi supportati](information-barriers-attributes.md).
 - I criteri di barriera informativa determinano i limiti o le restrizioni applicate a livello comunicativo. Quando si definiscono i criteri di barriera informativa, è possibile scegliere tra due tipi di criteri:
-    - I criteri "Blocca" impediscono a un segmento di comunicare con un altro segmento.
-    - I criteri "Consenti" consentono a un segmento di comunicare solo con determinati altri segmenti.
+  - I criteri "Blocca" impediscono a un segmento di comunicare con un altro segmento.
+  - I criteri "Consenti" consentono a un segmento di comunicare solo con determinati altri segmenti.
 - L'applicazione dei criteri nell'organizzazione viene eseguita dopo aver definito tutti i criteri di barriera informativa.
 
 ## <a name="the-work-flow-at-a-glance"></a>Flusso di lavoro in breve
@@ -71,8 +71,8 @@ Oltre alle licenze [e alle](information-barriers.md#required-licenses-and-permis
 - Nessun criteri della rubrica: prima di definire e applicare i criteri di barriera delle informazioni, assicurarsi Exchange non siano presenti criteri della rubrica. Le barriere informative si basano sui criteri della rubrica, ma i due tipi di criteri non sono compatibili. Se si dispone di tali criteri, assicurarsi di [rimuovere prima i criteri della rubrica.](/exchange/address-books/address-book-policies/remove-an-address-book-policy) Dopo aver abilitato i criteri di barriera delle informazioni e aver abilitato la rubrica gerarchica, tutti gli utenti che non sono inclusi ***in*** un segmento di barriera delle informazioni potranno visualizzare la rubrica gerarchica [in](/exchange/address-books/hierarchical-address-books/hierarchical-address-books) Exchange online.
 
 - PowerShell: attualmente, i criteri di barriera delle informazioni sono definiti e gestiti Office 365 nel Centro sicurezza & tramite i cmdlet di PowerShell. Anche se in questo articolo vengono forniti diversi esempi, è necessario avere familiarità con i cmdlet e i parametri di PowerShell. Sarà inoltre necessario il modulo Azure PowerShell.
-    - [Connettersi a PowerShell in Centro sicurezza e conformità](/powershell/exchange/connect-to-scc-powershell)
-    - [Installare il modulo Azure PowerShell](/powershell/azure/install-az-ps?view=azps-2.3.2)
+  - [Connettersi a PowerShell in Centro sicurezza e conformità](/powershell/exchange/connect-to-scc-powershell)
+  - [Installare il modulo Azure PowerShell](/powershell/azure/install-az-ps)
 
 - Consenso dell'amministratore per le barriere di informazioni in Microsoft Teams - Quando i criteri IB sono in atto, possono rimuovere gli utenti di conformità non IB dai gruppi (ad esempio, canali di Teams, che si basano su gruppi). Questa configurazione garantisce che l'organizzazione rimanga conforme ai criteri e alle normative. Utilizzare la procedura seguente per consentire ai criteri di barriera delle informazioni di funzionare come previsto in Microsoft Teams.
 
@@ -91,10 +91,9 @@ Oltre alle licenze [e alle](information-barriers.md#required-licenses-and-permis
    1. Quando richiesto, accedere usando l'account aziendale o dell'istituto di istruzione per Office 365.
 
    1. Nella finestra **di dialogo** Autorizzazioni richieste esaminare le informazioni e quindi scegliere **Accetta.** Le autorizzazioni richieste dall'app sono fornite di seguito.
-      
+
       > [!div class="mx-imgBorder"]
       > ![image](https://user-images.githubusercontent.com/8932063/107690955-b1772300-6c5f-11eb-9527-4235de860b27.png)
-
 
 Quando vengono soddisfatti tutti i prerequisiti, passare alla sezione successiva.
 

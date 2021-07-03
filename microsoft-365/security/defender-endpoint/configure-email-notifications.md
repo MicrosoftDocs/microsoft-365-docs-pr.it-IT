@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c60bed1fb2cc17c9f5dfbd1289ae5f5b5e13faec
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 9a7ad1241ce73bb9b68e173faa9433c7326e14e5
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933950"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53286934"
 ---
 # <a name="configure-alert-notifications-in-microsoft-defender-for-endpoint"></a>Configurare le notifiche di avviso in Microsoft Defender per Endpoint
 
@@ -31,7 +31,7 @@ ms.locfileid: "51933950"
 - [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Vuoi provare Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-emailconfig-abovefoldlink)
+> Vuoi provare Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-emailconfig-abovefoldlink)
 
 Puoi configurare Defender per Endpoint per inviare notifiche tramite posta elettronica a destinatari specifici per nuovi avvisi. Questa funzionalità consente di identificare un gruppo di utenti che verranno immediatamente informati e di agire sugli avvisi in base alla gravità.
 
@@ -46,7 +46,6 @@ Solo gli utenti assegnati al ruolo amministratore globale possono gestire le reg
 
 La notifica tramite posta elettronica include informazioni di base sull'avviso e un collegamento al portale in cui è possibile eseguire ulteriori indagini.
 
-
 ## <a name="create-rules-for-alert-notifications"></a>Creare regole per le notifiche di avviso
 È possibile creare regole che determinano i dispositivi e la gravità degli avvisi per l'invio di notifiche tramite posta elettronica per i destinatari della notifica.
 
@@ -60,15 +59,15 @@ La notifica tramite posta elettronica include informazioni di base sull'avviso e
     - **Includi nome organizzazione:** specificare il nome del cliente visualizzato nella notifica tramite posta elettronica.
     - **Includi collegamento al portale specifico del** tenant - Aggiunge un collegamento con l'ID tenant per consentire l'accesso a un tenant specifico.
     - **Includi informazioni sul dispositivo:** include il nome del dispositivo nel corpo dell'avviso di posta elettronica.
-    
-        >[!NOTE]
+
+        > [!NOTE]
         > Queste informazioni potrebbero essere elaborate dai server di posta del destinatario che non sono nella posizione geografica selezionata per i dati di Defender for Endpoint.
 
     - **Dispositivi:** scegliere se inviare una notifica ai destinatari per gli avvisi su tutti i dispositivi (solo ruolo amministratore globale) o sui gruppi di dispositivi selezionati. Per altre informazioni, vedi [Creare e gestire gruppi di dispositivi.](machine-groups.md)
     - **Gravità avviso:** scegliere il livello di gravità dell'avviso.
 
 4. Fare clic su **Avanti**.
-    
+
 5. Immettere l'indirizzo di posta elettronica del destinatario, quindi fare clic **su Aggiungi destinatario.** È possibile aggiungere più indirizzi di posta elettronica.
 
 6. Verificare che i destinatari di posta elettronica possano ricevere le notifiche tramite posta elettronica selezionando **Invia messaggio di posta elettronica di prova.**
@@ -76,12 +75,12 @@ La notifica tramite posta elettronica include informazioni di base sull'avviso e
 7. Fare clic **su Salva regola di notifica.**
 
 ## <a name="edit-a-notification-rule"></a>Modificare una regola di notifica
+
 1. Seleziona la regola di notifica che vuoi modificare.
 
 2. Aggiornare le informazioni della scheda Generale e Destinatario.
 
 3. Fare clic **su Salva regola di notifica.**
-
 
 ## <a name="delete-notification-rule"></a>Elimina regola di notifica
 
@@ -89,8 +88,8 @@ La notifica tramite posta elettronica include informazioni di base sull'avviso e
 
 2. Fare clic su **Elimina**.
 
-
 ## <a name="troubleshoot-email-notifications-for-alerts"></a>Risolvere i problemi relativi alle notifiche di posta elettronica per gli avvisi
+
 In questa sezione sono elencati i vari problemi che possono verificarsi quando si utilizzano le notifiche tramite posta elettronica per gli avvisi.
 
 **Problema:** I destinatari previsti segnalano di non ricevere le notifiche.
@@ -102,5 +101,6 @@ In questa sezione sono elencati i vari problemi che possono verificarsi quando s
 3. Controlla le regole dell'applicazione di posta elettronica che potrebbero intercettare e spostare defender per le notifiche di posta elettronica dell'endpoint.
 
 ## <a name="related-topics"></a>Argomenti correlati
+
 - [Aggiornare le impostazioni di conservazione dei dati](data-retention-settings.md)
 - [Configurare le funzionalità avanzate](advanced-features.md)

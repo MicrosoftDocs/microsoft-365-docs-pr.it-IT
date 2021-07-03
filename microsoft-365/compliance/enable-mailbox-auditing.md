@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: aaca8987-5b62-458b-9882-c28476a66918
 ms.custom: seo-marvel-apr2020
 description: La registrazione di controllo delle cassette postali è attivata per impostazione predefinita in Microsoft 365 (detto anche controllo delle cassette postali predefinito o controllo delle cassette postali attivato per impostazione predefinita). Ciò significa che determinate azioni eseguite da proprietari, delegati e amministratori delle cassette postali vengono registrate automaticamente in un registro di controllo delle cassette postali, in cui è possibile cercare le attività eseguite sulla cassetta postale.
-ms.openlocfilehash: 56207a21d9a13edb04a07234764257d3c27f2d0f
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: f74cb23a029d4710a19aeb18999169f6adc636a4
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53226780"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287030"
 ---
 # <a name="manage-mailbox-auditing"></a>Gestire il controllo delle cassette postali
 
@@ -111,7 +111,7 @@ Nella tabella seguente vengono descritte le azioni delle cassette postali dispon
 |**MailboxLogin**|L'utente ha eseguito l'accesso alla propria cassetta postale.|||![Segno di spunta](../media/checkmark.png)|
 |**MailItemsAccessed**|**Nota:** questo valore è disponibile solo per gli utenti della sottoscrizione di componenti aggiuntivi E5 o E5 Compliance. Per ulteriori informazioni, vedere [Set up Advanced Audit in Microsoft 365](set-up-advanced-audit.md). <p> I client e i protocolli di posta elettronica a cui si accede ai dati di posta sono accessibili.|![Segno di spunta](../media/checkmark.png)<sup>\*</sup>|![Segno di spunta](../media/checkmark.png)<sup>\*</sup>|![Segno di spunta](../media/checkmark.png)<sup>\*</sup>|
 |**MessageBind**|**Nota:** questo valore è disponibile solo per gli utenti di E3 (utenti senza abbonamenti ai componenti aggiuntivi E5 o E5 Compliance). <p> Un messaggio è stato visualizzato nel riquadro di anteprima o aperto da un amministratore.|![Segno di spunta](../media/checkmark.png)|||
-|**ModifyFolderPermissions**|Anche se questo valore viene accettato come azione della cassetta postale, è già incluso nell'azione **UpdateFolderPermissions** e non viene eseguito separatamente. In altre parole, non usare questo valore.|||||
+|**ModifyFolderPermissions**|Anche se questo valore viene accettato come azione della cassetta postale, è già incluso nell'azione **UpdateFolderPermissions** e non viene eseguito separatamente. In altre parole, non usare questo valore.||||
 |**Move**|Messaggio spostato in un'altra cartella.|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|
 |**MoveToDeletedItems**|Messaggio eliminato e spostato nella cartella Posta eliminata.|![Segno di spunta](../media/checkmark.png)<sup>\*</sup>|![Segno di spunta](../media/checkmark.png)<sup>\*</sup>|![Segno di spunta](../media/checkmark.png)<sup>\*</sup>|
 |**RecordDelete**|Un elemento etichettato come record è stato eliminato in modo reversibile (spostato nella cartella Elementi ripristinabili). Gli elementi etichettati come record non possono essere eliminati definitivamente (eliminati dalla cartella Elementi ripristinabili).|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|![Segno di spunta](../media/checkmark.png)|
@@ -338,10 +338,10 @@ Il valore **True** indica che la registrazione di controllo delle cassette posta
   Per recuperare le voci del registro di controllo delle cassette postali per gli utenti senza licenze E5, è possibile:
 
   - Abilitare manualmente il controllo delle cassette postali sulle singole cassette postali (eseguire il comando , `Set-Mailbox -Identity <MailboxIdentity> -AuditEnabled $true` ). Dopo questa operazione, è possibile usare le ricerche nei log di controllo nel Centro sicurezza & conformità o tramite l'API Office 365 Attività di gestione.
-  
+
     > [!NOTE]
     > Se il controllo delle cassette postali sembra già abilitato nella cassetta postale, ma le ricerche non restituiscono risultati, modificare il valore del parametro _AuditEnabled_ in e quindi `$false` tornare a `$true` .
-  
+
   - Utilizzare i cmdlet seguenti in Exchange Online PowerShell:
     - [Search-MailboxAuditLog](/powershell/module/exchange/search-mailboxauditlog) per cercare utenti specifici nel registro di controllo delle cassette postali.
     - [New-MailboxAuditLogSearch](/powershell/module/exchange/new-mailboxauditlogsearch) per cercare utenti specifici nel registro di controllo delle cassette postali e per inviare i risultati tramite posta elettronica a destinatari specifici.

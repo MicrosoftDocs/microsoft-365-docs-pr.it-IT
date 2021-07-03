@@ -19,49 +19,33 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: Usare il Centro conformità Microsoft 365 per eseguire una ricerca nel log di controllo unificato e vedere le attività di utenti e amministratori nell'organizzazione.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8817ed09673ec23d0a41d680942276bcb1fe297d
-ms.sourcegitcommit: e1e275eb88153bafddf93327adf8f82318913a8d
+ms.openlocfilehash: a6989d8f57123a35e64b89cfe9148cae33c5758e
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52809144"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287504"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>Eseguire una ricerca nel log di controllo nel Centro conformità
 
 Se è necessario verificare se un utente ha visualizzato un documento specifico o ha eliminato un elemento dalla cassetta postale, è possibile usare il Centro conformità Microsoft 365 per eseguire una ricerca nel log di controllo unificato e visualizzare le attività degli utenti e degli amministratori nell'organizzazione. Perché usare un log di controllo unificato? Perché è possibile cercare i tipi seguenti di [attività di utenti e amministratori](#audited-activities) in Microsoft 365:
 
 - Attività utente in SharePoint Online e OneDrive for Business
-
 - Attività utente in Exchange Online (registrazione di controllo delle cassette postali di Exchange)
-
 - Attività amministratore in SharePoint Online
-
 - Attività amministratore in Azure Active Directory (servizio directory per Microsoft 365)
-
 - Attività amministratore in Exchange Online (registrazione di controllo dell'amministratore di Exchange )
-
 - Attività eDiscovery nel Centro sicurezza e conformità
-
 - Attività utente e amministratore in Power BI
-
 - Attività utente e amministratore in Microsoft Teams
-
 - Attività utente e amministratore in Dynamics 365
-
 - Attività utente e amministratore in Yammer
-
 - Attività utente e amministratore in Microsoft Power Automate
-
 - Attività utente e amministratore in Microsoft Stream
-
 - Attività di analisti e amministratori in Microsoft Workplace Analytics
-
 - Attività utente e amministratore in Microsoft Power Apps
-
 - Attività utente e amministratore in Microsoft Forms
-
 - Attività utente e amministratore per le etichette di riservatezza per siti che usano SharePoint Online o Microsoft Teams
-
 - Attività amministratore nelle e-mail di Briefing e in MyAnalytics
 
 ## <a name="requirements-to-search-the-audit-log"></a>Requisiti per la ricerca nel log di controllo
@@ -73,6 +57,7 @@ Prima di iniziare la ricerca nel log di controllo, tenere presente quanto segue.
   ```powershell
   Get-AdminAuditLogConfig | FL UnifiedAuditLogIngestionEnabled
   ```
+
   Il valore `True` per la proprietà *UnifiedAuditLogIngestionEnabled* indica che la ricerca nel log di controllo è attivata. Per altre informazioni, vedere [Attivare o disattivare la ricerca nel log di controllo](turn-audit-log-search-on-or-off.md).
 
 - È necessario avere il ruolo relativo ai log di controllo di sola lettura o ai log di controllo in Exchange Online per poter eseguire ricerche nel log di controllo. Per impostazione predefinita, questi ruoli sono assegnati ai gruppi di ruoli Gestione conformità e Gestione organizzazione nella pagina **Autorizzazioni** nell'Interfaccia di amministrazione di Exchange. Gli amministratori globali di Office 365 e Microsoft 365 vengono aggiunti automaticamente come membri del gruppo di ruoli Gestione organizzazione in Exchange Online. Per consentire a un utente di eseguire ricerche nel log di controllo con il livello minimo di privilegi, è possibile creare un gruppo di ruoli personalizzato in Exchange Online, aggiungere il ruolo relativo ai log di controllo di sola lettura o ai log di controllo e quindi aggiungere l'utente come membro del nuovo gruppo di ruoli. Per altre informazioni, vedere [Gestire i gruppi di ruoli in Exchange Online](/Exchange/permissions-exo/role-groups).
@@ -114,8 +99,12 @@ Prima di iniziare la ricerca nel log di controllo, tenere presente quanto segue.
 
 - La restituzione del record del log di controllo nei risultati della ricerca dei log di controllo può richiedere fino a 30 minuti o a 24 ore dal momento in cui si verifica l'evento. La tabella seguente mostra il tempo necessario per i diversi servizi in Office 365.
 
+  <br>
+
+  ****
+
   |Servizio o funzionalità Microsoft 365|30 minuti|24 ore|
-  |:-----|:-----:|:-----:|
+  |---|:---:|:---:|
   |Defender per Office 365 e Threat Intelligence|![Segno di spunta](../media/checkmark.png)||
   |Azure Active Directory (eventi di accesso utente)||![Segno di spunta](../media/checkmark.png)|
   |Interfaccia di amministrazione di Azure Active Directory (eventi di amministrazione)||![Segno di spunta](../media/checkmark.png)|
@@ -133,9 +122,9 @@ Prima di iniziare la ricerca nel log di controllo, tenere presente quanto segue.
   |Etichette di riservatezza||![Segno di spunta](../media/checkmark.png)|
   |SharePoint Online e OneDrive for Business|![Segno di spunta](../media/checkmark.png)||
   |Workplace Analytics|![Segno di spunta](../media/checkmark.png)||
-  |Yammer||![Segno di spunta](../media/checkmark.png)||
-  |Microsoft Forms|![Segno di spunta](../media/checkmark.png)|
-  ||||
+  |Yammer||![Segno di spunta](../media/checkmark.png)|
+  |Microsoft Forms|![Segno di spunta](../media/checkmark.png)||
+  |
 
 - Azure Active Directory (Azure AD) è il servizio directory per Office 365. Il log di controllo unificato contiene le attività di utenti, gruppi, applicazioni, domini e directory eseguite nell'interfaccia di amministrazione di Microsoft 365 o nel portale di gestione di Azure. Per un elenco completo degli eventi di Azure AD, vedere [Eventi del report di controllo di Azure Active Directory](/azure/active-directory/reports-monitoring/concept-audit-logs).
 

@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 65d7647e9000152d2eeb8d6bf36e8d45a0d4fa90
-ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
+ms.openlocfilehash: ba4f1b0e4b2e00334dbffb4bf0aa9edb1b8c5622
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52984701"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53286922"
 ---
 # <a name="add-and-verify-admin-contacts-in-the-admin-portal"></a>Aggiungere e verificare i contatti degli amministratori nel portale di amministrazione
 
@@ -26,12 +26,13 @@ Esistono diversi modi in cui Microsoft Managed Desktop servizio comunica con i c
 ## <a name="azure-active-directory-access-for-microsoft-managed-desktop-admin-portal"></a>Azure Active Directory accesso per Microsoft Managed Desktop admin portal
 
 Microsoft Managed Desktop Il portale di amministrazione richiede che gli utenti che accedono al portale Azure Active Directory (AD):
+
 - Amministratore globale
 - Amministratore del servizio Intune
 - Ruolo con autorizzazioni di lettura globali
 - Service Support Administrator
 
-L'amministratore globale deve essere quello per registrare l'organizzazione in Microsoft Managed Desktop. Tutti e cinque i ruoli hanno lo stesso accesso nel portale di amministrazione per avviare e visualizzare le attività. Per ulteriori informazioni sull'assegnazione di questi ruoli in Azure AD, vedere [Autorizzazioni del ruolo di amministratore in Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles). 
+L'amministratore globale deve essere quello per registrare l'organizzazione in Microsoft Managed Desktop. Tutti e cinque i ruoli hanno lo stesso accesso nel portale di amministrazione per avviare e visualizzare le attività. Per ulteriori informazioni sull'assegnazione di questi ruoli in Azure AD, vedere [Autorizzazioni del ruolo di amministratore in Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles).
 
 ## <a name="admin-contact-areas-of-focus"></a>Aree di contatto dell'amministratore
 
@@ -47,21 +48,21 @@ Altro | Per problemi non coperti da altre aree
 
 **Chiunque scegli per questi contatti deve avere le conoscenze e l'autorità necessarie per prendere decisioni per il tuo Microsoft Managed Desktop ambiente.** Quando si esegue l'onboard Microsoft Managed Desktop locale, viene richiesto di aggiungere contatti per l'helpdesk locale e la sicurezza. 
 
-I contatti di amministratore sono necessari quando [invii una richiesta di supporto](../service-description/support.md). Dovrai avere un contatto amministratore per l'area di interesse della richiesta di supporto. 
+I contatti di amministratore sono necessari quando [invii una richiesta di supporto](../service-description/support.md). Dovrai avere un contatto amministratore per l'area di interesse della richiesta di supporto.
 
 **Per aggiungere contatti di amministratore**
 
-1.  Accedi a [Microsoft Endpoint Manager](https://endpoint.microsoft.com). 
+1. Accedi a [Microsoft Endpoint Manager](https://endpoint.microsoft.com).
 
-2.  In **Amministrazione tenant** cerca la sezione Microsoft Managed Desktop quindi seleziona Contatti di **amministratore.**  
+2. In **Amministrazione tenant** cerca la sezione Microsoft Managed Desktop quindi seleziona Contatti di **amministratore.** 
 
-3. Selezionare **Aggiungi**.
+3. Seleziona **Aggiungi**.
 
-4.  Seleziona **un'area di stato attivo** e immetti le informazioni per il contatto. 
+4. Seleziona **un'area di stato attivo** e immetti le informazioni per il contatto. 
 
     ![l'elenco delle aree di interesse, ad esempio Altre, App e Sicurezza](../../media/areaoffocus.png)
 
-5. Ripetere l'operazione per ogni area dello stato attivo. 
+5. Ripetere l'operazione per ogni area dello stato attivo.
 
 ## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>Passaggi per iniziare a usare Microsoft Managed Desktop
 

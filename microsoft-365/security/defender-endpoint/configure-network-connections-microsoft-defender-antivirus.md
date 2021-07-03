@@ -1,7 +1,7 @@
 ---
 title: Configurare e convalidare le connessioni di rete di Windows Defender Antivirus
-description: Configurare e testare la connessione al servizio di protezione cloud di Microsoft Defender Antivirus.
-keywords: antivirus, Microsoft Defender Antivirus, antimalware, sicurezza, defender, cloud, aggressività, livello di protezione
+description: Configurare e testare la connessione al Antivirus Microsoft Defender di protezione cloud.
+keywords: antivirus, Antivirus Microsoft Defender, antimalware, sicurezza, defender, cloud, aggressività, livello di protezione
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.technology: mde
@@ -16,12 +16,12 @@ ms.custom: nextgen
 ms.date: 06/17/2021
 ms.reviewer: ''
 manager: dansimp
-ms.openlocfilehash: 6ccc2eb171e85793899a7862ed9a317815d89626
-ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
+ms.openlocfilehash: 5b6ed22b38d0795073fc72f380bcad89683ada9c
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/18/2021
-ms.locfileid: "53007585"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53286814"
 ---
 # <a name="configure-and-validate-microsoft-defender-antivirus-network-connections"></a>Configurare e convalidare le connessioni di rete di Windows Defender Antivirus
 
@@ -29,7 +29,7 @@ ms.locfileid: "53007585"
 
 - [Microsoft Defender per endpoint](/microsoft-365/security/defender-endpoint/)
 
-Per garantire il corretto funzionamento della protezione con distribuzione cloud di Microsoft Defender Antivirus, il team di sicurezza deve configurare la rete in modo da consentire le connessioni tra gli endpoint e alcuni server Microsoft. In questo articolo vengono elencate le connessioni che devono essere consentite, ad esempio utilizzando le regole del firewall, e vengono fornite istruzioni per convalidare la connessione. La configurazione corretta della protezione consente di ottenere il massimo valore dai servizi di protezione garantiti dal cloud.
+Per garantire Antivirus Microsoft Defender la protezione con distribuzione cloud funzioni correttamente, il team di sicurezza deve configurare la rete in modo da consentire le connessioni tra gli endpoint e determinati server Microsoft. In questo articolo vengono elencate le connessioni che devono essere consentite, ad esempio utilizzando le regole del firewall, e vengono fornite istruzioni per convalidare la connessione. La configurazione corretta della protezione consente di ottenere il massimo valore dai servizi di protezione garantiti dal cloud.
 
 Vedere il post di blog [Modifiche importanti all'endpoint di Microsoft Active Protection Services](https://techcommunity.microsoft.com/t5/Configuration-Manager-Archive/Important-changes-to-Microsoft-Active-Protection-Service-MAPS/ba-p/274006) per alcuni dettagli sulla connettività di rete.
 
@@ -40,14 +40,14 @@ Vedere il post di blog [Modifiche importanti all'endpoint di Microsoft Active Pr
 > - Apprendimento rapido (incluso blocco a prima vista)
 > - Blocco di applicazioni potenzialmente indesiderate
 
-## <a name="allow-connections-to-the-microsoft-defender-antivirus-cloud-service"></a>Consenti connessioni al servizio cloud Microsoft Defender Antivirus
+## <a name="allow-connections-to-the-microsoft-defender-antivirus-cloud-service"></a>Consentire le connessioni al Antivirus Microsoft Defender cloud
 
-Il servizio cloud Microsoft Defender Antivirus fornisce una protezione rapida e avanzata per gli endpoint. L'abilitazione del servizio di protezione fornita dal cloud è facoltativa, tuttavia è altamente consigliata perché fornisce una protezione importante contro il malware sugli endpoint e sulla rete. Per informazioni dettagliate sull'abilitazione del servizio con Intune, Microsoft Endpoint Configuration Manager, Criteri di gruppo, cmdlet di PowerShell o su singoli client nell'app Sicurezza di Windows, vedere Enable [cloud-delivered protection.](enable-cloud-protection-microsoft-defender-antivirus.md) 
+Il Antivirus Microsoft Defender cloud offre una protezione rapida e solida per gli endpoint. L'abilitazione del servizio di protezione fornita dal cloud è facoltativa, tuttavia è altamente consigliata perché fornisce una protezione importante contro il malware sugli endpoint e sulla rete. Per informazioni dettagliate sull'abilitazione del servizio con Intune, Microsoft Endpoint Configuration Manager, Criteri di gruppo, cmdlet di PowerShell o su singoli client nell'app Sicurezza di Windows cloud, vedere Enable [cloud-delivered protection.](enable-cloud-protection-microsoft-defender-antivirus.md) 
 
-Dopo aver abilitato il servizio, potrebbe essere necessario configurare la rete o il firewall per consentire le connessioni tra il servizio e gli endpoint. Poiché la protezione è un servizio cloud, i computer devono avere accesso a Internet e raggiungere i servizi di apprendimento automatico di Microsoft Defender per Office 365. Non escludere l'URL `*.blob.core.windows.net` da qualsiasi tipo di ispezione di rete. 
+Dopo aver abilitato il servizio, potrebbe essere necessario configurare la rete o il firewall per consentire le connessioni tra il servizio e gli endpoint. Poiché la protezione è un servizio cloud, i computer devono avere accesso a Internet e raggiungere Microsoft Defender per Office 365 di apprendimento automatico. Non escludere l'URL `*.blob.core.windows.net` da qualsiasi tipo di ispezione di rete.
 
 > [!NOTE]
-> Il servizio cloud Microsoft Defender Antivirus è un meccanismo per fornire una protezione aggiornata alla rete e agli endpoint. Anche se viene definito servizio cloud, non si tratta semplicemente di protezione per i file archiviati nel cloud, bensì di risorse distribuite e machine learning per fornire protezione agli endpoint a una velocità molto più veloce rispetto agli aggiornamenti tradizionali di Security Intelligence.
+> Il Antivirus Microsoft Defender cloud è un meccanismo per fornire una protezione aggiornata alla rete e agli endpoint. Anche se viene definito servizio cloud, non si tratta semplicemente di protezione per i file archiviati nel cloud, bensì di risorse distribuite e machine learning per fornire protezione agli endpoint a una velocità molto più veloce rispetto agli aggiornamenti tradizionali di Security Intelligence.
 
 ## <a name="services-and-urls"></a>Servizi e URL
 
@@ -57,41 +57,41 @@ Assicurarsi che non vi siano regole di filtro firewall o di rete che neghino l'a
 
 | Servizio e descrizione | URL |
 |----|---- |
-| Servizio di protezione fornito dal cloud di Microsoft Defender Antivirus, noto anche come Microsoft Active Protection Service (MAPS)<p>Questo servizio viene utilizzato da Microsoft Defender Antivirus per fornire protezione tramite cloud|`*.wdcp.microsoft.com` <p> `*.wdcpalt.microsoft.com` <p> `*.wd.microsoft.com`|
-| Microsoft Update Service (MU) e Windows Update Service (WU) <p>Questi servizi consentono l'intelligence per la sicurezza e gli aggiornamenti dei prodotti   |`*.update.microsoft.com` <p> `*.delivery.mp.microsoft.com`<p> `*.windowsupdate.com` <p> Per altri dettagli, vedi [Endpoint di connessione per Windows Update](/windows/privacy/manage-windows-1709-endpoints#windows-update)|
-|Aggiornamenti di Intelligence per la sicurezza Percorso di download alternativo (ADL)<p>Si tratta di un percorso alternativo per gli aggiornamenti dell'intelligence per la sicurezza di Microsoft Defender Antivirus se l'intelligence di sicurezza installata non è aggiornata (7 o più giorni dopo)|  `*.download.microsoft.com`  <p> `*.download.windowsupdate.com`<p>  `go.microsoft.com`<p> `https://fe3cr.delivery.mp.microsoft.com/ClientWebService/client.asmx`|
+| Antivirus Microsoft Defender servizio di protezione fornito dal cloud, noto anche come Microsoft Active Protection Service (MAPS)<p>Questo servizio viene utilizzato da Antivirus Microsoft Defender per fornire protezione da cloud|`*.wdcp.microsoft.com` <p> `*.wdcpalt.microsoft.com` <p> `*.wd.microsoft.com`|
+| Microsoft Update Service (MU) e Windows Update Service (WU) <p>Questi servizi consentono l'intelligence per la sicurezza e gli aggiornamenti dei prodotti |`*.update.microsoft.com` <p> `*.delivery.mp.microsoft.com`<p> `*.windowsupdate.com` <p> Per ulteriori dettagli, vedere [Connection endpoints for Windows Update](/windows/privacy/manage-windows-1709-endpoints#windows-update)|
+|Aggiornamenti di Intelligence per la sicurezza Percorso di download alternativo (ADL)<p>Si tratta di un percorso alternativo per gli Antivirus Microsoft Defender security intelligence se l'intelligence di sicurezza installata non è aggiornata (7 o più giorni dopo)| `*.download.microsoft.com`  <p> `*.download.windowsupdate.com`<p>  `go.microsoft.com`<p> `https://fe3cr.delivery.mp.microsoft.com/ClientWebService/client.asmx`|
 | Spazio di archiviazione per l'invio di malware <p>Questo è il percorso di caricamento per i file inviati a Microsoft tramite il modulo di invio o l'invio automatico di esempio | `ussus1eastprod.blob.core.windows.net` <p>    `ussus2eastprod.blob.core.windows.net` <p>    `ussus3eastprod.blob.core.windows.net` <p>    `ussus4eastprod.blob.core.windows.net` <p>    `wsus1eastprod.blob.core.windows.net` <p>    `wsus2eastprod.blob.core.windows.net` <p>    `ussus1westprod.blob.core.windows.net` <p>    `ussus2westprod.blob.core.windows.net` <p>    `ussus3westprod.blob.core.windows.net` <p>    `ussus4westprod.blob.core.windows.net` <p>    `wsus1westprod.blob.core.windows.net` <p>    `wsus2westprod.blob.core.windows.net` <p>    `usseu1northprod.blob.core.windows.net` <p>    `wseu1northprod.blob.core.windows.net` <p>    `usseu1westprod.blob.core.windows.net` <p>    `wseu1westprod.blob.core.windows.net` <p>    `ussuk1southprod.blob.core.windows.net` <p>    `wsuk1southprod.blob.core.windows.net` <p>    `ussuk1westprod.blob.core.windows.net` <p>    `wsuk1westprod.blob.core.windows.net` |
-| Elenco di revoche di certificati (CRL) <p>Questo elenco viene utilizzato da Windows durante la creazione della connessione SSL a MAPS per l'aggiornamento del CRL   | `http://www.microsoft.com/pkiops/crl/` <p> `http://www.microsoft.com/pkiops/certs` <p>   `http://crl.microsoft.com/pki/crl/products` <p> `http://www.microsoft.com/pki/certs` |
-| Archivio simboli <p>L'archivio dei simboli viene utilizzato da Microsoft Defender Antivirus per ripristinare determinati file critici durante i flussi di correzione   | `https://msdl.microsoft.com/download/symbols` |
-| Client di telemetria universale <p>Questo client viene utilizzato da Windows per inviare dati di diagnostica client<p> Microsoft Defender Antivirus usa la telemetria per il monitoraggio della qualità del prodotto    | L'aggiornamento utilizza SSL (porta TCP 443) per scaricare manifesti e caricare dati di diagnostica in Microsoft che utilizza gli endpoint DNS seguenti: <p> `vortex-win.data.microsoft.com` <p>   `settings-win.data.microsoft.com`|
+| Elenco di revoche di certificati (CRL) <p>Questo elenco viene utilizzato da Windows durante la creazione della connessione SSL a MAPS per l'aggiornamento del CRL | `http://www.microsoft.com/pkiops/crl/` <p> `http://www.microsoft.com/pkiops/certs` <p>   `http://crl.microsoft.com/pki/crl/products` <p> `http://www.microsoft.com/pki/certs` |
+| Archivio simboli <p>L'archivio simboli viene utilizzato da Antivirus Microsoft Defender per ripristinare determinati file critici durante i flussi di correzione | `https://msdl.microsoft.com/download/symbols` |
+| Client di telemetria universale <p>Questo client viene utilizzato da Windows per inviare dati di diagnostica client<p> Antivirus Microsoft Defender telemetria per il monitoraggio della qualità del prodotto | L'aggiornamento utilizza SSL (porta TCP 443) per scaricare manifesti e caricare dati di diagnostica in Microsoft che utilizza gli endpoint DNS seguenti: <p> `vortex-win.data.microsoft.com` <p>   `settings-win.data.microsoft.com`|
 
 ## <a name="validate-connections-between-your-network-and-the-cloud"></a>Convalidare le connessioni tra la rete e il cloud
 
-Dopo aver consentito gli URL elencati in precedenza, puoi verificare se sei connesso al servizio cloud Microsoft Defender Antivirus e stai correttamente segnalando e ricevendo informazioni per assicurarti di essere completamente protetto.
+Dopo aver consentito gli URL elencati in precedenza, puoi verificare se sei connesso al servizio cloud Antivirus Microsoft Defender e stai correttamente segnalando e ricevendo informazioni per assicurarti di essere completamente protetto.
 
 ### <a name="use-the-cmdline-tool-to-validate-cloud-delivered-protection"></a>Usare lo strumento cmdline per convalidare la protezione recapitata nel cloud
 
-Utilizzare l'argomento seguente con l'utilità da riga di comando ( ) di Microsoft Defender Antivirus per verificare che la rete possa comunicare con il servizio `mpcmdrun.exe` cloud Microsoft Defender Antivirus:
+Utilizzare l'argomento seguente con l'Antivirus Microsoft Defender della riga di comando ( ) per verificare che la rete sia in grado di comunicare con il `mpcmdrun.exe` Antivirus Microsoft Defender cloud:
 
 ```console
 "%ProgramFiles%\Windows Defender\MpCmdRun.exe" -ValidateMapsConnection
 ```
 
 > [!NOTE]
-> È necessario aprire una versione a livello di amministratore del prompt dei comandi. Fare clic con il pulsante destro del mouse sull'elemento nel menu Start, scegliere Esegui come **amministratore** e fare clic su **Sì** al prompt delle autorizzazioni. Questo comando funzionerà solo in Windows 10 versione 1703 o successiva.
+> È necessario aprire una versione a livello di amministratore del prompt dei comandi. Fare clic con il pulsante destro del mouse sull'elemento menu Start, scegliere Esegui come **amministratore** e fare clic su **Sì** al prompt delle autorizzazioni. Questo comando funziona solo su Windows 10 versione 1703 o successiva.
 
-Per ulteriori informazioni, vedere [Manage Microsoft Defender Antivirus with the mpcmdrun.exe commandline tool](command-line-arguments-microsoft-defender-antivirus.md).
+Per ulteriori informazioni, vedere [Manage Antivirus Microsoft Defender with the mpcmdrun.exe commandline tool](command-line-arguments-microsoft-defender-antivirus.md).
 
 ### <a name="attempt-to-download-a-fake-malware-file-from-microsoft"></a>Tentare di scaricare un file di malware falso da Microsoft
 
-Puoi scaricare un file di esempio che Microsoft Defender Antivirus rileverà e bloccherà se sei connesso correttamente al cloud.
+Puoi scaricare un file di esempio che Antivirus Microsoft Defender e bloccare se sei connesso correttamente al cloud.
 
 Scaricare il file visitando [https://aka.ms/ioavtest](https://aka.ms/ioavtest) .
 
 > [!NOTE]
 > Questo file non è un malware effettivo. Si tratta di un file fittizio progettato per verificare se si è connessi correttamente al cloud.
 
-Se si è connessi correttamente, verrà visualizzata una notifica di avviso di Microsoft Defender Antivirus.
+Se la connessione è corretta, verrà visualizzato un avviso Antivirus Microsoft Defender notifica.
 
 Se si usa Microsoft Edge, verrà visualizzato anche un messaggio di notifica:
 
@@ -103,14 +103,13 @@ Se si usa Internet Explorer, viene visualizzato un messaggio simile:
 
 Vedrai anche un rilevamento in **Minacce** in quarantena nella sezione **Cronologia** analisi nell'app Sicurezza di Windows:
 
-1. Apri l'app Sicurezza di Windows facendo clic sull'icona scudo nella barra delle applicazioni o cercando sicurezza nel menu **Start.**
+1. Apri l Sicurezza di Windows app facendo clic sull'icona scudo nella barra delle applicazioni o cercando sicurezza nel menu **Start.**
 
 2. Selezionare **Protezione da virus &** protezione dalle minacce e quindi selezionare Cronologia **protezione**.
 
 3. Nella sezione **Minacce in quarantena** seleziona Visualizza cronologia **completa** per visualizzare il malware contraffatto rilevato.
 
    > [!NOTE]
-   > Le versioni di Windows 10 precedenti alla versione 1703 hanno un'interfaccia utente diversa. Vedi [Microsoft Defender Antivirus nell'app Sicurezza di Windows.](microsoft-defender-security-center-antivirus.md)
+   > Le versioni Windows 10 precedenti alla versione 1703 hanno un'interfaccia utente diversa. Vedi [Antivirus Microsoft Defender nell'app Sicurezza di Windows.](microsoft-defender-security-center-antivirus.md)
 
-   Nel registro eventi di Windows verrà inoltre visualizzato [Windows Defender id evento client 1116](troubleshoot-microsoft-defender-antivirus.md).
-
+   Nel Windows eventi verrà visualizzato anche Windows Defender [id evento client 1116](troubleshoot-microsoft-defender-antivirus.md).

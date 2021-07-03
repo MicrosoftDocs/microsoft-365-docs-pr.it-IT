@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informazioni su come usare Microsoft Compliance Configuration Analyzer per iniziare rapidamente a usare Microsoft Compliance Manager.
-ms.openlocfilehash: 36f11597eac1837e3e18885f3c0a5d8dbc89a774
-ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
+ms.openlocfilehash: 7652a53e0d63e52d92e0d0506207c28f67459029
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/26/2021
-ms.locfileid: "53148963"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287054"
 ---
 # <a name="microsoft-compliance-configuration-analyzer-for-compliance-manager-preview"></a>Analizzatore configurazione conformità Microsoft per Compliance Manager (anteprima)
 
@@ -167,4 +167,4 @@ Seleziona l'elenco a discesa accanto **all'etichetta** Raccomandazione a destra 
 
 Per informazioni più dettagliate sull'installazione, la configurazione e l'utilizzo di MCCA, vedere le istruzioni [README](https://github.com/OfficeDev/MCCA#overview) su GitHub (nessun account GitHub necessario).
 
-Per ulteriori informazioni su Windows PowerShell, iniziare da [Come usare la documentazione di PowerShell.](/powershell/scripting/how-to-use-docs?view=powershell-7) Vedere anche [Starting Windows PowerShell](/powershell/scripting/windows-powershell/starting-windows-powershell?view=powershell-7).
+Per ulteriori informazioni su Windows PowerShell, iniziare da [Come usare la documentazione di PowerShell.](/powershell/scripting/how-to-use-docs) Vedere anche [Starting Windows PowerShell](/powershell/scripting/windows-powershell/starting-windows-powershell).

@@ -13,12 +13,12 @@ ms.collection:
 - Adm_O365
 ms.custom: AdminSurgePortfolio
 description: Monitorare i messaggi di posta elettronica non riusciti e ritardati inviati a o da account che hanno un impatto aziendale elevato.
-ms.openlocfilehash: 2a58f4090244fc6d68be69cf6b3c8ab6e00874fa
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 86e01e591823c94d8279f975ed7de24cc65776dc
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52535807"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53286142"
 ---
 # <a name="manage-and-monitor-priority-accounts"></a>Gestire e monitorare gli account con priorità
 
@@ -45,8 +45,8 @@ La **funzionalità di protezione degli account** priority descritta in questo ar
 
 La **Premium di monitoraggio** Flow posta elettronica descritta in questo argomento è disponibile solo per le organizzazioni che soddisfano i requisiti seguenti:
 
-- L'organizzazione deve disporre di un numero di licenze di almeno 10.000, da uno o da una combinazione dei prodotti seguenti: Office 365 E3, Microsoft 365 E3, Office 365 E5, Microsoft 365 E5. Ad esempio, l'organizzazione può avere 3000 licenze Office 365 E3 e 8500 Microsoft 365 E5, per un totale di 11.500 licenze dai prodotti idonei.
-- L’organizzazione deve avere almeno 50 utenti Exchange Online attivi al mese.
+- L'organizzazione deve disporre di un numero di licenze di almeno 5.000, da uno dei prodotti o da una combinazione dei seguenti prodotti: Office 365 E3, Microsoft 365 E3, Office 365 E5, Microsoft 365 E5. Ad esempio, l'organizzazione può avere 3.000 licenze di Office 365 E3 e 2.500 Microsoft 365 E5, per un totale di 5.500 licenze dei prodotti idonei.
+- L’organizzazione deve avere almeno 50 utenti Exchange Online attivi al mese
 
 > [!NOTE]
 > È possibile monitorare fino a 250 account con priorità.
@@ -57,7 +57,7 @@ Quando si applica la protezione dell'account con priorità a una cassetta postal
 
 Aggiungere account di priorità dalla **pagina Installazione**.
 
-1. Passare all'Microsoft 365 di amministrazione di <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> .
+1. Passare al interfaccia di amministrazione di Microsoft 365 all'indirizzo <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> .
 
 2. Vai a **Configurazione**  >  **Conoscenza dell'organizzazione** e scegli **Visualizza** in **Monitora gli account più importanti.**
 
@@ -83,7 +83,7 @@ Aggiungere account con priorità dalla pagina Utenti attivi.
 
 ## <a name="remove-a-user-from-the-priority-accounts-list"></a>Rimuovere un utente dall'elenco degli account con priorità
 
-1. Passare all'Microsoft 365 di amministrazione di <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> .
+1. Passare al interfaccia di amministrazione di Microsoft 365 all'indirizzo <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> .
 
 2. Vai a **Configurazione**  >  **Conoscenza dell'organizzazione** e scegli **Visualizza** in **Monitora gli account più importanti.**
 

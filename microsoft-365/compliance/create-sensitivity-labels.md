@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: "Requisito per tutte le soluzioni di Microsoft Information Protection: creare, configurare e pubblicare etichette di riservatezza per classificare e proteggere i documenti e i dati dell'organizzazione."
-ms.openlocfilehash: 328bf7bdac3a8de23820d861932ee20d71e911b4
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: ac87608a2a7c4913811c090ae3c2befadaf2327e
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52878185"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53286622"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>Creare e configurare etichette di riservatezza e i relativi criteri
 
@@ -41,36 +41,36 @@ L'amministratore globale dell'organizzazione dispone delle autorizzazioni comple
 ## <a name="create-and-configure-sensitivity-labels"></a>Creare e configurare etichette di riservatezza
 
 1. Nell'interfaccia di amministrazione per l’applicazione di etichette passare alle etichette di riservatezza:
-    
+
     - Centro conformità Microsoft 365: 
         - **Soluzioni** > **Information Protection)**
-        
+
         Se questa opzione non è immediatamente visibile, selezionare prima **Mostra tutto**. 
-    
+
     - Centro sicurezza e conformità:
         - **Classificazione** > **Etichette di riservatezza**
 
 2. Nella pagina **Etichette** selezionare **+ Crea un'etichetta** per avviare la procedura guidata Nuova etichetta di riservatezza. 
-    
+
     Ad esempio, dal Centro conformità Microsoft 365:
-    
+
     ![Creare un'etichetta di riservatezza](../media/create-sensitivity-label-full.png)
-    
+
     > [!NOTE]
     > Per impostazione predefinita, i tenant non hanno etichette ed è necessario crearle. Le etichette nell'immagine di esempio sono quelle predefinite di cui è stata eseguita la [migrazione da Azure Information Protection](/azure/information-protection/configure-policy-migrate-labels).
 
 3. Nella pagina **Definire l'ambito per questa etichetta**, le opzioni selezionate determinano l'ambito dell'etichetta per le impostazioni che è possibile configurare e dove saranno visibili quando vengono pubblicate:
-    
+
     ![Ambiti per le etichette di riservatezza](../media/sensitivity-labels-scopes.png)
-    
+
     - Se viene selezionato **File e messaggi di posta elettronica**, è possibile configurare le impostazioni in questa procedura guidata che si applicano alle app che supportano le etichette di riservatezza, come Office Word e Outlook. Se questa opzione non è selezionata, la procedura guidata mostra la prima pagina delle impostazioni, ma non è possibile configurarle e le etichette non potranno essere selezionate dagli utenti in queste app.
-    
+
     - Se è selezionata l'opzione **Gruppi e siti**, è possibile configurare le impostazioni della procedura guidata che si applicano ai gruppi di Microsoft 365 e ai siti di Teams e di SharePoint. Se questa opzione non è selezionata, la procedura guidata mostra la prima pagina delle impostazioni ma non è possibile configurarle, e le etichette non potranno essere selezionate dagli utenti per gruppi e siti.
-    
+
     Per informazioni sull'ambito degli **asset di Azure Purview (anteprima)**, vedere [Etichettare automaticamente i contenuti in Azure Purview](/azure/purview/create-sensitivity-label).
 
 4. Seguire le istruzioni della procedura guidata per le impostazioni dell'etichetta.
-    
+
     Per altre informazioni sulle impostazioni delle etichette, vedere [Operazioni eseguibili dalle etichette di riservatezza](sensitivity-labels.md#what-sensitivity-labels-can-do) nelle informazioni di panoramica e usare le indicazioni nella procedura guidata per le singole impostazioni.
 
 5. Ripetere questi passaggi per creare altre etichette. Se invece si vuole creare un'etichetta secondaria, selezionare prima di tutto l'etichetta padre, poi **...** per **Altre azioni**, quindi selezionare **Aggiungi etichetta secondaria**.
@@ -113,7 +113,6 @@ Per le lingue che è necessario supportare, usare gli [identificatori di lingua]
 
 Per poter eseguire i comandi di PowerShell, è prima necessario [connettersi a PowerShell per Centro sicurezza e conformità](/powershell/exchange/connect-to-scc-powershell).
 
-
 ```powershell
 $Languages = @("fr-fr","it-it","de-de")
 $DisplayNames=@("Publique","Publico","Oeffentlich")
@@ -135,42 +134,42 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
 ## <a name="publish-sensitivity-labels-by-creating-a-label-policy"></a>Pubblicare etichette di riservatezza creando un criterio di etichetta
 
 1. Nell'interfaccia di amministrazione per l’applicazione di etichette passare alle etichette di riservatezza:
-    
+
     - Centro conformità Microsoft 365: 
         - **Soluzioni** > **Information Protection)**
-        
+
         Se questa opzione non è immediatamente visibile, selezionare prima **Mostra tutto**. 
-    
+
     - Centro sicurezza e conformità:
         - **Classificazione** > **Etichette di riservatezza**
 
 2. Selezionare la scheda **Criteri etichetta** e quindi **Pubblica etichette** per avviare la creazione guidata criterio:
-    
+
     Ad esempio, dal Centro conformità Microsoft 365:
-        
+
     ![Pubblica etichette](../media/publish-sensitivity-labels-full.png)
-    
+
     > [!NOTE]
     > Per impostazione predefinita, i tenant non hanno criteri di etichetta ed è necessario crearli. 
 
 3. Nella procedura guidata selezionare **Scegliere le etichette di riservatezza da pubblicare**. Selezionare le etichette che si vogliono rendere disponibili nelle app e per i servizi e quindi selezionare **Aggiungi**.
-    
+
     > [!IMPORTANT]
     > Se si seleziona una etichetta secondaria, accertarsi di selezionare anche l'etichetta padre.
-    
+
 4. Rivedere le etichette selezionate e selezionare **Modifica** se si vogliono apportare modifiche. Altrimenti selezionare **Avanti**.
 
 5. Seguire le istruzioni visualizzate per configurare le impostazioni del criterio.
-    
+
     Le impostazioni del criterio che viene visualizzato corrispondono all'ambito delle etichette selezionate. Ad esempio, se sono state selezionate etichette che dispongono unicamente dell'ambito **File e messaggi di posta elettronica**, non vengono visualizzate le impostazioni di criteri **Applica questa etichetta per impostazione predefinita a gruppi e siti** e **Richiedi agli utenti di applicare un'etichetta a gruppi e siti**.
-    
+
     Per altre informazioni su queste impostazioni, vedere [Operazioni eseguibili dai criteri di etichetta](sensitivity-labels.md#what-label-policies-can-do) nelle informazioni di panoramica e usare le indicazioni nella procedura guidata per le singole impostazioni.
-    
+
     Per le etichette configurate per gli **asset di Azure Purview (anteprima)**: queste etichette non sono associate ad alcuna impostazione di criteri.
 
-7. Ripetere questi passaggi se sono necessarie impostazioni del criterio diverse per utenti o ambiti differenti. Ad esempio, possono essere necessarie altre etichette per un gruppo di utenti oppure un'etichetta predefinita diversa per un sottoinsieme di utenti. In alternativa, se sono state configurate etichette con diversi ambiti.
+6. Ripetere questi passaggi se sono necessarie impostazioni del criterio diverse per utenti o ambiti differenti. Ad esempio, possono essere necessarie altre etichette per un gruppo di utenti oppure un'etichetta predefinita diversa per un sottoinsieme di utenti. In alternativa, se sono state configurate etichette con diversi ambiti.
 
-8. Se si creano più criteri di etichetta che potrebbero comportare un conflitto per un utente, rivedere l'ordine dei criteri e, se necessario, spostarli verso l'alto o verso il basso. Per modificare l'ordine di un criterio di etichetta selezionare **...** per **Altre azioni**, quindi selezionare **Sposta su** o **Sposta giù**. Per altre informazioni, vedere [Priorità dei criteri di etichetta (l'ordine è importante)](sensitivity-labels.md#label-policy-priority-order-matters) nelle informazioni generali.
+7. Se si creano più criteri di etichetta che potrebbero comportare un conflitto per un utente, rivedere l'ordine dei criteri e, se necessario, spostarli verso l'alto o verso il basso. Per modificare l'ordine di un criterio di etichetta selezionare **...** per **Altre azioni**, quindi selezionare **Sposta su** o **Sposta giù**. Per altre informazioni, vedere [Priorità dei criteri di etichetta (l'ordine è importante)](sensitivity-labels.md#label-policy-priority-order-matters) nelle informazioni generali.
 
 Completando la procedura guidata, il criterio di etichetta viene pubblicato automaticamente. Per apportare modifiche a un criterio pubblicato, basta modificarlo. Non è necessario selezionare una specifica azione di pubblicazione o ripubblicazione.
 

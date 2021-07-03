@@ -1,6 +1,6 @@
 ---
 title: API per gli eventi imprevisti di aggiornamento
-description: Scopri come aggiornare gli eventi imprevisti con Microsoft 365 Defender API
+description: Informazioni su come aggiornare gli eventi imprevisti usando l Microsoft 365 Defender API
 keywords: aggiornamento, api, evento imprevisto
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: b50fe4672dd4cd721464c7414297efcc4a4921b7
-ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
+ms.openlocfilehash: 60f1209331862eb21d3b1949265f0873dcf2e5a7
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52861504"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287820"
 ---
 # <a name="update-incidents-api"></a>API per gli eventi imprevisti di aggiornamento
 
@@ -51,7 +51,7 @@ Se la richiesta viene limitato, restituirà un codice `429` di risposta. Il corp
 
 ## <a name="permissions"></a>Autorizzazioni
 
-Per chiamare questa API è necessaria una delle autorizzazioni seguenti. Per altre informazioni, inclusa la scelta delle autorizzazioni, [vedi Accedere alle API Microsoft 365 Defender](api-access.md).
+Per chiamare questa API è necessaria una delle autorizzazioni seguenti. Per altre informazioni, inclusa la scelta delle autorizzazioni, [vedi Accedere alle API Microsoft 365 Defender sicurezza](api-access.md).
 
 Tipo di autorizzazione | Autorizzazione | Nome visualizzato autorizzazione
 -|-|-
@@ -69,7 +69,7 @@ PATCH /api/incidents/{id}
 
 ## <a name="request-headers"></a>Intestazioni di richiesta
 
-Name | Tipo | Descrizione
+Nome | Tipo | Descrizione
 -|-|-
 Autorizzazione | Stringa | Bearer {token}. **Obbligatorio**.
 Content-Type | Stringa | application/json. **Obbligatorio**.

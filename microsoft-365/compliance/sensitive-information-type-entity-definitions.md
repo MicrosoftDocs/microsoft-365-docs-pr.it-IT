@@ -19,12 +19,12 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: Sono disponibili 200 tipi di informazioni riservate che possono essere utilizzati nei criteri DLP. Questo articolo elenca tutti questi tipi di informazioni riservate e mostra cosa cerca un criterio DLP quando rileva ogni tipo.
-ms.openlocfilehash: 4efa411f7cc34b4116cc418e328e5c3f7545f788
-ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
+ms.openlocfilehash: 614649367e72766d8df210fccbb4e3cdc9cdb4b6
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52789220"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287468"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>Definizioni delle entità tipo di informazioni sensibili
 
@@ -36,7 +36,7 @@ In questo articolo vengono elencate tutte le definizioni di entità del tipo di 
 
 nove cifre che possono essere formattate o non formattate
 
-### <a name="pattern"></a>Criterio
+### <a name="pattern"></a>Modello
 
 - due cifre negli intervalli 00-12, 21-32, 61-72 o 80
 - due cifre
@@ -100,7 +100,7 @@ Un criterio DLP ha una bassa probabilità che sia stato rilevato questo tipo di 
 
 Otto cifre con o senza punti
 
-### <a name="pattern"></a>Criterio
+### <a name="pattern"></a>Modello
 
 Otto cifre
 - due cifre
@@ -133,23 +133,23 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 
 #### <a name="keyword_argentina_national_id"></a>Keyword_argentina_national_id
 
-- Argentina - Numero di identità nazionale 
-- cedula 
-- cédula 
-- dni 
-- documento nacional de identidad 
-- documento número 
-- documento numero 
-- registro nacional de las personas 
-- rnp 
-   
+- Argentina - Numero di identità nazionale
+- cedula
+- cédula
+- dni
+- documento nacional de identidad
+- documento número
+- documento numero
+- registro nacional de las personas
+- rnp
+
 ## <a name="argentina-unique-tax-identification-key-cuitcuil"></a>Codice identificativo fiscale univoco argentina (CUIT/CUIL)
 
 ### <a name="format"></a>Formato
 
 11 cifre con trattino
 
-### <a name="pattern"></a>Criterio
+### <a name="pattern"></a>Modello
 
 11 cifre con un trattino:
 - due cifre in 20, 23, 24, 27, 30, 33 o 34
@@ -224,21 +224,21 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 - tax identification
 - Número de Identificación Fiscal
 - número de contribuyente
-   
-   
+
+
 ## <a name="australia-bank-account-number"></a>Numero di conto corrente bancario Australia
 
 ### <a name="format"></a>Formato
 
 da sei a 10 cifre con o senza un numero di filiale dello stato della banca
 
-### <a name="pattern"></a>Criterio
+### <a name="pattern"></a>Modello
 
 Il numero di account è da 6 a 10 cifre.
 
 Numero BSB australiano:
-- tre cifre 
-- un trattino 
+- tre cifre
+- un trattino
 - tre cifre
 
 ### <a name="checksum"></a>Checksum
@@ -303,7 +303,7 @@ Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 
 11 cifre con delimitatori facoltativi
 
-### <a name="pattern"></a>Criterio
+### <a name="pattern"></a>Modello
 
 11 cifre con delimitatori facoltativi:
 
@@ -364,7 +364,7 @@ Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 
 nove cifre con delimitatori
 
-### <a name="pattern"></a>Criterio
+### <a name="pattern"></a>Modello
 
 nove cifre con delimitatori:
 
@@ -418,17 +418,17 @@ Un criterio DLP ha una bassa probabilità che sia stato rilevato questo tipo di 
 
 nove lettere e cifre
 
-### <a name="pattern"></a>Criterio
+### <a name="pattern"></a>Modello
 
-nove lettere e cifre: 
+nove lettere e cifre:
 
-- due cifre o lettere (senza distinzione tra maiuscole e minuscole) 
-- due cifre 
+- due cifre o lettere (senza distinzione tra maiuscole e minuscole)
+- due cifre
 - cinque cifre o lettere (senza distinzione tra maiuscole e minuscole)
 
 OPPURE
 
-- da una a due lettere facoltative (senza distinzione tra maiuscole e minuscole) 
+- da una a due lettere facoltative (senza distinzione tra maiuscole e minuscole)
 - da quattro a nove cifre
 
 OPPURE
@@ -525,7 +525,7 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 - Driver's Lic#
 - Driver's Lics#
 - Driver's Licence#
-- Driver's Licences# 
+- Driver's Licences#
 
 #### <a name="keyword_australia_drivers_license_number_exclusions"></a>Keyword_australia_drivers_license_number_exclusions
 
@@ -562,14 +562,14 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 - Driver'sLicenses #
 - Driver's License#
 - Driver's Licenses#
-   
+
 ## <a name="australia-medical-account-number"></a>Numero di conto medico Australia
 
 ### <a name="format"></a>Formato
 
 10-11 cifre
 
-### <a name="pattern"></a>Criterio
+### <a name="pattern"></a>Modello
 
 10-11 cifre:
 - La prima cifra è compresa nell'intervallo 2-6
@@ -613,14 +613,14 @@ Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di
 - local service
 - medicare
 
-   
+
 ## <a name="australia-passport-number"></a>Numero di passaporto australiano
 
 ### <a name="format"></a>Formato
 
-otto o nove caratteri alfanumerici 
+otto o nove caratteri alfanumerici
 
-### <a name="pattern"></a>Criterio
+### <a name="pattern"></a>Modello
 
 - una lettera (N, E, D, F, A, C, U, X) seguita da sette cifre o
 - Due lettere (PA, PB, PC, PD, PE, PF, PU, PW, PX, PZ) seguite da sette cifre.
@@ -648,7 +648,7 @@ Un criterio DLP ha una bassa probabilità che sia stato rilevato questo tipo di 
       <Pattern confidenceLevel="65">
         <IdMatch idRef="Regex_australia_passport_number" />
       </Pattern>
-    </Entity>  
+    </Entity>
 ```
 
 ### <a name="keywords"></a>Parole chiave
@@ -680,13 +680,13 @@ Un criterio DLP ha una bassa probabilità che sia stato rilevato questo tipo di 
 
 da otto a nove cifre
 
-### <a name="pattern"></a>Criterio
+### <a name="pattern"></a>Modello
 
 da otto a nove cifre in genere presentate con spazi come segue:
-- tre cifre 
-- uno spazio facoltativo 
-- tre cifre 
-- uno spazio facoltativo 
+- tre cifre
+- uno spazio facoltativo
+- tre cifre
+- uno spazio facoltativo
 - da due a tre cifre in cui l'ultima cifra è una cifra di controllo
 
 ### <a name="checksum"></a>Checksum
@@ -729,22 +729,22 @@ Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di
 ### <a name="format"></a>Formato
 
 otto cifre senza spazi e delimitatori
-  
-### <a name="pattern"></a>Criterio
+
+### <a name="pattern"></a>Modello
 
 otto cifre
-  
+
 ### <a name="checksum"></a>Checksum
 
 No
-  
+
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-  
-- L'espressione  `Regex_austria_eu_driver's_license_number` regolare trova contenuto che corrisponde al modello. 
-- Viene trovata una  `Keywords_eu_driver's_license_number` parola chiave da o `Keywords_austria_eu_driver's_license_number` . 
-    
+
+- L'espressione  `Regex_austria_eu_driver's_license_number` regolare trova contenuto che corrisponde al modello.
+- Viene trovata una  `Keywords_eu_driver's_license_number` parola chiave da o `Keywords_austria_eu_driver's_license_number` .
+
 ```xml
       <!-- Austria Driver's License Number -->
       <Entity id="682f18ce-44eb-482b-8198-2bcb96a0761e" patternsProximity="300" recommendedConfidence="75">
@@ -901,26 +901,26 @@ Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 ### <a name="format"></a>Formato
 
 Una combinazione di 24 caratteri di lettere, cifre e caratteri speciali
-  
-### <a name="pattern"></a>Criterio
+
+### <a name="pattern"></a>Modello
 
 24 caratteri:
-  
--  22 lettere (senza distinzione tra maiuscole e minuscole), cifre, barre rovesciate, barre o segni più 
-    
+
+-  22 lettere (senza distinzione tra maiuscole e minuscole), cifre, barre rovesciate, barre o segni più
+
 - due lettere (senza distinzione tra maiuscole e minuscole), cifre, barre rovesciate, barre, segni più o segni di uguale
-    
+
 ### <a name="checksum"></a>Checksum
 
 Non applicabile
-  
+
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-  
-- L'espressione  `Regex_austria_eu_national_id_card` regolare trova contenuto che corrisponde al modello. 
-- Viene trovata una parola  `Keywords_austria_eu_national_id_card` chiave from. 
-   
+
+- L'espressione  `Regex_austria_eu_national_id_card` regolare trova contenuto che corrisponde al modello.
+- Viene trovata una parola  `Keywords_austria_eu_national_id_card` chiave from.
+
 ```xml
       <!-- Austria Identity Card -->
       <Entity id="5ec06c3b-007e-4820-8343-7ff73b889735" patternsProximity="300" recommendedConfidence="75">
@@ -944,30 +944,30 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 ### <a name="format"></a>Formato
 
 Una lettera seguita da uno spazio facoltativo e sette cifre
-  
-### <a name="pattern"></a>Criterio
+
+### <a name="pattern"></a>Modello
 
 Combinazione di una lettera, sette cifre e uno spazio:
-  
+
 - una lettera (senza distinzione tra maiuscole e minuscole)
 - uno spazio (facoltativo)
 - sette cifre
-    
+
 ### <a name="checksum"></a>Checksum
 
 non applicabile
-  
+
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-- L'espressione  `Regex_austria_eu_passport_number` regolare trova contenuto che corrisponde al modello. 
-- Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_austria_eu_passport_number` . 
+- L'espressione  `Regex_austria_eu_passport_number` regolare trova contenuto che corrisponde al modello.
+- Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_austria_eu_passport_number` .
 - L'espressione `Regex_eu_passport_date1` regolare trova la data nel formato GG.MM.AAAA o viene trovata una parola chiave `Keywords_eu_passport_date` da
 
 Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-- L'espressione  `Regex_austria_eu_passport_number` regolare trova contenuto che corrisponde al modello. 
-- Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_austria_eu_passport_number` . 
-    
+- L'espressione  `Regex_austria_eu_passport_number` regolare trova contenuto che corrisponde al modello.
+- Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_austria_eu_passport_number` .
+
 ```xml
       <!-- Austria Passport Number -->
       <Entity id="1c96ae4e-303b-447d-86c7-77113ac266bf" patternsProximity="300" recommendedConfidence="75">
@@ -1011,7 +1011,7 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 
 - reisepassnummer
 - reisepasse
-- No-Reisepass 
+- No-Reisepass
 - Nr-Reisepass
 - Reisepass-Nr
 - Passnummer
@@ -1027,28 +1027,28 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 ### <a name="format"></a>Formato
 
 10 cifre nel formato specificato
-  
-### <a name="pattern"></a>Criterio
+
+### <a name="pattern"></a>Modello
 
 10 cifre:
-  
-- tre cifre che corrispondono a un numero di serie 
+
+- tre cifre che corrispondono a un numero di serie
 - una cifra di controllo
 - sei cifre che corrispondono alla data di nascita (DDMMYY)
-    
+
 ### <a name="checksum"></a>Checksum
 
 Sì
-  
+
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-- La funzione  `Func_austria_eu_ssn_or_equivalent` trova contenuto che corrisponde al modello. 
-- viene trovata una  `Keywords_austria_eu_ssn_or_equivalent` parola chiave da. 
-    
+- La funzione  `Func_austria_eu_ssn_or_equivalent` trova contenuto che corrisponde al modello.
+- viene trovata una  `Keywords_austria_eu_ssn_or_equivalent` parola chiave da.
+
 Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-- La funzione  `Func_austria_eu_ssn_or_equivalent` trova contenuto che corrisponde al modello. 
-    
+- La funzione  `Func_austria_eu_ssn_or_equivalent` trova contenuto che corrisponde al modello.
+
 ```xml
       <!-- Austria Social Security Number -->
       <Entity id="6896a906-86c9-4d19-a2da-6e43ccd19b7b" patternsProximity="300" recommendedConfidence="85">
@@ -1099,30 +1099,30 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 ### <a name="format"></a>Formato
 
 nove cifre con trattino facoltativo e barra
-  
-### <a name="pattern"></a>Criterio
+
+### <a name="pattern"></a>Modello
 
 nove cifre con trattino facoltativo e barra:
-  
+
 - due cifre
 - un trattino (facoltativo)
 - tre cifre
 - una barra (facoltativo)
 - quattro cifre
-    
+
 ### <a name="checksum"></a>Checksum
 
 Sì
-  
+
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-- La funzione  `Func_austria_eu_tax_file_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola  `Keywords_austria_eu_tax_file_number` chiave from. 
-    
+- La funzione  `Func_austria_eu_tax_file_number` trova contenuto che corrisponde al modello.
+- Viene trovata una parola  `Keywords_austria_eu_tax_file_number` chiave from.
+
 Un criterio DLP ha una bassa probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-- La funzione  `Func_austria_eu_tax_file_number` trova contenuto che corrisponde al modello. 
-    
+- La funzione  `Func_austria_eu_tax_file_number` trova contenuto che corrisponde al modello.
+
 ```xml
       <!-- Austria Tax Identification Number -->
       <Entity id="4fd58d22-af28-4451-b18a-6f722430a56d" patternsProximity="300" recommendedConfidence="85">
@@ -1160,7 +1160,7 @@ Un criterio DLP ha una bassa probabilità che sia stato rilevato questo tipo di 
 - tin no
 - tin #
 - tax number
- 
+
 ## <a name="austria-value-added-tax"></a>Imposta sul valore aggiunto dell'Austria
 Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 - criteri di prevenzione della perdita di dati
@@ -1173,7 +1173,7 @@ Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 
 Motivo alfanumerico a 11 caratteri
 
-### <a name="pattern"></a>Criterio
+### <a name="pattern"></a>Modello
 
 Motivo alfanumerico di 11 caratteri:
 
@@ -1240,7 +1240,7 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 
 La stringa "DocumentDb" seguita dai caratteri e dalle stringhe descritti nel modello seguente.
 
-### <a name="pattern"></a>Criterio
+### <a name="pattern"></a>Modello
 
 - Stringa "DocumentDb"
 - Qualsiasi combinazione di 3-200 lettere minuscole o maiuscole, cifre, simboli, caratteri speciali o spazi
@@ -1292,7 +1292,7 @@ Tecnicamente, questo tipo di informazioni riservate identifica queste parole chi
 
 Stringa "Server", "server" o "origine dati" seguita dai caratteri e dalle stringhe descritti nel modello seguente, inclusa la stringa "cloudapp.azure.<!--no-hyperlink-->com" o "cloudapp.azure.<!--no-hyperlink-->net" o "database.windows.<!--no-hyperlink-->net" e la stringa "Password" o "password" o "pwd".
 
-### <a name="pattern"></a>Criterio
+### <a name="pattern"></a>Modello
 
 - la stringa "Server", "server" o "origine dati"
 - da zero a due spazi vuoti
@@ -1352,7 +1352,7 @@ Tecnicamente, questo tipo di informazioni riservate identifica queste parole chi
 
 La stringa "HostName" seguita dai caratteri e dalle stringhe descritti nel modello seguente, incluse le stringhe "azure-devices.<!--no-hyperlink-->net" e "SharedAccessKey".
 
-### <a name="pattern"></a>Criterio
+### <a name="pattern"></a>Modello
 
 - la stringa "HostName"
 - da zero a due spazi vuoti
@@ -1412,7 +1412,7 @@ Tecnicamente, questo tipo di informazioni riservate identifica queste parole chi
 
 Stringa "userpwd=" seguita da una stringa alfanumerica.
 
-### <a name="pattern"></a>Criterio
+### <a name="pattern"></a>Modello
 
 - la stringa "userpwd="
 - qualsiasi combinazione di 60 lettere minuscole o cifre
@@ -1463,7 +1463,7 @@ Tecnicamente, questo tipo di informazioni riservate identifica queste parole chi
 
 Stringa "redis.cache.windows.<!--no-hyperlink-->net" seguito dai caratteri e dalle stringhe descritti nel modello seguente, inclusa la stringa "password" o "pwd".
 
-### <a name="pattern"></a>Criterio
+### <a name="pattern"></a>Modello
 
 - la stringa "redis.cache.windows.<!--no-hyperlink-->net"
 - qualsiasi combinazione di 1-200 lettere minuscole o maiuscole, cifre, simboli, caratteri speciali o spazi
@@ -1518,7 +1518,7 @@ Tecnicamente, questo tipo di informazioni riservate identifica queste parole chi
 
 La stringa "sig" seguita dai caratteri e dalle stringhe delineati nel modello seguente.
 
-### <a name="pattern"></a>Criterio
+### <a name="pattern"></a>Modello
 
 - la stringa "sig"
 - da zero a due spazi vuoti
@@ -1552,7 +1552,7 @@ Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di
 
 La stringa "EndPoint" seguita dai caratteri e dalle stringhe descritti nel modello seguente, incluse le stringhe "servicebus.windows.<!--no-hyperlink-->net" e "SharedAccesKey".
 
-### <a name="pattern"></a>Criterio
+### <a name="pattern"></a>Modello
 
 - la stringa "EndPoint"
 - da zero a due spazi vuoti
@@ -1612,7 +1612,7 @@ Tecnicamente, questo tipo di informazioni riservate identifica queste parole chi
 
 Stringa "DefaultEndpointsProtocol" seguita dai caratteri e dalle stringhe descritti nel modello seguente, inclusa la stringa "AccountKey".
 
-### <a name="pattern"></a>Criterio
+### <a name="pattern"></a>Modello
 
 - la stringa "DefaultEndpointsProtocol"
 - da zero a due spazi vuoti
@@ -1678,7 +1678,7 @@ Tecnicamente, questo tipo di informazioni riservate identifica queste parole chi
 
 Qualsiasi combinazione di 86 lettere minuscole o maiuscole, cifre, barra (/) o segno più (+), preceduta o seguita dai caratteri indicati nel modello seguente.
 
-### <a name="pattern"></a>Criterio
+### <a name="pattern"></a>Modello
 
 - da zero a uno dei simboli di maggiore di (>), apostrofo ('), segno di uguale (=), virgolette (") o simbolo di numero (#)
 - qualsiasi combinazione di 86 caratteri minuscoli o maiuscoli, cifre, barra (/) o segno più (+)
@@ -1706,21 +1706,21 @@ Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di
 ### <a name="format"></a>Formato
 
 10 cifre senza spazi e delimitatori
-  
-### <a name="pattern"></a>Criterio
+
+### <a name="pattern"></a>Modello
 
 10 cifre
-  
+
 ### <a name="checksum"></a>Checksum
 
 No
-  
+
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-- L'espressione  `Regex_belgium_eu_driver's_license_number` regolare trova contenuto che corrisponde al modello. 
+- L'espressione  `Regex_belgium_eu_driver's_license_number` regolare trova contenuto che corrisponde al modello.
 - Viene trovata una `Keywords_eu_driver's_license_number` parola chiave da o `Keywords_belgium_eu_driver's_license_number` .
-    
+
 ```xml
       <!-- Belgium Driver's License Number -->
       <Entity id="d89fd329-9324-433c-b687-2c37bd5166f3" patternsProximity="300" recommendedConfidence="75">
@@ -1879,13 +1879,13 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 
 11 cifre più delimitatori facoltativi
 
-### <a name="pattern"></a>Criterio
+### <a name="pattern"></a>Modello
 
 11 cifre più delimitatori:
-- sei cifre e due punti facoltativi nel formato AA. MM.DD per la data di nascita 
-- Delimitatore facoltativo da punto, trattino, spazio 
-- tre cifre sequenziali (dispari per i maschi, anche per le femmine) 
-- Delimitatore facoltativo da punto, trattino, spazio 
+- sei cifre e due punti facoltativi nel formato AA. MM.DD per la data di nascita
+- Delimitatore facoltativo da punto, trattino, spazio
+- tre cifre sequenziali (dispari per i maschi, anche per le femmine)
+- Delimitatore facoltativo da punto, trattino, spazio
 - due cifre di controllo
 
 ### <a name="checksum"></a>Checksum
@@ -1982,25 +1982,25 @@ Un criterio DLP ha una bassa probabilità che sia stato rilevato questo tipo di 
 ### <a name="format"></a>Formato
 
 due lettere seguite da sei cifre senza spazi o delimitatori
-  
-### <a name="pattern"></a>Criterio
+
+### <a name="pattern"></a>Modello
 
 due lettere e seguito da sei cifre
-  
+
 ### <a name="checksum"></a>Checksum
 
 non applicabile
-  
+
 ### <a name="definition"></a>Definizione
 
  Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-- L'espressione  `Regex_belgium_eu_passport_number` regolare trova contenuto che corrisponde al modello. 
-- Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_belgium_eu_passport_number` . 
+- L'espressione  `Regex_belgium_eu_passport_number` regolare trova contenuto che corrisponde al modello.
+- Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_belgium_eu_passport_number` .
 - L'espressione `Regex_eu_passport_date2` regolare trova la data nel formato GG MM AA o una parola chiave da o viene `Keywords_eu_passport_date` `Keywords_belgium_eu_passport_number` trovata
 
 Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-- L'espressione  `Regex_belgium_eu_passport_number` regolare trova contenuto che corrisponde al modello. 
-- Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_belgium_eu_passport_number` . 
+- L'espressione  `Regex_belgium_eu_passport_number` regolare trova contenuto che corrisponde al modello.
+- Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_belgium_eu_passport_number` .
 
 ```xml
       <!-- Belgium Passport Number -->
@@ -2073,7 +2073,7 @@ Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 
 Motivo alfanumerico a 12 caratteri
 
-### <a name="pattern"></a>Criterio
+### <a name="pattern"></a>Modello
 
 Motivo alfanumerico a 12 caratteri:
 
@@ -2135,7 +2135,7 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 
 11 cifre che includono una cifra di controllo e possono essere formattate o non formattate
 
-### <a name="pattern"></a>Criterio
+### <a name="pattern"></a>Modello
 
 Formattato:
 - tre cifre
@@ -2185,31 +2185,31 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 - Identificazione
 - Registrazione
 - Ricavi
-- Cadastro de Pessoas Físicas 
-- Imposto 
-- Identificação 
-- Inscrição 
-- Receita 
+- Cadastro de Pessoas Físicas
+- Imposto
+- Identificação
+- Inscrição
+- Receita
 
-   
+
 ## <a name="brazil-legal-entity-number-cnpj"></a>Numero della persona giuridica del Brasile (CNPJ)
 
 ### <a name="format"></a>Formato
 
 14 cifre che includono il numero di registrazione, il codice della filiale, le cifre di controllo e i delimitatori
 
-### <a name="pattern"></a>Criterio
+### <a name="pattern"></a>Modello
 
 14 cifre più delimitatori:
 
-- due cifre 
-- un punto 
-- tre cifre 
-- un punto 
-- tre cifre (queste prime otto cifre sono il numero di registrazione) 
-- una barra 
-- Numero di ramo a quattro cifre 
-- un trattino 
+- due cifre
+- un punto
+- tre cifre
+- un punto
+- tre cifre (queste prime otto cifre sono il numero di registrazione)
+- una barra
+- Numero di ramo a quattro cifre
+- un trattino
 - due cifre che sono cifre di controllo
 
 ### <a name="checksum"></a>Checksum
@@ -2244,27 +2244,27 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 
 #### <a name="keyword_brazil_cnpj"></a>Keyword_brazil_cnpj
 
-- CNPJ 
-- CNPJ/MF 
-- CNPJ-MF 
-- Codice fiscale persone giuridiche 
-- Registro contribuenti 
-- Persona giuridica 
-- Persone giuridiche 
-- Stato della registrazione 
-- Business 
+- CNPJ
+- CNPJ/MF
+- CNPJ-MF
+- Codice fiscale persone giuridiche
+- Registro contribuenti
+- Persona giuridica
+- Persone giuridiche
+- Stato della registrazione
+- Business
 - Company
-- CNPJ 
-- Cadastro Nacional da Pessoa Jurídica 
-- Cadastro Geral de Contribuintes 
-- CGC 
-- Pessoa jurídica 
-- Pessoas jurídicas 
-- Situação cadastral 
-- Inscrição 
-- Empresa 
+- CNPJ
+- Cadastro Nacional da Pessoa Jurídica
+- Cadastro Geral de Contribuintes
+- CGC
+- Pessoa jurídica
+- Pessoas jurídicas
+- Situação cadastral
+- Inscrição
+- Empresa
 
-   
+
 ## <a name="brazil-national-identification-card-rg"></a>Carta di identità nazionale (RG) del Brasile
 
 ### <a name="format"></a>Formato
@@ -2273,20 +2273,20 @@ Registro Geral (formato precedente): nove cifre
 
 Registro de Identidade (RIC) (nuovo formato): 11 cifre
 
-### <a name="pattern"></a>Criterio
+### <a name="pattern"></a>Modello
 
 Registro Geral (formato precedente):
-- due cifre 
-- un punto 
-- tre cifre 
-- un punto 
-- tre cifre 
-- un trattino 
+- due cifre
+- un punto
+- tre cifre
+- un punto
+- tre cifre
+- un trattino
 - una cifra che è una cifra di controllo
 
 Registro de Identidade (RIC) (nuovo formato):
-- 10 cifre 
-- un trattino 
+- 10 cifre
+- un trattino
 - una cifra che è una cifra di controllo
 
 ### <a name="checksum"></a>Checksum
@@ -2317,12 +2317,12 @@ Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di
 
 - Cédula de identidade
 - carta di identità
-- national id 
+- national id
 - número de rregistro
-- registro de Iidentidade 
+- registro de Iidentidade
 - registro geral
-- RG (questa parola chiave fa distinzione tra maiuscole e minuscole) 
-- RIC (questa parola chiave fa distinzione tra maiuscole e minuscole) 
+- RG (questa parola chiave fa distinzione tra maiuscole e minuscole)
+- RIC (questa parola chiave fa distinzione tra maiuscole e minuscole)
 
 
 ## <a name="bulgaria-drivers-license-number"></a>Numero di patente di guida bulgaria
@@ -2330,21 +2330,21 @@ Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di
 ### <a name="format"></a>Formato
 
 nove cifre senza spazi e delimitatori
-  
-### <a name="pattern"></a>Criterio
+
+### <a name="pattern"></a>Modello
 
 nove cifre
-  
+
 ### <a name="checksum"></a>Checksum
 
 No
-  
+
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-- L'espressione  `Regex_bulgaria_eu_driver's_license_number` regolare trova contenuto che corrisponde al modello. 
-- Viene trovata una  `Keywords_eu_driver's_license_number` parola chiave da o `Keywords_bulgaria_eu_driver's_license_number` . 
-    
+- L'espressione  `Regex_bulgaria_eu_driver's_license_number` regolare trova contenuto che corrisponde al modello.
+- Viene trovata una  `Keywords_eu_driver's_license_number` parola chiave da o `Keywords_bulgaria_eu_driver's_license_number` .
+
 ```xml
       <!-- Bulgaria Driver's License Number -->
       <Entity id="66d39258-94c2-43b2-804b-aa312258e54b" patternsProximity="300" recommendedConfidence="75">
@@ -2355,7 +2355,7 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
             <Match idRef="Keywords_bulgaria_eu_driver's_license_number" />
           </Any>
         </Pattern>
-      </Entity>    
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Parole chiave
@@ -2501,12 +2501,12 @@ Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 ### <a name="format"></a>Formato
 
 10 cifre senza spazi e delimitatori
-  
-### <a name="pattern"></a>Criterio
+
+### <a name="pattern"></a>Modello
 
 10 cifre senza spazi e delimitatori
-  
-- sei cifre che corrispondono alla data di nascita (AAMMDD) 
+
+- sei cifre che corrispondono alla data di nascita (AAMMDD)
 - due cifre che corrispondono all'ordine di nascita
 - una cifra che corrisponde al sesso: una cifra pari per il maschio e una cifra dispari per la donna
 - una cifra di controllo
@@ -2514,16 +2514,16 @@ Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 ### <a name="checksum"></a>Checksum
 
 Sì
-  
+
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-- La funzione  `Func_bulgaria_eu_national_id_card` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola  `Keywords_bulgaria_eu_national_id_card` chiave from. 
+- La funzione  `Func_bulgaria_eu_national_id_card` trova contenuto che corrisponde al modello.
+- Viene trovata una parola  `Keywords_bulgaria_eu_national_id_card` chiave from.
 
 Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-- La funzione  `Func_bulgaria_eu_national_id_card` trova contenuto che corrisponde al modello. 
-    
+- La funzione  `Func_bulgaria_eu_national_id_card` trova contenuto che corrisponde al modello.
+
 ```xml
       <!-- Bulgaria Uniform Civil Number -->
       <Entity id="100d58b1-0a35-4fb1-aa89-e4a86fb53fcc" patternsProximity="300" recommendedConfidence="85">
@@ -2594,25 +2594,25 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 ### <a name="format"></a>Formato
 
 nove cifre senza spazi e delimitatori
-  
-### <a name="pattern"></a>Criterio
 
-nove cifre 
-  
+### <a name="pattern"></a>Modello
+
+nove cifre
+
 ### <a name="checksum"></a>Checksum
 
 No
-  
+
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-- L'espressione  `Regex_bulgaria_eu_passport_number` regolare trova contenuto che corrisponde al modello. 
-- Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_bulgaria_eu_passport_number` . 
+- L'espressione  `Regex_bulgaria_eu_passport_number` regolare trova contenuto che corrisponde al modello.
+- Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_bulgaria_eu_passport_number` .
 - L'espressione `Regex_eu_passport_date1` regolare trova la data nel formato GG.MM.AAAA o viene trovata una parola chiave `Keywords_eu_passport_date` da
 
 Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-- L'espressione  `Regex_bulgaria_eu_passport_number` regolare trova contenuto che corrisponde al modello. 
-- Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_bulgaria_eu_passport_number` . 
+- L'espressione  `Regex_bulgaria_eu_passport_number` regolare trova contenuto che corrisponde al modello.
+- Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_bulgaria_eu_passport_number` .
 
 ```xml
       <!-- Bulgaria Passport Number -->
@@ -2669,15 +2669,15 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 
 7 o 12 cifre
 
-### <a name="pattern"></a>Criterio
+### <a name="pattern"></a>Modello
 
 Un numero di conto corrente bancario canadese è di 7 o 12 cifre.
 
 Un numero di transito bancario canadese comprende:
-- cinque cifre 
-- un trattino 
+- cinque cifre
+- un trattino
 - tre cifre OR
-- zero "0" 
+- zero "0"
 - otto cifre
 
 ### <a name="checksum"></a>Checksum
@@ -2736,14 +2736,14 @@ Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di
 - banking information
 - direct deposit
 
-   
+
 ## <a name="canada-drivers-license-number"></a>Canada - Numero di patente di guida
 
 ### <a name="format"></a>Formato
 
 Varia in base alla provincia
 
-### <a name="pattern"></a>Criterio
+### <a name="pattern"></a>Modello
 
 Vari modelli che coprono:
 - Alberta
@@ -2901,77 +2901,77 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 - identification #s
 - identification card
 - identification cards
-- identificazione 
+- identificazione
 - DL #
-- DLS # 
-- CDL # 
-- CDLS # 
-- DriverLic # 
-- DriverLics # 
-- DriverLicense # 
-- DriverLicenses # 
-- DriverLicence # 
-- DriverLicences # 
+- DLS #
+- CDL #
+- CDLS #
+- DriverLic #
+- DriverLics #
+- DriverLicense #
+- DriverLicenses #
+- DriverLicence #
+- DriverLicences #
 - Driver Lic#
-- Driver Lics# 
-- Driver License# 
-- Driver Licenses# 
-- Driver License# 
-- Driver Licences# 
-- DriversLic # 
-- DriversLics # 
-- DriversLicense # 
-- DriversLicenses # 
-- DriversLicence # 
-- DriversLicences # 
-- Drivers Lic# 
-- Drivers Lics# 
-- Drivers License# 
-- Drivers Licenses# 
-- Drivers Licence# 
-- Drivers Licences# 
-- Driver'Lic # 
-- Driver'Lics # 
-- Driver'License # 
-- Driver'Licenses # 
-- Patente di guida # 
-- Patenti di guida # 
-- Driver' Lic# 
-- Driver' Lics# 
-- Driver' License# 
-- Driver' Licenses# 
-- Driver' Licence# 
-- Driver' Licences# 
-- Driver'sLic # 
-- Driver'sLics # 
-- Driver'sLicense # 
-- Driver'sLicenses # 
-- Driver'sLicence # 
-- Driver'sLicences # 
-- Driver's Lic# 
-- Driver's Lics# 
-- Driver's License# 
-- Driver's Licenses# 
-- Driver's Licence# 
-- Driver's Licences# 
-- Permis de Conduire# 
-- id # 
-- ids # 
-- idcard card# 
-- idcard cards# 
-- idcard # 
-- identification card# 
-- identification cards# 
-- identificazione # 
+- Driver Lics#
+- Driver License#
+- Driver Licenses#
+- Driver License#
+- Driver Licences#
+- DriversLic #
+- DriversLics #
+- DriversLicense #
+- DriversLicenses #
+- DriversLicence #
+- DriversLicences #
+- Drivers Lic#
+- Drivers Lics#
+- Drivers License#
+- Drivers Licenses#
+- Drivers Licence#
+- Drivers Licences#
+- Driver'Lic #
+- Driver'Lics #
+- Driver'License #
+- Driver'Licenses #
+- Patente di guida #
+- Patenti di guida #
+- Driver' Lic#
+- Driver' Lics#
+- Driver' License#
+- Driver' Licenses#
+- Driver' Licence#
+- Driver' Licences#
+- Driver'sLic #
+- Driver'sLics #
+- Driver'sLicense #
+- Driver'sLicenses #
+- Driver'sLicence #
+- Driver'sLicences #
+- Driver's Lic#
+- Driver's Lics#
+- Driver's License#
+- Driver's Licenses#
+- Driver's Licence#
+- Driver's Licences#
+- Permis de Conduire#
+- id #
+- ids #
+- idcard card#
+- idcard cards#
+- idcard #
+- identification card#
+- identification cards#
+- identificazione #
 
-   
+
 ## <a name="canada-health-service-number"></a>Numero del servizio sanitario canadese
 
 ### <a name="format"></a>Formato
 
  10 cifre
 
-### <a name="pattern"></a>Criterio
+### <a name="pattern"></a>Modello
 
 10 cifre
 
@@ -3011,14 +3011,14 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 - workers compensation
 - disabilità
 
-      
+
 ## <a name="canada-passport-number"></a>Numero di passaporto canadese
 
 ### <a name="format"></a>Formato
 
 due lettere maiuscole seguite da sei cifre
 
-### <a name="pattern"></a>Criterio
+### <a name="pattern"></a>Modello
 
 due lettere maiuscole seguite da sei cifre
 
@@ -3032,7 +3032,7 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 - L'espressione regolare Regex_canada_passport_number restituisce contenuti che corrispondono al modello.
 - Viene trovata una parola Keyword_canada_passport_number o Keyword_passport viene trovata.
 
-```xml 
+```xml
 <!-- Canada Passport Number -->
 <Entity id="14d0db8b-498a-43ed-9fca-f6097ae687eb" patternsProximity="300" recommendedConfidence="75">
   <Pattern confidenceLevel="75">
@@ -3079,14 +3079,14 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 - PasseportNon
 - Passeportn °
 
-   
+
 ## <a name="canada-personal-health-identification-number-phin"></a>Canada personal health identification number (PHIN)
 
 ### <a name="format"></a>Formato
 
 nove cifre
 
-### <a name="pattern"></a>Criterio
+### <a name="pattern"></a>Modello
 
 nove cifre
 
@@ -3150,20 +3150,20 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 - Prince Edward Island
 - Canada
 
-   
+
 ## <a name="canada-social-insurance-number"></a>Canada - Numero di previdenza sociale
 
 ### <a name="format"></a>Formato
 
 nove cifre con trattini o spazi facoltativi
 
-### <a name="pattern"></a>Criterio
+### <a name="pattern"></a>Modello
 
 Formattato:
-- tre cifre 
-- un trattino o uno spazio 
-- tre cifre 
-- un trattino o uno spazio 
+- tre cifre
+- un trattino o uno spazio
+- tre cifre
+- un trattino o uno spazio
 - tre cifre
 
 Non formattato: nove cifre
@@ -3209,47 +3209,47 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 
 #### <a name="keyword_sin"></a>Keyword_sin
 
-- sin 
-- social insurance 
-- numero d'assurance sociale 
-- sins 
-- ssn 
-- ssns 
-- social security 
-- numero d'assurance social 
-- national identification number 
-- national id 
-- sin # 
-- soc ins 
-- social ins 
+- sin
+- social insurance
+- numero d'assurance sociale
+- sins
+- ssn
+- ssns
+- social security
+- numero d'assurance social
+- national identification number
+- national id
+- sin #
+- soc ins
+- social ins
 
 #### <a name="keyword_sin_collaborative"></a>Keyword_sin_collaborative
 
-- driver's license 
-- drivers license 
-- driver's licence 
-- drivers licence 
-- DOB 
-- Data di nascita 
-- Compleanno 
-- Date of Birth 
+- driver's license
+- drivers license
+- driver's licence
+- drivers licence
+- DOB
+- Data di nascita
+- Compleanno
+- Date of Birth
 
-   
+
 ## <a name="chile-identity-card-number"></a>Numero di carta di identità cileno
 
 ### <a name="format"></a>Formato
 
 da sette a otto cifre più delimitatori una cifra di controllo o una lettera
 
-### <a name="pattern"></a>Criterio
+### <a name="pattern"></a>Modello
 
 da sette a otto cifre più delimitatori:
-- da una a due cifre 
-- un punto facoltativo 
-- tre cifre 
-- un punto facoltativo 
-- tre cifre 
-- un trattino 
+- da una a due cifre
+- un punto facoltativo
+- tre cifre
+- un punto facoltativo
+- tre cifre
+- un trattino
 - una cifra o una lettera (senza distinzione tra maiuscole e minuscole), che è una cifra di controllo
 
 ### <a name="checksum"></a>Checksum
@@ -3319,19 +3319,19 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 - Numero di identità cileno
 - Identità cileno #
 
-   
+
 ## <a name="china-resident-identity-card-prc-number"></a>Numero di carta d'identità (PRC) residente in Cina
 
 ### <a name="format"></a>Formato
 
 18 cifre
 
-### <a name="pattern"></a>Criterio
+### <a name="pattern"></a>Modello
 
 18 cifre:
-- sei cifre che sono un codice indirizzo 
-- otto cifre nel formato AAAAMMDD, ovvero la data di nascita 
-- tre cifre che sono un codice d'ordine 
+- sei cifre che sono un codice indirizzo
+- otto cifre nel formato AAAAMMDD, ovvero la data di nascita
+- tre cifre che sono un codice d'ordine
 - una cifra che è una cifra di controllo
 
 ### <a name="checksum"></a>Checksum
@@ -3366,25 +3366,25 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 
 ### <a name="keyword_china_resident_id"></a>Keyword_china_resident_id
 
-- Carta d’identità per residenti 
-- PRC 
-- Carta d’identità 
-- 身份证 
-- 居民 身份证 
-- 居民身份证 
-- 鉴定 
-- 身分證 
+- Carta d’identità per residenti
+- PRC
+- Carta d’identità
+- 身份证
+- 居民 身份证
+- 居民身份证
+- 鉴定
+- 身分證
 - 居民 身份證
-- 鑑定 
+- 鑑定
 
-   
+
 ## <a name="credit-card-number"></a>Numero di carta di credito
 
 ### <a name="format"></a>Formato
 
 Da 14 a 16 cifre che possono essere formattate o non formattate (dddddddd) e che devono superare il test Luhn.
 
-### <a name="pattern"></a>Criterio
+### <a name="pattern"></a>Modello
 
 Rileva le carte di tutte le principali marche in tutto il mondo, tra cui Visa, MasterCard, Discover Card, JCB, American Express, carte regalo e carte da pranzo.
 
@@ -3685,21 +3685,21 @@ cód. segurança
 ### <a name="format"></a>Formato
 
 otto cifre senza spazi e delimitatori
-  
-### <a name="pattern"></a>Criterio
+
+### <a name="pattern"></a>Modello
 
 otto cifre
-  
+
 ### <a name="checksum"></a>Checksum
 
 No
-  
+
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-  
-- L'espressione  `Regex_croatia_eu_driver's_license_number` regolare trova contenuto che corrisponde al modello. 
-- Viene trovata una `Keywords_eu_driver's_license_number` parola chiave da o `Keywords_croatia_eu_driver's_license_number` . 
+
+- L'espressione  `Regex_croatia_eu_driver's_license_number` regolare trova contenuto che corrisponde al modello.
+- Viene trovata una `Keywords_eu_driver's_license_number` parola chiave da o `Keywords_croatia_eu_driver's_license_number` .
 
 ```xml
       <!-- Croatia Driver's License Number -->
@@ -3851,7 +3851,7 @@ Questa entità è inclusa nel tipo di informazioni riservate NUMERO DI IDENTIFIC
 
 nove cifre
 
-### <a name="pattern"></a>Criterio
+### <a name="pattern"></a>Modello
 
 nove cifre consecutive
 
@@ -3914,26 +3914,26 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 ### <a name="format"></a>Formato
 
 nove cifre senza spazi e delimitatori
-  
-### <a name="pattern"></a>Criterio
 
-nove cifre 
-  
+### <a name="pattern"></a>Modello
+
+nove cifre
+
 ### <a name="checksum"></a>Checksum
 
 No
-  
+
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-- L'espressione  `Regex_croatia_eu_passport_number` regolare trova contenuto che corrisponde al modello. 
-- Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_croatia_eu_passport_number` . 
+- L'espressione  `Regex_croatia_eu_passport_number` regolare trova contenuto che corrisponde al modello.
+- Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_croatia_eu_passport_number` .
 - L'espressione `Regex_eu_passport_date1` regolare trova la data nel formato GG.MM.AAAA o viene trovata una parola chiave `Keywords_eu_passport_date` da
 
 Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-- L'espressione  `Regex_croatia_eu_passport_number` regolare trova contenuto che corrisponde al modello. 
-- Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_croatia_eu_passport_number` . 
-    
+- L'espressione  `Regex_croatia_eu_passport_number` regolare trova contenuto che corrisponde al modello.
+- Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_croatia_eu_passport_number` .
+
 ```xml
       <!-- Croatia Passport Number -->
       <Entity id="7d7a729d-32d8-4204-8d01-d5e6a6c25581" patternsProximity="300" recommendedConfidence="75">
@@ -3977,17 +3977,17 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 - broj putovnice
 - br. Putovnice
 - br putovnice
-   
+
 ## <a name="croatia-personal-identification-oib-number"></a>Numero di identificazione personale (OIB) della Croazia
 
 ### <a name="format"></a>Formato
 
 11 cifre
 
-### <a name="pattern"></a>Criterio
+### <a name="pattern"></a>Modello
 
 11 cifre:
-- 10 cifre 
+- 10 cifre
 - la cifra finale è una cifra di controllo
 
 ### <a name="checksum"></a>Checksum
@@ -4056,19 +4056,19 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 ### <a name="format"></a>Formato
 
 12 cifre senza spazi e delimitatori
-  
-### <a name="pattern"></a>Criterio
+
+### <a name="pattern"></a>Modello
 
 12 cifre
-  
+
 ### <a name="checksum"></a>Checksum
 
 No
-  
+
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-- L'espressione  `Regex_cyprus_eu_driver's_license_number` regolare trova contenuto che corrisponde al modello. 
+- L'espressione  `Regex_cyprus_eu_driver's_license_number` regolare trova contenuto che corrisponde al modello.
 - Viene trovata una  `Keywords_eu_driver's_license_number` parola chiave da o `Keywords_cyprus_eu_driver's_license_number` .
 
 ```xml
@@ -4225,22 +4225,22 @@ Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 ### <a name="format"></a>Formato
 
 10 cifre senza spazi e delimitatori
-  
-### <a name="pattern"></a>Criterio
 
-10 cifre 
-  
+### <a name="pattern"></a>Modello
+
+10 cifre
+
 ### <a name="checksum"></a>Checksum
 
 non applicabile
-  
+
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-- L'espressione  `Regex_cyprus_eu_national_id_card` regolare trova contenuto che corrisponde al modello. 
-- Viene trovata una parola  `Keywords_cyprus_eu_national_id_card` chiave from. 
-    
-```xml 
+- L'espressione  `Regex_cyprus_eu_national_id_card` regolare trova contenuto che corrisponde al modello.
+- Viene trovata una parola  `Keywords_cyprus_eu_national_id_card` chiave from.
+
+```xml
       <!-- Cyprus Identity Card -->
       <Entity id="3ba8afe5-7a6c-4929-8247-0001b6878438" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
@@ -4267,26 +4267,26 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 ### <a name="format"></a>Formato
 
 una lettera seguita da 6-8 cifre senza spazi o delimitatori
-  
-### <a name="pattern"></a>Criterio
+
+### <a name="pattern"></a>Modello
 
 una lettera seguita da sei a otto cifre
-  
+
 ### <a name="checksum"></a>Checksum
 
 No
-  
+
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-- L'espressione  `Regex_cyprus_eu_passport_number` regolare trova contenuto che corrisponde al modello. 
-- Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_cyprus_eu_passport_number` . 
+- L'espressione  `Regex_cyprus_eu_passport_number` regolare trova contenuto che corrisponde al modello.
+- Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_cyprus_eu_passport_number` .
 - L'espressione `Regex_cyprus_eu_passport_date` regolare trova la data nel formato GG/MM/AAAA o viene trovata una parola chiave `Keywords_cyprus_eu_passport_date` da
 
 Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-- L'espressione  `Regex_cyprus_eu_passport_number` regolare trova contenuto che corrisponde al modello. 
-- Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_cyprus_eu_passport_number` .  
-    
+- L'espressione  `Regex_cyprus_eu_passport_number` regolare trova contenuto che corrisponde al modello.
+- Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_cyprus_eu_passport_number` .
+
 ```xml
       <!-- Cyprus Passport Number -->
       <Entity id="9193e2e8-7f8c-43c1-a274-ac40d651936f" patternsProximity="300" recommendedConfidence="75">
@@ -4357,28 +4357,28 @@ Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 ### <a name="format"></a>Formato
 
 otto cifre e una lettera nello schema specificato
-  
-### <a name="pattern"></a>Criterio
+
+### <a name="pattern"></a>Modello
 
 otto cifre e una lettera:
-  
+
 - a "0" o "9"
 - sette cifre
 - una lettera (senza distinzione tra maiuscole e minuscole)
-    
+
 ### <a name="checksum"></a>Checksum
 
 non applicabile
-  
+
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-- La funzione  `Func_cyprus_eu_tax_file_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola  `Keywords_cyprus_eu_tax_file_number` chiave from. 
-    
+- La funzione  `Func_cyprus_eu_tax_file_number` trova contenuto che corrisponde al modello.
+- Viene trovata una parola  `Keywords_cyprus_eu_tax_file_number` chiave from.
+
 Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-- La funzione  `Func_cyprus_eu_tax_file_number` trova contenuto che corrisponde al modello. 
-    
+- La funzione  `Func_cyprus_eu_tax_file_number` trova contenuto che corrisponde al modello.
+
 ```xml
       <!-- Cyprus Tax Identification Number -->
       <Entity id="40e64bd9-55f3-4a09-9bd6-1db18dced9dd" patternsProximity="300" recommendedConfidence="85">
@@ -4428,11 +4428,11 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 ### <a name="format"></a>Formato
 
 due lettere seguite da sei cifre
-  
-### <a name="pattern"></a>Criterio
+
+### <a name="pattern"></a>Modello
 
 otto lettere e cifre:
-  
+
 - lettera "E" (senza distinzione tra maiuscole e minuscole)
 - Una lettera
 - uno spazio (facoltativo)
@@ -4441,12 +4441,12 @@ otto lettere e cifre:
 ### <a name="checksum"></a>Checksum
 
 No
-  
+
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-- L'espressione  `Regex_czech_republic_eu_driver's_license_number` regolare trova contenuto che corrisponde al modello. 
-- Viene trovata una  `Keywords_eu_driver's_license_number` parola chiave da o `Keywords_czech_republic_eu_driver's_license_number` . 
+- L'espressione  `Regex_czech_republic_eu_driver's_license_number` regolare trova contenuto che corrisponde al modello.
+- Viene trovata una  `Keywords_eu_driver's_license_number` parola chiave da o `Keywords_czech_republic_eu_driver's_license_number` .
 
 ```xml
       <Entity id="86b40d3b-d8ea-4c36-aab0-ef9416a6769c" patternsProximity="300" recommendedConfidence="75">
@@ -4597,26 +4597,26 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 ### <a name="format"></a>Formato
 
 otto cifre senza spazi o delimitatori
-  
-### <a name="pattern"></a>Criterio
+
+### <a name="pattern"></a>Modello
 
 otto cifre senza spazi o delimitatori
-  
+
 ### <a name="checksum"></a>Checksum
 
 No
-  
+
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-- L'espressione  `Regex_czech_republic_eu_passport_number` regolare trova contenuto che corrisponde al modello. 
-- Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_czech_republic_eu_passport_number` . 
+- L'espressione  `Regex_czech_republic_eu_passport_number` regolare trova contenuto che corrisponde al modello.
+- Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_czech_republic_eu_passport_number` .
 - L'espressione `Regex_eu_passport_date1` regolare trova la data nel formato GG.MM.AAAA o viene trovata una parola chiave `Keywords_eu_passport_date` da
 
 Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-- L'espressione  `Regex_czech_republic_eu_passport_number` regolare trova contenuto che corrisponde al modello. 
-- Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_czech_republic_eu_passport_number` . 
-    
+- L'espressione  `Regex_czech_republic_eu_passport_number` regolare trova contenuto che corrisponde al modello.
+- Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_czech_republic_eu_passport_number` .
+
 ```xml
       <!-- Czech Republic Passport Number -->
       <Entity id="7bcd8ce8-5e92-4bbe-bc92-fa669f0369fa" patternsProximity="300" recommendedConfidence="75">
@@ -4676,7 +4676,7 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 
 nove cifre con barra facoltativa (formato precedente) 10 cifre con barra facoltativa (nuovo formato)
 
-### <a name="pattern"></a>Criterio
+### <a name="pattern"></a>Modello
 
 nove cifre (formato precedente):
 - sei cifre che rappresentano la data di nascita
@@ -4685,7 +4685,7 @@ nove cifre (formato precedente):
 
 10 cifre (nuovo formato):
 - sei cifre che rappresentano la data di nascita
-- una barra facoltativa 
+- una barra facoltativa
 - quattro cifre in cui l'ultima cifra è una cifra di controllo
 
 ### <a name="checksum"></a>Checksum
@@ -4775,21 +4775,21 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 ### <a name="format"></a>Formato
 
 otto cifre senza spazi e delimitatori
-  
-### <a name="pattern"></a>Criterio
+
+### <a name="pattern"></a>Modello
 
 otto cifre
-  
+
 ### <a name="checksum"></a>Checksum
 
 No
-  
+
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-- L'espressione  `Regex_denmark_eu_driver's_license_number` regolare trova contenuto che corrisponde al modello. 
-- Viene trovata una  `Keywords_eu_driver's_license_number` parola chiave da o `Keywords_denmark_eu_driver's_license_number` . 
-    
+- L'espressione  `Regex_denmark_eu_driver's_license_number` regolare trova contenuto che corrisponde al modello.
+- Viene trovata una  `Keywords_eu_driver's_license_number` parola chiave da o `Keywords_denmark_eu_driver's_license_number` .
+
 ```xml
       <!-- Denmark Driver's License Number -->
       <Entity id="98a95812-6203-451a-a220-d39870ebef0e" patternsProximity="300" recommendedConfidence="75">
@@ -4937,26 +4937,26 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 ### <a name="format"></a>Formato
 
 nove cifre senza spazi e delimitatori
-  
-### <a name="pattern"></a>Criterio
 
-nove cifre 
-  
+### <a name="pattern"></a>Modello
+
+nove cifre
+
 ### <a name="checksum"></a>Checksum
 
 No
-  
+
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-- L'espressione  `Regex_denmark_eu_passport_number` regolare trova contenuto che corrisponde al modello. 
-- Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_denmark_eu_passport_number` . 
+- L'espressione  `Regex_denmark_eu_passport_number` regolare trova contenuto che corrisponde al modello.
+- Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_denmark_eu_passport_number` .
 - L'espressione `Regex_eu_passport_date2` regolare trova la data nel formato GG MM AA o una parola chiave `Keywords_eu_passport_date` da.
 
 Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-- L'espressione  `Regex_denmark_eu_passport_number` regolare trova contenuto che corrisponde al modello. 
-- Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_denmark_eu_passport_number` . 
-    
+- L'espressione  `Regex_denmark_eu_passport_number` regolare trova contenuto che corrisponde al modello.
+- Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_denmark_eu_passport_number` .
+
 ```xml
       <!-- Denmark Passport Number -->
       <Entity id="25e8c47e-e6fe-4884-a211-74898f8c0196" patternsProximity="300" recommendedConfidence="75">
@@ -5015,11 +5015,11 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 
 10 cifre contenenti una lineetta
 
-### <a name="pattern"></a>Criterio
+### <a name="pattern"></a>Modello
 
 10 cifre:
-- sei cifre nel formato DDMMYY, ovvero la data di nascita 
-- un trattino 
+- sei cifre nel formato DDMMYY, ovvero la data di nascita
+- un trattino
 - quattro cifre in cui la cifra finale è una cifra di controllo
 
 ### <a name="checksum"></a>Checksum
@@ -5039,7 +5039,7 @@ Un criterio DLP ha una bassa probabilità che sia stato rilevato questo tipo di 
 
 ```xml
 <!-- Denmark Personal Identification Number -->
-      <!-- Denmark Personal Identification Number -->
+    <!-- Denmark Personal Identification Number -->
       <Entity id="6c4f2fef-56e1-4c00-8093-88d7a01cf460" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Func_denmark_eu_tax_file_number" />
@@ -5132,10 +5132,10 @@ Un criterio DLP ha una bassa probabilità che sia stato rilevato questo tipo di 
 
 due lettere seguite da sette cifre
 
-### <a name="pattern"></a>Criterio
+### <a name="pattern"></a>Modello
 
 Il modello deve includere tutti gli elementi seguenti:
-- una lettera (senza distinzione tra maiuscole e minuscole) da questo set di lettere possibili: abcdefghjklmnprstux, che è un codice registrante 
+- una lettera (senza distinzione tra maiuscole e minuscole) da questo set di lettere possibili: abcdefghjklmnprstux, che è un codice registrante
 - una lettera (senza distinzione tra maiuscole e minuscole), ovvero la prima lettera del cognome o della cifra "9" del dichiarante
 - sette cifre, l'ultima delle quali è la cifra di controllo
 
@@ -5189,24 +5189,24 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 ### <a name="format"></a>Formato
 
 due lettere seguite da sei cifre
-  
-### <a name="pattern"></a>Criterio
+
+### <a name="pattern"></a>Modello
 
 due lettere e sei cifre:
-  
-- le lettere "ET" (senza distinzione tra maiuscole e minuscole) 
+
+- le lettere "ET" (senza distinzione tra maiuscole e minuscole)
 - sei cifre
-    
+
 ### <a name="checksum"></a>Checksum
 
 No
-  
+
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-- L'espressione  `Regex_estonia_eu_driver's_license_number` regolare trova contenuto che corrisponde al modello. 
-- Viene trovata una  `Keywords_eu_driver's_license_number` parola chiave da o `Keywords_estonia_eu_driver's_license_number` . 
-    
+- L'espressione  `Regex_estonia_eu_driver's_license_number` regolare trova contenuto che corrisponde al modello.
+- Viene trovata una  `Keywords_eu_driver's_license_number` parola chiave da o `Keywords_estonia_eu_driver's_license_number` .
+
 ```xml
       <!-- Estonia Driver's License Number -->
       <Entity id="51da8171-da70-4cc1-9d65-055a59ca4f83" patternsProximity="300" recommendedConfidence="75">
@@ -5362,29 +5362,29 @@ Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 ### <a name="format"></a>Formato
 
 11 cifre senza spazi e delimitatori
-  
-### <a name="pattern"></a>Criterio
+
+### <a name="pattern"></a>Modello
 
 11 cifre:
-  
+
 - una cifra che corrisponde al sesso e al secolo di nascita (numero dispari maschile, numero pari femminile; 1-2: 19° secolo; 3-4: 20° secolo; 5-6: 21° secolo)
 - sei cifre che corrispondono alla data di nascita (AAMMDD)
 - tre cifre che corrispondono a un numero seriale che separa le persone nate nella stessa data
 - una cifra di controllo
-    
+
 ### <a name="checksum"></a>Checksum
 
 Sì
-  
+
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-- La funzione  `Func_estonia_eu_national_id_card` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola  `Keywords_estonia_eu_national_id_card` chiave from. 
-    
+- La funzione  `Func_estonia_eu_national_id_card` trova contenuto che corrisponde al modello.
+- Viene trovata una parola  `Keywords_estonia_eu_national_id_card` chiave from.
+
 Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-- La funzione  `Func_estonia_eu_national_id_card` trova contenuto che corrisponde al modello. 
-    
+- La funzione  `Func_estonia_eu_national_id_card` trova contenuto che corrisponde al modello.
+
 ```xml
       <!-- Estonia Personal Identification Code -->
       <Entity id="bfb26de6-dad5-4d48-ab72-4789cdd0654c" patternsProximity="300" recommendedConfidence="85">
@@ -5443,26 +5443,26 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 ### <a name="format"></a>Formato
 
 una lettera seguita da sette cifre senza spazi o delimitatori
-  
-### <a name="pattern"></a>Criterio
+
+### <a name="pattern"></a>Modello
 
 una lettera seguita da sette cifre
-  
+
 ### <a name="checksum"></a>Checksum
 
 No
-  
+
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-- L'espressione  `Regex_estonia_eu_passport_number` regolare trova contenuto che corrisponde al modello. 
-- Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_estonia_eu_passport_number` . 
+- L'espressione  `Regex_estonia_eu_passport_number` regolare trova contenuto che corrisponde al modello.
+- Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_estonia_eu_passport_number` .
 - L'espressione `Regex_eu_passport_date1` regolare trova la data nel formato GG.MM.AAAA o viene trovata una parola chiave `Keywords_eu_passport_date` da
 
 Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-- L'espressione  `Regex_estonia_eu_passport_number` regolare trova contenuto che corrisponde al modello. 
-- Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_estonia_eu_passport_number` . 
-    
+- L'espressione  `Regex_estonia_eu_passport_number` regolare trova contenuto che corrisponde al modello.
+- Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_estonia_eu_passport_number` .
+
 ```xml
       <!-- Estonia Passport Number -->
       <Entity id="61f7073a-509e-425b-a754-bc01bb5d5b8c" patternsProximity="300" recommendedConfidence="75">
@@ -5518,7 +5518,7 @@ eesti kodaniku pass passi number passinumbrid document no dokumendi nr
 
 16 cifre
 
-### <a name="pattern"></a>Criterio
+### <a name="pattern"></a>Modello
 
 Modello complesso e affidabile
 
@@ -5558,328 +5558,328 @@ Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di
 
 #### <a name="keyword_eu_debit_card"></a>Keyword_eu_debit_card
 
-- account number 
-- card number 
-- card no. 
-- security number 
-- cc # 
+- account number
+- card number
+- card no.
+- security number
+- cc #
 
 #### <a name="keyword_card_terms_dict"></a>Keyword_card_terms_dict
 
-- acct nbr 
-- acct num 
-- acct no 
-- american express 
-- americanexpress 
-- americano espresso 
-- amex 
-- atm card 
-- atm cards 
-- atm kaart 
-- atmcard 
-- atmcards 
-- atmkaart 
-- atmkaarten 
-- bancontact 
-- bank card 
-- bankkaart 
-- card holder 
-- card holders 
-- card num 
-- card number 
-- card numbers 
-- card type 
-- cardano numerico 
-- cardholder 
-- titolari di carte 
-- cardnumber 
-- cardnumbers 
-- carta bianca 
-- carta credito 
-- carta di credito 
-- cartao de credito 
-- cartao de crédito 
-- cartao de debito 
-- ○cartao de débito 
-- carte bancaire 
-- carte blanche 
-- carte bleue 
-- carte de credit 
-- carte de crédit 
-- carte di credito 
-- carteblanche 
-- cartão de credito 
-- cartão de crédito 
-- cartão de debito 
-- cartão de débito 
-- cb 
-- ccn 
-- check card 
-- check cards 
+- acct nbr
+- acct num
+- acct no
+- american express
+- americanexpress
+- americano espresso
+- amex
+- atm card
+- atm cards
+- atm kaart
+- atmcard
+- atmcards
+- atmkaart
+- atmkaarten
+- bancontact
+- bank card
+- bankkaart
+- card holder
+- card holders
+- card num
+- card number
+- card numbers
+- card type
+- cardano numerico
+- cardholder
+- titolari di carte
+- cardnumber
+- cardnumbers
+- carta bianca
+- carta credito
+- carta di credito
+- cartao de credito
+- cartao de crédito
+- cartao de debito
+- ○cartao de débito
+- carte bancaire
+- carte blanche
+- carte bleue
+- carte de credit
+- carte de crédit
+- carte di credito
+- carteblanche
+- cartão de credito
+- cartão de crédito
+- cartão de debito
+- cartão de débito
+- cb
+- ccn
+- check card
+- check cards
 - checkcard
-- checkcards 
-- chequekaart 
-- cirrus 
-- cirrus-edc-maestro 
-- controlekaart 
-- controlekaarten 
-- credit card 
-- credit cards 
-- creditcard 
-- creditcards 
-- debetkaart 
-- debetkaarten 
-- debit card 
-- debit cards 
-- debitcard 
-- debitcards 
-- debito automatico 
-- diners club 
-- dinersclub 
-- discover 
-- discover card 
-- discover cards 
-- discovercard 
-- discovercards 
+- checkcards
+- chequekaart
+- cirrus
+- cirrus-edc-maestro
+- controlekaart
+- controlekaarten
+- credit card
+- credit cards
+- creditcard
+- creditcards
+- debetkaart
+- debetkaarten
+- debit card
+- debit cards
+- debitcard
+- debitcards
+- debito automatico
+- diners club
+- dinersclub
+- discover
+- discover card
+- discover cards
+- discovercard
+- discovercards
 - débito automático
-- edc 
-- eigentümername 
-- european debit card 
-- hoofdkaart 
-- hoofdkaarten 
-- in viaggio 
-- japanese card bureau 
-- japanse kaartdienst 
-- jcb 
-- kaart 
-- kaart num 
-- kaartaantal 
-- kaartaantallen 
-- kaarthouder 
-- kaarthouders 
-- karte  
-- karteninhaber 
+- edc
+- eigentümername
+- european debit card
+- hoofdkaart
+- hoofdkaarten
+- in viaggio
+- japanese card bureau
+- japanse kaartdienst
+- jcb
+- kaart
+- kaart num
+- kaartaantal
+- kaartaantallen
+- kaarthouder
+- kaarthouders
+- karte
+- karteninhaber
 - karteninchabers
-- kartennr 
-- kartennummer 
-- kreditkarte 
-- kreditkarten-nummer 
-- kreditkarteninhaber 
-- kreditkarteninstitut 
-- kreditkartennummer 
-- kreditkartentyp 
-- maestro 
-- master card 
-- master cards 
-- mastercard 
-- mastercard 
-- mc 
-- mister cash 
-- n carta 
-- carta 
-- no de tarjeta 
-- no do cartao 
-- no do cartão 
+- kartennr
+- kartennummer
+- kreditkarte
+- kreditkarten-nummer
+- kreditkarteninhaber
+- kreditkarteninstitut
+- kreditkartennummer
+- kreditkartentyp
+- maestro
+- master card
+- master cards
+- mastercard
+- mastercard
+- mc
+- mister cash
+- n carta
+- carta
+- no de tarjeta
+- no do cartao
+- no do cartão
 - no. de tarjeta
- 
+
 - no. do cartao
- 
+
 - no. do cartão
- 
-- nr carta 
+
+- nr carta
 - nr. carta
- 
-- numeri di scheda 
-- numero carta 
-- numero de cartao 
-- numero de carte 
-- numero de cartão 
+
+- numeri di scheda
+- numero carta
+- numero de cartao
+- numero de carte
+- numero de cartão
 - numero de tarjeta
-- numero della carta 
-- numero di carta 
-- numero di scheda 
-- numero do cartao 
-- numero do cartão 
-- numéro de carte 
-- nº carta 
-- nº de carte 
-- nº de la carte 
-- nº de tarjeta 
-- nº do cartao 
-- nº do cartão 
+- numero della carta
+- numero di carta
+- numero di scheda
+- numero do cartao
+- numero do cartão
+- numéro de carte
+- nº carta
+- nº de carte
+- nº de la carte
+- nº de tarjeta
+- nº do cartao
+- nº do cartão
 - nº. do cartão
- 
-- número de cartao 
-- número de cartão 
-- número de tarjeta 
-- número do cartao 
-- scheda dell'assegno 
-- scheda dell'atmosfera 
-- scheda dell'atmosfera 
-- scheda della banca 
-- scheda di controllo 
-- scheda di debito 
-- scheda matrice 
-- schede dell'atmosfera 
-- schede di controllo 
-- schede di debito 
-- schede matrici 
-- scoprono la scheda 
-- scoprono le schede 
-- solo 
-- supporti di scheda 
-- supporto di scheda 
-- switch 
-- tarjeta atm 
-- tarjeta credito 
-- tarjeta de atm 
-- tarjeta de credito 
-- tarjeta de debito 
-- tarjeta debito 
+
+- número de cartao
+- número de cartão
+- número de tarjeta
+- número do cartao
+- scheda dell'assegno
+- scheda dell'atmosfera
+- scheda dell'atmosfera
+- scheda della banca
+- scheda di controllo
+- scheda di debito
+- scheda matrice
+- schede dell'atmosfera
+- schede di controllo
+- schede di debito
+- schede matrici
+- scoprono la scheda
+- scoprono le schede
+- solo
+- supporti di scheda
+- supporto di scheda
+- switch
+- tarjeta atm
+- tarjeta credito
+- tarjeta de atm
+- tarjeta de credito
+- tarjeta de debito
+- tarjeta debito
 - tarjeta no
-- tarjetahabiente 
-- tipo della scheda 
-- ufficio giapponese della 
-- scheda 
-- v pay 
-- v-pay 
-- visa 
-- visa plus 
-- visa electron 
-- visto 
-- visum 
-- vpay   
+- tarjetahabiente
+- tipo della scheda
+- ufficio giapponese della
+- scheda
+- v pay
+- v-pay
+- visa
+- visa plus
+- visa electron
+- visto
+- visum
+- vpay
 
 #### <a name="keyword_card_security_terms_dict"></a>Keyword_card_security_terms_dict
 
 - card identification number
-- card verification 
-- cardi la verifica 
-- cid 
-- cod seg 
-- cod seguranca 
-- cod segurança 
-- cod sicurezza 
+- card verification
+- cardi la verifica
+- cid
+- cod seg
+- cod seguranca
+- cod segurança
+- cod sicurezza
 - cod. seg
- 
+
 - cod. seguranca
- 
+
 - cod. segurança
- 
+
 - cod. sicurezza
- 
-- codice di sicurezza 
-- codice di verifica 
-- codigo 
-- codigo de seguranca 
-- codigo de segurança 
-- crittogramma 
-- crittogramma 
-- cryptogramme 
-- cv2 
-- cvc 
-- cvc2 
-- cvn 
-- cvv 
-- cvv2 
-- cód seguranca 
-- cód segurança 
+
+- codice di sicurezza
+- codice di verifica
+- codigo
+- codigo de seguranca
+- codigo de segurança
+- crittogramma
+- crittogramma
+- cryptogramme
+- cv2
+- cvc
+- cvc2
+- cvn
+- cvv
+- cvv2
+- cód seguranca
+- cód segurança
 - cód. seguranca
- 
+
 - cód. segurança
- 
-- código 
-- código de seguranca 
-- código de segurança 
-- de kaart controle 
-- geeft nr uit 
-- issue no 
-- issue number 
-- kaartidentificatienummer 
-- kreditkartenprufnummer 
-- kreditkartenprüfnummer 
-- kwestieaantal 
+
+- código
+- código de seguranca
+- código de segurança
+- de kaart controle
+- geeft nr uit
+- issue no
+- issue number
+- kaartidentificatienummer
+- kreditkartenprufnummer
+- kreditkartenprüfnummer
+- kwestieaantal
 - no. dell'edizione
- 
+
 - no. di sicurezza
- 
-- numero de securite 
-- numero de verificacao 
-- numero dell'edizione 
-- numero di identificazione della 
-- scheda 
-- numero di sicurezza 
-- numero van veiligheid 
-- numéro de sécurité 
-- nº autorizzazione 
-- número de verificação 
-- perno il blocco 
-- pin block 
-- prufziffer 
-- prüfziffer 
-- security code 
-- security no 
-- security number 
-- sicherheits kode 
-- sicherheitscode 
-- sicherheitsnummer 
-- speldblok 
-- veiligheid nr 
-- veiligheidsaantal 
-- veiligheidscode 
-- veiligheidsnummer 
-- verfalldatum 
+
+- numero de securite
+- numero de verificacao
+- numero dell'edizione
+- numero di identificazione della
+- scheda
+- numero di sicurezza
+- numero van veiligheid
+- numéro de sécurité
+- nº autorizzazione
+- número de verificação
+- perno il blocco
+- pin block
+- prufziffer
+- prüfziffer
+- security code
+- security no
+- security number
+- sicherheits kode
+- sicherheitscode
+- sicherheitsnummer
+- speldblok
+- veiligheid nr
+- veiligheidsaantal
+- veiligheidscode
+- veiligheidsnummer
+- verfalldatum
 
 #### <a name="keyword_card_expiration_terms_dict"></a>Keyword_card_expiration_terms_dict
 
-- ablauf 
-- data de expiracao 
-- data de expiração 
-- data del exp 
-- data di exp 
-- data di scadenza 
-- data em que expira 
-- data scad 
-- data scadenza 
-- date de validité 
-- datum afloop 
-- datum van exp 
-- de afloop 
-- espira 
-- espira 
-- exp date 
-- exp datum 
-- scadenza 
-- scadenza 
-- scade 
-- scadenza 
-- fecha de expiracion 
-- fecha de venc 
-- gultig bis 
-- gultigkeitsdatum 
-- gültig bis 
-- gültigkeitsdatum 
-- la scadenza 
-- scadenza 
-- valable 
-- validade 
-- valido hasta 
-- valor 
-- venc 
-- vencimento 
-- vencimiento 
-- verloopt 
-- vervaldag 
-- vervaldatum 
-- vto 
-- válido hasta 
+- ablauf
+- data de expiracao
+- data de expiração
+- data del exp
+- data di exp
+- data di scadenza
+- data em que expira
+- data scad
+- data scadenza
+- date de validité
+- datum afloop
+- datum van exp
+- de afloop
+- espira
+- espira
+- exp date
+- exp datum
+- scadenza
+- scadenza
+- scade
+- scadenza
+- fecha de expiracion
+- fecha de venc
+- gultig bis
+- gultigkeitsdatum
+- gültig bis
+- gültigkeitsdatum
+- la scadenza
+- scadenza
+- valable
+- validade
+- valido hasta
+- valor
+- venc
+- vencimento
+- vencimiento
+- verloopt
+- vervaldag
+- vervaldatum
+- vto
+- válido hasta
 
 
 ## <a name="eu-drivers-license-number"></a>Numero di patente di guida UE
 
 Queste entità sono nel numero di patente di guida dell'UE e sono tipi di informazioni riservate.
 
-- [Austria](#austria-drivers-license-number) 
+- [Austria](#austria-drivers-license-number)
 - [Belgio](#belgium-drivers-license-number)
 - [Bulgaria](#bulgaria-drivers-license-number)
 - [Croazia](#croatia-drivers-license-number)
@@ -5888,7 +5888,7 @@ Queste entità sono nel numero di patente di guida dell'UE e sono tipi di inform
 - [Danimarca](#denmark-drivers-license-number)
 - [Estonia](#estonia-drivers-license-number)
 - [Finlandia](#finland-drivers-license-number)
-- [Francia](#france-drivers-license-number) 
+- [Francia](#france-drivers-license-number)
 - [Germania](#germany-drivers-license-number)
 - [Grecia](#greece-drivers-license-number)
 - [Ungheria](#hungary-drivers-license-number)
@@ -5899,7 +5899,7 @@ Queste entità sono nel numero di patente di guida dell'UE e sono tipi di inform
 - [Luxemburg](#luxemburg-drivers-license-number)
 - [Malta](#malta-drivers-license-number)
 - [Paesi Bassi](#netherlands-drivers-license-number)
-- [Polonia](#poland-drivers-license-number) 
+- [Polonia](#poland-drivers-license-number)
 - [Portogallo](#portugal-drivers-license-number)
 - [Romania](#romania-drivers-license-number)
 - [Slovacchia](#slovakia-drivers-license-number)
@@ -5939,10 +5939,10 @@ Queste entità sono nel numero di identificazione nazionale dell'UE e sono tipi 
 - [Slovacchia](#slovakia-personal-number)
 - [Slovenia](#slovenia-unique-master-citizen-number)
 - [Spagna](#spain-dni)
-- [Regno Unito](#uk-national-insurance-number-nino)                                        
+- [Regno Unito](#uk-national-insurance-number-nino)
 
 
-## <a name="eu-passport-number"></a>Numero di passaporto UE 
+## <a name="eu-passport-number"></a>Numero di passaporto UE
 
 Queste entità sono nel numero di passaporto ue e sono tipi di informazioni riservate. Queste entità sono nel bundle del numero di passaporto ue.
 
@@ -6034,26 +6034,26 @@ Queste entità sono nel tipo di informazioni riservate del numero di identificaz
 ### <a name="format"></a>Formato
 
 10 cifre contenenti una lineetta
-  
-### <a name="pattern"></a>Criterio
+
+### <a name="pattern"></a>Modello
 
 10 cifre contenenti un trattino:
-  
-- sei cifre 
+
+- sei cifre
 - un trattino
-- tre cifre 
+- tre cifre
 - una cifra o una lettera
-    
+
 ### <a name="checksum"></a>Checksum
 
 No
-  
+
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-- L'espressione  `Regex_finland_eu_driver's_license_number` regolare trova contenuto che corrisponde al modello. 
-- Viene trovata una  `Keywords_eu_driver's_license_number` parola chiave da o `Keywords_finland_eu_driver's_license_number` . 
-    
+- L'espressione  `Regex_finland_eu_driver's_license_number` regolare trova contenuto che corrisponde al modello.
+- Viene trovata una  `Keywords_eu_driver's_license_number` parola chiave da o `Keywords_finland_eu_driver's_license_number` .
+
 ```xml
       <!-- Finland Driver's License Number -->
       <Entity id="bb3b27a3-79bd-4ac4-81a7-f9fca3c7d1a7" patternsProximity="300" recommendedConfidence="75">
@@ -6216,7 +6216,7 @@ Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 
 Numero a 20 cifre
 
-### <a name="pattern"></a>Criterio
+### <a name="pattern"></a>Modello
 
 Numero a 20 cifre:
 
@@ -6270,12 +6270,12 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 
 sei cifre più un carattere che indica un secolo più tre cifre più una cifra di controllo
 
-### <a name="pattern"></a>Criterio
+### <a name="pattern"></a>Modello
 
 Il modello deve includere tutti gli elementi seguenti:
-- sei cifre nel formato DDMMYY, che sono una data di nascita 
-- indicatore del secolo ('-', '+' o 'a') 
-- Numero di identificazione personale a tre cifre 
+- sei cifre nel formato DDMMYY, che sono una data di nascita
+- indicatore del secolo ('-', '+' o 'a')
+- Numero di identificazione personale a tre cifre
 - una cifra o una lettera (senza distinzione tra maiuscole e minuscole) che è una cifra di controllo
 
 ### <a name="checksum"></a>Checksum
@@ -6364,9 +6364,9 @@ Questa entità è disponibile nel tipo di informazioni riservate Numero di passa
 ### <a name="format"></a>Formato
 combinazione di nove lettere e cifre
 
-### <a name="pattern"></a>Criterio
+### <a name="pattern"></a>Modello
 combinazione di nove lettere e cifre:
-- due lettere (senza distinzione tra maiuscole e minuscole) 
+- due lettere (senza distinzione tra maiuscole e minuscole)
 - sette cifre
 
 ### <a name="checksum"></a>Checksum
@@ -6445,7 +6445,7 @@ Questa entità è disponibile nel tipo di informazioni riservate Numero di paten
 
 12 cifre
 
-### <a name="pattern"></a>Criterio
+### <a name="pattern"></a>Modello
 
 12 cifre con convalida per scontare modelli analoghi, ad esempio, quello dei numeri telefonici francesi
 
@@ -6611,7 +6611,7 @@ Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 
 Numero a 21 cifre
 
-### <a name="pattern"></a>Criterio
+### <a name="pattern"></a>Modello
 
 Numero a 21 cifre:
 
@@ -6656,7 +6656,7 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 
 12 cifre
 
-### <a name="pattern"></a>Criterio
+### <a name="pattern"></a>Modello
 
 12 cifre
 
@@ -6696,7 +6696,7 @@ Un criterio DLP ha una bassa probabilità che sia stato rilevato questo tipo di 
 - numéro d'assurance maladie
 - numéro de carte vitale
 
-   
+
 ## <a name="france-passport-number"></a>Francia - numero di passaporto
 Questa entità è disponibile nel tipo di informazioni riservate Numero di passaporto UE. È disponibile anche come entità di tipo di informazioni riservate autonomo.
 
@@ -6704,11 +6704,11 @@ Questa entità è disponibile nel tipo di informazioni riservate Numero di passa
 
 nove cifre e lettere
 
-### <a name="pattern"></a>Criterio
+### <a name="pattern"></a>Modello
 
 nove cifre e lettere:
-- due cifre 
-- due lettere (senza distinzione tra maiuscole e minuscole) 
+- due cifre
+- due lettere (senza distinzione tra maiuscole e minuscole)
 - cinque cifre
 
 ### <a name="checksum"></a>Checksum
@@ -6795,7 +6795,7 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 
 15 cifre
 
-### <a name="pattern"></a>Criterio
+### <a name="pattern"></a>Modello
 
 Deve corrispondere a uno di questi due modelli:
 - 13 cifre seguite da uno spazio seguito da due cifre<br/>
@@ -6872,36 +6872,36 @@ no. d'identite
 ### <a name="format"></a>Formato
 
 13 cifre
-  
-### <a name="pattern"></a>Criterio
+
+### <a name="pattern"></a>Modello
 
 13 cifre
-  
+
 - Una cifra che deve essere 0, 1, 2 o 3
 - Una cifra
 - Uno spazio (facoltativo)
-- Due cifre 
+- Due cifre
 - Uno spazio (facoltativo)
-- Tre cifre 
+- Tre cifre
 - Uno spazio (facoltativo)
-- Tre cifre 
+- Tre cifre
 - Uno spazio (facoltativo)
-- Tre cifre di controllo 
+- Tre cifre di controllo
 
-  
+
 ### <a name="checksum"></a>Checksum
 
 Sì
-  
+
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-- La funzione  `Func_france_eu_tax_file_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola  `Keywords_france_eu_tax_file_number` chiave from. 
-    
+- La funzione  `Func_france_eu_tax_file_number` trova contenuto che corrisponde al modello.
+- Viene trovata una parola  `Keywords_france_eu_tax_file_number` chiave from.
+
 Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-- La funzione  `Func_france_eu_tax_file_number` trova contenuto che corrisponde al modello. 
-    
+- La funzione  `Func_france_eu_tax_file_number` trova contenuto che corrisponde al modello.
+
 ```xml
       <!-- France Tax Identification Number (numéro SPI.) -->
       <Entity id="ed59e77e-171d-442c-9ec1-88e2ebcb5b0a" patternsProximity="300" recommendedConfidence="85">
@@ -6955,7 +6955,7 @@ Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 
 Motivo alfanumerico a 13 caratteri
 
-### <a name="pattern"></a>Criterio
+### <a name="pattern"></a>Modello
 
 Motivo alfanumerico a 13 caratteri:
 
@@ -7018,13 +7018,13 @@ Questa entità tipo di informazioni riservate è inclusa nel tipo di informazion
 
 combinazione di 11 cifre e lettere
 
-### <a name="pattern"></a>Criterio
+### <a name="pattern"></a>Modello
 
 11 cifre e lettere (senza distinzione tra maiuscole e minuscole):
-- una cifra o una lettera 
-- due cifre 
-- sei cifre o lettere 
-- una cifra 
+- una cifra o una lettera
+- due cifre
+- sei cifre o lettere
+- una cifra
 - una cifra o una lettera
 
 ### <a name="checksum"></a>Checksum
@@ -7208,10 +7208,10 @@ dal 1° novembre 2010: nove lettere e cifre
 
 dal 1° aprile 1987 al 31 ottobre 2010: 10 cifre
 
-### <a name="pattern"></a>Criterio
+### <a name="pattern"></a>Modello
 
 dal 1° novembre 2010:
-- una lettera (senza distinzione tra maiuscole e minuscole) 
+- una lettera (senza distinzione tra maiuscole e minuscole)
 - otto cifre
 
 dal 1° aprile 1987 al 31 ottobre 2010:
@@ -7264,12 +7264,12 @@ Questa entità è inclusa nel tipo di informazioni riservate NUMERO PASSAPORTO U
 
 10 cifre o lettere
 
-### <a name="pattern"></a>Criterio
+### <a name="pattern"></a>Modello
 
 Il modello deve includere tutti gli elementi seguenti:
-- first character is a digit or a letter from this set (C, F, G, H, J, K) 
-- tre cifre 
-- cinque cifre o lettere di questo set (C, -H, J-N, P, R, T, V-Z) 
+- first character is a digit or a letter from this set (C, F, G, H, J, K)
+- tre cifre
+- cinque cifre o lettere di questo set (C, -H, J-N, P, R, T, V-Z)
 - una cifra
 
 ### <a name="checksum"></a>Checksum
@@ -7314,7 +7314,7 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 
 - reisepasse
 - reisepassnummer
-- No-Reisepass 
+- No-Reisepass
 - Nr-Reisepass
 - Reisepass-Nr
 - Passnummer
@@ -7341,33 +7341,33 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 ### <a name="format"></a>Formato
 
 11 cifre senza spazi e delimitatori
-  
-### <a name="pattern"></a>Criterio
+
+### <a name="pattern"></a>Modello
 
 11 cifre
-  
-- Due cifre 
+
+- Due cifre
 - Uno spazio facoltativo
-- Tre cifre 
+- Tre cifre
 - Uno spazio facoltativo
-- Tre cifre 
+- Tre cifre
 - Uno spazio facoltativo
 - Due cifre
 - una cifra di controllo
-    
+
 ### <a name="checksum"></a>Checksum
 
 Sì
-  
+
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-- La funzione  `Func_germany_eu_tax_file_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola  `Keywords_germany_eu_tax_file_number` chiave from. 
-    
+- La funzione  `Func_germany_eu_tax_file_number` trova contenuto che corrisponde al modello.
+- Viene trovata una parola  `Keywords_germany_eu_tax_file_number` chiave from.
+
 Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-- La funzione  `Func_germany_eu_tax_file_number` trova contenuto che corrisponde al modello. 
-    
+- La funzione  `Func_germany_eu_tax_file_number` trova contenuto che corrisponde al modello.
+
 ```xml
       <!-- Germany Tax Identification Number -->
       <Entity id="43316a89-9880-40cf-b980-04bc7eefcec5" patternsProximity="300" recommendedConfidence="85">
@@ -7422,7 +7422,7 @@ Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 
 Motivo alfanumerico a 11 caratteri
 
-### <a name="pattern"></a>Criterio
+### <a name="pattern"></a>Modello
 
 Motivo alfanumerico di 11 caratteri:
 
@@ -7480,21 +7480,21 @@ Questa entità è inclusa nel tipo di informazioni riservate numero di patente u
 ### <a name="format"></a>Formato
 
 nove cifre senza spazi e delimitatori
-  
-### <a name="pattern"></a>Criterio
 
-nove cifre 
-  
+### <a name="pattern"></a>Modello
+
+nove cifre
+
 ### <a name="checksum"></a>Checksum
 
 No
-  
+
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-- L'espressione  `Regex_greece_eu_driver's_license_number` regolare trova contenuto che corrisponde al modello. 
-- Viene trovata una  `Keywords_eu_driver's_license_number` parola chiave da o `Keywords_greece_eu_driver's_license_number` . 
-    
+- L'espressione  `Regex_greece_eu_driver's_license_number` regolare trova contenuto che corrisponde al modello.
+- Viene trovata una  `Keywords_eu_driver's_license_number` parola chiave da o `Keywords_greece_eu_driver's_license_number` .
+
 ```xml
       <!-- Greece Driver's License Number -->
       <Entity id="7a2200b5-aacf-4e3c-ab36-136d3e68b7da" patternsProximity="300" recommendedConfidence="75">
@@ -7646,16 +7646,16 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 
 Combinazione di 7-8 lettere e numeri, oltre a un trattino
 
-### <a name="pattern"></a>Criterio
+### <a name="pattern"></a>Modello
 
 Sette lettere e numeri (formato precedente):
-- Una lettera (qualsiasi lettera dell'alfabeto greco)  
-- Un trattino 
+- Una lettera (qualsiasi lettera dell'alfabeto greco) 
+- Un trattino
 - Sei cifre
 
 Otto lettere e numeri (nuovo formato):
-- Due lettere in maiuscolo sia in alfabeto latino che greco (ABEZHIKMNOPTYX)  
-- Un trattino 
+- Due lettere in maiuscolo sia in alfabeto latino che greco (ABEZHIKMNOPTYX) 
+- Un trattino
 - Sei cifre
 
 ### <a name="checksum"></a>Checksum
@@ -7703,26 +7703,26 @@ Un criterio DLP ha una bassa probabilità che sia stato rilevato questo tipo di 
 ### <a name="format"></a>Formato
 
 Due lettere seguite da sette cifre senza spazi o delimitatori
-  
-### <a name="pattern"></a>Criterio
+
+### <a name="pattern"></a>Modello
 
 Due lettere seguite da 7 cifre
-  
+
 ### <a name="checksum"></a>Checksum
 
 No
-  
+
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-- L'espressione  `Regex_greece_eu_passport_number` regolare trova contenuto che corrisponde al modello. 
-- Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_greece_eu_passport_number` . 
+- L'espressione  `Regex_greece_eu_passport_number` regolare trova contenuto che corrisponde al modello.
+- Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_greece_eu_passport_number` .
 - L'espressione regolare trova la data nel formato `Regex_greece_eu_passport_date` DD MMM AA (esempio - 28 agosto 19) o viene trovata una parola chiave `Keywords_greece_eu_passport_date` da
 
 Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-- L'espressione  `Regex_greece_eu_passport_number` regolare trova contenuto che corrisponde al modello. 
-- Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_greece_eu_passport_number` . 
-    
+- L'espressione  `Regex_greece_eu_passport_number` regolare trova contenuto che corrisponde al modello.
+- Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_greece_eu_passport_number` .
+
 ```xml
       <!-- Greece Passport Number -->
       <Entity id="7e65eb47-cdf9-4f52-8f90-2a27d5ee67e3" patternsProximity="300" recommendedConfidence="75">
@@ -7780,25 +7780,25 @@ Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 ### <a name="format"></a>Formato
 
 11 cifre senza spazi e delimitatori
-  
-### <a name="pattern"></a>Criterio
+
+### <a name="pattern"></a>Modello
 
 - Sei cifre come data di nascita AAMMDD
 - Quattro cifre
 - una cifra di controllo
-  
+
 ### <a name="checksum"></a>Checksum
 
 Sì
-  
+
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-- La funzione  `Func_greece_eu_ssn` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola  `Keywords_greece_eu_ssn_or_equivalent` chiave from. 
-    
+- La funzione  `Func_greece_eu_ssn` trova contenuto che corrisponde al modello.
+- Viene trovata una parola  `Keywords_greece_eu_ssn_or_equivalent` chiave from.
+
 Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-- La funzione  `Func_greece_eu_ssn` trova contenuto che corrisponde al modello. 
+- La funzione  `Func_greece_eu_ssn` trova contenuto che corrisponde al modello.
 
 ```xml
       <!-- Greece Social Security Number (AMKA) -->
@@ -7838,22 +7838,22 @@ Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 ### <a name="format"></a>Formato
 
 Nove cifre senza spazi e delimitatori
-  
-### <a name="pattern"></a>Criterio
+
+### <a name="pattern"></a>Modello
 
 9 cifre
-  
+
 ### <a name="checksum"></a>Checksum
 
 Non applicabile
-  
+
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-  
-- L'espressione  `Regex_greece_eu_tax_file_number` regolare trova contenuto che corrisponde al modello. 
-- Viene trovata una parola  `Keywords_greece_eu_tax_file_number` chiave from. 
-    
+
+- L'espressione  `Regex_greece_eu_tax_file_number` regolare trova contenuto che corrisponde al modello.
+- Viene trovata una parola  `Keywords_greece_eu_tax_file_number` chiave from.
+
 ```xml
       <!-- Greek Tax Identification Number -->
       <Entity id="15a54a5a-53d4-4080-ad43-a2a4fe1d3bf7" patternsProximity="300" recommendedConfidence="75">
@@ -7902,11 +7902,11 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 
 Combinazione di 8-9 lettere e numeri. Facoltativamente, l’ultimo carattere può essere racchiuso tra parentesi
 
-### <a name="pattern"></a>Criterio
+### <a name="pattern"></a>Modello
 
 Combinazione di 8-9 lettere:
-- 1-2 lettere (senza distinzione tra maiuscole e minuscole) 
-- Sei cifre 
+- 1-2 lettere (senza distinzione tra maiuscole e minuscole)
+- Sei cifre
 - L'ultimo carattere (qualsiasi cifra o la lettera A), è rappresentato dal numero di controllo. Facoltativamente, può essere racchiuso tra parentesi.
 
 ### <a name="checksum"></a>Checksum
@@ -7979,31 +7979,31 @@ Un criterio DLP ha una bassa probabilità che sia stato rilevato questo tipo di 
 - 香港特別行政區非永久性居民身分證
 - 香港特別行政區非永久性居民身分証
 
-   
+
 ## <a name="hungary-drivers-license-number"></a>Numero di patente di guida ungherese
 
 ### <a name="format"></a>Formato
 
 Due lettere seguite da sei cifre
-  
-### <a name="pattern"></a>Criterio
+
+### <a name="pattern"></a>Modello
 
 Due lettere e sei cifre:
-  
-- Due lettere (senza distinzione tra maiuscole e minuscole) 
+
+- Due lettere (senza distinzione tra maiuscole e minuscole)
 - Sei cifre
-    
+
 ### <a name="checksum"></a>Checksum
 
 No
-  
+
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-  
-- L'espressione  `Regex_hungary_eu_driver's_license_number` regolare trova contenuto che corrisponde al modello. 
-- Viene trovata una  `Keywords_eu_driver's_license_number` parola chiave da o `Keywords_hungary_eu_driver's_license_number` . 
-    
+
+- L'espressione  `Regex_hungary_eu_driver's_license_number` regolare trova contenuto che corrisponde al modello.
+- Viene trovata una  `Keywords_eu_driver's_license_number` parola chiave da o `Keywords_hungary_eu_driver's_license_number` .
+
 ```xml
       <Entity id="9d31c46b-6e6b-444c-aeb1-6dd7e604bb24" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
@@ -8158,31 +8158,31 @@ Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 ### <a name="format"></a>Formato
 
 11 cifre
-  
-### <a name="pattern"></a>Criterio
+
+### <a name="pattern"></a>Modello
 
 11 cifre:
-  
+
 - Una cifra che corrisponde al sesso, 1 per il maschio, 2 per la donna. Altri numeri sono possibili anche per i cittadini nati prima del 1900 o per i cittadini con doppia cittadinanza.
 - Sei cifre che corrispondono alla data di nascita (AAMMDD)
 - Tre cifre che corrispondono a un numero seriale
 - Una cifra di controllo
-    
+
 ### <a name="checksum"></a>Checksum
 
 Sì
-  
+
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-  
-- La funzione  `Func_hungary_eu_national_id_card` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola  `Keywords_hungary_eu_national_id_card` chiave from. 
-    
+
+- La funzione  `Func_hungary_eu_national_id_card` trova contenuto che corrisponde al modello.
+- Viene trovata una parola  `Keywords_hungary_eu_national_id_card` chiave from.
+
 Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-  
-- La funzione  `Func_hungary_eu_national_id_card` trova contenuto che corrisponde al modello. 
-    
+
+- La funzione  `Func_hungary_eu_national_id_card` trova contenuto che corrisponde al modello.
+
 ```xml
       <!-- Hungary Personal Identification Number -->
       <Entity id="7b5cc218-7046-47d9-80c9-f325b50896ca" patternsProximity="300" recommendedConfidence="85">
@@ -8218,26 +8218,26 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 ### <a name="format"></a>Formato
 
 Due lettere seguite da sei o sette cifre senza spazi o delimitatori
-  
-### <a name="pattern"></a>Criterio
+
+### <a name="pattern"></a>Modello
 
 Due lettere seguite da sei o sette cifre
-  
+
 ### <a name="checksum"></a>Checksum
 
 No
-  
+
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-- L'espressione  `Regex_hungary_eu_passport_number` regolare trova contenuto che corrisponde al modello. 
-- Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_hungary_eu_passport_number` . 
+- L'espressione  `Regex_hungary_eu_passport_number` regolare trova contenuto che corrisponde al modello.
+- Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_hungary_eu_passport_number` .
 - L'espressione regolare trova la data nel formato `Regex_hungary_eu_passport_date` DD MMM/MMM AA (esempio - 01 MÁR/MAR 12) o viene trovata una parola chiave `Keywords_eu_passport_date` da
 
 Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-- L'espressione  `Regex_hungary_eu_passport_number` regolare trova contenuto che corrisponde al modello. 
-- Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_hungary_eu_passport_number` . 
-    
+- L'espressione  `Regex_hungary_eu_passport_number` regolare trova contenuto che corrisponde al modello.
+- Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_hungary_eu_passport_number` .
+
 ```xml
       <!-- Hungary Passport Number -->
       <Entity id="5b483910-9aa7-4c99-9917-f4001464bda7" patternsProximity="300" recommendedConfidence="75">
@@ -8293,26 +8293,26 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 ### <a name="format"></a>Formato
 
 Nove cifre senza spazi e delimitatori
-  
-### <a name="pattern"></a>Criterio
+
+### <a name="pattern"></a>Modello
 
 9 cifre
-  
+
 ### <a name="checksum"></a>Checksum
 
 Sì
-  
+
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-  
-- La funzione  `Func_hungary_eu_ssn_or_equivalent` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola  `Keywords_hungary_eu_ssn_or_equivalent` chiave from. 
-    
+
+- La funzione  `Func_hungary_eu_ssn_or_equivalent` trova contenuto che corrisponde al modello.
+- Viene trovata una parola  `Keywords_hungary_eu_ssn_or_equivalent` chiave from.
+
 Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-  
-- La funzione  `Func_hungary_eu_ssn_or_equivalent` trova contenuto che corrisponde al modello. 
-    
+
+- La funzione  `Func_hungary_eu_ssn_or_equivalent` trova contenuto che corrisponde al modello.
+
 ```xml
       <!-- Hungarian Social Security Number (TAJ) -->
       <Entity id="0de78315-9537-47f5-95ab-b3e77eba3993" patternsProximity="300" recommendedConfidence="85">
@@ -8360,30 +8360,30 @@ Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 ### <a name="format"></a>Formato
 
 10 cifre senza spazi o delimitatori
-  
-### <a name="pattern"></a>Criterio
+
+### <a name="pattern"></a>Modello
 
 10 cifre:
-  
-- Una cifra che deve essere "8" 
+
+- Una cifra che deve essere "8"
 - Otto cifre
 - Una cifra di controllo
-    
+
 ### <a name="checksum"></a>Checksum
 
 Sì
-  
+
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-  
-- La funzione  `Func_hungary_eu_tax_file_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola  `Keywords_hungary_eu_tax_file_number` chiave from. 
-    
+
+- La funzione  `Func_hungary_eu_tax_file_number` trova contenuto che corrisponde al modello.
+- Viene trovata una parola  `Keywords_hungary_eu_tax_file_number` chiave from.
+
 Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-  
-- La funzione  `Func_hungary_eu_tax_file_number` trova contenuto che corrisponde al modello. 
-    
+
+- La funzione  `Func_hungary_eu_tax_file_number` trova contenuto che corrisponde al modello.
+
 ```xml
       <!-- Hungary Tax Identification Number -->
       <Entity id="ede42eb4-59d9-49eb-9603-d7853fbda91d" patternsProximity="300" recommendedConfidence="85">
@@ -8442,7 +8442,7 @@ Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 
 Motivo alfanumerico a 10 caratteri
 
-### <a name="pattern"></a>Criterio
+### <a name="pattern"></a>Modello
 
 Motivo alfanumerico a 10 caratteri:
 
@@ -8501,13 +8501,13 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 
 10 lettere o cifre
 
-### <a name="pattern"></a>Criterio
+### <a name="pattern"></a>Modello
 
 10 lettere o cifre:
-- Tre lettere (senza distinzione tra maiuscole e minuscole) 
+- Tre lettere (senza distinzione tra maiuscole e minuscole)
 - Lettera in C, P, H, F, A, T, B, L, J, G (senza distinzione tra maiuscole e minuscole)
 - Una lettera
-- Quattro cifre 
+- Quattro cifre
 - Una lettera che è una cifra di controllo alfabetica
 
 ### <a name="checksum"></a>Checksum
@@ -8543,23 +8543,23 @@ Un criterio DLP ha una bassa probabilità che sia stato rilevato questo tipo di 
 
 #### <a name="keyword_india_permanent_account_number"></a>Keyword_india_permanent_account_number
 
-- Permanent Account Number 
-- PAN 
-   
+- Permanent Account Number
+- PAN
+
 ## <a name="india-unique-identification-aadhaar-number"></a>India - Numero di identificazione univoca (Aadhaar)
 
 ### <a name="format"></a>Formato
 
 12 cifre contenenti spazi o trattini facoltativi 
 
-### <a name="pattern"></a>Criterio
+### <a name="pattern"></a>Modello
 
 12 cifre:
 - Una cifra che non è 0 o 1
-- Tre cifre 
-- Uno spazio o un trattino facoltativo  
-- Quattro cifre 
-- Uno spazio o un trattino facoltativo  
+- Tre cifre
+- Uno spazio o un trattino facoltativo 
+- Quattro cifre
+- Uno spazio o un trattino facoltativo 
 - La cifra finale, che è la cifra di controllo
 
 ### <a name="checksum"></a>Checksum
@@ -8572,7 +8572,7 @@ Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di
 - La funzione Func_india_aadhaar trova contenuto che corrisponde al modello.
 - Viene trovata una parola Keyword_india_aadhar da un utente.
 - Il checksum ha esito positivo.
-- 
+-
 Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 
 - La funzione Func_india_aadhaar trova contenuto che corrisponde al modello.
@@ -8591,7 +8591,7 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 </Entity>
 ```
 ### <a name="keywords"></a>Parole chiave
-   
+
 #### <a name="keyword_india_aadhar"></a>Keyword_india_aadhar
 - aadhaar
 - aadhar
@@ -8599,23 +8599,23 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 - uid
 - आधार
 - uidai
-   
+
 ## <a name="indonesia-identity-card-ktp-number"></a>Numero della carta di identità indonesiana (KTP)
 
 ### <a name="format"></a>Formato
 
 16 cifre contenenti punti facoltativi 
 
-### <a name="pattern"></a>Criterio
+### <a name="pattern"></a>Modello
 
 16 cifre:
-- Codice provincia a due cifre  
-- Un punto (facoltativo)  
-- Codice città o area a due cifre  
-- Codice sotto-distretto a due cifre  
-- Un punto (facoltativo)  
-- Sei cifre nel formato DDMMYY, ovvero la data di nascita 
-- Un punto (facoltativo)  
+- Codice provincia a due cifre 
+- Un punto (facoltativo) 
+- Codice città o area a due cifre 
+- Codice sotto-distretto a due cifre 
+- Un punto (facoltativo) 
+- Sei cifre nel formato DDMMYY, ovvero la data di nascita
+- Un punto (facoltativo) 
 - Quattro cifre
 
 ### <a name="checksum"></a>Checksum
@@ -8639,25 +8639,25 @@ Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di
 ```
 
 ### <a name="keywords"></a>Parole chiave
-   
+
 #### <a name="keyword_indonesia_id_card"></a>Keyword_indonesia_id_card
 
 - KTP
-- Kartu Tanda Penduduk 
-- Nomor Induk Kependudukan 
-   
+- Kartu Tanda Penduduk
+- Nomor Induk Kependudukan
+
 ## <a name="international-banking-account-number-iban"></a>Numero di conto bancario internazionale (IBAN)
 
 ### <a name="format"></a>Formato
 
 Codice paese (due lettere) più cifre di controllo (due cifre) più numero bban (fino a 30 caratteri)
 
-### <a name="pattern"></a>Criterio
+### <a name="pattern"></a>Modello
 
 Il modello deve includere tutti gli elementi seguenti:
 
 - Codice paese a due lettere
-- Due cifre di controllo (seguite da uno spazio facoltativo) 
+- Due cifre di controllo (seguite da uno spazio facoltativo)
 - 1-7 gruppi di quattro lettere o cifre (possono essere separati da spazi)
 - 1-3 lettere o cifre
 
@@ -8747,14 +8747,14 @@ Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di
 
 Nessuno
 
-   
+
 ## <a name="international-classification-of-diseases-icd-10-cm"></a>Classificazione internazionale delle malattie (ICD-10-CM)
 
 ### <a name="format"></a>Formato
 
 Dizionario
 
-### <a name="pattern"></a>Criterio
+### <a name="pattern"></a>Modello
 
 Parola chiave
 
@@ -8796,7 +8796,7 @@ Qualsiasi termine del dizionario Dictionary_icd_10_codes parole chiave, basato s
 
 Dizionario
 
-### <a name="pattern"></a>Criterio
+### <a name="pattern"></a>Modello
 
 Parola chiave
 
@@ -8841,7 +8841,7 @@ Modello complesso che rappresenta le versioni formattate (punti) e non formattat
 #### <a name="ipv6"></a>IPv6:
 Modello complesso che rappresenta i numeri IPv6 formattati (che includono i due punti)
 
-### <a name="pattern"></a>Criterio
+### <a name="pattern"></a>Modello
 
 ### <a name="checksum"></a>Checksum
 
@@ -8890,35 +8890,35 @@ Per IPv6, un criterio DLP ha una probabilità elevata di aver rilevato questo ti
 #### <a name="keyword_ipaddress"></a>Keyword_ipaddress
 
 - IP (questa parola chiave fa distinzione tra maiuscole e minuscole)
-- ip address 
+- ip address
 - Indirizzi IP
 - internet protocol
-- IP-כתובת ה 
+- IP-כתובת ה
 
 ## <a name="ireland-drivers-license-number"></a>Numero di patente di guida in Irlanda
 
 ### <a name="format"></a>Formato
 
 Sei cifre seguite da quattro lettere
-  
-### <a name="pattern"></a>Criterio
+
+### <a name="pattern"></a>Modello
 
 Sei cifre e quattro lettere:
-  
+
 - Sei cifre
 - Quattro lettere (senza distinzione tra maiuscole e minuscole)
-    
+
 ### <a name="checksum"></a>Checksum
 
 No
-  
+
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-  
-- L'espressione  `Regex_ireland_eu_driver's_license_number` regolare trova contenuto che corrisponde al modello. 
-- Viene trovata una  `Keywords_eu_driver's_license_number` parola chiave da o `Keywords_ireland_eu_driver's_license_number` . 
-    
+
+- L'espressione  `Regex_ireland_eu_driver's_license_number` regolare trova contenuto che corrisponde al modello.
+- Viene trovata una  `Keywords_eu_driver's_license_number` parola chiave da o `Keywords_ireland_eu_driver's_license_number` .
+
 ```xml
       <!-- Ireland Driver's License Number -->
       <Entity id="e01bccd9-eb4d-414f-ace1-e9b6a4c4a2ca" patternsProximity="300" recommendedConfidence="75">
@@ -9066,29 +9066,29 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 ### <a name="format"></a>Formato
 
 Due lettere o cifre seguite da sette cifre senza spazi o delimitatori
-  
-### <a name="pattern"></a>Criterio
+
+### <a name="pattern"></a>Modello
 
 Due lettere o cifre seguite da sette cifre:
-  
+
 - Due cifre o lettere (senza distinzione tra maiuscole e minuscole)
 - Sette cifre
-    
+
 ### <a name="checksum"></a>Checksum
 
 No
-  
+
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-- L'espressione  `Regex_ireland_eu_passport_number` regolare trova contenuto che corrisponde al modello. 
-- Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_ireland_eu_passport_number` . 
+- L'espressione  `Regex_ireland_eu_passport_number` regolare trova contenuto che corrisponde al modello.
+- Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_ireland_eu_passport_number` .
 - L'espressione regolare trova la data nel formato `Regex_ireland_eu_passport_date` DD MMM/MMM AAAA (esempio - 01 BEA/MAGGIO 1988) o viene trovata una parola chiave da `Keywords_eu_passport_date`
 
 Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-- L'espressione  `Regex_ireland_eu_passport_number` regolare trova contenuto che corrisponde al modello. 
+- L'espressione  `Regex_ireland_eu_passport_number` regolare trova contenuto che corrisponde al modello.
 - Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_ireland_eu_passport_number` .
-    
+
 ```xml
       <!-- Ireland Passport Number -->
       <Entity id="a2130f27-9ee2-4103-84f9-a6b1ee7d0cbf" patternsProximity="300" recommendedConfidence="75">
@@ -9149,20 +9149,20 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 ### <a name="format"></a>Formato
 
 Formato precedente (fino al 31 dicembre 2012):
-- sette cifre seguite da 1-2 lettere 
+- sette cifre seguite da 1-2 lettere
 
 Nuovo formato (1 gennaio 2013 e dopo):
 - sette cifre seguite da due lettere
 
-### <a name="pattern"></a>Criterio
+### <a name="pattern"></a>Modello
 
 Formato precedente (fino al 31 dicembre 2012):
-- sette cifre 
-- da una a due lettere (senza distinzione tra maiuscole e minuscole) 
+- sette cifre
+- da una a due lettere (senza distinzione tra maiuscole e minuscole)
 
 Nuovo formato (1 gennaio 2013 e dopo):
-- sette cifre 
-- una lettera (senza distinzione tra maiuscole e minuscole) che è una cifra di controllo alfabetica 
+- sette cifre
+- una lettera (senza distinzione tra maiuscole e minuscole) che è una cifra di controllo alfabetica
 - Lettera facoltativa nell'intervallo A-I o "W"
 
 ### <a name="checksum"></a>Checksum
@@ -9247,13 +9247,13 @@ Un criterio DLP ha una bassa probabilità che sia stato rilevato questo tipo di 
 
 13 cifre
 
-### <a name="pattern"></a>Criterio
+### <a name="pattern"></a>Modello
 
 Formattato:
-- due cifre 
-- un trattino 
-- tre cifre 
-- un trattino 
+- due cifre
+- un trattino
+- tre cifre
+- un trattino
 - otto cifre
 
 Non formattato:
@@ -9285,18 +9285,18 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 
 #### <a name="keyword_israel_bank_account_number"></a>Keyword_israel_bank_account_number
 
-- Bank Account Number 
-- Bank Account 
-- Account Number 
-- מספר חשבון בנק 
-   
+- Bank Account Number
+- Bank Account
+- Account Number
+- מספר חשבון בנק
+
 ## <a name="israel-national-identification-number"></a>Numero di identificazione nazionale Israele
 
 ### <a name="format"></a>Formato
 
 nove cifre
 
-### <a name="pattern"></a>Criterio
+### <a name="pattern"></a>Modello
 
 nove cifre consecutive
 
@@ -9344,7 +9344,7 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 -   id personale
 -   id univoco  
 
-   
+
 ## <a name="italy-drivers-license-number"></a>Numero di patente di guida italiana
 
 Questa entità di tipo è inclusa nel tipo di informazioni riservate numero di patente ue. È inoltre disponibile come entità di tipo di informazioni riservate autonomo.
@@ -9353,11 +9353,11 @@ Questa entità di tipo è inclusa nel tipo di informazioni riservate numero di p
 
 una combinazione di 10 lettere e cifre
 
-### <a name="pattern"></a>Criterio
+### <a name="pattern"></a>Modello
 
 una combinazione di 10 lettere e cifre:
-- una lettera (senza distinzione tra maiuscole e minuscole) 
-- la lettera "A" o "V" (senza distinzione tra maiuscole e minuscole) 
+- una lettera (senza distinzione tra maiuscole e minuscole)
+- la lettera "A" o "V" (senza distinzione tra maiuscole e minuscole)
 - sette cifre
 - una lettera (senza distinzione tra maiuscole e minuscole)
 
@@ -9510,7 +9510,7 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 #### <a name="keyword_italy_drivers_license_number"></a>Keyword_italy_drivers_license_number
 
 - numero di brevetto
-- patente di guida 
+- patente di guida
 - patente guida
 - patenti di guida
 - patenti guida
@@ -9527,8 +9527,8 @@ Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 ### <a name="format"></a>Formato
 
 una combinazione di 16 caratteri di lettere e cifre nel modello specificato
-  
-### <a name="pattern"></a>Criterio
+
+### <a name="pattern"></a>Modello
 
 Una combinazione di 16 caratteri di lettere e cifre:
 - tre lettere che corrispondono alle prime tre consonanti nel nome della famiglia
@@ -9538,20 +9538,20 @@ Una combinazione di 16 caratteri di lettere e cifre:
 - due cifre che corrispondono al giorno del mese di nascita per distinguere i generi, 40 viene aggiunto al giorno di nascita per le donne
 - quattro cifre che corrispondono al codice di area specifico del comune in cui è nata la persona (i codici a livello nazionale vengono utilizzati per i paesi esterni)
 - una cifra di parità
-    
+
 ### <a name="checksum"></a>Checksum
 
 Sì
-  
+
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-- La funzione  `Func_italy_eu_national_id_card` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola  `Keywords_italy_eu_national_id_card` chiave from. 
-    
+- La funzione  `Func_italy_eu_national_id_card` trova contenuto che corrisponde al modello.
+- Viene trovata una parola  `Keywords_italy_eu_national_id_card` chiave from.
+
 Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-- La funzione  `Func_italy_eu_national_id_card` trova contenuto che corrisponde al modello. 
-    
+- La funzione  `Func_italy_eu_national_id_card` trova contenuto che corrisponde al modello.
+
 ```xml
       <!-- Italy Fiscal Code -->
       <Entity id="4cd79172-8da9-4ff5-9188-98b1e7e2eca6" patternsProximity="300" recommendedConfidence="85">
@@ -9608,29 +9608,29 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 ### <a name="format"></a>Formato
 
 due lettere o cifre seguite da sette cifre senza spazi o delimitatori
-  
-### <a name="pattern"></a>Criterio
+
+### <a name="pattern"></a>Modello
 
 due lettere o cifre seguite da sette cifre:
-  
+
 - due cifre o lettere (senza distinzione tra maiuscole e minuscole)
 - sette cifre
-    
+
 ### <a name="checksum"></a>Checksum
 
 non applicabile
-  
+
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-- L'espressione  `Regex_italy_eu_passport_number` regolare trova contenuto che corrisponde al modello. 
-- Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_italy_eu_passport_number` . 
+- L'espressione  `Regex_italy_eu_passport_number` regolare trova contenuto che corrisponde al modello.
+- Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_italy_eu_passport_number` .
 - L'espressione regolare trova la data nel formato `Regex_italy_eu_passport_date` DD MMM/MMM AAAA (esempio - 01 GEN/JAN 1988) o viene trovata una parola chiave `Keywords_eu_passport_date` da
 
 Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-- L'espressione  `Regex_italy_eu_passport_number` regolare trova contenuto che corrisponde al modello. 
-- Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_italy_eu_passport_number` . 
-    
+- L'espressione  `Regex_italy_eu_passport_number` regolare trova contenuto che corrisponde al modello.
+- Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_italy_eu_passport_number` .
+
 ```xml
       <!-- Italy Passport Number -->
       <Entity id="39811019-4750-445f-b26d-4c0e6c431544" patternsProximity="300" recommendedConfidence="75">
@@ -9698,7 +9698,7 @@ Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 
 Motivo alfanumerico a 13 caratteri con delimitatori facoltativi
 
-### <a name="pattern"></a>Criterio
+### <a name="pattern"></a>Modello
 
 Motivo alfanumerico a 13 caratteri con delimitatori facoltativi:
 
@@ -9750,13 +9750,13 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 
 sette o otto cifre
 
-### <a name="pattern"></a>Criterio
+### <a name="pattern"></a>Modello
 
 numero di conto corrente bancario:
 - sette o otto cifre
 - codice filiale del conto corrente bancario:
-- quattro cifre 
-- uno spazio o un trattino (facoltativo) 
+- quattro cifre
+- uno spazio o un trattino (facoltativo)
 - tre cifre
 
 Checksum
@@ -9788,7 +9788,7 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
             <Match idRef="Keyword_jp_bank_branch_code" />
           </Any>
       </Pattern>
-  </Version>    
+  </Version>
      <Pattern confidenceLevel="75">
         <IdMatch idRef="Func_jp_bank_account" />
         <Match idRef="Keyword_jp_bank_account" />
@@ -9800,34 +9800,34 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 
 #### <a name="keyword_jp_bank_account"></a>Keyword_jp_bank_account
 
-- Checking Account Number 
-- Checking Account 
-- Checking Account # 
-- Checking Acct Number 
-- Checking Acct # 
-- Checking Acct No. 
-- Checking Account No. 
-- Bank Account Number 
-- Bank Account 
-- Bank Account # 
-- Bank Acct Number 
-- Bank Acct # 
-- Bank Acct No. 
-- Bank Account No. 
-- Savings Account Number 
-- Savings Account 
-- Savings Account # 
-- Savings Acct Number 
-- Savings Acct # 
-- Savings Acct No. 
-- Savings Account No. 
-- Debit Account Number 
-- Debit Account 
-- Debit Account # 
-- Debit Acct Number 
-- Debit Acct # 
-- Debit Acct No. 
-- Debit Account No. 
+- Checking Account Number
+- Checking Account
+- Checking Account #
+- Checking Acct Number
+- Checking Acct #
+- Checking Acct No.
+- Checking Account No.
+- Bank Account Number
+- Bank Account
+- Bank Account #
+- Bank Acct Number
+- Bank Acct #
+- Bank Acct No.
+- Bank Account No.
+- Savings Account Number
+- Savings Account
+- Savings Account #
+- Savings Acct Number
+- Savings Acct #
+- Savings Acct No.
+- Savings Account No.
+- Debit Account Number
+- Debit Account
+- Debit Account #
+- Debit Acct Number
+- Debit Acct #
+- Debit Acct No.
+- Debit Account No.
 - 口座番号
 - 銀行口座
 - 銀行口座番号
@@ -9853,7 +9853,7 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 
 12 cifre
 
-### <a name="pattern"></a>Criterio
+### <a name="pattern"></a>Modello
 
 12 cifre consecutive
 
@@ -9930,7 +9930,7 @@ Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 
 Numero a 13 cifre
 
-### <a name="pattern"></a>Criterio
+### <a name="pattern"></a>Modello
 
 Numero a 13 cifre:
 
@@ -9991,7 +9991,7 @@ Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 
 Numero a 12 cifre
 
-### <a name="pattern"></a>Criterio
+### <a name="pattern"></a>Modello
 
 Numero a 12 cifre:
 
@@ -10042,14 +10042,14 @@ Un criterio DLP ha una bassa probabilità che sia stato rilevato questo tipo di 
 - 個人識別ナンバー
 - 通知カード
 
-   
+
 ## <a name="japan-passport-number"></a>Numero di passaporto giappone
 
 ### <a name="format"></a>Formato
 
 due lettere seguite da sette cifre
 
-### <a name="pattern"></a>Criterio
+### <a name="pattern"></a>Modello
 
 due lettere (senza distinzione tra maiuscole e minuscole) seguite da sette cifre
 
@@ -10099,11 +10099,11 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 
 12 lettere e cifre
 
-### <a name="pattern"></a>Criterio
+### <a name="pattern"></a>Modello
 
 12 lettere e cifre:
 - due lettere (senza distinzione tra maiuscole e minuscole)
-- otto cifre 
+- otto cifre
 - due lettere (senza distinzione tra maiuscole e minuscole)
 
 ### <a name="checksum"></a>Checksum
@@ -10143,7 +10143,7 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 
 11 cifre
 
-### <a name="pattern"></a>Criterio
+### <a name="pattern"></a>Modello
 
 11 cifre consecutive
 
@@ -10172,28 +10172,28 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 #### <a name="keyword_jp_resident_registration_number"></a>Keyword_jp_resident_registration_number
 
 - Resident Registration Number
-- Residents Basic Registry Number 
-- Resident Registration No. 
-- Resident Register No. 
-- Residents Basic Registry No. 
-- Basic Resident Register No. 
+- Residents Basic Registry Number
+- Resident Registration No.
+- Resident Register No.
+- Residents Basic Registry No.
+- Basic Resident Register No.
 - 外国人登録証明書番号
 - 証明書番号
 - 登録番号
 - 外国人登録証
 
-   
+
 ## <a name="japan-social-insurance-number-sin"></a>Giappone - Numero di previdenza sociale (SIN)
 
 ### <a name="format"></a>Formato
 
 7-12 cifre
 
-### <a name="pattern"></a>Criterio
+### <a name="pattern"></a>Modello
 
 7-12 cifre:
-- quattro cifre 
-- un trattino (facoltativo) 
+- quattro cifre
+- un trattino (facoltativo)
 - sei cifre OR
 - 7-12 cifre consecutive
 
@@ -10229,9 +10229,9 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 
 #### <a name="keyword_jp_sin"></a>Keyword_jp_sin
 
-- Social Insurance No. 
-- Social Insurance Num 
-- Social Insurance Number 
+- Social Insurance No.
+- Social Insurance Num
+- Social Insurance Number
 - 健康保険被保険者番号
 - 健保番号
 - 基礎年金番号
@@ -10254,24 +10254,24 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 ### <a name="format"></a>Formato
 
 tre lettere seguite da sei cifre
-  
-### <a name="pattern"></a>Criterio
+
+### <a name="pattern"></a>Modello
 
 tre lettere e sei cifre:
-  
-- tre lettere (senza distinzione tra maiuscole e minuscole) 
+
+- tre lettere (senza distinzione tra maiuscole e minuscole)
 - sei cifre
-    
+
 ### <a name="checksum"></a>Checksum
 
 No
-  
+
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-- L'espressione  `Regex_latvia_eu_driver's_license_number` regolare trova contenuto che corrisponde al modello. 
-- Viene trovata una  `Keywords_eu_driver's_license_number` parola chiave da o `Keywords_latvia_eu_driver's_license_number` . 
-    
+- L'espressione  `Regex_latvia_eu_driver's_license_number` regolare trova contenuto che corrisponde al modello.
+- Viene trovata una  `Keywords_eu_driver's_license_number` parola chiave da o `Keywords_latvia_eu_driver's_license_number` .
+
 ```xml
       <!-- Latvia Driver's License Number -->
       <Entity id="ec996de0-30f2-46b1-b192-4d2ff8805fa7" patternsProximity="300" recommendedConfidence="75">
@@ -10420,14 +10420,14 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 ### <a name="format"></a>Formato
 
 11 cifre e un trattino facoltativo
-  
-### <a name="pattern"></a>Criterio
+
+### <a name="pattern"></a>Modello
 
 Formato precedente
 
 11 cifre e un trattino:
-  
-- sei cifre che corrispondono alla data di nascita (DDMMYY) 
+
+- sei cifre che corrispondono alla data di nascita (DDMMYY)
 - un trattino
 - una cifra che corrisponde al secolo di nascita ("0" per il 19° secolo, "1" per il 20° secolo e "2" per il 21° secolo)
 - quattro cifre generate in modo casuale
@@ -10438,20 +10438,20 @@ Nuovo formato
 
 - Due cifre "32"
 - 9 cifre
-    
+
 ### <a name="checksum"></a>Checksum
 
 Sì
-  
+
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-- La funzione  `Func_latvia_eu_national_id_card` o l'espressione regolare `Regex_latvia_eu_national_id_card_new_format` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola  `Keywords_latvia_eu_national_id_card` chiave from. 
-    
+- La funzione  `Func_latvia_eu_national_id_card` o l'espressione regolare `Regex_latvia_eu_national_id_card_new_format` trova contenuto che corrisponde al modello.
+- Viene trovata una parola  `Keywords_latvia_eu_national_id_card` chiave from.
+
 Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-- La funzione  `Func_latvia_eu_national_id_card` o l'espressione regolare `Regex_latvia_eu_national_id_card_new_format` trova contenuto che corrisponde al modello. 
-    
+- La funzione  `Func_latvia_eu_national_id_card` o l'espressione regolare `Regex_latvia_eu_national_id_card_new_format` trova contenuto che corrisponde al modello.
+
 ```xml
       <!-- Latvia Personal Code -->
       <Entity id="03fcf763-27c2-49ed-9422-2641c6c895c9" patternsProximity="300" recommendedConfidence="85">
@@ -10551,29 +10551,29 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 ### <a name="format"></a>Formato
 
 due lettere o cifre seguite da sette cifre senza spazi o delimitatori
-  
-### <a name="pattern"></a>Criterio
+
+### <a name="pattern"></a>Modello
 
 due lettere o cifre seguite da sette cifre:
-  
+
 - due cifre o lettere (senza distinzione tra maiuscole e minuscole)
 - sette cifre
-    
+
 ### <a name="checksum"></a>Checksum
 
 No
-  
+
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-- L'espressione  `Regex_latvia_eu_passport_number` regolare trova contenuto che corrisponde al modello. 
-- Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_latvia_eu_passport_number` . 
+- L'espressione  `Regex_latvia_eu_passport_number` regolare trova contenuto che corrisponde al modello.
+- Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_latvia_eu_passport_number` .
 - L'espressione `Regex_eu_passport_date1` regolare trova la data nel formato GG.MM.AAAA o viene trovata una parola chiave `Keywords_eu_passport_date` da
 
 Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-- L'espressione  `Regex_latvia_eu_passport_number` regolare trova contenuto che corrisponde al modello. 
-- Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_latvia_eu_passport_number` . 
-    
+- L'espressione  `Regex_latvia_eu_passport_number` regolare trova contenuto che corrisponde al modello.
+- Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_latvia_eu_passport_number` .
+
 ```xml
       <!-- Latvia Passport Number -->
       <Entity id="23ae25ec-cc28-421b-b77a-3054eadf1ede" patternsProximity="300" recommendedConfidence="75">
@@ -10633,21 +10633,21 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 ### <a name="format"></a>Formato
 
 otto cifre senza spazi e delimitatori
-  
-### <a name="pattern"></a>Criterio
 
-otto cifre 
-  
+### <a name="pattern"></a>Modello
+
+otto cifre
+
 ### <a name="checksum"></a>Checksum
 
 No
-  
+
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-- L'espressione  `Regex_lithuania_eu_driver's_license_number` regolare trova contenuto che corrisponde al modello. 
-- Viene trovata una  `Keywords_eu_driver's_license_number` parola chiave da o `Keywords_lithuania_eu_driver's_license_number` . 
-    
+- L'espressione  `Regex_lithuania_eu_driver's_license_number` regolare trova contenuto che corrisponde al modello.
+- Viene trovata una  `Keywords_eu_driver's_license_number` parola chiave da o `Keywords_lithuania_eu_driver's_license_number` .
+
 ```xml
       <!-- Lithuania Driver's License Number -->
       <Entity id="86f7628b-e0f4-4dc3-9fbc-e4300e4c7d78" patternsProximity="300" recommendedConfidence="75">
@@ -10802,29 +10802,29 @@ Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 ### <a name="format"></a>Formato
 
 11 cifre senza spazi e delimitatori
-  
-### <a name="pattern"></a>Criterio
+
+### <a name="pattern"></a>Modello
 
 11 cifre senza spazi e delimitatori:
-  
+
 - una cifra (da 1 a 6) che corrisponde al sesso e al secolo di nascita della persona
-- sei cifre che corrispondono alla data di nascita (AAMMDD) 
+- sei cifre che corrispondono alla data di nascita (AAMMDD)
 - tre cifre che corrispondono al numero seriale della data di nascita
 - una cifra di controllo
-    
+
 ### <a name="checksum"></a>Checksum
 
 Sì
-  
+
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-- La funzione  `Func_lithuania_eu_tax_file_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola  `Keywords_lithuania_eu_tax_file_number` chiave from. 
-    
+- La funzione  `Func_lithuania_eu_tax_file_number` trova contenuto che corrisponde al modello.
+- Viene trovata una parola  `Keywords_lithuania_eu_tax_file_number` chiave from.
+
 Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-- La funzione  `Func_lithuania_eu_tax_file_number` trova contenuto che corrisponde al modello. 
-    
+- La funzione  `Func_lithuania_eu_tax_file_number` trova contenuto che corrisponde al modello.
+
 ```xml
       <!-- Lithuania Personal Code -->
       <Entity id="cd6d3786-8ec3-4524-a2cf-1e0095379171" patternsProximity="300" recommendedConfidence="85">
@@ -10884,26 +10884,26 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 ### <a name="format"></a>Formato
 
 otto cifre o lettere senza spazi o delimitatori
-  
-### <a name="pattern"></a>Criterio
+
+### <a name="pattern"></a>Modello
 
 otto cifre o lettere (senza distinzione tra maiuscole e minuscole)
-  
+
 ### <a name="checksum"></a>Checksum
 
 non applicabile
-  
+
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-- L'espressione  `Regex_lithuania_eu_passport_number` regolare trova contenuto che corrisponde al modello. 
-- Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_lithuania_eu_passport_number` . 
+- L'espressione  `Regex_lithuania_eu_passport_number` regolare trova contenuto che corrisponde al modello.
+- Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_lithuania_eu_passport_number` .
 - L'espressione `Regex_eu_passport_date3` regolare trova la data nel formato GG MM AAAA o viene trovata una parola chiave `Keywords_eu_passport_date` da
 
 Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-- L'espressione  `Regex_lithuania_eu_passport_number` regolare trova contenuto che corrisponde al modello. 
-- Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_lithuania_eu_passport_number` . 
-    
+- L'espressione  `Regex_lithuania_eu_passport_number` regolare trova contenuto che corrisponde al modello.
+- Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_lithuania_eu_passport_number` .
+
 ```xml
       <!-- Lithuania Passport Number -->
       <Entity id="1b79900f-047b-4c3f-846f-7d73b5534bce" patternsProximity="300" recommendedConfidence="75">
@@ -10960,21 +10960,21 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 ### <a name="format"></a>Formato
 
 sei cifre senza spazi e delimitatori
-  
-### <a name="pattern"></a>Criterio
 
-sei cifre 
-  
+### <a name="pattern"></a>Modello
+
+sei cifre
+
 ### <a name="checksum"></a>Checksum
 
 No
-  
+
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-- L'espressione  `Regex_luxemburg_eu_driver's_license_number` regolare trova contenuto che corrisponde al modello. 
-- Viene trovata una  `Keywords_eu_driver's_license_number` parola chiave da o `Keywords_luxemburg_eu_driver's_license_number` . 
-    
+- L'espressione  `Regex_luxemburg_eu_driver's_license_number` regolare trova contenuto che corrisponde al modello.
+- Viene trovata una  `Keywords_eu_driver's_license_number` parola chiave da o `Keywords_luxemburg_eu_driver's_license_number` .
+
 ```xml
       <!-- Luxemburg Driver's License Number -->
       <Entity id="89daf717-1544-4860-9a2e-fc9166dd8852" patternsProximity="300" recommendedConfidence="75">
@@ -11128,26 +11128,26 @@ Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 ### <a name="format"></a>Formato
 
 13 cifre senza spazi o delimitatori
-  
-### <a name="pattern"></a>Criterio
+
+### <a name="pattern"></a>Modello
 
 13 cifre:
-  
-- 11 cifre 
+
+- 11 cifre
 - due cifre di controllo
-    
+
 ### <a name="checksum"></a>Checksum
 
 sì
-  
+
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-- La funzione  `Func_luxemburg_eu_tax_file_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola  `Keywords_luxemburg_eu_national_id_card` chiave from. 
+- La funzione  `Func_luxemburg_eu_tax_file_number` trova contenuto che corrisponde al modello.
+- Viene trovata una parola  `Keywords_luxemburg_eu_national_id_card` chiave from.
 
 Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-- La funzione  `Func_luxemburg_eu_tax_file_number` trova contenuto che corrisponde al modello. 
+- La funzione  `Func_luxemburg_eu_tax_file_number` trova contenuto che corrisponde al modello.
 
 
 ```xml
@@ -11197,26 +11197,26 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 ### <a name="format"></a>Formato
 
 otto cifre o lettere senza spazi o delimitatori
-  
-### <a name="pattern"></a>Criterio
+
+### <a name="pattern"></a>Modello
 
 otto cifre o lettere (senza distinzione tra maiuscole e minuscole)
-  
+
 ### <a name="checksum"></a>Checksum
 
 No
-  
+
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-- L'espressione  `Regex_luxemburg_eu_passport_number` regolare trova contenuto che corrisponde al modello. 
-- Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_luxemburg_eu_passport_number` . 
+- L'espressione  `Regex_luxemburg_eu_passport_number` regolare trova contenuto che corrisponde al modello.
+- Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_luxemburg_eu_passport_number` .
 - L'espressione `Regex_eu_passport_date3` regolare trova la data nel formato GG MM AAAA o viene trovata una parola chiave `Keywords_eu_passport_date` da
 
 Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-- L'espressione  `Regex_luxemburg_eu_passport_number` regolare trova contenuto che corrisponde al modello. 
-- Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_luxemburg_eu_passport_number` . 
-    
+- L'espressione  `Regex_luxemburg_eu_passport_number` regolare trova contenuto che corrisponde al modello.
+- Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_luxemburg_eu_passport_number` .
+
 ```xml
       <!-- Luxemburg Passport Number -->
       <Entity id="81d5c027-bed9-4421-91a0-3b2e55b3eb85" patternsProximity="300" recommendedConfidence="75">
@@ -11284,33 +11284,33 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 ### <a name="format"></a>Formato
 
 11 cifre
-  
-### <a name="pattern"></a>Criterio
+
+### <a name="pattern"></a>Modello
 
 11 cifre
-  
+
 - due cifre
-- uno spazio facoltativo 
-- tre cifre 
 - uno spazio facoltativo
-- tre cifre 
+- tre cifre
+- uno spazio facoltativo
+- tre cifre
 - uno spazio facoltativo
 - due cifre
 - una cifra di controllo
-    
+
 ### <a name="checksum"></a>Checksum
 
 Sì
-  
+
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-- La funzione  `Func_luxemburg_eu_tax_file_number_non_natural` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola  `Keywords_luxemburg_eu_tax_file_number` chiave from. 
-    
+- La funzione  `Func_luxemburg_eu_tax_file_number_non_natural` trova contenuto che corrisponde al modello.
+- Viene trovata una parola  `Keywords_luxemburg_eu_tax_file_number` chiave from.
+
 Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-- La funzione  `Func_luxemburg_eu_tax_file_number_non_natural` trova contenuto che corrisponde al modello. 
-    
+- La funzione  `Func_luxemburg_eu_tax_file_number_non_natural` trova contenuto che corrisponde al modello.
+
 ```xml
       <!-- Luxemburg National Identification Number (Non-natural persons) -->
       <Entity id="84bffa3a-d805-4788-a613-b1e4df3804cf" patternsProximity="300" recommendedConfidence="85">
@@ -11377,14 +11377,14 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 
 12 cifre contenenti lineette facoltative
 
-### <a name="pattern"></a>Criterio
+### <a name="pattern"></a>Modello
 
 12 cifre:
-- sei cifre nel formato AAMMDD, ovvero la data di nascita 
-- un trattino (facoltativo) 
-- Codice luogo di nascita a due lettere 
-- un trattino (facoltativo) 
-- tre cifre casuali 
+- sei cifre nel formato AAMMDD, ovvero la data di nascita
+- un trattino (facoltativo)
+- Codice luogo di nascita a due lettere
+- un trattino (facoltativo)
+- tre cifre casuali
 - codice di genere a una cifra
 
 ### <a name="checksum"></a>Checksum
@@ -11409,7 +11409,7 @@ Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di
 ```
 
 ### <a name="keywords"></a>Parole chiave
-   
+
 #### <a name="keyword_malaysia_id_card_number"></a>Keyword_malaysia_id_card_number
 
 - scheda applicazione digitale
@@ -11442,27 +11442,27 @@ Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di
 ### <a name="format"></a>Formato
 
 Combinazione di due caratteri e sei cifre nel formato specificato
-  
-### <a name="pattern"></a>Criterio
+
+### <a name="pattern"></a>Modello
 
 combinazione di due caratteri e sei cifre:
-  
+
 - due caratteri (cifre o lettere, senza distinzione tra maiuscole e minuscole)
 - uno spazio (facoltativo)
 - tre cifre
 - uno spazio (facoltativo)
 - tre cifre
-    
+
 ### <a name="checksum"></a>Checksum
 
 No
-  
+
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-- L'espressione  `Regex_malta_eu_driver's_license_number` regolare trova contenuto che corrisponde al modello. 
-- Viene trovata una  `Keywords_eu_driver's_license_number` parola chiave da o `Keywords_malta_eu_driver's_license_number` . 
-    
+- L'espressione  `Regex_malta_eu_driver's_license_number` regolare trova contenuto che corrisponde al modello.
+- Viene trovata una  `Keywords_eu_driver's_license_number` parola chiave da o `Keywords_malta_eu_driver's_license_number` .
+
 ```xml
       <!-- Malta Driver's License Number -->
       <Entity id="a3bdaa4a-8371-4735-8fa5-56ee0fb4afc4" patternsProximity="300" recommendedConfidence="75">
@@ -11617,27 +11617,27 @@ Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 ### <a name="format"></a>Formato
 
 sette cifre seguite da una lettera
-  
-### <a name="pattern"></a>Criterio
+
+### <a name="pattern"></a>Modello
 
 sette cifre seguite da una lettera:
-  
-- sette cifre 
+
+- sette cifre
 - una lettera in "M, G, A, P, L, H, B, Z" (senza distinzione tra maiuscole e minuscole)
-    
+
 ### <a name="checksum"></a>Checksum
 
 Non applicabile
-  
+
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-- L'espressione  `Regex_malta_eu_national_id_card` regolare trova contenuto che corrisponde al modello. 
-- Viene trovata una parola  `Keywords_malta_eu_national_id_card` chiave from. 
-    
+- L'espressione  `Regex_malta_eu_national_id_card` regolare trova contenuto che corrisponde al modello.
+- Viene trovata una parola  `Keywords_malta_eu_national_id_card` chiave from.
+
 Un criterio DLP ha una bassa probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-- L'espressione  `Regex_malta_eu_national_id_card` regolare trova contenuto che corrisponde al modello. 
-    
+- L'espressione  `Regex_malta_eu_national_id_card` regolare trova contenuto che corrisponde al modello.
+
 ```xml
       <!-- Malta Identity Card Number -->
       <Entity id="854b36b3-a388-4ac8-a4ec-677c2b5e4356" patternsProximity="300" recommendedConfidence="75">
@@ -11676,26 +11676,26 @@ Un criterio DLP ha una bassa probabilità che sia stato rilevato questo tipo di 
 ### <a name="format"></a>Formato
 
 sette cifre senza spazi o delimitatori
-  
-### <a name="pattern"></a>Criterio
 
-sette cifre 
-  
+### <a name="pattern"></a>Modello
+
+sette cifre
+
 ### <a name="checksum"></a>Checksum
 
 No
-  
+
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-- L'espressione  `Regex_malta_eu_passport_number` regolare trova contenuto che corrisponde al modello. 
-- Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_malta_eu_passport_number` . 
+- L'espressione  `Regex_malta_eu_passport_number` regolare trova contenuto che corrisponde al modello.
+- Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_malta_eu_passport_number` .
 - Viene trovata una parola `Keywords_eu_passport_date` chiave da
 
 Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-- L'espressione  `Regex_malta_eu_passport_number` regolare trova contenuto che corrisponde al modello. 
-- Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_malta_eu_passport_number` . 
-    
+- L'espressione  `Regex_malta_eu_passport_number` regolare trova contenuto che corrisponde al modello.
+- Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_malta_eu_passport_number` .
+
 ```xml
       <!-- Malta Passport Number -->
       <Entity id="b2b21198-48f9-4d13-b2a5-03969bff0fb8" patternsProximity="300" recommendedConfidence="75">
@@ -11750,34 +11750,34 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 
 Per i cittadini maltesi:
 - sette cifre e una lettera nello schema specificato
-  
+
 Nazionali non maltesi ed entità maltesi:
 - nove cifre
-  
-### <a name="pattern"></a>Criterio
+
+### <a name="pattern"></a>Modello
 
 Nazionali maltesi: sette cifre e una lettera
-  
-- sette cifre 
+
+- sette cifre
 - una lettera (senza distinzione tra maiuscole e minuscole)
-    
+
 Nazionali non maltesi ed entità maltesi: nove cifre
-  
-- nove cifre 
-    
+
+- nove cifre
+
 ### <a name="checksum"></a>Checksum
 
 Non applicabile
-  
+
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-- L'espressione  `Regex_malta_eu_tax_file_number`  regolare o trova contenuto che corrisponde al `Regex_malta_eu_tax_file_number_non_maltese_national` modello. 
-- Viene trovata una parola  `Keywords_malta_eu_tax_file_number` chiave from. 
-    
+- L'espressione  `Regex_malta_eu_tax_file_number`  regolare o trova contenuto che corrisponde al `Regex_malta_eu_tax_file_number_non_maltese_national` modello.
+- Viene trovata una parola  `Keywords_malta_eu_tax_file_number` chiave from.
+
 Un criterio DLP ha una bassa probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-- L'espressione  `Regex_malta_eu_tax_file_number` regolare o trova contenuto che corrisponde al `Regex_malta_eu_tax_file_number_non_maltese_national` modello. 
-    
+- L'espressione  `Regex_malta_eu_tax_file_number` regolare o trova contenuto che corrisponde al `Regex_malta_eu_tax_file_number_non_maltese_national` modello.
+
 ```xml
       <!-- Malta Tax ID Number -->
       <Entity id="ec830c63-65f4-45d0-9d8c-910dc8334b20" patternsProximity="300" recommendedConfidence="75">
@@ -11839,8 +11839,8 @@ Un criterio DLP ha una bassa probabilità che sia stato rilevato questo tipo di 
 ### <a name="format"></a>Formato
 
 Motivo alfanumerico a 11 caratteri
-  
-### <a name="pattern"></a>Criterio
+
+### <a name="pattern"></a>Modello
 
 - una cifra compresa tra 1 e 9
 - una lettera esclusa S, L, O, I, B, Z
@@ -11853,20 +11853,20 @@ Motivo alfanumerico a 11 caratteri
 - un trattino facoltativo
 - due lettere escluse S, L, O, I, B, Z
 - due cifre
-    
+
 ### <a name="checksum"></a>Checksum
 
 No
-  
+
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-- L'espressione  `Regex_mbi_card` regolare trova contenuto che corrisponde al modello. 
-- Viene trovata una parola  `Keyword_mbi_card` chiave from. 
-    
+- L'espressione  `Regex_mbi_card` regolare trova contenuto che corrisponde al modello.
+- Viene trovata una parola  `Keyword_mbi_card` chiave from.
+
 Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-- L'espressione  `Regex_mbi_card` regolare trova contenuto che corrisponde al modello. 
-    
+- L'espressione  `Regex_mbi_card` regolare trova contenuto che corrisponde al modello.
+
 ```xml
     <!-- Medicare Beneficiary Identifier (MBI) card -->
       <Entity id="f753a286-f5cc-47e6-a592-4be25fd02591" patternsProximity="300" recommendedConfidence="75" relaxProximity="true">
@@ -11898,8 +11898,8 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 ### <a name="format"></a>Formato
 
 Motivo alfanumerico a 18 caratteri
-  
-### <a name="pattern"></a>Criterio
+
+### <a name="pattern"></a>Modello
 
 - quattro lettere (senza distinzione tra maiuscole e minuscole)
 - sei cifre che indicano una data valida
@@ -11908,20 +11908,20 @@ Motivo alfanumerico a 18 caratteri
 - tre lettere
 - una lettera o una cifra
 - una cifra
-    
+
 ### <a name="checksum"></a>Checksum
 
 No
-  
+
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-- La funzione  `Func_mexico_population_registry_code` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola  `Keyword_mexico_population_registry_code` chiave from. 
-    
+- La funzione  `Func_mexico_population_registry_code` trova contenuto che corrisponde al modello.
+- Viene trovata una parola  `Keyword_mexico_population_registry_code` chiave from.
+
 Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-- La funzione  `Func_mexico_population_registry_code` trova contenuto che corrisponde al modello. 
-    
+- La funzione  `Func_mexico_population_registry_code` trova contenuto che corrisponde al modello.
+
 ```xml
     <!-- Mexico Unique Population Registry Code (CURP) -->
       <Entity id="e905ad4d-5a74-406d-bf36-b1efca798af4" patternsProximity="300" recommendedConfidence="75" relaxProximity="true">
@@ -11965,13 +11965,13 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 
 otto o nove cifre contenenti spazi facoltativi
 
-### <a name="pattern"></a>Criterio
+### <a name="pattern"></a>Modello
 
 otto-nove cifre:
-- tre cifre 
-- uno spazio (facoltativo) 
-- tre cifre 
-- uno spazio (facoltativo) 
+- tre cifre
+- uno spazio (facoltativo)
+- tre cifre
+- uno spazio (facoltativo)
 - due-tre cifre
 
 ### <a name="checksum"></a>Checksum
@@ -11998,7 +11998,7 @@ Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di
 ### <a name="keywords"></a>Parole chiave
 
 #### <a name="keywords_netherlands_eu_national_id_card"></a>Keywords_netherlands_eu_national_id_card
-  
+
 - bsn #
 - bsn
 - hamburgerservicenummer
@@ -12026,21 +12026,21 @@ Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di
 ### <a name="format"></a>Formato
 
 10 cifre senza spazi e delimitatori
-  
-### <a name="pattern"></a>Criterio
+
+### <a name="pattern"></a>Modello
 
 10 cifre
-  
+
 ### <a name="checksum"></a>Checksum
 
 No
-  
+
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-- L'espressione  `Regex_netherlands_eu_driver's_license_number` regolare trova contenuto che corrisponde al modello. 
-- Viene trovata una  `Keywords_eu_driver's_license_number` parola chiave da o `Keywords_netherlands_eu_driver's_license_number` . 
-    
+- L'espressione  `Regex_netherlands_eu_driver's_license_number` regolare trova contenuto che corrisponde al modello.
+- Viene trovata una  `Keywords_eu_driver's_license_number` parola chiave da o `Keywords_netherlands_eu_driver's_license_number` .
+
 ```xml
       <!-- Netherlands Driver's License Number -->
       <Entity id="6247fbea-ab80-4be5-8233-308b7c031401" patternsProximity="300" recommendedConfidence="75">
@@ -12193,26 +12193,26 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 ### <a name="format"></a>Formato
 
 nove lettere o cifre senza spazi o delimitatori
-  
-### <a name="pattern"></a>Criterio
+
+### <a name="pattern"></a>Modello
 
 nove lettere o cifre
-  
+
 ### <a name="checksum"></a>Checksum
 
 non applicabile
-  
+
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-- L'espressione  `Regex_netherlands_eu_passport_number` regolare trova contenuto che corrisponde al modello. 
-- Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_netherlands_eu_passport_number` . 
+- L'espressione  `Regex_netherlands_eu_passport_number` regolare trova contenuto che corrisponde al modello.
+- Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_netherlands_eu_passport_number` .
 - L'espressione regolare trova la data nel formato `Regex_netherlands_eu_passport_date` DD MMM/MMM AAAA (esempio - 26 MAA/MAR 2012)
 
 Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-- L'espressione  `Regex_netherlands_eu_passport_number` regolare trova contenuto che corrisponde al modello. 
-- Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_netherlands_eu_passport_number` . 
-    
+- L'espressione  `Regex_netherlands_eu_passport_number` regolare trova contenuto che corrisponde al modello.
+- Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_netherlands_eu_passport_number` .
+
 ```xml
       <!-- Netherlands Passport Number -->
       <Entity id="61786727-bafd-45f6-94d9-888d815e228e" patternsProximity="300" recommendedConfidence="75">
@@ -12267,24 +12267,24 @@ Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 ### <a name="format"></a>Formato
 
 nove cifre senza spazi o delimitatori
-  
-### <a name="pattern"></a>Criterio
 
-nove cifre 
-  
+### <a name="pattern"></a>Modello
+
+nove cifre
+
 ### <a name="checksum"></a>Checksum
 
 Sì
-  
+
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-- La funzione  `Func_netherlands_eu_tax_file_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola  `Keywords_netherlands_eu_tax_file_number` chiave from. 
-    
+- La funzione  `Func_netherlands_eu_tax_file_number` trova contenuto che corrisponde al modello.
+- Viene trovata una parola  `Keywords_netherlands_eu_tax_file_number` chiave from.
+
 Un criterio DLP ha una bassa probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-- La funzione  `Func_netherlands_eu_tax_file_number` trova contenuto che corrisponde al modello. 
-    
+- La funzione  `Func_netherlands_eu_tax_file_number` trova contenuto che corrisponde al modello.
+
 ```xml
       <!-- Netherlands Tax Identification Number -->
       <Entity id="01f42a64-eba7-4892-a67b-398237e4ade2" patternsProximity="300" recommendedConfidence="85">
@@ -12351,7 +12351,7 @@ Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 
 Motivo alfanumerico a 14 caratteri
 
-### <a name="pattern"></a>Criterio
+### <a name="pattern"></a>Modello
 
 Motivo alfanumerico a 14 caratteri:
 
@@ -12413,7 +12413,7 @@ Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 
 Formato da 14 a 16 cifre con delimitatore facoltativo
 
-### <a name="pattern"></a>Criterio
+### <a name="pattern"></a>Modello
 
 Motivo da 14 a 16 cifre con delimitatore facoltativo:
 
@@ -12475,11 +12475,11 @@ Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 
 schema alfanumerico a otto caratteri
 
-### <a name="pattern"></a>Criterio
+### <a name="pattern"></a>Modello
 
 schema alfanumerico a otto caratteri
 
-- due lettere 
+- due lettere
 - sei cifre
 
 ### <a name="checksum"></a>Checksum
@@ -12590,7 +12590,7 @@ Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 
 otto o nove cifre con delimitatori facoltativi
 
-### <a name="pattern"></a>Criterio
+### <a name="pattern"></a>Modello
 
 otto o nove cifre con delimitatori facoltativi
 
@@ -12644,10 +12644,10 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 
 tre lettere, uno spazio (facoltativo) e quattro cifre
 
-### <a name="pattern"></a>Criterio
+### <a name="pattern"></a>Modello
 
 - tre lettere (senza distinzione tra maiuscole e minuscole) tranne "I" e "O"
-- uno spazio (facoltativo) 
+- uno spazio (facoltativo)
 - quattro cifre
 
 ### <a name="checksum"></a>Checksum
@@ -12707,7 +12707,7 @@ Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 
 nove cifre
 
-### <a name="pattern"></a>Criterio
+### <a name="pattern"></a>Modello
 
 nove cifre
 
@@ -12754,18 +12754,18 @@ Un criterio DLP ha una bassa probabilità che sia stato rilevato questo tipo di 
 - numero di previdenza sociale
 - swn #
 
-   
+
 ## <a name="norway-identification-number"></a>Numero di identificazione norvegia
 
 ### <a name="format"></a>Formato
 
 11 cifre
 
-### <a name="pattern"></a>Criterio
+### <a name="pattern"></a>Modello
 
 11 cifre:
-- sei cifre nel formato DDMMYY, ovvero la data di nascita 
-- numero individuale a tre cifre 
+- sei cifre nel formato DDMMYY, ovvero la data di nascita
+- numero individuale a tre cifre
 - due cifre di controllo
 
 ### <a name="checksum"></a>Checksum
@@ -12808,20 +12808,20 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 - Personnummer
 - Fødselsnummer
 
-   
+
 ## <a name="philippines-unified-multi-purpose-identification-number"></a>Numero di identificazione multivalore unificato delle Filippine
 
 ### <a name="format"></a>Formato
 
 12 cifre separate da dei segni meno
 
-### <a name="pattern"></a>Criterio
+### <a name="pattern"></a>Modello
 
 12 cifre:
-- quattro cifre 
-- un trattino 
-- sette cifre 
-- un trattino 
+- quattro cifre
+- un trattino
+- sette cifre
+- un trattino
 - una cifra
 
 ### <a name="checksum"></a>Checksum
@@ -12845,12 +12845,12 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 ```
 
 ### <a name="keywords"></a>Parole chiave
-   
+
 #### <a name="keyword_philippines_id"></a>Keyword_philippines_id
 
-- ID multifunzione unificato 
-- UMID 
-- Carta di identità 
+- ID multifunzione unificato
+- UMID
+- Carta di identità
 - Pinag-isang Multi-Layunin ID
 
 ## <a name="poland-drivers-license-number"></a>Numero di patente di guida polonia
@@ -12858,27 +12858,27 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 ### <a name="format"></a>Formato
 
 14 cifre contenenti due barre
-  
-### <a name="pattern"></a>Criterio
+
+### <a name="pattern"></a>Modello
 
 14 cifre e due barre:
-  
-- cinque cifre 
+
+- cinque cifre
 - una barra
 - due cifre
 - una barra
 - sette cifre
-    
+
 ### <a name="checksum"></a>Checksum
 
 No
-  
+
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-- L'espressione  `Regex_poland_eu_driver's_license_number` regolare trova contenuto che corrisponde al modello. 
-- Viene trovata una  `Keywords_eu_driver's_license_number` parola chiave da o `Keywords_poland_eu_driver's_license_number` . 
-    
+- L'espressione  `Regex_poland_eu_driver's_license_number` regolare trova contenuto che corrisponde al modello.
+- Viene trovata una  `Keywords_eu_driver's_license_number` parola chiave da o `Keywords_poland_eu_driver's_license_number` .
+
 ```xml
       <!-- Poland Driver's License Number -->
       <Entity id="24d51f99-ee9e-4060-a077-cae58cab1ee4" patternsProximity="300" recommendedConfidence="75">
@@ -13027,7 +13027,7 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 
 tre lettere e sei cifre
 
-### <a name="pattern"></a>Criterio
+### <a name="pattern"></a>Modello
 
 tre lettere (senza distinzione tra maiuscole e minuscole) seguite da sei cifre
 
@@ -13065,14 +13065,14 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 - dow. os.
 
 
-   
+
 ## <a name="poland-national-id-pesel"></a>ID nazionale Polonia (PESEL)
 
 ### <a name="format"></a>Formato
 
 11 cifre
 
-### <a name="pattern"></a>Criterio
+### <a name="pattern"></a>Modello
 
 - sei cifre che rappresentano la data di nascita nel formato AAMMDD
 - quattro cifre
@@ -13120,7 +13120,7 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 - pesel
 - tożsamości narodowej
 
-   
+
 ## <a name="poland-passport-number"></a>Numero di passaporto polonia
 Questa entità tipo di informazioni riservate è inclusa nel tipo di informazioni riservate Numero di passaporto UE. È disponibile anche come entità di tipo di informazioni riservate autonomo.
 
@@ -13128,7 +13128,7 @@ Questa entità tipo di informazioni riservate è inclusa nel tipo di informazion
 
 due lettere e sette cifre
 
-### <a name="pattern"></a>Criterio
+### <a name="pattern"></a>Modello
 
 Due lettere (senza distinzione tra maiuscole e minuscole) seguite da sette cifre
 
@@ -13221,11 +13221,11 @@ Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 
 Numero a 9 o 14 cifre
 
-### <a name="pattern"></a>Criterio
+### <a name="pattern"></a>Modello
 
 numero a nove cifre o a 14 cifre:
 
-- nove cifre o 
+- nove cifre o
 - nove cifre
 - trattino
 - cinque cifre
@@ -13286,22 +13286,22 @@ Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 ### <a name="format"></a>Formato
 
 11 cifre senza spazi o delimitatori
-  
-### <a name="pattern"></a>Criterio
+
+### <a name="pattern"></a>Modello
 
 11 cifre
-  
+
 ### <a name="checksum"></a>Checksum
 
 Sì
-  
+
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-- La funzione  `Func_poland_eu_tax_file_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola  `Keywords_poland_eu_tax_file_number` chiave from. 
-    
-  
+- La funzione  `Func_poland_eu_tax_file_number` trova contenuto che corrisponde al modello.
+- Viene trovata una parola  `Keywords_poland_eu_tax_file_number` chiave from.
+
+
 ```xml
       <!-- Poland Tax Identification Number -->
       <Entity id="1ff28b4d-40f2-49e9-b677-9606a88e2bca" patternsProximity="300" recommendedConfidence="85">
@@ -13343,7 +13343,7 @@ Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di
 - vatid #
 - vatid
 - vatno #
-   
+
 
 ## <a name="portugal-citizen-card-number"></a>Numero di carta di cittadinanza portoghese
 
@@ -13351,7 +13351,7 @@ Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di
 
 otto cifre
 
-### <a name="pattern"></a>Criterio
+### <a name="pattern"></a>Modello
 
 otto cifre
 
@@ -13403,8 +13403,8 @@ Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di
 ### <a name="format"></a>Formato
 
 due modelli - due lettere seguite da 5-8 cifre con caratteri speciali
-  
-### <a name="pattern"></a>Criterio
+
+### <a name="pattern"></a>Modello
 
 Modello 1: due lettere seguite da 5/6 con caratteri speciali:
 - Due lettere (senza distinzione tra maiuscole e minuscole)
@@ -13420,17 +13420,17 @@ Modello 2: una lettera seguita da 6/8 cifre con caratteri speciali:
 - Uno spazio
 - Una cifra
 
-    
+
 ### <a name="checksum"></a>Checksum
 
 No
-  
+
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-- L'espressione  `Regex_portugal_eu_driver's_license_number` regolare trova contenuto che corrisponde al modello. 
-- Viene trovata una  `Keywords_eu_driver's_license_number` parola chiave da o `Keywords_portugal_eu_driver's_license_number` . 
-    
+- L'espressione  `Regex_portugal_eu_driver's_license_number` regolare trova contenuto che corrisponde al modello.
+- Viene trovata una  `Keywords_eu_driver's_license_number` parola chiave da o `Keywords_portugal_eu_driver's_license_number` .
+
 ```xml
       <!-- Portugal Driver's License Number -->
       <Entity id="977f1e5a-2c33-4bcc-b516-95bb275cff23" patternsProximity="300" recommendedConfidence="75">
@@ -13586,29 +13586,29 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 ### <a name="format"></a>Formato
 
 una lettera seguita da sei cifre senza spazi o delimitatori
-  
-### <a name="pattern"></a>Criterio
+
+### <a name="pattern"></a>Modello
 
 una lettera seguita da sei cifre:
-  
+
 - una lettera (senza distinzione tra maiuscole e minuscole)
 - sei cifre
-    
+
 ### <a name="checksum"></a>Checksum
 
 No
-  
+
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-- L'espressione  `Regex_portugal_eu_passport_number` regolare trova contenuto che corrisponde al modello. 
-- Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_portugal_eu_passport_number` . 
+- L'espressione  `Regex_portugal_eu_passport_number` regolare trova contenuto che corrisponde al modello.
+- Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_portugal_eu_passport_number` .
 - L'espressione `Regex_eu_passport_date1` regolare trova la data nel formato GG.MM.AAAA o viene trovata una parola chiave `Keywords_eu_passport_date` da
 
 Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-- L'espressione  `Regex_portugal_eu_passport_number` regolare trova contenuto che corrisponde al modello. 
+- L'espressione  `Regex_portugal_eu_passport_number` regolare trova contenuto che corrisponde al modello.
 - Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_portugal_eu_passport_number` .
-    
+
 ```xml
       <!-- Portugal Passport Number -->
       <Entity id="080a52fd-a7bc-431e-b54d-51f08f59db11" patternsProximity="300" recommendedConfidence="75">
@@ -13672,28 +13672,28 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 ### <a name="format"></a>Formato
 
 nove cifre con spazi facoltativi
-  
-### <a name="pattern"></a>Criterio
+
+### <a name="pattern"></a>Modello
 
 - tre cifre
 - uno spazio facoltativo
 - tre cifre
 - uno spazio facoltativo
 - tre cifre
-  
+
 ### <a name="checksum"></a>Checksum
 
 Sì
-  
+
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-- La funzione  `Func_portugal_eu_tax_file_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola  `Keywords_portugal_eu_tax_file_number` chiave from. 
-    
+- La funzione  `Func_portugal_eu_tax_file_number` trova contenuto che corrisponde al modello.
+- Viene trovata una parola  `Keywords_portugal_eu_tax_file_number` chiave from.
+
 Un criterio DLP ha una bassa probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-- La funzione  `Func_portugal_eu_tax_file_number` trova contenuto che corrisponde al modello. 
-    
+- La funzione  `Func_portugal_eu_tax_file_number` trova contenuto che corrisponde al modello.
+
 ```xml
       <!-- Portugal Tax Identification Number -->
       <Entity id="65372402-3131-4f1e-9983-4439841d1f15" patternsProximity="300" recommendedConfidence="85">
@@ -13740,23 +13740,23 @@ Un criterio DLP ha una bassa probabilità che sia stato rilevato questo tipo di 
 ### <a name="format"></a>Formato
 
 un carattere seguito da otto cifre
-  
-### <a name="pattern"></a>Criterio
+
+### <a name="pattern"></a>Modello
 
 un carattere seguito da otto cifre:
-- una lettera (senza distinzione tra maiuscole e minuscole) o una cifra 
+- una lettera (senza distinzione tra maiuscole e minuscole) o una cifra
 - otto cifre
-    
+
 ### <a name="checksum"></a>Checksum
 
 No
-  
+
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-- L'espressione  `Regex_romania_eu_driver's_license_number` regolare trova contenuto che corrisponde al modello. 
-- Viene trovata una  `Keywords_eu_driver's_license_number` parola chiave da o `Keywords_romania_eu_driver's_license_number` . 
-    
+- L'espressione  `Regex_romania_eu_driver's_license_number` regolare trova contenuto che corrisponde al modello.
+- Viene trovata una  `Keywords_eu_driver's_license_number` parola chiave da o `Keywords_romania_eu_driver's_license_number` .
+
 ```xml
       <!-- Romania Driver's License Number -->
       <Entity id="b5511ace-2fd8-4ae4-b6fc-c7c6e4689e3c" patternsProximity="300" recommendedConfidence="75">
@@ -13914,8 +13914,8 @@ Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 ### <a name="format"></a>Formato
 
 13 cifre senza spazi e delimitatori
-  
-### <a name="pattern"></a>Criterio
+
+### <a name="pattern"></a>Modello
 
 - una cifra da 1 a 9
 - sei cifre che rappresentano la data di nascita (AAMMDD)
@@ -13925,16 +13925,16 @@ Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 ### <a name="checksum"></a>Checksum
 
 Sì
-  
+
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-- La funzione  `Func_romania_eu_national_id_card` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola  `Keywords_romania_eu_national_id_card` chiave from. 
-    
+- La funzione  `Func_romania_eu_national_id_card` trova contenuto che corrisponde al modello.
+- Viene trovata una parola  `Keywords_romania_eu_national_id_card` chiave from.
+
 Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-- La funzione  `Func_romania_eu_national_id_card` trova contenuto che corrisponde al modello. 
-    
+- La funzione  `Func_romania_eu_national_id_card` trova contenuto che corrisponde al modello.
+
 ```xml
       <!-- Romania Personal Numerical Code (CNP) -->
       <Entity id="eb5fa399-fe28-4c67-8188-d63a616ed89c" patternsProximity="300" recommendedConfidence="85">
@@ -14006,26 +14006,26 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 ### <a name="format"></a>Formato
 
 otto o nove cifre senza spazi e delimitatori
-  
-### <a name="pattern"></a>Criterio
+
+### <a name="pattern"></a>Modello
 
 otto o nove cifre
-  
+
 ### <a name="checksum"></a>Checksum
 
 No
-  
+
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-- L'espressione  `Regex_romania_eu_passport_number` regolare trova contenuto che corrisponde al modello. 
-- Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_romania_eu_passport_number` . 
+- L'espressione  `Regex_romania_eu_passport_number` regolare trova contenuto che corrisponde al modello.
+- Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_romania_eu_passport_number` .
 - L'espressione regolare trova la data nel formato `Regex_romania_eu_passport_date` DD MMM/MMM AA (esempio- 01 FEB/FEB 10) o viene trovata una parola chiave `Keywords_eu_passport_date` da
 
 Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-- L'espressione  `Regex_romania_eu_passport_number` regolare trova contenuto che corrisponde al modello. 
-- Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_romania_eu_passport_number` . 
-    
+- L'espressione  `Regex_romania_eu_passport_number` regolare trova contenuto che corrisponde al modello.
+- Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_romania_eu_passport_number` .
+
 ```xml
       <!-- Romania Passport Number -->
       <Entity id="5d31b90c-7fe2-4a76-a14b-767b8fd19d6c" patternsProximity="300" recommendedConfidence="75">
@@ -14087,7 +14087,7 @@ Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 
 Numero a 10 cifre
 
-### <a name="pattern"></a>Criterio
+### <a name="pattern"></a>Modello
 
 Numero a 10 cifre:
 
@@ -14149,7 +14149,7 @@ Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 
 numero a nove cifre
 
-### <a name="pattern"></a>Criterio
+### <a name="pattern"></a>Modello
 
 numero a nove cifre:
 
@@ -14203,7 +14203,7 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 
 10 cifre
 
-### <a name="pattern"></a>Criterio
+### <a name="pattern"></a>Modello
 
 10 cifre consecutive
 
@@ -14233,23 +14233,23 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 
 #### <a name="keyword_saudi_arabia_national_id"></a>Keyword_saudi_arabia_national_id
 
-- Identification Card 
-- I card number 
-- ID number 
-- الوطنية الهوية بطاقة رقم 
+- Identification Card
+- I card number
+- ID number
+- الوطنية الهوية بطاقة رقم
 
-   
+
 ## <a name="singapore-national-registration-identity-card-nric-number"></a>Numero NRIC (National Registration Identity Card) di Singapore
 
 ### <a name="format"></a>Formato
 
 nove lettere e cifre
 
-### <a name="pattern"></a>Criterio
+### <a name="pattern"></a>Modello
 
 - nove lettere e cifre:
-- la lettera "F", "G", "S" o "T" (senza distinzione tra maiuscole e minuscole) 
-- sette cifre 
+- la lettera "F", "G", "S" o "T" (senza distinzione tra maiuscole e minuscole)
+- sette cifre
 - una cifra di controllo alfabetica
 
 ### <a name="checksum"></a>Checksum
@@ -14281,41 +14281,41 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 ```
 
 ### <a name="keywords"></a>Parole chiave
-   
+
 #### <a name="keyword_singapore_nric"></a>Keyword_singapore_nric
 
-- Carta di identità di registrazione nazionale 
-- Numero di carta di identità 
-- NRIC 
-- IC 
-- Numero di identificazione per stranieri 
-- FIN 
-- 身份证 
-- 身份證 
+- Carta di identità di registrazione nazionale
+- Numero di carta di identità
+- NRIC
+- IC
+- Numero di identificazione per stranieri
+- FIN
+- 身份证
+- 身份證
 
 ## <a name="slovakia-drivers-license-number"></a>Numero di patente di guida slovacchia
 
 ### <a name="format"></a>Formato
 
 un carattere seguito da sette cifre
-  
-### <a name="pattern"></a>Criterio
+
+### <a name="pattern"></a>Modello
 
 un carattere seguito da sette cifre
-  
+
 - una lettera (senza distinzione tra maiuscole e minuscole) o una cifra
-- sette cifre 
-    
+- sette cifre
+
 ### <a name="checksum"></a>Checksum
 
 No
-  
+
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-- L'espressione  `Regex_slovakia_eu_driver's_license_number` regolare trova contenuto che corrisponde al modello. 
-- Viene trovata una  `Keywords_eu_driver's_license_number` parola chiave da o `Keywords_slovakia_eu_driver's_license_number` . 
-    
+- L'espressione  `Regex_slovakia_eu_driver's_license_number` regolare trova contenuto che corrisponde al modello.
+- Viene trovata una  `Keywords_eu_driver's_license_number` parola chiave da o `Keywords_slovakia_eu_driver's_license_number` .
+
 ```xml
       <!-- Slovakia Driver's License Number -->
       <Entity id="14240c22-b6de-4ce5-a90b-137f74252513" patternsProximity="300" recommendedConfidence="75">
@@ -14471,27 +14471,27 @@ Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 ### <a name="format"></a>Formato
 
 nove o 10 cifre contenenti barra rovesciata facoltativa
-  
-### <a name="pattern"></a>Criterio
+
+### <a name="pattern"></a>Modello
 
 - sei cifre che rappresentano la data di nascita
 - barra facoltativa (/)
 - tre cifre
 - una cifra di controllo facoltativa
-  
+
 ### <a name="checksum"></a>Checksum
 
 Sì
-  
+
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-- La funzione  `Func_slovakia_eu_national_id_card` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola  `Keywords_slovakia_eu_national_id_card` chiave from. 
-    
+- La funzione  `Func_slovakia_eu_national_id_card` trova contenuto che corrisponde al modello.
+- Viene trovata una parola  `Keywords_slovakia_eu_national_id_card` chiave from.
+
 Un criterio DLP ha una bassa probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-- La funzione  `Func_slovakia_eu_national_id_card` trova contenuto che corrisponde al modello. 
-    
+- La funzione  `Func_slovakia_eu_national_id_card` trova contenuto che corrisponde al modello.
+
 ```xml
       <!-- Slovakia Personal Number -->
       <Entity id="951c26b7-3b35-4f73-924b-15dd599cb9ab" patternsProximity="300" recommendedConfidence="85">
@@ -14560,26 +14560,26 @@ Un criterio DLP ha una bassa probabilità che sia stato rilevato questo tipo di 
 ### <a name="format"></a>Formato
 
 una cifra o una lettera seguita da sette cifre senza spazi o delimitatori
-  
-### <a name="pattern"></a>Criterio
+
+### <a name="pattern"></a>Modello
 
 una cifra o una lettera (senza distinzione tra maiuscole e minuscole) seguita da sette cifre
-  
+
 ### <a name="checksum"></a>Checksum
 
 No
-  
+
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-- L'espressione  `Regex_slovakia_eu_passport_number` regolare trova contenuto che corrisponde al modello. 
-- Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_slovakia_eu_passport_number` . 
+- L'espressione  `Regex_slovakia_eu_passport_number` regolare trova contenuto che corrisponde al modello.
+- Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_slovakia_eu_passport_number` .
 - L'espressione `Regex_eu_passport_date1` regolare trova la data nel formato GG.MM.AAAA o viene trovata una parola chiave `Keywords_eu_passport_date` da
 
 Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-- L'espressione  `Regex_slovakia_eu_passport_number` regolare trova contenuto che corrisponde al modello. 
-- Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_slovakia_eu_passport_number` . 
-    
+- L'espressione  `Regex_slovakia_eu_passport_number` regolare trova contenuto che corrisponde al modello.
+- Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_slovakia_eu_passport_number` .
+
 ```xml
       <!-- Slovakia Passport Number -->
       <Entity id="238e1f08-d80e-4793-af33-9b57918335b7" patternsProximity="300" recommendedConfidence="75">
@@ -14638,21 +14638,21 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 ### <a name="format"></a>Formato
 
 nove cifre senza spazi e delimitatori
-  
-### <a name="pattern"></a>Criterio
+
+### <a name="pattern"></a>Modello
 
 nove cifre
-  
+
 ### <a name="checksum"></a>Checksum
 
 No
-  
+
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-- L'espressione  `Regex_slovenia_eu_driver's_license_number` regolare trova contenuto che corrisponde al modello. 
-- Viene trovata una  `Keywords_eu_driver's_license_number` parola chiave da o `Keywords_slovenia_eu_driver's_license_number` . 
-    
+- L'espressione  `Regex_slovenia_eu_driver's_license_number` regolare trova contenuto che corrisponde al modello.
+- Viene trovata una  `Keywords_eu_driver's_license_number` parola chiave da o `Keywords_slovenia_eu_driver's_license_number` .
+
 ```xml
       <!-- Slovenia Driver's License Number -->
       <Entity id="d5bc089a-f2ee-433d-a6b1-5c253051d6f2" patternsProximity="300" recommendedConfidence="75">
@@ -14809,29 +14809,29 @@ Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 ### <a name="format"></a>Formato
 
 13 cifre senza spazi o delimitatori
-  
-### <a name="pattern"></a>Criterio
+
+### <a name="pattern"></a>Modello
 
 13 cifre nel modello specificato:
-  
-- sette cifre che corrispondono alla data di nascita (DDMMLLL), dove "LLL" corrisponde alle ultime tre cifre dell'anno di nascita 
+
+- sette cifre che corrispondono alla data di nascita (DDMMLLL), dove "LLL" corrisponde alle ultime tre cifre dell'anno di nascita
 - due cifre che corrispondono all'area di nascita "50"
 - tre cifre che corrispondono a una combinazione di sesso e numero di serie per le persone nate nello stesso giorno. 000-499 per gli uomini e 500-999 per le femmine.
 - una cifra di controllo
-    
+
 ### <a name="checksum"></a>Checksum
 
 Sì
-  
+
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-- La funzione  `Func_slovenia_eu_national_id_card` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola  `Keywords_slovenia_eu_national_id_card` chiave from. 
-    
+- La funzione  `Func_slovenia_eu_national_id_card` trova contenuto che corrisponde al modello.
+- Viene trovata una parola  `Keywords_slovenia_eu_national_id_card` chiave from.
+
 Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-- La funzione  `Func_slovenia_eu_national_id_card` trova contenuto che corrisponde al modello. 
-    
+- La funzione  `Func_slovenia_eu_national_id_card` trova contenuto che corrisponde al modello.
+
 ```xml
       <!-- Slovenia Unique Master Citizen Number -->
       <Entity id="68948b27-803d-41e4-adf1-13e05eb541bb" patternsProximity="300" recommendedConfidence="85">
@@ -14880,30 +14880,30 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 ### <a name="format"></a>Formato
 
 due lettere seguite da sette cifre senza spazi o delimitatori
-  
-### <a name="pattern"></a>Criterio
+
+### <a name="pattern"></a>Modello
 
 due lettere seguite da sette cifre:
-  
+
 - la lettera "P"
 - una lettera maiuscola
 - sette cifre
-    
+
 ### <a name="checksum"></a>Checksum
 
 No
-  
+
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-- L'espressione  `Regex_slovenia_eu_passport_number` regolare trova contenuto che corrisponde al modello. 
-- Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_slovenia_eu_passport_number` . 
+- L'espressione  `Regex_slovenia_eu_passport_number` regolare trova contenuto che corrisponde al modello.
+- Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_slovenia_eu_passport_number` .
 - L'espressione `Regex_eu_passport_date1` regolare trova la data nel formato GG.MM.AAAA o viene trovata una parola chiave `Keywords_eu_passport_date` da
 
 Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-- L'espressione  `Regex_slovenia_eu_passport_number` regolare trova contenuto che corrisponde al modello. 
-- Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_slovenia_eu_passport_number` . 
-    
+- L'espressione  `Regex_slovenia_eu_passport_number` regolare trova contenuto che corrisponde al modello.
+- Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_slovenia_eu_passport_number` .
+
 ```xml
       <!-- Slovenia Passport Number -->
       <Entity id="235b7976-7bbe-4df5-bb40-08678e749d1a" patternsProximity="300" recommendedConfidence="75">
@@ -14969,26 +14969,26 @@ Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 ### <a name="format"></a>Formato
 
 otto cifre senza spazi o delimitatori
-  
-### <a name="pattern"></a>Criterio
+
+### <a name="pattern"></a>Modello
 
 - una cifra da 1 a 9
 - sei cifre
 - una cifra di controllo
-  
+
 ### <a name="checksum"></a>Checksum
 
 Sì
-  
+
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-- La funzione  `Func_slovenia_eu_tax_file_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola  `Keywords_slovenia_eu_tax_file_number` chiave from. 
-    
+- La funzione  `Func_slovenia_eu_tax_file_number` trova contenuto che corrisponde al modello.
+- Viene trovata una parola  `Keywords_slovenia_eu_tax_file_number` chiave from.
+
 Un criterio DLP ha una bassa probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-- La funzione  `Func_slovenia_eu_tax_file_number` trova contenuto che corrisponde al modello. 
-    
+- La funzione  `Func_slovenia_eu_tax_file_number` trova contenuto che corrisponde al modello.
+
 ```xml
       <!-- Slovenia Tax Identification Number -->
       <Entity id="e47b071e-c352-4d70-8241-8c215ad65505" patternsProximity="300" recommendedConfidence="85">
@@ -15035,13 +15035,13 @@ Un criterio DLP ha una bassa probabilità che sia stato rilevato questo tipo di 
 
 13 cifre che possono contenere spazi
 
-### <a name="pattern"></a>Criterio
+### <a name="pattern"></a>Modello
 
 13 cifre:
-- sei cifre nel formato AAMMDD, ovvero la data di nascita 
-- quattro cifre 
-- indicatore di cittadinanza a una cifra 
-- la cifra "8" o "9" 
+- sei cifre nel formato AAMMDD, ovvero la data di nascita
+- quattro cifre
+- indicatore di cittadinanza a una cifra
+- la cifra "8" o "9"
 - una cifra, ovvero una cifra di checksum
 
 ### <a name="checksum"></a>Checksum
@@ -15066,27 +15066,27 @@ Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di
 ```
 
 ### <a name="keywords"></a>Parole chiave
-   
+
 #### <a name="keyword_south_africa_identification_number"></a>Keyword_south_africa_identification_number
 
 - Carta di identità
 - ID
-- Identificazione 
-   
+- Identificazione
+
 ## <a name="south-korea-resident-registration-number"></a>South Korea resident registration number
 
 ### <a name="format"></a>Formato
 
 13 cifre contenenti un segno meno
 
-### <a name="pattern"></a>Criterio
+### <a name="pattern"></a>Modello
 
 13 cifre:
-- sei cifre nel formato AAMMDD, ovvero la data di nascita 
-- un trattino 
-- una cifra determinata dal secolo e dal sesso 
-- Codice paese di nascita a quattro cifre 
-- una cifra utilizzata per distinguere le persone per le quali i numeri precedenti sono identici 
+- sei cifre nel formato AAMMDD, ovvero la data di nascita
+- un trattino
+- una cifra determinata dal secolo e dal sesso
+- Codice paese di nascita a quattro cifre
+- una cifra utilizzata per distinguere le persone per le quali i numeri precedenti sono identici
 - una cifra di controllo.
 
 ### <a name="checksum"></a>Checksum
@@ -15118,13 +15118,13 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 ```
 
 ### <a name="keywords"></a>Parole chiave
-   
+
 #### <a name="keyword_south_korea_resident_number"></a>Keyword_south_korea_resident_number
 
-- Carta di identità 
-- Numero di registrazione del cittadino 
-- Jumin deungnok beonho 
-- RRN 
+- Carta di identità
+- Numero di registrazione del cittadino
+- Jumin deungnok beonho
+- RRN
 - 주민등록번호
 
 ## <a name="spain-drivers-license-number"></a>Numero di patente di guida in Spagna
@@ -15132,27 +15132,27 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 ### <a name="format"></a>Formato
 
 otto cifre seguite da un carattere
-  
-### <a name="pattern"></a>Criterio
+
+### <a name="pattern"></a>Modello
 
 otto cifre seguite da un carattere:
-  
-- otto cifre 
+
+- otto cifre
 - una cifra o una lettera (senza distinzione tra maiuscole e minuscole)
-    
+
 ### <a name="checksum"></a>Checksum
 
 Sì
-  
+
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-- La funzione  `Func_spain_eu_DL_and_NI_number_citizen` o trova contenuto che corrisponde al `Func_spain_eu_DL_and_NI_number_foreigner` modello. 
-- Viene trovata una  `Keywords_eu_driver's_license_number` parola chiave da o `Keywords_spain_eu_driver's_license_number` . 
+- La funzione  `Func_spain_eu_DL_and_NI_number_citizen` o trova contenuto che corrisponde al `Func_spain_eu_DL_and_NI_number_foreigner` modello.
+- Viene trovata una  `Keywords_eu_driver's_license_number` parola chiave da o `Keywords_spain_eu_driver's_license_number` .
 
 Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-- La funzione  `Func_spain_eu_DL_and_NI_number_citizen` o trova contenuto che corrisponde al `Func_spain_eu_DL_and_NI_number_foreigner` modello. 
-    
+- La funzione  `Func_spain_eu_DL_and_NI_number_citizen` o trova contenuto che corrisponde al `Func_spain_eu_DL_and_NI_number_foreigner` modello.
+
 ```xml
       <!-- Spain Driver's License Number -->
       <Entity id="d5a82922-b501-4f40-8868-341321146aa2" patternsProximity="300" recommendedConfidence="75">
@@ -15329,29 +15329,29 @@ Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 ### <a name="format"></a>Formato
 
 otto cifre seguite da un carattere
-  
-### <a name="pattern"></a>Criterio
+
+### <a name="pattern"></a>Modello
 
 sette cifre seguite da un carattere
-  
+
 - otto cifre
 - Uno spazio o un trattino facoltativo
 - una lettera di controllo (senza distinzione tra maiuscole e minuscole)
-    
+
 ### <a name="checksum"></a>Checksum
 
 Sì
-  
+
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-- La funzione  `Func_spain_eu_DL_and_NI_number_citizen` o trova contenuto che corrisponde al `Func_spain_eu_DL_and_NI_number_foreigner` modello. 
-- Viene trovata una parola  `Keywords_spain_eu_national_id_card"` chiave from. 
+- La funzione  `Func_spain_eu_DL_and_NI_number_citizen` o trova contenuto che corrisponde al `Func_spain_eu_DL_and_NI_number_foreigner` modello.
+- Viene trovata una parola  `Keywords_spain_eu_national_id_card"` chiave from.
 
 Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-- La funzione  `Func_spain_eu_DL_and_NI_number_citizen` o trova contenuto che corrisponde al `Func_spain_eu_DL_and_NI_number_foreigner` modello. 
+- La funzione  `Func_spain_eu_DL_and_NI_number_citizen` o trova contenuto che corrisponde al `Func_spain_eu_DL_and_NI_number_foreigner` modello.
 
-    
+
 ```xml
       <!-- Spain DNI -->
       <Entity id="8e6251b9-47b4-40e8-a42b-0f80876be192" patternsProximity="300" recommendedConfidence="85">
@@ -15403,30 +15403,30 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 ### <a name="format"></a>Formato
 
 una combinazione di otto o nove caratteri di lettere e numeri senza spazi o delimitatori
-  
-### <a name="pattern"></a>Criterio
+
+### <a name="pattern"></a>Modello
 
 una combinazione di otto o nove caratteri di lettere e numeri:
-  
-- due cifre o lettere 
+
+- due cifre o lettere
 - una cifra o una lettera (facoltativo)
 - sei cifre
-    
+
 ### <a name="checksum"></a>Checksum
 
 Non applicabile
-  
+
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-- L'espressione  `Regex_spain_eu_passport_number` regolare trova contenuto che corrisponde al modello. 
-- Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_spain_eu_passport_number` . 
+- L'espressione  `Regex_spain_eu_passport_number` regolare trova contenuto che corrisponde al modello.
+- Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_spain_eu_passport_number` .
 - L'espressione `Regex_spain_eu_passport_date` regolare trova la data nel formato GG-MM-AAAA o viene trovata una parola chiave `Keywords_eu_passport_date` da
 
 Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-- L'espressione  `Regex_spain_eu_passport_number` regolare trova contenuto che corrisponde al modello. 
+- L'espressione  `Regex_spain_eu_passport_number` regolare trova contenuto che corrisponde al modello.
 - Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_spain_eu_passport_number` .
-    
+
 ```xml
       <!-- Spain Passport Number -->
       <Entity id="d17a57de-9fa5-4e9f-85d3-85c26d89686e" patternsProximity="300" recommendedConfidence="75">
@@ -15494,13 +15494,13 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 
 11-12 cifre
 
-### <a name="pattern"></a>Criterio
+### <a name="pattern"></a>Modello
 
 11-12 cifre:
-- due cifre 
-- una barra (facoltativo) 
-- da sette a otto cifre 
-- una barra (facoltativo) 
+- due cifre
+- una barra (facoltativo)
+- da sette a otto cifre
+- una barra (facoltativo)
 - due cifre
 
 ### <a name="checksum"></a>Checksum
@@ -15512,7 +15512,7 @@ Sì
 Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_spanish_social_security_number restituisce contenuti che corrispondono al modello.
 - Il checksum ha esito positivo.
-- - Viene trovata una parola  `Keywords_spain_eu_ssn_or_equivalent` chiave from. 
+- - Viene trovata una parola  `Keywords_spain_eu_ssn_or_equivalent` chiave from.
 
 Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_spanish_social_security_number restituisce contenuti che corrispondono al modello.
@@ -15553,51 +15553,51 @@ Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 ### <a name="format"></a>Formato
 
 sette o otto cifre e una o due lettere nel modello specificato
-  
-### <a name="pattern"></a>Criterio
+
+### <a name="pattern"></a>Modello
 
 Spagnolo Natural Persons with a Spain National Identity Card:
-  
-- otto cifre 
-- una lettera maiuscola (maiuscole/minuscole) 
-    
+
+- otto cifre
+- una lettera maiuscola (maiuscole/minuscole)
+
 Spagnoli non residenti senza carta di identità nazionale di Spagna
-  
+
 - una lettera maiuscola "L" (maiuscole/minuscole)
 - sette cifre
-- una lettera maiuscola (maiuscole/minuscole) 
-    
-Spagnoli residenti di età inferiore a 14 anni senza carta d'identità nazionale spagna:
-  
-- una lettera maiuscola "K" (maiuscole/minuscole)
-- sette cifre 
 - una lettera maiuscola (maiuscole/minuscole)
-    
+
+Spagnoli residenti di età inferiore a 14 anni senza carta d'identità nazionale spagna:
+
+- una lettera maiuscola "K" (maiuscole/minuscole)
+- sette cifre
+- una lettera maiuscola (maiuscole/minuscole)
+
 Stranieri con numero di identificazione di uno straniero
-  
-- una lettera maiuscola che è "X", "Y" o "Z" (maiuscole/minuscole) 
+
+- una lettera maiuscola che è "X", "Y" o "Z" (maiuscole/minuscole)
 - sette cifre
-- una lettera maiuscola (maiuscole/minuscole) 
-    
+- una lettera maiuscola (maiuscole/minuscole)
+
 Stranieri senza numero di identificazione di uno straniero
-  
-- una lettera maiuscola che è "M" (maiuscole/minuscole) 
+
+- una lettera maiuscola che è "M" (maiuscole/minuscole)
 - sette cifre
-- una lettera maiuscola (maiuscole/minuscole) 
-    
+- una lettera maiuscola (maiuscole/minuscole)
+
 ### <a name="checksum"></a>Checksum
 
 Sì
-  
+
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-- La funzione  `Func_spain_eu_tax_file_number` o trova contenuto che corrisponde al `Func_spain_eu_DL_and_NI_number_citizen` modello. 
-- Viene trovata una parola  `Keywords_spain_eu_tax_file_number` chiave from. 
-    
+- La funzione  `Func_spain_eu_tax_file_number` o trova contenuto che corrisponde al `Func_spain_eu_DL_and_NI_number_citizen` modello.
+- Viene trovata una parola  `Keywords_spain_eu_tax_file_number` chiave from.
+
 Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-- La funzione  `Func_spain_eu_tax_file_number` o trova contenuto che corrisponde al `Func_spain_eu_DL_and_NI_number_citizen` modello. 
-    
+- La funzione  `Func_spain_eu_tax_file_number` o trova contenuto che corrisponde al `Func_spain_eu_DL_and_NI_number_citizen` modello.
+
 ```xml
       <!-- Spain Tax Identification Number -->
       <Entity id="10f0d113-b0e1-47dc-872a-a4f45b9376a3" patternsProximity="300" recommendedConfidence="85">
@@ -15658,7 +15658,7 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 
 La stringa "User Id", "User ID", "uid" o "UserId" seguita dai caratteri e dalle stringhe descritti nel modello seguente.
 
-### <a name="pattern"></a>Criterio
+### <a name="pattern"></a>Modello
 
 - la stringa "User Id", "User ID", "uid" o "UserId"
 - qualsiasi combinazione di 1-200 lettere minuscole o maiuscole, cifre, simboli, caratteri speciali o spazi
@@ -15733,25 +15733,25 @@ Questo tipo di informazioni riservate identifica queste parole chiave utilizzand
 ### <a name="format"></a>Formato
 
 10 cifre contenenti una lineetta
-  
-### <a name="pattern"></a>Criterio
+
+### <a name="pattern"></a>Modello
 
 10 cifre contenenti un trattino:
-  
-- sei cifre 
+
+- sei cifre
 - un trattino
 - quattro cifre
-    
+
 ### <a name="checksum"></a>Checksum
 
 No
-  
+
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-- L'espressione  `Regex_sweden_eu_driver's_license_number` regolare trova contenuto che corrisponde al modello. 
-- Viene trovata una  `Keywords_eu_driver's_license_number` parola chiave da o `Keywords_sweden_eu_driver's_license_number` . 
-    
+- L'espressione  `Regex_sweden_eu_driver's_license_number` regolare trova contenuto che corrisponde al modello.
+- Viene trovata una  `Keywords_eu_driver's_license_number` parola chiave da o `Keywords_sweden_eu_driver's_license_number` .
+
 ```xml
       <!-- Sweden Driver's License Number -->
       <Entity id="70088720-90dd-47f5-805e-5525f3567391" patternsProximity="300" recommendedConfidence="75">
@@ -15909,11 +15909,11 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 
 10 o 12 cifre e un delimitatore facoltativo
 
-### <a name="pattern"></a>Criterio
+### <a name="pattern"></a>Modello
 
 10 o 12 cifre e un delimitatore facoltativo:
-- due cifre (facoltativo) 
-- Sei cifre nel formato data AAMMGG 
+- due cifre (facoltativo)
+- Sei cifre nel formato data AAMMGG
 - delimitatore di "-" o "+" (facoltativo)
 - quattro cifre
 
@@ -15966,14 +15966,14 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 - personnummer #
 - personnummer
 - skatteidentifikationsnummer
-   
+
 ## <a name="sweden-passport-number"></a>Svezia - numero di passaporto
 
 ### <a name="format"></a>Formato
 
 otto cifre
 
-### <a name="pattern"></a>Criterio
+### <a name="pattern"></a>Modello
 
 otto cifre consecutive
 
@@ -16018,7 +16018,7 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 ```
 
 ### <a name="keywords"></a>Parole chiave
-   
+
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
 - passport #
@@ -16071,31 +16071,31 @@ Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 ### <a name="format"></a>Formato
 
 10 cifre e un simbolo nel motivo specificato
-  
-### <a name="pattern"></a>Criterio
+
+### <a name="pattern"></a>Modello
 
 10 cifre e un simbolo:
-  
-- sei cifre che corrispondono alla data di nascita (AAMMDD) 
+
+- sei cifre che corrispondono alla data di nascita (AAMMDD)
 - segno più o meno
-- tre cifre che rendono univoco il numero di identificazione dove: 
+- tre cifre che rendono univoco il numero di identificazione dove:
   - per i numeri emessi prima del 1990, la settima e l'ottava cifra identificano la provincia di nascita o i nati all'estero
   - la cifra nella nona posizione indica il sesso per dispari per il maschio o anche per la donna
 - una cifra di controllo
-    
+
 ### <a name="checksum"></a>Checksum
 
 Sì
-  
+
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-- La funzione  `Func_sweden_eu_tax_file_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola  `Keywords_sweden_eu_tax_file_number` chiave from. 
-    
+- La funzione  `Func_sweden_eu_tax_file_number` trova contenuto che corrisponde al modello.
+- Viene trovata una parola  `Keywords_sweden_eu_tax_file_number` chiave from.
+
 Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-- La funzione  `Func_sweden_eu_tax_file_number` trova contenuto che corrisponde al modello. 
-    
+- La funzione  `Func_sweden_eu_tax_file_number` trova contenuto che corrisponde al modello.
+
 ```xml
       <!-- Sweden Tax Identification Number -->
       <Entity id="139acba0-a5bc-4fbb-876d-f7a493ae8a40" patternsProximity="300" recommendedConfidence="85">
@@ -16148,13 +16148,13 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 
 quattro lettere seguite da 5-31 lettere o cifre
 
-### <a name="pattern"></a>Criterio
+### <a name="pattern"></a>Modello
 
 quattro lettere seguite da 5-31 lettere o cifre:
-- Codice bancario di quattro lettere (senza distinzione tra maiuscole e minuscole) 
-- uno spazio facoltativo 
-- 4-28 lettere o cifre (BBAN) 
-- uno spazio facoltativo 
+- Codice bancario di quattro lettere (senza distinzione tra maiuscole e minuscole)
+- uno spazio facoltativo
+- 4-28 lettere o cifre (BBAN)
+- uno spazio facoltativo
 - da una a tre lettere o cifre (resto del BBAN)
 
 ### <a name="checksum"></a>Checksum
@@ -16177,7 +16177,7 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 ```
 
 ### <a name="keywords"></a>Parole chiave
-   
+
 #### <a name="keyword_swift"></a>Keyword_swift
 
 - international organization for standardization 9362
@@ -16227,7 +16227,7 @@ Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 
 Numero a 13 cifre
 
-### <a name="pattern"></a>Criterio
+### <a name="pattern"></a>Modello
 
 Numero a 13 cifre:
 
@@ -16288,18 +16288,18 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 - id personale di identificazione
 - numéro de sécurité sociale
 
-   
+
 ## <a name="taiwan-national-identification-number"></a>Taiwan - Numero di identificazione nazionale
 
 ### <a name="format"></a>Formato
 
 una lettera (in inglese) seguita da nove cifre
 
-### <a name="pattern"></a>Criterio
+### <a name="pattern"></a>Modello
 
 una lettera (in inglese) seguita da nove cifre:
-- una lettera (in inglese, senza distinzione tra maiuscole e minuscole) 
-- la cifra "1" o "2" 
+- una lettera (in inglese, senza distinzione tra maiuscole e minuscole)
+- la cifra "1" o "2"
 - otto cifre
 
 ### <a name="checksum"></a>Checksum
@@ -16334,21 +16334,21 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 
 #### <a name="keyword_taiwan_national_id"></a>Keyword_taiwan_national_id
 
-- 身份證字號 
-- 身份證 
-- 身份證號碼 
-- 身份證號 
-- 身分證字號 
-- 身分證 
-- 身分證號碼 
-- 身份證號 
-- 身分證統一編號 
-- 國民身分證統一編號 
-- 簽名 
-- 蓋章 
-- 簽名或蓋章 
-- 簽章   
-   
+- 身份證字號
+- 身份證
+- 身份證號碼
+- 身份證號
+- 身分證字號
+- 身分證
+- 身分證號碼
+- 身份證號
+- 身分證統一編號
+- 國民身分證統一編號
+- 簽名
+- 蓋章
+- 簽名或蓋章
+- 簽章
+
 ## <a name="taiwan-passport-number"></a>Numero di passaporto taiwanese
 
 ### <a name="format"></a>Formato
@@ -16356,9 +16356,9 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 - Numero di passaporto biometrico: nove cifre
 - numero di passaporto non biometrico: nove cifre
 
-### <a name="pattern"></a>Criterio
+### <a name="pattern"></a>Modello
 numero di passaporto biometrico:
-- il carattere "3" 
+- il carattere "3"
 - otto cifre
 
 numero di passaporto non biometrico:
@@ -16388,26 +16388,26 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 
 #### <a name="keyword_taiwan_passport"></a>Keyword_taiwan_passport
 
-- Numero passaporto ROC 
-- Numero passaporto 
-- N° passaporto 
+- Numero passaporto ROC
+- Numero passaporto
+- N° passaporto
 - Num. passaporto
- 
-- Passport # 
-- 护照 
-- 中華民國護照 
+
+- Passport #
+- 护照
+- 中華民國護照
 - Zhōnghuá Mínguó hùzhào
-   
+
 ## <a name="taiwan-resident-certificate-arctarc-number"></a>Numero di certificato residente a Taiwan (ARC/TARC)
 
 ### <a name="format"></a>Formato
 
 10 lettere e cifre
 
-### <a name="pattern"></a>Criterio
+### <a name="pattern"></a>Modello
 
 10 lettere e cifre:
-- due lettere (senza distinzione tra maiuscole e minuscole) 
+- due lettere (senza distinzione tra maiuscole e minuscole)
 - otto cifre
 
 ### <a name="checksum"></a>Checksum
@@ -16434,19 +16434,19 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 
 #### <a name="keyword_taiwan_resident_certificate"></a>Keyword_taiwan_resident_certificate
 
-- Certificato di residenza 
+- Certificato di residenza
 - Cert. di resid
- 
+
 - Cert. di resid.
- 
-- Carta d’identità 
-- Certificato residente straniero 
-- ARC 
-- Certificato residente nell’area di Taiwan 
-- TARC 
-- 居留證 
-- 外僑居留證 
-- 台灣地區居留證 
+
+- Carta d’identità
+- Certificato residente straniero
+- ARC
+- Certificato residente nell’area di Taiwan
+- TARC
+- 居留證
+- 外僑居留證
+- 台灣地區居留證
 
 ## <a name="thai-population-identification-code"></a>Codice di identificazione della popolazione thai
 
@@ -16454,10 +16454,10 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 
 13 cifre
 
-### <a name="pattern"></a>Criterio
+### <a name="pattern"></a>Modello
 
 13 cifre:
-- la prima cifra non è zero o nove 
+- la prima cifra non è zero o nove
 - 12 cifre
 
 ### <a name="checksum"></a>Checksum
@@ -16496,14 +16496,14 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 - รหัสบัตรประชาชน
 - บัตรประชาชน
 - รหัสบัตรประชาชน
-  
+
 ## <a name="turkish-national-identification-number"></a>Numero di identificazione nazionale turco
 
 ### <a name="format"></a>Formato
 
 11 cifre
 
-### <a name="pattern"></a>Criterio
+### <a name="pattern"></a>Modello
 
 11 cifre
 
@@ -16548,13 +16548,13 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 
 Combinazione di 18 lettere e numeri nel formato specificato
 
-### <a name="pattern"></a>Criterio
+### <a name="pattern"></a>Modello
 
 18 lettere e cifre:
-- Cinque lettere (senza distinzione tra maiuscole e minuscole) o la cifra "9" al posto di una lettera. 
+- Cinque lettere (senza distinzione tra maiuscole e minuscole) o la cifra "9" al posto di una lettera.
 - Una cifra.
 - Cinque cifre nel formato di data MMDDY per la data di nascita. Il settimo carattere viene incrementato di 50 se driver è femminile. per exampe, da 51 a 62 invece che da 01 a 12.
-- Due lettere (senza distinzione tra maiuscole e minuscole) o la cifra "9" al posto di una lettera. 
+- Due lettere (senza distinzione tra maiuscole e minuscole) o la cifra "9" al posto di una lettera.
 - Cinque cifre.
 
 ### <a name="checksum"></a>Checksum
@@ -16708,14 +16708,14 @@ Un criterio DLP ha una bassa probabilità che sia stato rilevato questo tipo di 
 - dlno
 - dl number
 
-   
+
 ## <a name="uk-electoral-roll-number"></a>Regno Unito numero di rullino elettorale
 
 ### <a name="format"></a>Formato
 
 due lettere seguite da 1-4 cifre
 
-### <a name="pattern"></a>Criterio
+### <a name="pattern"></a>Modello
 
 due lettere (senza distinzione tra maiuscole e minuscole) seguite da 1-4 numeri
 
@@ -16745,25 +16745,25 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 
 #### <a name="keyword_uk_electoral"></a>Keyword_uk_electoral
 
-- council nomination 
-- nomination form 
-- electoral register 
+- council nomination
+- nomination form
+- electoral register
 - electoral roll
 
-   
+
 ## <a name="uk-national-health-service-number"></a>Regno Unito numero del servizio sanitario nazionale
 
 ### <a name="format"></a>Formato
 
 10-17 cifre separate da spazi
 
-### <a name="pattern"></a>Criterio
+### <a name="pattern"></a>Modello
 
 10-17 cifre:
-- 3 o 10 cifre 
-- uno spazio 
-- tre cifre 
-- uno spazio 
+- 3 o 10 cifre
+- uno spazio
+- tre cifre
+- uno spazio
 - quattro cifre
 
 ### <a name="checksum"></a>Checksum
@@ -16795,29 +16795,29 @@ Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di
 ```
 
 ### <a name="keywords"></a>Parole chiave
-   
+
 #### <a name="keyword_uk_nhs_number"></a>Keyword_uk_nhs_number
 
-- national health service 
-- nhs 
-- health services authority 
+- national health service
+- nhs
+- health services authority
 - health authority
 
 #### <a name="keyword_uk_nhs_number1"></a>Keyword_uk_nhs_number1
 
-- patient id 
-- patient identification 
-- patient no 
+- patient id
+- patient identification
+- patient no
 - patient number
 
 #### <a name="keyword_uk_nhs_number_dob"></a>Keyword_uk_nhs_number_dob
 
-- Criteri di gruppo 
-- DOB 
-- D.O.B 
-- Date of Birth 
-- Birth Date 
-   
+- Criteri di gruppo
+- DOB
+- D.O.B
+- Date of Birth
+- Birth Date
+
 ## <a name="uk-national-insurance-number-nino"></a>Regno Unito national insurance number (NINO)
 Questa entità del tipo di informazioni riservate è inclusa nel tipo di informazioni riservate NUMERO DI IDENTIFICAZIONE NAZIONALE UE. È disponibile anche come entità di tipo di informazioni riservate autonomo.
 
@@ -16825,7 +16825,7 @@ Questa entità del tipo di informazioni riservate è inclusa nel tipo di informa
 
 sette o nove caratteri separati da spazi o trattini
 
-### <a name="pattern"></a>Criterio
+### <a name="pattern"></a>Modello
 
 due modelli possibili:
 
@@ -16895,7 +16895,7 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 - nationalinsurance #
 - nationalinsurancenumber
 
-    
+
 ## <a name="uk-unique-taxpayer-reference-number"></a>Regno Unito Numero di riferimento fiscale univoco
 Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 - criteri di prevenzione della perdita di dati
@@ -16907,22 +16907,22 @@ Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 ### <a name="format"></a>Formato
 
 10 cifre senza spazi e delimitatori
- 
-  
-### <a name="pattern"></a>Criterio
+
+
+### <a name="pattern"></a>Modello
 
 10 cifre
-  
+
 ### <a name="checksum"></a>Checksum
 
 No
-  
+
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
-- La funzione  `Func_uk_eu_tax_file_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola  `Keywords_uk_eu_tax_file_number` chiave from. 
-    
+- La funzione  `Func_uk_eu_tax_file_number` trova contenuto che corrisponde al modello.
+- Viene trovata una parola  `Keywords_uk_eu_tax_file_number` chiave from.
+
 ```xml
       <!-- U.K. Unique Taxpayer Reference Number -->
       <Entity id="ad4a8116-0db8-439a-b545-6d967642f0ec" patternsProximity="300" recommendedConfidence="85">
@@ -16961,7 +16961,7 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 
 6-17 cifre
 
-### <a name="pattern"></a>Criterio
+### <a name="pattern"></a>Modello
 
 6-17 cifre consecutive
 
@@ -16989,33 +16989,33 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 
 #### <a name="keyword_usa_bank_account"></a>Keyword_usa_Bank_Account
 
-- Checking Account Number 
-- Checking Account 
-- Checking Account # 
-- Checking Acct Number 
-- Checking Acct # 
-- Checking Acct No. 
-- Checking Account No. 
-- Bank Account Number 
-- Bank Account # 
-- Bank Acct Number 
-- Bank Acct # 
-- Bank Acct No. 
-- Bank Account No. 
-- Savings Account Number 
-- Savings Account. 
-- Savings Account # 
-- Savings Acct Number 
-- Savings Acct # 
-- Savings Acct No. 
-- Savings Account No. 
-- Debit Account Number 
-- Debit Account 
-- Debit Account # 
-- Debit Acct Number 
-- Debit Acct # 
-- Debit Acct No. 
-- Debit Account No. 
+- Checking Account Number
+- Checking Account
+- Checking Account #
+- Checking Acct Number
+- Checking Acct #
+- Checking Acct No.
+- Checking Account No.
+- Bank Account Number
+- Bank Account #
+- Bank Acct Number
+- Bank Acct #
+- Bank Acct No.
+- Bank Account No.
+- Savings Account Number
+- Savings Account.
+- Savings Account #
+- Savings Acct Number
+- Savings Acct #
+- Savings Acct No.
+- Savings Account No.
+- Debit Account Number
+- Debit Account
+- Debit Account #
+- Debit Acct Number
+- Debit Acct #
+- Debit Acct No.
+- Debit Account No.
 
 ## <a name="us-drivers-license-number"></a>Numero di patente di guida statunitense
 
@@ -17023,7 +17023,7 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 
 Varia in base allo stato
 
-### <a name="pattern"></a>Criterio
+### <a name="pattern"></a>Modello
 
 dipende dallo stato, ad esempio New York:
 - le nove cifre formattate come ddd ddd ddd corrisponderanno.
@@ -17068,105 +17068,105 @@ Un criterio DLP ha una bassa probabilità che sia stato rilevato questo tipo di 
 
 #### <a name="keyword_us_drivers_license_abbreviations"></a>Keyword_us_drivers_license_abbreviations
 
-- DL 
-- DLS 
-- CDL 
-- CDLS 
-- ID 
-- ID 
-- DL # 
-- DLS # 
-- CDL # 
-- CDLS # 
+- DL
+- DLS
+- CDL
+- CDLS
+- ID
+- ID
+- DL #
+- DLS #
+- CDL #
+- CDLS #
 - ID #
-- ID # 
-- ID number 
-- ID numbers 
-- LIC 
-- LIC # 
+- ID #
+- ID number
+- ID numbers
+- LIC
+- LIC #
 
 #### <a name="keyword_us_drivers_license"></a>Keyword_us_drivers_license
 
-- DriverLic 
-- DriverLics 
-- DriverLicense 
-- DriverLicenses 
-- Driver Lic 
-- Driver Lics 
-- Driver License 
-- Driver Licenses 
-- DriversLic 
-- DriversLics 
-- DriversLicense 
-- DriversLicenses 
-- Drivers Lic 
-- Drivers Lics 
-- Drivers License 
-- Drivers Licenses 
-- Driver'Lic 
-- Driver'Lics 
-- Driver'License 
-- Driver'Licenses 
-- Driver'Lic 
-- Driver' Lics 
-- Driver' License 
+- DriverLic
+- DriverLics
+- DriverLicense
+- DriverLicenses
+- Driver Lic
+- Driver Lics
+- Driver License
+- Driver Licenses
+- DriversLic
+- DriversLics
+- DriversLicense
+- DriversLicenses
+- Drivers Lic
+- Drivers Lics
+- Drivers License
+- Drivers Licenses
+- Driver'Lic
+- Driver'Lics
+- Driver'License
+- Driver'Licenses
+- Driver'Lic
+- Driver' Lics
+- Driver' License
 - Driver' Licenses
-- Driver'sLic 
-- Driver'sLics 
-- Driver'sLicense 
-- Driver'sLicenses 
-- Driver's Lic 
-- Driver's Lics 
-- Driver's License 
-- Driver's Licenses 
-- identification number 
-- identification numbers 
-- identification# 
-- id card 
-- id cards 
-- identification card 
-- identification cards 
-- DriverLic # 
-- DriverLics # 
-- DriverLicense # 
-- DriverLicenses # 
-- Driver Lic# 
-- Driver Lics# 
-- Driver License# 
-- Driver Licenses# 
-- DriversLic # 
-- DriversLics # 
-- DriversLicense # 
-- DriversLicenses # 
-- Drivers Lic# 
-- Drivers Lics# 
-- Drivers License# 
-- Drivers Licenses# 
-- Driver'Lic # 
-- Driver'Lics # 
-- Driver'License # 
-- Driver'Licenses # 
-- Driver' Lic# 
-- Driver' Lics# 
-- Driver' License# 
-- Driver' Licenses# 
-- Driver'sLic # 
-- Driver'sLics # 
-- Driver'sLicense # 
-- Driver'sLicenses # 
-- Driver's Lic# 
-- Driver's Lics# 
-- Driver's License# 
-- Driver's Licenses# 
-- id card# 
-- id cards# 
-- identification card# 
-- identification cards# 
+- Driver'sLic
+- Driver'sLics
+- Driver'sLicense
+- Driver'sLicenses
+- Driver's Lic
+- Driver's Lics
+- Driver's License
+- Driver's Licenses
+- identification number
+- identification numbers
+- identification#
+- id card
+- id cards
+- identification card
+- identification cards
+- DriverLic #
+- DriverLics #
+- DriverLicense #
+- DriverLicenses #
+- Driver Lic#
+- Driver Lics#
+- Driver License#
+- Driver Licenses#
+- DriversLic #
+- DriversLics #
+- DriversLicense #
+- DriversLicenses #
+- Drivers Lic#
+- Drivers Lics#
+- Drivers License#
+- Drivers Licenses#
+- Driver'Lic #
+- Driver'Lics #
+- Driver'License #
+- Driver'Licenses #
+- Driver' Lic#
+- Driver' Lics#
+- Driver' License#
+- Driver' Licenses#
+- Driver'sLic #
+- Driver'sLics #
+- Driver'sLicense #
+- Driver'sLicenses #
+- Driver's Lic#
+- Driver's Lics#
+- Driver's License#
+- Driver's Licenses#
+- id card#
+- id cards#
+- identification card#
+- identification cards#
 
 
 #### <a name="keyword_state_name_drivers_license_name"></a>Keyword_[state_name]_drivers_license_name
 
-- abbreviazione dello stato (ad esempio, "NY") 
+- abbreviazione dello stato (ad esempio, "NY")
 - nome dello stato (ad esempio, "New York")
 
 ## <a name="us-individual-taxpayer-identification-number-itin"></a>Numero di identificazione del singolo contribuente statunitense (ITIN)
@@ -17175,21 +17175,21 @@ Un criterio DLP ha una bassa probabilità che sia stato rilevato questo tipo di 
 
 nove cifre che iniziano con "9" e contengono "7" o "8" come quarta cifra, facoltativamente formattate con spazi o trattini
 
-### <a name="pattern"></a>Criterio
+### <a name="pattern"></a>Modello
 
 formattato:
-- la cifra "9" 
-- due cifre 
-- uno spazio o un trattino 
-- a "7" o "8" 
-- una cifra 
-- uno spazio o un trattino 
+- la cifra "9"
+- due cifre
+- uno spazio o un trattino
+- a "7" o "8"
+- una cifra
+- uno spazio o un trattino
 - quattro cifre
 
 non formattato:
-- la cifra "9" 
-- due cifre 
-- a "7" o "8" 
+- la cifra "9"
+- due cifre
+- a "7" o "8"
 - cinque cifre
 
 ### <a name="checksum"></a>Checksum
@@ -17233,18 +17233,18 @@ Un criterio DLP ha una bassa probabilità che sia stato rilevato questo tipo di 
 
 #### <a name="keyword_itin"></a>Keyword_itin
 
-- contribuente 
-- tax id 
-- tax identification 
-- itin 
+- contribuente
+- tax id
+- tax identification
+- itin
 - i.t.i.n.
-- ssn 
-- tin 
-- social security 
-- tax payer 
-- itins 
-- rullato 
-- individual taxpayer 
+- ssn
+- tin
+- social security
+- tax payer
+- itins
+- rullato
+- individual taxpayer
 
 
 ## <a name="us-social-security-number-ssn"></a>Numero di previdenza sociale statunitense (SSN)
@@ -17256,7 +17256,7 @@ nove cifre, che possono essere formattate o non formattate
 > [!NOTE]
 > Se emesso prima della metà del 2011, un SSN ha una formattazione solida in cui alcune parti del numero devono rientrare in determinati intervalli per essere valide (ma non è presente alcun checksum).
 
-### <a name="pattern"></a>Criterio
+### <a name="pattern"></a>Modello
 
 Quattro funzioni ricercano i nomi SSN in quattro modelli diversi:
 - Func_ssn trova SSN con formattazione forte precedente alla 2011 formattata con trattini o spazi (ddd-dd-dddd OR ddd ddddd)
@@ -17326,14 +17326,14 @@ Un criterio DLP ha una bassa probabilità che sia stato rilevato questo tipo di 
 - SSN #
 - SS #
 - SSID
-   
+
 ## <a name="us--uk-passport-number"></a>Stati Uniti / Regno Unito passport number
 
 ### <a name="format"></a>Formato
 
 nove cifre
 
-### <a name="pattern"></a>Criterio
+### <a name="pattern"></a>Modello
 
 nove cifre consecutive
 
@@ -17390,8 +17390,8 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 
 #### <a name="keywords_uk_eu_passport_number"></a>Keywords_uk_eu_passport_number
 
-- passaporto inglese 
-- uk passport 
+- passaporto inglese
+- uk passport
 
 
 ## <a name="ukraine-passport-domestic"></a>Passaporto ucraino nazionale
@@ -17406,7 +17406,7 @@ Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 
 nove cifre
 
-### <a name="pattern"></a>Criterio
+### <a name="pattern"></a>Modello
 
 nove cifre
 
@@ -17454,7 +17454,7 @@ Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 
 schema alfanumerico a otto caratteri
 
-### <a name="pattern"></a>Criterio
+### <a name="pattern"></a>Modello
 
 Schema alfanumerico a otto caratteri:
 - due lettere o cifre

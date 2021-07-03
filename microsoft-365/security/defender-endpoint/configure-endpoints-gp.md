@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 80794a9d5e4da0d2da74fc714ffd1e0ceab34c8f
-ms.sourcegitcommit: ccbdf2638fc6646bfb89450169953f4c3ce4b9b0
+ms.openlocfilehash: 24b24c634eac7ee125810d96587c9c1e209b6491
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53105687"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53286958"
 ---
 # <a name="onboard-windows-10-devices-using-group-policy"></a>Onboardare Windows 10 dispositivi con Criteri di gruppo 
 
@@ -36,28 +36,25 @@ ms.locfileid: "53105687"
 
 >Vuoi provare Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configureendpointsgp-abovefoldlink)
 
-
 > [!NOTE]
 > Per utilizzare gli aggiornamenti di Criteri di gruppo per distribuire il pacchetto, è necessario essere in Windows Server 2008 R2 o versione successiva.
-> 
+>
 > Per Windows Server 2019, potrebbe essere necessario sostituire NT AUTHORITY\Well-Known-System-Account con NT AUTHORITY\SYSTEM del file XML creato dalla preferenza di Criteri di gruppo.
 
 ## <a name="onboard-devices-using-group-policy"></a>Aggiungere dispositivi con Criteri di gruppo
 
 [![Immagine del PDF che mostra i vari percorsi di distribuzione](images/onboard-gp.png)](images/onboard-gp.png#lightbox)
 
-Vedi il [PDF o](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf) il [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx) per vedere i vari percorsi nella distribuzione di Defender per Endpoint. 
-
-
+Vedi il [PDF o](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf) il [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx) per vedere i vari percorsi nella distribuzione di Defender per Endpoint.
 
 1. Aprire il file del pacchetto .zip criteri di gruppo (*WindowsDefenderATPOnboardingPackage.zip*) scaricato dall'onboarding guidato del servizio. Puoi anche ottenere il pacchetto da [Microsoft Defender Security Center:](https://securitycenter.windows.com/)
- 
+
     1. Nel riquadro di spostamento selezionare **Impostazioni**  >  **onboarding**.
 
     1. Seleziona Windows 10 come sistema operativo.
-    
+
     1. Nel campo **Metodo di distribuzione** selezionare Criteri di **gruppo.**
-    
+
     1. Fai **clic su Scarica pacchetto** e salva il file .zip file.
 
 2. Estrarre il contenuto del file .zip in un percorso condiviso di sola lettura accessibile dal dispositivo. Dovresti avere una cartella denominata *OptionalParamsPolicy* e il file *WindowsDefenderATPOnboardingScript.cmd.*
@@ -76,7 +73,7 @@ Vedi il [PDF o](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/m
 
 9. Fare **clic su OK** e chiudere tutte le finestre della Console Gestione Criteri di gruppo aperte.
 
->[!TIP]
+> [!TIP]
 > Dopo l'onboarding del dispositivo, puoi scegliere di eseguire un test di rilevamento per verificare che il dispositivo sia stato correttamente onboarding nel servizio. Per altre informazioni, vedi Eseguire un test di rilevamento in un dispositivo [Defender per endpoint appena onboarded.](run-detection-test.md)
 
 ## <a name="additional-defender-for-endpoint-configuration-settings"></a>Ulteriori impostazioni di configurazione di Defender per endpoint
@@ -85,31 +82,31 @@ Per ogni dispositivo, puoi indicare se i campioni possono essere raccolti dal di
 È possibile utilizzare Criteri di gruppo per configurare le impostazioni, ad esempio le impostazioni per la condivisione di esempio utilizzata nella funzionalità di analisi approfondita.
 
 ### <a name="configure-sample-collection-settings"></a>Configurare le impostazioni della raccolta di esempio
-1.  Nel dispositivo di gestione Criteri di gruppo copiare i file seguenti dal pacchetto di configurazione:
+
+1. Nel dispositivo di gestione Criteri di gruppo copiare i file seguenti dal pacchetto di configurazione:
 
     - Copiare _AtpConfiguration.admx_ in _C: \\ Windows \\ PolicyDefinitions_
 
     - Copiare _AtpConfiguration.adml_ in _C: \\ Windows \\ PolicyDefinitions \\ en-US_
 
     Se si utilizza un [archivio centrale per i modelli](https://support.microsoft.com/help/3087759/how-to-create-and-manage-the-central-store-for-group-policy-administra)amministrativi di Criteri di gruppo, copiare i file seguenti dal pacchetto di configurazione:
-    
+
     - Copiare _AtpConfiguration.admx_ in _\\ \\ \<forest.root\> \\ SysVol \\ \<forest.root\> \\ Policies \\ PolicyDefinitions_
 
     - Copiare _AtpConfiguration.adml_ in _\\ \\ \<forest.root\> \\ SysVol \\ \<forest.root\> \\ Policies \\ PolicyDefinitions \\ en-US_
 
-2.  Aprire la [Console Gestione Criteri di gruppo,](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11)fare clic con il pulsante destro del mouse sull'oggetto Criteri di gruppo che si desidera configurare e scegliere **Modifica**.
+2. Aprire la [Console Gestione Criteri di gruppo,](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11)fare clic con il pulsante destro del mouse sull'oggetto Criteri di gruppo che si desidera configurare e scegliere **Modifica**.
 
-3.  **Nell'Editor Gestione Criteri di gruppo** passare a Configurazione **computer**.
+3. **Nell'Editor Gestione Criteri di gruppo** passare a Configurazione **computer**.
 
-4.  Fare **clic su Criteri** e quindi su Modelli **amministrativi.**
+4. Fare **clic su Criteri** e quindi su Modelli **amministrativi.**
 
-5.  Fare **clic Windows componenti e** quindi Windows Defender **SmartScreen.**
+5. Fare **clic Windows componenti e** quindi Windows Defender **SmartScreen.**
 
-6.  Scegli se abilitare o disabilitare la condivisione dei campioni dai dispositivi.
+6. Scegli se abilitare o disabilitare la condivisione dei campioni dai dispositivi.
 
->[!NOTE]
+> [!NOTE]
 > Se non si imposta un valore, il valore predefinito è abilitare la raccolta di esempi.
-
 
 ## <a name="other-recommended-configuration-settings"></a>Altre impostazioni di configurazione consigliate
 
@@ -121,39 +118,39 @@ Tutti i criteri si trovano in `Computer Configuration\Policies\Administrative Te
 
 **Percorso criteri:** \Windows Components\Windows Defender ATP
 
-Criterio | Impostazione 
+Criterio | Impostazione
 :---|:---
-Enable\Disable Sample collection|   Enabled - "Enable sample collection on machines" checked
+Enable\Disable Sample collection| Enabled - "Enable sample collection on machines" checked
 
-<br/>
+<br>
 
 **Percorso dei criteri:** \Windows Components\Antivirus Microsoft Defender
 
-Criterio | Impostazione 
+Criterio | Impostazione
 :---|:---
 Configurare il rilevamento per applicazioni potenzialmente indesiderate | Enabled, Block
 
-<br/>
+<br>
 
 **Percorso dei criteri:** \Windows Components\Antivirus Microsoft Defender\MAPS
 
-Criterio | Impostazione 
+Criterio | Impostazione
 :---|:---
 Partecipare a Microsoft MAPS | Enabled, Advanced MAPS
 Inviare esempi di file quando è necessaria un'ulteriore analisi | Enabled, Send safe samples
 
-<br/>
+<br>
 
 **Percorso dei criteri:** \Windows Components\Antivirus Microsoft Defender\Real-time Protection
 
-Criterio | Impostazione 
+Criterio | Impostazione
 :---|:---
 Disattivare la protezione in tempo reale|Disattivato
 Attivare il monitoraggio del comportamento|Abilitato
 Analizzare tutti i file e gli allegati scaricati|Abilitato
 Monitorare le attività di file e programmi nel computer|Abilitato
 
-<br/>
+<br>
 
 **Percorso criteri:** \Windows Components\Antivirus Microsoft Defender\Scan
 
@@ -163,8 +160,7 @@ Criterio | Impostazione
 :---|:---
 Prima di eseguire un'analisi pianificata, verificare la disponibilità delle informazioni di sicurezza più recenti su virus e spyware |Abilitato
 
-
-<br/>
+<br>
 
 **Percorso dei criteri:** \Windows Components\Antivirus Microsoft Defender\Microsoft Defender Exploit Guard\Attack Surface Reduction
 
@@ -182,15 +178,12 @@ Ottenere l'elenco corrente dei GUID di riduzione della superficie di attacco da 
 
    ![Immagine della configurazione di riduzione della superficie di attacco](images/asr-guid.png)
 
-
-
-Criterio | Impostazione 
+Criterio | Impostazione
 :---|:---
 Configurare l'accesso controllato alle cartelle| Abilitato, modalità di controllo
 
-
-
 ## <a name="offboard-devices-using-group-policy"></a>Dispositivi offboard con Criteri di gruppo
+
 Per motivi di sicurezza, il pacchetto usato per i dispositivi offboard scadrà 30 giorni dopo la data di download. I pacchetti di offboarding scaduti inviati a un dispositivo verranno rifiutati. Durante il download di un pacchetto di offboarding, ti verrà notificata la data di scadenza dei pacchetti e verrà incluso anche nel nome del pacchetto.
 
 > [!NOTE]
@@ -201,7 +194,7 @@ Per motivi di sicurezza, il pacchetto usato per i dispositivi offboard scadrà 3
     1. Nel riquadro di spostamento selezionare **Impostazioni**  >  **offboarding**.
 
     1. Seleziona Windows 10 come sistema operativo.
-    
+
     1. Nel campo **Metodo di distribuzione** selezionare Criteri di **gruppo.**
 
     1. Fai **clic su Scarica pacchetto** e salva il file .zip file.
@@ -225,11 +218,12 @@ Per motivi di sicurezza, il pacchetto usato per i dispositivi offboard scadrà 3
 > [!IMPORTANT]
 > L'offboarding fa sì che il dispositivo interrompi l'invio dei dati del sensore al portale, ma i dati dal dispositivo, incluso il riferimento a eventuali avvisi che ha avuto, verranno conservati per un massimo di 6 mesi.
 
-
 ## <a name="monitor-device-configuration"></a>Monitorare la configurazione del dispositivo
+
 Con Criteri di gruppo non è disponibile un'opzione per monitorare la distribuzione dei criteri nei dispositivi. Il monitoraggio può essere eseguito direttamente nel portale o utilizzando i diversi strumenti di distribuzione.
 
 ## <a name="monitor-devices-using-the-portal"></a>Monitorare i dispositivi tramite il portale
+
 1. Vai a [Microsoft Defender Security Center](https://securitycenter.windows.com/).
 2. Fare **clic su Elenco dispositivi**.
 3. Verificare che i dispositivi siano visualizzati.
@@ -237,8 +231,8 @@ Con Criteri di gruppo non è disponibile un'opzione per monitorare la distribuzi
 > [!NOTE]
 > L'inizio della visualizzazione dei dispositivi nell'elenco Dispositivi può richiedere **diversi giorni.** Ciò include il tempo necessario per la distribuzione dei criteri al dispositivo, il tempo necessario prima che l'utente e il tempo necessario per l'avvio dei report da parte dell'endpoint.
 
-
 ## <a name="related-topics"></a>Argomenti correlati
+
 - [Onboard Windows 10 dispositivi con Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
 - [Onboarding di dispositivi Windows 10 con gli strumenti di Gestione dispositivi mobili](configure-endpoints-mdm.md)
 - [Onboarding di dispositivi Windows 10 con uno script locale](configure-endpoints-script.md)

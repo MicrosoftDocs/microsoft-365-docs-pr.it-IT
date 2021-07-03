@@ -1,7 +1,7 @@
 ---
-title: Utilizzare Microsoft Search per trovare argomenti in Microsoft Viva Topics
-ms.author: chuckedmonson
-author: chucked
+title: Usare Microsoft Search per trovare argomenti in Microsoft Viva Topics
+ms.author: chucked
+author: chuckedmonson
 manager: pamgreen
 ms.reviewer: cjtan
 audience: admin
@@ -10,14 +10,14 @@ ms.service: o365-administration
 search.appverid: ''
 localization_priority: None
 description: Informazioni su come cercare argomenti in Microsoft Viva.
-ms.openlocfilehash: 3bd247bfacc6a85bb19c8f4eeedb5aad8662e60e
-ms.sourcegitcommit: 3e197d1ff7d8100faeaf1f5a33f1ad4ed2f72e99
+ms.openlocfilehash: a60d1e04c67eb42573bb566a5667f35227def2ad
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52908066"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287258"
 ---
-# <a name="use-microsoft-search-to-find-topics-in-microsoft-viva-topics"></a>Utilizzare Microsoft Search per trovare argomenti in Microsoft Viva Topics
+# <a name="use-microsoft-search-to-find-topics-in-microsoft-viva-topics"></a>Usare Microsoft Search per trovare argomenti in Microsoft Viva Topics
 
 Anche se gli utenti di Viva Topics possono trovare argomenti attraverso le evidenziazioni degli argomenti nei propri siti SharePoint, possono trovarli anche tramite Microsoft Search. 
 
@@ -43,11 +43,11 @@ I risultati della ricerca in Word, PowerPoint, Outlook e Excel inoltre la rispos
 
 In Viva Topics è possibile modificare manualmente un argomento in modo da includere un acronimo come *nome alternativo.* In questo modo un utente che esegue una ricerca solo con l'acronimo dell'argomento può trovare la risposta all'argomento tramite Microsoft Search.
 
-[L'acronimo Answers](/microsoftsearch/manage-acronyms) è una funzionalità fornita da Microsoft Search ed è gestita separatamente da Viva Topics.
+[L'acronimo Answers](/microsoftsearch/manage-acronyms) è una funzionalità fornita Microsoft Search ed è gestita separatamente da Viva Topics.
 
 ## <a name="bookmarks-and-topics"></a>Segnalibri e argomenti
 
-[I segnalibri](/microsoftsearch/manage-bookmarks) sono una funzionalità di Microsoft Search che consente agli utenti di trovare rapidamente siti e strumenti importanti con una semplice ricerca (ad esempio, uno strumento di prenotazione di viaggi in un sito esterno all'esterno del tenant di Microsoft 365). Vengono creati dagli amministratori della ricerca nell'Microsoft 365 di amministrazione. 
+[I segnalibri](/microsoftsearch/manage-bookmarks) sono una funzionalità Microsoft Search che consente agli utenti di trovare rapidamente siti e strumenti importanti con una semplice ricerca (ad esempio, uno strumento di prenotazione di viaggi in un sito esterno all'esterno del tenant di Microsoft 365). Vengono creati dagli amministratori della ricerca nella interfaccia di amministrazione di Microsoft 365. 
 
 Per gli utenti che cercano informazioni sulla prenotazione di un viaggio di lavoro:
 

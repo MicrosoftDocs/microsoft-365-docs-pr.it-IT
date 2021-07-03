@@ -12,12 +12,12 @@ search.appverid: ''
 localization_priority: None
 ROBOTS: ''
 description: Informazioni su come usare SharePoint Syntex per identificare i file di contratto ed estrarre i dati utilizzando una Microsoft 365 soluzione.
-ms.openlocfilehash: c66e46aaaacd5000f1e0d18aa07df527ca8ab7dd
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: b73f7b96a1f1a9159770fb1bfb20bf2718f08c07
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53054501"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287354"
 ---
 # <a name="step-1-use-sharepoint-syntex-to-identify-contract-files-and-extract-data"></a>Passaggio 1. Usare SharePoint Syntex per identificare i file di contratto ed estrarre i dati
 
@@ -25,7 +25,9 @@ L'organizzazione ha bisogno di un modo per identificare e classificare tutti i d
 
 ## <a name="overview-of-the-process"></a>Panoramica del processo
 
-[La comprensione dei](document-understanding-overview.md) documenti usa modelli di intelligenza artificiale (AI) per automatizzare la classificazione dei file e l'estrazione delle informazioni. I modelli di comprensione dei documenti sono inoltre ottimali nell'estrazione di informazioni da documenti non strutturati e semistrutturati in cui le informazioni necessarie non sono contenute in tabelle o moduli, ad esempio contratti.
+[La comprensione dei](document-understanding-overview.md) documenti usa modelli di intelligenza artificiale (AI) per automatizzare la classificazione dei file e l'estrazione delle informazioni. I modelli di comprensione dei documenti sono inoltre ottimali nell'estrazione di informazioni da documenti non strutturati e semistrutturati in cui le informazioni necessarie non sono contenute in tabelle o moduli, ad esempio contratti. 
+
+I modelli di analisi dei documenti usano la tecnologia di riconoscimento ottico dei caratteri (OCR) per analizzare file PDF, immagini e file TIFF, sia quando si esegue il training di un modello con file di esempio, sia quando si esegue il modello sui file di una raccolta documenti.
 
 1. Innanzitutto, è necessario trovare almeno cinque file di esempio che è possibile utilizzare per "formare" il modello per cercare caratteristiche specifiche del tipo di contenuto che si sta tentando di identificare (un contratto). 
 
@@ -184,7 +186,7 @@ Per applicare il modello a una raccolta SharePoint documenti:
 
    ![Screenshot che mostra la pagina Contratti con l'opzione Applica modello alle raccolte evidenziata.](../media/content-understanding/key-actions-apply-model.png)
 
-2. Nel riquadro **Aggiungi contratto** selezionare il SharePoint contenente la raccolta documenti a cui si desidera applicare il modello. Se il sito non viene visualizzato nell'elenco, usare la casella di ricerca per trovarlo. Selezionare **Aggiungi**.
+2. Nel riquadro **Aggiungi contratto** selezionare il SharePoint contenente la raccolta documenti a cui si desidera applicare il modello. Se il sito non viene visualizzato nell'elenco, usare la casella di ricerca per trovarlo. Seleziona **Aggiungi**.
 
     > [!NOTE]
     > È necessario disporre delle autorizzazioni di *Gestione dell'elenco* o dei diritti di *modifica* per la raccolta documenti a cui si sta applicando il modello.
