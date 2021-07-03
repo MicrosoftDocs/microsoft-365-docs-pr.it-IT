@@ -16,59 +16,59 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 3a1ea1a6-edbd-4922-9ad3-0b075f7f9009
 description: Trovare Microsoft 365 cmdlet di PowerShell per Azure AD, Exchange Online, SharePoint Online, Skype for Business Online e Conformità & sicurezza.
-ms.openlocfilehash: 524f9b6c84741a2a31cd8e5727142fc735ad7128
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 9f47b5d1aecfad59c920d2af8d8fdecc420f76d0
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50928215"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53286862"
 ---
-# <a name="cmdlet-references-for-microsoft-365-services"></a><span data-ttu-id="42169-103">Riferimenti cmdlet per i servizi di Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="42169-103">Cmdlet references for Microsoft 365 services</span></span> 
+# <a name="cmdlet-references-for-microsoft-365-services"></a><span data-ttu-id="95817-103">Riferimenti cmdlet per i servizi di Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="95817-103">Cmdlet references for Microsoft 365 services</span></span>
 
-<span data-ttu-id="42169-104">*Questo articolo si applica sia a Microsoft 365 Enterprise che a Office 365 Enterprise*.</span><span class="sxs-lookup"><span data-stu-id="42169-104">*This article applies to both Microsoft 365 Enterprise and Office 365 Enterprise.*</span></span>
+<span data-ttu-id="95817-104">*Questo articolo si applica sia a Microsoft 365 Enterprise che a Office 365 Enterprise*.</span><span class="sxs-lookup"><span data-stu-id="95817-104">*This article applies to both Microsoft 365 Enterprise and Office 365 Enterprise.*</span></span>
 
-<span data-ttu-id="42169-105">In questo articolo vengono forniti riferimenti ai cmdlet per i vari servizi di Microsoft 365 e le istruzioni di connessione per ogni servizio Microsoft 365 che PowerShell supporta.</span><span class="sxs-lookup"><span data-stu-id="42169-105">This article provides cmdlet references for the various Microsoft 365 services and connection instructions for each Microsoft 365 service that PowerShell supports.</span></span>
-  
+<span data-ttu-id="95817-105">In questo articolo vengono forniti riferimenti ai cmdlet per i vari servizi di Microsoft 365 e le istruzioni di connessione per ogni servizio Microsoft 365 che PowerShell supporta.</span><span class="sxs-lookup"><span data-stu-id="95817-105">This article provides cmdlet references for the various Microsoft 365 services and connection instructions for each Microsoft 365 service that PowerShell supports.</span></span>
+
 > [!NOTE]
-> <span data-ttu-id="42169-106">Per connettersi a tutti i servizi contemporaneamente, vedere Connessione a tutti i Microsoft 365 [in una singola](connect-to-all-microsoft-365-services-in-a-single-windows-powershell-window.md)Windows PowerShell finestra .</span><span class="sxs-lookup"><span data-stu-id="42169-106">To connect to all services at once, see [Connect to all Microsoft 365 services in a single Windows PowerShell window](connect-to-all-microsoft-365-services-in-a-single-windows-powershell-window.md).</span></span>
-  
-## <a name="azure-active-directory-powershell-cmdlets"></a><span data-ttu-id="42169-107">Azure Active Directory Cmdlet di PowerShell</span><span class="sxs-lookup"><span data-stu-id="42169-107">Azure Active Directory PowerShell cmdlets</span></span>
+> <span data-ttu-id="95817-106">Per connettersi a tutti i servizi contemporaneamente, vedere Connessione a tutti i Microsoft 365 [in una singola](connect-to-all-microsoft-365-services-in-a-single-windows-powershell-window.md)Windows PowerShell finestra .</span><span class="sxs-lookup"><span data-stu-id="95817-106">To connect to all services at once, see [Connect to all Microsoft 365 services in a single Windows PowerShell window](connect-to-all-microsoft-365-services-in-a-single-windows-powershell-window.md).</span></span>
 
-<span data-ttu-id="42169-108">Gli Azure Active Directory di riferimento di PowerShell per Graph cmdlet sono disponibili nella sezione Reference della documentazione di [Azure Active Directory PowerShell per Graph.](/powershell/azure/active-directory/install-adv2?view=azureadps-2.0)</span><span class="sxs-lookup"><span data-stu-id="42169-108">The Azure Active Directory PowerShell for Graph cmdlet reference topics are in the Reference section of the [Azure Active Directory PowerShell for Graph documentation](/powershell/azure/active-directory/install-adv2?view=azureadps-2.0).</span></span>
+## <a name="azure-active-directory-powershell-cmdlets"></a><span data-ttu-id="95817-107">Azure Active Directory Cmdlet di PowerShell</span><span class="sxs-lookup"><span data-stu-id="95817-107">Azure Active Directory PowerShell cmdlets</span></span>
 
-<span data-ttu-id="42169-109">Gli argomenti Azure Active Directory module for Windows PowerShell cmdlet sono disponibili nella sezione Reference [della documentazione di Azure Active Directory (MSOnline).](/powershell/azure/active-directory/overview?view=azureadps-1.0)</span><span class="sxs-lookup"><span data-stu-id="42169-109">The Azure Active Directory Module for Windows PowerShell cmdlet reference topics is in the Reference section of the [Azure Active Directory (MSOnline) documentation](/powershell/azure/active-directory/overview?view=azureadps-1.0).</span></span>
+<span data-ttu-id="95817-108">Gli Azure Active Directory di riferimento di PowerShell per Graph cmdlet sono disponibili nella sezione Reference della documentazione di [Azure Active Directory PowerShell per Graph.](/powershell/azure/active-directory/install-adv2)</span><span class="sxs-lookup"><span data-stu-id="95817-108">The Azure Active Directory PowerShell for Graph cmdlet reference topics are in the Reference section of the [Azure Active Directory PowerShell for Graph documentation](/powershell/azure/active-directory/install-adv2).</span></span>
 
-<span data-ttu-id="42169-110">Per Microsoft 365 di connessione di PowerShell, [vedere Connessione to Microsoft 365 with PowerShell](connect-to-microsoft-365-powershell.md).</span><span class="sxs-lookup"><span data-stu-id="42169-110">For Microsoft 365 PowerShell connection instructions, see [Connect to Microsoft 365 with PowerShell](connect-to-microsoft-365-powershell.md).</span></span>
-  
-## <a name="exchange-online-powershell-cmdlets"></a><span data-ttu-id="42169-111">Cmdlet di Exchange Online PowerShell</span><span class="sxs-lookup"><span data-stu-id="42169-111">Exchange Online PowerShell cmdlets</span></span>
+<span data-ttu-id="95817-109">Gli argomenti Azure Active Directory module for Windows PowerShell cmdlet sono disponibili nella sezione Reference [della documentazione di Azure Active Directory (MSOnline).](/powershell/azure/active-directory/overview)</span><span class="sxs-lookup"><span data-stu-id="95817-109">The Azure Active Directory Module for Windows PowerShell cmdlet reference topics is in the Reference section of the [Azure Active Directory (MSOnline) documentation](/powershell/azure/active-directory/overview).</span></span>
 
-<span data-ttu-id="42169-112">Exchange Online argomenti di riferimento sui cmdlet sono disponibili nella sezione Reference della [documentazione Exchange Online PowerShell.](/powershell/exchange/exchange-online-powershell)</span><span class="sxs-lookup"><span data-stu-id="42169-112">Exchange Online cmdlet reference topics are in the Reference section of the [Exchange Online PowerShell documentation](/powershell/exchange/exchange-online-powershell).</span></span>
-  
-<span data-ttu-id="42169-113">Per istruzioni sulla connessione Exchange Online PowerShell, [vedere Connessione to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).</span><span class="sxs-lookup"><span data-stu-id="42169-113">For connection instructions for Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).</span></span>
-  
+<span data-ttu-id="95817-110">Per Microsoft 365 di connessione di PowerShell, [vedere Connessione to Microsoft 365 with PowerShell](connect-to-microsoft-365-powershell.md).</span><span class="sxs-lookup"><span data-stu-id="95817-110">For Microsoft 365 PowerShell connection instructions, see [Connect to Microsoft 365 with PowerShell](connect-to-microsoft-365-powershell.md).</span></span>
+
+## <a name="exchange-online-powershell-cmdlets"></a><span data-ttu-id="95817-111">Cmdlet di Exchange Online PowerShell</span><span class="sxs-lookup"><span data-stu-id="95817-111">Exchange Online PowerShell cmdlets</span></span>
+
+<span data-ttu-id="95817-112">Exchange Online argomenti di riferimento sui cmdlet sono disponibili nella sezione Reference della [documentazione Exchange Online PowerShell.](/powershell/exchange/exchange-online-powershell)</span><span class="sxs-lookup"><span data-stu-id="95817-112">Exchange Online cmdlet reference topics are in the Reference section of the [Exchange Online PowerShell documentation](/powershell/exchange/exchange-online-powershell).</span></span>
+
+<span data-ttu-id="95817-113">Per istruzioni sulla connessione Exchange Online PowerShell, [vedere Connessione to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).</span><span class="sxs-lookup"><span data-stu-id="95817-113">For connection instructions for Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).</span></span>
+
 > [!NOTE]
-> <span data-ttu-id="42169-114">I cmdlet per la creazione di report per altri servizi, ad esempio SharePoint Online, Skype for Business Online e Microsoft 365'attività degli utenti, sono disponibili in Exchange Online PowerShell.</span><span class="sxs-lookup"><span data-stu-id="42169-114">Reporting cmdlets for other services, such as SharePoint Online, Skype for Business Online, and Microsoft 365 user activity, are available in Exchange Online PowerShell.</span></span> <span data-ttu-id="42169-115">Per ulteriori informazioni, vedere [Cmdlet per i report in Exchange Online.](/powershell/exchange/exchange-online-powershell).</span><span class="sxs-lookup"><span data-stu-id="42169-115">For more information, see [Reporting cmdlets in Exchange Online](/powershell/exchange/exchange-online-powershell).</span></span> 
-  
-## <a name="sharepoint-online-powershell-cmdlets"></a><span data-ttu-id="42169-116">Cmdlet di PowerShell per SharePoint Online</span><span class="sxs-lookup"><span data-stu-id="42169-116">SharePoint Online PowerShell cmdlets</span></span>
+> <span data-ttu-id="95817-114">I cmdlet per la creazione di report per altri servizi, ad esempio SharePoint Online, Skype for Business Online e Microsoft 365'attività degli utenti, sono disponibili in Exchange Online PowerShell.</span><span class="sxs-lookup"><span data-stu-id="95817-114">Reporting cmdlets for other services, such as SharePoint Online, Skype for Business Online, and Microsoft 365 user activity, are available in Exchange Online PowerShell.</span></span> <span data-ttu-id="95817-115">Per ulteriori informazioni, vedere [Cmdlet per i report in Exchange Online.](/powershell/exchange/exchange-online-powershell).</span><span class="sxs-lookup"><span data-stu-id="95817-115">For more information, see [Reporting cmdlets in Exchange Online](/powershell/exchange/exchange-online-powershell).</span></span>
 
-<span data-ttu-id="42169-117">Per SharePoint cmdlet online, vedere [Index of Windows PowerShell for SharePoint Online cmdlets](/powershell/module/sharepoint-online/).</span><span class="sxs-lookup"><span data-stu-id="42169-117">For SharePoint Online cmdlets, see [Index of Windows PowerShell for SharePoint Online cmdlets](/powershell/module/sharepoint-online/).</span></span>
-  
-<span data-ttu-id="42169-118">Per istruzioni sulla connessione SharePoint PowerShell online, vedere [Set up the SharePoint Online Management Shell Windows PowerShell environment](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online).</span><span class="sxs-lookup"><span data-stu-id="42169-118">For connection instructions for SharePoint Online PowerShell, see [Set up the SharePoint Online Management Shell Windows PowerShell environment](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online).</span></span>
-  
-## <a name="skype-for-business-online-powershell-cmdlets"></a><span data-ttu-id="42169-119">Cmdlet di PowerShell per Skype for Business Online</span><span class="sxs-lookup"><span data-stu-id="42169-119">Skype for Business Online PowerShell cmdlets</span></span>
+## <a name="sharepoint-online-powershell-cmdlets"></a><span data-ttu-id="95817-116">Cmdlet di PowerShell per SharePoint Online</span><span class="sxs-lookup"><span data-stu-id="95817-116">SharePoint Online PowerShell cmdlets</span></span>
 
-<span data-ttu-id="42169-120">Per Skype for Business di riferimento sui cmdlet online, [vedere Skype for Business Cmdlet online](/previous-versions//mt228132(v=technet.10)).</span><span class="sxs-lookup"><span data-stu-id="42169-120">For Skype for Business Online cmdlet reference topics, see [Skype for Business Online cmdlets](/previous-versions//mt228132(v=technet.10)).</span></span>
-  
-<span data-ttu-id="42169-121">Per istruzioni sulla connessione Skype for Business PowerShell online, vedere [Manage Skype for Business Online with PowerShell](manage-skype-for-business-online-with-microsoft-365-powershell.md).</span><span class="sxs-lookup"><span data-stu-id="42169-121">For connection instructions for Skype for Business Online PowerShell, see [Manage Skype for Business Online with PowerShell](manage-skype-for-business-online-with-microsoft-365-powershell.md).</span></span>
+<span data-ttu-id="95817-117">Per SharePoint cmdlet online, vedere [Index of Windows PowerShell for SharePoint Online cmdlets](/powershell/module/sharepoint-online/).</span><span class="sxs-lookup"><span data-stu-id="95817-117">For SharePoint Online cmdlets, see [Index of Windows PowerShell for SharePoint Online cmdlets](/powershell/module/sharepoint-online/).</span></span>
 
-## <a name="security--compliance-center-powershell-cmdlets"></a><span data-ttu-id="42169-122">Cmdlet di PowerShell & Centro sicurezza e conformità</span><span class="sxs-lookup"><span data-stu-id="42169-122">Security & Compliance Center PowerShell cmdlets</span></span>
+<span data-ttu-id="95817-118">Per istruzioni sulla connessione SharePoint PowerShell online, vedere [Set up the SharePoint Online Management Shell Windows PowerShell environment](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online).</span><span class="sxs-lookup"><span data-stu-id="95817-118">For connection instructions for SharePoint Online PowerShell, see [Set up the SharePoint Online Management Shell Windows PowerShell environment](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online).</span></span>
 
-<span data-ttu-id="42169-123">I riferimenti al cmdlet & Centro sicurezza e conformità sono disponibili nella sezione Di riferimento della documentazione [di PowerShell relativa & sicurezza e conformità.](/powershell/exchange/scc-powershell)</span><span class="sxs-lookup"><span data-stu-id="42169-123">The Security & Compliance Center cmdlet references are in the Reference section of the [Security & Compliance PowerShell documentation](/powershell/exchange/scc-powershell).</span></span>
-  
-<span data-ttu-id="42169-124">Per istruzioni di connessione per PowerShell & Centro sicurezza e conformità, vedere Connessione a PowerShell & Centro [sicurezza e conformità.](/powershell/exchange/connect-to-scc-powershell)</span><span class="sxs-lookup"><span data-stu-id="42169-124">For connection instructions for Security & Compliance Center PowerShell, see [Connect to the Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell).</span></span>
+## <a name="skype-for-business-online-powershell-cmdlets"></a><span data-ttu-id="95817-119">Cmdlet di PowerShell per Skype for Business Online</span><span class="sxs-lookup"><span data-stu-id="95817-119">Skype for Business Online PowerShell cmdlets</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="42169-125">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="42169-125">See also</span></span>
+<span data-ttu-id="95817-120">Per Skype for Business di riferimento sui cmdlet online, [vedere Skype for Business Cmdlet online](/previous-versions//mt228132(v=technet.10)).</span><span class="sxs-lookup"><span data-stu-id="95817-120">For Skype for Business Online cmdlet reference topics, see [Skype for Business Online cmdlets](/previous-versions//mt228132(v=technet.10)).</span></span>
 
-[<span data-ttu-id="42169-126">Gestire Microsoft 365 con PowerShell</span><span class="sxs-lookup"><span data-stu-id="42169-126">Manage Microsoft 365 with PowerShell</span></span>](manage-microsoft-365-with-microsoft-365-powershell.md)
-  
-[<span data-ttu-id="42169-127">Guida introduttiva a PowerShell per Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="42169-127">Get started with PowerShell for Microsoft 365</span></span>](getting-started-with-microsoft-365-powershell.md)
+<span data-ttu-id="95817-121">Per istruzioni sulla connessione Skype for Business PowerShell online, vedere [Manage Skype for Business Online with PowerShell](manage-skype-for-business-online-with-microsoft-365-powershell.md).</span><span class="sxs-lookup"><span data-stu-id="95817-121">For connection instructions for Skype for Business Online PowerShell, see [Manage Skype for Business Online with PowerShell](manage-skype-for-business-online-with-microsoft-365-powershell.md).</span></span>
+
+## <a name="security--compliance-center-powershell-cmdlets"></a><span data-ttu-id="95817-122">Cmdlet di PowerShell & Centro sicurezza e conformità</span><span class="sxs-lookup"><span data-stu-id="95817-122">Security & Compliance Center PowerShell cmdlets</span></span>
+
+<span data-ttu-id="95817-123">I riferimenti al cmdlet & Centro sicurezza e conformità sono disponibili nella sezione Di riferimento della documentazione [di PowerShell relativa & sicurezza e conformità.](/powershell/exchange/scc-powershell)</span><span class="sxs-lookup"><span data-stu-id="95817-123">The Security & Compliance Center cmdlet references are in the Reference section of the [Security & Compliance PowerShell documentation](/powershell/exchange/scc-powershell).</span></span>
+
+<span data-ttu-id="95817-124">Per istruzioni di connessione per PowerShell & Centro sicurezza e conformità, vedere Connessione a PowerShell & Centro [sicurezza e conformità.](/powershell/exchange/connect-to-scc-powershell)</span><span class="sxs-lookup"><span data-stu-id="95817-124">For connection instructions for Security & Compliance Center PowerShell, see [Connect to the Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell).</span></span>
+
+## <a name="see-also"></a><span data-ttu-id="95817-125">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="95817-125">See also</span></span>
+
+[<span data-ttu-id="95817-126">Gestire Microsoft 365 con PowerShell</span><span class="sxs-lookup"><span data-stu-id="95817-126">Manage Microsoft 365 with PowerShell</span></span>](manage-microsoft-365-with-microsoft-365-powershell.md)
+
+[<span data-ttu-id="95817-127">Guida introduttiva a PowerShell per Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="95817-127">Get started with PowerShell for Microsoft 365</span></span>](getting-started-with-microsoft-365-powershell.md)

@@ -1,5 +1,5 @@
 ---
-title: Accedere a API di Microsoft Defender per endpoint .
+title: Accedere a API di Microsoft Defender per endpoint
 ms.reviewer: ''
 description: Informazioni su come usare le API per automatizzare i flussi di lavoro e innovare in base alle funzionalità di Microsoft Defender for Endpoint
 keywords: api, api, wdatp, open api, microsoft defender for endpoint api, microsoft defender atp, api pubbliche, api supportate, avvisi, dispositivo, utente, dominio, ip, file, ricerca avanzata, query
@@ -17,70 +17,70 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 9d3f4431825193d189f7ea1d73b6a99163cac428
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 718a043fec34abb17eb45ffba2c9efa46a1b538a
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52843699"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287270"
 ---
-# <a name="access-the-microsoft-defender-for-endpoint-apis"></a><span data-ttu-id="8cffb-104">Accedere a API di Microsoft Defender per endpoint .</span><span class="sxs-lookup"><span data-stu-id="8cffb-104">Access the Microsoft Defender for Endpoint APIs</span></span> 
+# <a name="access-the-microsoft-defender-for-endpoint-apis"></a><span data-ttu-id="2e2c8-104">Accedere a API di Microsoft Defender per endpoint</span><span class="sxs-lookup"><span data-stu-id="2e2c8-104">Access the Microsoft Defender for Endpoint APIs</span></span> 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-<span data-ttu-id="8cffb-105">**Si applica a:**</span><span class="sxs-lookup"><span data-stu-id="8cffb-105">**Applies to:**</span></span>
-- [<span data-ttu-id="8cffb-106">Microsoft Defender per endpoint</span><span class="sxs-lookup"><span data-stu-id="8cffb-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [<span data-ttu-id="8cffb-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="8cffb-107">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
+<span data-ttu-id="2e2c8-105">**Si applica a:**</span><span class="sxs-lookup"><span data-stu-id="2e2c8-105">**Applies to:**</span></span>
+- [<span data-ttu-id="2e2c8-106">Microsoft Defender per endpoint</span><span class="sxs-lookup"><span data-stu-id="2e2c8-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [<span data-ttu-id="2e2c8-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="2e2c8-107">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-<span data-ttu-id="8cffb-108">**Si applica a:**</span><span class="sxs-lookup"><span data-stu-id="8cffb-108">**Applies to:**</span></span> 
-- [<span data-ttu-id="8cffb-109">Microsoft Defender per endpoint</span><span class="sxs-lookup"><span data-stu-id="8cffb-109">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/?linkid=2154037)
+<span data-ttu-id="2e2c8-108">**Si applica a:**</span><span class="sxs-lookup"><span data-stu-id="2e2c8-108">**Applies to:**</span></span> 
+- [<span data-ttu-id="2e2c8-109">Microsoft Defender per endpoint</span><span class="sxs-lookup"><span data-stu-id="2e2c8-109">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-> <span data-ttu-id="8cffb-110">Vuoi provare Microsoft Defender per Endpoint?</span><span class="sxs-lookup"><span data-stu-id="8cffb-110">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="8cffb-111">Iscriversi per una versione di valutazione gratuita.</span><span class="sxs-lookup"><span data-stu-id="8cffb-111">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> <span data-ttu-id="2e2c8-110">Vuoi provare Microsoft Defender per Endpoint?</span><span class="sxs-lookup"><span data-stu-id="2e2c8-110">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="2e2c8-111">Iscriversi per una versione di valutazione gratuita.</span><span class="sxs-lookup"><span data-stu-id="2e2c8-111">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
+<span data-ttu-id="2e2c8-112">Defender for Endpoint espone gran parte dei dati e delle azioni tramite un set di API programmatiche.</span><span class="sxs-lookup"><span data-stu-id="2e2c8-112">Defender for Endpoint exposes much of its data and actions through a set of programmatic APIs.</span></span> <span data-ttu-id="2e2c8-113">Queste API ti consentiranno di automatizzare i flussi di lavoro e innovare in base alle funzionalità di Defender for Endpoint.</span><span class="sxs-lookup"><span data-stu-id="2e2c8-113">Those APIs will enable you to automate workflows and innovate based on Defender for Endpoint capabilities.</span></span> <span data-ttu-id="2e2c8-114">L'accesso API richiede l'autenticazione OAuth2.0.</span><span class="sxs-lookup"><span data-stu-id="2e2c8-114">The API access requires OAuth2.0 authentication.</span></span> <span data-ttu-id="2e2c8-115">Per ulteriori informazioni, vedere [OAuth 2.0 Authorization Code Flow](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).</span><span class="sxs-lookup"><span data-stu-id="2e2c8-115">For more information, see [OAuth 2.0 Authorization Code Flow](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).</span></span>
 
+<span data-ttu-id="2e2c8-116">Guarda questo video per una breve panoramica delle API di Defender for Endpoint.</span><span class="sxs-lookup"><span data-stu-id="2e2c8-116">Watch this video for a quick overview of Defender for Endpoint's APIs.</span></span>
 
-<span data-ttu-id="8cffb-112">Defender for Endpoint espone gran parte dei dati e delle azioni tramite un set di API programmatiche.</span><span class="sxs-lookup"><span data-stu-id="8cffb-112">Defender for Endpoint exposes much of its data and actions through a set of programmatic APIs.</span></span> <span data-ttu-id="8cffb-113">Queste API ti consentiranno di automatizzare i flussi di lavoro e innovare in base alle funzionalità di Defender for Endpoint.</span><span class="sxs-lookup"><span data-stu-id="8cffb-113">Those APIs will enable you to automate workflows and innovate based on Defender for Endpoint capabilities.</span></span> <span data-ttu-id="8cffb-114">L'accesso API richiede l'autenticazione OAuth2.0.</span><span class="sxs-lookup"><span data-stu-id="8cffb-114">The API access requires OAuth2.0 authentication.</span></span> <span data-ttu-id="8cffb-115">Per ulteriori informazioni, vedere [OAuth 2.0 Authorization Code Flow](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).</span><span class="sxs-lookup"><span data-stu-id="8cffb-115">For more information, see [OAuth 2.0 Authorization Code Flow](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).</span></span>
-
-<span data-ttu-id="8cffb-116">Guarda questo video per una breve panoramica delle API di Defender for Endpoint.</span><span class="sxs-lookup"><span data-stu-id="8cffb-116">Watch this video for a quick overview of Defender for Endpoint's APIs.</span></span> 
 >[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4d73M]
 
-<span data-ttu-id="8cffb-117">In generale, dovrai eseguire la procedura seguente per usare le API:</span><span class="sxs-lookup"><span data-stu-id="8cffb-117">In general, you’ll need to take the following steps to use the APIs:</span></span>
-- <span data-ttu-id="8cffb-118">Creare [un'applicazione AAD](/microsoft-365/security/defender-endpoint/exposed-apis-create-app-nativeapp)</span><span class="sxs-lookup"><span data-stu-id="8cffb-118">Create an [AAD application](/microsoft-365/security/defender-endpoint/exposed-apis-create-app-nativeapp)</span></span>
-- <span data-ttu-id="8cffb-119">Ottenere un token di accesso con questa applicazione</span><span class="sxs-lookup"><span data-stu-id="8cffb-119">Get an access token using this application</span></span>
-- <span data-ttu-id="8cffb-120">Usare il token per accedere all'API di Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="8cffb-120">Use the token to access Defender for Endpoint API</span></span>
+<span data-ttu-id="2e2c8-117">In generale, dovrai eseguire la procedura seguente per usare le API:</span><span class="sxs-lookup"><span data-stu-id="2e2c8-117">In general, you’ll need to take the following steps to use the APIs:</span></span>
 
+- <span data-ttu-id="2e2c8-118">Creare [un'applicazione AAD](/microsoft-365/security/defender-endpoint/exposed-apis-create-app-nativeapp)</span><span class="sxs-lookup"><span data-stu-id="2e2c8-118">Create an [AAD application](/microsoft-365/security/defender-endpoint/exposed-apis-create-app-nativeapp)</span></span>
+- <span data-ttu-id="2e2c8-119">Ottenere un token di accesso con questa applicazione</span><span class="sxs-lookup"><span data-stu-id="2e2c8-119">Get an access token using this application</span></span>
+- <span data-ttu-id="2e2c8-120">Usare il token per accedere all'API di Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="2e2c8-120">Use the token to access Defender for Endpoint API</span></span>
 
-<span data-ttu-id="8cffb-121">Puoi accedere all'API defender per endpoint con **il contesto dell'applicazione** **o il contesto utente.**</span><span class="sxs-lookup"><span data-stu-id="8cffb-121">You can access Defender for Endpoint API with **Application Context** or **User Context**.</span></span>
+<span data-ttu-id="2e2c8-121">Puoi accedere all'API defender per endpoint con **il contesto dell'applicazione** **o il contesto utente.**</span><span class="sxs-lookup"><span data-stu-id="2e2c8-121">You can access Defender for Endpoint API with **Application Context** or **User Context**.</span></span>
 
-- <span data-ttu-id="8cffb-122">**Contesto applicazione: (scelta consigliata)**</span><span class="sxs-lookup"><span data-stu-id="8cffb-122">**Application Context: (Recommended)**</span></span> <br>
-    <span data-ttu-id="8cffb-123">Usato dalle app eseguite senza un utente connesso.</span><span class="sxs-lookup"><span data-stu-id="8cffb-123">Used by apps that run without a signed-in user present.</span></span> <span data-ttu-id="8cffb-124">ad esempio app eseguite come servizi in background o daemon.</span><span class="sxs-lookup"><span data-stu-id="8cffb-124">for example, apps that run as background services or daemons.</span></span>
+- <span data-ttu-id="2e2c8-122">**Contesto applicazione: (scelta consigliata)**</span><span class="sxs-lookup"><span data-stu-id="2e2c8-122">**Application Context: (Recommended)**</span></span>
 
-    <span data-ttu-id="8cffb-125">Passaggi da eseguire per accedere all'API defender per endpoint con il contesto dell'applicazione:</span><span class="sxs-lookup"><span data-stu-id="8cffb-125">Steps that need to be taken to access Defender for Endpoint API with application context:</span></span>
+  <span data-ttu-id="2e2c8-123">Usato dalle app eseguite senza un utente connesso.</span><span class="sxs-lookup"><span data-stu-id="2e2c8-123">Used by apps that run without a signed-in user present.</span></span> <span data-ttu-id="2e2c8-124">ad esempio app eseguite come servizi in background o daemon.</span><span class="sxs-lookup"><span data-stu-id="2e2c8-124">for example, apps that run as background services or daemons.</span></span>
 
-  1. <span data-ttu-id="8cffb-126">Creare un'applicazione Web AAD.</span><span class="sxs-lookup"><span data-stu-id="8cffb-126">Create an AAD Web-Application.</span></span>
-  2. <span data-ttu-id="8cffb-127">Assegnare l'autorizzazione desiderata all'applicazione, ad esempio "Avvisi di lettura", "Isola computer".</span><span class="sxs-lookup"><span data-stu-id="8cffb-127">Assign the desired permission to the application, for example, 'Read Alerts', 'Isolate Machines'.</span></span> 
-  3. <span data-ttu-id="8cffb-128">Crea una chiave per l'applicazione.</span><span class="sxs-lookup"><span data-stu-id="8cffb-128">Create a key for this Application.</span></span>
-  4. <span data-ttu-id="8cffb-129">Ottenere il token usando l'applicazione con la relativa chiave.</span><span class="sxs-lookup"><span data-stu-id="8cffb-129">Get token using the application with its key.</span></span>
-  5. <span data-ttu-id="8cffb-130">Usare il token per accedere all'API di Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="8cffb-130">Use the token to access the Microsoft Defender for Endpoint API</span></span>
+  <span data-ttu-id="2e2c8-125">Passaggi da eseguire per accedere all'API defender per endpoint con il contesto dell'applicazione:</span><span class="sxs-lookup"><span data-stu-id="2e2c8-125">Steps that need to be taken to access Defender for Endpoint API with application context:</span></span>
 
-     <span data-ttu-id="8cffb-131">Per ulteriori informazioni, vedere [Ottenere l'accesso con il contesto dell'applicazione.](exposed-apis-create-app-webapp.md)</span><span class="sxs-lookup"><span data-stu-id="8cffb-131">For more information, see [Get access with application context](exposed-apis-create-app-webapp.md).</span></span>
+  1. <span data-ttu-id="2e2c8-126">Creare un'applicazione Web AAD.</span><span class="sxs-lookup"><span data-stu-id="2e2c8-126">Create an AAD Web-Application.</span></span>
+  2. <span data-ttu-id="2e2c8-127">Assegnare l'autorizzazione desiderata all'applicazione, ad esempio "Avvisi di lettura", "Isola computer".</span><span class="sxs-lookup"><span data-stu-id="2e2c8-127">Assign the desired permission to the application, for example, 'Read Alerts', 'Isolate Machines'.</span></span> 
+  3. <span data-ttu-id="2e2c8-128">Crea una chiave per l'applicazione.</span><span class="sxs-lookup"><span data-stu-id="2e2c8-128">Create a key for this Application.</span></span>
+  4. <span data-ttu-id="2e2c8-129">Ottenere il token usando l'applicazione con la relativa chiave.</span><span class="sxs-lookup"><span data-stu-id="2e2c8-129">Get token using the application with its key.</span></span>
+  5. <span data-ttu-id="2e2c8-130">Usare il token per accedere all'API di Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="2e2c8-130">Use the token to access the Microsoft Defender for Endpoint API</span></span>
 
+     <span data-ttu-id="2e2c8-131">Per ulteriori informazioni, vedere [Ottenere l'accesso con il contesto dell'applicazione.](exposed-apis-create-app-webapp.md)</span><span class="sxs-lookup"><span data-stu-id="2e2c8-131">For more information, see [Get access with application context](exposed-apis-create-app-webapp.md).</span></span>
 
-- <span data-ttu-id="8cffb-132">**Contesto utente:**</span><span class="sxs-lookup"><span data-stu-id="8cffb-132">**User Context:**</span></span> <br>
-    <span data-ttu-id="8cffb-133">Usato per eseguire azioni nell'API per conto di un utente.</span><span class="sxs-lookup"><span data-stu-id="8cffb-133">Used to perform actions in the API on behalf of a user.</span></span>
+- <span data-ttu-id="2e2c8-132">**Contesto utente:**</span><span class="sxs-lookup"><span data-stu-id="2e2c8-132">**User Context:**</span></span>
 
-    <span data-ttu-id="8cffb-134">Passaggi da eseguire per accedere all'API defender per endpoint con il contesto dell'applicazione:</span><span class="sxs-lookup"><span data-stu-id="8cffb-134">Steps to take to access Defender for Endpoint API with application context:</span></span>
+  <span data-ttu-id="2e2c8-133">Usato per eseguire azioni nell'API per conto di un utente.</span><span class="sxs-lookup"><span data-stu-id="2e2c8-133">Used to perform actions in the API on behalf of a user.</span></span>
 
-  1. <span data-ttu-id="8cffb-135">Creare un'applicazione nativa di AAD.</span><span class="sxs-lookup"><span data-stu-id="8cffb-135">Create AAD Native-Application.</span></span>
-  2. <span data-ttu-id="8cffb-136">Assegnare l'autorizzazione desiderata all'applicazione, ad esempio "Avvisi di lettura", "Isola computer" e così via.</span><span class="sxs-lookup"><span data-stu-id="8cffb-136">Assign the desired permission to the application, e.g 'Read Alerts', 'Isolate Machines' etc.</span></span> 
-  3. <span data-ttu-id="8cffb-137">Ottenere il token usando l'applicazione con le credenziali utente.</span><span class="sxs-lookup"><span data-stu-id="8cffb-137">Get token using the application with user credentials.</span></span>
-  4. <span data-ttu-id="8cffb-138">Usare il token per accedere all'API di Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="8cffb-138">Use the token to access the Microsoft Defender for Endpoint API</span></span>
+  <span data-ttu-id="2e2c8-134">Passaggi da eseguire per accedere all'API defender per endpoint con il contesto dell'applicazione:</span><span class="sxs-lookup"><span data-stu-id="2e2c8-134">Steps to take to access Defender for Endpoint API with application context:</span></span>
 
-     <span data-ttu-id="8cffb-139">Per ulteriori informazioni, vedere [Ottenere l'accesso con il contesto utente.](exposed-apis-create-app-nativeapp.md)</span><span class="sxs-lookup"><span data-stu-id="8cffb-139">For more information, see [Get access with user context](exposed-apis-create-app-nativeapp.md).</span></span>
+  1. <span data-ttu-id="2e2c8-135">Creare un'applicazione nativa di AAD.</span><span class="sxs-lookup"><span data-stu-id="2e2c8-135">Create AAD Native-Application.</span></span>
+  2. <span data-ttu-id="2e2c8-136">Assegnare l'autorizzazione desiderata all'applicazione, ad esempio "Avvisi di lettura", "Isola computer" e così via.</span><span class="sxs-lookup"><span data-stu-id="2e2c8-136">Assign the desired permission to the application, e.g 'Read Alerts', 'Isolate Machines' etc.</span></span> 
+  3. <span data-ttu-id="2e2c8-137">Ottenere il token usando l'applicazione con le credenziali utente.</span><span class="sxs-lookup"><span data-stu-id="2e2c8-137">Get token using the application with user credentials.</span></span>
+  4. <span data-ttu-id="2e2c8-138">Usare il token per accedere all'API di Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="2e2c8-138">Use the token to access the Microsoft Defender for Endpoint API</span></span>
 
+     <span data-ttu-id="2e2c8-139">Per ulteriori informazioni, vedere [Ottenere l'accesso con il contesto utente.](exposed-apis-create-app-nativeapp.md)</span><span class="sxs-lookup"><span data-stu-id="2e2c8-139">For more information, see [Get access with user context](exposed-apis-create-app-nativeapp.md).</span></span>
 
-## <a name="related-topics"></a><span data-ttu-id="8cffb-140">Argomenti correlati</span><span class="sxs-lookup"><span data-stu-id="8cffb-140">Related topics</span></span>
-- [<span data-ttu-id="8cffb-141">API di Microsoft Defender per endpoint</span><span class="sxs-lookup"><span data-stu-id="8cffb-141">Microsoft Defender for Endpoint APIs</span></span>](exposed-apis-list.md)
-- [<span data-ttu-id="8cffb-142">Accedere a Microsoft Defender for Endpoint con il contesto dell'applicazione</span><span class="sxs-lookup"><span data-stu-id="8cffb-142">Access Microsoft Defender for Endpoint with application context</span></span>](exposed-apis-create-app-webapp.md)
-- [<span data-ttu-id="8cffb-143">Accedere a Microsoft Defender per Endpoint con contesto utente</span><span class="sxs-lookup"><span data-stu-id="8cffb-143">Access Microsoft Defender for Endpoint with user context</span></span>](exposed-apis-create-app-nativeapp.md)
+## <a name="related-topics"></a><span data-ttu-id="2e2c8-140">Argomenti correlati</span><span class="sxs-lookup"><span data-stu-id="2e2c8-140">Related topics</span></span>
+
+- [<span data-ttu-id="2e2c8-141">API di Microsoft Defender per endpoint</span><span class="sxs-lookup"><span data-stu-id="2e2c8-141">Microsoft Defender for Endpoint APIs</span></span>](exposed-apis-list.md)
+- [<span data-ttu-id="2e2c8-142">Accedere a Microsoft Defender for Endpoint con il contesto dell'applicazione</span><span class="sxs-lookup"><span data-stu-id="2e2c8-142">Access Microsoft Defender for Endpoint with application context</span></span>](exposed-apis-create-app-webapp.md)
+- [<span data-ttu-id="2e2c8-143">Accedere a Microsoft Defender per Endpoint con contesto utente</span><span class="sxs-lookup"><span data-stu-id="2e2c8-143">Access Microsoft Defender for Endpoint with user context</span></span>](exposed-apis-create-app-nativeapp.md)
