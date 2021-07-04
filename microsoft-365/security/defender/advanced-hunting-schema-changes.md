@@ -1,5 +1,5 @@
 ---
-title: Modifiche di denominazione nello schema di ricerca avanzata Microsoft 365 Defender
+title: Modifiche di denominazione nello schema Microsoft 365 Defender ricerca avanzata
 description: Tenere traccia e rivedere le tabelle e le colonne delle modifiche di denominazione nello schema di ricerca avanzata
 keywords: ricerca avanzata, ricerca delle minacce, ricerca di minacce informatiche, Microsoft 365 Defender, Microsoft 365, m365, ricerca, query, telemetria, riferimento allo schema, kusto, tabella, dati, modifiche di denominazione, rinominare
 search.product: eADQiWindows 10XVcnh
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: a387892dde0fbe96e4a523b2247448a3c7e374b8
-ms.sourcegitcommit: fb6c5e04ade1e82b26b2f911577b5ac721f1c544
+ms.openlocfilehash: 9406653a2d16c83f974e2a0ce7597b5c4f833252
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "52470497"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289500"
 ---
 # <a name="advanced-hunting-schema---naming-changes"></a>Schema di ricerca avanzata - Modifiche di denominazione
 
@@ -55,22 +55,22 @@ Le modifiche di denominazione vengono applicate automaticamente alle query salva
 
 | Nome colonna | Nome valore originale | Nuovo nome valore | Motivo della modifica
 |--|--|--|--|
-| `DetectionSource` | MCAS |    Microsoft Cloud App Security | Rebranding |
-| `DetectionSource` | WindowsDefenderAtp|   EDR| Rebranding |
+| `DetectionSource` | MCAS | Microsoft Cloud App Security | Rebranding |
+| `DetectionSource` | WindowsDefenderAtp| EDR| Rebranding |
 | `DetectionSource` | WindowsDefenderAv | Antivirus | Rebranding |
 | `DetectionSource` | WindowsDefenderSmartScreen |  SmartScreen | Rebranding |
-| `DetectionSource` | CustomerTI |  Ti personalizzato | Rebranding |
+| `DetectionSource` | CustomerTI | Ti personalizzato | Rebranding |
 | `DetectionSource` | OfficeATP | Microsoft Defender per Office 365 | Rebranding |
-| `DetectionSource` | MTP   | Microsoft 365 Defender | Rebranding |
-| `DetectionSource` | AzureATP |    Microsoft Defender per identità | Rebranding |
-| `DetectionSource` | CustomDetection   | Rilevamento personalizzato | Rebranding |
+| `DetectionSource` | MTP | Microsoft 365 Defender | Rebranding |
+| `DetectionSource` | AzureATP | Microsoft Defender per identità | Rebranding |
+| `DetectionSource` | CustomDetection | Rilevamento personalizzato | Rebranding |
 | `DetectionSource` | AutomatedInvestigation |Indagine automatizzata | Rebranding |
 | `DetectionSource` | ThreatExperts | Microsoft Threat Experts | Rebranding |
 | `DetectionSource` | TI di terze parti | Sensori di terze parti | Rebranding |
 | `ServiceSource` | Microsoft Defender ATP| Microsoft Defender per endpoint | Rebranding |
-|`ServiceSource` |Microsoft Threat Protection   | Microsoft 365 Defender | Rebranding |
-| `ServiceSource` | Office 365 ATP  |Microsoft Defender per Office 365 | Rebranding |
-| `ServiceSource` |Azure ATP    |Microsoft Defender per identità | Rebranding |
+|`ServiceSource` |Microsoft Threat Protection | Microsoft 365 Defender | Rebranding |
+| `ServiceSource` | Office 365 ATP |Microsoft Defender per Office 365 | Rebranding |
+| `ServiceSource` |Azure ATP |Microsoft Defender per identità | Rebranding |
 
 `DetectionSource`è disponibile nella [tabella AlertInfo.](advanced-hunting-alertinfo-table.md) `ServiceSource`è disponibile nelle [tabelle AlertEvidence](advanced-hunting-alertevidence-table.md) [e AlertInfo.](advanced-hunting-alertinfo-table.md) 
 

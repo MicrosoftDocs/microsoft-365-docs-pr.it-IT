@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: ''
-ms.openlocfilehash: 90c76fade54c109fc02e145a49bbe93d11ad8b79
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+ms.openlocfilehash: ad9bf2ba40ede2d76246c56bf94b90e0e96aeeff
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52822525"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53288276"
 ---
 # <a name="predictive-coding-reference-preview"></a>Riferimento alla codifica predittiva (anteprima)
 
@@ -36,14 +36,18 @@ Un set di controlli viene utilizzato durante il processo di training di un model
 ## <a name="control-set-confusion-matrix"></a>Matrice confusione set di controlli
 
 Dopo aver completato un round di training, il modello assegna un punteggio di previsione ai 10 elementi nel set di controlli etichettati durante la fase di training. Il modello confronta il punteggio di stima di questi 10 elementi con l'etichetta effettiva assegnata all'elemento durante la fase di training. In base a questo confronto, il modello identifica le classificazioni seguenti per valutare le prestazioni di previsione del modello:
-  
-  |          |Il modello prevede che l'elemento sia rilevante |Il modello prevede che l'elemento non sia rilevante |
-  |:---------|:---------|:---------|
-  |**Elemento etichette revisore pertinente**| True positive| Falso positivo |
-  |**Elemento etichette revisore non pertinente**| Falso negativo |True negative |
-  ||||
 
-  In base a questi confronti, il modello deriva i valori per le metriche del punteggio F, della precisione e del richiamo e del margine di errore per ognuno di essi. Il numero di ognuno dei tipi di confusione della matrice viene visualizzato nella pagina del riquadro a comparsa per un round di training.
+<br>
+
+****
+
+|Etichetta|Il modello prevede che l'elemento sia rilevante|Il modello prevede che l'elemento non sia rilevante|
+|---|---|---|
+|**Elemento etichette revisore pertinente**|True positive|Falso positivo|
+|**Elemento etichette revisore non pertinente**|Falso negativo|True negative|
+|
+
+In base a questi confronti, il modello deriva i valori per le metriche del punteggio F, della precisione e del richiamo e del margine di errore per ognuno di essi. Il numero di ognuno dei tipi di confusione della matrice viene visualizzato nella pagina del riquadro a comparsa per un round di training.
 
 ## <a name="f-score"></a>Punteggio F
 

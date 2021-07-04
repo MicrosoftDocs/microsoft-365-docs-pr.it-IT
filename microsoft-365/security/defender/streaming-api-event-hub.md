@@ -1,6 +1,6 @@
 ---
-title: Trasmettere Microsoft 365 eventi di Defender all'Hub eventi di Azure
-description: Scopri come configurare Microsoft 365 Defender per trasmettere eventi di ricerca avanzata al tuo Hub eventi.
+title: Flusso di Microsoft 365 Defender eventi in Azure Event Hub
+description: Scopri come configurare i Microsoft 365 Defender per trasmettere eventi di ricerca avanzata all'hub eventi.
 keywords: esportazione di dati non elaborati, API di streaming, API, Hub eventi di Azure, archiviazione di Azure, account di archiviazione, Ricerca avanzata, condivisione di dati non elaborati
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 6f5d04d35c8c4fec18e1a689c51ecbc32d416adf
-ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
+ms.openlocfilehash: 2e43b75e49d01a05fdacae0adf63ea3337631dfd
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52903817"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289248"
 ---
 # <a name="configure-microsoft-365-defender-to-stream-advanced-hunting-events-to-your-azure-event-hub"></a>Configurare Microsoft 365 Defender per trasmettere eventi di ricerca avanzata all'Hub eventi di Azure
 
@@ -41,9 +41,11 @@ ms.locfileid: "52903817"
 
 3. Crea uno spazio dei nomi hub eventi, vai a Hub eventi **> Aggiungi** e seleziona il livello di prezzi, le unità di velocità effettiva e l'gonfiarsi automatico appropriato per il carico previsto. Per ulteriori informazioni, vedere [Pricing - Event Hub | Microsoft Azure](https://azure.microsoft.com/en-us/pricing/details/event-hubs/).  
 
-### <a name="add-contributor-permissions"></a>Aggiungere autorizzazioni di collaboratore 
+### <a name="add-contributor-permissions"></a>Aggiungere autorizzazioni di collaboratore
+
 Dopo aver creato lo spazio dei nomi Hub eventi, dovrai:
-1. Definisci l'utente che accederà a Microsoft 365 Defender come Collaboratore.
+
+1. Definire l'utente che accederà Microsoft 365 Defender come Collaboratore.
 
 2. Se ci si connette a un'applicazione, aggiungere l'entità servizio di registrazione app come lettore, ricevitore di dati dell'hub eventi di Azure (questa operazione può essere eseguita anche a livello di gruppo di risorse o di sottoscrizione). 
 
@@ -51,7 +53,7 @@ Dopo aver creato lo spazio dei nomi Hub eventi, dovrai:
 
 ## <a name="enable-raw-data-streaming"></a>Abilitare lo streaming di dati non elaborati
 
-1. Accedere al Centro sicurezza [Microsoft 365 Defender](https://security.microsoft.com) come ***Amministratore** globale _ o _* Amministratore _della sicurezza_**.
+1. Accedere al Centro [sicurezza Microsoft 365 Defender](https://security.microsoft.com) come ***Amministratore** globale _ o _* Amministratore _della sicurezza_**.
 
 2. Vai alla pagina [Impostazioni API di streaming.](https://security.microsoft.com/settings/mtp_settings/raw_data_export)
 
@@ -75,15 +77,15 @@ Dopo aver creato lo spazio dei nomi Hub eventi, dovrai:
 
 ```JSON
 {
-    "records": [
-                    {
-                        "time": "<The time Microsoft 365 Defender received the event>"
-                        "tenantId": "<The Id of the tenant that the event belongs to>"
-                        "category": "<The Advanced Hunting table name with 'AdvancedHunting-' prefix>"
-                        "properties": { <Microsoft 365 Defender Advanced Hunting event as Json> }
-                    }
-                    ...
-                ]
+   "records": [
+               {
+                  "time": "<The time Microsoft 365 Defender received the event>"
+                  "tenantId": "<The Id of the tenant that the event belongs to>"
+                  "category": "<The Advanced Hunting table name with 'AdvancedHunting-' prefix>"
+                  "properties": { <Microsoft 365 Defender Advanced Hunting event as Json> }
+               }
+               ...
+            ]
 }
 ```
 
@@ -91,12 +93,9 @@ Dopo aver creato lo spazio dei nomi Hub eventi, dovrai:
 
 - Ogni record contiene il nome dell'evento, l'ora in cui Microsoft 365 Defender ha ricevuto l'evento, il tenant a cui appartiene (si otterrà solo gli eventi dal tenant) e l'evento in formato JSON in una proprietà denominata "**properties**".
 
-- Per altre informazioni sullo schema degli eventi Microsoft 365 Defender, vedi [Panoramica di Advanced Hunting.](advanced-hunting-overview.md)
+- Per ulteriori informazioni sullo schema degli eventi Microsoft 365 Defender, vedere [Advanced Hunting overview.](advanced-hunting-overview.md)
 
 - In Ricerca avanzata, la **tabella DeviceInfo** contiene una colonna denominata **MachineGroup** che contiene il gruppo del dispositivo. Anche qui ogni evento verrà decorato con questa colonna. 
-
-
-
 
 ## <a name="data-types-mapping"></a>Mapping dei tipi di dati
 
@@ -105,7 +104,7 @@ Per ottenere i tipi di dati per le proprietà dell'evento, eseguire le operazion
 1. Accedi al centro [Microsoft 365 sicurezza](https://security.microsoft.com) e vai alla pagina [Ricerca avanzata.](https://security.microsoft.com/hunting-package)
 
 2. Eseguire la query seguente per ottenere il mapping dei tipi di dati per ogni evento:
- 
+
    ```kusto
    {EventType}
    | getschema
@@ -117,8 +116,9 @@ Per ottenere i tipi di dati per le proprietà dell'evento, eseguire le operazion
   ![Immagine della risorsa Hub eventi Id2](../defender-endpoint/images/machine-info-datatype-example.png)
 
 ## <a name="related-topics"></a>Argomenti correlati
+
 - [Panoramica della ricerca avanzata](advanced-hunting-overview.md)
-- [Microsoft 365 Defender streaming API](streaming-api.md)
-- [Trasmettere Microsoft 365 eventi di Defender all'account di archiviazione di Azure](streaming-api-storage.md)
+- [Microsoft 365 Defender streaming](streaming-api.md)
+- [Trasmettere Microsoft 365 Defender eventi all'account di archiviazione di Azure](streaming-api-storage.md)
 - [Documentazione dell'hub eventi di Azure](/azure/event-hubs/)
 - [Risolvere i problemi di connettività - Hub eventi di Azure](/azure/event-hubs/troubleshooting-guide)

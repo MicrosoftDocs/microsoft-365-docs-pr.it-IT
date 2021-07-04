@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Usare i criteri di conservazione per mantenere il controllo in modo efficiente dei contenuti che gli utenti generano tramite posta elettronica, documenti e conversazioni. Mantenere il contenuto desiderato e liberarsi di quello che non serve.
-ms.openlocfilehash: 3e5fec9117a0ce63b80b700c8771cf092b44a69e
-ms.sourcegitcommit: 5866e45a6a4e90c661e8f90c91550a9872b68e03
+ms.openlocfilehash: a9b348d51f147d5f228e6dbb643b7bedd2eb8c8e
+ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/28/2021
-ms.locfileid: "53169593"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53256532"
 ---
 # <a name="create-and-configure-retention-policies"></a>Creare e configurare criteri di conservazione
 
@@ -70,13 +70,14 @@ Se sono presenti più criteri di conservazione e quando si usano anche etichette
 
 2. Selezionare **Nuovo criterio di conservazione** per avviare la procedura guidata Crea etichetta di conservazione, e assegnare un nome al nuovo criterio di conservazione.
 
-3. Nella pagina **Scegli posizioni a cui applicare il criterio**, selezionare una o entrambe le posizioni di Teams: **Messaggi del canale di Teams** e **Chat di Teams**.
-
-   Per **Messaggi del canale di Teams** sono inclusi i messaggi provenienti da canali standard ma non dai [canali privati](/microsoftteams/private-channels). I canali privati non sono al momento supportati dai criteri di conservazione.
-
+3. Per la pagina **Scegliere le posizioni in cui applicare il criterio** selezionare una o tutte le posizioni per Teams:
+    - **Messaggi del canale di Teams**: messaggi provenienti da chat di canale standard e riunioni del canale standard, ma non da [canali privati](/microsoftteams/private-channels) che hanno la propria posizione dei criteri.
+    - **Chat di Teams**: messaggi provenienti da chat private 1:1, chat di gruppo e chat di riunioni.
+    - **Messaggi del canale privato di Teams**: messaggi provenienti da chat del canale privato e riunioni del canale privato. Questa opzione è attualmente in fase di distribuzione in anteprima e, se non viene visualizzata, riprovare tra qualche giorno.
+    
    Per impostazione predefinita, [tutti i team e gli utenti sono selezionati](#a-policy-that-applies-to-entire-locations), ma si può raffinare la ricerca selezionando le opzioni [**Scegli** ed **Escludi**](#a-policy-with-specific-inclusions-or-exclusions). Prima di modificare l'impostazione predefinita, tuttavia, tenere presente le conseguenze per i criteri di conservazione che eliminano i messaggi quando sono configurati su include o esclude:
     
-    - Per le chat di gruppo, poiché una copia dei messaggi viene salvata nella cassetta postale di ogni utente inclusa nella chat, nei risultati di eDiscovery continueranno a essere restituite copie dei messaggi dagli utenti a cui non è stato assegnato il criterio.
+    - Per i messaggi delle chat di gruppo e i messaggi di canali privati, poiché una copia dei messaggi viene salvata nella cassetta postale di ogni utente inclusa nella chat, nei risultati di eDiscovery continueranno a essere restituite copie dei messaggi dagli utenti a cui non è stato assegnato il criterio.
     - Per gli utenti a cui non è stato assegnato il criterio, i messaggi eliminati vengono restituiti nei risultati della ricerca di Teams, ma non visualizzano il contenuto del messaggio in seguito all'eliminazione definitiva dai criteri assegnati agli utenti.
 
 4. Nella pagina **Decidere se si vuole conservare il contenuto, eliminarlo e entrambi** della procedura guidata specificare le opzioni di configurazione per la conservazione e l'eliminazione del contenuto.
@@ -182,11 +183,15 @@ Usare le istruzioni seguenti per i criteri di conservazione che si applicano a u
 
 #### <a name="configuration-information-for-exchange-email-and-exchange-public-folders"></a>Informazioni di configurazione per la posta elettronica di Exchange e le cartelle pubbliche di Exchange
 
-La posizione **Posta elettronica di Exchange** supporta la conservazione per i messaggi di posta elettronica, il calendario e altri elementi delle cassette postali degli utenti applicando le impostazioni di conservazione a livello di cassetta postale.
+La posizione **Posta elettronica di Exchange** supporta la conservazione per i messaggi di posta elettronica, il calendario e altri elementi delle cassette postali degli utenti applicando le impostazioni di conservazione a livello di cassetta postale. Sono supportate anche le cassette postali condivise.
 
-Per informazioni dettagliate sugli elementi inclusi ed esclusi quando si configurano le impostazioni di conservazione per Exchange, vedere [Cosa è incluso per la conservazione e l'eliminazione](retention-policies-exchange.md#whats-included-for-retention-and-deletion)
+Quando si applicano le impostazioni di conservazione a **Tutti i destinatari**, vengono incluse tutte le [cassette postali inattive](create-and-manage-inactive-mailboxes.md). Tuttavia, se si modifica questa impostazione predefinita e si configurano [inclusioni o esclusioni specifiche](#a-policy-with-specific-inclusions-or-exclusions), le cassette postali inattive non sono supportate e le impostazioni di conservazione non verranno applicate o escluse per tali cassette postali.
 
-Si noti che anche se un gruppo di Microsoft 365 ha una cassetta postale di Exchange, un criterio di conservazione che include l'intero percorso **Posta elettronica di Exchange** non includerà il contenuto nelle cassette postali del gruppo di Microsoft 365. Per conservare il contenuto delle cassette postali, selezionare la posizione **Gruppi di Microsoft 365**.
+Inoltre, le cassette postali delle risorse e le cassette postali del gruppo di Microsoft 365 non sono supportate per l'impostazione predefinita **Tutti i destinatari** o per inclusioni o esclusioni specifiche. Per le cassette postali di gruppo di Microsoft 365 selezionare la posizione **Gruppi di Microsoft 365**.
+
+Se si scelgono i destinatari da includere o escludere, è possibile selezionare i gruppi di distribuzione e i gruppi di sicurezza abilitati per la posta elettronica. In background, questi gruppi vengono espansi automaticamente al momento della configurazione per selezionare le cassette postali degli utenti nel gruppo. Se l'appartenenza di questi gruppi viene modificata in un secondo momento, i criteri di conservazione esistenti non vengono aggiornati automaticamente.
+
+Per informazioni dettagliate sugli elementi della cassetta postale inclusi ed esclusi quando si configurano le impostazioni di conservazione per Exchange, vedere [Cosa è incluso per la conservazione e l'eliminazione](retention-policies-exchange.md#whats-included-for-retention-and-deletion)
 
 La posizione **Cartelle pubbliche di Exchange** applica le impostazioni di conservazione a tutte le cartelle pubbliche e non può essere applicata a livello di cartella o cassetta postale.
 

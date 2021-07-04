@@ -19,12 +19,12 @@ ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: Informazioni su come ottimizzare le prestazioni delle estensioni personalizzate nelle pagine moderne dei siti di SharePoint Online.
-ms.openlocfilehash: 05d9b9cd9ad70630169595dc42080c718b39dbc8
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: af3645274b800a4eb8090957fc62397465022343
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50923059"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53288948"
 ---
 # <a name="optimize-custom-extension-performance-in-sharepoint-online-modern-site-pages"></a>Ottimizzare le prestazioni delle estensioni personalizzate nelle pagine moderne dei siti di SharePoint Online
 
@@ -55,7 +55,8 @@ Le informazioni disponibili nei risultati includono:
 - **Totale** mostra il tempo totale per l'estensione per il caricamento e l'inizializzazione del modulo. È il tempo relativo totale impiegato dall'estensione per l'esecuzione nella pagina, dall'inizio alla fine.
 - **Caricamento modulo** mostra il tempo impiegato per scaricare, valutare e caricare le estensioni JavaScript e i file CSS. Verrà quindi avviato il processo Init.
 - **Init** mostra il tempo impiegato dall'estensione per inizializzare i dati.
-    Si tratta di una chiamata asincrona e il tempo di init è il calcolo del tempo per la funzione onInit quando la promessa restituita viene risolta.
+
+  Si tratta di una chiamata asincrona e il tempo di init è il calcolo del tempo per la funzione onInit quando la promessa restituita viene risolta.
 
 Queste informazioni vengono fornite per consentire a progettisti e sviluppatori di risolvere i problemi. Devono essere fornite al team di progettazione e sviluppo.
 

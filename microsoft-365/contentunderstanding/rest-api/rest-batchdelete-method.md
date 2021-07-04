@@ -11,12 +11,12 @@ search.appverid: ''
 ms.collection: m365initiative-syntex
 localization_priority: Priority
 description: Usa l'API REST per rimuovere un modello di analisi dei documenti applicato da una o più raccolte.
-ms.openlocfilehash: e95c0583b1b0e2f5de08228afbf161c339544047
-ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
+ms.openlocfilehash: bbd3e496b50d3fddb31342fbc07d30984544e744
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53177238"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287454"
 ---
 # <a name="batchdelete"></a>BatchDelete
 
@@ -47,6 +47,7 @@ Nessuno
 |Pubblicazioni|sì|MachineLearningPublicationEntityData[]|Raccolta di MachineLearningPublicationEntityData, ognuno dei quali specifica il modello e la raccolta documenti di destinazione.|
 
 ### <a name="machinelearningpublicationentitydata"></a>MachineLearningPublicationEntityData
+
 | Nome | Obbligatorio | Tipo | Descrizione |
 |--------|-------|--------|------------|
 |ModelUniqueId|sì|stringa|ID univoco del file di modello.|
@@ -58,9 +59,10 @@ Nessuno
 
 | Nome   | Tipo  | Descrizione|
 |--------|-------|------------|
-|200 OK||Si tratta di un'API personalizzata per supportare la rimozione di un modello a più raccolte documenti. In caso di esito positivo parziale, potrebbe comunque essere restituito 200 OK e il chiamante deve esaminare il corpo della risposta per capire se il modello è stato rimosso correttamente da una raccolta documenti.|
+|200 OK||Si tratta di un'API personalizzata per supportare la rimozione di un modello da una raccolta di più documenti. In caso di esito positivo parziale, potrebbe comunque essere restituito 200 OK e il chiamante deve esaminare il corpo della risposta per capire se il modello è stato rimosso correttamente da una raccolta documenti.|
 
 ## <a name="response-body"></a>Corpo della risposta
+
 | Nome   | Tipo  | Descrizione|
 |--------|-------|------------|
 |TotalSuccesses|int|Numero totale di modelli rimossi correttamente da una raccolta documenti.|
@@ -68,6 +70,7 @@ Nessuno
 |Dettagli|MachineLearningPublicationResult[]|Raccolta di MachineLearningPublicationResult, ognuno dei quali specifica il risultato dettagliato della rimozione del modello da una raccolta documenti.|
 
 ### <a name="machinelearningpublicationresult"></a>MachineLearningPublicationResult
+
 | Nome   | Tipo  | Descrizione|
 |--------|-------|------------|
 |StatusCode|int|Codice di stato HTTP.|
@@ -75,6 +78,7 @@ Nessuno
 |Pubblicazione|MachineLearningPublicationEntityData|Specifica le informazioni sul modello e la raccolta documenti di destinazione.| 
 
 ### <a name="machinelearningpublicationentitydata"></a>MachineLearningPublicationEntityData
+
 | Nome | Tipo | Descrizione |
 |--------|--------|------------|
 |ModelUniqueId|stringa|ID univoco del file di modello.|
@@ -102,7 +106,6 @@ In questo esempio, l'ID del modello di analisi dei documenti Contoso Contract è
     ] 
 } 
 ```
-
 
 #### <a name="sample-response"></a>Risposta di esempio
 

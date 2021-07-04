@@ -11,8 +11,7 @@ ms.author: dansimp
 author: dansimp
 manager: dansimp
 audience: ITPro
-ms.collection:
-- M365-security-compliance
+ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid:
 - MOE150
@@ -21,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 8b321fc8883cf490cb5b2814d5c2b617a52dbb29
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: c4d4958c03bee7301465c16fef2cd4ff8adb1722
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52246398"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53288456"
 ---
 # <a name="assess-your-security-posture-with-microsoft-secure-score"></a>Valutare il proprio stato di sicurezza con Microsoft Secure Score
 
@@ -36,9 +35,9 @@ Microsoft Secure Score è una misurazione della postura di sicurezza di una orga
 
 Per trovare più rapidamente le informazioni necessarie, le azioni di miglioramento Microsoft sono organizzate in gruppi:
 
-* Identità (Azure Active Directory account & ruoli)
-* Dispositivo (Microsoft Defender for Endpoint, noto come [Microsoft Secure Score per dispositivi](/windows/security/threat-protection/microsoft-defender-atp/tvm-microsoft-secure-score-devices))
-* App (app di posta elettronica e cloud, Office 365 e Microsoft Cloud App Security)
+- Identità (Azure Active Directory account & ruoli)
+- Dispositivo (Microsoft Defender for Endpoint, noto come [Microsoft Secure Score per dispositivi](/windows/security/threat-protection/microsoft-defender-atp/tvm-microsoft-secure-score-devices))
+- App (app di posta elettronica e cloud, Office 365 e Microsoft Cloud App Security)
 
 >[!NOTE]
 >Nella recente versione di Microsoft Secure Score è stato rilasciato un modello di punteggio migliorato che ha reso Microsoft Secure Score temporaneamente incompatibile con Identity Secure Score e l'API Graph. [Visualizza dettagli](microsoft-secure-score-whats-new.md)
@@ -106,7 +105,7 @@ Le azioni di miglioramento hanno uno stato "completato" dopo aver raggiunto tutt
 
 La sezione **"A colpo d'occhio"** ti dirà la categoria, gli attacchi da cui può proteggersi e il prodotto.
 
-**L'impatto** dell'utente è ciò che gli utenti  sperimenteranno se viene eseguita l'azione di miglioramento e gli utenti interessati sono le persone che saranno interessate.
+**L'impatto** dell'utente è ciò che gli utenti sperimenteranno se viene eseguita l'azione di miglioramento e gli utenti interessati sono le persone che saranno interessate. 
 
 ### <a name="implement-the-improvement-action"></a>Implementare l'azione di miglioramento
 

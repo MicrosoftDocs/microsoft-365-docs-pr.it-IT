@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: ''
-ms.openlocfilehash: 84bb34f8ec1b935dc30072e16f57b5f5665c3546
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 84ec1ad42f2cec2487debe7160a3f24e09bdd830
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53226216"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53288192"
 ---
 # <a name="train-a-predictive-coding-model-preview"></a>Eseguire il training di un modello di codifica predittivo (anteprima)
 
@@ -67,11 +67,15 @@ Dopo aver eseguito il primo ciclo di formazione, viene avviato un processo che e
 
 - Il modello assegna un punteggio di previsione ai 10 elementi del set di controlli etichettati durante il round di training. Il modello confronta il punteggio di stima di questi 10 elementi con l'etichetta effettiva assegnata all'elemento durante la fase di training. In base a questo confronto, il modello identifica la classificazione seguente (denominata matrice confusione *set* di controlli ) per valutare le prestazioni di previsione del modello:
 
-  |          |Il modello prevede che l'elemento sia rilevante |Il modello prevede che l'elemento non sia rilevante |
-  |:---------|:---------|:---------|
-  |**Elemento etichette revisore pertinente**| True positive| Falso positivo |
-  |**Elemento etichette revisore non pertinente**| Falso negativo |True negative |
-  ||||
+  <br>
+
+  ****
+
+  |Etichetta|Il modello prevede che l'elemento sia rilevante|Il modello prevede che l'elemento non sia rilevante|
+  |---|---|---|
+  |**Elemento etichette revisore pertinente**|True positive|Falso positivo|
+  |**Elemento etichette revisore non pertinente**|Falso negativo|True negative|
+  |
 
   In base a questi confronti, il modello deriva i valori per le metriche del punteggio F, della precisione e del richiamo e del margine di errore per ognuno di essi. I punteggi per queste metriche delle prestazioni del modello vengono visualizzati in una pagina a comparsa per il round di training. Per una descrizione di queste metriche, vedere [Informazioni di riferimento sulla codifica predittiva.](predictive-coding-reference.md)
 

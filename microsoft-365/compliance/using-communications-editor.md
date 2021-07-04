@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Utilizzare l'Editor comunicazioni per modificare le variabili di campo di testo e unione durante la formattazione del contenuto.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 6dcfb58dff3a3acf99340895872bb2da9795d9c8
-ms.sourcegitcommit: 5ba0015c1554048f817fdfdc85359eee1368da64
+ms.openlocfilehash: 26076ff82ba226c2993c7c40e36bca2e08cbf683
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "49769161"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53288120"
 ---
 # <a name="use-the-communications-editor"></a>Usare l'editor delle comunicazioni
 
@@ -40,11 +40,15 @@ L'editor comunicazioni consente all'utente di personalizzare il testo utilizzand
 
 ### <a name="list-of-merge-field-variables"></a>Elenco di variabili di campo unione
 
-| Nome del campo                  | Dettagli campo |
-| :------------------- | :------------------- |
-| Nome visualizzato  | Nome e cognome del responsabile. | 
-| Collegamento di riconoscimento | Un collegamento personalizzato per registrare il riconoscimento di ogni responsabile.|                 |
-| Collegamento portale     | Collegamento personalizzato per il portale di conformità del responsabile.|                |
-| Responsabile dell'emissione                   | L'indirizzo di posta elettronica del responsabile del rilascio specificato.|                   |
-| Data di emissione                   | Data di emissione dell'avviso (UTC).              |
-|||
+<br>
+
+****
+
+|Nome del campo|Dettagli campo|
+|---|---|
+|Nome visualizzato|Nome e cognome del responsabile.|
+|Collegamento di riconoscimento|Un collegamento personalizzato per registrare il riconoscimento di ogni responsabile.|
+|Collegamento portale|Collegamento personalizzato per il portale di conformità del responsabile.|
+|Responsabile dell'emissione|L'indirizzo di posta elettronica del responsabile del rilascio specificato.|
+|Data di emissione|Data di emissione dell'avviso (UTC).|
+|

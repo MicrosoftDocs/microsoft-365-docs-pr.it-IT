@@ -11,12 +11,12 @@ search.appverid: ''
 ms.collection: m365initiative-syntex
 localization_priority: Priority
 description: Usare l'API REST per applicare un modello di analisi dei documenti a una o più raccolte.
-ms.openlocfilehash: 24ea9a480bc3ce5a7745857de17a6fab6ed97685
-ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
+ms.openlocfilehash: 04f1dfdb0c16110c9ba7de12f5f0735d498d50cf
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53177262"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53286538"
 ---
 # <a name="batch-apply-model"></a>Modello di Applicazione Batch
 
@@ -48,6 +48,7 @@ Nessuno
 |Pubblicazioni|sì|MachineLearningPublicationEntityData[]|Raccolta di MachineLearningPublicationEntityData, ognuno dei quali specifica il modello e la raccolta documenti di destinazione.|
 
 ### <a name="machinelearningpublicationentitydata"></a>MachineLearningPublicationEntityData
+
 | Nome | Obbligatorio | Tipo | Descrizione |
 |--------|-------|--------|------------|
 |ModelUniqueId|sì|stringa|ID univoco del file di modello.|
@@ -60,9 +61,10 @@ Nessuno
 
 | Nome   | Tipo  | Descrizione|
 |--------|-------|------------|
-|201 Created||Si tratta di un'API personalizzata per supportare l'applicazione di un modello a più raccolte documenti. In caso di esito positivo parziale, è comunque possibile che venga restituito il 201 creato e il chiamante deve controllare il corpo della risposta per capire se il modello è stato applicato correttamente a una raccolta documenti.|
+|201 Created||Si tratta di un'API personalizzata per supportare l'applicazione di un modello a una raccolta di più documenti. In caso di esito positivo parziale, è comunque possibile che venga restituito il 201 creato e il chiamante deve controllare il corpo della risposta per capire se il modello è stato applicato correttamente a una raccolta documenti.|
 
-## <a name="response-body"></a>Contenuto risposta
+## <a name="response-body"></a>Corpo della risposta
+
 | Nome   | Tipo  | Descrizione|
 |--------|-------|------------|
 |TotalSuccesses|int|Numero totale di un modello applicato correttamente a una raccolta documenti.|
@@ -70,6 +72,7 @@ Nessuno
 |Dettagli|MachineLearningPublicationResult[]|Raccolta di MachineLearningPublicationResult, ognuno dei quali specifica il risultato dettagliato dell'applicazione del modello alla raccolta documenti.|
 
 ### <a name="machinelearningpublicationresult"></a>MachineLearningPublicationResult
+
 | Nome   | Tipo  | Descrizione|
 |--------|-------|------------|
 |StatusCode|int|Codice di stato HTTP.|
@@ -77,6 +80,7 @@ Nessuno
 |Pubblicazione|MachineLearningPublicationEntityData|Specifica le informazioni sul modello e la raccolta documenti di destinazione.| 
 
 ### <a name="machinelearningpublicationentitydata"></a>MachineLearningPublicationEntityData
+
 | Nome | Tipo | Descrizione |
 |--------|--------|------------|
 |ModelUniqueId|stringa|ID univoco del file di modello.|

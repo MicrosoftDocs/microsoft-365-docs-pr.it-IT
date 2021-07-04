@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 8b05dde015bc96e1ccd3f80e25c416a371e03199
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 7f8d3b10cee0b3c4a561dfd1f7567fa9818e7686
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52772390"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289464"
 ---
 # <a name="create-alert-api"></a>API per la creazione di avvisi
 
@@ -39,41 +39,43 @@ ms.locfileid: "52772390"
 
 
 ## <a name="api-description"></a>Descrizione API
-Crea un [nuovo avviso](alerts.md) sopra **l'evento**.
-<br>**Microsoft Defender for Endpoint Event** è necessario per la creazione dell'avviso.
-<br>Dovrai fornire 3 parametri dall'evento nella richiesta: **Event Time,** **Machine ID** e **Report ID.** Vedere l'esempio che segue.
-<br>Puoi usare un evento disponibile in Advanced Hunting API o Portal.
-<br>Se nello stesso dispositivo è presente un avviso aperto con lo stesso titolo, il nuovo avviso creato verrà unito ad esso.
-<br>Un'indagine automatica viene avviata automaticamente sugli avvisi creati tramite l'API.
 
+Crea un [nuovo avviso](alerts.md) sopra **l'evento**.
+
+- **Microsoft Defender for Endpoint Event** è necessario per la creazione dell'avviso.
+- Dovrai fornire 3 parametri dall'evento nella richiesta: **Event Time,** **Machine ID** e **Report ID.** Vedere l'esempio che segue.
+- Puoi usare un evento disponibile in Advanced Hunting API o Portal.
+- Se nello stesso dispositivo è presente un avviso aperto con lo stesso titolo, il nuovo avviso creato verrà unito ad esso.
+- Un'indagine automatica viene avviata automaticamente sugli avvisi creati tramite l'API.
 
 ## <a name="limitations"></a>Limitazioni
-1. I limiti di frequenza per questa API sono 15 chiamate al minuto.
 
+1. I limiti di frequenza per questa API sono 15 chiamate al minuto.
 
 ## <a name="permissions"></a>Autorizzazioni
 
 Per chiamare questa API è necessaria una delle autorizzazioni seguenti. Per altre informazioni, inclusa la scelta delle autorizzazioni, vedi [Usare Microsoft Defender per le API endpoint](apis-intro.md)
 
-Tipo di autorizzazione |   Autorizzazione  |   Nome visualizzato autorizzazione
+Tipo di autorizzazione | Autorizzazione | Nome visualizzato autorizzazione
 :---|:---|:---
-Applicazione |   Alerts.ReadWrite.All |  "Lettura e scrittura di tutti gli avvisi"
+Applicazione | Alerts.ReadWrite.All | "Lettura e scrittura di tutti gli avvisi"
 Delegato (account aziendale o dell'istituto di istruzione) | Alert.ReadWrite | "Avvisi di lettura e scrittura"
 
->[!Note]
+> [!NOTE]
 > Quando si ottiene un token utilizzando le credenziali utente:
->- L'utente deve disporre almeno dell'autorizzazione di ruolo seguente: "Analisi degli avvisi" (per ulteriori informazioni, vedere [Creare](user-roles.md) e gestire ruoli)
->- L'utente deve avere accesso al dispositivo associato all'avviso, in base alle impostazioni del gruppo di dispositivi (per ulteriori informazioni, vedere [Creare](machine-groups.md) e gestire gruppi di dispositivi)
+>
+> - L'utente deve disporre almeno dell'autorizzazione di ruolo seguente: "Analisi degli avvisi" (per ulteriori informazioni, vedere [Creare](user-roles.md) e gestire ruoli)
+> - L'utente deve avere accesso al dispositivo associato all'avviso, in base alle impostazioni del gruppo di dispositivi (per ulteriori informazioni, vedere [Creare](machine-groups.md) e gestire gruppi di dispositivi)
 
 ## <a name="http-request"></a>Richiesta HTTP
 
-```
+```http
 POST https://api.securitycenter.microsoft.com/api/alerts/CreateAlertByReference
 ```
 
 ## <a name="request-headers"></a>Intestazioni di richiesta
 
-Name | Tipo | Descrizione
+Nome | Tipo | Descrizione
 :---|:---|:---
 Autorizzazione | Stringa | Bearer {token}. **Obbligatorio**.
 Content-Type | Stringa | application/json. **Obbligatorio**.
@@ -99,7 +101,7 @@ Se ha esito positivo, questo metodo restituisce 200 OK e un nuovo oggetto [avvis
 
 ## <a name="example"></a>Esempio
 
-**Richiesta**
+### <a name="request"></a>Richiesta
 
 Ecco un esempio della richiesta.
 

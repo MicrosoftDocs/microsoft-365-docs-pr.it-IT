@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 description: Scopri come controllare le attività di utenti e amministratori nella tua organizzazione Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d8686a2cd7b1fc6e9082e85b18ba352c1fd7f830
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: d4a753a640b98125bc6ad02bd6043f28336e29b7
+ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538519"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53256760"
 ---
 # <a name="auditing-solutions-in-microsoft-365"></a>Soluzioni di controllo in Microsoft 365
 
@@ -165,4 +165,4 @@ Per istruzioni più dettagliate, vedi [Configurare Audit avanzato](set-up-advanc
 
 ## <a name="training"></a>Formazione
 
-Formare il team delle operazioni di sicurezza, gli amministratori IT e il team di indagine della conformità in Audit di base e Audit avanzato consente all'organizzazione di iniziare a sfruttare più rapidamente le funzionalità di controllo per facilitare le indagini. Per consentire agli utenti dell'organizzazione di iniziare a eseguire il controllo, Microsoft 365 offre la risorsa seguente: [Descrivere le funzionalità di controllo in Microsoft 365](/learn/modules/describe-audit-capabilities-microsoft-365).
+Formare il team delle operazioni di sicurezza, gli amministratori IT e il team di indagine della conformità nelle nozioni fondamentali per Audit di base e Audit avanzato consente all'organizzazione di iniziare a sfruttare più rapidamente le funzionalità di controllo per facilitare le indagini. Per consentire agli utenti dell'organizzazione di iniziare a eseguire il controllo, Microsoft 365 offre la risorsa seguente: [Descrivere le funzionalità di eDiscovery e di controllo di Microsoft 365](/learn/modules/describe-ediscovery-capabilities-of-microsoft-365).

@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 00f6bdac66ae286bf55a875599f7097b14b06cb3
-ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
+ms.openlocfilehash: 7998e878ad03fdfb64c314dc8b7234ece46164ce
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52861552"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289494"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-linux"></a>Impostare le preferenze per Microsoft Defender per Endpoint su Linux
 
@@ -36,8 +36,8 @@ ms.locfileid: "52861552"
 
 > Vuoi provare Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
->[!IMPORTANT]
->Questo argomento contiene istruzioni su come impostare le preferenze per Defender per Endpoint in Linux in ambienti aziendali. Se si desidera configurare il prodotto in un dispositivo dalla riga di comando, vedere [Resources](linux-resources.md#configure-from-the-command-line).
+> [!IMPORTANT]
+> Questo argomento contiene istruzioni su come impostare le preferenze per Defender per Endpoint in Linux in ambienti aziendali. Se si desidera configurare il prodotto in un dispositivo dalla riga di comando, vedere [Resources](linux-resources.md#configure-from-the-command-line).
 
 In ambienti aziendali, Defender per Endpoint su Linux può essere gestito tramite un profilo di configurazione. Questo profilo viene distribuito dallo strumento di gestione scelto. Le preferenze gestite dall'organizzazione hanno la precedenza su quelle impostate localmente nel dispositivo. In altre parole, gli utenti dell'organizzazione non sono in grado di modificare le preferenze impostate tramite questo profilo di configurazione.
 
@@ -55,169 +55,226 @@ Il livello superiore del profilo di configurazione include le preferenze e le vo
 
 La *sezione antivirusEngine* del profilo di configurazione viene utilizzata per gestire le preferenze del componente antivirus del prodotto.
 
-|||
-|:---|:---|
-| **Chiave** | antivirusEngine |
-| **Data type** | Dizionario (preferenza annidata) |
-| **Comments** | Per una descrizione del contenuto del dizionario, vedi le sezioni seguenti. |
-|||
+<br>
+
+****
+
+|Descrizione|Valore|
+|---|---|
+|**Chiave**|antivirusEngine|
+|**Data type**|Dizionario (preferenza annidata)|
+|**Comments**|Per una descrizione del contenuto del dizionario, vedi le sezioni seguenti.|
+|
 
 #### <a name="enable--disable-real-time-protection"></a>Abilitare/disabilitare la protezione in tempo reale
 
 Determina se la protezione in tempo reale (analizza i file quando vi si accede) è abilitata o meno.
 
-|||
-|:---|:---|
-| **Chiave** | enableRealTimeProtection |
-| **Data type** | Booleano |
-| **Valori possibili** | true (impostazione predefinita) <br/> false |
-|||
+<br>
+
+****
+
+|Descrizione|Valore|
+|---|---|
+|**Chiave**|enableRealTimeProtection|
+|**Data type**|Booleano|
+|**Valori possibili**|true (impostazione predefinita) <p> false|
+|
 
 #### <a name="enable--disable-passive-mode"></a>Abilitare/disabilitare la modalità passiva
 
 Determina se il motore antivirus viene eseguito in modalità passiva o meno. In modalità passiva:
+
 - La protezione in tempo reale è disattivata.
 - L'analisi su richiesta è attivata.
 - La correzione automatica delle minacce è disattivata.
 - Gli aggiornamenti delle funzionalità di intelligence per la sicurezza sono attivati.
 - L'icona del menu Stato è nascosta.
 
-|||
-|:---|:---|
-| **Chiave** | passiveMode |
-| **Data type** | Booleano |
-| **Valori possibili** | false (impostazione predefinita) <br/> true |
-| **Comments** | Disponibile in Defender per Endpoint versione 100.67.60 o successiva. |
-|||
+<br>
+
+****
+
+|Descrizione|Valore|
+|---|---|
+|**Chiave**|passiveMode|
+|**Data type**|Booleano|
+|**Valori possibili**|false (impostazione predefinita) <p> true|
+|**Comments**|Disponibile in Defender per Endpoint versione 100.67.60 o successiva.|
+|
 
 #### <a name="exclusion-merge-policy"></a>Criteri di unione esclusioni
 
 Specifica i criteri di unione per le esclusioni. Può essere una combinazione di esclusioni definite dall'amministratore e definite dall'utente ( ) o solo esclusioni definite `merge` dall'amministratore ( `admin_only` ). Questa impostazione può essere utilizzata per impedire agli utenti locali di definire le proprie esclusioni.
 
-|||
-|:---|:---|
-| **Chiave** | exclusionsMergePolicy |
-| **Data type** | Stringa |
-| **Valori possibili** | merge (impostazione predefinita) <br/> admin_only |
-| **Comments** | Disponibile in Defender per Endpoint versione 100.83.73 o successiva. |
-|||
+<br>
+
+****
+
+|Descrizione|Valore|
+|---|---|
+|**Chiave**|exclusionsMergePolicy|
+|**Data type**|Stringa|
+|**Valori possibili**|merge (impostazione predefinita) <p> admin_only|
+|**Comments**|Disponibile in Defender per Endpoint versione 100.83.73 o successiva.|
+|
 
 #### <a name="scan-exclusions"></a>Esclusioni analisi
 
 Entità escluse dall'analisi. Le esclusioni possono essere specificate da percorsi completi, estensioni o nomi di file.
 Le esclusioni vengono specificate come matrice di elementi, l'amministratore può specificare il numero di elementi necessario, in qualsiasi ordine.
 
-|||
-|:---|:---|
-| **Chiave** | esclusioni |
-| **Data type** | Dizionario (preferenza annidata) |
-| **Comments** | Per una descrizione del contenuto del dizionario, vedi le sezioni seguenti. |
-|||
+<br>
 
-**Tipo di esclusione**
+****
+
+|Descrizione|Valore|
+|---|---|
+|**Chiave**|esclusioni|
+|**Data type**|Dizionario (preferenza annidata)|
+|**Comments**|Per una descrizione del contenuto del dizionario, vedi le sezioni seguenti.|
+|
+
+##### <a name="type-of-exclusion"></a>Tipo di esclusione
 
 Specifica il tipo di contenuto escluso dall'analisi.
 
-|||
-|:---|:---|
-| **Chiave** | $type |
-| **Data type** | Stringa |
-| **Valori possibili** | excludedPath <br/> excludedFileExtension <br/> excludedFileName |
-|||
+<br>
 
-**Percorso del contenuto escluso**
+****
+
+|Descrizione|Valore|
+|---|---|
+|**Chiave**|$type|
+|**Data type**|Stringa|
+|**Valori possibili**|excludedPath <p> excludedFileExtension <p> excludedFileName|
+|
+
+##### <a name="path-to-excluded-content"></a>Percorso del contenuto escluso
 
 Utilizzato per escludere il contenuto dall'analisi in base al percorso completo del file.
 
-|||
-|:---|:---|
-| **Chiave** | path |
-| **Data type** | Stringa |
-| **Valori possibili** | percorsi validi |
-| **Comments** | Applicabile solo se *$type* *è excludedPath* |
-|||
+<br>
 
-**Tipo di percorso (file/directory)**
+****
+
+|Descrizione|Valore|
+|---|---|
+|**Chiave**|path|
+|**Data type**|Stringa|
+|**Valori possibili**|percorsi validi|
+|**Comments**|Applicabile solo se *$type* *è excludedPath*|
+|
+
+##### <a name="path-type-file--directory"></a>Tipo di percorso (file/directory)
 
 Indica se la proprietà *path* fa riferimento a un file o a una directory.
 
-|||
-|:---|:---|
-| **Chiave** | isDirectory |
-| **Data type** | Booleano |
-| **Valori possibili** | false (impostazione predefinita) <br/> true |
-| **Comments** | Applicabile solo se *$type* *è excludedPath* |
-|||
+<br>
 
-**Estensione di file esclusa dall'analisi**
+****
+
+|Descrizione|Valore|
+|---|---|
+|**Chiave**|isDirectory|
+|**Data type**|Booleano|
+|**Valori possibili**|false (impostazione predefinita) <p> true|
+|**Comments**|Applicabile solo se *$type* *è excludedPath*|
+|
+
+##### <a name="file-extension-excluded-from-the-scan"></a>Estensione di file esclusa dall'analisi
 
 Usato per escludere il contenuto dall'analisi per estensione di file.
 
-|||
-|:---|:---|
-| **Chiave** | extension |
-| **Data type** | Stringa |
-| **Valori possibili** | estensioni di file valide |
-| **Comments** | Applicabile solo se *$type* *è excludedFileExtension* |
-|||
+<br>
 
-**Processo escluso dall'analisi**
+****
+
+|Descrizione|Valore|
+|---|---|
+|**Chiave**|extension|
+|**Data type**|Stringa|
+|**Valori possibili**|estensioni di file valide|
+|**Comments**|Applicabile solo se *$type* *è excludedFileExtension*|
+|
+
+##### <a name="process-excluded-from-the-scan"></a>Processo escluso dall'analisi*
 
 Specifica un processo per il quale tutte le attività di file vengono escluse dall'analisi. Il processo può essere specificato in base al nome (ad esempio, `cat` ) o al percorso completo (ad esempio, `/bin/cat` ).
 
-|||
-|:---|:---|
-| **Chiave** | name |
-| **Data type** | Stringa |
-| **Valori possibili** | qualsiasi stringa |
-| **Comments** | Applicabile solo se *$type* *è excludedFileName* |
-|||
+<br>
+
+****
+
+|Descrizione|Valore|
+|---|---|
+|**Chiave**|name|
+|**Data type**|Stringa|
+|**Valori possibili**|qualsiasi stringa|
+|**Comments**|Applicabile solo se *$type* *è excludedFileName*|
+|
 
 #### <a name="allowed-threats"></a>Minacce consentite
 
 Elenco delle minacce (identificate dal nome) che non sono bloccate dal prodotto e che possono essere eseguite.
 
-|||
-|:---|:---|
-| **Chiave** | allowedThreats |
-| **Data type** | Matrice di stringhe |
-|||
+<br>
+
+****
+
+|Descrizione|Valore|
+|---|---|
+|**Chiave**|allowedThreats|
+|**Data type**|Matrice di stringhe|
+|
 
 #### <a name="disallowed-threat-actions"></a>Azioni di minaccia non consentite
 
 Limita le azioni che l'utente locale di un dispositivo può intraprendere quando vengono rilevate minacce. Le azioni incluse in questo elenco non vengono visualizzate nell'interfaccia utente.
 
-|||
-|:---|:---|
-| **Chiave** | disallowedThreatActions |
-| **Data type** | Matrice di stringhe |
-| **Valori possibili** | allow (impedisce agli utenti di consentire minacce) <br/> restore (impedisce agli utenti di ripristinare le minacce dalla quarantena) |
-| **Comments** | Disponibile in Defender per Endpoint versione 100.83.73 o successiva. |
-|||
+<br>
+
+****
+
+|Descrizione|Valore|
+|---|---|
+|**Chiave**|disallowedThreatActions|
+|**Data type**|Matrice di stringhe|
+|**Valori possibili**|allow (impedisce agli utenti di consentire minacce) <p> restore (impedisce agli utenti di ripristinare le minacce dalla quarantena)|
+|**Comments**|Disponibile in Defender per Endpoint versione 100.83.73 o successiva.|
+|
 
 #### <a name="threat-type-settings"></a>Impostazioni del tipo di minaccia
 
 La *preferenza threatTypeSettings* nel motore antivirus viene utilizzata per controllare la modalità di gestione di determinati tipi di minacce da parte del prodotto.
 
-|||
-|:---|:---|
-| **Chiave** | threatTypeSettings |
-| **Data type** | Dizionario (preferenza annidata) |
-| **Comments** | Per una descrizione del contenuto del dizionario, vedi le sezioni seguenti. |
-|||
+<br>
 
-**Tipo di minaccia**
+****
+
+|Descrizione|Valore|
+|---|---|
+|**Chiave**|threatTypeSettings|
+|**Data type**|Dizionario (preferenza annidata)|
+|**Comments**|Per una descrizione del contenuto del dizionario, vedi le sezioni seguenti.|
+|
+
+##### <a name="threat-type"></a>Tipo di minaccia
 
 Tipo di minaccia per cui è configurato il comportamento.
 
-|||
-|:---|:---|
-| **Chiave** | chiave |
-| **Data type** | Stringa |
-| **Valori possibili** | potentially_unwanted_application <br/> archive_bomb |
-|||
+<br>
 
-**Procedura da seguire**
+****
+
+|Descrizione|Valore|
+|---|---|
+|**Chiave**|chiave|
+|**Data type**|Stringa|
+|**Valori possibili**|potentially_unwanted_application <p> archive_bomb|
+|
+
+##### <a name="action-to-take"></a>Procedura da seguire
 
 Azione da intraprendere quando si verifica una minaccia del tipo specificato nella sezione precedente. Può essere:
 
@@ -225,107 +282,143 @@ Azione da intraprendere quando si verifica una minaccia del tipo specificato nel
 - **Blocca**: il dispositivo è protetto da questo tipo di minaccia e si viene informati nella console di sicurezza.
 - **Disattivato:** il dispositivo non è protetto da questo tipo di minaccia e non viene registrato nulla.
 
-|||
-|:---|:---|
-| **Chiave** | valore |
-| **Data type** | Stringa |
-| **Valori possibili** | audit (impostazione predefinita) <br/> blocco <br/> off |
-|||
+<br>
+
+****
+
+|Descrizione|Valore|
+|---|---|
+|**Chiave**|valore|
+|**Data type**|Stringa|
+|**Valori possibili**|audit (impostazione predefinita) <p> blocco <p> off|
+|
 
 #### <a name="threat-type-settings-merge-policy"></a>Criteri di unione delle impostazioni del tipo di minaccia
 
 Specifica il criterio di unione per le impostazioni del tipo di minaccia. Può essere una combinazione di impostazioni definite dall'amministratore e definite dall'utente ( ) o solo impostazioni definite `merge` dall'amministratore ( `admin_only` ). Questa impostazione può essere usata per impedire agli utenti locali di definire le proprie impostazioni per diversi tipi di minacce.
 
-|||
-|:---|:---|
-| **Chiave** | threatTypeSettingsMergePolicy |
-| **Data type** | Stringa |
-| **Valori possibili** | merge (impostazione predefinita) <br/> admin_only |
-| **Comments** | Disponibile in Defender per Endpoint versione 100.83.73 o successiva. |
-|||
+<br>
+
+****
+
+|Descrizione|Valore|
+|---|---|
+|**Chiave**|threatTypeSettingsMergePolicy|
+|**Data type**|Stringa|
+|**Valori possibili**|merge (impostazione predefinita) <p> admin_only|
+|**Comments**|Disponibile in Defender per Endpoint versione 100.83.73 o successiva.|
+|
 
 #### <a name="antivirus-scan-history-retention-in-days"></a>Conservazione cronologia analisi antivirus (in giorni)
 
 Specifica il numero di giorni in cui i risultati vengono conservati nella cronologia dell'analisi nel dispositivo. I risultati dell'analisi precedente vengono rimossi dalla cronologia. Vecchi file in quarantena che vengono rimossi anche dal disco.
 
-|||
-|:---|:---|
-| **Chiave** | scanResultsRetentionDays |
-| **Data type** | Stringa |
-| **Valori possibili** | 90 (impostazione predefinita). I valori consentiti sono da 1 giorno a 180 giorni. |
-| **Comments** | Disponibile in Defender per Endpoint versione 101.04.76 o successiva. |
-|||
+<br>
+
+****
+
+|Descrizione|Valore|
+|---|---|
+|**Chiave**|scanResultsRetentionDays|
+|**Data type**|Stringa|
+|**Valori possibili**|90 (impostazione predefinita). I valori consentiti sono da 1 giorno a 180 giorni.|
+|**Comments**|Disponibile in Defender per Endpoint versione 101.04.76 o successiva.|
+|
 
 #### <a name="maximum-number-of-items-in-the-antivirus-scan-history"></a>Numero massimo di elementi nella cronologia dell'analisi antivirus
 
 Specificare il numero massimo di voci da mantenere nella cronologia di analisi. Le voci includono tutte le analisi su richiesta eseguite in passato e tutti i rilevamenti antivirus.
 
-|||
-|:---|:---|
-| **Chiave** | scanHistoryMaximumItems |
-| **Data type** | Stringa |
-| **Valori possibili** | 10000 (impostazione predefinita). I valori consentiti sono da 5.000 elementi a 15.000 elementi. |
-| **Comments** | Disponibile in Defender per Endpoint versione 101.04.76 o successiva. |
-|||
+<br>
+
+****
+
+|Descrizione|Valore|
+|---|---|
+|**Chiave**|scanHistoryMaximumItems|
+|**Data type**|Stringa|
+|**Valori possibili**|10000 (impostazione predefinita). I valori consentiti sono da 5.000 elementi a 15.000 elementi.|
+|**Comments**|Disponibile in Defender per Endpoint versione 101.04.76 o successiva.|
+|
 
 ### <a name="cloud-delivered-protection-preferences"></a>Preferenze di protezione per il cloud
 
 La *voce cloudService* nel profilo di configurazione viene utilizzata per configurare la funzionalità di protezione basata sul cloud del prodotto.
 
-|||
-|:---|:---|
-| **Chiave** | cloudService |
-| **Data type** | Dizionario (preferenza annidata) |
-| **Comments** | Per una descrizione del contenuto del dizionario, vedi le sezioni seguenti. |
-|||
+<br>
+
+****
+
+|Descrizione|Valore|
+|---|---|
+|**Chiave**|cloudService|
+|**Data type**|Dizionario (preferenza annidata)|
+|**Comments**|Per una descrizione del contenuto del dizionario, vedi le sezioni seguenti.|
+|
 
 #### <a name="enable--disable-cloud-delivered-protection"></a>Abilitare/disabilitare la protezione recapitata nel cloud
 
 Determina se la protezione consegnata dal cloud è abilitata o meno nel dispositivo. Per migliorare la sicurezza dei servizi, è consigliabile mantenere attivata questa funzionalità.
 
-|||
-|:---|:---|
-| **Chiave** | abilitati |
-| **Data type** | Booleano |
-| **Valori possibili** | true (impostazione predefinita) <br/> false |
-|||
+<br>
+
+****
+
+|Descrizione|Valore|
+|---|---|
+|**Chiave**|abilitati|
+|**Data type**|Booleano|
+|**Valori possibili**|true (impostazione predefinita) <p> false|
+|
 
 #### <a name="diagnostic-collection-level"></a>Livello raccolta diagnostica
 
 I dati di diagnostica vengono usati per mantenere Defender per Endpoint sicuro e aggiornato, rilevare, diagnosticare e risolvere i problemi e apportare miglioramenti al prodotto. Questa impostazione determina il livello di diagnostica inviato dal prodotto a Microsoft.
 
-|||
-|:---|:---|
-| **Chiave** | diagnosticLevel |
-| **Data type** | Stringa |
-| **Valori possibili** | facoltativo (impostazione predefinita) <br/> Obbligatorio |
-|||
+<br>
+
+****
+
+|Descrizione|Valore|
+|---|---|
+|**Chiave**|diagnosticLevel|
+|**Data type**|Stringa|
+|**Valori possibili**|facoltativo (impostazione predefinita) <p> Obbligatorio|
+|
 
 #### <a name="enable--disable-automatic-sample-submissions"></a>Abilitare/disabilitare gli invii di esempio automatici
 
 Determina se i campioni sospetti (che potrebbero contenere minacce) vengono inviati a Microsoft. Esistono tre livelli per controllare l'invio di campioni:
 
 - **Nessuno:** nessun campione sospetto viene inviato a Microsoft.
-- **Sicuro:** solo i campioni sospetti che non contengono informazioni personali vengono inviati automaticamente. Questo è il valore predefinito per questa impostazione.
+- **Cassaforte**: solo i campioni sospetti che non contengono informazioni personali vengono inviati automaticamente. Questo è il valore predefinito per questa impostazione.
 - **All**: tutti i campioni sospetti vengono inviati a Microsoft.
 
-|||
-|:---|:---|
-| **Chiave** | automaticSampleSubmissionConsent |
-| **Data type** | Stringa |
-| **Valori possibili** | nessuno <br/> safe (impostazione predefinita) <br/> all |
-|||
+<br>
+
+****
+
+|Descrizione|Valore|
+|---|---|
+|**Chiave**|automaticSampleSubmissionConsent|
+|**Data type**|Stringa|
+|**Valori possibili**|nessuno <p> safe (impostazione predefinita) <p> all|
+|
 
 #### <a name="enable--disable-automatic-security-intelligence-updates"></a>Abilitare/disabilitare gli aggiornamenti automatici delle funzionalità di intelligence per la sicurezza
 
 Determina se gli aggiornamenti delle funzionalità di intelligence per la sicurezza vengono installati automaticamente:
 
-|||
-|:---|:---|
-| **Chiave** | automaticDefinitionUpdateEnabled |
-| **Data type** | Booleano |
-| **Valori possibili** | true (impostazione predefinita) <br/> false |
-|||
+<br>
+
+****
+
+|Descrizione|Valore|
+|---|---|
+|**Chiave**|automaticDefinitionUpdateEnabled|
+|**Data type**|Booleano|
+|**Valori possibili**|true (impostazione predefinita) <p> false|
+|
 
 ## <a name="recommended-configuration-profile"></a>Profilo di configurazione consigliato
 
@@ -444,10 +537,12 @@ python -m json.tool mdatp_managed.json
 Se json è ben formato, il comando precedente lo restituisce al terminale e restituisce un codice di uscita di `0` . In caso contrario, viene visualizzato un errore che descrive il problema e il comando restituisce un codice di uscita di `1` .
 
 ## <a name="verifying-that-the-mdatp_managedjson-file-is-working-as-expected"></a>Verifica del funzionamento mdatp_managed.jsfile nel modo previsto
+
 Per verificare che /etc/opt/microsoft/mdatp/managed/mdatp_managed.jsfunzioni correttamente, dovrebbe essere visualizzato "[gestito]" accanto a queste impostazioni:
+
 - cloud_enabled
 - cloud_automatic_sample_submission_consent
-- passice_mode_enabled
+- passive_mode_enabled
 - real_time_protection_enabled
 - automatic_definition_update_enabled
 

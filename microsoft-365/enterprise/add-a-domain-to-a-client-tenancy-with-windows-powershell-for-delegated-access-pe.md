@@ -17,12 +17,12 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 ms.assetid: f49b4d24-9aa0-48a6-95dd-6bae9cf53d2c
 description: 'Riepilogo: utilizzare PowerShell per Microsoft 365 aggiungere un nome di dominio alternativo a un tenant del cliente esistente.'
-ms.openlocfilehash: 3bcdb40e2c72e5aac8103b0b55ff6fccfe6a9fcc
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 5ebbe11da9a93669945e7e3b096ce7afa18b5d3a
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53229084"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53288432"
 ---
 # <a name="add-a-domain-to-a-client-tenancy-with-windows-powershell-for-delegated-access-permission-dap-partners"></a>Aggiungere un dominio a un tenancy client con Windows PowerShell per i partner di autorizzazione accesso delegato (DAP, Delegated Access Permission)
 
@@ -31,7 +31,7 @@ ms.locfileid: "53229084"
 È possibile creare e associare nuovi domini alla tenancy del cliente con PowerShell per Microsoft 365 più velocemente rispetto all'interfaccia di amministrazione di Microsoft 365.
 
 I partner di autorizzazione accesso delegato (DAP, Delegated Access Permission) sono partner di Syndication e Cloud Solution Provider (CSP). Di solito, rappresentano fornitori di rete o telecomunicazioni di altre aziende. Aggregano Microsoft 365 sottoscrizioni nelle offerte di servizio ai clienti. Quando vendono una sottoscrizione Microsoft 365, vengono automaticamente concesse le autorizzazioni Amministra per conto di (AOBO) ai tenaaci dei clienti in modo che possano amministrare e segnalare i tenaaci dei clienti.
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
 
 Le procedure descritte in questo argomento richiedono la connessione a [Connessione a Microsoft 365 con PowerShell.](connect-to-microsoft-365-powershell.md)
 
@@ -124,9 +124,6 @@ Name                   Status      Authentication
 FQDN of new domain     Verified    Managed
 ```
 
-
 ## <a name="see-also"></a>Vedere anche
-
-####
 
 [Guida per partner](https://go.microsoft.com/fwlink/p/?LinkID=533477)

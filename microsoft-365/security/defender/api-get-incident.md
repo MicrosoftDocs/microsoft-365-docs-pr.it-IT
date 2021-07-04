@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: c578a353501ac7b38ac541b0200ffaad1d6743e1
-ms.sourcegitcommit: 03aa8ed22d9ef685a851e28c7d0cfb725732fe4b
+ms.openlocfilehash: 2e051803a4cd228e3b455ec08b30e5c2197ca9a3
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52888449"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289608"
 ---
 # <a name="get-incident-information-api"></a>API per ottenere informazioni sugli eventi imprevisti
 
@@ -38,27 +38,31 @@ ms.locfileid: "52888449"
 
 
 ## <a name="api-description"></a>Descrizione API
+
 Recupera un evento imprevisto specifico in base al relativo ID
 
-
 ## <a name="limitations"></a>Limitazioni
+
 1. I limiti di frequenza per questa API sono 100 chiamate al minuto e 1500 chiamate all'ora.
 
 
 ## <a name="permissions"></a>Autorizzazioni
+
 Per chiamare questa API è necessaria una delle autorizzazioni seguenti. 
 
-Tipo di autorizzazione |   Autorizzazione  |   Nome visualizzato autorizzazione
+Tipo di autorizzazione | Autorizzazione | Nome visualizzato autorizzazione
 :---|:---|:---
-Applicazione |   Incident.Read.All | "Leggi tutti gli eventi imprevisti"
-Applicazione |   Incident.ReadWrite.All |    "Lettura e scrittura di tutti gli eventi imprevisti"
+Applicazione | Incident.Read.All | "Leggi tutti gli eventi imprevisti"
+Applicazione | Incident.ReadWrite.All | "Lettura e scrittura di tutti gli eventi imprevisti"
 Delegato (account aziendale o dell'istituto di istruzione) | Incident.Read | "Operazioni non consentite di lettura"
 Delegato (account aziendale o dell'istituto di istruzione) | Incident.ReadWrite | "Eventi imprevisti di lettura e scrittura"
 
->[!Note]
+> [!NOTE]
+>
 > Quando si ottiene un token utilizzando le credenziali utente:
->- L'utente deve disporre almeno dell'autorizzazione di ruolo seguente: 'Visualizza dati'
->- La risposta includerà solo gli eventi imprevisti a cui l'utente è esposto
+>
+> - L'utente deve disporre almeno dell'autorizzazione di ruolo seguente: 'Visualizza dati'
+> - La risposta includerà solo gli eventi imprevisti a cui l'utente è esposto
 
 ## <a name="http-request"></a>Richiesta HTTP
 
@@ -68,12 +72,12 @@ GET .../api/incidents/{id}
 
 ## <a name="request-headers"></a>Intestazioni di richiesta
 
-Name | Tipo | Descrizione
+Nome | Tipo | Descrizione
 :---|:---|:---
 Autorizzazione | Stringa | Bearer {token}. **Obbligatorio**.
 
-
 ## <a name="request-body"></a>Corpo della richiesta
+
 Vuoto
 
 ## <a name="response"></a>Risposta

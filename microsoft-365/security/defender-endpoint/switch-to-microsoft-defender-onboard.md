@@ -23,12 +23,12 @@ ms.custom: migrationguides
 ms.topic: article
 ms.date: 06/14/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: 832414e9b2a88114cafafbba78e22ea656cc7949
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: 8fcf0491629a068f1ebc97e226a2c9b05e306cbf
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52930464"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289512"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-3-onboard"></a>Passare a Microsoft Defender per Endpoint - Fase 3: onboard
 
@@ -50,7 +50,7 @@ ms.locfileid: "52930464"
 5. [Disinstallare la soluzione non Microsoft.](#uninstall-your-non-microsoft-solution) 
 6. [Assicurati che Defender for Endpoint funzioni correttamente.](#make-sure-defender-for-endpoint-is-working-correctly)
 
-## <a name="onboard-devices-to-microsoft-defender-for-endpoint"></a>Aggiungere dispositivi a Microsoft Defender for Endpoint
+## <a name="onboard-devices-to-microsoft-defender-for-endpoint"></a>Aggiungere dispositivi a Microsoft Defender per endpoint
 
 1. Vai al Microsoft Defender Security Center ( [https://securitycenter.windows.com](https://securitycenter.windows.com) ) e accedi.
 
@@ -103,7 +103,7 @@ Per impostare Antivirus Microsoft Defender modalità passiva in Windows Server, 
 1. Aprire l'editor del Registro di sistema e quindi passare a <br/>
    `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`.
 
-2. Modificare (o creare) una voce DWORD denominata **ForcePassiveMode** e specificare le impostazioni seguenti:
+2. Modificare (o creare) una voce DWORD denominata **ForceDefenderPassiveMode** e specificare le impostazioni seguenti:
    - Imposta il valore DWORD su **1.**
    - In **Base** selezionare **Esadecimale.**
 

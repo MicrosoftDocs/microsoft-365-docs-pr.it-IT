@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Configurare lo scanner per la prevenzione della perdita dei dati locali di Microsoft 365
-ms.openlocfilehash: b21474f3a9e045bf353d62ef6c7c8d4174801a1b
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: 0390ac48b351b30b75109a3e3a5d18c80847c9d2
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52623834"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289200"
 ---
 # <a name="get-started-with-the-data-loss-prevention-on-premises-scanner-preview"></a>Introduzione allo scanner per la prevenzione della perdita dei dati locali (anteprima)
 
@@ -115,7 +115,7 @@ I dati provenienti dallo scanner per la prevenzione della perdita dei dati local
 
 2. Fare riferimento alle procedure in [Introduzione a Esplora attività](data-classification-activity-explorer.md) per accedere a tutti i dati relativi allo scanner per la prevenzione della perdita dei dati locale e filtrarli.
 
-3. Aprire il [registro di controllo nel Centro conformità](https://security.microsoft.com/auditlogsearch). Durante l'anteprima pubblica, le corrispondenze alle regole di prevenzione della perdita dei dati sono disponibili nell'interfaccia utente del registro di controllo o sono accessibili da [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog?view=exchange-ps) di PowerShell 
+3. Aprire il [registro di controllo nel Centro conformità](https://security.microsoft.com/auditlogsearch). Durante l'anteprima pubblica, le corrispondenze alle regole di prevenzione della perdita dei dati sono disponibili nell'interfaccia utente del registro di controllo o sono accessibili da [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) di PowerShell 
 
 
 ## <a name="next-steps"></a>Passaggi successivi

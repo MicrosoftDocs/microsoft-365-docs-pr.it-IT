@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 8a2a3f83995bf4248b2cb72a848a1def83ae9c50
-ms.sourcegitcommit: 99e67bfe1d677c2f51712b05dcc54908b343cf6f
+ms.openlocfilehash: d70bb133904a7bcc9c30721d3f723b0fd8b88512
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53203269"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287964"
 ---
 # <a name="microsoft-managed-desktop-technologies"></a>Tecnologie Microsoft Managed Desktop
 
@@ -28,17 +28,17 @@ Microsoft 365 Enterprise licenze sono necessarie per tutti Microsoft Managed Des
 In questo articolo vengono riepilogati i componenti inclusi nelle licenze Enterprise necessarie, con una descrizione del modo in cui il servizio usa ogni componente con Microsoft Managed Desktop dispositivi. I ruoli e le responsabilità specifici per ogni area sono dettagliati in tutta Microsoft Managed Desktop documentazione. 
 
 ## <a name="office-365-e3-or-e5"></a>Office 365 E3 o E5
+
 | Prodotto |Informazioni |
 --- |--- 
 Microsoft 365 Apps for enterprise (64 bit) | Queste Office verranno fornite con il dispositivo: Word, Excel, PowerPoint, Outlook, Publisher, Access, Skype for Business, OneNote.<br><br>Le versioni complete a 64 bit di Microsoft Project e Microsoft Visio non sono incluse. Tuttavia, poiché l'installazione di queste applicazioni dipende dall'installazione di Microsoft 365 Apps for enterprise, Microsoft Managed Desktop ha creato distribuzioni di Microsoft Intune predefinite e gruppi di sicurezza che è quindi possibile utilizzare per distribuire queste applicazioni agli utenti con licenza. Per ulteriori informazioni, vedere [Install Microsoft Project or Microsoft Visio on Microsoft Managed Desktop devices](../get-started/project-visio.md).
 OneDrive |Azure Active Directory Single Sign-On è abilitato per gli utenti al primo accesso a OneDrive.<br><br>Il reindirizzamento delle cartelle note per le cartelle "Desktop", "Documento" e "Immagini" è incluso; abilitato e configurato da Microsoft Managed Desktop.
-App dello Store |    Microsoft Sway e Power BI non vengono forniti con il dispositivo. Queste app sono disponibili per il download da Microsoft Store.
-Applicazioni Win32 |    Teams non viene fornito con il dispositivo, ma è in pacchetto e fornito da Microsoft per Microsoft Managed Desktop dispositivi. Azure Information Protection Client non viene fornito con il dispositivo, ma può essere in pacchetto per la distribuzione.
-Applicazioni Web |  Yammer, Office in un browser, Delve, Flow, StaffHub, PowerApps e Planner non vengono spediti con il dispositivo. Gli utenti possono accedere alla versione Web di queste applicazioni con un browser.
-
-
+App dello Store | Microsoft Sway e Power BI non vengono forniti con il dispositivo. Queste app sono disponibili per il download da Microsoft Store.
+Applicazioni Win32 | Teams non viene fornito con il dispositivo, ma è in pacchetto e fornito da Microsoft per Microsoft Managed Desktop dispositivi. Azure Information Protection Client non viene fornito con il dispositivo, ma può essere in pacchetto per la distribuzione.
+Applicazioni Web | Yammer, Office in un browser, Delve, Flow, StaffHub, PowerApps e Planner non vengono spediti con il dispositivo. Gli utenti possono accedere alla versione Web di queste applicazioni con un browser.
 
 ## <a name="windows-10-enterprise-e5-or-e3-with-microsoft-defender-for-endpoint"></a>Windows 10 Enterprise E5 o E3 con Microsoft Defender for Endpoint
+
 Si consiglia agli amministratori IT di configurare le impostazioni seguenti. Queste impostazioni non sono incluse o gestite come parte di Microsoft Managed Desktop.
 
 Prodotto  |Informazioni
@@ -47,11 +47,10 @@ Windows Hello for Business | Devi implementare Windows Hello for Business per so
 Application Virtualization | Puoi distribuire pacchetti di Application Virtualization (App-V) usando il client di gestione delle app Win32 di Intune. Per ulteriori informazioni, vedere [Application Virtualization.](/windows/application-management/app-v/appv-technical-reference)
 Microsoft 365 prevenzione della perdita di dati | È consigliabile implementare Microsoft 365 prevenzione della perdita dei dati per monitorare le azioni intraprese sugli elementi che si è determinato essere sensibili e per impedire la condivisione involontaria di tali elementi. Per ulteriori informazioni, vedere Microsoft 365 [prevenzione della perdita di dati.](../../compliance/endpoint-dlp-learn-about.md)
 
-
 Funzionalità incluse e gestite nell'ambito di Microsoft Managed Desktop:
 
 Prodotto |Informazioni
---- |--- 
+--- |---
 Crittografia unità BitLocker | Crittografia unità BitLocker viene utilizzata per crittografare tutte le unità di sistema. Per ulteriori informazioni, vedere [Crittografia unità BitLocker.](/windows/security/information-protection/bitlocker/bitlocker-overview)
 Windows Defender System Guard | Protegge l'integrità del sistema all'avvio e verifica che l'integrità del sistema sia stata effettivamente mantenuta. Per ulteriori informazioni, vedere [Windows Defender System Guard.](/windows/security/threat-protection/windows-defender-system-guard/system-guard-how-hardware-based-root-of-trust-helps-protect-windows)
 Windows Defender Credential Guard | Windows Defender Credential Guard usa la sicurezza basata su virtualizzazione per isolare i segreti in modo che solo il software di sistema con privilegi possa accedervi. Per ulteriori informazioni, vedere [Windows Defender System Guard.](/windows/security/threat-protection/windows-defender-system-guard/system-guard-how-hardware-based-root-of-trust-helps-protect-windows)
@@ -72,8 +71,8 @@ Controllo account utente | Controllo account utente passa a Desktop protetto qua
 
 ## <a name="enterprise-mobility--security-e5"></a>Enterprise Mobility + Security E5
 
-Prodotto |Informazioni 
+Prodotto |Informazioni
  --- | ---
-Enterprise Mobility + Security E3<br>Azure Active Directory Premium P2 |    Puoi usare tutte le funzionalità di Enterprise Mobility + Security E3 per gestire i dispositivi MDM. È possibile utilizzare Azure Active Directory Premium P2 come funzionalità facoltativa con Microsoft Managed Desktop.
-Microsoft Cloud App Security |  È possibile utilizzare questa funzionalità facoltativa con Microsoft Managed Desktop.
+Enterprise Mobility + Security E3<br>Azure Active Directory Premium P2 | Puoi usare tutte le funzionalità di Enterprise Mobility + Security E3 per gestire i dispositivi MDM. È possibile utilizzare Azure Active Directory Premium P2 come funzionalità facoltativa con Microsoft Managed Desktop.
+Microsoft Cloud App Security | È possibile utilizzare questa funzionalità facoltativa con Microsoft Managed Desktop.
 Azure Information Protection P2  | È possibile utilizzare questa funzionalità facoltativa con Microsoft Managed Desktop.

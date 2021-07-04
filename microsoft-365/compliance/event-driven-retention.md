@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-may2020
 - seo-marvel-jun2020
 description: In genere, nell’ambito di una soluzione di gestione dei record, è possibile configurare un’etichetta di conservazione per avviare il periodo di conservazione in base a un evento identificato.
-ms.openlocfilehash: 83f1be417b706fdb66b1df71ba351ce16d5ad485
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: e5b3b1f5d3af8185c424abede2f31675ab854f4a
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53226624"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287528"
 ---
 # <a name="start-retention-when-an-event-occurs"></a>Avviare la conservazione al verificarsi di un evento
 
@@ -238,7 +238,7 @@ Codice di esempio per chiamare l'API REST:
 - **URL**: `https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent`
 - **Intestazioni**: Chiave = Content-Type, Valore = application/atom+xml
 - **Corpo**:
-    
+
     ```xml
     <?xml version='1.0' encoding='utf-8' standalone='yes'?>
     
@@ -270,7 +270,7 @@ Codice di esempio per chiamare l'API REST:
     
     </entry>
     ```
-    
+
 - **Autenticazione**: di base
 - **Nome utente**: "Complianceuser"
 - **Password**: "Compliancepassword"
@@ -309,7 +309,6 @@ Codice di esempio per chiamare l'API REST:
 - **Nome utente**: "Complianceuser"
 
 - **Password**: "Compliancepassword"
-
 
 ###### <a name="response-codes"></a>Codici di risposta
 
@@ -358,7 +357,6 @@ Codice di esempio per chiamare l'API REST:
 - **Nome utente**: "Complianceuser"
 
 - **Password**: "Compliancepassword"
-
 
 ###### <a name="response-codes"></a>Codici di risposta
 
@@ -450,5 +448,4 @@ $event = Invoke-RestMethod -Body $body -Method 'POST' -Uri $url -ContentType "ap
 }
 
 $event | fl *
-
 ```

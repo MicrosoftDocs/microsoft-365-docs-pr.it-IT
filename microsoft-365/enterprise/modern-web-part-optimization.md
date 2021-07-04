@@ -21,26 +21,26 @@ ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: Informazioni su come usare Diagnostica pagine per ottimizzare le prestazioni delle web part in SharePoint pagine moderne del sito online.
-ms.openlocfilehash: 2a72ecd8bc1f6dee4166809f72ce5f9bce422dc9
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: fab5b0bc9d0b04ede0815856af7366e277dbf909
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50929061"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53288900"
 ---
 # <a name="optimize-web-part-performance-in-sharepoint-online-modern-site-pages"></a>Ottimizzare le prestazioni delle web part nelle pagine moderne di siti di SharePoint Online
 
 Le pagine moderne dei siti di SharePoint Online contengono web part che possono influire sui tempi di caricamento complessivi delle pagine. Questo articolo spiega come determinare l'impatto delle web part presenti nelle pagine sulla latenza percepita dall'utente e come risolvere problemi comuni.
 
->[!NOTE]
->Per altre informazioni sulle prestazioni nei portali moderni di SharePoint Online, vedere [Prestazioni nell'esperienza moderna di SharePoint](/sharepoint/modern-experience-performance).
+> [!NOTE]
+> Per altre informazioni sulle prestazioni nei portali moderni di SharePoint Online, vedere [Prestazioni nell'esperienza moderna di SharePoint](/sharepoint/modern-experience-performance).
 
 ## <a name="use-the-page-diagnostics-for-sharepoint-tool-to-analyze-web-parts"></a>Usare lo strumento Diagnostica pagine per SharePoint per analizzare le web part
 
 Lo strumento Diagnostica pagine per SharePoint è un'estensione del browser per il nuovo browser Microsoft Edge (https://www.microsoft.com/edge) e per Chrome che consente di analizzare le pagine del sito di pubblicazione di SharePoint Online sia classiche che dei portali moderni. Per ogni pagina analizzata lo strumento fornisce un report che mostra le prestazioni della pagina rispetto a un set definiti di criteri delle prestazioni. Per installare e conoscere lo strumento Diagnostica pagine per SharePoint, visitare [Usare lo strumento Diagnostica pagine per SharePoint Online](page-diagnostics-for-spo.md).
 
->[!NOTE]
->Lo strumento Diagnostica pagine funziona solo per SharePoint Online e non può essere usato in una pagina di sistema di SharePoint.
+> [!NOTE]
+> Lo strumento Diagnostica pagine funziona solo per SharePoint Online e non può essere usato in una pagina di sistema di SharePoint.
 
 Quando si analizza una pagina del sito di SharePoint con lo strumento Diagnostica pagine per SharePoint, è possibile visualizzare informazioni sulle web part che superano la metrica di base nel risultato **Le web part influiscono sul tempo di caricamento delle pagine** del riquadro _Test diagnostici_.
 
@@ -62,10 +62,13 @@ Le informazioni disponibili nei risultati includono:
 - **Caricamento modulo** mostra il tempo impiegato per scaricare, valutare e caricare le estensioni JavaScript e i file CSS. Verrà quindi avviato il processo Init.
 - **Caricamento lazy** indica il tempo per il caricamento posticipato delle web part non visualizzate nella sezione principale della pagina. Esistono determinate condizioni in cui sono presenti troppe web part di cui eseguire il rendering e vengono accodate per il rendering per ridurre al minimo il tempo di caricamento della pagina.
 - **Init** mostra il tempo impiegato dalla web part per inizializzare i dati.
-    Si tratta di una chiamata asincrona e il tempo di init è il calcolo del tempo per la funzione onInit quando la promessa restituita viene risolta.
+
+  Si tratta di una chiamata asincrona e il tempo di init è il calcolo del tempo per la funzione onInit quando la promessa restituita viene risolta.
+
 - **Render** mostra il tempo impiegato per eseguire il rendering dell'interfaccia utente dopo il caricamento del modulo e il completamento di Init.
-    È il tempo di esecuzione JavaScript per montare il DOM nel documento (pagina).
-    Il rendering delle risorse asincrone, ad esempio le immagini, potrebbe richiedere più tempo per il completamento.
+
+  È il tempo di esecuzione JavaScript per montare il DOM nel documento (pagina).
+  Il rendering delle risorse asincrone, ad esempio le immagini, potrebbe richiedere più tempo per il completamento.
 
 Queste informazioni vengono fornite per consentire a progettisti e sviluppatori di risolvere i problemi. Devono essere fornite al team di progettazione e sviluppo.
 

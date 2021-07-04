@@ -14,12 +14,12 @@ ms.collection:
 - M365solutions
 ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
-ms.openlocfilehash: b424b4f611f0553de4b7129d2c0b63cefbdeeab3
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: b22a3b8fc73ca1825f07dda5b84c85e2d2a68805
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53229360"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289740"
 ---
 # <a name="to-identity-and-beyondone-architects-viewpoint"></a>Verso l'identità e oltre: il punto di vista di un architetto
 
@@ -164,7 +164,7 @@ Nel complesso, è sempre più difficile tracciare una linea chiara tra Office 36
 
 Oggi, molti gruppi IT dei clienti sono strutturati attorno ai "prodotti". È logico per un mondo locale poiché è necessario un esperto per ogni prodotto specifico. Tuttavia, sono del tutto contento che non sia necessario eseguire di nuovo il debug di un database di Active Directory o Exchange poiché questi servizi si sono spostati nel cloud. L'automazione (che tipo di cloud è) rimuove determinati processi manuali ripetitivi (guarda cosa è successo alle factory). Tuttavia, questi sono sostituiti da requisiti più complessi per comprendere l'interazione tra servizi, l'impatto, le esigenze aziendali e così via. Se si vuole [imparare,](/learn/)esistono grandi opportunità abilitate dalla trasformazione cloud. Prima di passare alla tecnologia, spesso si parla ai clienti della gestione del cambiamento nelle competenze IT e nelle strutture del team.
 
-Per tutti SharePoint fan e sviluppatori, smettere di chiedere "Come posso fare XYZ in SharePoint online?" Usa [Power Automate](/power-automate/) (o Flow) per il flusso di lavoro, è una piattaforma molto più potente. Usa [Azure Bot Framework](/azure/bot-service/?view=azure-bot-service-4.0) per creare un'esperienza utente migliore per l'elenco di elementi da 500 K. Iniziare a [usare Microsoft Graph](https://developer.microsoft.com/graph/) invece di CSOM. [Microsoft Teams](/MicrosoftTeams/Teams-overview) include SharePoint ma anche un mondo più. Ci sono molti altri esempi che posso elencare. C'è un vasto e fantastico universo là fuori. Apri la porta e [inizia a esplorare]().
+Per tutti SharePoint fan e sviluppatori, smettere di chiedere "Come posso fare XYZ in SharePoint online?" Usa [Power Automate](/power-automate/) (o Flow) per il flusso di lavoro, è una piattaforma molto più potente. Usa [Azure Bot Framework](/azure/bot-service/) per creare un'esperienza utente migliore per l'elenco di elementi da 500 K. Iniziare a [usare Microsoft Graph](https://developer.microsoft.com/graph/) invece di CSOM. [Microsoft Teams](/MicrosoftTeams/Teams-overview) include SharePoint ma anche un mondo più. Ci sono molti altri esempi che posso elencare. C'è un vasto e fantastico universo là fuori. Apri la porta e [inizia a esplorare]().
 
 L'altro impatto comune è nell'area di conformità. Questo approccio tra servizi sembra confondere completamente molti criteri di conformità. Continuo a vedere le organizzazioni che hanno lo stato "Devo eseguire il journal di tutte le comunicazioni di posta elettronica in un sistema eDiscovery". Cosa significa realmente quando la posta elettronica non è più solo posta elettronica, ma una finestra in altri servizi? Office 365 ha un approccio completo per [la](../compliance/index.yml)conformità, ma il cambiamento di persone e processi spesso è molto più difficile della tecnologia.
 

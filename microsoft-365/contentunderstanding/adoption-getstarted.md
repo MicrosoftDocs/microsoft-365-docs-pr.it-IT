@@ -1,5 +1,5 @@
 ---
-title: 'Microsoft SharePoint Syntex adoption: Introduzione'
+title: 'Adozione SharePoint Syntex Microsoft: introduzione'
 description: Informazioni su come usare e implementare SharePoint Syntex nell'organizzazione per risolvere i problemi aziendali.
 ms.author: samanro
 author: samanro
@@ -14,22 +14,22 @@ ms.collection:
 ms.custom: Adopt
 search.appverid: ''
 localization_priority: Normal
-ms.openlocfilehash: 62e65f9be25e2c482cca78577048d504ee93097a
-ms.sourcegitcommit: 4bcac4cb4f9399ebbd7c8cff0abb4d6ecedb731e
+ms.openlocfilehash: 8a5442fcf8dd50cdee6be97ba7c9bbf5e21408a3
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "52698977"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53288156"
 ---
-# <a name="microsoft-sharepoint-syntex-adoption-get-started"></a>Microsoft SharePoint Syntex adoption: Introduzione
+# <a name="microsoft-sharepoint-syntex-adoption-get-started"></a>Adozione SharePoint Syntex Microsoft: introduzione
 
 Si pensi ai servizi di contenuto intelligente disponibili in SharePoint Syntex come a tre parti:
 
 - **Informazioni sul contenuto:** Crea modelli di intelligenza artificiale senza codice per classificare ed estrarre informazioni dal contenuto per applicare automaticamente i metadati per l'individuazione e il riutilizzo delle conoscenze. Ulteriori informazioni sulla [comprensione del contenuto](document-understanding-overview.md).
 - **Elaborazione del contenuto:** Automatizzare l'acquisizione, l'inserimento e la categorizzazione del contenuto e semplificare i processi incentrati sul contenuto Power Automate. Ulteriori informazioni [sull'elaborazione del contenuto](form-processing-overview.md).
-- **Conformità del contenuto:** Controllare e gestire il contenuto per migliorare la sicurezza e la governance con l'integrazione in Microsoft Information Protection.
+- **Conformità del contenuto:** Controllare e gestire il contenuto per migliorare la sicurezza e la governance con l'integrazione Microsoft Information Protection.
 
-Con i nuovi servizi e funzionalità di IA, puoi creare app di comprensione e classificazione dei contenuti direttamente nel flusso di gestione dei contenuti usando SharePoint Syntex. Esistono due modi diversi per comprendere il contenuto. Il tipo di modello utilizzato si basa sul formato di file e sul caso di utilizzo:
+Grazie ai nuovi servizi e funzionalità di IA, puoi creare app di comprensione e classificazione dei contenuti direttamente nel flusso di gestione dei contenuti usando SharePoint Syntex. Esistono due modi diversi per comprendere il contenuto. Il tipo di modello utilizzato si basa sul formato di file e sul caso di utilizzo:
 
 | Elaborazione dei moduli | Analisi dei documenti |
 |:-------|:-------|
@@ -49,11 +49,11 @@ Per preparare l'SharePoint Syntex nell'organizzazione, è innanzitutto necessari
 - **Elaborazione del contenuto:** Elaborare contratti, dichiarazioni di lavoro e altri documenti simili a moduli. Immettere i moduli, formare il modello per comprendere e mappare i campi ed eseguire i moduli per raccogliere automaticamente i dati. Per ulteriori informazioni, vedere [Panoramica dell'elaborazione dei moduli.](form-processing-overview.md)
 - **Analisi delle fatture:** Estrarre i dettagli rilevanti dalle fatture e assicurarsi che siano conformi ai criteri o che vengano elaborati in modo appropriato.
 
-Pensa ai modi in cui SharePoint Syntex può aiutare la tua organizzazione:
+Pensa ai modi SharePoint Syntex aiutare l'organizzazione:
 
 - Automatizzare i processi aziendali
 - Migliorare l'accuratezza della ricerca
-- Gestire i rischi di conformità
+- Gestire il rischio di conformità
 
 Quando si pensa agli scenari aziendali da considerare, porsi le domande seguenti:
 
@@ -64,7 +64,7 @@ Quando si pensa agli scenari aziendali da considerare, porsi le domande seguenti
 
 Definire le priorità degli scenari in base all'impatto e alla facilità di implementazione. Rendi l'area di attenzione iniziale scenari di maggiore impatto che possono essere implementati facilmente. De-prioritize lower impact scenarios that are hard to implement.
 
-Usa gli [scenari di esempio e i casi](adoption-scenarios.md) d'uso per richiedere idee su come usare SharePoint Syntex nell'organizzazione.
+Usa gli [scenari di esempio e i casi d'uso](adoption-scenarios.md) per richiedere idee su come usare SharePoint Syntex nell'organizzazione.
 
 ## <a name="identify-roles--responsibilities"></a>Identificare i ruoli & responsabilità
 
@@ -86,7 +86,7 @@ Dove verranno compilati e applicati i modelli? Esistono processi o archivi esist
 
 ## <a name="strategic-positioning"></a>Posizionamento strategico
 
-Collaborare con gli stakeholder per assicurarsi che siano allineati sulla strategia per l'SharePoint Syntex. Ricercare e fornire le risorse seguenti per facilitare questo posizionamento:
+Collaborare con gli stakeholder per assicurarsi che siano allineati sulla strategia per l'utilizzo di SharePoint Syntex. Ricercare e fornire le risorse seguenti per facilitare questo posizionamento:
 
 - Risultati aziendali:
   - Potenziali risultati fiscali
@@ -116,7 +116,7 @@ Identificare le parti interessate per il progetto.
 
 ## <a name="readiness-checklist"></a>Elenco di controllo per la preparazione
 
-Per prepararti per l'implementazione SharePoint Syntex, devi:
+Per prepararsi per l'implementazione SharePoint Syntex, è necessario:
 
 ![Preparazione per la comprensione del contenuto](../media/content-understanding/cu-adoption-readinesschecklist.png)
 
@@ -132,7 +132,7 @@ Per prepararti per l'implementazione SharePoint Syntex, devi:
     - I tipi di contenuto esistenti sono candidati validi per i modelli?
     - Quali processi esistenti verrebbero migliorati dai metadati?
 3. Struttura
-    - Progettare l'approccio all'architettura delle informazioni, ai metadati gestiti e ai tipi di contenuto
+    - Progettare l'approccio all'architettura delle informazioni, ai metadati gestiti e ai tipi di contenuto.
     - Progettare il processo per la definizione, la creazione, la gestione.
 
 ## <a name="engage-your-organization"></a>Coinvolgere l'organizzazione

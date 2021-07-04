@@ -23,18 +23,18 @@ search.appverid:
 - MOE150
 - BCS160
 description: Informazioni su come usare l'indirizzo IP e il servizio Web URL di Office 365 per identificare e distinguere meglio il traffico di rete di Office 365.
-ms.openlocfilehash: 1948491e1d3db724e7b7b6a5275234acab4be08a
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 0469070ed6d46b7695526697c255e23c0dc009ec
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50918955"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53286418"
 ---
 # <a name="office-365-ip-address-and-url-web-service"></a>Servizio Web per URL e indirizzi IP di Office 365
 
-Servizio Web per URL e indirizzi IP di Office 365 consentono di identificare e distinguere il traffico di rete di Office 365, semplificando la valutazione, la configurazione e il miglioramento delle modifiche apportate. Questo servizio Web basato su REST sostituisce i file XML scaricabili precedenti, che sono stati eliminati il 2 ottobre 2018.
+Servizio Web per URL e indirizzi IP di Office 365 permette di identificare meglio e differenziare il traffico di rete di Office 365, consentendo agli utenti di valutare, configurare e rimanere aggiornati sulle ultime modifiche. Questo servizio Web basato su REST sostituisce i file XML scaricabili precedenti, che sono stati ritirati il 2 ottobre 2018.
 
-Come cliente o fornitore di dispositivi perimetrali di rete, è possibile eseguire la compilazione con il servizio Web per gli indirizzi IP di Office 365 e le voci di FQDN. È possibile accedere ai dati direttamente in un Web browser usando questi URL:
+Un cliente o un fornitore di dispositivi di rete perimetrale può sfruttare il nuovo servizio Web per voci FQDN e indirizzi IP di Office 365. È possibile accedere ai dati direttamente in un browser Web tramite questi URL:
 
 - Per la versione più recente degli URL e degli intervalli di indirizzi IP di Office 365, usare [https://endpoints.office.com/version](https://endpoints.office.com/version?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7).
 - Per i dati sulla pagina degli URL e degli intervalli di indirizzi IP di Office 365 per firewall e server proxy, usare [https://endpoints.office.com/endpoints/worldwide](https://endpoints.office.com/endpoints/worldwide?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7).
@@ -66,13 +66,13 @@ Questi parametri sono comuni a tutti i metodi di servizio Web:
 - **formato = < JSON | CSV >** — Per impostazione predefinita il formato dei dati restituiti è JSON. Questo parametro facoltativo consente di restituire i dati con valori delimitati da virgole (CSV).
 - **ClientRequestId =\<guid>** — GUID necessario creato per l'associazione di client. Generare un GUID univoco per ogni computer che chiama il servizio Web, ossia gli script inclusi in questa pagina generano un GUID. Non usare i GUID illustrati negli esempi seguenti perché potrebbero essere bloccati dal servizio web in futuro. Il formato GUID è _xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx_, dove x rappresenta un numero esadecimale.
 
-  Per generare un GUID, è possibile usare il comando di PowerShell [New-Guid](/powershell/module/microsoft.powershell.utility/new-guid?view=powershell-6) oppure usare un servizio online come [generatore di GUID online](https://www.guidgenerator.com/).
+  Per generare un GUID, è possibile usare il comando di PowerShell [New-Guid](/powershell/module/microsoft.powershell.utility/new-guid) oppure usare un servizio online come [generatore di GUID online](https://www.guidgenerator.com/).
 
 ## <a name="version-web-method"></a>Metodo per la versione web
 
 Microsoft aggiorna l'indirizzo IP e le voci di FQDN di Office 365 alla fine di ogni mese. Gli aggiornamenti out-of-band sono talvolta pubblicati a causa di problemi di supporto, aggiornamenti della sicurezza o altri requisiti operativi.
 
-Ai dati di ogni istanza pubblicata è assegnato un numero di versione e la versione metodo Web consente di controllare la versione più recente di ogni istanza di servizio di Office 365. È consigliabile controllare la versione non più di una volta all'ora.
+Ai dati di ogni istanza pubblicata viene assegnato un numero di versione e la versione metodo Web consente di controllare la versione più recente di ogni istanza di servizio di Office 365. Si consiglia di controllare la versione non più di una volta all'ora.
 
 I parametri per il metodo per la versione web sono:
 
@@ -80,11 +80,11 @@ I parametri per il metodo per la versione web sono:
 - **Format=< JSON | CSV | RSS >** — oltre ai formati JSON e CSV, la versione metodo web supporta inoltre RSS. È possibile usare questo parametro facoltativo con _AllVersions=true_ per richiedere un feed RSS che può essere usato con Outlook o altri lettori RSS.
 - **Instance=<Worldwide | China | Germany | USGovDoD | USGovGCCHigh>**: questo parametro facoltativo specifica l'istanza per ripristinare la versione. Se omesso, vengono restituite tutte le istanze. Le istanze valide sono: Worldwide, China, Germany, USGovDoD, USGovGCCHigh.
 
-La metodo Web per la versione non è limitata a tariffe e non restituisce mai i codici di risposta HTTP 429. La risposta al metodo Web per la versione include un'intestazione cache-controllo che consiglia la memorizzazione nella cache dei dati per 1 ora. Il risultato ottenuto dal metodo Web per la versione potrebbe essere un singolo record o una matrice di record.  Gli elementi di ogni record sono:
+Il metodo Web per la versione non ha limiti di frequenza e non restituisce mai codici di risposta HTTP 429. La risposta al metodo Web per la versione include un’intestazione di controllo cache che consiglia la memorizzazione dei dati nella cache per un'ora. Il risultato del metodo Web per la versione può essere un singolo record o una matrice di record. Gli elementi di ogni record sono:
 
 - instance: il nome breve dell'istanza del servizio di Office 365.
 - latest: l'ultima versione degli endpoint dell'istanza specificata.
-- versioni: elenco di tutte le versioni precedenti per l'istanza specificata. Questo elemento è incluso solo se il parametro _allversions_ è vero.
+- versions: un elenco di tutte le versioni precedenti dell'istanza specificata. Questo elemento è incluso solo se il parametro _AllVersions_ è true.
 
 ### <a name="examples"></a>Esempi:
 
@@ -187,17 +187,17 @@ I parametri per il metodo web per gli endpoint sono:
 
 Se si chiama il metodo Web per gli endpoint troppe volte dallo stesso indirizzo IP client, si potrebbe ricevere il codice di risposta HTTP _429 (Troppe richieste)_. Se viene visualizzato questo codice di risposta, attendere un'ora prima di ripetere la richiesta o generare un nuovo GUID per la richiesta. Come procedura consigliata, pianificare la chiamata del metodo Web per gli endpoint solo quando la versione metodo Web indica che è disponibile una nuova versione dei dati.
 
-Il risultato ottenuto dal metodo Web per gli endpoint è una matrice di record in cui ogni record rappresenta uno specifico set di endpoint.  Gli elementi per ogni record sono:
+Il risultato ottenuto dal metodo Web per gli endpoint è una matrice di record in cui ogni record rappresenta un set di endpoint specifico. Gli elementi per ogni record sono:
 
 - id: il numero ID non modificabile del set di endpoint.
 - serviceArea: l'area del servizio di cui fa parte: _Common_, _Exchange_, _SharePoint_ o _Skype_.
-- URL: URL per il set di endpoint. Una matrice JSON di record DNS. Questo elemento viene omesso se non specificato.
-- tcpPorts: porte TCP per il set di endpoint. Tutti gli elementi Ports sono formattati come un elenco con valori delimitati da virgole (-). Le porte sono valide per tutti gli indirizzi IP e per tutti gli URL del set di endpoint di una specifica categoria. Questo elemento viene omesso se non specificato.
-- udpPorts: le porte UDP degli intervalli di indirizzi IP nel set di endpoint.  Questo elemento viene omesso se non specificato.
+- urls: gli URL per il set di endpoint. Una matrice JSON di record DNS. Questo elemento viene omesso se non specificato.
+- tcpPorts: le porte TCP per il set di endpoint. Tutti gli elementi delle porte sono formattati come elenco con valori separati da virgole di porte o intervalli di porte separati da un trattino (-). Le porte si applicano a tutti gli URL e indirizzi IP nel set di endpoint per una data categoria. Questo elemento viene omesso se non specificato.
+- udpPorts: le porte UDP degli intervalli di indirizzi IP nel set di endpoint. Questo elemento viene omesso se non specificato.
 - ips: gli intervalli di indirizzi IP associati al set di endpoint come associati alle porte UDP o TCP elencate. Una matrice JSON di intervalli di indirizzi IP. Questo elemento viene omesso se non specificato.
 - Categoria: categoria di connettività per il set di endpoint. I valori validi sono _Ottimizza_, _Consenti_ e _Predefinito_. Se si esegue una ricerca nell'output del metodo Web endpoint per la categoria di un indirizzo IP o URL specifico, è possibile che la query restituisca più categorie. In tal caso, seguire le indicazioni della categoria priorità più alta. Se ad esempio il punto finale compare sia in _Ottimizza_ che in _Consenti_, seguire i requisiti per _Ottimizza_. Obbligatorio.
 - expressRoute: _True_ se il set di endpoint sfrutta la connessione ExpressRoute, _False_ in caso contrario.
-- required: _True_ se il set di endpoint deve avere una connettività per Office 365 che sia supportata. _False_ se il set di endpoint è facoltativo.
+- required: _True_ se il set di endpoint deve avere una connettività per Office 365 che sia supportata. _False_ se il set di endpoint è facoltativo. 
 - notes: per gli endpoint facoltativi, questo testo descrive la funzionalità di Office 365 che non sarà disponibile se gli URL o gli indirizzi IP nel set di endpoint non sono accessibili al livello della rete. Questo elemento viene omesso se non specificato.
 
 ### <a name="examples"></a>Esempi:
@@ -254,7 +254,7 @@ Il parametro obbligatorio del metodo Web per le modifiche è il seguente:
 
 Il metodo Web per le modifiche ha frequenza limitata, allo stesso modo del metodo Web per gli endpoint. Se viene visualizzato il codice di risposta 429 HTTP, attendere un'ora prima di ripetere la richiesta o generare un nuovo GUID per la richiesta.
 
-Il risultato ottenuto dal metodo Web per le modifiche è una matrice di record in cui ogni record rappresenta una modifica in una specifica versione di endpoint.  Gli elementi per ogni record sono:
+Il risultato ottenuto dal metodo Web per le modifiche è una matrice di record in cui ogni record rappresenta una modifica in una versione specifica degli endpoint. Gli elementi per ogni record sono:
 
 - id: l'ID non modificabile del record della modifica.
 - endpointSetId: l'ID del record del set di endpoint cui è stata apportata la modifica.
@@ -267,7 +267,7 @@ Il risultato ottenuto dal metodo Web per le modifiche è una matrice di record i
   — MovedIpOrUrl: abbiamo spostato un indirizzo IP o un Url da questo set di endpoint a un altro. In genere, non è necessario alcun intervento.
   — RemovedDuplicateIpOrUrl: abbiamo rimosso un indirizzo IP o URL duplicato ma questo è ancora pubblicato per Office 365. In genere, non è necessario alcun intervento.
   — OtherNonPriorityChanges: abbiamo modificato qualcosa di meno critico rispetto a tutte le altre opzioni, ad esempio il contenuto di un campo della nota.
-- Versione: versione del set di endpoint pubblicato in cui è stata introdotta la modifica. I numeri delle versioni sono in formato _AAAAMMGGNN_, dove _NN_ è un numero naturale incrementabile se è necessario pubblicare più versioni in un singolo giorno.
+- version: la versione del set di endpoint pubblicato in cui è stata introdotta la modifica. I numeri di versione hanno il formato _YYYYMMDDNN_, dove _NN_ è un numero naturale incrementato se sono presenti più versioni da pubblicare in un unico giorno.
 - previous: una sottostruttura che descrive dettagliatamente i valori precedenti degli elementi modificati nel set di endpoint. Non sarà inclusa per i set di endpoint appena aggiunti. Include _ExpressRoute_, _serviceArea_, _category_, _required_, _tcpPorts_, _udpPorts_ e _notes_.
 - current: una sottostruttura che descrive dettagliatamente i valori aggiornati degli elementi di modifica nel set di endpoint. Include _ExpressRoute_, _serviceArea_, _category_, _required_, _tcpPorts_, _udpPorts_ e _notes_.
 - add: una sottostruttura che descrive nel dettaglio gli elementi da aggiungere alle raccolte dei set di endpoint.  Questo elemento viene omesso se non ci sono aggiunte.
@@ -595,7 +595,7 @@ else:
 
 ## <a name="web-service-interface-versioning"></a>Controllo delle versioni dell'interfaccia del servizio Web
 
-In futuro potrebbero essere necessari aggiornamenti ai parametri o ai risultati di questi metodi di servizio Web. Dopo la pubblicazione della versione della disponibilità generale di tali servizi Web, Microsoft adotterà misure ragionevoli per fornire un avviso anticipato agli aggiornamenti del materiale al servizio Web. Se Microsoft ritiene che un aggiornamento richiederà modifiche ai client che usano il servizio Web, Microsoft manterrà la versione precedente, ossia una versione posteriore, del servizio Web, disponibile per almeno 12 mesi dopo il rilascio della nuova versione. I clienti che non eseguono l'aggiornamento durante quel periodo potrebbero non essere in grado di accedere al servizio Web e ai relativi metodi. I clienti devono accertarsi che i client del servizio Web continuino a funzionare senza errori se sono state apportate le modifiche seguenti alla firma dell'interfaccia del servizio Web:
+In futuro potrebbero essere richiesti aggiornamenti ai parametri o ai risultati di questi metodi del servizio Web. Dopo il rilascio della versione di disponibilità generale di questi servizi Web, Microsoft si impegnerà nel fornire avvisi preventivi in merito alla disponibilità di aggiornamenti dei materiali per il servizio Web. Quando Microsoft ritiene che un aggiornamento potrebbe richiedere modifiche per i client che usano il servizio Web, Microsoft mantiene la versione precedente del servizio Web disponibile per almeno 12 mesi dopo il rilascio della nuova versione. I clienti che non eseguono l'aggiornamento durante questo periodo potrebbero non essere in grado di accedere al servizio Web e ai suoi metodi. I clienti devono assicurarsi che i client del servizio Web continuino a funzionare correttamente se le modifiche riportate di seguito vengono apportate alla firma per l'interfaccia del servizio Web:
 
 - L'aggiunta di un nuovo parametro opzionale a un metodo Web esistente che non deve essere fornito dai client precedenti e che non influisce sul risultato ottenuto da un client precedente.
 - L'aggiunta di un nuovo attributo denominato in una delle colonne aggiuntive o in uno degli elementi REST della risposta nel CSV di risposta.

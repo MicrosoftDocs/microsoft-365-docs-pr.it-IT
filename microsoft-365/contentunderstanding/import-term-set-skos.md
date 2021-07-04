@@ -11,12 +11,12 @@ ms.service: ''
 ms.collection: enabler-strategic
 search.appverid: ''
 localization_priority: Priority
-ms.openlocfilehash: 734edbb462193291b6bd2fb4a8e6afc3a0b709cb
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 8a1b61088d0a1594bf1a71542158ade389cce2ab
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50928249"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53288516"
 ---
 # <a name="import-a-term-set-using-a-skos-based-format"></a>Importare un set di termini con un formato basato su SKOS
 
@@ -29,16 +29,16 @@ Si consiglia di mantenere meno di 20.000 termini nei file di importazione. I fil
 2. Selezionare il gruppo di termini in cui si desidera importare il set di termini.
 
 3. Nella barra dei comandi, fare clic su **Importa set di termini**. 
- 
-4.  Se si vuole desidera scaricare un file di esempio da usare come modello, fare clic su **sample-metadata.ttl** per ottenere un file di esempio che usa il formato basato su SKOS.
- 
-5.  Creare il file di importazione contenente i set di termini e i termini che si desidera importare.
 
-6.  In **Formato file**, selezionare **SKOS (*.ttl)**.
+4. Se si vuole desidera scaricare un file di esempio da usare come modello, fare clic su **sample-metadata.ttl** per ottenere un file di esempio che usa il formato basato su SKOS.
 
-7.  Fare clic su **Sfoglia**, raggiungere e aggiungere il file di importazione.
+5. Creare il file di importazione contenente i set di termini e i termini che si desidera importare.
 
-8.  Fare clic su **Importa**. Non chiudere il pannello fino al completamento dell'importazione.
+6. In **Formato file**, selezionare **SKOS (*.ttl)**.
+
+7. Fare clic su **Sfoglia**, raggiungere e aggiungere il file di importazione.
+
+8. Fare clic su **Importa**. Non chiudere il pannello fino al completamento dell'importazione.
 
 Dopo l'importazione del file, viene visualizzato un messaggio di esito positivo, l'archivio termini viene aggiornato e sarà possibile passare al set di termini appena creato.
 

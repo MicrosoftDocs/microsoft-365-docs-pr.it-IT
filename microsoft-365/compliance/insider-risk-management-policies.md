@@ -14,7 +14,7 @@ audience: itpro
 ms.collection: m365-security-compliance
 ms.openlocfilehash: f64fcf4908f119e261b07bbc4feaed2151e30187
 ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 06/30/2021
 ms.locfileid: "53226432"

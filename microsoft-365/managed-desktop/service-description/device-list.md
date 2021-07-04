@@ -8,12 +8,12 @@ ms.localizationpriority: normal
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 6e5e6b87f17fd4b13945b155bd7e521881242345
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: fd378e6aba9ac9bf10dcd9633da503406ab7410a
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53230056"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287892"
 ---
 # <a name="microsoft-managed-desktop-devices"></a>Microsoft Managed Desktop dispositivi
 
@@ -32,9 +32,8 @@ Per essere registrato in Microsoft Managed Desktop, un dispositivo deve essere u
 
 I collegamenti ai dispositivi qui sono solo per riferimento. Se vuoi ordinare i dispositivi, contatta i contatti del canale commerciale per assicurarti di scegliere le configurazioni corrette. In questa tabella, la data *di* archiviazione è la data in cui questi modelli saranno soggetti a una durata Microsoft Managed Desktop durata del servizio; i dispositivi di questo tipo onboarded dopo questa data non riceveranno un periodo di supporto triennale completo da Microsoft Managed Desktop. I dispositivi archiviati sono elencati anche in [Microsoft Managed Desktop archiviati.](archived-device-list.md) *Data di* ritiro è la data in cui questo modello non sarà più supportato Microsoft Managed Desktop affatto. In tale data, tutti i dispositivi registrati di questo modello verranno rimossi da Microsoft Managed Desktop, indipendentemente dal momento in cui sono stati registrati.
 
->[!NOTE]
->I dispositivi possono essere aggiunti a questa tabella in qualsiasi momento, ma microsoft fornirà un avviso di 90 giorni per eventuali modifiche che influiscono sulla data di archiviazione o di ritiro. I dispositivi aggiunti più di recente sono contrassegnati con **\*** .
-
+> [!NOTE]
+> I dispositivi possono essere aggiunti a questa tabella in qualsiasi momento, ma microsoft fornirà un avviso di 90 giorni per eventuali modifiche che influiscono sulla data di archiviazione o di ritiro. I dispositivi aggiunti più di recente sono contrassegnati con **\*** .
 
 ## <a name="microsoft-managed-desktop-devices"></a>Microsoft Managed Desktop Dispositivi
 
@@ -85,13 +84,14 @@ Inoltre, il dispositivo deve soddisfare anche questi criteri:
 - Non è stata completata Windows'esperienza di prima esecuzione.
 - Essere registrati con Microsoft Managed Desktop tramite la [funzionalità Registrazione](../get-started/register-devices-self.md) dispositivo
 
->[!NOTE]
->I dispositivi con processore da 2,0 GHz o superiore offriranno un'esperienza molto migliore agli utenti coinvolti in queste attività:
->- Uso di videoconferenze con Teams. Vedi [Requisiti hardware per Microsoft Teams](/microsoftteams/hardware-requirements-for-the-teams-app) per informazioni dettagliate.
->-  Utilizzo di un dispositivo per diversi carichi di lavoro.
->- Utilizzo di più monitor.
+> [!NOTE]
+> I dispositivi con processore da 2,0 GHz o superiore offriranno un'esperienza molto migliore agli utenti coinvolti in queste attività:
+>
+> - Uso di videoconferenze con Teams. Vedi [Requisiti hardware per Microsoft Teams](/microsoftteams/hardware-requirements-for-the-teams-app) per informazioni dettagliate.
+> - Utilizzo di un dispositivo per diversi carichi di lavoro.
+> - Utilizzo di più monitor.
 
-**Altre informazioni**
+## <a name="more-help"></a>Altre informazioni
 
 Queste risorse possono essere utili per rispondere a domande su dispositivi specifici:
 

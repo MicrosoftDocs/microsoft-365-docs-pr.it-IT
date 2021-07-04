@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 248e08913e6210fabed26955a1015533e055dcb6
-ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
+ms.openlocfilehash: 82052634b79bf433731d0afdab45e3d75e6497e0
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/18/2021
-ms.locfileid: "53007070"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289332"
 ---
 # <a name="live-response-command-examples"></a>Esempi di comandi di Live response
 
@@ -38,8 +38,7 @@ Informazioni sui comandi comuni usati in risposta in tempo reale e vedere esempi
 
 A seconda del ruolo che ti è stato concesso, puoi eseguire comandi di risposta in tempo reale di base o avanzati. Per altre informazioni sui comandi di base e avanzati, vedi [Analizzare le entità nei dispositivi che usano la risposta in tempo reale.](live-response.md)
 
-
-## <a name="analyze"></a>analizzare 
+## <a name="analyze"></a>analizzare
 
 ```console
 # Analyze the file malware.txt
@@ -110,12 +109,12 @@ getfile c:\Users\user\Desktop\work.txt -auto
 >
 > I tipi di file seguenti **non possono** essere scaricati con questo comando da Live Response:
 >
-> * [File di reparse point](/windows/desktop/fileio/reparse-points/)
-> * [File sparse](/windows/desktop/fileio/sparse-files/)
-> * File vuoti
-> * File virtuali o file non completamente presenti in locale
+> - [File di reparse point](/windows/desktop/fileio/reparse-points/)
+> - [File sparse](/windows/desktop/fileio/sparse-files/)
+> - File vuoti
+> - File virtuali o file non completamente presenti in locale
 >
-> Questi tipi di file **sono** supportati da [PowerShell.](/powershell/scripting/overview?view=powershell-6/?&preserve-view=true)
+> Questi tipi di file **sono** supportati da [PowerShell.](/powershell/scripting/overview)
 >
 > Utilizzare PowerShell in alternativa, in caso di problemi durante l'utilizzo di questo comando da Live Response.
 
@@ -132,6 +131,7 @@ library delete script.ps1
 ```
 
 ## <a name="processes"></a>processi
+
 ```console
 # Show all processes
 processes
@@ -210,11 +210,12 @@ run script.ps1
 # Run PowerShell script from the library with arguments
 run get-process-by-name.ps1 -parameters "-processName Registry"
 ```
+
 >[!NOTE]
 >
 > Per i comandi a esecuzione lunga, ad esempio '**run**' o '**getfile**', è possibile utilizzare il simbolo ' ' alla fine del comando per eseguire l'azione **&** in background.
 > In questo modo sarà possibile continuare a analizzare il computer e tornare al comando in background al termine dell'uso del comando di base '**fg** ['.](live-response.md#basic-commands)
->
+
 ## <a name="scheduledtask"></a>scheduledtask
 
 ```console
@@ -232,7 +233,6 @@ scheduledtasks Microsoft\Windows\Subscription\LicenseAcquisition
 scheduledtasks "Microsoft\Configuration Manager\Configuration Manager Health Evaluation"
 ```
 
-
 ## <a name="undo"></a>annulla
 
 ```console
@@ -249,4 +249,3 @@ undo scheduledtask Microsoft\Windows\Subscription\LicenseAcquisition
 # Restore remediated file
 undo file c:\Users\user\Desktop\malware.exe
 ```
-

@@ -17,14 +17,14 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 1935533ad924b7589bdfee6f3119fb667fb60b73
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: c44993337a6b14dc2fa131de906c5fc6bde28fac
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52841511"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289044"
 ---
-# <a name="deploy-microsoft-defender-for-endpoint-on-android-with-microsoft-intune"></a>Distribuzione di Microsoft Defender per Endpoint per Android con Microsoft Intune 
+# <a name="deploy-microsoft-defender-for-endpoint-on-android-with-microsoft-intune"></a>Distribuzione di Microsoft Defender per Endpoint per Android con Microsoft Intune
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -32,20 +32,22 @@ ms.locfileid: "52841511"
 - [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vuoi provare Microsoft Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> Vuoi provare Microsoft Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 Scopri come distribuire Defender per Endpoint in Android Portale aziendale Intune dispositivi registrati. Per altre informazioni sulla registrazione dei dispositivi Intune, vedi [Registrare il dispositivo.](/mem/intune/user-help/enroll-device-android-company-portal)
 
 > [!NOTE]
-> **Defender for Endpoint su Android è ora disponibile su [Google Play](https://play.google.com/store/apps/details?id=com.microsoft.scmx)** <br>
-> Puoi connetterti a Google Play da Intune per distribuire l'app Defender per Endpoint nelle modalità di entrollment Enterprise Android.
-Gli aggiornamenti dell'app sono automatici tramite Google Play.
+> **Defender for Endpoint su Android è ora disponibile su [Google Play](https://play.google.com/store/apps/details?id=com.microsoft.scmx)**
+>
+> Puoi connetterti a Google Play da Intune per distribuire l'app Defender per Endpoint tra le modalità di registrazione Enterprise Android.
+>
+> Gli aggiornamenti dell'app sono automatici tramite Google Play.
 
 ## <a name="deploy-on-device-administrator-enrolled-devices"></a>Distribuire nei dispositivi registrati dall'amministratore di dispositivi
 
 **Distribuire Defender per Endpoint su Android in Portale aziendale Intune - Dispositivi registrati dall'amministratore del dispositivo**
 
-Scopri come distribuire Defender per Endpoint in Android Portale aziendale Intune - Dispositivi registrati dall'amministratore del dispositivo. 
+Scopri come distribuire Defender per Endpoint in Android Portale aziendale Intune - Dispositivi registrati dall'amministratore del dispositivo.
 
 ### <a name="add-as-android-store-app"></a>Aggiungi come app di Android Store
 
@@ -53,12 +55,12 @@ Scopri come distribuire Defender per Endpoint in Android Portale aziendale Intun
 
    ![Immagine dell'Microsoft Endpoint Manager'interfaccia di amministrazione di aggiungere un'applicazione store android](images/mda-addandroidstoreapp.png)
 
-2. Nella pagina **Aggiungi app** e nella sezione *Informazioni app* immetti: 
+2. Nella pagina **Aggiungi app** e nella sezione *Informazioni app* immetti:
 
-   - **Nome** 
+   - **Nome**
    - **Descrizione**
    - **Publisher** microsoft.
-   - **URL dell'App Store** come https://play.google.com/store/apps/details?id=com.microsoft.scmx (DEFENDER for Endpoint app Google Play Store URL) 
+   - **URL dell'App Store** come https://play.google.com/store/apps/details?id=com.microsoft.scmx (DEFENDER for Endpoint app Google Play Store URL)
 
    Altri campi sono facoltativi. Selezionare **Avanti**.
 
@@ -66,8 +68,8 @@ Scopri come distribuire Defender per Endpoint in Android Portale aziendale Intun
 
 3. Nella sezione *Assegnazioni* passare alla sezione **Obbligatorio** e selezionare **Aggiungi gruppo.** Puoi quindi scegliere i gruppi di utenti che vuoi usare come destinazione di Defender per l'app Endpoint su Android. Scegliere **Seleziona** e quindi **Avanti**.
 
-    >[!NOTE]
-    >Il gruppo di utenti selezionato deve essere costituito da utenti registrati in Intune.
+    > [!NOTE]
+    > Il gruppo di utenti selezionato deve essere costituito da utenti registrati in Intune.
 
     > [!div class="mx-imgBorder"]
 
@@ -154,12 +156,12 @@ Segui i passaggi seguenti per aggiungere l'app Microsoft Defender for Endpoint a
        ![Immagine dei Microsoft Endpoint Manager gestiti android dell'interfaccia di amministrazione](images/android-mem.png)
 
     1. Nella pagina **Crea criteri di configurazione app** immetti i dettagli seguenti:
-    
+
         - Nome: Microsoft Defender for Endpoint.
         - Scegli **Android Enterprise** come piattaforma.
         - Scegliere **Solo profilo di lavoro** come tipo di profilo.
-        - Fai **clic su Seleziona app,** scegli **Microsoft Defender ATP,** seleziona **OK** e quindi **Avanti.**
-    
+        - Fai **clic su Seleziona app,** scegli Microsoft Defender **ATP,** **seleziona OK** e quindi **Avanti.**
+
         > [!div class="mx-imgBorder"]
         > ![Immagine della pagina crea criteri di configurazione dell'app](images/android-create-app.png)
 
@@ -178,63 +180,72 @@ Segui i passaggi seguenti per aggiungere l'app Microsoft Defender for Endpoint a
        > [!div class="mx-imgBorder"]
        > ![Immagine della concessione automatica android per la creazione di criteri di configurazione dell'app](images/android-auto-grant.png)
 
-    1. Nella pagina **Assegnazioni** seleziona il gruppo di utenti a cui verrebbe assegnato questo criterio di configurazione dell'app. Fare **clic su Seleziona gruppi per includere** e selezionare il gruppo applicabile e quindi selezionare **Avanti.**  Il gruppo selezionato qui è in genere lo stesso gruppo a cui assegni Microsoft Defender per l'app Endpoint Android. 
+    1. Nella pagina **Assegnazioni** seleziona il gruppo di utenti a cui verrebbe assegnato questo criterio di configurazione dell'app. Fare **clic su Seleziona gruppi per includere** e selezionare il gruppo applicabile e quindi selezionare **Avanti.**  Il gruppo selezionato qui è in genere lo stesso gruppo a cui assegni Microsoft Defender per l'app Endpoint Android.
 
        > [!div class="mx-imgBorder"]
        > ![Immagine del criterio di configurazione per la creazione di app](images/android-select-group.png)
-    
 
-     1. Nella pagina **Revisione e creazione** visualizzata successivamente, esaminare tutte le informazioni e quindi selezionare **Crea**. <br>
-    
+    1. Nella pagina **Revisione e creazione** visualizzata successivamente, esaminare tutte le informazioni e quindi selezionare **Crea**. <br>
+
         I criteri di configurazione dell'app per Defender per Endpoint che esereranno automaticamente l'autorizzazione di archiviazione vengono ora assegnati al gruppo di utenti selezionato.
 
         > [!div class="mx-imgBorder"]
         > ![Immagine di android review create app config policy](images/android-review-create.png)
 
-
-10. Selezionare **Microsoft Defender ATP app** nell'elenco \> **Proprietà** \> **Assegnazioni** \> **Modifica**.
+10. Seleziona **App Microsoft Defender ATP** nell'elenco \> **Proprietà** \> **Assegnazioni** \> **Modifica**.
 
     ![Immagine dell'elenco delle app](images/mda-properties.png)
-
 
 11. Assegna l'app come app *Obbligatoria* a un gruppo di utenti. Viene installato automaticamente nel profilo *di lavoro* durante la successiva sincronizzazione del dispositivo tramite Portale aziendale app. Per eseguire questa assegnazione, passare  alla sezione Obbligatorio \> **Aggiungi,** selezionare il gruppo di utenti e fare clic su **Seleziona.**
 
     > [!div class="mx-imgBorder"]
     > ![Immagine della pagina di modifica dell'applicazione](images/ea06643280075f16265a596fb9a96042.png)
 
-
 12. Nella pagina **Modifica** applicazione esaminare tutte le informazioni immesse in precedenza. Seleziona quindi **Rivedi + Salva** e quindi **salva di** nuovo per iniziare l'assegnazione.
 
-### <a name="auto-setup-of-always-on-vpn"></a>Configurazione automatica della VPN always-on 
-Defender for Endpoint supporta i criteri di configurazione dei dispositivi per i dispositivi gestiti tramite Intune. Questa funzionalità può essere sfruttata per la configurazione automatica della **VPN Always-on** nei dispositivi registrati Enterprise Android, quindi l'utente finale non deve configurare il servizio VPN durante l'onboarding.
-1.  In **Dispositivi** seleziona **Profili** di configurazione Crea piattaforma profilo Android Enterprise Seleziona restrizioni dispositivo in una delle  >    >    >   opzioni seguenti,  in base al tipo di registrazione del dispositivo 
-- **Profilo di lavoro completamente gestito, dedicato e Corporate-Owned aziendale**
-- **Profilo di lavoro di proprietà personale**
+### <a name="auto-setup-of-always-on-vpn"></a>Configurazione automatica della VPN always-on
 
-Selezionare **Crea**.
- 
+Defender for Endpoint supporta i criteri di configurazione dei dispositivi per i dispositivi gestiti tramite Intune. Questa funzionalità può essere sfruttata per la configurazione automatica della **VPN Always-on** nei dispositivi registrati Enterprise Android, quindi l'utente finale non deve configurare il servizio VPN durante l'onboarding.
+
+1. Nei **dispositivi** seleziona **Profili di configurazione** Crea  >  **piattaforma**  >  **profilo** Android  >  **Enterprise**
+
+   Seleziona **Restrizioni dispositivo in** uno dei seguenti modi, in base al tipo di registrazione del dispositivo:
+   - **Profilo di lavoro completamente gestito, dedicato e Corporate-Owned aziendale**
+   - **Profilo di lavoro di proprietà personale**
+
+   Selezionare **Crea**.
+
    > ![Immagine del profilo di configurazione dei dispositivi Crea](images/1autosetupofvpn.png)
-    
-2. **Configurazione Impostazioni** Specificare un **nome e** una **descrizione per** identificare in modo univoco il profilo di configurazione. 
+
+2. **Configurazione Impostazioni** Specificare un **nome e** una **descrizione per** identificare in modo univoco il profilo di configurazione.
 
    > ![Immagine del profilo di configurazione dei dispositivi Nome e descrizione](images/2autosetupofvpn.png)
-   
- 3. Selezionare **Connettività** e configurare VPN:
-- Abilita **Configurazione VPN always-on** un client VPN nel profilo di lavoro per connettersi e riconnettersi automaticamente alla VPN quando possibile. È possibile configurare un solo client VPN per la VPN always-on in un determinato dispositivo, quindi assicurati di non distribuire più di un criterio VPN always-on in un singolo dispositivo. 
-- Selezionare **Personalizzato** nell'elenco a discesa client VPN Vpn personalizzata in questo caso è Defender for Endpoint VPN che viene usato per fornire la funzionalità di protezione Web. 
-    > [!NOTE]
-    > L'app Microsoft Defender for Endpoint deve essere installata nel dispositivo dell'utente per poter funzionare con la configurazione automatica di questa VPN.
 
-- Immetti **l'ID** pacchetto dell'app Microsoft Defender for Endpoint in Google Play Store. Per l'URL dell'app Defender https://play.google.com/store/apps/details?id=com.microsoft.scmx , l'ID pacchetto è **com.microsoft.scmx**  
-- **Modalità di blocco** Non configurato (predefinito) 
+3. Selezionare **Connettività** e configurare VPN:
+   - Abilita **VPN always-on**
+
+   Configurare un client VPN nel profilo di lavoro per connettersi e riconnettersi automaticamente alla VPN quando possibile. È possibile configurare un solo client VPN per la VPN always-on in un determinato dispositivo, quindi assicurati di non distribuire più di un criterio VPN always-on in un singolo dispositivo.
+
+   - Selezionare **Personalizzato nell'elenco** a discesa del client VPN
+
+   La VPN personalizzata in questo caso è Defender for Endpoint VPN, che viene usata per fornire la funzionalità di protezione Web.
+
+   > [!NOTE]
+   > L'app Microsoft Defender for Endpoint deve essere installata nel dispositivo dell'utente per poter funzionare con la configurazione automatica di questa VPN.
+
+   - Immetti **l'ID** pacchetto dell'app Microsoft Defender for Endpoint in Google Play Store. Per l'URL dell'app Defender <https://play.google.com/store/apps/details?id=com.microsoft.scmx> , l'ID pacchetto è **com.microsoft.scmx**
+   - **Modalità di blocco** Non configurato (predefinito)
 
      ![Immagine del profilo di configurazione dei dispositivi che abilita VPN always-on](images/3autosetupofvpn.png)
-   
-4. **Assegnazione** Nella pagina  **Assegnazioni** seleziona il gruppo di utenti a cui verrebbe assegnato questo criterio   di configurazione dell'app. Fare **clic su Seleziona gruppi** da includere e selezionare il gruppo applicabile e quindi fare clic su **Avanti.** Il gruppo selezionato qui è in genere lo stesso gruppo a cui assegni Microsoft Defender per l'app Endpoint Android. 
+
+4. **Assegnazione**
+
+   Nella pagina **Assegnazioni** seleziona il gruppo di utenti a cui verrebbe assegnato questo criterio   di configurazione dell'app. Fare **clic su Seleziona gruppi** da includere e selezionare il gruppo applicabile e quindi fare clic su **Avanti.** Il gruppo selezionato qui è in genere lo stesso gruppo a cui assegni Microsoft Defender per l'app Endpoint Android.
 
      ![Immagine del profilo di configurazione dei dispositivi Assegnazione](images/4autosetupofvpn.png)
 
-5. Nella pagina **Revisione e creazione** visualizzata successivamente, esaminare tutte le informazioni e quindi selezionare **Crea**. Il profilo di configurazione del dispositivo è ora assegnato al gruppo di utenti selezionato.    
+5. Nella pagina **Revisione e creazione** visualizzata successivamente, esaminare tutte le informazioni e quindi selezionare **Crea**.
+Il profilo di configurazione del dispositivo è ora assegnato al gruppo di utenti selezionato.
 
     ![Immagine del profilo di configurazione dei dispositivi Revisione e creazione](images/5autosetupofvpn.png)
 
@@ -244,7 +255,6 @@ Selezionare **Crea**.
 
     > [!div class="mx-imgBorder"]
     > ![Immagine dello stato di installazione del dispositivo](images/900c0197aa59f9b7abd762ab2b32e80c.png)
-
 
 2. Nel dispositivo puoi convalidare lo stato di onboarding andando al **profilo di lavoro**. Verifica che Defender for Endpoint sia disponibile e che tu sia registrato nei dispositivi di proprietà **personale con profilo di lavoro.**  Se sei registrato in un dispositivo utente completamente gestito di proprietà dell'azienda, nel dispositivo sarà disponibile un singolo profilo in cui puoi verificare che Defender for Endpoint sia disponibile.
 
@@ -258,7 +268,7 @@ Selezionare **Crea**.
 
     ![Immagine di Microsoft Defender for Endpoint Portal](images/9fe378a1dce0f143005c3aa53d8c4f51.png)
 
-
 ## <a name="related-topics"></a>Argomenti correlati
+
 - [Panoramica di Microsoft Defender per Endpoint su Android](microsoft-defender-endpoint-android.md)
 - [Configurare funzionalità di Microsoft Defender per Endpoint su funzionalità Android](android-configure.md)

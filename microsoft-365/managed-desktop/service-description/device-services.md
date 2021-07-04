@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: f0eb20d59f1708bc1e3bd56e56ada40cd7058dca
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 6a4321f48ba5b8e012d1a3a4fd67dd4f05566048
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52924848"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287904"
 ---
 # <a name="microsoft-managed-desktop-device-services"></a>Microsoft Managed Desktop dei dispositivi mobili
 
@@ -28,12 +28,13 @@ Microsoft fornirà questi servizi per Microsoft Managed Desktop dispositivi. Per
 Supporto | Gli agenti di supporto risponderanno alle domande direttamente correlate alla funzionalità del dispositivo e diagnosticaranno i problemi dei dispositivi.
 Inventario | Tutti i dispositivi vengono monitorati nel portale di Microsoft Managed Desktop di amministrazione per il monitoraggio dell'inventario e dello stato.
 Aggiornamenti firmware/driver | Per impostazione predefinita, Microsoft Managed Desktop dispositivi ricevono aggiornamenti del firmware e dei driver da Windows Update. Non tutti i partner hardware distribuiscono gli aggiornamenti tramite Windows Update. Gli aggiornamenti non pubblicati come Automatico richiedono un'eccezione e devono essere distribuiti dal cliente.
-Accessori | Gli accessori in dotazione con il dispositivo sono coperti dagli stessi servizi del dispositivo stesso, ma le condizioni di garanzia possono essere diverse. Fai riferimento alle condizioni di garanzia scelte per la selezione dei dispositivi. Configurazione del dispositivo | I dispositivi verranno preconfigurato con la versione corrente di Windows e riceveranno le proprie app e configurazioni tramite il cloud. 
+Accessori | Gli accessori in dotazione con il dispositivo sono coperti dagli stessi servizi del dispositivo stesso, ma le condizioni di garanzia possono essere diverse. Fai riferimento alle condizioni di garanzia scelte per la selezione dei dispositivi. Configurazione del dispositivo | I dispositivi verranno preconfigurato con la versione corrente di Windows e riceveranno le proprie app e configurazioni tramite il cloud.
 
 Per informazioni sulla sostituzione, gli aggiornamenti e le condizioni di supporto del dispositivo, vedi il contratto con il provider di dispositivi e le condizioni di garanzia.
 
 Per informazioni sulle garanzie e le riparazioni di Surface:
-- [Centro assistenza di Surface for Business](https://support.microsoft.com/hub/4339296/surface-for-business-help)
+
+- [Surface per le aziende Centro assistenza](https://support.microsoft.com/hub/4339296/surface-for-business-help)
 - [Garanzie, piani di servizio estesi e termini e condizioni per il dispositivo](https://support.microsoft.com/help/4040687/info-about-warranties-extended-service-plans-and-terms-conditions)
 
 

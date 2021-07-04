@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informazioni sui criteri di conservazione applicabili a Microsoft Teams.
-ms.openlocfilehash: 908c6a1482761815995330b71f0d2d2f96677b64
-ms.sourcegitcommit: 3e197d1ff7d8100faeaf1f5a33f1ad4ed2f72e99
+ms.openlocfilehash: b459665d9b92705bd575a7a79a4d4d6adc2a3f68
+ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52908270"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53256316"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>Informazioni sulla conservazione per Microsoft Teams
 
@@ -44,8 +44,10 @@ Per altri carichi di lavoro, vedere:
 ## <a name="whats-included-for-retention-and-deletion"></a>Cosa è incluso per la conservazione e l'eliminazione
 
 Usando i criteri di conservazione per Teams è possibile eliminare i messaggi di chat e i messaggi di canale di Teams. Per motivi di conformità è possibile conservare, oltre al testo nei messaggi, i seguenti elementi: immagini incorporate, tabelle, collegamenti ipertestuali e collegamenti ad altri messaggi e file di Teams nonché il [contenuto della scheda](/microsoftteams/platform/task-modules-and-cards/what-are-cards). Nei messaggi di chat sono inclusi tutti i nomi degli utenti presenti in chat e nei messaggi dei canali sono inclusi il nome del team e il titolo del messaggio (se disponibile). 
+> [!NOTE]
+> Il supporto per i messaggi nei canali privati è attualmente in fase di implementazione in anteprima.
 
-I messaggi di Teams nei canali privati non sono attualmente supportati per i criteri di conservazione. Quando si usano i criteri di conservazione per Teams, non vengono conservati frammenti di codice, memo vocali registrati dal client per dispositivi mobili di Teams, anteprime, immagini di annunci e reazioni di altri utenti sotto forma di emoticon.
+Quando si usano i criteri di conservazione per Teams, non vengono conservati frammenti di codice, memo vocali registrati dal client per dispositivi mobili di Teams, anteprime, immagini di annunci e reazioni di altri utenti sotto forma di emoticon.
 
 I messaggi di posta elettronica e i file usati con Teams non sono inclusi nei criteri di conservazione per Teams. Questi elementi hanno i propri criteri di conservazione.
 
@@ -59,7 +61,7 @@ Queste cassette postali sono elencate dall'attributo RecipientTypeDetails:
 
 - **UserMailbox**: queste cassette postali archiviano i dati dei messaggi per gli utenti di Teams basati sul cloud.
 - **MailUser**: queste cassette postali archiviano i dati dei messaggi per gli [utenti di Teams locali](search-cloud-based-mailboxes-for-on-premises-users.md).
-- **GroupMailbox**: queste cassette postali archiviano i dati dei messaggi per i canali di Teams.
+- **GroupMailbox**: queste cassette postali archiviano i dati dei messaggi per i canali standard di Teams.
 
 Altri tipi di cassette postali, ad esempio RoomMailbox usato per le sale riunioni di Teams, non sono supportati per i criteri di conservazione di Teams.
 

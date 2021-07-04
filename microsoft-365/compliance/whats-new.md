@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Che si tratta dell'aggiunta di nuove soluzioni al Centro conformità, dell'aggiornamento delle funzionalità esistenti in base al feedback dell'utente o dell'implementazione di documentazione aggiornata e aggiornata, Microsoft 365 consente di rimanere al top del panorama di conformità in continua evoluzione. Scopri cosa abbiamo fatto fino a questo mese.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 6cd82e66a0b01f4cd329d846cf43581759dec0b6
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: aec9135a00b53f504d19a80e428d52f21b92cf9c
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53228460"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53288132"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Novità sulla conformità Microsoft 365
 
@@ -201,7 +201,7 @@ Il contenuto è stato aggiunto o aggiornato negli argomenti seguenti:
 - [Informazioni sullo scanner locale Microsoft 365 prevenzione della perdita di dati](/microsoft-365/compliance/dlp-on-premises-scanner-learn)
 - [Introduzione allo scanner locale per la prevenzione della perdita di dati](/microsoft-365/compliance/dlp-on-premises-scanner-get-started)
 - [Creare criteri di prevenzione della perdita dei dati per proteggere i documenti con FCI o altre proprietà](/microsoft-365/compliance/protect-documents-that-have-fci-or-other-properties)
-- [Uso di Prevenzione della perdita di dati degli endpoint](/microsoft-365/compliance/endpoint-dlp-using)
+- [Uso della prevenzione della perdita di dati degli endpoint](/microsoft-365/compliance/endpoint-dlp-using)
 - [Introduzione alla prevenzione della perdita di dati degli endpoint](/microsoft-365/compliance/endpoint-dlp-getting-started)
 
 ### <a name="ediscovery"></a>eDiscovery
@@ -281,7 +281,7 @@ Il primo è il contenuto che riunisce le nostre soluzioni di rischio insider: co
 - [Nuova pagina di destinazione per le soluzioni di rischio insider.](insider-risk-solution-overview.md) Include informazioni dettagliate sui rischi che le soluzioni possono contribuire a ridurre, i requisiti di licenza, la sequenza di distribuzione, le illustrazioni dell'architettura, le risorse di formazione e altro ancora.
 - Nuovi articoli di panoramica per ogni soluzione di rischio insider. Linee guida e collegamenti ad articoli utili per informazioni su, pianificare, distribuire e gestire ogni soluzione:
   - [Conformità delle comunicazioni](communication-compliance-solution-overview.md)
-  - [Gestione dei rischi Insider](insider-risk-management-solution-overview.md)
+  - [Gestione dei rischi insider](insider-risk-management-solution-overview.md)
   - [Barriere informative](information-barriers-solution-overview.md)
   - [Gestione accessi con privilegi](privileged-access-management-solution-overview.md)
 

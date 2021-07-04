@@ -11,12 +11,12 @@ ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 ms.localizationpriority: normal
-ms.openlocfilehash: c3928b5814332f2585adc613e1e84cbe5cc883a0
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 7b1178312178865face58748a37228f60643d5fc
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52925612"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287976"
 ---
 # <a name="microsoft-365-apps-for-enterprise"></a>Microsoft 365 Apps for enterprise
 
@@ -29,7 +29,7 @@ Microsoft Managed Desktop garantisce che Microsoft 365 Apps for enterprise (64 b
 - PowerPoint
 - Outlook
 - Publisher
-- Access
+- Accesso
 - Skype for Business
 - OneNote
 
@@ -153,15 +153,15 @@ Alcune organizzazioni sono preoccupate per l'accesso degli utenti ai file aziend
 
 Esistono molti altri criteri che Microsoft Managed Desktop non ancora impostati come parte del servizio. Puoi configurare questi criteri usando Microsoft Intune, che usa il [servizio Office Cloud Policy.](/DeployOffice/overview-office-cloud-policy-service#how-the-policy-configuration-is-applied) Per impostare questi criteri, attenersi alla seguente procedura:
 
-1.  Accedere all'interfaccia Microsoft Endpoint Manager di amministrazione.
-2.  Selezionare **Criteri > app per Office app > Creare**
-3.  Nella pagina **Crea configurazione** criteri eseguire le operazioni seguenti:
+1. Accedere all'interfaccia Microsoft Endpoint Manager di amministrazione.
+2. Selezionare **Criteri > app per Office app > Creare**
+3. Nella pagina **Crea configurazione** criteri eseguire le operazioni seguenti:
     - Immettere un nome.
     - Fornire una descrizione (facoltativo).
-    - Nelle **assegnazioni** scegliere se questo criterio si applica a tutti gli utenti di Microsoft 365 Apps for enterprise o solo agli utenti che accedono in modo anonimo ai documenti Office per il Web.
+    - Nelle **assegnazioni** scegliere se questo criterio si applica a tutti gli utenti di Microsoft 365 Apps for enterprise o solo agli utenti che accedono ai documenti in modo anonimo tramite Office per il web.
     - Selezionare il gruppo di sicurezza basato su AAD assegnato alla configurazione dei criteri. Ogni configurazione dei criteri può essere assegnata a un solo gruppo e a ogni gruppo può essere assegnata una sola configurazione di criteri.
-    - Configurare le impostazioni dei criteri da includere nella configurazione dei criteri. È possibile eseguire una ricerca nel nome dell'impostazione dei criteri per trovare l'impostazione di criteri che si desidera configurare. È inoltre possibile filtrare l'applicazione, se il criterio è una linea di base di sicurezza consigliata e se il criterio è stato configurato. La colonna della piattaforma indica se il criterio viene applicato Microsoft 365 Apps for enterprise per Windows dispositivi, Office per il Web o tutti.
-4.  Dopo aver effettuato le selezioni, scegliere **Crea**.
+    - Configurare le impostazioni dei criteri da includere nella configurazione dei criteri. È possibile eseguire una ricerca nel nome dell'impostazione dei criteri per trovare l'impostazione di criteri che si desidera configurare. È inoltre possibile filtrare l'applicazione, se il criterio è una linea di base di sicurezza consigliata e se il criterio è stato configurato. La colonna della piattaforma indica se il criterio viene applicato Microsoft 365 Apps for enterprise per Windows dispositivi, Office per il web o tutti.
+4. Dopo aver effettuato le selezioni, scegliere **Crea**.
 
 > [!NOTE]
 > Office I criteri di configurazione supportano solo la distribuzione basata sull'utente

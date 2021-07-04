@@ -14,12 +14,12 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 ms.assetid: 36743c86-46c2-46be-b9ed-ad9d4e85d186
 description: 'Riepilogo: utilizzare PowerShell per Microsoft 365 per assegnare impostazioni di comunicazione per utente con Skype for Business criteri online.'
-ms.openlocfilehash: 2d3d953fe0beb74cc63f914137942f068ce90be7
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: d7f369e96f3db95c741e6d4f2178eaf9032ab0bb
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50905405"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53288084"
 ---
 # <a name="assign-per-user-skype-for-business-online-policies-with-powershell-for-microsoft-365"></a>Assegnare criteri Skype for Business online per utente con PowerShell per Microsoft 365
 
@@ -102,11 +102,10 @@ Grant-CsExternalAccessPolicy -Identity "Alex Darrow" -PolicyName $Null
 ```
 
 Il comando imposta il nome del criterio di accesso esterno assegnato ad Alex su un valore ($Null). Null vuol dire "niente". In altre parole, nessun criterio di accesso esterno viene assegnato ad Alex. Se non viene assegnato alcun criterio di accesso esterno a un utente, quest'ultimo viene gestito dal criterio globale.
-  
 
 ## <a name="managing-large-numbers-of-users"></a>Gestione di un numero elevato di utenti
 
-Per gestire un numero elevato di utenti (1000 o più), è necessario batch i comandi tramite un blocco di script utilizzando il cmdlet [Invoke-Command.](/powershell/module/microsoft.powershell.core/invoke-command?view=powershell-7)  Negli esempi precedenti, ogni volta che viene eseguito un cmdlet, è necessario configurare la chiamata e quindi attendere il risultato prima di inviarlo di nuovo.  Quando si utilizza un blocco di script, in questo modo i cmdlet possono essere eseguiti in remoto e, una volta completati, inviare di nuovo i dati. 
+Per gestire un numero elevato di utenti (1000 o più), è necessario batch i comandi tramite un blocco di script utilizzando il cmdlet [Invoke-Command.](/powershell/module/microsoft.powershell.core/invoke-command)  Negli esempi precedenti, ogni volta che viene eseguito un cmdlet, è necessario configurare la chiamata e quindi attendere il risultato prima di inviarlo di nuovo.  Quando si utilizza un blocco di script, in questo modo i cmdlet possono essere eseguiti in remoto e, una volta completati, inviare di nuovo i dati.
 
 ```powershell
 $users = Get-CsOnlineUser -Filter { ClientPolicy -eq $null } -ResultSize 500

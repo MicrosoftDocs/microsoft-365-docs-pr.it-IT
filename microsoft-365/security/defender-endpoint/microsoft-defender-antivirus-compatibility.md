@@ -16,12 +16,12 @@ ms.reviewer: tewchen, pahuijbr
 manager: dansimp
 ms.technology: mde
 ms.date: 05/08/2021
-ms.openlocfilehash: e4675626e9debf3ef3a295f7c797ac254e82395f
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: f03fab3f296f98b448693c6a5d0886f409201703
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52926020"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53288480"
 ---
 # <a name="microsoft-defender-antivirus-compatibility"></a>Antivirus Microsoft Defender compatibilità
 
@@ -79,7 +79,7 @@ Se si utilizza Windows Server, versione 1803 o successiva o Windows Server 2019,
 - Valore: `1`
 
 > [!NOTE]
-> La modalità passiva non è supportata Windows Server 2016. La chiave del Registro di sistema può essere utilizzata in Windows Server, versione 1803 o successiva o `ForcePassiveMode` Windows Server 2019, ma non Windows Server 2016. 
+> La modalità passiva non è supportata Windows Server 2016. La chiave del Registro di sistema può essere utilizzata in Windows Server, versione 1803 o successiva o `ForceDefenderPassiveMode` Windows Server 2019, ma non Windows Server 2016. 
 
 (<a id="fn2">2</a>) In Windows Server 2016, se si utilizza un prodotto antivirus non Microsoft, non è possibile eseguire Antivirus Microsoft Defender in modalità passiva o attiva. In questi casi, [disabilitare/disinstallare Antivirus Microsoft Defender manualmente](microsoft-defender-antivirus-on-windows-server.md#are-you-using-windows-server-2016) per evitare problemi causati dall'installazione di più prodotti antivirus in un server.
 
@@ -99,7 +99,7 @@ Nella tabella di questa sezione sono riepilogate le funzionalità e le funzional
 > [!IMPORTANT]
 > Non disattivare le funzionalità, ad esempio la protezione in tempo reale, la protezione offerta dal cloud o l'analisi periodica limitata, se si usa Antivirus Microsoft Defender in modalità passiva o si usa EDR in modalità blocco. 
 
-|Protezione |Modalità attiva |Modalità passiva |EdR in modalità blocco |Disabilitato o disinstallato |
+|Protezione |Modalità attiva |Modalità passiva |EDR in modalità blocco |Disabilitato o disinstallato |
 |:---|:---|:---|:---|:---|
 | [Protezione in tempo reale](configure-real-time-protection-microsoft-defender-antivirus.md) e [protezione basata sul cloud](enable-cloud-protection-microsoft-defender-antivirus.md) | Sì | No <sup> [[3](#fn3)]<sup> | No | No |
 | [Disponibilità di analisi periodica limitata](limited-periodic-scanning-microsoft-defender-antivirus.md) | No | No | No | Sì |
