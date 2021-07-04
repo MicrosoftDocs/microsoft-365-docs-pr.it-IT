@@ -16,22 +16,22 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 4da646a52392871cde99271a17ed6eb9111f51ab
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: dcc8a9214e0a6d0a0ede3b08aa6a019f2f0c4d2c
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52769246"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289848"
 ---
-# <a name="list-alerts-api"></a><span data-ttu-id="e6e86-104">API avvisi elenco</span><span class="sxs-lookup"><span data-stu-id="e6e86-104">List alerts API</span></span>
+# <a name="list-alerts-api"></a><span data-ttu-id="28db0-104">API avvisi elenco</span><span class="sxs-lookup"><span data-stu-id="28db0-104">List alerts API</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-<span data-ttu-id="e6e86-105">**Si applica a:**</span><span class="sxs-lookup"><span data-stu-id="e6e86-105">**Applies to:**</span></span>
-- [<span data-ttu-id="e6e86-106">Microsoft Defender per endpoint</span><span class="sxs-lookup"><span data-stu-id="e6e86-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [<span data-ttu-id="e6e86-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="e6e86-107">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
+<span data-ttu-id="28db0-105">**Si applica a:**</span><span class="sxs-lookup"><span data-stu-id="28db0-105">**Applies to:**</span></span>
+- [<span data-ttu-id="28db0-106">Microsoft Defender per endpoint</span><span class="sxs-lookup"><span data-stu-id="28db0-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [<span data-ttu-id="28db0-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="28db0-107">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> <span data-ttu-id="e6e86-108">Vuoi provare Microsoft Defender per Endpoint?</span><span class="sxs-lookup"><span data-stu-id="e6e86-108">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="e6e86-109">Iscriversi per una versione di valutazione gratuita.</span><span class="sxs-lookup"><span data-stu-id="e6e86-109">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> <span data-ttu-id="28db0-108">Vuoi provare Microsoft Defender per Endpoint?</span><span class="sxs-lookup"><span data-stu-id="28db0-108">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="28db0-109">Iscriversi per una versione di valutazione gratuita.</span><span class="sxs-lookup"><span data-stu-id="28db0-109">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
@@ -39,74 +39,75 @@ ms.locfileid: "52769246"
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 
-## <a name="api-description"></a><span data-ttu-id="e6e86-110">Descrizione API</span><span class="sxs-lookup"><span data-stu-id="e6e86-110">API description</span></span>
-<span data-ttu-id="e6e86-111">Recupera una raccolta di avvisi.</span><span class="sxs-lookup"><span data-stu-id="e6e86-111">Retrieves a collection of Alerts.</span></span>
-<br><span data-ttu-id="e6e86-112">Supporta le [query OData V4.](https://www.odata.org/documentation/)</span><span class="sxs-lookup"><span data-stu-id="e6e86-112">Supports [OData V4 queries](https://www.odata.org/documentation/).</span></span>
-<br><span data-ttu-id="e6e86-113">Operatori supportati da OData:</span><span class="sxs-lookup"><span data-stu-id="e6e86-113">OData supported operators:</span></span>
-<br><span data-ttu-id="e6e86-114">```$filter``` on: ```alertCreationTime``` ```lastUpdateTime``` , , , , ```incidentId``` e ```InvestigationId``` le ```status``` ```severity``` ```category``` proprietà.</span><span class="sxs-lookup"><span data-stu-id="e6e86-114">```$filter``` on: ```alertCreationTime```, ```lastUpdateTime```, ```incidentId```,```InvestigationId```, ```status```, ```severity``` and ```category``` properties.</span></span>
-<br><span data-ttu-id="e6e86-115">```$top``` con valore massimo di 10.000</span><span class="sxs-lookup"><span data-stu-id="e6e86-115">```$top``` with max value of 10,000</span></span>
+## <a name="api-description"></a><span data-ttu-id="28db0-110">Descrizione API</span><span class="sxs-lookup"><span data-stu-id="28db0-110">API description</span></span>
+<span data-ttu-id="28db0-111">Recupera una raccolta di avvisi.</span><span class="sxs-lookup"><span data-stu-id="28db0-111">Retrieves a collection of Alerts.</span></span>
+<br><span data-ttu-id="28db0-112">Supporta le [query OData V4.](https://www.odata.org/documentation/)</span><span class="sxs-lookup"><span data-stu-id="28db0-112">Supports [OData V4 queries](https://www.odata.org/documentation/).</span></span>
+<br><span data-ttu-id="28db0-113">Operatori supportati da OData:</span><span class="sxs-lookup"><span data-stu-id="28db0-113">OData supported operators:</span></span>
+<br><span data-ttu-id="28db0-114">```$filter``` on: ```alertCreationTime``` ```lastUpdateTime``` , , , , ```incidentId``` e ```InvestigationId``` le ```status``` ```severity``` ```category``` proprietà.</span><span class="sxs-lookup"><span data-stu-id="28db0-114">```$filter``` on: ```alertCreationTime```, ```lastUpdateTime```, ```incidentId```,```InvestigationId```, ```status```, ```severity``` and ```category``` properties.</span></span>
+<br><span data-ttu-id="28db0-115">```$top``` con valore massimo di 10.000</span><span class="sxs-lookup"><span data-stu-id="28db0-115">```$top``` with max value of 10,000</span></span>
 <br>```$skip```
-<br><span data-ttu-id="e6e86-116">```$expand``` di ```evidence```</span><span class="sxs-lookup"><span data-stu-id="e6e86-116">```$expand``` of ```evidence```</span></span>
-<br><span data-ttu-id="e6e86-117">Vedi esempi in [Query OData con Microsoft Defender for Endpoint](exposed-apis-odata-samples.md)</span><span class="sxs-lookup"><span data-stu-id="e6e86-117">See examples at [OData queries with Microsoft Defender for Endpoint](exposed-apis-odata-samples.md)</span></span>
+<br><span data-ttu-id="28db0-116">```$expand``` di ```evidence```</span><span class="sxs-lookup"><span data-stu-id="28db0-116">```$expand``` of ```evidence```</span></span>
+<br><span data-ttu-id="28db0-117">Vedi esempi in [Query OData con Microsoft Defender for Endpoint](exposed-apis-odata-samples.md)</span><span class="sxs-lookup"><span data-stu-id="28db0-117">See examples at [OData queries with Microsoft Defender for Endpoint](exposed-apis-odata-samples.md)</span></span>
 
 
-## <a name="limitations"></a><span data-ttu-id="e6e86-118">Limitazioni</span><span class="sxs-lookup"><span data-stu-id="e6e86-118">Limitations</span></span>
-1. <span data-ttu-id="e6e86-119">È possibile ottenere gli avvisi aggiornati per l'ultima volta in base al periodo di conservazione configurato.</span><span class="sxs-lookup"><span data-stu-id="e6e86-119">You can get alerts last updated according to your configured retention period.</span></span>
-2. <span data-ttu-id="e6e86-120">Le dimensioni massime della pagina sono 10.000.</span><span class="sxs-lookup"><span data-stu-id="e6e86-120">Maximum page size is 10,000.</span></span>
-3. <span data-ttu-id="e6e86-121">I limiti di frequenza per questa API sono 100 chiamate al minuto e 1500 chiamate all'ora.</span><span class="sxs-lookup"><span data-stu-id="e6e86-121">Rate limitations for this API are 100 calls per minute and 1500 calls per hour.</span></span> 
+## <a name="limitations"></a><span data-ttu-id="28db0-118">Limitazioni</span><span class="sxs-lookup"><span data-stu-id="28db0-118">Limitations</span></span>
+1. <span data-ttu-id="28db0-119">È possibile ottenere gli avvisi aggiornati per l'ultima volta in base al periodo di conservazione configurato.</span><span class="sxs-lookup"><span data-stu-id="28db0-119">You can get alerts last updated according to your configured retention period.</span></span>
+2. <span data-ttu-id="28db0-120">Le dimensioni massime della pagina sono 10.000.</span><span class="sxs-lookup"><span data-stu-id="28db0-120">Maximum page size is 10,000.</span></span>
+3. <span data-ttu-id="28db0-121">I limiti di frequenza per questa API sono 100 chiamate al minuto e 1500 chiamate all'ora.</span><span class="sxs-lookup"><span data-stu-id="28db0-121">Rate limitations for this API are 100 calls per minute and 1500 calls per hour.</span></span> 
 
 
-## <a name="permissions"></a><span data-ttu-id="e6e86-122">Autorizzazioni</span><span class="sxs-lookup"><span data-stu-id="e6e86-122">Permissions</span></span>
-<span data-ttu-id="e6e86-123">Per chiamare questa API è necessaria una delle autorizzazioni seguenti.</span><span class="sxs-lookup"><span data-stu-id="e6e86-123">One of the following permissions is required to call this API.</span></span> <span data-ttu-id="e6e86-124">Per altre informazioni, inclusa la scelta delle autorizzazioni, vedi [Usare Microsoft Defender per le API endpoint](apis-intro.md)</span><span class="sxs-lookup"><span data-stu-id="e6e86-124">To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs](apis-intro.md)</span></span>
+## <a name="permissions"></a><span data-ttu-id="28db0-122">Autorizzazioni</span><span class="sxs-lookup"><span data-stu-id="28db0-122">Permissions</span></span>
+<span data-ttu-id="28db0-123">Per chiamare questa API è necessaria una delle autorizzazioni seguenti.</span><span class="sxs-lookup"><span data-stu-id="28db0-123">One of the following permissions is required to call this API.</span></span> <span data-ttu-id="28db0-124">Per altre informazioni, inclusa la scelta delle autorizzazioni, vedi [Usare Microsoft Defender per le API endpoint](apis-intro.md)</span><span class="sxs-lookup"><span data-stu-id="28db0-124">To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs](apis-intro.md)</span></span>
 
-<span data-ttu-id="e6e86-125">Tipo di autorizzazione</span><span class="sxs-lookup"><span data-stu-id="e6e86-125">Permission type</span></span> |   <span data-ttu-id="e6e86-126">Autorizzazione</span><span class="sxs-lookup"><span data-stu-id="e6e86-126">Permission</span></span>  |   <span data-ttu-id="e6e86-127">Nome visualizzato autorizzazione</span><span class="sxs-lookup"><span data-stu-id="e6e86-127">Permission display name</span></span>
+<span data-ttu-id="28db0-125">Tipo di autorizzazione</span><span class="sxs-lookup"><span data-stu-id="28db0-125">Permission type</span></span> | <span data-ttu-id="28db0-126">Autorizzazione</span><span class="sxs-lookup"><span data-stu-id="28db0-126">Permission</span></span> | <span data-ttu-id="28db0-127">Nome visualizzato autorizzazione</span><span class="sxs-lookup"><span data-stu-id="28db0-127">Permission display name</span></span>
 :---|:---|:---
-<span data-ttu-id="e6e86-128">Applicazione</span><span class="sxs-lookup"><span data-stu-id="e6e86-128">Application</span></span> |   <span data-ttu-id="e6e86-129">Alert.Read.All</span><span class="sxs-lookup"><span data-stu-id="e6e86-129">Alert.Read.All</span></span> |    <span data-ttu-id="e6e86-130">"Leggi tutti gli avvisi"</span><span class="sxs-lookup"><span data-stu-id="e6e86-130">'Read all alerts'</span></span>
-<span data-ttu-id="e6e86-131">Applicazione</span><span class="sxs-lookup"><span data-stu-id="e6e86-131">Application</span></span> |   <span data-ttu-id="e6e86-132">Alert.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e6e86-132">Alert.ReadWrite.All</span></span> |   <span data-ttu-id="e6e86-133">"Lettura e scrittura di tutti gli avvisi"</span><span class="sxs-lookup"><span data-stu-id="e6e86-133">'Read and write all alerts'</span></span>
-<span data-ttu-id="e6e86-134">Delegato (account aziendale o dell'istituto di istruzione)</span><span class="sxs-lookup"><span data-stu-id="e6e86-134">Delegated (work or school account)</span></span> | <span data-ttu-id="e6e86-135">Alert.Read</span><span class="sxs-lookup"><span data-stu-id="e6e86-135">Alert.Read</span></span> | <span data-ttu-id="e6e86-136">"Avvisi di lettura"</span><span class="sxs-lookup"><span data-stu-id="e6e86-136">'Read alerts'</span></span>
-<span data-ttu-id="e6e86-137">Delegato (account aziendale o dell'istituto di istruzione)</span><span class="sxs-lookup"><span data-stu-id="e6e86-137">Delegated (work or school account)</span></span> | <span data-ttu-id="e6e86-138">Alert.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="e6e86-138">Alert.ReadWrite</span></span> | <span data-ttu-id="e6e86-139">"Avvisi di lettura e scrittura"</span><span class="sxs-lookup"><span data-stu-id="e6e86-139">'Read and write alerts'</span></span>
+<span data-ttu-id="28db0-128">Applicazione</span><span class="sxs-lookup"><span data-stu-id="28db0-128">Application</span></span> | <span data-ttu-id="28db0-129">Alert.Read.All</span><span class="sxs-lookup"><span data-stu-id="28db0-129">Alert.Read.All</span></span> | <span data-ttu-id="28db0-130">"Leggi tutti gli avvisi"</span><span class="sxs-lookup"><span data-stu-id="28db0-130">'Read all alerts'</span></span>
+<span data-ttu-id="28db0-131">Applicazione</span><span class="sxs-lookup"><span data-stu-id="28db0-131">Application</span></span> | <span data-ttu-id="28db0-132">Alert.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="28db0-132">Alert.ReadWrite.All</span></span> | <span data-ttu-id="28db0-133">"Lettura e scrittura di tutti gli avvisi"</span><span class="sxs-lookup"><span data-stu-id="28db0-133">'Read and write all alerts'</span></span>
+<span data-ttu-id="28db0-134">Delegato (account aziendale o dell'istituto di istruzione)</span><span class="sxs-lookup"><span data-stu-id="28db0-134">Delegated (work or school account)</span></span> | <span data-ttu-id="28db0-135">Alert.Read</span><span class="sxs-lookup"><span data-stu-id="28db0-135">Alert.Read</span></span> | <span data-ttu-id="28db0-136">"Avvisi di lettura"</span><span class="sxs-lookup"><span data-stu-id="28db0-136">'Read alerts'</span></span>
+<span data-ttu-id="28db0-137">Delegato (account aziendale o dell'istituto di istruzione)</span><span class="sxs-lookup"><span data-stu-id="28db0-137">Delegated (work or school account)</span></span> | <span data-ttu-id="28db0-138">Alert.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="28db0-138">Alert.ReadWrite</span></span> | <span data-ttu-id="28db0-139">"Avvisi di lettura e scrittura"</span><span class="sxs-lookup"><span data-stu-id="28db0-139">'Read and write alerts'</span></span>
 
->[!Note]
-> <span data-ttu-id="e6e86-140">Quando si ottiene un token utilizzando le credenziali utente:</span><span class="sxs-lookup"><span data-stu-id="e6e86-140">When obtaining a token using user credentials:</span></span>
->- <span data-ttu-id="e6e86-141">L'utente deve disporre almeno dell'autorizzazione di ruolo seguente: 'Visualizza dati' (per ulteriori informazioni, vedere [Creare](user-roles.md) e gestire ruoli)</span><span class="sxs-lookup"><span data-stu-id="e6e86-141">The user needs to have at least the following role permission: 'View Data' (See [Create and manage roles](user-roles.md) for more information)</span></span>
->- <span data-ttu-id="e6e86-142">La risposta includerà solo gli avvisi associati ai dispositivi a cui l'utente può accedere, in base alle impostazioni del gruppo di dispositivi (per ulteriori informazioni, vedere [Creare](machine-groups.md) e gestire gruppi di dispositivi)</span><span class="sxs-lookup"><span data-stu-id="e6e86-142">The response will include only alerts that are associated with devices that the user can access, based on device group settings (See [Create and manage device groups](machine-groups.md) for more information)</span></span>
+> [!NOTE]
+> <span data-ttu-id="28db0-140">Quando si ottiene un token utilizzando le credenziali utente:</span><span class="sxs-lookup"><span data-stu-id="28db0-140">When obtaining a token using user credentials:</span></span>
+>
+> - <span data-ttu-id="28db0-141">L'utente deve disporre almeno dell'autorizzazione di ruolo seguente: 'Visualizza dati' (per ulteriori informazioni, vedere [Creare](user-roles.md) e gestire ruoli)</span><span class="sxs-lookup"><span data-stu-id="28db0-141">The user needs to have at least the following role permission: 'View Data' (See [Create and manage roles](user-roles.md) for more information)</span></span>
+> - <span data-ttu-id="28db0-142">La risposta includerà solo gli avvisi associati ai dispositivi a cui l'utente può accedere, in base alle impostazioni del gruppo di dispositivi (per ulteriori informazioni, vedere [Creare](machine-groups.md) e gestire gruppi di dispositivi)</span><span class="sxs-lookup"><span data-stu-id="28db0-142">The response will include only alerts that are associated with devices that the user can access, based on device group settings (See [Create and manage device groups](machine-groups.md) for more information)</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="e6e86-143">Richiesta HTTP</span><span class="sxs-lookup"><span data-stu-id="e6e86-143">HTTP request</span></span>
-```
+## <a name="http-request"></a><span data-ttu-id="28db0-143">Richiesta HTTP</span><span class="sxs-lookup"><span data-stu-id="28db0-143">HTTP request</span></span>
+
+```http
 GET /api/alerts
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="e6e86-144">Intestazioni di richiesta</span><span class="sxs-lookup"><span data-stu-id="e6e86-144">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="28db0-144">Intestazioni di richiesta</span><span class="sxs-lookup"><span data-stu-id="28db0-144">Request headers</span></span>
 
-<span data-ttu-id="e6e86-145">Name</span><span class="sxs-lookup"><span data-stu-id="e6e86-145">Name</span></span> | <span data-ttu-id="e6e86-146">Tipo</span><span class="sxs-lookup"><span data-stu-id="e6e86-146">Type</span></span> | <span data-ttu-id="e6e86-147">Descrizione</span><span class="sxs-lookup"><span data-stu-id="e6e86-147">Description</span></span>
+<span data-ttu-id="28db0-145">Nome</span><span class="sxs-lookup"><span data-stu-id="28db0-145">Name</span></span> | <span data-ttu-id="28db0-146">Tipo</span><span class="sxs-lookup"><span data-stu-id="28db0-146">Type</span></span> | <span data-ttu-id="28db0-147">Descrizione</span><span class="sxs-lookup"><span data-stu-id="28db0-147">Description</span></span>
 :---|:---|:---
-<span data-ttu-id="e6e86-148">Autorizzazione</span><span class="sxs-lookup"><span data-stu-id="e6e86-148">Authorization</span></span> | <span data-ttu-id="e6e86-149">Stringa</span><span class="sxs-lookup"><span data-stu-id="e6e86-149">String</span></span> | <span data-ttu-id="e6e86-150">Bearer {token}.</span><span class="sxs-lookup"><span data-stu-id="e6e86-150">Bearer {token}.</span></span> <span data-ttu-id="e6e86-151">**Obbligatorio**.</span><span class="sxs-lookup"><span data-stu-id="e6e86-151">**Required**.</span></span>
+<span data-ttu-id="28db0-148">Autorizzazione</span><span class="sxs-lookup"><span data-stu-id="28db0-148">Authorization</span></span> | <span data-ttu-id="28db0-149">Stringa</span><span class="sxs-lookup"><span data-stu-id="28db0-149">String</span></span> | <span data-ttu-id="28db0-150">Bearer {token}.</span><span class="sxs-lookup"><span data-stu-id="28db0-150">Bearer {token}.</span></span> <span data-ttu-id="28db0-151">**Obbligatorio**.</span><span class="sxs-lookup"><span data-stu-id="28db0-151">**Required**.</span></span>
 
+## <a name="request-body"></a><span data-ttu-id="28db0-152">Corpo della richiesta</span><span class="sxs-lookup"><span data-stu-id="28db0-152">Request body</span></span>
 
-## <a name="request-body"></a><span data-ttu-id="e6e86-152">Corpo della richiesta</span><span class="sxs-lookup"><span data-stu-id="e6e86-152">Request body</span></span>
-<span data-ttu-id="e6e86-153">Vuoto</span><span class="sxs-lookup"><span data-stu-id="e6e86-153">Empty</span></span>
+<span data-ttu-id="28db0-153">Vuoto</span><span class="sxs-lookup"><span data-stu-id="28db0-153">Empty</span></span>
 
-## <a name="response"></a><span data-ttu-id="e6e86-154">Risposta</span><span class="sxs-lookup"><span data-stu-id="e6e86-154">Response</span></span>
-<span data-ttu-id="e6e86-155">Se ha esito positivo, questo metodo restituisce 200 OK e un elenco di oggetti [avviso](alerts.md) nel corpo della risposta.</span><span class="sxs-lookup"><span data-stu-id="e6e86-155">If successful, this method returns 200 OK, and a list of [alert](alerts.md) objects in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="28db0-154">Risposta</span><span class="sxs-lookup"><span data-stu-id="28db0-154">Response</span></span>
 
+<span data-ttu-id="28db0-155">Se ha esito positivo, questo metodo restituisce 200 OK e un elenco di oggetti [avviso](alerts.md) nel corpo della risposta.</span><span class="sxs-lookup"><span data-stu-id="28db0-155">If successful, this method returns 200 OK, and a list of [alert](alerts.md) objects in the response body.</span></span>
 
-## <a name="example-1---default"></a><span data-ttu-id="e6e86-156">Esempio 1 - Impostazione predefinita</span><span class="sxs-lookup"><span data-stu-id="e6e86-156">Example 1 - Default</span></span>
+## <a name="example-1---default"></a><span data-ttu-id="28db0-156">Esempio 1 - Impostazione predefinita</span><span class="sxs-lookup"><span data-stu-id="28db0-156">Example 1 - Default</span></span>
 
-<span data-ttu-id="e6e86-157">**Richiesta**</span><span class="sxs-lookup"><span data-stu-id="e6e86-157">**Request**</span></span>
+### <a name="request"></a><span data-ttu-id="28db0-157">Richiesta</span><span class="sxs-lookup"><span data-stu-id="28db0-157">Request</span></span>
 
-<span data-ttu-id="e6e86-158">Ecco un esempio della richiesta.</span><span class="sxs-lookup"><span data-stu-id="e6e86-158">Here is an example of the request.</span></span>
+<span data-ttu-id="28db0-158">Ecco un esempio della richiesta.</span><span class="sxs-lookup"><span data-stu-id="28db0-158">Here is an example of the request.</span></span>
 
 ```http
 GET https://api.securitycenter.microsoft.com/api/alerts
 ```
 
-<span data-ttu-id="e6e86-159">**Risposta**</span><span class="sxs-lookup"><span data-stu-id="e6e86-159">**Response**</span></span>
+### <a name="response"></a><span data-ttu-id="28db0-159">Risposta</span><span class="sxs-lookup"><span data-stu-id="28db0-159">Response</span></span>
 
-<span data-ttu-id="e6e86-160">Ecco un esempio di risposta.</span><span class="sxs-lookup"><span data-stu-id="e6e86-160">Here is an example of the response.</span></span>
+<span data-ttu-id="28db0-160">Ecco un esempio di risposta.</span><span class="sxs-lookup"><span data-stu-id="28db0-160">Here is an example of the response.</span></span>
 
->[!NOTE]
-><span data-ttu-id="e6e86-161">L'elenco delle risposte mostrato qui potrebbe essere troncato per brevità.</span><span class="sxs-lookup"><span data-stu-id="e6e86-161">The response list shown here may be truncated for brevity.</span></span> <span data-ttu-id="e6e86-162">Tutti gli avvisi verranno restituiti da una chiamata effettiva.</span><span class="sxs-lookup"><span data-stu-id="e6e86-162">All alerts will be returned from an actual call.</span></span>
-
+> [!NOTE]
+> <span data-ttu-id="28db0-161">L'elenco delle risposte mostrato qui potrebbe essere troncato per brevità.</span><span class="sxs-lookup"><span data-stu-id="28db0-161">The response list shown here may be truncated for brevity.</span></span> <span data-ttu-id="28db0-162">Tutti gli avvisi verranno restituiti da una chiamata effettiva.</span><span class="sxs-lookup"><span data-stu-id="28db0-162">All alerts will be returned from an actual call.</span></span>
 
 ```json
 {
@@ -160,24 +161,22 @@ GET https://api.securitycenter.microsoft.com/api/alerts
 }
 ```
 
-## <a name="example-2---get-10-latest-alerts-with-related-evidence"></a><span data-ttu-id="e6e86-163">Esempio 2 - Ottenere 10 avvisi più recenti con prove correlate</span><span class="sxs-lookup"><span data-stu-id="e6e86-163">Example 2 - Get 10 latest Alerts with related Evidence</span></span>
+## <a name="example-2---get-10-latest-alerts-with-related-evidence"></a><span data-ttu-id="28db0-163">Esempio 2 - Ottenere 10 avvisi più recenti con prove correlate</span><span class="sxs-lookup"><span data-stu-id="28db0-163">Example 2 - Get 10 latest Alerts with related Evidence</span></span>
 
-<span data-ttu-id="e6e86-164">**Richiesta**</span><span class="sxs-lookup"><span data-stu-id="e6e86-164">**Request**</span></span>
+### <a name="request"></a><span data-ttu-id="28db0-164">Richiesta</span><span class="sxs-lookup"><span data-stu-id="28db0-164">Request</span></span>
 
-<span data-ttu-id="e6e86-165">Ecco un esempio della richiesta.</span><span class="sxs-lookup"><span data-stu-id="e6e86-165">Here is an example of the request.</span></span>
+<span data-ttu-id="28db0-165">Ecco un esempio della richiesta.</span><span class="sxs-lookup"><span data-stu-id="28db0-165">Here is an example of the request.</span></span>
 
 ```http
 GET https://api.securitycenter.microsoft.com/api/alerts?$top=10&$expand=evidence
 ```
 
+### <a name="response"></a><span data-ttu-id="28db0-166">Risposta</span><span class="sxs-lookup"><span data-stu-id="28db0-166">Response</span></span>
 
-<span data-ttu-id="e6e86-166">**Risposta**</span><span class="sxs-lookup"><span data-stu-id="e6e86-166">**Response**</span></span>
+<span data-ttu-id="28db0-167">Ecco un esempio di risposta.</span><span class="sxs-lookup"><span data-stu-id="28db0-167">Here is an example of the response.</span></span>
 
-<span data-ttu-id="e6e86-167">Ecco un esempio di risposta.</span><span class="sxs-lookup"><span data-stu-id="e6e86-167">Here is an example of the response.</span></span>
-
->[!NOTE]
-><span data-ttu-id="e6e86-168">L'elenco delle risposte mostrato qui potrebbe essere troncato per brevità.</span><span class="sxs-lookup"><span data-stu-id="e6e86-168">The response list shown here may be truncated for brevity.</span></span> <span data-ttu-id="e6e86-169">Tutti gli avvisi verranno restituiti da una chiamata effettiva.</span><span class="sxs-lookup"><span data-stu-id="e6e86-169">All alerts will be returned from an actual call.</span></span>
-
+> [!NOTE]
+> <span data-ttu-id="28db0-168">L'elenco delle risposte mostrato qui potrebbe essere troncato per brevità.</span><span class="sxs-lookup"><span data-stu-id="28db0-168">The response list shown here may be truncated for brevity.</span></span> <span data-ttu-id="28db0-169">Tutti gli avvisi verranno restituiti da una chiamata effettiva.</span><span class="sxs-lookup"><span data-stu-id="28db0-169">All alerts will be returned from an actual call.</span></span>
 
 ```json
 {
@@ -314,6 +313,6 @@ GET https://api.securitycenter.microsoft.com/api/alerts?$top=10&$expand=evidence
 }
 ```
 
+## <a name="see-also"></a><span data-ttu-id="28db0-170">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="28db0-170">See also</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="e6e86-170">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="e6e86-170">See also</span></span>
-- [<span data-ttu-id="e6e86-171">Query OData con Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="e6e86-171">OData queries with Microsoft Defender for Endpoint</span></span>](exposed-apis-odata-samples.md)
+[<span data-ttu-id="28db0-171">Query OData con Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="28db0-171">OData queries with Microsoft Defender for Endpoint</span></span>](exposed-apis-odata-samples.md)
