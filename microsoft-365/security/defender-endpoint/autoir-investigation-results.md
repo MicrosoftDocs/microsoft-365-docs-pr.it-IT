@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: c593dfe384649b1599d5c0bab8fa6a8204d105dc
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: a10442bc9d92bb6004149180da30b86b646dd5de
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274833"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53290160"
 ---
 # <a name="view-the-details-and-results-of-an-automated-investigation"></a>Visualizzare i dettagli e i risultati di un'indagine automatizzata
 
@@ -45,6 +45,7 @@ La pagina di indagine è stata aggiornata di recente per includere informazioni 
 ## <a name="open-the-investigation-details-view"></a>Aprire la visualizzazione dei dettagli dell'indagine
 
 È possibile aprire la visualizzazione dei dettagli dell'indagine utilizzando uno dei metodi seguenti:
+
 - [Selezionare un elemento nel centro notifiche](#select-an-item-in-the-action-center)
 - [Selezionare un'indagine dalla pagina dei dettagli dell'incidente](#open-an-investigation-from-an-incident-details-page)
 
@@ -82,17 +83,17 @@ Nella visualizzazione dei dettagli dell'indagine, è possibile vedere le informa
 
 | Scheda | Descrizione |
 |:--------|:--------|
-| **Grafico dell'indagine**   | Fornisce una rappresentazione visiva dell'indagine. Descrive le entità ed elenca le minacce rilevate, insieme agli avvisi e alle eventuali azioni ancora in fase di approvazione.<br/>È possibile selezionare un elemento nel grafico per visualizzare ulteriori dettagli. Ad esempio, selezionando **l'icona**  Prova si visualizza la scheda Prova, in cui è possibile visualizzare le entità rilevate e i relativi verdetti. |
-| **Avvisi**    | Elenca gli avvisi associati all'indagine. Gli avvisi possono derivare dalle funzionalità di protezione dalle minacce nel dispositivo di un utente, nelle app Office, Cloud App Security e altre funzionalità di Microsoft 365 Defender.|
+| **Grafico dell'indagine** | Fornisce una rappresentazione visiva dell'indagine. Descrive le entità ed elenca le minacce rilevate, insieme agli avvisi e alle eventuali azioni ancora in fase di approvazione.<br/>È possibile selezionare un elemento nel grafico per visualizzare ulteriori dettagli. Ad esempio, selezionando **l'icona**  Prova si visualizza la scheda Prova, in cui è possibile visualizzare le entità rilevate e i relativi verdetti. |
+| **Avvisi** | Elenca gli avvisi associati all'indagine. Gli avvisi possono derivare dalle funzionalità di protezione dalle minacce nel dispositivo di un utente, nelle app Office, nelle Cloud App Security e in altre Microsoft 365 Defender funzionalità.|
 | **Dispositivi** | Elenca i dispositivi inclusi nell'indagine insieme al relativo livello di correzione. I livelli di correzione corrispondono al livello [di automazione per i gruppi di dispositivi.](automation-levels.md) |
 | **Cassette postali** |Elenca le cassette postali che sono influenzate dalle minacce rilevate.  |
 | **Utenti**  | Elenca gli account utente che sono influenzati dalle minacce rilevate. |
 | **Prova** | Elenca le prove generate da avvisi/indagini. Include i verdetti (*Dannoso,* *Sospetto* o Nessuna minaccia *trovata)* e lo stato di correzione. |
-| **Entità**  | Fornisce informazioni dettagliate su ogni entità analizzata, incluso un verdetto per ogni tipo di entità (*Dannoso,* *Sospetto* o *Nessuna minaccia trovata).*|
-|**Log**    | Fornisce una visualizzazione cronologica dettagliata di tutte le azioni di indagine eseguite dopo l'attivazione di un avviso.|
+| **Entità** | Fornisce informazioni dettagliate su ogni entità analizzata, incluso un verdetto per ogni tipo di entità (*Dannoso,* *Sospetto* o *Nessuna minaccia trovata).*|
+|**Log** | Fornisce una visualizzazione cronologica dettagliata di tutte le azioni di indagine eseguite dopo l'attivazione di un avviso.|
 | **Azioni in sospeso** | Elenca gli elementi che richiedono l'approvazione per continuare. Passare al centro notifiche ( [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) ) per approvare le azioni in sospeso. |
 
 ## <a name="see-also"></a>Vedere anche
 
 - [Esaminare le azioni di correzione dopo un'indagine automatizzata](manage-auto-investigation.md)
-- [Visualizzare e organizzare la coda eventi imprevisti di Microsoft Defender per endpoint](view-incidents-queue.md)
+- [Visualizzare e organizzare la coda degli incidenti di Microsoft Defender per endpoint](view-incidents-queue.md)

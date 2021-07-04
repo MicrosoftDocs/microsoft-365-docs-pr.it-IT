@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: 9ee2f0402e8cfd184e59dce5a382f835b706d6aa
-ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
+ms.openlocfilehash: 2cc83e24d4dd81c9d2e972fa274b48fc3946532a
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53022561"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289728"
 ---
 # <a name="details-and-results-of-an-automated-investigation"></a>Dettagli e risultati di un'indagine automatizzata
 
@@ -104,14 +104,14 @@ Nella visualizzazione dei dettagli dell'indagine, è possibile vedere le informa
 
 | Scheda | Descrizione |
 |:--------|:--------|
-| **Grafico dell'indagine**   | Fornisce una rappresentazione visiva dell'indagine. Descrive le entità ed elenca le minacce rilevate, insieme agli avvisi e alle eventuali azioni ancora in fase di approvazione.<br/>È possibile selezionare un elemento nel grafico per visualizzare ulteriori dettagli. Ad esempio, selezionando **l'icona**  Prova si visualizza la scheda Prova, in cui è possibile visualizzare le entità rilevate e i relativi verdetti. |
-| **Avvisi**    | Elenca gli avvisi associati all'indagine. Gli avvisi possono derivare dalle funzionalità di protezione dalle minacce nel dispositivo di un utente, nelle app Office, nelle Microsoft Cloud App Security e in altre Microsoft 365 Defender funzionalità.|
+| **Grafico dell'indagine** | Fornisce una rappresentazione visiva dell'indagine. Descrive le entità ed elenca le minacce rilevate, insieme agli avvisi e alle eventuali azioni ancora in fase di approvazione.<br/>È possibile selezionare un elemento nel grafico per visualizzare ulteriori dettagli. Ad esempio, selezionando **l'icona**  Prova si visualizza la scheda Prova, in cui è possibile visualizzare le entità rilevate e i relativi verdetti. |
+| **Avvisi** | Elenca gli avvisi associati all'indagine. Gli avvisi possono derivare dalle funzionalità di protezione dalle minacce nel dispositivo di un utente, nelle app Office, nelle Microsoft Cloud App Security e in altre Microsoft 365 Defender funzionalità.|
 | **Dispositivi** | Elenca i dispositivi inclusi nell'indagine insieme al relativo livello di correzione. I livelli di correzione corrispondono al [livello di automazione per i gruppi di dispositivi.](m365d-configure-auto-investigation-response.md#review-or-change-the-automation-level-for-device-groups) |
 | **Cassette postali** |Elenca le cassette postali che sono influenzate dalle minacce rilevate.  |
 | **Utenti**  | Elenca gli account utente che sono influenzati dalle minacce rilevate. |
 | **Prova** | Elenca le prove generate da avvisi o indagini. Include i verdetti (*Dannoso,* *Sospetto,* *Sconosciuto* *o* Nessuna minaccia trovata) e lo stato di correzione. |
-| **Entità**  | Fornisce informazioni dettagliate su ogni entità analizzata, incluso un verdetto per ogni tipo di entità (*Dannoso,* *Sospetto* o *Nessuna minaccia trovata).*|
-|**Log**    | Fornisce una visualizzazione cronologica dettagliata di tutte le azioni di indagine eseguite dopo l'attivazione di un avviso.|
+| **Entità** | Fornisce informazioni dettagliate su ogni entità analizzata, incluso un verdetto per ogni tipo di entità (*Dannoso,* *Sospetto* o *Nessuna minaccia trovata).*|
+|**Log** | Fornisce una visualizzazione cronologica dettagliata di tutte le azioni di indagine eseguite dopo l'attivazione di un avviso.|
 | **Cronologia azioni in sospeso** | Elenca gli elementi che richiedono l'approvazione per continuare. Passare al centro notifiche ( [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) ) per approvare le azioni in sospeso. |
 
 ## <a name="next-steps"></a>Passaggi successivi

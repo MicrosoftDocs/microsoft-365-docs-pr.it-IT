@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 0ddb38e713f08c101639976b9f2c8c1ee32e63a3
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 23d9d61644b4c9adad69a5e467e49ca2b1d92413
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52843783"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53290232"
 ---
 # <a name="create-custom-reports-using-power-bi"></a>Creare report personalizzati con Power BI
 
@@ -33,7 +33,7 @@ ms.locfileid: "52843783"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-- Vuoi provare Microsoft Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- Vuoi provare Microsoft Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -49,16 +49,16 @@ Il primo esempio illustra come connettersi Power BI'API Advanced Hunting e il se
 
 - Fare **clic su Ottieni query** vuota  >  **dati**
 
-    ![Immagine della creazione di una query vuota](images/power-bi-create-blank-query.png)
+  ![Immagine della creazione di una query vuota](images/power-bi-create-blank-query.png)
 
 - Fare clic **su Editor avanzato**
 
-    ![Immagine dell'editor avanzato aperto](images/power-bi-open-advanced-editor.png)
+  ![Immagine dell'editor avanzato aperto](images/power-bi-open-advanced-editor.png)
 
 - Copiare quanto segue e incollarlo nell'editor:
 
 ```
-    let 
+    let
         AdvancedHuntingQuery = "DeviceEvents | where ActionType contains 'Anti' | limit 20",
 
         HuntingUrl = "https://api.securitycenter.microsoft.com/api/advancedqueries",
@@ -93,7 +93,6 @@ Il primo esempio illustra come connettersi Power BI'API Advanced Hunting e il se
         Table = Table.TransformColumnTypes(Rows, Table.ToList(TypedSchema, (c) => {c{0}, c{2}}))
 
     in Table
-
 ```
 
 - Fare clic **su Fine**
@@ -118,7 +117,7 @@ Il primo esempio illustra come connettersi Power BI'API Advanced Hunting e il se
 
 ## <a name="connect-power-bi-to-odata-apis"></a>Connessione Power BI alle API OData
 
-- L'unica differenza rispetto all'esempio precedente è la query all'interno dell'editor. 
+- L'unica differenza rispetto all'esempio precedente è la query all'interno dell'editor.
 
 - Copia quanto segue e incollalo nell'editor per estrarre tutte **le azioni del computer** dall'organizzazione:
 
@@ -130,22 +129,21 @@ Il primo esempio illustra come connettersi Power BI'API Advanced Hunting e il se
         Source = OData.Feed("https://api.securitycenter.microsoft.com/api/" & Query, null, [Implementation="2.0", MoreColumns=true])
     in
         Source
-
 ```
 
 - È possibile eseguire la stessa operazione per **Avvisi** e **computer.**
-
 - È inoltre possibile utilizzare query OData per filtri di query, vedere [Utilizzo di query OData](exposed-apis-odata-samples.md)
 
-
 ## <a name="power-bi-dashboard-samples-in-github"></a>Power BI di dashboard in GitHub
+
 Per ulteriori informazioni, vedere i [modelli Power BI report.](https://github.com/microsoft/MicrosoftDefenderATP-PowerBI)
 
 ## <a name="sample-reports"></a>Report di esempio
+
 Visualizza gli esempi di report di Microsoft Defender for Endpoint Power BI. Per ulteriori informazioni, vedere [Sfogliare gli esempi di codice.](/samples/browse/?products=mdatp)
 
+## <a name="related-topics"></a>Argomenti correlati
 
-## <a name="related-topic"></a>Argomento correlato
 - [API defender per endpoint](apis-intro.md)
-- [Rilevazione avanzata API](run-advanced-query-api.md)
+- [API di rilevazione avanzata](run-advanced-query-api.md)
 - [Uso di query OData](exposed-apis-odata-samples.md)

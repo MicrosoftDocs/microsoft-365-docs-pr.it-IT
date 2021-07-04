@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: a506f4913369e53fd2ed4943bb2557935f1d62e5
-ms.sourcegitcommit: ccbdf2638fc6646bfb89450169953f4c3ce4b9b0
+ms.openlocfilehash: a7a560cb33190105f8df5922e04aeada4d75f398
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53105561"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53290040"
 ---
 # <a name="create-a-custom-gradual-rollout-process-for-microsoft-defender-updates"></a>Creare un processo di implementazione graduale personalizzato per gli aggiornamenti di Microsoft Defender
 
@@ -43,7 +43,7 @@ Per creare un processo di implementazione graduale personalizzato per gli aggior
 Nella tabella seguente sono elencate le impostazioni di Criteri di gruppo disponibili per la configurazione dei canali di aggiornamento:
 
 | Titolo dell'impostazione  | Descrizione  | Posizione  |
-|-|-|-|
+|:---|:---|:---|
 | Selezionare il canale graduale di implementazione dell'aggiornamento mensile della piattaforma Microsoft Defender  | Abilita questo criterio per specificare quando i dispositivi ricevono gli aggiornamenti della piattaforma Microsoft Defender durante l'implementazione graduale mensile. Canale beta: i dispositivi impostati su questo canale saranno i primi a ricevere nuovi aggiornamenti. Seleziona Canale beta per partecipare all'identificazione e alla segnalazione di problemi a Microsoft. I dispositivi nel Windows Insider Sono sottoscritti a questo canale per impostazione predefinita. Per l'uso solo in ambienti di test (manuali) e in un numero limitato di dispositivi.  <br><br>  Canale corrente (anteprima): i dispositivi impostati su questo canale riceveranno gli aggiornamenti prima durante il ciclo di rilascio graduale mensile. Consigliato per ambienti di pre-produzione/convalida.  <br><br>  Canale corrente (a fasi): i dispositivi verranno offerti aggiornamenti dopo il ciclo di rilascio graduale mensile. Si consiglia di applicarsi a una piccola parte rappresentativa della popolazione di produzione (~10%).  <br><br>  Canale corrente (Generale): ai dispositivi verranno offerti aggiornamenti solo al termine del ciclo di rilascio graduale. Consigliato per l'applicazione a un ampio set di dispositivi nella popolazione di produzione (~10-100%).  <br><br>   Se disabiliti o non configurerai questo criterio, il dispositivo rimarrà aggiornato automaticamente durante il ciclo di rilascio graduale. Adatto per la maggior parte dei dispositivi.  | Windows Components\Antivirus Microsoft Defender  |
 | Selezionare il canale graduale di implementazione degli aggiornamenti mensili del motore di Microsoft Defender  | Abilita questo criterio per specificare quando i dispositivi ricevono gli aggiornamenti del motore di Microsoft Defender durante l'implementazione graduale mensile.  <br><br>  Canale beta: i dispositivi impostati su questo canale saranno i primi a ricevere nuovi aggiornamenti. Seleziona Canale beta per partecipare all'identificazione e alla segnalazione di problemi a Microsoft. I dispositivi nel Windows Insider Sono sottoscritti a questo canale per impostazione predefinita. Per l'uso solo in ambienti di test (manuali) e in un numero limitato di dispositivi.  <br><br>  Canale corrente (anteprima): i dispositivi impostati su questo canale riceveranno gli aggiornamenti prima durante il ciclo di rilascio graduale mensile. Consigliato per ambienti di pre-produzione/convalida.  <br><br>  Canale corrente (a fasi): i dispositivi verranno offerti aggiornamenti dopo il ciclo di rilascio graduale mensile. Si consiglia di applicarsi a una piccola parte rappresentativa della popolazione di produzione (~10%).  <br><br>  Canale corrente (Generale): ai dispositivi verranno offerti aggiornamenti solo al termine del ciclo di rilascio graduale. Consigliato per l'applicazione a un ampio set di dispositivi nella popolazione di produzione (~10-100%).  <br><br>  Se disabiliti o non configurerai questo criterio, il dispositivo rimarrà aggiornato automaticamente durante il ciclo di rilascio graduale. Adatto per la maggior parte dei dispositivi.  | Windows Components\Antivirus Microsoft Defender  |
 | Selezionare il canale di implementazione graduale degli aggiornamenti delle definizioni giornaliere di Microsoft Defender  | Abilita questo criterio per specificare quando i dispositivi ricevono gli aggiornamenti delle definizioni di Microsoft Defender durante l'implementazione graduale giornaliera. <br><br> Canale corrente (a fasi): i dispositivi saranno disponibili aggiornamenti dopo il ciclo di rilascio. Si consiglia di applicarsi a una piccola parte rappresentativa della popolazione di produzione (~10%). <br><br>   Canale corrente (Generale): ai dispositivi verranno offerti aggiornamenti solo al termine del ciclo di rilascio graduale. Consigliato per l'applicazione a un ampio set di dispositivi nella popolazione di produzione (~10-100%). <br><br>   Se disabiliti o non configurerai questo criterio, il dispositivo rimarrà aggiornato automaticamente durante il ciclo di rilascio giornaliero. Adatto per la maggior parte dei dispositivi.  | Windows Components\Antivirus Microsoft Defender  |
@@ -76,6 +76,8 @@ Segui le istruzioni nel collegamento seguente per creare un criterio personalizz
 
 [Aggiungere impostazioni personalizzate per Windows 10 dispositivi in Microsoft Intune - Documentazione microsoft di Azure \|](/mem/intune/configuration/custom-settings-windows-10)
 
+Per altre informazioni sui provider di servizi di configurazione defender usati per il processo di implementazione graduale, vedi [Defender CSP.](/windows/client-management/mdm/defender-csp)
+
 ## <a name="powershell"></a>PowerShell
 
 Utilizzare il `Set-MpPreference` cmdlet per configurare l'implementazione degli aggiornamenti graduali.
@@ -94,4 +96,4 @@ Esempio:
 
 Usa `Set-MpPreference -PlatformUpdatesChannel Beta` per configurare gli aggiornamenti della piattaforma per l'arrivo dal Canale beta.
 
-Per altre informazioni sui parametri e su come configurarli, vedi [Set-MpPreference (Defender) | Documenti Microsoft](/powershell/module/defender/set-mppreference?view=windowsserver2019-ps&preserve-view=true).
+Per altre informazioni sui parametri e su come configurarli, vedi [Set-MpPreference (Defender) | Documenti Microsoft](/powershell/module/defender/set-mppreference).

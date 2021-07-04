@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: c4d392c9c7777a5ab5435d70e36822e11aa39dae
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 83a011e649a7289f62acd6a8d985f020b27b1e10
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52771190"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53290016"
 ---
 # <a name="file-resource-type"></a>Tipo di risorsa file
 
@@ -36,10 +36,10 @@ ms.locfileid: "52771190"
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-
 Rappresenta un'entità file in Defender for Endpoint.
 
 ## <a name="methods"></a>Metodi
+
 Metodo|Tipo restituito |Descrizione
 :---|:---|:---
 [Ottenere il file](get-file-information.md) | [file](files.md) | Ottenere un singolo file 
@@ -49,7 +49,8 @@ Metodo|Tipo restituito |Descrizione
 
 
 ## <a name="properties"></a>Proprietà
-|Proprietà | Tipo    |   Descrizione |
+
+|Proprietà | Tipo | Descrizione |
 |:---|:---|:---|
 |sha1 | Stringa | Hash Sha1 del contenuto del file |
 |sha256 | Stringa | Hash Sha256 del contenuto del file |
@@ -67,7 +68,6 @@ Metodo|Tipo restituito |Descrizione
 |isValidCertificate | Booleano | La firma del certificato è stata verificata correttamente da Microsoft Defender per l'agente endpoint |
 |determinationType | Stringa | Tipo di determinazione del file |
 |determinationValue | Stringa | Valore di determinazione |
-
 
 ## <a name="json-representation"></a>Rappresentazione Json
 

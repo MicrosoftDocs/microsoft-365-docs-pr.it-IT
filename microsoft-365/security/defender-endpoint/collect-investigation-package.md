@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 0083d806f3e52307e6dce30f74e255073a09c16a
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 4cf60ea73ea907be9c10b2dd9562a0ea60127f2d
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52770494"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289896"
 ---
 # <a name="collect-investigation-package-api"></a>API per la raccolta dei pacchetti di analisi
 
@@ -40,52 +40,56 @@ ms.locfileid: "52770494"
 
 
 ## <a name="api-description"></a>Descrizione API
+
 Raccogliere il pacchetto di analisi da un dispositivo.
 
-
 ## <a name="limitations"></a>Limitazioni
+
 1. I limiti di frequenza per questa API sono 100 chiamate al minuto e 1500 chiamate all'ora.
 
-
 ## <a name="permissions"></a>Autorizzazioni
+
 Per chiamare questa API è necessaria una delle autorizzazioni seguenti. Per altre informazioni, incluso come scegliere le autorizzazioni, vedi [Usare Defender per le API endpoint](apis-intro.md)
 
-Tipo di autorizzazione |   Autorizzazione  |   Nome visualizzato autorizzazione
+Tipo di autorizzazione | Autorizzazione | Nome visualizzato autorizzazione
 :---|:---|:---
-Applicazione |   Machine.CollectForensics |  "Raccogliere dati forensi"
-Delegato (account aziendale o dell'istituto di istruzione) |    Machine.CollectForensics |  "Raccogliere dati forensi"
+Applicazione | Machine.CollectForensics | "Raccogliere dati forensi"
+Delegato (account aziendale o dell'istituto di istruzione) | Machine.CollectForensics | "Raccogliere dati forensi"
 
->[!Note]
+> [!NOTE]
 > Quando si ottiene un token utilizzando le credenziali utente:
->- L'utente deve disporre almeno dell'autorizzazione di ruolo seguente: 'Alerts Investigation' (Per ulteriori informazioni, vedere [Create and manage roles)](user-roles.md)
->- L'utente deve avere accesso al dispositivo in base alle impostazioni del gruppo di dispositivi (per ulteriori informazioni, vedere [Creare](machine-groups.md) e gestire gruppi di dispositivi)
+>
+> - L'utente deve disporre almeno dell'autorizzazione di ruolo seguente: 'Alerts Investigation' (Per ulteriori informazioni, vedere [Create and manage roles)](user-roles.md)
+> - L'utente deve avere accesso al dispositivo in base alle impostazioni del gruppo di dispositivi (per ulteriori informazioni, vedere [Creare](machine-groups.md) e gestire gruppi di dispositivi)
 
 ## <a name="http-request"></a>Richiesta HTTP
-```
+
+```http
 POST https://api.securitycenter.microsoft.com/api/machines/{id}/collectInvestigationPackage
 ```
 
 ## <a name="request-headers"></a>Intestazioni di richiesta
 
-Name | Tipo | Descrizione
+Nome | Tipo | Descrizione
 :---|:---|:---
 Autorizzazione | Stringa | Bearer {token}. **Obbligatorio**.
 Content-Type | stringa | application/json. **Obbligatorio**.
 
 ## <a name="request-body"></a>Corpo della richiesta
+
 Nel corpo della richiesta, fornire un oggetto JSON con i parametri seguenti:
 
-Parametro | Tipo    | Descrizione
+Parametro | Tipo | Descrizione
 :---|:---|:---
-Comment |   Stringa |    Commento da associare all'azione. **Obbligatorio**.
+Comment | Stringa | Commento da associare all'azione. **Obbligatorio**.
 
 ## <a name="response"></a>Risposta
-Se ha esito positivo, questo metodo restituisce 201 - Codice di risposta creato e [Azione del](machineaction.md) computer nel corpo della risposta.
 
+Se ha esito positivo, questo metodo restituisce 201 - Codice di risposta creato e [Azione del](machineaction.md) computer nel corpo della risposta.
 
 ## <a name="example"></a>Esempio
 
-**Richiesta**
+### <a name="request"></a>Richiesta
 
 Ecco un esempio della richiesta.
 

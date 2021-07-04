@@ -14,40 +14,40 @@ ms.collection:
 - enabler-strategic
 - m365initiative-viva-learning
 localization_priority: None
-description: Informazioni su come configurare Microsoft Viva Learning (Anteprima) nell'Teams di amministrazione.
-ms.openlocfilehash: 860f16bee7d93f2212072c5d738263402704272f
-ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
+description: Informazioni su come configurare Microsoft Viva Learning (anteprima) nell'Teams di amministrazione.
+ms.openlocfilehash: 99e63210e8f8c10e3721c35fb69df7880c7e1929
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52789232"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53290220"
 ---
 # <a name="set-up-microsoft-viva-learning-preview-in-the-teams-admin-center"></a>Configurare Microsoft Viva Learning (anteprima) nell'Teams di amministrazione
 
 > [!NOTE]
 > Le informazioni contenute in questo articolo si riferiscono a un prodotto di anteprima che potrebbe essere sostanzialmente modificato prima che venga rilasciato commercialmente. 
 
-L Teams amministratore deve eseguire alcuni passaggi per abilitare Viva Learning (Preview) per gli utenti nel tenant. Questi passaggi variano in base alla modalità di a attivazione del tenant: [*Anteprima*](set-up-teams-admin-center.md#public-preview-tenants) pubblica [ *o Anteprima privata* (o Beta).](set-up-teams-admin-center.md#private-preview-tenants)
+L Teams amministratore deve eseguire alcuni passaggi per abilitare Viva Learning (Anteprima) per gli utenti nel tenant. Questi passaggi variano in base alla modalità di a attivazione del tenant: [*Anteprima*](set-up-teams-admin-center.md#public-preview-tenants) pubblica [ *o Anteprima privata* (o Beta).](set-up-teams-admin-center.md#private-preview-tenants)
 
 ## <a name="public-preview-tenants"></a>Tenant di anteprima pubblica
 
 ### <a name="administrator-steps-for-public-preview-tenants"></a>Passaggi dell'amministratore per i tenant di anteprima pubblica
 
-Poiché Viva Learning (Anteprima) non è ancora disponibile in genere, sono necessari alcuni passaggi per abilitare le funzionalità e impostare le autorizzazioni per utenti o gruppi specifici. 
+Poiché viva Learning (anteprima) non è ancora disponibile in genere, sono necessari alcuni passaggi per abilitare le funzionalità e impostare le autorizzazioni per utenti o gruppi specifici. 
 
-1. Abilita le funzionalità di anteprima pubblica per gli utenti viva learning (anteprima).
+1. Abilita le funzionalità di anteprima pubblica per gli utenti viva Learning (anteprima).
 
     a. Modificare Teams di aggiornamento per abilitare le funzionalità di anteprima pubblica. Vedi [Microsoft Teams Public Preview](/microsoftteams/public-preview-doc-updates).
 
-    b. Abilitare i criteri di aggiornamento per gli utenti o i gruppi che eseguiranno il test Viva Learning (Anteprima). Vedere [Assegnare criteri a utenti e gruppi.](/microsoftteams/assign-policies-users-and-groups)
+    b. Abilitare i criteri di aggiornamento per gli utenti o i gruppi che eseguiranno il test Viva Learning (anteprima). Vedere [Assegnare criteri a utenti e gruppi.](/microsoftteams/assign-policies-users-and-groups)
 
-2. Modifica i criteri di autorizzazione dell'app per gli utenti viva learning (anteprima).
+2. Modifica i criteri di autorizzazione dell'app per gli utenti viva Learning (anteprima).
 
     a. A meno che non sia attualmente parte del criterio globale, consenti tutte le app Microsoft nei criteri di autorizzazione delle app. Vedi [Gestire i criteri di autorizzazione delle app in Microsoft Teams](/microsoftteams/teams-app-permission-policies). 
 
-    b. Abilita i criteri di autorizzazione dell'app per gli utenti o i gruppi che eseguiranno il test Viva Learning (Anteprima). Vedere [Assegnare criteri a utenti e gruppi.](/microsoftteams/assign-policies-users-and-groups)
+    b. Abilita i criteri di autorizzazione dell'app per gli utenti o i gruppi che eseguiranno il test viva Learning (anteprima). Vedere [Assegnare criteri a utenti e gruppi.](/microsoftteams/assign-policies-users-and-groups)
 
-3.  Informare gli utenti che testeranno Viva Learning (Preview) di passare dal client di [compilazione all'anteprima pubblica per Teams](set-up-teams-admin-center.md#user-steps-for-public-preview-tenants).
+3. Informare gli utenti che testeranno Viva Learning (Anteprima) di passare al client di compilazione [in Anteprima pubblica per Teams](set-up-teams-admin-center.md#user-steps-for-public-preview-tenants).
 
 > [!IMPORTANT]
 > Per i tenant di anteprima pubblica, Viva Learning (Anteprima) non verrà visualizzato **nelle** app gestite nell'interfaccia di amministrazione di Teams fino al rilascio finale del prodotto. Tuttavia, gli utenti abilitati per l'anteprima pubblica possono trovare Viva Learning (Anteprima) nell'app store di Teams e usarlo, dopo aver configurato i criteri e le autorizzazioni corretti.
@@ -57,14 +57,14 @@ Poiché Viva Learning (Anteprima) non è ancora disponibile in genere, sono nece
 Gli utenti abilitati per il test dell'anteprima pubblica, abilitando i criteri descritti [in](/microsoftteams/public-preview-doc-updates#enable-public-preview) [precedenza,](set-up-teams-admin-center.md#administrator-steps-for-public-preview-tenants) devono passare all'anteprima pubblica nel Teams client.
 
 1. Gli utenti devono selezionare l'immagine del > **informazioni**  >  **sull'anteprima pubblica.**
-   
+
     ![Spostamento superiore nell'Teams che mostra il profilo dell'utente](../media/learning/learning-app-select-profile-teams.png)
-    
+
 2. Gli utenti devono accettare i termini e le condizioni dell'anteprima pubblica.
 
     ![Passare alla build di anteprima pubblica](../media/learning/learning-app-switch-to-public-preview.png)
- 
-3. Gli utenti possono ora trovare Viva Learning (Anteprima) nel Teams app store e iniziare a usarlo.
+
+3. Gli utenti possono ora trovare Viva Learning (anteprima) nell'app store Teams e iniziare a usarlo.
 
 ## <a name="private-preview-tenants"></a>Tenant di anteprima privati
 
@@ -80,10 +80,9 @@ Per i tenant di anteprima privata, non è necessario che siano abilitati altri c
 
    ![Pagina Gestisci app nell'interfaccia Teams di amministrazione che mostra la casella di ricerca.](../media/learning/learning-app-teams-manage-apps-page.png)
 
-3. Nella pagina **Viva Learning (anteprima),** in **Stato,** selezionare **Consentito** per attivare Viva Learning (anteprima).
+3. Nella pagina **Viva Learning (anteprima),** in **Stato,** **selezionare** Consentito per attivare Viva Learning (anteprima).
 
-   ![Pagina Di apprendimento nell'Teams di amministrazione che mostra la sezione Impostazioni stato e app.](../media/learning/learning-app-teams-learning-page.png)
-
+   ![Learning nell'interfaccia Teams di amministrazione che mostra la sezione Impostazioni stato e app.](../media/learning/learning-app-teams-learning-page.png)
 
 <!---
 The Teams admin installs Viva Learning (Preview) and applies permission policies through the Teams admin center.
@@ -141,4 +140,4 @@ To make Viva Learning (Preview) available for users in your organization, follow
 
 ## <a name="next-step"></a>Passaggio successivo
 
-[Configurare le origini di contenuto di apprendimento per Viva Learning (anteprima) nell'Microsoft 365 di amministrazione](content-sources-365-admin-center.md)
+[Configurare le origini di contenuto di apprendimento per Viva Learning (Anteprima) nella interfaccia di amministrazione di Microsoft 365](content-sources-365-admin-center.md)

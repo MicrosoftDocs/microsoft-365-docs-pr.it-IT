@@ -18,12 +18,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
-ms.openlocfilehash: 4b34d3ea20716fb2424d9317b8a51c088a5714a6
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: ddc28149ca2ab43b7c14d3bdbaeeecdad1b18387
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935354"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289764"
 ---
 # <a name="provide-managed-security-service-provider-mssp-access"></a>Fornire l'accesso msSP (Managed Security Service Provider) 
 
@@ -50,10 +50,9 @@ Per implementare una soluzione di accesso delegato multi-tenant, eseguire la pro
 
     Questi gruppi verranno collegati ai ruoli creati in Defender per Endpoint nel centro sicurezza Microsoft 365 sicurezza. A tale scopo, nel tenant AD del cliente creare tre gruppi. Nell'approccio di esempio vengono creati i gruppi seguenti:
 
-    - Analista di livello 1 
-    - Analista di livello 2 
+    - Analista di livello 1
+    - Analista di livello 2
     - Responsabili approvazione analista MSSP  
-
 
 2. Creare ruoli defender per endpoint per i livelli di accesso appropriati in Customer Defender for Endpoint Microsoft 365 gruppi e ruoli del centro sicurezza.
 
@@ -73,12 +72,10 @@ Per implementare una soluzione di accesso delegato multi-tenant, eseguire la pro
 
     Per ulteriori informazioni, vedere [Use role-based access control](/windows/security/threat-protection/microsoft-defender-atp/rbac).
 
-
-
 ## <a name="configure-governance-access-packages"></a>Configurare i pacchetti di accesso alla governance
 
-1.  **Aggiungere MSSP come organizzazione connessa in Customer AAD: Identity Governance**
-    
+1. **Aggiungere MSSP come organizzazione connessa in Customer AAD: Identity Governance**
+
     L'aggiunta di MSSP come organizzazione connessa consentirà al provider mssp di richiedere e disporre degli accessi di cui è stato eseguito il provisioning. 
 
     A tale scopo, nel tenant AD del cliente, accedere a Identity Governance: Connected organization. Aggiungere una nuova organizzazione e cercare il tenant dell'analista MSSP tramite l'ID tenant o il dominio. Ti consigliamo di creare un tenant AD separato per gli analisti MSSP.
@@ -87,12 +84,11 @@ Per implementare una soluzione di accesso delegato multi-tenant, eseguire la pro
 
     I cataloghi delle risorse sono una raccolta logica di pacchetti di accesso, creati nel tenant AD del cliente.
 
-    A tale scopo, nel tenant AD del cliente, accedere a Identity Governance: Catalogs e aggiungere **New Catalog.** In questo esempio, verrà chiamato **MSSP Accesses**. 
+    A tale scopo, nel tenant AD del cliente, accedere a Identity Governance: Catalogs e aggiungere **New Catalog.** In questo esempio, verrà chiamato **MSSP Accesses**.
 
     ![Immagine del nuovo catalogo](../../media/goverance-catalog.png)
 
     Per ulteriori informazioni, vedere [Create a catalog of resources](/azure/active-directory/governance/entitlement-management-catalog-create).
-
 
 3. **Creare pacchetti di accesso per le risorse MSSP Customer AAD: Identity Governance**
 
@@ -109,28 +105,27 @@ Per implementare una soluzione di accesso delegato multi-tenant, eseguire la pro
 
     Per ulteriori informazioni, vedere [Create a new access package](/azure/active-directory/governance/entitlement-management-access-package-create).
 
-
 4. **Fornire il collegamento della richiesta di accesso alle risorse MSSP da Customer AAD: Identity Governance**
 
     Il collegamento al portale My Access viene utilizzato dagli analisti SOC di MSSP per richiedere l'accesso tramite i pacchetti di accesso creati. Il collegamento è durevole, ovvero lo stesso collegamento può essere utilizzato nel tempo per i nuovi analisti. La richiesta dell'analista viene inviata in una coda per l'approvazione da parte dei responsabili approvazione degli analisti **MSSP.**
-
 
     ![Immagine delle proprietà di accesso](../../media/access-properties.png)
 
     Il collegamento si trova nella pagina di panoramica di ogni pacchetto di accesso.
 
-## <a name="manage-access"></a>Gestire accessi 
+## <a name="manage-access"></a>Gestire accessi
 
 1. Esaminare e autorizzare le richieste di accesso in Customer e/o MSSP myaccess.
 
     Le richieste di accesso vengono gestite nel cliente Accesso personale dai membri del gruppo Responsabili approvazione analista MSSP.
 
-    A tale scopo, accedere all'account myaccess del cliente usando:  `https://myaccess.microsoft.com/@<Customer Domain >` . 
+    A tale scopo, accedere all'account myaccess del cliente usando: `https://myaccess.microsoft.com/@<Customer Domain>` .
 
-    Esempio:  `https://myaccess.microsoft.com/@M365x440XXX.onmicrosoft.com#/`   
+    Esempio: `https://myaccess.microsoft.com/@M365x440XXX.onmicrosoft.com#/`
+
 2. Approvare o rifiutare le richieste nella **sezione Approvazioni** dell'interfaccia utente.
 
-     A questo punto, è stato effettuato il provisioning dell'accesso dell'analista e ogni analista dovrebbe essere in grado di accedere al Centro sicurezza Microsoft 365 cliente: 
+     A questo punto, è stato effettuato il provisioning dell'accesso dell'analista e ogni analista dovrebbe essere in grado di accedere al Centro sicurezza Microsoft 365 cliente:
 
     `https://security.microsoft.com/?tid=<CustomerTenantId>` con le autorizzazioni e i ruoli a cui sono stati assegnati.
 

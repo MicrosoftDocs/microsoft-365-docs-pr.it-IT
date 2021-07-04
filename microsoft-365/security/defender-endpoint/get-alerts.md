@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 4da646a52392871cde99271a17ed6eb9111f51ab
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: dcc8a9214e0a6d0a0ede3b08aa6a019f2f0c4d2c
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52769246"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289848"
 ---
 # <a name="list-alerts-api"></a>API avvisi elenco
 
@@ -59,40 +59,42 @@ Recupera una raccolta di avvisi.
 ## <a name="permissions"></a>Autorizzazioni
 Per chiamare questa API è necessaria una delle autorizzazioni seguenti. Per altre informazioni, inclusa la scelta delle autorizzazioni, vedi [Usare Microsoft Defender per le API endpoint](apis-intro.md)
 
-Tipo di autorizzazione |   Autorizzazione  |   Nome visualizzato autorizzazione
+Tipo di autorizzazione | Autorizzazione | Nome visualizzato autorizzazione
 :---|:---|:---
-Applicazione |   Alert.Read.All |    "Leggi tutti gli avvisi"
-Applicazione |   Alert.ReadWrite.All |   "Lettura e scrittura di tutti gli avvisi"
+Applicazione | Alert.Read.All | "Leggi tutti gli avvisi"
+Applicazione | Alert.ReadWrite.All | "Lettura e scrittura di tutti gli avvisi"
 Delegato (account aziendale o dell'istituto di istruzione) | Alert.Read | "Avvisi di lettura"
 Delegato (account aziendale o dell'istituto di istruzione) | Alert.ReadWrite | "Avvisi di lettura e scrittura"
 
->[!Note]
+> [!NOTE]
 > Quando si ottiene un token utilizzando le credenziali utente:
->- L'utente deve disporre almeno dell'autorizzazione di ruolo seguente: 'Visualizza dati' (per ulteriori informazioni, vedere [Creare](user-roles.md) e gestire ruoli)
->- La risposta includerà solo gli avvisi associati ai dispositivi a cui l'utente può accedere, in base alle impostazioni del gruppo di dispositivi (per ulteriori informazioni, vedere [Creare](machine-groups.md) e gestire gruppi di dispositivi)
+>
+> - L'utente deve disporre almeno dell'autorizzazione di ruolo seguente: 'Visualizza dati' (per ulteriori informazioni, vedere [Creare](user-roles.md) e gestire ruoli)
+> - La risposta includerà solo gli avvisi associati ai dispositivi a cui l'utente può accedere, in base alle impostazioni del gruppo di dispositivi (per ulteriori informazioni, vedere [Creare](machine-groups.md) e gestire gruppi di dispositivi)
 
 ## <a name="http-request"></a>Richiesta HTTP
-```
+
+```http
 GET /api/alerts
 ```
 
 ## <a name="request-headers"></a>Intestazioni di richiesta
 
-Name | Tipo | Descrizione
+Nome | Tipo | Descrizione
 :---|:---|:---
 Autorizzazione | Stringa | Bearer {token}. **Obbligatorio**.
 
-
 ## <a name="request-body"></a>Corpo della richiesta
+
 Vuoto
 
 ## <a name="response"></a>Risposta
-Se ha esito positivo, questo metodo restituisce 200 OK e un elenco di oggetti [avviso](alerts.md) nel corpo della risposta.
 
+Se ha esito positivo, questo metodo restituisce 200 OK e un elenco di oggetti [avviso](alerts.md) nel corpo della risposta.
 
 ## <a name="example-1---default"></a>Esempio 1 - Impostazione predefinita
 
-**Richiesta**
+### <a name="request"></a>Richiesta
 
 Ecco un esempio della richiesta.
 
@@ -100,13 +102,12 @@ Ecco un esempio della richiesta.
 GET https://api.securitycenter.microsoft.com/api/alerts
 ```
 
-**Risposta**
+### <a name="response"></a>Risposta
 
 Ecco un esempio di risposta.
 
->[!NOTE]
->L'elenco delle risposte mostrato qui potrebbe essere troncato per brevità. Tutti gli avvisi verranno restituiti da una chiamata effettiva.
-
+> [!NOTE]
+> L'elenco delle risposte mostrato qui potrebbe essere troncato per brevità. Tutti gli avvisi verranno restituiti da una chiamata effettiva.
 
 ```json
 {
@@ -162,7 +163,7 @@ Ecco un esempio di risposta.
 
 ## <a name="example-2---get-10-latest-alerts-with-related-evidence"></a>Esempio 2 - Ottenere 10 avvisi più recenti con prove correlate
 
-**Richiesta**
+### <a name="request"></a>Richiesta
 
 Ecco un esempio della richiesta.
 
@@ -170,14 +171,12 @@ Ecco un esempio della richiesta.
 GET https://api.securitycenter.microsoft.com/api/alerts?$top=10&$expand=evidence
 ```
 
-
-**Risposta**
+### <a name="response"></a>Risposta
 
 Ecco un esempio di risposta.
 
->[!NOTE]
->L'elenco delle risposte mostrato qui potrebbe essere troncato per brevità. Tutti gli avvisi verranno restituiti da una chiamata effettiva.
-
+> [!NOTE]
+> L'elenco delle risposte mostrato qui potrebbe essere troncato per brevità. Tutti gli avvisi verranno restituiti da una chiamata effettiva.
 
 ```json
 {
@@ -314,6 +313,6 @@ Ecco un esempio di risposta.
 }
 ```
 
-
 ## <a name="see-also"></a>Vedere anche
-- [Query OData con Microsoft Defender for Endpoint](exposed-apis-odata-samples.md)
+
+[Query OData con Microsoft Defender for Endpoint](exposed-apis-odata-samples.md)

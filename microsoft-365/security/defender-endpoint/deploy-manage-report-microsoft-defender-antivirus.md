@@ -16,12 +16,12 @@ ms.date: 09/03/2018
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 4be9116b83c2ee4eec410f3d8d68c289f3c8b9a5
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 15fd70a2a60da7b0541446a98f0094c73c831d51
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52925828"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289824"
 ---
 # <a name="deploy-manage-and-report-on-microsoft-defender-antivirus"></a>Distribuire, gestire e creare report Antivirus Microsoft Defender
 
@@ -57,7 +57,7 @@ Microsoft Azure|Distribuire Microsoft Antimalware per Azure nel portale [di Azur
 
 1. <span id="fn1" />La disponibilità di alcune funzioni e funzionalità, in particolare correlate alla protezione basata sul cloud, è diversa tra Microsoft Endpoint Manager (Current Branch) e System Center Configuration Manager 2012. In questa raccolta, ci siamo concentrati su Windows 10, Windows Server 2016 e Microsoft Endpoint Manager (Current Branch). Per una tabella in cui vengono descritte le principali [differenze, vedere Usare](cloud-protection-microsoft-defender-antivirus.md) la protezione fornita dal cloud Microsoft in Antivirus Microsoft Defender. [(Torna alla tabella)](#ref2)
   
-2.  <span id="fn2" />In Windows 10, Antivirus Microsoft Defender è un componente disponibile senza l'installazione o la distribuzione di un altro client o servizio. Verrà abilitato automaticamente quando i prodotti antivirus di terze parti vengono disinstallati o non aggiornati ( ad eccezione[di Windows Server 2016](microsoft-defender-antivirus-on-windows-server.md)). La distribuzione tradizionale non è pertanto necessaria. La distribuzione qui si riferisce alla Antivirus Microsoft Defender disponibile e abilitata su endpoint o server. [(Torna alla tabella)](#ref2)
+2. <span id="fn2" />In Windows 10, Antivirus Microsoft Defender è un componente disponibile senza l'installazione o la distribuzione di un altro client o servizio. Verrà abilitato automaticamente quando i prodotti antivirus di terze parti vengono disinstallati o non aggiornati ( ad eccezione[di Windows Server 2016](microsoft-defender-antivirus-on-windows-server.md)). La distribuzione tradizionale non è pertanto necessaria. La distribuzione qui si riferisce alla Antivirus Microsoft Defender disponibile e abilitata su endpoint o server. [(Torna alla tabella)](#ref2)
 
 3. <span id="fn3" />La configurazione delle funzionalità e della protezione, inclusa la [](configure-notifications-microsoft-defender-antivirus.md) configurazione degli aggiornamenti di prodotti e protezione, è descritta ulteriormente nella sezione Configurare Antivirus Microsoft Defender funzionalità di protezione in questa raccolta. [(Torna alla tabella)](#ref2)
 

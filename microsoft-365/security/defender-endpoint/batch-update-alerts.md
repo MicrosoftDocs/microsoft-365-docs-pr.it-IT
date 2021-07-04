@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: db745c1b12c64baff5bf2c0a212446ce0f773709
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 80f88b31c1e07d1f40f3f58a1bd21b4a5c58c60b
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51167090"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53290208"
 ---
 # <a name="batch-update-alerts"></a>Avvisi di aggiornamento in batch
 
@@ -37,46 +37,53 @@ ms.locfileid: "51167090"
 
 
 ## <a name="api-description"></a>Descrizione API
-Aggiorna le proprietà di un batch di [avvisi esistenti.](alerts.md)
-<br>**L'invio di** commenti è disponibile con o senza aggiornare le proprietà.
-<br>Le proprietà aggiornabili sono: `status` `determination` , e `classification` `assignedTo` .
 
+Aggiorna le proprietà di un batch di [avvisi esistenti.](alerts.md)
+
+**L'invio di** commenti è disponibile con o senza aggiornare le proprietà.
+
+Le proprietà aggiornabili sono: `status` `determination` , e `classification` `assignedTo` .
 
 ## <a name="limitations"></a>Limitazioni
+
 1. Puoi aggiornare gli avvisi disponibili nell'API. Per [ulteriori informazioni, vedere Avvisi](get-alerts.md) elenco.
 2. I limiti di frequenza per questa API sono 10 chiamate al minuto e 500 chiamate all'ora.
 
-
 ## <a name="permissions"></a>Autorizzazioni
+
 Per chiamare questa API è necessaria una delle autorizzazioni seguenti. Per altre informazioni, inclusa la scelta delle autorizzazioni, vedi [Usare Microsoft Defender per le API endpoint](apis-intro.md)
 
-Tipo di autorizzazione |   Autorizzazione  |   Nome visualizzato autorizzazione
+Tipo di autorizzazione | Autorizzazione | Nome visualizzato autorizzazione
 :---|:---|:---
-Applicazione |   Alerts.ReadWrite.All |  "Lettura e scrittura di tutti gli avvisi"
+Applicazione | Alerts.ReadWrite.All | "Lettura e scrittura di tutti gli avvisi"
 Delegato (account aziendale o dell'istituto di istruzione) | Alert.ReadWrite | "Avvisi di lettura e scrittura"
 
->[!Note]
+> [!NOTE]
 > Quando si ottiene un token utilizzando le credenziali utente:
->- L'utente deve disporre almeno dell'autorizzazione di ruolo seguente: "Analisi degli avvisi" (per ulteriori informazioni, vedere [Creare](user-roles.md) e gestire ruoli)
->- L'utente deve avere accesso al dispositivo associato all'avviso, in base alle impostazioni del gruppo di dispositivi (per ulteriori informazioni, vedere [Creare](machine-groups.md) e gestire gruppi di dispositivi)
+>
+> - L'utente deve disporre almeno dell'autorizzazione di ruolo seguente: "Analisi degli avvisi" (per ulteriori informazioni, vedere [Creare](user-roles.md) e gestire ruoli)
+> - L'utente deve avere accesso al dispositivo associato all'avviso, in base alle impostazioni del gruppo di dispositivi (per ulteriori informazioni, vedere [Creare](machine-groups.md) e gestire gruppi di dispositivi)
 
 ## <a name="http-request"></a>Richiesta HTTP
+
 ```http
 POST /api/alerts/batchUpdate
 ```
 
 ## <a name="request-headers"></a>Intestazioni di richiesta
 
-Name | Tipo | Descrizione
+Nome | Tipo | Descrizione
 :---|:---|:---
 Autorizzazione | Stringa | Bearer {token}. **Obbligatorio**.
 Content-Type | Stringa | application/json. **Obbligatorio**.
 
-
 ## <a name="request-body"></a>Corpo della richiesta
+
 Nel corpo della richiesta specificare gli ID degli avvisi da aggiornare e i valori dei campi rilevanti che si desidera aggiornare per tali avvisi.
-<br>Le proprietà esistenti non incluse nel corpo della richiesta manterranno i valori precedenti o verranno ricalcolate in base alle modifiche apportate ad altri valori di proprietà. 
-<br>Per ottenere prestazioni ottimali, non è consigliabile includere valori esistenti che non sono stati modificati.
+
+Le proprietà esistenti non incluse nel corpo della richiesta manterranno i valori precedenti o verranno ricalcolate in base alle modifiche apportate ad altri valori di proprietà.
+
+Per ottenere prestazioni ottimali, non è consigliabile includere valori esistenti che non sono stati modificati.
 
 Proprietà | Tipo | Descrizione
 :---|:---|:---
@@ -88,12 +95,12 @@ determinazione | Stringa | Specifica la determinazione degli avvisi specificati.
 comment | Stringa | Commento da aggiungere agli avvisi specificati.
 
 ## <a name="response"></a>Risposta
-Se ha esito positivo, questo metodo restituisce 200 OK, con un corpo di risposta vuoto.
 
+Se ha esito positivo, questo metodo restituisce 200 OK, con un corpo di risposta vuoto.
 
 ## <a name="example"></a>Esempio
 
-**Richiesta**
+### <a name="request"></a>Richiesta
 
 Ecco un esempio della richiesta.
 
