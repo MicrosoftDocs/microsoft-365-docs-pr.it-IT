@@ -16,12 +16,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: ''
-ms.openlocfilehash: 7e99198e0713a1940f094c3875293b2590f31e3f
-ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
+ms.openlocfilehash: 3f64b981b60db9f9089af0555e4bf734864913b9
+ms.sourcegitcommit: 17d82e5617f0466eb825e15ab88594afcdaf4437
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "53256856"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "53300382"
 ---
 # <a name="learn-about-sensitive-information-types"></a>Ulteriori informazioni sui tipi di informazioni riservate
 
@@ -38,7 +38,7 @@ I tipi di informazioni riservate sono classificatori basati su modelli. Rilevano
 - [Criteri di prevenzione della perdita di dati](dlp-learn-about-dlp.md) 
 - [Etichette di riservatezza](sensitivity-labels.md)
 - [Etichette di conservazione](retention.md)
-- [Gestione dei rischi insider](insider-risk-management.md)
+- [Gestione dei rischi Insider](insider-risk-management.md)
 - [Conformità delle comunicazioni](communication-compliance.md)
 - [Criteri di etichettatura automatica](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps)
 
@@ -70,7 +70,7 @@ Scopri di più sui livelli di confidenza in questo video
 
 Otto cifre separate da spazi
 
-### <a name="pattern"></a>Criterio
+### <a name="pattern"></a>Modello
 
 Otto cifre
 - due cifre
@@ -104,7 +104,7 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 #### <a name="keyword_argentina_national_id"></a>Keyword_argentina_national_id
 
 - Argentina - Numero di identità nazionale 
-- Identità 
+- Identity 
 - Carta d'identità nazionale di identificazione 
 - DNI 
 - NIC National Registry of Persons 
@@ -154,10 +154,12 @@ Per creare tipi di informazioni sensibili personalizzati nel Centro sicurezza e 
 > Il supporto è disponibile per i tipi di informazioni sensibili. Per altre informazioni, vedere [Note sulla versione del supporto della protezione delle informazioni per i set di caratteri a due byte (anteprima)](mip-dbcs-relnotes.md).
 
 > [!TIP]
-> Per rilevare modelli contenenti caratteri cinesi/giapponesi e caratteri a byte singolo o per rilevare modelli contenenti cinese/giapponese e inglese, definire due varianti della parola chiave o dell'espressione regolare. Ad esempio, per rilevare una parola chiave come "机密的documento", usa due varianti della parola chiave; uno con uno spazio tra il testo giapponese e l'inglese e un altro senza uno spazio tra il testo giapponese e l'inglese. Pertanto, le parole chiave da aggiungere nel SIT devono essere "机密的 documento" e "机密的documento". Analogamente, per rilevare una frase "東京オリンピック2020", è necessario utilizzare due varianti. "東京オリンピック 2020" e "東京オリンピック2020".
+> Per rilevare modelli contenenti caratteri cinesi/giapponesi e caratteri a byte singolo o per rilevare modelli contenenti caratteri cinesi/giapponesi e inglesi, definire due varianti della parola chiave o dell'espressione regolare.
 > 
-> Durante la creazione di un'espressione regolare utilizzando un trattino a byte doppio o un punto a byte doppio, assicurarsi di utilizzare l'escape di entrambi i caratteri come un trattino o un punto in un'espressione regolare. Ecco un esempio di espressione regolare per riferimento:
->    - (?<!\d) ([4][0-9] {3} [ \- ?\-\t]*[0-9]{4}
+> Ad esempio, per rilevare una parola chiave come "机密的document", usare due varianti della parola chiave: una con uno spazio tra il testo giapponese e quello inglese e un'altra senza spazio tra il testo giapponese e quello inglese. Quindi, le parole chiave da aggiungere nel SIT devono essere "机密的 document" e "机密的document". Analogamente, per rilevare la frase "東京オリンピック2020", devono essere usate due varianti: "東京オリンピック 2020" e "東京オリンピック2020".
+> 
+> Quando si crea un'espressione regolare usando un trattino a byte doppio o un punto a byte doppio, assicurarsi di eseguire l'escape di entrambi i caratteri come si farebbe con un trattino o un punto in un'espressione regolare. Di seguito è riportata un'espressione regolare di esempio per riferimento:
+>    - (?<!\d)([４][０-９]{3}[\-?\－\t]*[０-９]{4}
 >
 > Ti consigliamo di usare la corrispondenza di stringhe anziché la corrispondenza di parole in un elenco di parole chiave.
 

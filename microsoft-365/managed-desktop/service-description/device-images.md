@@ -12,12 +12,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 3d0b0f1adac589b910b5fabf2c22d08cbd65f142
-ms.sourcegitcommit: 8c6a5db0dab99a82a69dd8a0a7c56af1cb825931
+ms.openlocfilehash: 211e26035ad8bdf73defde85c33a631af3a193d0
+ms.sourcegitcommit: 17d82e5617f0466eb825e15ab88594afcdaf4437
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "53276930"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "53300107"
 ---
 # <a name="device-images"></a>Immagini dispositivo
 
@@ -31,7 +31,7 @@ Quando ordini un nuovo dispositivo da un produttore [approvato,](device-requirem
 Collaborare direttamente con il venditore Dell, che si assicurerà che l'immagine approvata da Microsoft Managed Desktop sia applicata ai dispositivi per l'ordine. Per ulteriori domande sui dispositivi Dell, sull'immagine e sul processo di ordinamento, contattare MMD_at_dell@dell.com.
 
 ### <a name="hp"></a>HP 
-Quando ordini nuovi dispositivi da HP, assicurati di usare lo SKU specifico elencato nella sezione Requisiti aggiuntivi per ogni modello disponibile nel sito Dispositivi aziendali di [Shop Windows 10 Pro](https://www.microsoft.com/windowsforbusiness/view-all-devices) (filtra la visualizzazione per visualizzare i dispositivi Microsoft Managed Desktop).
+Quando ordini nuovi dispositivi da HP, assicurati di usare lo SKU specifico elencato nella sezione Requisiti aggiuntivi per ogni modello disponibile nel sito Dispositivi aziendali di [Shop Windows 10 Pro](https://www.microsoft.com/windowsforbusiness/view-all-devices#view-all-filter) (filtra la visualizzazione per visualizzare i dispositivi Microsoft Managed Desktop).
 
 Se stai ordinando un dispositivo da HP che [](customizing.md) è stato approvato come eccezione ma non è attualmente elencato nella pagina Elenco dispositivi, assicurati di richiedere lo SKU da usare per il tuo modello. We'll work with HP to get you this information by using your exception request. Puoi anche contattare direttamente HP per qualsiasi domanda sui dispositivi e sulle istruzioni per l'ordinamento dei dispositivi usando questi indirizzi:
  

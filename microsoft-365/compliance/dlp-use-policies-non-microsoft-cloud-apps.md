@@ -1,5 +1,5 @@
 ---
-title: Usare i criteri di prevenzione della perdita di dati per le app cloud non Microsoft (anteprima)
+title: Usare i criteri di prevenzione della perdita di dati per le app cloud non Microsoft
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Informazioni su come usare i criteri dlp per le app cloud non Microsoft.
-ms.openlocfilehash: 3c3c687bd1362182d35891ed1ebbfae12416d5d4
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: fbba87fc5bb3bbca7e67ba374e202098a22f4a5c
+ms.sourcegitcommit: 17d82e5617f0466eb825e15ab88594afcdaf4437
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53226840"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "53300125"
 ---
 # <a name="use-data-loss-prevention-policies-for-non-microsoft-cloud-apps-preview"></a>Usare i criteri di prevenzione della perdita dei dati per le app cloud non Microsoft (anteprima)
 
@@ -42,6 +42,12 @@ Prima di iniziare a usare i criteri DLP per le app cloud non Microsoft, conferma
 - Microsoft 365 E5
 - Conformità Microsoft 365 E5
 - Microsoft 365 E5 Security
+
+### <a name="permissions"></a>Autorizzazioni
+L'utente che crea il criterio DLP deve essere un:
+- Amministratore globale
+- Amministratore di conformità
+- Amministratore dati di conformità
 
 ### <a name="prepare-your-cloud-app-security-environment"></a>Preparare l'Cloud App Security locale
 
@@ -81,7 +87,8 @@ Quando si crea una regola nel criterio DLP, è possibile selezionare un'azione p
 
 ![Limitare le app di terze parti](../media/4-dlp-non-microsoft-cloud-app-restrict-third-party-apps.png)
 
-> [NOTA] I criteri DLP applicati alle app non Microsoft usano Microsoft Cloud App Security. Quando viene creato il criterio DLP per un'app non Microsoft, lo stesso criterio verrà creato automaticamente in Microsoft Cloud App Security.
+> [!NOTE]
+> I criteri DLP applicati alle app non Microsoft usano Microsoft Cloud App Security. Quando viene creato il criterio DLP per un'app non Microsoft, lo stesso criterio verrà creato automaticamente in Microsoft Cloud App Security.
 
 Per informazioni sulla creazione e la configurazione dei criteri DLP, vedere [Create test and tune a DLP policy](./create-test-tune-dlp-policy.md).
 

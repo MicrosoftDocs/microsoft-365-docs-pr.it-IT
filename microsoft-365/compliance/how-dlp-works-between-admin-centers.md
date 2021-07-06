@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: a7e4342a-a0a1-4b43-b166-3d7eecf5d2fd
 description: Informazioni su come DLP nel Centro sicurezza & conformità funziona con dlp e regole del flusso di posta (regole di trasporto) nell'Exchange di amministrazione.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 34ddee1c1f0997852b6e59295ab9b630acc3ba3c
-ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
+ms.openlocfilehash: a7cd4eaafbd334c8886e0e6aa72d8c0e4c53a81e
+ms.sourcegitcommit: 17d82e5617f0466eb825e15ab88594afcdaf4437
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53177178"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "53300053"
 ---
 # <a name="how-dlp-works-between-the-microsoft-365-compliance-center-and-exchange-admin-center"></a>Funzionamento di DLP tra il Centro Microsoft 365 conformità e l Exchange intervanza di amministrazione
 
@@ -47,7 +47,7 @@ Ciò significa che:
   
 - I messaggi bloccati da Exchange flusso di posta elettronica non verranno analizzati dalle regole DLP create nel Centro sicurezza & conformità.
 
-- I messaggi messi in quarantena Exchange regole del flusso di posta o altri filtri eseguiti prima che DLP non venga analizzato da DLP
+- I messaggi messi in quarantena Exchange regole del flusso di posta o altri filtri eseguiti prima che DLP non venga analizzato da DLP.
     
 - Se una regola del flusso di posta di Exchange modifica un messaggio in modo che corrisponda a un criterio DLP nel Centro sicurezza & conformità, ad esempio l'aggiunta di utenti esterni, le regole DLP lo rileveranno e applichino il criterio in base alle esigenze.
     

@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Informazioni su come creare, modificare, rimuovere e testare tipi di informazioni riservate personalizzati per DLP nel Centro sicurezza & conformità.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f346a32da6f47cadc0ded6d7d045a833bb3b60b0
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 0f65ba38c75cc1d9886cb4c3013d7f707912f72a
+ms.sourcegitcommit: 17d82e5617f0466eb825e15ab88594afcdaf4437
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53287540"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "53300394"
 ---
 # <a name="get-started-with-custom-sensitive-information-types"></a>Introduzione ai tipi di informazione sensibile personalizzati
 
@@ -186,7 +186,7 @@ Ecco le definizioni e alcuni esempi per gli altri controlli disponibili.
 
 
 > [!NOTE]
-> Microsoft 365 Information Protection supporta le lingue del set di caratteri a due byte per:
+> Microsoft 365 Information Protection supporta i set di caratteri a due byte nelle seguenti lingue:
 > - Cinese (semplificato)
 > - Cinese (tradizionale)
 > - Coreano
@@ -195,7 +195,12 @@ Ecco le definizioni e alcuni esempi per gli altri controlli disponibili.
 >Il supporto è disponibile per i tipi di informazioni sensibili. Per altre informazioni, vedere [Note sulla versione del supporto della protezione delle informazioni per i set di caratteri a due byte (anteprima)](mip-dbcs-relnotes.md).
 
 > [!TIP]
-> Per rilevare modelli contenenti caratteri cinesi/giapponesi e caratteri a byte singolo o per rilevare modelli contenenti cinese/giapponese e inglese, definire due varianti della parola chiave o dell'espressione regolare. Ad esempio, per rilevare una parola chiave come "机密的documento", usa due varianti della parola chiave; uno con uno spazio tra il testo giapponese e l'inglese e un altro senza uno spazio tra il testo giapponese e l'inglese. Pertanto, le parole chiave da aggiungere nel SIT devono essere "机密的 documento" e "机密的documento". Analogamente, per rilevare una frase "東京オリンピック2020", è necessario utilizzare due varianti. "東京オリンピック 2020" e "東京オリンピック2020".
-> Durante la creazione di un'espressione regolare utilizzando un trattino a byte doppio o un punto a byte doppio, assicurarsi di utilizzare l'escape di entrambi i caratteri come un trattino o un punto in un'espressione regolare. Ecco un esempio di espressione regolare per riferimento:
-    - (?<!\d) ([4][0-9] {3} [ \- ?\-\t]*[0-9]{4}
-> È consigliabile usare una corrispondenza di stringa anziché una corrispondenza di parola in un elenco di parole chiave.
+> Per rilevare modelli contenenti caratteri cinesi/giapponesi e caratteri a byte singolo o per rilevare modelli contenenti caratteri cinesi/giapponesi e inglesi, definire due varianti della parola chiave o dell'espressione regolare. 
+>
+> Ad esempio, per rilevare una parola chiave come "机密的document", usare due varianti della parola chiave: una con uno spazio tra il testo giapponese e quello inglese e un'altra senza spazio tra il testo giapponese e quello inglese. Quindi, le parole chiave da aggiungere nel SIT devono essere "机密的 document" e "机密的document". Analogamente, per rilevare la frase "東京オリンピック2020", devono essere usate due varianti: "東京オリンピック 2020" e "東京オリンピック2020".
+>
+> Quando si crea un'espressione regolare usando un trattino a byte doppio o un punto a byte doppio, assicurarsi di eseguire l'escape di entrambi i caratteri come si farebbe con un trattino o un punto in un'espressione regolare. Di seguito è riportata un'espressione regolare di esempio per riferimento:
+>
+>    - (?<!\d)([４][０-９]{3}[\-?\－\t]*[０-９]{4}
+>
+> È consigliabile usare una corrispondenza di stringhe anziché una corrispondenza di parole in un elenco di parole chiave.
