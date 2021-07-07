@@ -1,0 +1,86 @@
+---
+title: Antivirus Microsoft Defender
+description: Informazioni su come gestire, configurare e usare Antivirus Microsoft Defender, protezione antimalware e antivirus integrata.
+keywords: Antivirus Microsoft Defender, windows defender, antimalware, scep, system center endpoint protection, system center configuration manager, virus, malware, minaccia, rilevamento, protezione, sicurezza
+search.product: eADQiWindows 10XVcnh
+ms.prod: m365-security
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.pagetype: security
+localization_priority: Priority
+ms.topic: article
+author: denisebmsft
+ms.author: deniseb
+ms.reviewer: mkaminska
+manager: dansimp
+ms.custom: nextgen
+ms.technology: mde
+ms.openlocfilehash: ceaf694d8b81e6b06ffe74efc4ad3d4d73471752
+ms.sourcegitcommit: b0f464b6300e2977ed51395473a6b2e02b18fc9e
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53323054"
+---
+# <a name="microsoft-defender-antivirus-in-windows"></a><span data-ttu-id="03515-104">Microsoft Defender Antivirus in Windows</span><span class="sxs-lookup"><span data-stu-id="03515-104">Microsoft Defender Antivirus in Windows</span></span>
+
+<span data-ttu-id="03515-105">**Si applica a:**</span><span class="sxs-lookup"><span data-stu-id="03515-105">**Applies to:**</span></span>
+
+- [<span data-ttu-id="03515-106">Microsoft Defender per endpoint</span><span class="sxs-lookup"><span data-stu-id="03515-106">Microsoft Defender for Endpoint</span></span>](/microsoft-365/security/defender-endpoint/)
+
+<span data-ttu-id="03515-107">Antivirus Microsoft Defender è il componente principale della protezione di ultima generazione di Microsoft Defender per endpoint.</span><span class="sxs-lookup"><span data-stu-id="03515-107">Microsoft Defender Antivirus is a major component of your next-generation protection in Microsoft Defender for Endpoint.</span></span> <span data-ttu-id="03515-108">Questa protezione raggruppa l'apprendimento automatico, l'analisi dei Big Data, la ricerca approfondita sulla resistenza alle minacce e l'infrastruttura cloud Microsoft per proteggere i dispositivi (o gli endpoint) dell'organizzazione.</span><span class="sxs-lookup"><span data-stu-id="03515-108">This protection brings together machine learning, big-data analysis, in-depth threat resistance research, and the Microsoft cloud infrastructure to protect devices (or endpoints) in your organization.</span></span> <span data-ttu-id="03515-109">Antivirus Microsoft Defender è integrato in Windows e compatibile con Microsoft Defender per endpoint per garantire al protezione sul dispositivo e nel cloud.</span><span class="sxs-lookup"><span data-stu-id="03515-109">Microsoft Defender Antivirus is built into Windows, and it works with Microsoft Defender for Endpoint to provide protection on your device and in the cloud.</span></span> 
+
+## <a name="compatibility-with-other-antivirus-products"></a><span data-ttu-id="03515-110">Compatibilità con altri prodotti antivirus</span><span class="sxs-lookup"><span data-stu-id="03515-110">Compatibility with other antivirus products</span></span>
+
+<span data-ttu-id="03515-111">Se si sta usando sul dispositivo un antivirus/prodotto antimalware non Microsoft, si potrebbe riuscire ad eseguire Antivirus Microsoft Defender in modalità passiva assieme alla soluzione antivirus non Microsoft.</span><span class="sxs-lookup"><span data-stu-id="03515-111">If you're using a non-Microsoft antivirus/antimalware product on your device, you might be able to run Microsoft Defender Antivirus in passive mode alongside the non-Microsoft antivirus solution.</span></span> <span data-ttu-id="03515-112">Ciò dipende dal sistema operativo usato e se per il dispositivo è stato eseguito l’onboarding su Defender per endpoint.</span><span class="sxs-lookup"><span data-stu-id="03515-112">It depends on the operating system used and whether your device is onboarded to Defender for Endpoint.</span></span> <span data-ttu-id="03515-113">Per altre informazioni, vedere [Compatibilità con Antivirus Microsoft Defender](microsoft-defender-antivirus-compatibility.md).</span><span class="sxs-lookup"><span data-stu-id="03515-113">To learn more, see [Microsoft Defender Antivirus compatibility](microsoft-defender-antivirus-compatibility.md).</span></span>
+
+## <a name="comparing-active-mode-passive-mode-and-disabled-mode"></a><span data-ttu-id="03515-114">Confronto tra modalità attiva, modalità passiva e modalità di disattivazione</span><span class="sxs-lookup"><span data-stu-id="03515-114">Comparing active mode, passive mode, and disabled mode</span></span>
+
+<span data-ttu-id="03515-115">La tabella seguente descrive cosa aspettarsi quando Antivirus Microsoft Defender è in modalità attiva, modalità passiva o è disattivato.</span><span class="sxs-lookup"><span data-stu-id="03515-115">The following table describes what to expect when Microsoft Defender Antivirus is in active mode, passive mode, or disabled.</span></span>
+
+| <span data-ttu-id="03515-116">Modalità</span><span class="sxs-lookup"><span data-stu-id="03515-116">Mode</span></span>  | <span data-ttu-id="03515-117">Effetto</span><span class="sxs-lookup"><span data-stu-id="03515-117">What happens</span></span>  |
+|---------|---------|
+| <span data-ttu-id="03515-118">Modalità attiva</span><span class="sxs-lookup"><span data-stu-id="03515-118">Active mode</span></span> | <span data-ttu-id="03515-119">In modalità attiva, Antivirus Microsoft Defender è usato sul dispositivo come app antivirus primaria.</span><span class="sxs-lookup"><span data-stu-id="03515-119">In active mode, Microsoft Defender Antivirus is used as the primary antivirus app on the device.</span></span> <span data-ttu-id="03515-120">I file sono analizzati, le minacce corrette e le minacce rilevate sono elencate nei report sulla sicurezza dell’organizzazione e nell’app di sicurezza di Windows.</span><span class="sxs-lookup"><span data-stu-id="03515-120">Files are scanned, threats are remediated, and detected threats are listed in your organization's security reports and in your Windows Security app.</span></span> |
+| <span data-ttu-id="03515-121">Modalità passiva</span><span class="sxs-lookup"><span data-stu-id="03515-121">Passive mode</span></span> | <span data-ttu-id="03515-122">In modalità passiva, Antivirus Microsoft Defender non è usato sul dispositivo come app antivirus primaria.</span><span class="sxs-lookup"><span data-stu-id="03515-122">In passive mode, Microsoft Defender Antivirus is not used as the primary antivirus app on the device.</span></span> <span data-ttu-id="03515-123">I file sono analizzati e le minacce rilevate sono segnalate ma non corrette da Antivirus Microsoft Defender.</span><span class="sxs-lookup"><span data-stu-id="03515-123">Files are scanned, and detected threats are reported, but threats are not remediated by Microsoft Defender Antivirus.</span></span>   |
+| <span data-ttu-id="03515-124">Disattivato o disinstallato</span><span class="sxs-lookup"><span data-stu-id="03515-124">Disabled or uninstalled</span></span>  | <span data-ttu-id="03515-125">Se disattivato o disabilitato, Antivirus Microsoft Defender non è in uso.</span><span class="sxs-lookup"><span data-stu-id="03515-125">When disabled or uninstalled, Microsoft Defender Antivirus is not used.</span></span> <span data-ttu-id="03515-126">I file non sono analizzati e le minacce non sono corrette.</span><span class="sxs-lookup"><span data-stu-id="03515-126">Files are not scanned, and threats are not remediated.</span></span> <span data-ttu-id="03515-127">In generale, non si consiglia di disabilitare o disinstallare Antivirus Microsoft Defender.</span><span class="sxs-lookup"><span data-stu-id="03515-127">In general, we do not recommend disabling or uninstalling Microsoft Defender Antivirus.</span></span>  |
+
+<span data-ttu-id="03515-128">Per altre informazioni, vedere [Compatibilità con Antivirus Microsoft Defender](microsoft-defender-antivirus-compatibility.md).</span><span class="sxs-lookup"><span data-stu-id="03515-128">To learn more, see [Microsoft Defender Antivirus compatibility](microsoft-defender-antivirus-compatibility.md).</span></span>
+
+## <a name="check-the-state-of-microsoft-defender-antivirus-on-your-device"></a><span data-ttu-id="03515-129">Controllare lo stato di Antivirus Microsoft Defender sul dispositivo</span><span class="sxs-lookup"><span data-stu-id="03515-129">Check the state of Microsoft Defender Antivirus on your device</span></span>
+
+<span data-ttu-id="03515-130">Se si vuole controllare lo stato di Antivirus Microsoft Defender sul dispositivo, è possibile usare uno dei diversi metodi, ad esempio l’app di sicurezza di Windows o Windows PowerShell.</span><span class="sxs-lookup"><span data-stu-id="03515-130">If you want to check the state of Microsoft Defender Antivirus on your device, you can use one of several methods, such as the Windows Security app or Windows PowerShell.</span></span>
+
+### <a name="use-the-windows-security-app-to-check-status-of-microsoft-defender-antivirus"></a><span data-ttu-id="03515-131">Usare l’app di sicurezza di Windows per controllare lo stato di Antivirus Microsoft Defender</span><span class="sxs-lookup"><span data-stu-id="03515-131">Use the Windows Security app to check status of Microsoft Defender Antivirus</span></span>
+
+1. <span data-ttu-id="03515-132">Sul dispositivo Windows, selezionare il menu Start e iniziare a digitare `Security`.</span><span class="sxs-lookup"><span data-stu-id="03515-132">On your Windows device, select the Start menu, and begin typing `Security`.</span></span> <span data-ttu-id="03515-133">Quindi aprire l’app di sicurezza di Windows nei risultati.</span><span class="sxs-lookup"><span data-stu-id="03515-133">Then open the Windows Security app in the results.</span></span>
+
+2. <span data-ttu-id="03515-134">Selezionare **Protezione da virus e minacce**.</span><span class="sxs-lookup"><span data-stu-id="03515-134">Select **Virus & threat protection**.</span></span>
+
+3. <span data-ttu-id="03515-135">In **Impostazioni di Protezione da virus e minacce** scegliere **Gestisci impostazioni**.</span><span class="sxs-lookup"><span data-stu-id="03515-135">Under **Virus & threat protection settings**, choose **Manage settings**.</span></span>
+
+<span data-ttu-id="03515-136">Si visualizzerà il nome della soluzione antivirus/antimalware sulla pagina delle impostazioni.</span><span class="sxs-lookup"><span data-stu-id="03515-136">You'll see the name of your antivirus/antimalware solution on the settings page.</span></span>
+
+### <a name="use-powershell-to-check-status-of-microsoft-defender-antivirus"></a><span data-ttu-id="03515-137">Usare PowerShell per controllare lo stato di Antivirus Microsoft Defender</span><span class="sxs-lookup"><span data-stu-id="03515-137">Use PowerShell to check status of Microsoft Defender Antivirus</span></span>
+
+1. <span data-ttu-id="03515-138">Selezionare il menu Start e iniziare a digitare `PowerShell`.</span><span class="sxs-lookup"><span data-stu-id="03515-138">Select the Start menu, and begin typing `PowerShell`.</span></span> <span data-ttu-id="03515-139">Quindi aprire Windows PowerShell nei risultati.</span><span class="sxs-lookup"><span data-stu-id="03515-139">Then open Windows PowerShell in the results.</span></span>
+
+2. <span data-ttu-id="03515-140">Tipo `Get-MpComputerStatus`.</span><span class="sxs-lookup"><span data-stu-id="03515-140">Type `Get-MpComputerStatus`.</span></span>
+
+3. <span data-ttu-id="03515-141">Nell’elenco dei risultati, osservare la riga **AMRunningMode**.</span><span class="sxs-lookup"><span data-stu-id="03515-141">In the list of results, look at the **AMRunningMode** row.</span></span>
+
+   - <span data-ttu-id="03515-142">**Normale** indica che Antivirus Microsoft Defender è in esecuzione in modalità attiva.</span><span class="sxs-lookup"><span data-stu-id="03515-142">**Normal** means Microsoft Defender Antivirus is running in active mode.</span></span>
+   - <span data-ttu-id="03515-143">**Modalità passiva** indica che Antivirus Microsoft Defender è in esecuzione, ma che non è l’antivirus/prodotto antimalware primario sul dispositivo.</span><span class="sxs-lookup"><span data-stu-id="03515-143">**Passive mode** means Microsoft Defender Antivirus running, but is not the primary antivirus/antimalware product on your device.</span></span>
+   - <span data-ttu-id="03515-144">**EDR in modalità di blocco** indica che Antivirus Microsoft Defender è in esecuzione e che in Microsoft Defender per endpoint è abilitata una funzione chiamata "EDR in modalità di blocco".</span><span class="sxs-lookup"><span data-stu-id="03515-144">**EDR Block Mode** means Microsoft Defender Antivirus is running and a capability in Microsoft Defender for Endpoint that is called "EDR in block mode" is enabled.</span></span> <span data-ttu-id="03515-145">(Vedere [Rilevamento e reazione dagli endpoint (EDR) in modalità di blocco](edr-in-block-mode.md).)</span><span class="sxs-lookup"><span data-stu-id="03515-145">(See [Endpoint detection and response (EDR) in block mode](edr-in-block-mode.md).)</span></span>
+   - <span data-ttu-id="03515-146">**SxS in modalità passive Mode** indica che Antivirus Microsoft Defender è in esecuzione in modalità passiva assieme a un altro prodotto antivirus/antimalwaree che per il dispositivo non è stato eseguito l’onboarding su Microsoft Defender per endpoint.</span><span class="sxs-lookup"><span data-stu-id="03515-146">**SxS Passive Mode** means Microsoft Defender Antivirus is running in passive mode alongside another antivirus/antimalware product, and your device is not onboarded to Microsoft Defender for Endpoint.</span></span> <span data-ttu-id="03515-147">In questo caso, vengono usate le analisi periodiche limitate in Antivirus Microsoft Defender.</span><span class="sxs-lookup"><span data-stu-id="03515-147">In this case, limited periodic scanning is used for Microsoft Defender Antivirus.</span></span> <span data-ttu-id="03515-148">Per ulteriori informazioni, vedere [Usare analisi periodiche limitate in Antivirus Microsoft Defender](limited-periodic-scanning-microsoft-defender-antivirus.md).</span><span class="sxs-lookup"><span data-stu-id="03515-148">To learn more, see [Use limited periodic scanning in Microsoft Defender Antivirus](limited-periodic-scanning-microsoft-defender-antivirus.md).</span></span>
+
+<span data-ttu-id="03515-149">Per ulteriori informazioni sul cmdlet Get-MpComputerStatus PowerShell, consultare l’articolo di riferimento [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus).</span><span class="sxs-lookup"><span data-stu-id="03515-149">To learn more about the Get-MpComputerStatus PowerShell cmdlet, see the reference article [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus).</span></span>
+
+## <a name="get-your-antivirusantimalware-platform-updates"></a><span data-ttu-id="03515-150">Ottenere gli aggiornamenti per la piattaforma antivirus/antimalware</span><span class="sxs-lookup"><span data-stu-id="03515-150">Get your antivirus/antimalware platform updates</span></span>
+
+<span data-ttu-id="03515-151">È importante tenere aggiornato Antivirus Microsoft Defender, o qualsiasi soluzione antivirus/antimalware in uso.</span><span class="sxs-lookup"><span data-stu-id="03515-151">It's important to keep Microsoft Defender Antivirus, or any antivirus/antimalware solution, up to date.</span></span> <span data-ttu-id="03515-152">Microsoft rilascia aggiornamenti periodici per garantire che i dispositivi dispongano della tecnologia più recente per la protezione contro i nuovi malware e le tecniche di attacco più recenti.</span><span class="sxs-lookup"><span data-stu-id="03515-152">Microsoft releases regular updates to help ensure that your devices have the latest technology to protect against new malware and attack techniques.</span></span> <span data-ttu-id="03515-153">Per ulteriori informazioni, vedere [Gestire gli aggiornamenti in Antivirus Microsoft Defender e applicare i valori di riferimento](manage-updates-baselines-microsoft-defender-antivirus.md).</span><span class="sxs-lookup"><span data-stu-id="03515-153">To learn more, see [Manage Microsoft Defender Antivirus updates and apply baselines](manage-updates-baselines-microsoft-defender-antivirus.md).</span></span> 
+
+## <a name="see-also"></a><span data-ttu-id="03515-154">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="03515-154">See also</span></span>
+
+- [<span data-ttu-id="03515-155">Microsoft Defender Antivirus su Windows Server</span><span class="sxs-lookup"><span data-stu-id="03515-155">Microsoft Defender Antivirus on Windows Server</span></span>](microsoft-defender-antivirus-on-windows-server.md)
+- [<span data-ttu-id="03515-156">Gestione e configurazione di Antivirus Microsoft Defender</span><span class="sxs-lookup"><span data-stu-id="03515-156">Microsoft Defender Antivirus management and configuration</span></span>](configuration-management-reference-microsoft-defender-antivirus.md)
+- [<span data-ttu-id="03515-157">Valutare la protezione di Antivirus Microsoft Defender</span><span class="sxs-lookup"><span data-stu-id="03515-157">Evaluate Microsoft Defender Antivirus protection</span></span>](evaluate-microsoft-defender-antivirus.md)

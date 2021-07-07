@@ -1,0 +1,62 @@
+### YamlMime:Landing
+title: Test Base per Microsoft 365 documentazione
+summary: Test Base for Microsoft 365 è un servizio di Azure che facilita il test delle applicazioni basato sui dati. Supportato dalla potenza dei dati e del cloud, consente ai professionisti IT di sfruttare i vantaggi dei test intelligenti da qualsiasi parte del mondo. Consente di testare le applicazioni senza problemi, impegno nel tempo e spese per la configurazione e la gestione di ambienti di test complessi. Soprattutto, offrirà l'accesso agli aggiornamenti Windows non definitiva nelle macchine virtuali protette e all'intelligence di livello mondiale per le applicazioni.
+metadata:
+  title: Test Base per la documentazione M365
+  description: Test Base for Microsoft 365 è un servizio di Azure che facilita il test delle applicazioni basato sui dati. Supportato dalla potenza dei dati e del cloud, consente ai professionisti IT di sfruttare i vantaggi dei test intelligenti da qualsiasi parte del mondo.
+  ms.service: service
+  ms.subservice: subservice
+  ms.topic: landing-page
+  ms.collection: collection
+  author: v-zhifufeng
+  ms.author: v-zhifufeng
+  ms.date: 03/29/2021
+  ms.openlocfilehash: 3833e05eea8f8598d228e261734fedb1b0cf2647
+  ms.sourcegitcommit: b0f464b6300e2977ed51395473a6b2e02b18fc9e
+  ms.translationtype: MT
+  ms.contentlocale: it-IT
+  ms.lasthandoff: 07/07/2021
+  ms.locfileid: "53323042"
+landingContent:
+- title: Informazioni sulla base di test
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Che cos'è Test Base?
+      url: overview.md
+  - linkListType: get-started
+    links:
+    - text: Creare un account di base di test
+      url: createAccount.md
+  - linkListType: tutorial
+    links:
+    - text: additional-resources
+      url: faq.md
+- title: Introduzione
+  linkLists:
+  - linkListType: quickstart
+    links:
+    - text: Creare un account di base di test
+      url: createAccount.md
+    - text: Upload'applicazione
+      url: uploadApplication.md
+    - text: Upload i file binari
+      url: binaries.md
+    - text: Impostare le attività di test
+      url: testtask.md
+    - text: Scegliere le opzioni di test
+      url: testoptions.md
+    - text: Rivedere le selezioni
+      url: review.md
+    - text: Linee guida per i pacchetti di test
+      url: contentguideline.md
+    - text: Analisi di regressione della memoria
+      url: memory.md
+    - text: Analisi della regressione della CPU
+      url: cpu.md
+- title: Ottenere riferimenti
+  linkLists:
+  - linkListType: reference
+    links:
+    - text: Domande frequenti
+      url: faq.md
