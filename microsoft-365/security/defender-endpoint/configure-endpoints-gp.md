@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: b4418cca035710c6b938dad31a2b55423d2ab458
-ms.sourcegitcommit: 8b0718f5607ab509092cb80bda854010d885c54f
+ms.openlocfilehash: 454e60b26f84aca26a0f8f317105ec5457b55ca2
+ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 07/07/2021
-ms.locfileid: "53314405"
+ms.locfileid: "53326964"
 ---
 # <a name="onboard-windows-10-devices-using-group-policy"></a>Onboardare Windows 10 dispositivi con Criteri di gruppo 
 
@@ -101,7 +101,7 @@ Per ogni dispositivo, puoi indicare se i campioni possono essere raccolti dal di
 
 4. Fare **clic su Criteri** e quindi su Modelli **amministrativi.**
 
-5. Fare **clic Windows componenti e** quindi Windows Defender **SmartScreen.**
+5. Fare **clic Windows componenti e** quindi Windows Defender **ATP.**
 
 6. Scegli se abilitare o disabilitare la condivisione dei campioni dai dispositivi.
 

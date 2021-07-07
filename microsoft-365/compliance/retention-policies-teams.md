@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informazioni sui criteri di conservazione applicabili a Microsoft Teams.
-ms.openlocfilehash: b459665d9b92705bd575a7a79a4d4d6adc2a3f68
-ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
+ms.openlocfilehash: 5d888232d94ccd6634fc6102c26958e20d88fb4d
+ms.sourcegitcommit: b0f464b6300e2977ed51395473a6b2e02b18fc9e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "53256316"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53322402"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>Informazioni sulla conservazione per Microsoft Teams
 
@@ -196,12 +196,6 @@ Quando in una riunione ospitata dall'organizzazione vengono inclusi utenti ester
 Se un utente che dispone di una cassetta postale in Exchange Online lascia l’organizzazione e il suo account di Microsoft 365 viene eliminato, i suoi messaggi della chat soggetti alla conservazione vengono archiviati in una cassetta postale inattiva. I messaggi di chat restano sottoposti ai criteri di conservazione applicati all’utente prima della disattivazione della sua cassetta postale, e sono disponibili per la ricerca eDiscovery. Per altre informazioni, vedere [Cassette postali inattive in Exchange Online](inactive-mailboxes-in-office-365.md). 
 
 Se l’utente ha archiviato dei file in Teams, vedere la sezione [corrispondente](retention-policies-sharepoint.md#when-a-user-leaves-the-organization) per SharePoint e OneDrive.
-
-## <a name="limitations"></a>Limitazioni
-
-Lavoriamo continuamente per ottimizzare la funzionalità di conservazione su Teams. Nel frattempo, tieni presente la limitazione seguente quando usi i criteri di conservazione per i messaggi di canale e le chat di Teams:
-
-- **Problema di visualizzazione non corretta in Outlook**. Se si creano criteri di conservazione per i percorsi di Skype o Teams, uno di questi criteri viene visualizzato come criterio cartella predefinito quando un utente visualizza le proprietà di una cartella della cassetta postale nel client desktop di Outlook. Si tratta di un problema di visualizzazione non corretta in Outlook e di un [problema noto](https://support.microsoft.com/help/4491013/outlook-client-displays-teams-or-skype-for-business-retention-policies). Dovrebbero essere invece visualizzati i criteri di conservazione delle cassette postali applicati alla cartella. Il criterio di conservazione di Skype o Teams non viene applicato alla cassetta postale dell'utente.
 
 ## <a name="configuration-guidance"></a>Linee guida per la configurazione
 

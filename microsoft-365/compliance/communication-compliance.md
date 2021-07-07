@@ -20,12 +20,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 2bf40f5b1d89b7a232f86c1e186ca660db9f8bbc
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 470b33ca3201151fb164640eeb93c50daf7bb458
+ms.sourcegitcommit: b0f464b6300e2977ed51395473a6b2e02b18fc9e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53227284"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53322366"
 ---
 # <a name="learn-about-communication-compliance-in-microsoft-365"></a>Informazioni sulla conformità delle comunicazioni in Microsoft 365
 
@@ -79,7 +79,7 @@ La conformità delle comunicazioni in Microsoft 365 offre diverse funzionalità 
 I modelli personalizzabili intelligenti nella conformità delle comunicazioni consentono di applicare l'apprendimento automatico per rilevare in modo intelligente le violazioni di comunicazione nell'organizzazione.
 
 - **Modelli preconfigurato personalizzabili:** i nuovi modelli di criteri consentono di affrontare i rischi più comuni per le comunicazioni. La creazione iniziale dei criteri e l'aggiornamento di follow-on sono ora più rapidi con un linguaggio anti-molestie e offensivo predefinito, informazioni riservate, conflitto di interesse e modelli di conformità normativi.
-- **Nuovo** supporto per l'apprendimento automatico: i classificatori [](classifier-get-started-with.md) di minacce, molestie, volgarità e immagini incorporati consentono di ridurre i falsi positivi nei messaggi analizzati, risparmiando tempo ai revisori durante il processo di indagine e correzione.
+- **Nuovo** supporto per l'apprendimento automatico: la discriminazione predefinita, le minacce, le molestie, le volgarità e i [classificatori](classifier-get-started-with.md) di immagini aiutano a ridurre il contenuto classificato in modo errere nei messaggi analizzati, risparmiando tempo ai revisori durante il processo di indagine e correzione.
 - **Generatore di condizioni** migliorato: la configurazione delle condizioni dei criteri è ora semplificata in un'unica esperienza integrata nella procedura guidata dei criteri, riducendo la confusione nel modo in cui vengono applicate le condizioni per i criteri.
 
 ### <a name="flexible-remediation-workflows"></a>Flussi di lavoro di correzione flessibili
@@ -154,11 +154,11 @@ In questa fase, vengono esaminati attentamente i problemi rilevati come corrispo
 
 Il passaggio successivo consiste nel correggere i problemi di conformità delle comunicazioni esaminati utilizzando le opzioni seguenti:
 
-- **Risolvi**: dopo aver esaminato un problema, è possibile correggerlo risolvendo l'avviso. La risoluzione di un avviso consente di rimuoverlo dalla coda degli avvisi in sospeso; l'azione viene mantenuta come voce nella coda di Risolto per i criteri di corrispondenza. Gli avvisi vengono risolti automaticamente dopo il contrassegno dell'avviso come falso positivo, l'invio di un avviso a un utente sull'avviso o l'apertura di un nuovo caso per l'avviso.
+- **Risolvi**: dopo aver esaminato un problema, è possibile correggerlo risolvendo l'avviso. La risoluzione di un avviso lo rimuove dalla coda degli avvisi in sospeso e l'azione viene mantenuta come voce nella coda *Risolta* per il criterio di corrispondenza. Gli avvisi vengono risolti automaticamente dopo aver contrassegnato l'avviso come non classificato correttamente, dopo l'invio di un avviso a un utente o l'apertura di un nuovo caso per l'avviso.
 - **Contrassegnare un messaggio**: come parte della risoluzione di un problema, è possibile contrassegnare il messaggio rilevato come conforme, non conforme o dubbio in base ai criteri e agli standard dell'organizzazione. L'utilizzo di un contrassegno consente filtrare gli avvisi dei criteri per le escalation o come parte di altri processi di revisione interni.
 - **Notifica all'utente:** spesso, gli utenti violano accidentalmente o accidentalmente un criterio di conformità delle comunicazioni. È possibile usare la funzionalità di notifica per fornire un avviso all'utente e per risolvere il problema.
 - **Eseguire l'escalation a un altro revisore**: a volte il revisore iniziale di un problema richiede l'input di altri revisori per risolvere l'incidente. È possibile eseguire facilmente l'escalation i problemi dei messaggi ai revisori di altre aree dell'organizzazione nell'ambito del processo di risoluzione.
-- **Contrassegnare come falso positivo**: i messaggi rilevati in modo non corretto come corrispondenze dei criteri di conformità occasionalmente vengono ignorati durante il processo di revisione. È possibile contrassegnare questi tipi di avvisi come falsi positivi e risolvere automaticamente il problema.
+- **Segnala come non classificati** correttamente: i messaggi erroneamente rilevati come corrispondenze dei criteri di conformità vengono a volte inviati al processo di revisione. È possibile contrassegnare questi tipi di avvisi come classificati in modo erressi, inviare commenti e suggerimenti a Microsoft sulla classificazione errata per migliorare i classificatori globali e risolvere automaticamente il problema.
 - **Rimuovi messaggio in Teams (anteprima):** i messaggi inappropriati potrebbero essere rimossi dalla visualizzazione nei canali Microsoft Teams o nei messaggi personali e di chat di gruppo. I messaggi inappropriati rimossi vengono sostituiti da una notifica che indica che il messaggio è stato rimosso per una violazione dei criteri.
 - **Escalation per l'indagine:** nelle situazioni più gravi potrebbe essere necessario condividere le informazioni sulla conformità delle comunicazioni con altri revisori dell'organizzazione. Conformità delle comunicazioni è strettamente integrata ad altre funzionalità di Centro conformità Microsoft 365 per la gestione della risoluzione dei rischi end-to-end. L'escalation di un caso per l'indagine consente di trasferire i dati e la gestione del caso ad Advanced eDiscovery in Microsoft 365. La soluzione Advanced eDiscovery offre un flusso di lavoro end-to-end per conservare, raccogliere, rivedere, analizzare ed esportare contenuti rilevanti per le indagini interne ed esterne dell'organizzazione. Consente ai team legali di gestire l'intero flusso di lavoro per le notifiche di blocco a fini giudiziari. Per maggiori informazioni sui casi di Advanced eDiscovery, consultare la [Panoramica di Advanced eDiscovery in Microsoft 365](overview-ediscovery-20.md).
 

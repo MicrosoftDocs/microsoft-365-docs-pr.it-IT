@@ -13,12 +13,12 @@ ms.collection: M365-modern-desktop
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 description: Crea e classifica le assegnazioni, crea e cura il contenuto del corso e collabora ai file in tempo reale con la nuova app Microsoft OneDrive Learning Tools Interoperability App.
-ms.openlocfilehash: 985a316bac689b9bc6c53ab65782d548fcad0db8
-ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
+ms.openlocfilehash: bcb374ed1666f23fa5f3d4692f43a4369670e891
+ms.sourcegitcommit: b0f464b6300e2977ed51395473a6b2e02b18fc9e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "53257020"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53322222"
 ---
 # <a name="integrate-microsoft-onedrive-lti-with-canvas"></a>Integrare Microsoft OneDrive LTI con Canvas
 
@@ -40,7 +40,11 @@ L'integrazione Microsoft OneDrive LTI con Canvas è un processo in due passaggi.
 
 1. Accedere al portale <a href="https://onedrivelti.microsoft.com/admin" target="_blank">Microsoft OneDrive registrazione LTI</a>
 1. Seleziona il **pulsante Consenso** amministratore e accetta le autorizzazioni.
-1. Selezionare il **pulsante Crea nuovo tenant LTI.** Nella pagina Registrazione LTI seleziona **Canvas nell'elenco** a discesa e immetti l'URL di base dell'istanza canvas.
+
+> [!CAUTION]
+> Se questo passaggio non viene eseguito, il passaggio seguente restituirà un errore e non sarà possibile eseguire questo passaggio per un'ora dopo aver ricevuto l'errore.
+
+3. Selezionare il **pulsante Crea nuovo tenant LTI.** Nella pagina Registrazione LTI seleziona **Canvas nell'elenco** a discesa e immetti l'URL di base dell'istanza canvas.
 
 > [!NOTE]
 > Se l'istanza canvas è, ad esempio, ]( , deve essere https://contoso.test.instructure.com https://contoso.test.instructure.com) immesso l'URL completo.

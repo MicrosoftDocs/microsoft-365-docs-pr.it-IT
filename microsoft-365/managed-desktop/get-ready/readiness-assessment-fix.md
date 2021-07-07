@@ -10,12 +10,12 @@ ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 9d2f9a95b3d5d90b79122d55477284083ea8332e
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 866d1a2de820fca4c66537583dc5f55098149931
+ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53286886"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53327012"
 ---
 # <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>Risolvere problemi trovati dallo strumento di valutazione dell'idoneità
 
@@ -212,6 +212,13 @@ Si dispone di un profilo di base di sicurezza destinato a tutti gli utenti, a tu
 
 Assicurati che tutti i criteri di base di sicurezza che hai escluso Microsoft Managed Desktop dispositivi. Per la procedura, vedere Usare le linee di base [della sicurezza per configurare Windows 10 dispositivi in Intune.](/mem/intune/protect/security-baselines) Durante la registrazione, applicheremo una nuova linea di base di sicurezza a tutti Microsoft Managed Desktop dispositivi. Il **gruppo Modern Workplace Devices -All** Azure AD è un gruppo dinamico che creiamo quando ti iscrivi a Microsoft Managed Desktop, quindi dovrai tornare per escludere questo gruppo dopo la registrazione. 
 
+### <a name="unlicensed-admins"></a>Amministratori senza licenza
+
+Questa impostazione deve essere abilitata per evitare un errore di "mancanza di autorizzazioni" quando interagiamo con l'organizzazione di Azure AD. 
+
+**Non pronto**
+
+**Consentire l'accesso agli amministratori senza** licenza deve essere abilitato. Per la procedura, vedere [Prerequisiti per gli account guest.](/microsoft-365/managed-desktop/get-ready/guest-accounts)
 
 ### <a name="windows-apps"></a>Windows app
 

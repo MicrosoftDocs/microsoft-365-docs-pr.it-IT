@@ -18,20 +18,20 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 170955ebba633c1749423e11bb34f7bfbdba1f07
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+ms.openlocfilehash: e24b59958e5ef933b42294636ce6a1cc11528bb8
+ms.sourcegitcommit: b0f464b6300e2977ed51395473a6b2e02b18fc9e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52684112"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53322246"
 ---
 # <a name="investigate-and-remediate-communication-compliance-alerts"></a>Esaminare e correggere gli avvisi di conformità delle comunicazioni
 
 Dopo aver configurato i criteri di conformità delle comunicazioni, inizierai a ricevere avvisi nel Centro conformità Microsoft 365 per i problemi relativi ai messaggi che soddisfano le condizioni dei criteri. Seguire le istruzioni del flusso di lavoro qui per analizzare e correggere i problemi di avviso.
 
-## <a name="investigate-alerts"></a>Esaminare gli avvisi
+## <a name="investigate-alerts"></a>Indagare sugli avvisi
 
-Il primo passaggio per analizzare i problemi rilevati dai criteri consiste nell'esaminare gli avvisi di conformità delle comunicazioni nel Centro Microsoft 365 conformità. Nell'area della soluzione di conformità delle comunicazioni sono disponibili diverse aree che consentono di analizzare rapidamente gli avvisi, a seconda di come si preferisce visualizzare il raggruppamento degli avvisi:
+Il primo passaggio per analizzare i problemi rilevati dai criteri consiste nell'esaminare gli avvisi di conformità delle comunicazioni nel Centro conformità Microsoft 365. Nell'area della soluzione di conformità delle comunicazioni sono disponibili diverse aree che consentono di analizzare rapidamente gli avvisi, a seconda di come si preferisce visualizzare il raggruppamento degli avvisi:
 
 - **Pagina Criteri di** conformità della comunicazione : quando si accede utilizzando le credenziali per un account amministratore nell'organizzazione di Microsoft 365, selezionare Conformità comunicazione per visualizzare la pagina Criteri di conformità [https://compliance.microsoft.com](https://compliance.microsoft.com) **delle** comunicazioni.  In questa pagina vengono visualizzati i criteri di conformità delle comunicazioni configurati Microsoft 365'organizzazione e i collegamenti ai modelli di criteri consigliati. Ogni criterio elencato include il numero di avvisi che devono essere esaminati, il numero di elementi inoltrati e risolti, lo stato del criterio e la data e l'ora dell'ultima analisi dei criteri. Selezionando un criterio vengono visualizzati tutti gli avvisi in sospeso per le corrispondenze al criterio; selezionare un avviso specifico per avviare la pagina dei dettagli del criterio e per avviare azioni correttive.
 - **Avvisi**: passare a **Avvisi di conformità** delle comunicazioni per visualizzare gli ultimi 30 giorni di avvisi  >   raggruppati in base alle corrispondenze dei criteri. Questa visualizzazione consente di vedere rapidamente quali criteri di conformità delle comunicazioni generano la maggior parte degli avvisi ordinati in base al livello di gravità. Per avviare le azioni di correzione, selezionare il criterio associato all'avviso per avviare la **pagina Dettagli** criterio. Dalla pagina Dettagli **criterio** è possibile esaminare un  riepilogo delle attività nella pagina Panoramica, esaminare e agire sui messaggi di avviso nella pagina In sospeso oppure esaminare la cronologia degli avvisi chiusi nella pagina **Risolto.** 
@@ -47,7 +47,7 @@ Per un elenco completo dei filtri e dei dettagli dei campi, vedere [Filtri](comm
 
 1. Accedere usando [https://compliance.microsoft.com](https://compliance.microsoft.com) le credenziali per un account amministratore nell'Microsoft 365 aziendale.
 
-2. Nel Centro Microsoft 365 conformità passare a **Conformità delle comunicazioni**.
+2. Nel Centro conformità Microsoft 365, andare a **Conformità delle comunicazioni**.
 
 3. Seleziona la **scheda Criteri** e quindi seleziona un criterio per l'analisi, fai doppio clic per aprire la **pagina** Criteri.
 
@@ -71,7 +71,7 @@ I criteri di conformità delle comunicazioni analizzano e pre-raggruppano automa
 
 1. Accedere usando [https://compliance.microsoft.com](https://compliance.microsoft.com) le credenziali per un account amministratore nell'Microsoft 365 aziendale.
 
-2. Nel Centro Microsoft 365 conformità passare a **Conformità delle comunicazioni**.
+2. Nel Centro conformità Microsoft 365, andare a **Conformità delle comunicazioni**.
 
 3. Seleziona la **scheda Criteri** e quindi seleziona un criterio per l'analisi, fai doppio clic per aprire la **pagina** Criteri.
 
@@ -93,7 +93,7 @@ Indipendentemente da dove si inizia a esaminare gli avvisi o i filtri configurat
 
 ### <a name="step-1-examine-the-message-basics"></a>Passaggio 1: Esaminare le nozioni di base dei messaggi
 
- A volte dall'origine o dall'oggetto risulta evidente che un messaggio può essere immediatamente corretti. È possibile che il messaggio sia falso o non corrisponda correttamente a un criterio e che debba essere risolto come falso positivo. Selezionare il controllo **Falso positivo** per risolvere immediatamente l'avviso e rimuoverlo dalla coda degli avvisi in sospeso. Dalle informazioni sull'origine o sul mittente, si potrebbe già sapere come deve essere instradato o gestito il messaggio in questi casi. Valutare l'utilizzo dei controlli **Contrassegna come** o **Riassegna** per contrassegnare i messaggi applicabili o per inoltrare i messaggi a un revisore designato.
+ A volte dall'origine o dall'oggetto risulta evidente che un messaggio può essere immediatamente corretti. È possibile che il messaggio sia spurio o non corrisponda correttamente a un criterio e che debba essere risolto come non classificato correttamente. Selezionare il **controllo Segnala come non** classificato per condividere il contenuto non classificato con Microsoft, risolvere immediatamente l'avviso e rimuoverlo dalla coda degli avvisi in sospeso. Dalle informazioni sull'origine o sul mittente, si potrebbe già sapere come deve essere instradato o gestito il messaggio in questi casi. Valutare l'utilizzo dei controlli **Contrassegna come** o **Riassegna** per contrassegnare i messaggi applicabili o per inoltrare i messaggi a un revisore designato.
 
 ![Controlli di correzione della conformità delle comunicazioni](../media/communication-compliance-remediation-controls.png)
 
@@ -107,7 +107,7 @@ Dopo aver esaminato le nozioni di base del messaggio, è il momento di aprire un
 - **Visualizzazione conversazione (anteprima):** disponibile per i messaggi di chat di Microsoft Teams, questa visualizzazione visualizza fino a cinque messaggi prima e dopo un messaggio di avviso per consentire ai revisori di visualizzare l'attività nel contesto di conversazione. Questo contesto consente ai revisori di valutare rapidamente i messaggi e prendere decisioni più informate sulla risoluzione dei messaggi. Vengono visualizzate le aggiunte di messaggi in tempo reale alle conversazioni, incluse tutte le immagini in linea, le emoji e gli adesivi disponibili in Teams. L'immagine o i file di testo allegati ai messaggi non vengono visualizzati. Le notifiche vengono visualizzate automaticamente per i messaggi che sono stati modificati o per i messaggi che sono stati eliminati dalla finestra di conversazione. Quando un messaggio viene risolto, i messaggi conversazionali associati non vengono conservati con il messaggio risolto. I messaggi di conversazione sono disponibili fino a 60 giorni dopo l'identificazione del messaggio di avviso.
 - **Cronologia utenti**: questa visualizzazione mostra tutti gli altri avvisi generati dai criteri di conformità delle comunicazioni per l'utente che invia il messaggio.
 - **Notifica rilevata** dal modello: molte azioni di molesto e bullismo nel tempo comportano la ripetizione di istanze dello stesso comportamento da parte di un utente. La *notifica rilevata* dal modello viene visualizzata nei dettagli dell'avviso e solleva l'attenzione sull'avviso. Il rilevamento dei modelli è basato su criteri e valuta il comportamento negli ultimi 30 giorni quando almeno due messaggi vengono inviati allo stesso destinatario da un mittente. Gli investigatori e i revisori possono utilizzare questa notifica per identificare il comportamento ripetuto per valutare l'avviso nel modo appropriato.
-- **Mostra visualizzazione Traduci**: questa visualizzazione converte automaticamente il testo del messaggio di avviso nella lingua configurata nell'impostazione Lingua visualizzata nella sottoscrizione Microsoft 365 per ogni revisore.  La visualizzazione Traduci consente di ampliare il supporto investigativo per le organizzazioni con utenti multilingue ed elimina la necessità di servizi di traduzione aggiuntivi al di fuori del processo di revisione della conformità delle comunicazioni. Utilizzando i servizi Di traduzione Microsoft, la visualizzazione Traduci può essere attivata e disattivata in base alle esigenze e supporta un'ampia gamma di lingue. Per un elenco completo delle lingue supportate, vedere [Microsoft Translator Lingue](https://www.microsoft.com/translator/business/languages/). Le lingue elencate *nell'Translator lingua sono* supportate nella visualizzazione Traduci.
+- **Mostra visualizzazione Traduci**: questa visualizzazione converte automaticamente il testo del messaggio di avviso nella lingua configurata nell'impostazione Lingua visualizzata nella sottoscrizione Microsoft 365 per ogni revisore.  La visualizzazione Traduci consente di ampliare il supporto investigativo per le organizzazioni con utenti multilingue ed elimina la necessità di servizi di traduzione aggiuntivi al di fuori del processo di revisione della conformità delle comunicazioni. Utilizzando i servizi Di traduzione Microsoft, la visualizzazione Traduci può essere attivata e disattivata in base alle esigenze e supporta un'ampia gamma di lingue. Per un elenco completo delle lingue supportate, vedere [Microsoft Translator lingue](https://www.microsoft.com/translator/business/languages/). Le lingue elencate *nell'Translator lingua sono* supportate nella visualizzazione Traduci.
 
     ![Controlli di visualizzazione dei messaggi di conformità delle comunicazioni](../media/communication-compliance-message-views.png)
 
@@ -116,7 +116,7 @@ Dopo aver esaminato le nozioni di base del messaggio, è il momento di aprire un
 Dopo aver esaminato i dettagli del messaggio per l'avviso, è possibile scegliere diverse azioni di correzione:
 
 - **Risolvi**: selezionando il **controllo Risolvi**  il messaggio viene rimosso immediatamente dalla coda degli avvisi in sospeso e non è possibile eseguire ulteriori operazioni sul messaggio. Selezionando **Risolvi,** l'avviso è stato essenzialmente chiuso senza ulteriori classificazioni e non è possibile riaprirlo per ulteriori azioni. Tutti i messaggi risolti vengono visualizzati nella **scheda Risolto.**
-- **False Positive**: è sempre possibile risolvere un messaggio come falso positivo in qualsiasi momento durante il flusso di lavoro di revisione dei messaggi. Il falso positivo indica che l'avviso non è utilizzabile o che l'avviso è stato generato in modo errato dal processo di avviso. Il messaggio non può essere riaperto e tutti i messaggi falsi positivi vengono visualizzati nella **scheda Risolto.**
+- **Segnala come non classificata (anteprima):** è sempre possibile risolvere un messaggio come classificato in modo errevisto in qualsiasi momento durante il flusso di lavoro di revisione dei messaggi. La classificazione errata indica che l'avviso non è utilizzabile o che l'avviso è stato generato in modo errato dal processo di avviso e da eventuali classificatori sotto forma di training. La risoluzione dell'elemento come classificata in modo errevole invia a Microsoft il contenuto, gli allegati e l'oggetto del messaggio (inclusi i metadati) per migliorare i classificatori sotto forma di training. I dati inviati a Microsoft non contengono informazioni che possono identificare o essere utilizzati per identificare gli utenti dell'organizzazione. Non è possibile eseguire ulteriori azioni sul messaggio e tutti i messaggi classificati in modo erre sono visualizzati nella **scheda Risolto.**
 - **Power Automate (anteprima):** utilizzare un flusso Power Automate per automatizzare le attività di elaborazione per un messaggio di avviso. Per impostazione predefinita,  la conformità delle comunicazioni include il responsabile delle notifiche quando un utente dispone di un modello di flusso di avviso di conformità della comunicazione che i revisori possono utilizzare per automatizzare il processo di notifica per gli utenti con avvisi di messaggio. Per ulteriori informazioni sulla creazione e sulla gestione dei Power Automate di comunicazione, vedere l'articolo di riferimento sulle funzionalità di conformità [delle](communication-compliance-feature-reference.md#power-automate-flows) comunicazioni.
 - **Tag as**: Contrassegna il messaggio come  *conforme,* *non* conforme o come discutibile in relazione ai criteri e agli standard per l'organizzazione. L'aggiunta di tag e commenti di tagging consente di visualizzare avvisi di criteri di micro-filtro per escalation o come parte di altri processi di revisione interni. Al termine del tagging, è anche possibile scegliere di risolvere il messaggio per spostarlo fuori dalla coda di revisione in sospeso.
 - **Notifica:** è possibile utilizzare il **controllo Notify** per assegnare un modello di avviso personalizzato all'avviso e per inviare un avviso all'utente. Scegliere il modello di avviso appropriato configurato  **nell'area** Impostazioni di conformità della comunicazione e selezionare Invia a un promemoria tramite posta elettronica all'utente che ha inviato il messaggio e per risolvere il problema.

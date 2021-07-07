@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: dc5710a73685c67eff17c0f281bd14e48707e60f
-ms.sourcegitcommit: 1c11035dd4432e34603022740baef0c8f7ff4425
+ms.openlocfilehash: 4793f3c84ddda0db7f4d67ac96cb31a6e2108c57
+ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/16/2021
-ms.locfileid: "52964789"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53327000"
 ---
 # <a name="microsoft-defender-for-endpoint-for-non-windows-platforms"></a>Microsoft Defender for Endpoint per piattaforme non-Windows
 
@@ -35,7 +35,7 @@ ms.locfileid: "52964789"
 
 > Vuoi provare Microsoft Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-Microsoft è in viaggio per estendere le funzionalità di sicurezza degli endpoint leader del settore oltre Windows e Windows Server a macOS, Linux, Android e presto iOS.
+Microsoft è in viaggio per estendere le funzionalità di sicurezza degli endpoint leader del settore oltre Windows e Windows Server a macOS, Linux, Android e iOS.
 
 Le organizzazioni devono affrontare minacce su un'ampia gamma di piattaforme e dispositivi. I nostri team si sono impegnati a creare soluzioni di sicurezza non solo per *Microsoft,* ma anche da *Microsoft* per consentire ai clienti di proteggere e proteggere i propri ambienti eterogenei. Stiamo ascoltando il feedback dei clienti e stiamo collaborando a stretto contatto con i nostri clienti per creare soluzioni che soddisfino le loro esigenze.
 
@@ -43,7 +43,7 @@ Con Microsoft Defender for Endpoint, i clienti possono usufruire di una visualiz
 
 ## <a name="microsoft-defender-for-endpoint-on-macos"></a>Microsoft Defender per endpoint su macOS 
 
-Microsoft Defender per Endpoint su macOS offre funzionalità antivirus e rilevamento e reazione dagli endpoint (EDR) per le tre versioni più recenti rilasciate di macOS. I clienti possono distribuire e gestire la soluzione Microsoft Endpoint Manager e Jamf. Come per le Microsoft Office in macOS, Microsoft Auto Update viene usato per gestire Gli aggiornamenti di Microsoft Defender per Endpoint su Mac. Per informazioni sulle funzionalità e i vantaggi principali, leggere i [nostri annunci.](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/bg-p/MicrosoftDefenderATPBlog/label-name/macOS)
+Microsoft Defender per Endpoint su macOS offre funzionalità antivirus, rilevamento e risposta degli endpoint (EDR) e gestione delle vulnerabilità per le tre versioni più recenti rilasciate di macOS. I clienti possono distribuire e gestire la soluzione Microsoft Endpoint Manager e Jamf. Come per le Microsoft Office in macOS, Microsoft Auto Update viene usato per gestire Gli aggiornamenti di Microsoft Defender per Endpoint su Mac. Per informazioni sulle funzionalità e i vantaggi principali, leggere i [nostri annunci.](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/bg-p/MicrosoftDefenderATPBlog/label-name/macOS)
 
 Per altri dettagli su come iniziare, visita la documentazione di Defender for Endpoint su [macOS.](microsoft-defender-endpoint-mac.md)
 
@@ -56,7 +56,7 @@ Per altri dettagli su come iniziare, visita la documentazione di Defender for En
 
 ## <a name="microsoft-defender-for-endpoint-on-linux"></a>Microsoft Defender per endpoint su Linux
 
-Microsoft Defender per Endpoint su Linux offre funzionalità preventive (AV) per i server Linux. Ciò include un'esperienza completa della riga di comando per configurare e gestire l'agente, avviare analisi e gestire le minacce. Sono supportate le versioni recenti delle sei distribuzioni più comuni di Linux Server: RHEL 7.2+, CentOS Linux 7.2+, Ubuntu 16 LTS o versioni successive, SLES 12+, Debian 9+e Oracle Linux 7.2. Microsoft Defender for Endpoint su Linux può essere distribuito e configurato con Puppet, Ansible o con lo strumento di gestione della configurazione linux esistente. Per informazioni sulle funzionalità e i vantaggi principali, leggere i [nostri annunci.](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/bg-p/MicrosoftDefenderATPBlog/label-name/Linux)
+Microsoft Defender per Endpoint su Linux offre funzionalità preventive (AV), rilevamento e risposta degli endpoint (EDR) e gestione delle vulnerabilità per i server Linux. Ciò include un'esperienza completa della riga di comando per configurare e gestire l'agente, avviare analisi e gestire le minacce. Sono supportate le versioni recenti delle sei distribuzioni più comuni di Linux Server: RHEL 7.2+, CentOS Linux 7.2+, Ubuntu 16 LTS o versioni successive, SLES 12+, Debian 9+e Oracle Linux 7.2. Microsoft Defender for Endpoint su Linux può essere distribuito e configurato con Puppet, Ansible o con lo strumento di gestione della configurazione linux esistente. Per informazioni sulle funzionalità e i vantaggi principali, leggere i [nostri annunci.](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/bg-p/MicrosoftDefenderATPBlog/label-name/Linux)
 
 Per altri dettagli su come iniziare, visita la documentazione di Microsoft Defender for Endpoint su [Linux.](microsoft-defender-endpoint-linux.md)
 

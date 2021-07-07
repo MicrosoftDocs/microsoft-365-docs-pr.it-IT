@@ -18,19 +18,16 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 65edf54ea0bf5cb0a0210dd306db07c756149f65
-ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
+ms.openlocfilehash: 0ed494cc29eb990430be590e62db5f0365ace494
+ms.sourcegitcommit: b0f464b6300e2977ed51395473a6b2e02b18fc9e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53062134"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53322426"
 ---
 # <a name="microsoft-defender-for-endpoint-preview-features"></a>Funzionalità di anteprima di Microsoft Defender per Endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
->[!IMPORTANT]
->Le versioni di anteprima vengono fornite senza un contratto di servizio e non sono consigliate per i carichi di lavoro di produzione. Alcune funzionalità potrebbero non essere supportate o avere funzionalità vincolate.
 
 **Si applica a:**
 - [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
@@ -48,6 +45,19 @@ Scopri le nuove funzionalità nella versione di anteprima di Defender for Endpoi
 
 Per altre informazioni sulle nuove funzionalità disponibili in genere, vedi Novità [di Defender per Endpoint.](whats-new-in-microsoft-defender-atp.md)
 
+ ## <a name="what-you-need-to-know"></a>Cosa è necessario sapere
+
+Quando si lavora con le funzionalità in anteprima pubblica, queste funzionalità:
+
+- Può avere funzionalità limitate o limitate. Ad esempio, la funzionalità può essere applicata solo a una piattaforma.
+- In genere, le modifiche delle funzionalità vengono apportate prima che siano disponibili in genere.
+- Sono completamente supportati da Microsoft.
+- Può essere disponibile solo in aree geografiche o ambienti cloud selezionati. Ad esempio, la funzionalità potrebbe non esistere nel cloud per enti pubblici.
+- Le singole funzionalità in anteprima possono avere più restrizioni di utilizzo e supporto. In tal caso, queste informazioni vengono in genere riportate nella documentazione relativa alle funzionalità.
+- Le versioni di anteprima sono fornite con un livello di supporto standard ed è consigliabile per i carichi di lavoro di produzione. 
+
+
+
 ## <a name="turn-on-preview-features"></a>Attivare funzionalità di anteprima
 
 Avrai accesso alle funzionalità future su cui puoi fornire feedback per migliorare l'esperienza complessiva prima che le funzionalità siano generalmente disponibili.
@@ -64,7 +74,7 @@ Nella versione di anteprima sono incluse le funzionalità seguenti:
 
 - [Filtro contenuto Web](web-content-filtering.md) <br> Il filtro contenuto Web fa parte delle funzionalità di protezione Web in Microsoft Defender for Endpoint. Consente all'organizzazione di tenere traccia e regolare l'accesso ai siti Web in base alle categorie di contenuto. Molti di questi siti Web, sebbene non dannosi, potrebbero essere problematici a causa delle normative di conformità, dell'utilizzo della larghezza di banda o di altri problemi.
 
-- [Report integrità e conformità dei dispositivi](machine-reports.md) <br/> Il report sull'integrità e la conformità dei dispositivi fornisce informazioni di alto livello sui dispositivi dell'organizzazione.
+- [Report dell'integrità e la conformità dei dispositivi.](machine-reports.md) <br/> Il report sull'integrità e la conformità dei dispositivi fornisce informazioni di alto livello sui dispositivi dell'organizzazione.
 
 > [!TIP] 
 > Vuoi provare Microsoft Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-preview-belowfoldlink)  

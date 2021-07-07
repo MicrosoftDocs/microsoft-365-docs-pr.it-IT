@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: f94d2bbb8a65a4004ee05b9d740f94ae841f9a4e
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 8a81c65d65704262230e6eb6245d882b63a18bab
+ms.sourcegitcommit: b0f464b6300e2977ed51395473a6b2e02b18fc9e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53227376"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53322294"
 ---
 # <a name="communication-compliance-feature-reference"></a>Informazioni di riferimento sulla funzionalità di conformità delle comunicazioni
 
@@ -37,7 +37,7 @@ ms.locfileid: "53227376"
 > [!NOTE]
 > I criteri di supervisione creati nel Centro sicurezza & conformità per Office 365 sottoscrizioni non possono eseguire la migrazione a Microsoft 365. Se si esegue la migrazione da una sottoscrizione Office 365 a una sottoscrizione Microsoft 365, è necessario creare nuovi criteri di conformità delle comunicazioni per sostituire i criteri di supervisione esistenti.
 
-## <a name="policy-templates"></a>Modelli dei criteri
+## <a name="policy-templates"></a>Modelli di criteri
 
 I modelli di criteri sono impostazioni predefinite che è possibile utilizzare per creare rapidamente criteri per affrontare scenari di conformità comuni. Ognuno di questi modelli presenta differenze nelle condizioni e nell'ambito e tutti i modelli usano gli stessi tipi di segnali di scansione. È possibile scegliere tra i modelli di criteri seguenti:
 
@@ -52,7 +52,7 @@ Le comunicazioni vengono analizzate ogni 24 ore dalla creazione dei criteri. Ad 
 
 ## <a name="pausing-a-policy-preview"></a>Sospensione di un criterio (anteprima)
 
-Dopo aver creato un criterio di conformità delle comunicazioni, il criterio potrebbe essere temporaneamente sospeso, se necessario. La sospensione di un criterio può essere usata per testare o risolvere i problemi relativi alle corrispondenze dei criteri o per ottimizzare le condizioni dei criteri. Invece di eliminare un criterio in queste circostanze, la sospensione di un criterio mantiene anche gli avvisi e i messaggi dei criteri esistenti per indagini e revisioni in corso. La sospensione di un criterio impedisce l'analisi e la generazione di avvisi per tutte le condizioni dei messaggi utente definite nel criterio per il momento in cui il criterio viene sospeso. Per sospendere o riavviare un criterio, gli utenti devono essere membri del gruppo di ruoli *Communication Compliance Admin.*
+Dopo aver creato un criterio di conformità delle comunicazioni, il criterio potrebbe essere temporaneamente sospeso, se necessario. La sospensione di un criterio può essere usata per testare o risolvere i problemi relativi alle corrispondenze dei criteri o per ottimizzare le condizioni dei criteri. Invece di eliminare un criterio in queste circostanze, la sospensione di un criterio mantiene anche gli avvisi e i messaggi dei criteri esistenti per indagini e revisioni in corso. La sospensione di un criterio impedisce l'ispezione e la generazione di avvisi per tutte le condizioni dei messaggi utente definite nel criterio per il momento in cui il criterio viene sospeso. Per sospendere o riavviare un criterio, gli utenti devono essere membri del gruppo di ruoli *Communication Compliance Admin.*
 
 Per sospendere un criterio, passare **alla** pagina Criteri, selezionare un criterio e quindi selezionare **Sospendi criterio** dalla barra degli strumenti azioni. Nel riquadro **Sospendi** criterio, confermare che si desidera sospendere il criterio selezionando **Sospendi**. In alcuni casi, potrebbero essere necessario fino a 24 ore prima che un criterio venga sospeso. Una volta sospeso il criterio, gli avvisi per i messaggi corrispondenti al criterio non vengono creati. Tuttavia, i messaggi associati agli avvisi creati prima di sospendere il criterio rimangono disponibili per l'analisi, la revisione e la correzione.
 
@@ -78,7 +78,7 @@ A seconda di come si desidera gestire i criteri di comunicazione e gli avvisi, �
 
 Scegliere tra queste opzioni del gruppo di ruoli per la configurazione della conformità delle comunicazioni:
 
-|**Gruppo di ruolo**|**Autorizzazioni del gruppo di ruoli**|
+|**Gruppo di ruoli**|**Autorizzazioni del gruppo di ruoli**|
 |:-----|:-----|
 | **Conformità delle comunicazioni** | Utilizzare questo gruppo di ruoli per gestire la conformità delle comunicazioni per l'organizzazione in un singolo gruppo. Aggiungendo tutti gli account utente per amministratori, analisti, investigatori e visualizzatori designati, è possibile configurare le autorizzazioni di conformità delle comunicazioni in un singolo gruppo. Questo gruppo di ruoli contiene tutti i ruoli di autorizzazione di conformità delle comunicazioni. Questa configurazione è il modo più semplice per iniziare rapidamente a utilizzare la conformità delle comunicazioni ed è adatta per le organizzazioni che non necessitano di autorizzazioni separate definite per gruppi di utenti distinti. |
 | **Amministratore per la conformità delle comunicazioni** | Utilizzare questo gruppo di ruoli per configurare inizialmente la conformità delle comunicazioni e successivamente per separare gli amministratori di conformità delle comunicazioni in un gruppo definito. Gli utenti assegnati a questo gruppo di ruoli possono creare, leggere, aggiornare ed eliminare criteri di conformità delle comunicazioni, impostazioni globali e assegnazioni di gruppi di ruoli. Gli utenti assegnati a questo gruppo di ruoli non possono visualizzare gli avvisi dei messaggi. |
@@ -188,12 +188,13 @@ I classificatori predefiniti e globali analizzano i messaggi inviati o ricevuti 
 
 I classificatori predefiniti per la conformità delle comunicazioni e globali analizzano le comunicazioni alla ricerca di termini, immagini e valutazioni per i seguenti tipi di linguaggio e contenuto:
 
-- **Minaccia:** analizza le minacce per commettere violenza o danni fisici a una persona o a una proprietà.
-- **Molestie mirate:** analizza il comportamento offensivo rivolto alle persone in merito a etnie, colori, religiosi, origini nazionali.
-- **Volgarità:** esegue la ricerca di espressioni volgari che mette in imbarazzo la maggior parte delle persone.
 - **Immagini per adulti:** esegue la ricerca di immagini di natura sessuale esplicita.
-- **Immagini racy:** esegue la ricerca di immagini di natura sessuale indicativa, ma che contengono contenuto meno esplicito rispetto alle immagini ritenute adulte.
+- **Discriminazioni (anteprima):** analizza la ricerca di un linguaggio discriminatorio esplicito ed è particolarmente sensibile al linguaggio discriminatorio nei confronti delle comunità afroamericane/nere rispetto ad altre community.
 - **Immagini gory**: Esegue la ricerca di immagini che ritraggono la violenza e la gore.
+- **Volgarità:** esegue la ricerca di espressioni volgari che mette in imbarazzo la maggior parte delle persone.
+- **Immagini racy:** esegue la ricerca di immagini di natura sessuale indicativa, ma che contengono contenuto meno esplicito rispetto alle immagini ritenute adulte.
+- **Molestie mirate:** analizza il comportamento offensivo rivolto alle persone in merito a etnie, colori, religiosi, origini nazionali.
+- **Minaccia:** analizza le minacce per commettere violenza o danni fisici a una persona o a una proprietà.
 
 I *classificatori* di immagini Per adulti, *Racy* e *Gory* analizzano i file nei formati jpeg, .png, .gif e .bmp. Le dimensioni dei file di immagine devono essere inferiori a 4 megabyte (MB) e le dimensioni delle immagini devono essere maggiori di 50x50 pixel e superiori a 50 kilobyte (KB) per l'immagine per essere idonea per la valutazione. L'identificazione dell'immagine è supportata Exchange Online messaggi di posta elettronica e Microsoft Teams canali e chat.
 

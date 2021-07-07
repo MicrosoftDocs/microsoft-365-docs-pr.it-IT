@@ -20,14 +20,14 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Informazioni su come usare i criteri dlp per le app cloud non Microsoft.
-ms.openlocfilehash: fbba87fc5bb3bbca7e67ba374e202098a22f4a5c
-ms.sourcegitcommit: 17d82e5617f0466eb825e15ab88594afcdaf4437
+ms.openlocfilehash: 4bda45a6da6b9626391da37eb9a806b3308c5e7f
+ms.sourcegitcommit: b0f464b6300e2977ed51395473a6b2e02b18fc9e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "53300125"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53322318"
 ---
-# <a name="use-data-loss-prevention-policies-for-non-microsoft-cloud-apps-preview"></a>Usare i criteri di prevenzione della perdita dei dati per le app cloud non Microsoft (anteprima)
+# <a name="use-data-loss-prevention-policies-for-non-microsoft-cloud-apps"></a>Usare i criteri di prevenzione della perdita dei dati per le app cloud non Microsoft
 
 I criteri di prevenzione della perdita dei dati (DLP) per le app cloud non Microsoft fanno parte della famiglia Microsoft 365 di funzionalità DLP. usando queste funzionalità, è possibile individuare e proteggere gli elementi sensibili tra Microsoft 365 servizi. Per ulteriori informazioni su tutte le offerte DLP di Microsoft, vedere [Informazioni sulla prevenzione della perdita dei dati.](dlp-learn-about-dlp.md)
 

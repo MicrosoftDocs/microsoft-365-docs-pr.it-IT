@@ -16,23 +16,24 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 8b32ab5162e0022d9500f7ddba2fe5bbca1017e7
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 0b0f7c5a4a75fdc80509dbc02a43d28f7c93fd7c
+ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53229576"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53327048"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>Microsoft Defender for Endpoint Device Control Removable Archiviazione Access Control
 
 [!INCLUDE [Prerelease](../includes/prerelease.md)]
 
 Microsoft Defender for Endpoint Device Control Removable Archiviazione Access Control consente di eseguire l'attività seguente:
+
 - controllo, consentendo o impedendo l'accesso in lettura, scrittura o esecuzione all'archiviazione rimovibile con o senza esclusione
 
 |Privilegio |Autorizzazione  |
 |---------|---------|
-|Accesso    |  Lettura, scrittura ed esecuzione       |
+|Access    |  Lettura, scrittura ed esecuzione       |
 |Modalità azione    |    Controllo, Consenti, Impedisci     |
 |Supporto CSP   |   Sì      |
 |Supporto oggetti Criteri di gruppo    |   Sì      |
@@ -46,6 +47,8 @@ Distribuire Il controllo di accesso Archiviazione rimovibili nei dispositivi Win
 - **4.18.2104 o** versione successiva : Aggiungere SerialNumberId, VID_PID, supporto dell'oggetto Criteri di gruppo basato su filepath, ComputerSid
 
 - **4.18.2105 o** versione successiva : Aggiungere il supporto dei caratteri jolly per HardwareId/DeviceId/InstancePathId/FriendlyNameId/SerialNumberId, la combinazione di un utente specifico in un computer specifico, SSD rimovibile (un SSD SanDisk Extreme)/supporto USB Attached SCSI (UAS)
+
+- **4.18.2107** o versione successiva : Aggiungere il supporto di Windows Portable Device (WPD) (per dispositivi mobili, ad esempio tablet)
 
 :::image type="content" source="images/powershell.png" alt-text="Interfaccia di PowerShell":::
 
@@ -62,15 +65,14 @@ Distribuire Il controllo di accesso Archiviazione rimovibili nei dispositivi Win
 
 **Nome proprietà: DescriptorIdList**
 
-1. Descrizione: elenca le proprietà del dispositivo che vuoi usare per coprire il gruppo.
-Elenca le proprietà del dispositivo che vuoi usare per coprire il gruppo.
+2. Descrizione: elenca le proprietà del dispositivo che vuoi usare per coprire il gruppo.
 Per ogni proprietà del dispositivo, vedi **la sezione Proprietà dispositivo** sopra riportata per ulteriori dettagli.
 
-1. Opzioni:
-
-    - ID primario
+3. Opzioni:
+    - PrimaryId
         - RemovableMediaDevices
         - CdRomDevices
+        - WpdDevices
     - DeviceId
     - HardwareId
     - InstancePathId: InstancePathId è una stringa che identifica in modo univoco il dispositivo nel sistema, ad esempio USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611&0. Il numero alla fine (ad esempio **&0)** rappresenta lo slot disponibile e può cambiare da dispositivo a dispositivo. Per ottenere risultati ottimali, utilizzare un carattere jolly alla fine. Ad esempio, USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611*
@@ -87,7 +89,7 @@ Per ogni proprietà del dispositivo, vedi **la sezione Proprietà dispositivo** 
 
 1. Descrizione: quando in DescriptorIDList vengono utilizzate più proprietà del dispositivo, MatchType definisce la relazione.
 
-1. Opzioni:
+2. Opzioni:
 
     - MatchAll: tutti gli attributi in DescriptorIdList saranno **relazione And.** Ad esempio, se l'amministratore inserisce DeviceID e InstancePathID per ogni USB connesso, il sistema controllera' se l'USB soddisfa entrambi i valori.
     - MatchAny: gli attributi sotto DescriptorIdList saranno **relazione Or.** Ad esempio, se l'amministratore inserisce DeviceID e InstancePathID, per ogni USB connessa, il sistema farà l'imposizione purché l'USB abbia un **valore DeviceID** o **InstanceID** identico.
@@ -100,9 +102,9 @@ Di seguito sono riportate le proprietà dei criteri di controllo di accesso:
 
 **Nome proprietà: IncludedIdList**
 
-2. Descrizione: i gruppi a cui verrà applicato il criterio. Se vengono aggiunti più gruppi, il criterio verrà applicato a tutti i supporti di tutti i gruppi.
+1. Descrizione: i gruppi a cui verrà applicato il criterio. Se vengono aggiunti più gruppi, il criterio verrà applicato a tutti i supporti di tutti i gruppi.
 
-3. Opzioni: l'ID gruppo/GUID deve essere utilizzato in questa istanza.
+2. Opzioni: l'ID gruppo/GUID deve essere utilizzato in questa istanza.
 
 Nell'esempio seguente viene illustrato l'utilizzo di GroupID:
 
@@ -135,11 +137,11 @@ Quando sono presenti tipi di conflitto per lo stesso supporto, il sistema applie
 
 **Nome proprietà: Sid**
 
-Descrizione: definisce se applicare questo criterio a un utente o a un gruppo di utenti specifico. una voce può avere al massimo un Sid e una voce senza sid significa applicare il criterio sul computer.
+Descrizione: il Sid del computer locale o il Sid dell'oggetto AD, definisce se applicare questo criterio a un utente o a un gruppo di utenti specifico. una voce può avere un massimo di un Sid e una voce senza sid significa applicare il criterio sul computer.
 
 **Nome proprietà: ComputerSid**
 
-Descrizione: definisce se applicare questo criterio a un computer o a un gruppo di computer specifico. una voce può avere al massimo un ComputerSid e una voce senza ComputerSid significa applicare il criterio sul computer. Se si desidera applicare una voce a un utente specifico e a un computer specifico, aggiungere sia Sid che ComputerSid nella stessa voce.
+Descrizione: il Sid del computer locale o il Sid dell'oggetto AD, definisce se applicare questo criterio a un computer o a un gruppo di computer specifico; una voce può avere un massimo di un ComputerSid e una voce senza ComputerSid significa applicare il criterio sul computer. Se si desidera applicare una voce a un utente specifico e a un computer specifico, aggiungere sia Sid che ComputerSid nella stessa voce.
 
 **Nome proprietà: Opzioni**
 
@@ -322,6 +324,7 @@ DeviceEvents
 :::image type="content" source="images/block-removable-storage.png" alt-text="Schermata che illustra il blocco dell'archiviazione rimovibile":::
 
 ## <a name="frequently-asked-questions"></a>Domande frequenti
+
 **Qual è la limitazione del supporto di archiviazione rimovibile per il numero massimo di USB?**
 
 È stato convalidato un gruppo USB con 100.000 supporti, fino a 7 MB. Il criterio funziona sia in Intune che negli oggetti Criteri di gruppo senza problemi di prestazioni.
@@ -347,4 +350,3 @@ DeviceFileEvents
 | summarize dcount(DeviceName) by PlatformVersion // check how many machines are using which platformVersion
 | order by PlatformVersion desc
 ```
-

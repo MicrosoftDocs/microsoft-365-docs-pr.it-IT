@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Gli amministratori possono abilitare il supporto delle etichette di riservatezza per i file di Word, Excel e PowerPoint in SharePoint e OneDrive.
-ms.openlocfilehash: 08ea7c88fffebd4466d81ca18f273281ff74c06a
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 67aa69ef8505290b6fde47c4e523a09870312b97
+ms.sourcegitcommit: b0f464b6300e2977ed51395473a6b2e02b18fc9e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53286550"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53322234"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive"></a>Abilitare le etichette di riservatezza per i file di Office in SharePoint e OneDrive
 
@@ -241,7 +241,7 @@ Per ulteriori informazioni sull'utilizzo delle proprietà gestite, vedere [Manag
 
 ## <a name="remove-encryption-for-a-labeled-document"></a>Rimuovere la crittografia per un documento con etichetta
 
-In rari casi, un SharePoint deve rimuovere la crittografia da un documento archiviato in SharePoint. Qualsiasi utente a cui è assegnato il diritto di utilizzo [Rights Management](/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions) di Esportazione o Controllo completo per tale documento può rimuovere la crittografia applicata dal servizio Azure Rights Management da Azure Information Protection. Ad esempio, gli utenti con uno di questi diritti di utilizzo possono sostituire un'etichetta che applica la crittografia con un'etichetta senza crittografia. In alternativa, un [utente con privilegi di amministratore](/azure/information-protection/configure-super-users) potrebbe scaricare il file e salvare una copia locale senza la crittografia.
+In rari casi, un SharePoint deve rimuovere la crittografia da un documento archiviato in SharePoint. Qualsiasi utente a cui è assegnato il diritto di utilizzo [Rights Management](/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions) di Esportazione o Controllo completo per tale documento può rimuovere la crittografia applicata dal servizio Azure Rights Management da Azure Information Protection. Ad esempio, gli utenti con uno di questi diritti di utilizzo possono sostituire un'etichetta che applica la crittografia con un'etichetta senza crittografia. Un [utente con privilegi](/azure/information-protection/configure-super-users) super potrebbe anche scaricare il file e salvare una copia locale senza la crittografia.
 
 [In](/sharepoint/sharepoint-admin-role) alternativa, un amministratore globale o un amministratore di SharePoint può eseguire il cmdlet [Unlock-SPOSensitivityLabelEncryptedFile,](/powershell/module/sharepoint-online/unlock-sposensitivitylabelencryptedFile) che rimuove sia l'etichetta di riservatezza che la crittografia. Questo cmdlet viene eseguito anche se l'amministratore non dispone delle autorizzazioni di accesso al sito o al file o se il servizio Azure Rights Management non è disponibile.
 

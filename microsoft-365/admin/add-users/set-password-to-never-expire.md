@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: f493e3af-e1d8-4668-9211-230c245a0466
 description: Accedi al tuo account Microsoft 365 amministratore per impostare alcune password utente individuali in modo che non scada mai usando Windows PowerShell.
-ms.openlocfilehash: a0b247f4b736ecccab57398e1e7131f0a06a2958
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: c9f0c245aca0e028183c42f6a257068d74aa563d
+ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53286274"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53326724"
 ---
 # <a name="set-an-individual-users-password-to-never-expire"></a>Impostare la password di un singolo utente in modo che non scada mai
 
@@ -43,8 +43,6 @@ Un amministratore globale di un servizio cloud Microsoft può usare Azure Active
 
 Questa guida si applica ad altri provider, ad esempio Intune e Microsoft 365, che si basano anche su Azure AD per i servizi di identità e directory. La scadenza della password è l'unica parte del criterio che può essere modificata.
 
-> [!NOTE]
-> Solo le password per gli account utente non sincronizzati tramite la sincronizzazione della directory possono essere configurate in modo da non scadere. Per ulteriori informazioni sulla sincronizzazione della directory, [vedere Connessione AD con Azure AD.](/azure/active-directory/connect/active-directory-aadconnect)
 
 ## <a name="how-to-check-the-expiration-policy-for-a-password"></a>Come controllare i criteri di scadenza per una password
 
