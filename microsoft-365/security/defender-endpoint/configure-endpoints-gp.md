@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 24b24c634eac7ee125810d96587c9c1e209b6491
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: b4418cca035710c6b938dad31a2b55423d2ab458
+ms.sourcegitcommit: 8b0718f5607ab509092cb80bda854010d885c54f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53286958"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53314405"
 ---
 # <a name="onboard-windows-10-devices-using-group-policy"></a>Onboardare Windows 10 dispositivi con Criteri di gruppo 
 
@@ -211,7 +211,7 @@ Per motivi di sicurezza, il pacchetto usato per i dispositivi offboard scadrà 3
 
 7. Selezionare **Esegui se l'utente è connesso o meno** e selezionare la **casella** di controllo Esegui con privilegi più elevati.
 
-8. Passare alla scheda **Azioni** e fare clic su **Nuovo...**. Verificare che **l'opzione Avvia** un programma sia selezionata nel **campo** Azione. Immettere il nome e il percorso del file  *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd* condiviso.
+8. Passare alla scheda **Azioni** e fare clic su **Nuovo...**. Verificare che **l'opzione Avvia** un programma sia selezionata nel **campo** Azione. Immettere il percorso NetBIOS del file *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd.*
 
 9. Fare **clic su OK** e chiudere tutte le finestre della Console Gestione Criteri di gruppo aperte.
 

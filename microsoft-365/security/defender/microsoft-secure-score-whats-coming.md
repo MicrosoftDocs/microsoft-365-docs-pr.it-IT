@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 8880f045202fd1c4374e9cec3076144f81eb68d2
-ms.sourcegitcommit: 4f6ef4cd09c3ed36dc0be3702b0636bad6cff8a9
+ms.openlocfilehash: 8babc8c5e7464637e29ddacef50c92f252033d26
+ms.sourcegitcommit: 8b0718f5607ab509092cb80bda854010d885c54f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52657718"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53314369"
 ---
 # <a name="whats-coming-to-microsoft-secure-score"></a>Novità di Microsoft Secure Score
 
@@ -35,11 +35,16 @@ Microsoft Secure Score è disponibile nel centro sicurezza https://security.micr
 
 Stiamo apportando alcune modifiche nel prossimo futuro per rendere [Microsoft Secure Score](microsoft-secure-score.md) un migliore rappresentante della tua posizione di sicurezza e migliorare l'usabilità. Il punteggio e il punteggio massimo possibile possono cambiare.
 
-### <a name="june-2021"></a>Giugno 2021
+### <a name="july-2021"></a>Luglio 2021
 
-#### <a name="remove-improvement-action-related-to-microsoft-cloud-app-security"></a>Rimuovere l'azione di miglioramento correlata Microsoft Cloud App Security
+#### <a name="add-improvement-action-related-to-microsoft-teams"></a>Aggiungere azioni di miglioramento correlate a Microsoft Teams
 
-- Usare Cloud App Security per rilevare un comportamento anomalo
+- Impedire agli utenti con accesso remoto di ignorare una sala di attesa per le riunioni.
+- Limitare ai partecipanti esterni di avere il controllo in una Teams riunione.
+- Impedire agli utenti anonimi di avviare Teams riunioni.
+- Richiedere che le lobby siano impostate per Teams riunioni.
+- Configurare quali utenti possono essere presenti nelle Teams riunioni.
+
 
 ## <a name="related-resources"></a>Risorse correlate
 

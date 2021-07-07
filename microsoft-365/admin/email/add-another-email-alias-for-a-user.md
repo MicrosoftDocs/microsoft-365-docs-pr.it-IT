@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 0b0bd900-68b1-4bf5-808b-5d240a7739f4
 description: 'Scopri come puoi avere più di un indirizzo di posta elettronica, denominato alias di posta elettronica, associato al tuo account Microsoft 365 per le aziende. '
-ms.openlocfilehash: ec5bc69a42c5183413f11649b7d7ec6baaf40b01
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: e6eac45c3ade3fd737f93c88c29b56ccd497212e
+ms.sourcegitcommit: 8b0718f5607ab509092cb80bda854010d885c54f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572106"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53314357"
 ---
 # <a name="add-another-email-alias-for-a-user"></a>Aggiungere un altro alias di posta elettronica per un utente
   
@@ -70,7 +70,7 @@ A tale [scopo, è necessario](../add-users/about-admin-roles.md) disporre delle 
     L'utente avrà ora un indirizzo principale e un alias. Ad esempio, tutta la posta inviata all'indirizzo principale di Eliza Hoffman, Eliza@NodPublishers.com, e il suo alias, Sales@NodPublishers.com, verranno indirizzati alla posta in arrivo di Eliza.
     
   
-7. **Quando l'utente risponde, *l'indirizzo From* dipende dal suo Outlook client. Outlook sul Web verrà utilizzato l'alias con cui è stato ricevuto il messaggio di posta elettronica (verrà chiamato il principio ping-pong). Outlook desktop utilizzerà il suo alias di posta elettronica principale.** Si supponga, ad esempio, che un messaggio sia stato inviato a Sales@NodPublishers.com e che arrivi nella posta in arrivo di Eliza. Quando Eliza risponde al messaggio usando Outlook desktop, l'indirizzo di posta elettronica principale verrà visualizzato come Eliza@NodPublishers.com, non Sales@NodPublishers.com.
+7. **Quando l'utente risponde, *l'indirizzo From* dipende dal suo Outlook client. Outlook sul web verrà utilizzato l'alias con cui è stato ricevuto il messaggio di posta elettronica (verrà chiamato il principio ping-pong). Outlook desktop utilizzerà il suo alias di posta elettronica principale.** Si supponga, ad esempio, che un messaggio sia stato inviato a Sales@NodPublishers.com e che arrivi nella posta in arrivo di Eliza. Quando Eliza risponde al messaggio usando Outlook desktop, l'indirizzo di posta elettronica principale verrà visualizzato come Eliza@NodPublishers.com, non Sales@NodPublishers.com.
     
 ## <a name="did-you-get-a-parameter-cannot-be-found-that-matches-parameter-name-emailaddresses"></a>È stato visualizzato "Impossibile trovare un parametro corrispondente al nome del parametro EmailAddresses"?
 
@@ -83,7 +83,7 @@ Se l'abbonamento è stato acquistato presso GoDaddy o un altro partner, per impo
 
 ## <a name="sending-email-from-the-proxy-address-easily"></a>Inviare facilmente messaggi di posta elettronica dall'indirizzo proxy
 
-Ad aprile 2021 viene lanciata una nuova funzionalità che consente agli utenti di inviare facilmente dagli alias quando usano Outlook sul Web. Quando la funzionalità viene implementazione in una tenancy in cui l'amministratore tenant utilizza il cmdlet, gli utenti all'interno della tenancy avranno accesso a un elenco di caselle di controllo in cui ogni voce corrisponde a un alias nelle impostazioni di `Set-OrganizationConfig -SendFromAliasEnabled $true` Outlook. Se si seleziona un alias, l'alias verrà visualizzato nell'elenco a discesa Da del modulo Compose.
+A luglio 2021 viene lanciata una nuova funzionalità che consente agli utenti di inviare facilmente dagli alias quando usano Outlook sul web. Quando la funzionalità viene implementazione in una tenancy in cui l'amministratore tenant utilizza il cmdlet, gli utenti all'interno della tenancy avranno accesso a un elenco di caselle di controllo in cui ogni voce corrisponde a un alias nelle impostazioni di `Set-OrganizationConfig -SendFromAliasEnabled $true` Outlook. Se si seleziona un alias, l'alias verrà visualizzato nell'elenco a discesa Da del modulo Compose.
   
 ## <a name="related-content"></a>Contenuto correlato
 

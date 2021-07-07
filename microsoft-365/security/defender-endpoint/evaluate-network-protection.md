@@ -14,12 +14,12 @@ ms.author: dansimp
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 03d05966401c8f3a8bdcec413e85c9a6d2a3ec5c
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 98e4c80c2e0262712885f1e7a2da82886b2ebe80
+ms.sourcegitcommit: b6e63febe24ef1f1793dfb3ecc5ed41a4e730578
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52926572"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "53309366"
 ---
 # <a name="evaluate-network-protection"></a>Valutare la protezione di rete
 
@@ -40,7 +40,7 @@ Questo articolo consente di valutare la protezione di rete abilitando la funzion
 
 Abilitare la protezione di rete in modalità di controllo per vedere quali indirizzi IP e domini sarebbero stati bloccati. Puoi assicurarti che non influisca sulle app line-of-business o avere un'idea della frequenza con cui si verificano i blocchi.
 
-1. Digita **powershell** nel menu Start, fai clic con il pulsante destro **del** mouse Windows PowerShell e scegli Esegui **come amministratore**
+1. Digitare **powershell** nella menu Start, fare clic con il pulsante destro **del mouse** Windows PowerShell e selezionare Esegui come **amministratore**
 2. Immettere il cmdlet seguente:
 
     ```PowerShell
@@ -55,7 +55,7 @@ Abilitare la protezione di rete in modalità di controllo per vedere quali indir
 
 La connessione di rete sarà consentita e verrà visualizzato un messaggio di prova.
 
-![Notifica di esempio che indica connessione bloccata: l'amministratore IT ha Sicurezza di Windows bloccare questa connessione di rete. Contattare l'help desk IT.](/microsoft-365/security/defender-endpoint/images/np-notif)
+![Notifica di esempio che indica connessione bloccata: l'amministratore IT ha Sicurezza di Windows bloccare questa connessione di rete. Contattare l'help desk IT.](images/np-notif.png)
 
 ## <a name="review-network-protection-events-in-windows-event-viewer"></a>Esaminare gli eventi di protezione di rete nel Visualizzatore Windows eventi
 

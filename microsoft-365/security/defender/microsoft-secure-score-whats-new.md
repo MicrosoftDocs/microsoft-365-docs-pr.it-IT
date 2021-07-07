@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: b3f86dfbc1ae89eff61c680737061b01998a527b
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 2f02de4b738d9d61ef9f98cd03d15bd91709339e
+ms.sourcegitcommit: 8b0718f5607ab509092cb80bda854010d885c54f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933866"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53314429"
 ---
 # <a name="whats-new-in-microsoft-secure-score"></a>Novità di Microsoft Secure Score
 
@@ -35,7 +35,13 @@ ms.locfileid: "51933866"
 Per rendere Microsoft Secure Score un migliore rappresentante della tua posizione di sicurezza, abbiamo apportato alcune modifiche. Per informazioni sulle modifiche pianificate, vedere [What's coming in Microsoft Secure Score?](microsoft-secure-score-whats-coming.md)
 
 Microsoft Secure Score è disponibile nel centro sicurezza https://security.microsoft.com/securescore [Microsoft 365 sicurezza.](overview-security-center.md)
-    
+
+## <a name="june-2021"></a>Giugno 2021
+
+### <a name="remove-improvement-action-related-to-microsoft-cloud-app-security"></a>Rimuovere l'azione di miglioramento correlata Microsoft Cloud App Security
+
+- Usa Cloud App Security per rilevare comportamenti anomali.
+
 ## <a name="february-2021"></a>Febbraio 2021
 
 ### <a name="compatibility-with-graph-api"></a>Compatibilità con Graph API

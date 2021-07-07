@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: Informazioni sull'utilizzo di componenti aggiuntivi centralizzati per distribuire componenti aggiuntivi a utenti e gruppi dell'organizzazione.
-ms.openlocfilehash: d678755b28daea1578ce2a5d2e387492cf32d368
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: ed9086c77cdf10435bae09f76493af6058d2d758
+ms.sourcegitcommit: 8b0718f5607ab509092cb80bda854010d885c54f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52636059"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53314388"
 ---
 # <a name="manage-add-ins-in-the-admin-center"></a>Gestire i componenti aggiuntivi nell'interfaccia di amministrazione
 
@@ -121,6 +121,9 @@ Il supporto per la disattivazione Office Store è disponibile nelle versioni seg
 - Web - Attualmente disponibile.
     
 Ciò non impedisce a un amministratore di usare la distribuzione centralizzata per assegnare un componente aggiuntivo dal Office Store.
+
+> [!NOTE] 
+> I componenti aggiuntivi come Visio Data Visualizer, Bing Maps e People Graph verranno comunque visualizzati sulla barra multifunzione, anche se un amministratore ha disabilitato lo Store. Per rimuovere questi collegamenti, gli amministratori devono disabilitare l'archivio tramite l'oggetto Criteri di gruppo.
   
 Per impedire a un utente di accedere con un account Microsoft, è possibile limitare l'accesso in modo che utilizzi solo l'account dell'organizzazione. Per ulteriori informazioni, vedere [Identity, authentication, and authorization in Office 2016.](/DeployOffice/security/identity-authentication-and-authorization-in-office)  
 
