@@ -25,11 +25,6 @@
           href: service-description/device-images.md
         - name: Nomi dei dispositivi
           href: service-description/device-names.md
-        - name: Dispositivi del programma
-          href: service-description/device-list.md
-          items:
-            - name: Dispositivi archiviati del programma
-              href: service-description/archived-device-list.md
         - name: Servizi del dispositivo
           href: service-description/device-services.md
         - name: Profili dei dispositivi

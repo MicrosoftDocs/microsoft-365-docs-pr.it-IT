@@ -19,12 +19,12 @@ ms.custom:
 search.appverid: MET150
 description: Se si hanno meno di 25 licenze assegnate a utenti, è possibile annullare la versione di valutazione o l'abbonamento a pagamento di Microsoft 365 per le aziende nell'interfaccia di amministrazione.
 ms.date: 04/08/2021
-ms.openlocfilehash: d327a09eba06e9a2bbc92959b6048649b41b72fe
-ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
+ms.openlocfilehash: e0b23d785a86102891f24cb16419794773d64356
+ms.sourcegitcommit: 17d82e5617f0466eb825e15ab88594afcdaf4437
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "53256796"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "53300041"
 ---
 # <a name="cancel-your-subscription"></a>Annullare l'abbonamento
 
@@ -82,7 +82,7 @@ L'abbonamento apparirà ora in uno stato **Disabilitato** e le sue funzionalità
 
 Se si annulla un abbonamento prima del termine del periodo di valutazione, lo stato dell'abbonamento passa direttamente allo stato disabilitato. Per la maggior parte degli abbonamenti e nella maggior parte dei paesi e delle aree geografiche, lo stato Scaduto dura 90 giorni. Gli amministratori possono ancora accedere ed eseguire il backup dei dati dell'organizzazione mentre l'abbonamento è nello stato disabilitato, ma è consigliabile che gli amministratori [eseguano il backup dei loro dati](back-up-data-before-switching-plans.md) prima di annullare un abbonamento, specialmente se si tratta solo del loro abbonamento. Gli amministratori possono anche riattivare l'abbonamento che si trova nello stato Disabilitato.
 
-Dopo 90 giorni, l'abbonamento passa allo stato eliminato. I dati della che non vengono spostati possono essere eliminati dopo 90 giorni e in ogni caso verranno eliminati entro 180 giorni dall'annullamento. Non è possibile rimuovere una modalità di pagamento da un abbonamento annullato finché non raggiunge lo stato eliminato.
+Dopo 90 giorni, l'abbonamento passa allo stato eliminato. Tutti i dati non inclusi possono essere eliminati dopo 90 giorni, ma vengono eliminati entro 180 giorni dall'annullamento. Non è possibile rimuovere una modalità di pagamento da un abbonamento annullato finché non raggiunge lo stato eliminato.
 
 ### <a name="what-to-expect-for-you-and-your-users-if-you-cancel-a-subscription"></a>Conseguenze per amministratori e utenti dell'annullamento di una sottoscrizione
   

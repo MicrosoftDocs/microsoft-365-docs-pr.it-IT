@@ -18,12 +18,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Informazioni sulla procedura di base per la creazione di un dizionario di parole chiave nel Centro sicurezza e conformità di Office 365.
-ms.openlocfilehash: 661ca9e227e8583bb6b601792e178c1c366132cb
-ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
+ms.openlocfilehash: 8d313650f298f2ab26989bec9df1260918f7dd5c
+ms.sourcegitcommit: 17d82e5617f0466eb825e15ab88594afcdaf4437
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "53256712"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "53300108"
 ---
 # <a name="create-a-keyword-dictionary"></a>Creare un dizionario di parole chiave
 
@@ -183,7 +183,12 @@ Incollare l'identità nel file XML del tipo di informazioni riservate personaliz
 >Il supporto è disponibile per i tipi di informazioni sensibili. Per altre informazioni, vedere [Note sulla versione del supporto della protezione delle informazioni per i set di caratteri a due byte (anteprima)](mip-dbcs-relnotes.md).
 
 > [!TIP]
-> Per rilevare modelli contenenti caratteri cinesi/giapponesi e caratteri a byte singolo o per rilevare modelli contenenti caratteri cinesi/giapponesi e inglesi, definire due varianti della parola chiave o dell'espressione regolare. Ad esempio, per rilevare una parola chiave come "机密的document", usare due varianti della parola chiave: una con uno spazio tra il testo giapponese e quello inglese e un'altra senza spazio tra il testo giapponese e quello inglese. Quindi, le parole chiave da aggiungere nel SIT devono essere "机密的 document" e "机密的document". Analogamente, per rilevare la frase "東京オリンピック2020", devono essere usate due varianti: "東京オリンピック 2020" e "東京オリンピック2020".
+> Per rilevare modelli contenenti caratteri cinesi/giapponesi e caratteri a byte singolo o per rilevare modelli contenenti caratteri cinesi/giapponesi e inglesi, definire due varianti della parola chiave o dell'espressione regolare. 
+>
+> Ad esempio, per rilevare una parola chiave come "机密的document", usare due varianti della parola chiave: una con uno spazio tra il testo giapponese e quello inglese e un'altra senza spazio tra il testo giapponese e quello inglese. Quindi, le parole chiave da aggiungere nel SIT devono essere "机密的 document" e "机密的document". Analogamente, per rilevare la frase "東京オリンピック2020", devono essere usate due varianti: "東京オリンピック 2020" e "東京オリンピック2020".
+>
 > Quando si crea un'espressione regolare usando un trattino a byte doppio o un punto a byte doppio, assicurarsi di eseguire l'escape di entrambi i caratteri come si farebbe con un trattino o un punto in un'espressione regolare. Di seguito è riportata un'espressione regolare di esempio per riferimento:
-    - (?<!\d)([４][０-９]{3}[\-?\－\t]*[０-９]{4}
+>
+>    - (?<!\d)([４][０-９]{3}[\-?\－\t]*[０-９]{4}
+>
 > È consigliabile usare una corrispondenza di stringhe anziché una corrispondenza di parole in un elenco di parole chiave.
