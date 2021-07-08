@@ -13,16 +13,16 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Informazioni su come trovare risorse per Microsoft SharePoint Syntex.
-ms.openlocfilehash: a3bd14c379425573ee7ad57604cc4cbb706741b8
-ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
+ms.openlocfilehash: 087cf7b21d00cef3711d8e5765161eaa98418437
+ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/26/2021
-ms.locfileid: "53149011"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53327060"
 ---
 # <a name="introduction-to-microsoft-sharepoint-syntex"></a>Introduzione a Microsoft SharePoint Syntex
 
-Microsoft SharePoint Syntex è un servizio di Microsoft 365 che consente alle organizzazioni di:
+SharePoint Syntex è un servizio di Microsoft 365 che consente alle organizzazioni di:
 
 - Usare l’intelligenza artificiale avanzata e il machine teaching per amplificare le esperienze umane
 - Automatizzare l'elaborazione del contenuto
@@ -56,7 +56,8 @@ Altre informazioni su come usare e implementare SharePoint Syntex nell'organizza
 | Se sono necessarie queste informazioni: | Passare a questa risorsa: |
 |:-----|:-----|
 |Altre informazioni su come iniziare a pianificare l'uso di SharePoint Syntex |[Adozione di SharePoint Syntex: Guida introduttiva](./adoption-getstarted.md)| 
-|Vedere scenari di esempio per fornire idee su come usare SharePoint Syntex nell'organizzazione |[Scenari e casi d'uso per Microsoft SharePoint Syntex](./adoption-scenarios.md)| 
+|Vedere scenari di esempio per fornire idee su come usare SharePoint Syntex nell'organizzazione |[Scenari e casi d'uso per SharePoint Syntex](./adoption-scenarios.md)| 
+|Configurare ed eseguire un programma pilota di valutazione per SharePoint Syntex |[Eseguire una versione di valutazione](./trial-syntex.md)|
 |Informazioni su come usare SharePoint Syntex per automatizzare i processi dei documenti |[Gestire i contratti con una soluzione Microsoft 365](./solution-manage-contracts-in-microsoft-365.md)| 
 
 ## <a name="set-up-sharepoint-syntex"></a>Configurazione di SharePoint Syntex
@@ -65,7 +66,7 @@ Le risorse di questa sezione aiutano l'amministratore dell'organizzazione a conf
 
 | Se sono necessarie queste informazioni: | Passare a questa risorsa: |
 |:-----|:-----|
-|Installare e configurare SharePoint Syntex|[Configurare Microsoft SharePoint Syntex](./set-up-content-understanding.md)|
+|Installare e configurare SharePoint Syntex|[Configurazione di SharePoint Syntex](./set-up-content-understanding.md)|
 |Informazioni sull’aggiunta di tag delle immagini e su come disabilitarlo|[Aggiunta di tag alle immagini in SharePoint Syntex](./image-tagging.md)|
 
 ## <a name="models"></a>Modelli
@@ -76,6 +77,7 @@ Le risorse di questa sezione consentono agli utenti di comprendere come creare e
 |:-----|:-----|
 |Informazioni su come lavorare con i modelli|[Creare un centro contenuti](./create-a-content-center.md)<br><br>[Creare un classificatore](./create-a-classifier.md)<br><br>[Creare un estrattore](./create-an-extractor.md)<br><br>[Creare un modello di elaborazione moduli](./create-a-form-processing-model.md)<br><br>[Tipi di spiegazione](./explanation-types-overview.md)<br><br>[Applicare un modello di analisi dei documenti](./apply-a-model.md)<br><br>[Informazioni sui modelli di analisi dei documenti in un modello di esempio](./learn-about-document-understanding-models-through-the-sample-model.md)<br><br>|
 |Applicare un'etichetta di conservazione al modello|[Applicare un'etichetta di conservazione a un modello di analisi dei documenti](./apply-a-retention-label-to-a-model.md)|
+|Applicare un'etichetta di riservatezza al modello|[Aggiungere un'etichetta di riservatezza a un modello di analisi dei documenti](./apply-a-sensitivity-label-to-a-model.md)|
 |Usare la tassonomia dell'archivio termini dei servizi metadati gestiti durante la creazione di un estrattore|[Sfruttare la tassonomia dell'archivio termini durante la creazione di un estrattore](./leverage-term-store-taxonomy.md)|
 |Scopri come visualizzare i dati relativi ai modelli|[Informazioni sull'analisi dati di utilizzo](./model-usage-analytics.md)|
 |Informazioni su come usare la modalità di accessibilità durante la formazione di un modello|[Modalità di accessibilità di SharePoint Syntex](./accessibility-mode.md)|
@@ -90,4 +92,3 @@ Una licenza di SharePoint Syntex offre agli utenti servizi di contenuto premium 
 |Informazioni su come rendere i tipi di contenuto disponibili in modo più efficiente alle raccolte e agli elenchi di SharePoint|[Spostare i tipi di contenuto in un hub](./push-content-type-to-hub.md)|
 |Informazioni sui report dell'archivio termini disponibili|[Report archivio termini](./term-store-analytics.md)|
 
-## <a name="see-also"></a>Vedere anche

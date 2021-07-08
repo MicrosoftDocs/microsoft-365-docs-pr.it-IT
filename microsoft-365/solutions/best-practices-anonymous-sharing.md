@@ -18,12 +18,12 @@ localization_priority: Priority
 f1.keywords: NOCSH
 recommendations: false
 description: Questo articolo descrive le procedure consigliate per la condivisione di file e cartelle con utenti non autenticati.
-ms.openlocfilehash: 7198e2d343f73299bb62ea73863cecd359d90ba2
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 2c89ca319ba79d6f0463cc6d244c8d91928d6e42
+ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538232"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53327024"
 ---
 # <a name="best-practices-for-sharing-files-and-folders-with-unauthenticated-users"></a>Procedure consigliate per la condivisione di file e cartelle con utenti non autenticati
 
@@ -43,7 +43,7 @@ Quando un collegamento *Chiunque* scade, non può più essere utilizzato per acc
 Per impostare una data di scadenza per i collegamenti Chiunque nell’organizzazione
 
 1. Aprire l'[interfaccia di amministrazione di SharePoint](https://admin.microsoft.com/sharepoint).
-2. Nel riquadro di spostamento sinistro fare clic su **Condivisione**.
+2. Nel riquadro di spostamento a sinistra, espandere **Criteri** poi fare clic su **Condivisione**.
 3. In **Scegliere le opzioni delle autorizzazioni e di scadenza per i collegamenti di tipo "Chiunque"**, selezionare la casella di controllo **Questi collegamenti devono scadere entro questo numero di giorni**.</br>
    ![Screenshot delle impostazioni di scadenza dei collegamenti Chiunque a livello di organizzazione in SharePoint](../media/sharepoint-organization-anyone-link-expiration.png)
 4. Digitare un numero di giorni nella casella, quindi fare clic su **Salva**.
