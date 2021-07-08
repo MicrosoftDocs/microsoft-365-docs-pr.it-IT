@@ -55,7 +55,7 @@
         - name: Creare e gestire i criteri dei rischi Insider
           href: insider-risk-management-policies.md
         - name: Esaminare gli avvisi relativi ai rischi Insider
-          href: insider-risk-management-alerts.md
+          href: insider-risk-management-activities.md
         - name: Intervenire riguardo ai casi di rischio Insider
           href: insider-risk-management-cases.md
         - name: Rivedere le attività con il log di audit del rischio Insider
@@ -118,6 +118,12 @@
           href: create-a-custom-sensitive-information-type.md
         - name: Creare tipi di informazioni sensibili personalizzati - PowerShell
           href: create-a-custom-sensitive-information-type-in-scc-powershell.md
+        - name: Rimuovere tipi di informazioni sensibili personalizzati - PowerShell
+          href: sit-remove-a-custom-sensitive-information-type-in-powershell.md
+        - name: Modificare tipi di informazioni sensibili personalizzati - PowerShell
+          href: sit-modify-a-custom-sensitive-information-type-in-powershell.md
+        - name: Riferimento filtri tipi di informazioni sensibili personalizzato
+          href: sit-custom-sit-filters.md
         - name: Creare un dizionario di parole chiave
           href: create-a-keyword-dictionary.md
         - name: Modificare un dizionario di parole chiave
@@ -915,7 +921,7 @@
         - name: Strumento di analisi della configurazione conformità 1.0
           href: compliance-manager-mcca.md
         - name: Domande frequenti (FAQ)
-          href: compliance-manager-faq.md
+          href: compliance-manager-faq.yml
         - name: Compliance Manager (classico)
           href: meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md
     - name: Microsoft Service Trust Portal

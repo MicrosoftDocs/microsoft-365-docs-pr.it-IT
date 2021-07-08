@@ -246,7 +246,8 @@
 #### [Usare la modalità di controllo per la riduzione della superficie di attacco](audit-windows-defender.md)
 
 ### Protezione di nuova generazione
-#### [Panoramica di Microsoft Defender Antivirus](microsoft-defender-antivirus-in-windows-10.md)
+#### [Panoramica sulla protezione di ultima generazione](next-generation-protection.md)
+##### [Panoramica di Microsoft Defender Antivirus](microsoft-defender-antivirus-windows.md)
 ##### [Microsoft Defender Antivirus su Windows Server](microsoft-defender-antivirus-on-windows-server.md)
 ##### [Insieme è meglio: Microsoft Defender Antivirus e Microsoft Defender per Endpoint](why-use-microsoft-defender-antivirus.md)
 ##### [Insieme è meglio: Microsoft Defender Antivirus e Office 365](office-365-microsoft-defender-antivirus.md)

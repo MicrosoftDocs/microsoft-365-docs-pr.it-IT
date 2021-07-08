@@ -46,6 +46,8 @@
       href: adoption-getstarted.md
     - name: Scenari e casi di utilizzo
       href: adoption-scenarios.md
+    - name: Eseguire una versione di valutazione
+      href: trial-syntex.md
     - name: Gestire i contratti in Microsoft 365
       items:
         - name: Panoramica
