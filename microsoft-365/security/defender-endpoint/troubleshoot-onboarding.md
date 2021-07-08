@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: cb4bebe3f6998b81a00d7fd15bc919f70381a933
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: b3ee2f2dcf13402e506b299935459e435fd2f89a
+ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52929696"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53326904"
 ---
 # <a name="troubleshoot-microsoft-defender-for-endpoint-onboarding-issues"></a>Risolvere i problemi di onboarding di Microsoft Defender per endpoint
 
@@ -113,8 +113,8 @@ Codice di errore Hex | Codice di errore Dec | Description | URI OMA | Possibili 
 0x87D1FDE8 | -2016281112 | Correzione non riuscita | Onboarding <br> Offboarding | **Causa possibile:** Onboarding o offboarding non riuscito in un BLOB errato: firma errata o campi PreviousOrgIds mancanti. <br><br> **Passaggi per la risoluzione dei problemi:** <br> Controlla gli ID evento nella sezione Visualizzare gli errori [di onboarding](#view-agent-onboarding-errors-in-the-device-event-log) dell'agente nel registro eventi del dispositivo. <br><br> Controlla i registri eventi MDM nella tabella seguente o segui le istruzioni in [Diagnosticare](/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10)gli errori MDM in Windows 10 .
  | | | | Onboarding <br> Offboarding <br> SampleSharing | **Causa possibile:** La chiave del Registro di sistema di Microsoft Defender for Endpoint Policy non esiste o il client OMA DM non dispone delle autorizzazioni per scriverlo. <br><br> **Passaggi per la risoluzione dei problemi:** Verificare che esista la seguente chiave del Registro di sistema: `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection` <br> <br> Se non esiste, aprire un comando con privilegi elevati e aggiungere la chiave.
  | | | | SenseIsRunning <br> OnboardingState <br> OrgId |  **Causa possibile:** Tentativo di correzione tramite proprietà di sola lettura. Onboarding non riuscito. <br><br> **Passaggi per la risoluzione dei problemi:** Controlla la procedura di risoluzione dei problemi in [Risolvere i problemi di onboarding nel dispositivo](#troubleshoot-onboarding-issues-on-the-device). <br><br> Controlla i registri eventi MDM nella tabella seguente o segui le istruzioni in [Diagnosticare](/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10)gli errori MDM in Windows 10 .
- | | | | Tutti | **Causa possibile:** Tenta di distribuire Microsoft Defender per Endpoint su SKU/Piattaforma non supportati, in particolare SKU olografico. <br><br> Piattaforme attualmente supportate:<br> Enterprise, Education e Professional.<br> Server non supportato.
- 0x87D101A9 | -2016345687 |SyncML(425): il comando richiesto non è riuscito perché il mittente non dispone di autorizzazioni di controllo di accesso (ACL) adeguate per il destinatario. | Tutti |  **Causa possibile:** Tenta di distribuire Microsoft Defender per Endpoint su SKU/Piattaforma non supportati, in particolare SKU olografico.<br><br> Piattaforme attualmente supportate:<br>  Enterprise, Education e Professional.
+ | | | | Tutto | **Causa possibile:** Tenta di distribuire Microsoft Defender per Endpoint su SKU/Piattaforma non supportati, in particolare SKU olografico. <br><br> Piattaforme attualmente supportate:<br> Enterprise, Education e Professional.<br> Server non supportato.
+ 0x87D101A9 | -2016345687 |SyncML(425): il comando richiesto non è riuscito perché il mittente non dispone di autorizzazioni di controllo di accesso (ACL) adeguate per il destinatario. | Tutto |  **Causa possibile:** Tenta di distribuire Microsoft Defender per Endpoint su SKU/Piattaforma non supportati, in particolare SKU olografico.<br><br> Piattaforme attualmente supportate:<br>  Enterprise, Education e Professional.
 
 #### <a name="known-issues-with-non-compliance"></a>Problemi noti relativi alla non conformità
 
@@ -299,6 +299,9 @@ Se la verifica ha esito negativo e l'ambiente utilizza un proxy per connettersi 
    > - `<Key Path="SYSTEM\CurrentControlSet\Services\WdFilter"><KeyValue Value="0" ValueKind="DWord" Name="Start"/></Key>`
 
 ## <a name="troubleshoot-onboarding-issues-on-a-server"></a>Risolvere i problemi di onboarding in un server
+
+>[!NOTE]
+>Le indicazioni per la risoluzione dei problemi seguenti sono applicabili solo Windows Server 2016 e inferiori.
 
 Se si verificano problemi durante l'onboarding di un server, eseguire la procedura di verifica seguente per risolvere i possibili problemi.
 

@@ -48,3 +48,5 @@
   items:
     - name: Iniziare a favorire l'innovazione
       href: topics-adoption-getstarted.md
+    - name: Eseguire una versione di valutazione
+      href: trial-topics.md

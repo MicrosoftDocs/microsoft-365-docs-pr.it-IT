@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 7712ce1ee4c28352861df17c0637a94d99fa2c8a
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 19fd44633f03a7797484ecaa6a15159e24da7fbf
+ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53226528"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53326820"
 ---
 # <a name="insider-risk-management-cases"></a>Casi di gestione dei rischi insider
 
@@ -147,7 +147,7 @@ La scheda **Attività utente** è uno degli strumenti più potenti per l'analisi
 
 La **scheda Esplora attività** consente agli analisti e agli investigatori del rischio di esaminare i dettagli dell'attività associati agli avvisi di rischio. Ad esempio, nell'ambito delle azioni di gestione dei casi, gli investigatori e gli analisti potrebbero dover esaminare tutte le attività di rischio associate al caso per ulteriori dettagli. Con **Esplora attività,** i revisori possono esaminare rapidamente una sequenza temporale delle attività rischiose rilevate e identificare e filtrare tutte le attività di rischio associate agli avvisi.
 
-Per altre informazioni su Esplora attività, vedi l'articolo [Avvisi per la gestione dei rischi Insider.](insider-risk-management-alerts.md#activity-explorer-preview)
+Per altre informazioni su Esplora attività, vedi l'articolo [Avvisi per la gestione dei rischi Insider.](insider-risk-management-activities.md#activity-explorer-preview)
 
 ### <a name="content-explorer"></a>Esplora contenuto
 

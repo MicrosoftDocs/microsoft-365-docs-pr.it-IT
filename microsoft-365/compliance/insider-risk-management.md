@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 1864c34f1e7bb17decfaeb2057dfff463a33b37c
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 0dae2d65e88c8a5ad4bc6c39e8ea540f55d0f822
+ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53226348"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53326748"
 ---
 # <a name="learn-about-insider-risk-management-in-microsoft-365"></a>Informazioni sulla gestione dei rischi insider in Microsoft 365
 
@@ -86,7 +86,7 @@ L'identificazione e risoluzione delle attività di rischio interno e dei problem
 
 ### <a name="alerts"></a>Avvisi
 
-Gli avvisi vengono generati automaticamente dagli indicatori di rischio che soddisfano le condizioni dei criteri e vengono visualizzati nel [dashboard Avvisi.](insider-risk-management-alerts.md) Tale dashboard offre una vista rapida di tutti gli avvisi che necessitano di revisione, della loro creazione nel tempo e statistiche sugli avvisi dell'organizzazione. Tutti gli avvisi dei criteri vengono visualizzati con le informazioni seguenti per identificare rapidamente lo stato degli avvisi esistenti e dei nuovi avvisi che necessitano di azioni:
+Gli avvisi vengono generati automaticamente dagli indicatori di rischio che soddisfano le condizioni dei criteri e vengono visualizzati nel [dashboard Avvisi.](insider-risk-management-activities.md#alert-dashboard) Tale dashboard offre una vista rapida di tutti gli avvisi che necessitano di revisione, della loro creazione nel tempo e statistiche sugli avvisi dell'organizzazione. Tutti gli avvisi dei criteri vengono visualizzati con le informazioni seguenti per identificare rapidamente lo stato degli avvisi esistenti e dei nuovi avvisi che necessitano di azioni:
 
 - Stato
 - Gravità
@@ -105,6 +105,8 @@ Gli avvisi vengono risolti aprendo un nuovo caso, assegnando l'avviso a un caso 
 ![Valutazione della gestione dei rischi insider](../media/insider-risk-triage.png)
 
 ### <a name="investigate"></a>Investigare
+
+Analizzare rapidamente tutte le attività per un utente selezionato con [Report attività utente (anteprima).](insider-risk-management-activities.md#user-activity-reports-preview) Questi report consentono ai ricercatori dell'organizzazione di esaminare le attività per utenti specifici per un periodo di tempo definito senza doverli assegnare temporaneamente o esplicitamente a un criterio di gestione dei rischi insider. Dopo aver esaminato le attività per un utente, gli investigatori possono ignorare le singole attività come benigne, condividere o inviare tramite posta elettronica un collegamento al report con altri investigatori oppure scegliere di assegnare l'utente temporaneamente o esplicitamente a un criterio di gestione dei rischi insider.
 
 [I](insider-risk-management-cases.md) casi vengono creati per gli avvisi che richiedono una revisione e un'analisi più approfondite dei dettagli dell'attività e delle circostanze relative alla corrispondenza dei criteri. La **dashboard dei casi** offre una visione d'insieme di tutti i casi attivi, dei casi aperti nel tempo e delle relative statistiche dell'organizzazione. I revisori possono filtrare rapidamente i casi in base allo stato, alla data di apertura del caso e alla data dell'ultimo aggiornamento del caso.
 
