@@ -3,7 +3,7 @@ title: Ottimizzazione delle prestazioni di Office 365 con le linee di base e la 
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
-ms.date: 8/31/2017
+ms.date: 07/08/2021
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -23,30 +23,32 @@ ms.collection:
 - Ent_O365
 - SPO_Content
 description: Informazioni su come controllare la cronologia delle connessioni dei computer client per rilevare i problemi emergenti in anticipo.
-ms.openlocfilehash: 314b1acea5935bfd6d93d1da3789657e21cd2d57
-ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
+ms.openlocfilehash: 460bde30a0b292569b045c339066df2860c50989
+ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53339371"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53341581"
 ---
 # <a name="office-365-performance-tuning-using-baselines-and-performance-history"></a>Ottimizzazione delle prestazioni di Office 365 con le linee di base e la cronologia delle prestazioni
 
 Esistono alcuni semplici modi per controllare le prestazioni di connessione tra Office 365 e l'azienda che consentono di stabilire una linea di base approssimativa della connettività. Conoscere la cronologia delle prestazioni delle connessioni dei computer client può aiutare a rilevare i problemi emergenti in anticipo, identificare e prevedere i problemi.
   
-Se non si è abituati a lavorare su problemi di prestazioni, questo articolo è progettato per aiutare a prendere in considerazione alcune domande comuni, ad esempio Come si sa che il problema che si sta verificando è un problema di prestazioni e non un incidente del servizio di Office 365? Come è possibile pianificare buone prestazioni a lungo termine? Come si può tenere d'occhio le prestazioni? Se il team o i client vedono prestazioni lente durante l'Office 365 e ti chiedi una di queste domande, continua a leggere.
+Se non sei abituato a lavorare su problemi di prestazioni, questo articolo è progettato per aiutarti a prendere in considerazione alcune domande comuni. Come si fa a sapere che il problema che si sta verificando è un problema di prestazioni e non un Office 365 di servizio? Come è possibile pianificare buone prestazioni a lungo termine? Come si può tenere d'occhio le prestazioni? Se il team o i client vedono prestazioni lente durante l'Office 365 e ti chiedi una di queste domande, continua a leggere.
   
 > [!IMPORTANT]
 > **Si è verificato un problema di prestazioni tra il client e Office 365 in questo momento?** Seguire i passaggi descritti nel piano di risoluzione dei problemi di prestazioni [per Office 365](performance-troubleshooting-plan.md). 
     
 ## <a name="something-you-should-know-about-office-365-performance"></a>Informazioni da conoscere sulle prestazioni Office 365 prestazioni
 
-Office 365 si trova all'interno di una rete Microsoft dedicata ad alta capacità costantemente monitorata non solo dall'automazione, ma da persone reali. Parte del ruolo della manutenzione del Office 365 cloud è l'ottimizzazione delle prestazioni e la ottimizzazione delle prestazioni laddove possibile. Poiché i client del cloud Office 365 devono connettersi attraverso Internet, è necessario un impegno continuo per ottimizzare le prestazioni anche Office 365 servizi. I miglioramenti delle prestazioni non si arrestano mai realmente nel cloud e c'è un'esperienza accumulata per mantenere il cloud integro e rapido. Se si verifica un problema di prestazioni che si connette dalla posizione a Office 365, è consigliabile non iniziare e attendere un caso di supporto. È invece consigliabile iniziare a analizzare il problema dall'interno all'esterno. In altri modi, iniziare all'interno della rete e lavorare per Office 365. Prima di aprire un caso con Office 365 supporto tecnico, è possibile raccogliere dati ed eseguire azioni per esplorare e risolvere il problema.
+Office 365 si trova all'interno di una rete Microsoft dedicata ad alta capacità monitorata dall'automazione e da persone reali. Parte della manutenzione del Office 365 cloud è l'ottimizzazione delle prestazioni e la snellizione, ove possibile. Dal momento che i client del cloud Office 365 devono connettersi attraverso Internet, c'è un impegno costante per ottimizzare le prestazioni anche Office 365 servizi.
+
+I miglioramenti delle prestazioni non si arrestano mai realmente nel cloud, quindi nemmeno l'esperienza di mantenere il cloud integro e rapido. In caso di problemi di prestazioni che si connettono dalla posizione a Office 365, è consigliabile non iniziare o attendere un caso di supporto. È invece consigliabile iniziare a analizzare il problema dall'interno all'esterno. In altri modi, iniziare all'interno della rete e lavorare per Office 365. Prima di aprire un caso con il supporto, è possibile raccogliere dati ed eseguire azioni che esploreranno e risolveranno il problema.
   
 > [!IMPORTANT]
-> Tenere presente la pianificazione della capacità e i limiti in Office 365. Queste informazioni ti metteranno in testa alla curva quando cerchi di risolvere un problema di prestazioni. Ecco un collegamento alle descrizioni dei [Microsoft 365 e Office 365 servizio.](/office365/servicedescriptions/office-365-service-descriptions-technet-library) Si tratta di un hub centrale e tutti i servizi offerti da Office 365 hanno un collegamento che consente di accedere alle proprie descrizioni dei servizi da qui. Ciò significa che, se è necessario visualizzare i limiti standard per SharePoint Online, ad esempio, fare clic su [SharePoint Online Service Description](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-service-description) e individuare la relativa sezione SharePoint Online [Limits](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits). 
+> Tenere presente la pianificazione della capacità e i limiti in Office 365. Queste informazioni ti metteranno in testa alla curva quando cerchi di risolvere un problema di prestazioni. Ecco un collegamento alle descrizioni dei [Microsoft 365 e Office 365 servizio.](/office365/servicedescriptions/office-365-service-descriptions-technet-library) Si tratta di un hub centrale e tutti i servizi offerti da Office 365 hanno un collegamento che consente di accedere alle proprie descrizioni dei servizi da qui. Ciò significa che, se è necessario visualizzare i limiti standard per SharePoint Online, ad esempio, fare clic su [SharePoint Online Service Description](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-service-description) e individuare la relativa sezione SharePoint Online [Limits](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits).
   
-Assicurarsi di procedere alla risoluzione dei problemi con la consapevolezza che le prestazioni sono una scala scorrevole, non si tratta di ottenere un valore idealizzato e mantenerlo in modo permanente (se si ritiene che sia così, quindi occasionalmente attività a larghezza di banda elevata come l'on-boarding di un numero elevato di utenti o l'esecuzione di migrazioni di dati di grandi dimensioni saranno molto stressanti, quindi pianificare l'impatto sulle prestazioni). Puoi e dovresti avere un'idea approssimativa dei tuoi obiettivi di prestazioni, ma molte variabili giocano sulle prestazioni, pertanto le prestazioni variano. Questa è la natura delle prestazioni. 
+Assicurati di passare alla risoluzione dei problemi con la comprensione che le prestazioni sono una scala scorrevole. Non si tratta di ottenere un valore idealizzato e mantenerlo in modo permanente. Attività occasionali con larghezza di banda elevata, come l'on-boarding di un  numero elevato di utenti o l'esecuzione di migrazioni di dati di grandi dimensioni, saranno stressanti, quindi pianificare l'impatto sulle prestazioni. Dovresti avere un'idea approssimativa dei tuoi obiettivi di prestazioni, ma molte variabili giocano sulle prestazioni, quindi le prestazioni variano.
   
 La risoluzione dei problemi di prestazioni non riguarda il rispetto di obiettivi specifici e il mantenimento di tali numeri a tempo indeterminato, ma il miglioramento delle attività esistenti, date tutte le variabili. 
   
@@ -54,45 +56,45 @@ La risoluzione dei problemi di prestazioni non riguarda il rispetto di obiettivi
 
 Prima di tutto, è necessario assicurarsi che ciò che si sta verificando sia effettivamente un problema di prestazioni e non un evento imprevisto del servizio. Un problema di prestazioni è diverso da un evento imprevisto del servizio in Office 365. Ecco come distinguerli.
   
-Se il Office 365 si verifica un problema, si tratta di un evento imprevisto del servizio. Verranno visualizzate icone rosse  o gialle in Integrità corrente nel interfaccia di amministrazione di Microsoft 365, è anche possibile notare un rallentamento delle prestazioni nei computer client che si connettono a Office 365. Ad esempio, se l'integrità corrente  segnala un'icona rossa e viene visualizzata l'opzione Analisi accanto a Exchange, è possibile ricevere anche un gruppo di chiamate da parte di persone dell'organizzazione che si lamentano del fatto che le cassette postali client che utilizzano Exchange Online hanno prestazioni non migliori. In tal caso, è ragionevole presupporre che le prestazioni Exchange Online siano diventate una vittima di problemi all'interno del servizio. 
+Gli incidenti di servizio si verificano Office 365 problemi del servizio stesso. Potresti visualizzare icone rosse o gialle in **Integrità corrente** nella interfaccia di amministrazione di Microsoft 365. È possibile notare che le prestazioni nei computer client che si connettono a Office 365 sono lente. Ad esempio, se l'integrità corrente  segnala un'icona rossa e viene visualizzata l'opzione Analisi accanto a Exchange, è possibile ricevere anche chiamate da persone dell'organizzazione che si lamentano che le cassette postali client che usano Exchange Online sono lente. In tal caso, è ragionevole presupporre che le prestazioni Exchange Online siano una vittima di problemi del servizio.
   
 ![Il dashboard Office 365 integrità con tutti i carichi di lavoro in verde, ad Exchange, che mostra Servizio ripristinato.](../media/ec7f0325-9e61-4e1a-bec0-64b87f4469be.PNG)
   
-A questo punto, l'amministratore di Office 365  deve controllare l'integrità corrente e quindi visualizzare i dettagli e la **cronologia,** spesso, per mantenere aggiornato la manutenzione eseguita nel sistema. Il **dashboard di** integrità corrente è stato creato per aggiornare l'utente sulle modifiche e sui problemi del servizio. Le note e le spiegazioni scritte nella cronologia dell'integrità, dall'amministratore all'amministratore, sono utili per valutare l'impatto e per mantenere l'utente pubblicato sul lavoro in corso. 
+A questo punto, l'amministratore di Office 365  deve controllare Integrità corrente e quindi Visualizzare i dettagli e la **cronologia,** spesso, per mantenersi aggiornati sulla manutenzione del sistema. Il **dashboard di** integrità corrente è stato creato per aggiornare l'utente sulle modifiche e sui problemi del servizio. Le note e le spiegazioni scritte nella cronologia dell'integrità, dall'amministratore all'amministratore, sono utili per valutare e mantenere i dati pubblicati sul lavoro in corso.
   
 ![Un'immagine del dashboard Office 365 integrità dei dati che spiega che il servizio di Exchange Online è stato ripristinato e perché.](../media/66609554-426a-4448-8be6-ea09817f41ba.PNG)
   
 Un problema di prestazioni non è un evento imprevisto del servizio, anche se gli eventi imprevisti possono causare prestazioni lente. Un problema di prestazioni è simile al seguente:
   
-- Si verifica un problema di prestazioni indipendentemente dall'integrità corrente dell'interfaccia **di** amministrazione per il servizio. 
+- Si verifica un problema di prestazioni indipendentemente dall'integrità corrente dell'interfaccia **di** amministrazione per il servizio.
     
--  Un comportamento che in un tempo era relativamente semplice richiede molto tempo per essere completato o non viene mai completato. 
+-  Un comportamento utilizzato per il flusso richiede molto tempo per essere completato o non viene mai completato.
     
-- È possibile replicare anche il problema o, almeno, se si esegue la serie di passaggi giusta, è necessario sapere che si verifica.
+- È anche possibile replicare il problema o sapere che si verifica se si esegue la serie di passaggi giusta.
     
--  Se il problema è intermittente, esiste ancora un modello, ad esempio, si sa che entro le 10.00 si avranno chiamate da utenti che non possono accedere in modo affidabile a Office 365 e che le chiamate verranno disattese verso mezzogiorno. 
+-  Se il problema è intermittente, può essere ancora presente un modello. Ad esempio, si sa che entro le 10:00 saranno effettuate chiamate da utenti che non sempre possono accedere a Office 365. Le chiamate termineranno intorno a mezzogiorno.
     
-Questo probabilmente sembra familiare; forse troppo familiare. Una volta che sai che si tratta di un problema di prestazioni, la domanda diventa"Cosa fare?" Il resto di questo articolo ti aiuta a determinare esattamente questo.
+Questo elenco probabilmente sembra familiare; forse troppo familiare. Una volta che si è a conoscenza che si tratta di un problema di prestazioni, la domanda diventa" "Cosa fare?" Il resto di questo articolo ti aiuta a determinare esattamente questo.
   
 ## <a name="how-to-define-and-test-the-performance-problem"></a>Come definire e testare il problema di prestazioni
 
-I problemi di prestazioni spesso si verificano nel tempo, quindi può essere difficile definire il problema effettivo. È necessario creare una buona dichiarazione di problema e una buona idea del contesto del problema, quindi è necessario ripetere i passaggi di test per vincere la giornata. In caso contrario, senza alcun errore, potresti perderti. Perché? Ecco alcuni esempi di istruzioni sui problemi che non forniscono informazioni sufficienti:
+I problemi di prestazioni spesso si verificano nel tempo, quindi può essere difficile definire il problema effettivo. Creare una buona dichiarazione di problema con una buona idea del contesto del problema e quindi è necessario ripetere i passaggi di test. Ecco alcuni esempi di istruzioni sui problemi che non forniscono informazioni sufficienti:
   
 - Il passaggio dalla posta in arrivo al calendario era qualcosa che non notavo e ora è una pausa caffè. Puoi farlo agire come prima?
     
 - Il caricamento dei file in SharePoint Online sta prendendo sempre tempo. Perché è lento nel pomeriggio, ma in qualsiasi altro momento è veloce? Non può essere semplicemente veloce?
     
-Le affermazioni sul problema sopra poste in precedenza inserivano numerose sfide. In particolare, esistono molte ambiguità da gestire. Per esempio:
+Le affermazioni sul problema sopra poste in precedenza inserivano numerose sfide. In particolare, troppe ambiguità da gestire. Per esempio:
   
 - Non è chiaro come il passaggio tra Posta in arrivo e Calendario abbia usato per agire sul portatile.
     
 - Quando l'utente dice: "Non può essere semplicemente veloce", che cos'è "veloce"?
     
-- Quanto tempo è "per sempre"? Si tratta di alcuni secondi, o minuti, o l'utente potrebbe andare a pranzo e finirebbe dieci minuti dopo il ritorno dell'utente?
+- Quanto tempo è "per sempre"? Sono trascorsi alcuni secondi? O molti minuti? Oppure l'utente potrebbe pranzare e l'azione finirebbe 10 minuti dopo il ritorno?
     
-Tutto questo senza considerare che l'amministratore e lo strumento di risoluzione dei problemi non possono essere a conoscenza di molti dettagli da dichiarazioni di problema come queste. Ad esempio, quando il problema ha iniziato a verificarsi; Che l'utente lavori da casa e vede solo il passaggio lento in una rete domestica; Che l'utente deve eseguire diverse altre applicazioni con utilizzo intensivo della RAM nel client locale o che l'utente esegue un sistema operativo precedente o non ha eseguito aggiornamenti recenti.
+L'amministratore e lo strumento di  risoluzione dei problemi non possono essere a conoscenza dei dettagli del problema da istruzioni generali come queste. Ad esempio, non sanno quando il problema ha iniziato a verificarsi. Lo strumento di risoluzione dei problemi potrebbe non sapere se l'utente lavora da casa e vede solo un cambio lento mentre si è in rete. Oppure che l'utente esegue altre applicazioni con utilizzo intensivo della RAM nel client locale. Gli amministratori potrebbero non sapere se l'utente esegue un sistema operativo precedente o non ha eseguito aggiornamenti recenti.
   
-Quando gli utenti segnalano un problema di prestazioni, sono disponibili molte informazioni da raccogliere. La raccolta di queste informazioni fa parte di un processo denominato ambito del problema o analisi. Di seguito è riportato un elenco di ambito di base che è possibile utilizzare per raccogliere informazioni sul problema di prestazioni. Questo elenco non è esaustivo, ma è un punto da cui iniziare uno personalizzato: 
+Quando gli utenti segnalano un problema di prestazioni, sono disponibili molte informazioni da raccogliere. Per ottenere e registrare le informazioni si intitoli l'ambito del problema. Ecco un elenco di ambito di base che puoi usare per raccogliere informazioni sui problemi di prestazioni. Questo elenco non è esaustivo, ma è un punto di partenza:
   
 - In quale data si è verificato il problema e a quale ora del giorno o della notte?
     
