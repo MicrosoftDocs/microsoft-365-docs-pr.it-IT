@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b83e6682ce0c11d076e0bbef60fdef365c9be564
-ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
+ms.openlocfilehash: eb9e4b905112d3d144b10d68418695df3cda29cb
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51471102"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339251"
 ---
 # <a name="verify-data-storage-location-and-update-data-retention-settings-for-microsoft-defender-for-endpoint"></a>Verificare il percorso di archiviazione dei dati e aggiornare le impostazioni di conservazione dei dati per Microsoft Defender for Endpoint
 
@@ -42,13 +42,13 @@ Dopo aver completato l'onboarding, puoi verificare la selezione nella pagina del
 ## <a name="verify-data-storage-location"></a>Verificare il percorso di archiviazione dei dati
 Durante la [fase di configurazione,](production-deployment.md)è necessario selezionare la posizione in cui archiviare i dati. 
 
-È possibile verificare la posizione dei dati accedendo a **Impostazioni**  >  **conservazione dei dati**.
+È possibile verificare la posizione dei dati accedendo a **Impostazioni**  >  **endpoint Conservazione** dei  >  **dati**.
 
 ## <a name="update-data-retention-settings"></a>Aggiornare le impostazioni di conservazione dei dati
 
 È possibile aggiornare le impostazioni di conservazione dei dati. Per impostazione predefinita, il periodo di conservazione è 180 giorni. 
 
-1. Nel riquadro di spostamento selezionare **Impostazioni**  >  **conservazione dei dati**.
+1. Nel riquadro di spostamento selezionare **Impostazioni**  >  **endpoint**  >  **Conservazione dati**.
 
 2. Selezionare la durata di conservazione dei dati nell'elenco a discesa.
 

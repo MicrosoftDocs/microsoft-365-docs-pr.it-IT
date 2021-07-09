@@ -21,12 +21,12 @@ search.appverid:
 ms.assetid: ec3587e4-7b4a-40fb-8fb8-8aa05aeae2ce
 ms.custom: seo-marvel-apr2020
 description: Informazioni su come creare un criterio di archiviazione ed eliminazione in Microsoft 365 che sposta automaticamente gli elementi nella cassetta postale di archiviazione di un utente.
-ms.openlocfilehash: 16a9191268cb83b5377e8f55d3d4d20522c223cb
-ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
+ms.openlocfilehash: 45d6428f5b0a856538d500b1d1f0447447b9dfe9
+ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53062163"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53341641"
 ---
 # <a name="set-up-an-archive-and-deletion-policy-for-mailboxes-in-your-organization"></a>Configurare criteri di archiviazione ed eliminazione per le cassette postali in un'organizzazione
 
@@ -63,11 +63,11 @@ Il primo passaggio consiste nell'abilitare la cassetta postale di archiviazione 
 > [!NOTE]
 > È possibile abilitare le cassette postali di archiviazione in qualsiasi momento durante questo processo, purché siano abilitate a un certo punto prima di completare il processo. Se una cassetta postale di archiviazione non è abilitata, non viene eseguita alcuna azione sugli elementi a cui è assegnato un criterio di archiviazione o eliminazione.
   
-1. Vai a [https://protection.office.com](https://protection.office.com).
+1. Passare a <https://compliance.microsoft.com>.
 
 2. Accedi con l'account amministratore globale.
     
-3. Nel Centro sicurezza & conformità passare a **Archivio governance** \> **delle informazioni**.
+3. Nella finestra Centro conformità Microsoft 365, fare clic **su Governance delle** informazioni e quindi fare clic sulla **scheda** Archivio.
 
     Viene visualizzato un elenco delle cassette postali nell'organizzazione e se la cassetta postale di archiviazione corrispondente è abilitata o disabilitata.
 

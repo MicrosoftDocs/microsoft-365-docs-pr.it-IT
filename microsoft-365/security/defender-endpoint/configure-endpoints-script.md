@@ -1,6 +1,6 @@
 ---
 title: Onboarding di dispositivi Windows 10 con uno script locale
-description: Usa uno script locale per distribuire il pacchetto di configurazione nei dispositivi in modo che siano onboarded nel servizio.
+description: Usa uno script locale per distribuire il pacchetto di configurazione nei dispositivi per abilitare l'onboarding dei dispositivi nel servizio.
 keywords: configurare i dispositivi usando uno script locale, la gestione dei dispositivi, configurare Microsoft Defender per i dispositivi endpoint
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 2510fb1a187bbe136669e11bc73103438b51d811
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: e15a02753c7a1b346021a4351af24b8fd28315da
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52842171"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339647"
 ---
-# <a name="onboard-windows-10-devices-using-a-local-script"></a>Onboarding di dispositivi Windows 10 con uno script locale
+# <a name="onboard-the-windows-10-devices-using-a-local-script"></a>Eseguire l'onboard Windows 10 dispositivi usando uno script locale
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -47,9 +47,9 @@ Puoi anche eseguire manualmente l'onboard di singoli dispositivi in Defender for
 Vedi il [PDF o](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf) il [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx) per vedere i vari percorsi nella distribuzione di Defender per Endpoint. 
 
 
-1.  Aprire il file del pacchetto .zip criteri di gruppo (*WindowsDefenderATPOnboardingPackage.zip*) scaricato dall'onboarding guidato del servizio. Puoi anche ottenere il pacchetto da [Microsoft Defender Security Center:](https://securitycenter.windows.com/)
+1.  Aprire il file del pacchetto .zip criteri di gruppo (*WindowsDefenderATPOnboardingPackage.zip*) scaricato dall'onboarding guidato del servizio. Puoi anche ottenere il pacchetto da [Microsoft 365 Defender Portal:](https://security.microsoft.com/)
 
-    1. Nel riquadro di spostamento selezionare **Impostazioni**  >  **onboarding**.
+    1. Nel riquadro di spostamento seleziona **Impostazioni**  >    >    >  **Onboarding** gestione dispositivi degli endpoint.
 
     1. Seleziona Windows 10 come sistema operativo.
 
@@ -66,7 +66,7 @@ Vedi il [PDF o](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/m
 
     1.  Fare clic con il pulsante destro del mouse su **Prompt dei comandi** e scegliere **Esegui come amministratore**.
 
-        ![Menu Start finestra che punta a Esegui come amministratore](images/run-as-admin.png)
+        ![Finestra menu Start che punta a Esegui come amministratore](images/run-as-admin.png)
 
 4.  Digitare il percorso del file script. Se il file è stato copiato sul desktop, digitare: *%userprofile%\Desktop\WindowsDefenderATPLocalOnboardingScript.cmd*
 
@@ -79,7 +79,7 @@ Per informazioni su come convalidare manualmente la conformità del dispositivo 
 > Dopo l'onboarding del dispositivo, puoi scegliere di eseguire un test di rilevamento per verificare che un dispositivo sia stato correttamente onboarding nel servizio. Per altre informazioni, vedi Eseguire un test di rilevamento su un endpoint [di Microsoft Defender for Endpoint appena onboarded.](run-detection-test.md)
 
 ## <a name="configure-sample-collection-settings"></a>Configurare le impostazioni della raccolta di esempio
-Per ogni dispositivo, puoi impostare un valore di configurazione per indicare se è possibile raccogliere campioni dal dispositivo quando viene effettuata una richiesta tramite Microsoft Defender Security Center per inviare un file per l'analisi approfondita.
+Per ogni dispositivo, puoi impostare un valore di configurazione per indicare se è possibile raccogliere campioni dal dispositivo quando viene effettuata una richiesta tramite Microsoft 365 Defender per inviare un file per l'analisi approfondita.
 
 Puoi configurare manualmente l'impostazione di condivisione di esempio nel dispositivo usando *regedit* o creando ed eseguendo un file *REG.*  
 
@@ -105,9 +105,9 @@ Per motivi di sicurezza, il pacchetto usato per i dispositivi offboard scadrà 3
 > [!NOTE]
 > I criteri di onboarding e offboarding non devono essere distribuiti nello stesso dispositivo contemporaneamente, altrimenti ciò causerà collisioni imprevedibili.
 
-1. Ottenere il pacchetto di offboarding [da Microsoft Defender Security Center](https://securitycenter.windows.com/):
+1. Ottenere il pacchetto di offboarding [da Microsoft 365 Defender portale:](https://security.microsoft.com/)
 
-    1. Nel riquadro di spostamento selezionare **Impostazioni**  >  **offboarding**.
+    1. Nel riquadro di spostamento seleziona **Impostazioni**  >    >    > **Offboarding** gestione dispositivi endpoint.
 
     1. Seleziona Windows 10 come sistema operativo.
 
@@ -123,7 +123,7 @@ Per motivi di sicurezza, il pacchetto usato per i dispositivi offboard scadrà 3
 
     1.  Fare clic con il pulsante destro del mouse su **Prompt dei comandi** e scegliere **Esegui come amministratore**.
 
-        ![Menu Start finestra che punta a Esegui come amministratore](images/run-as-admin.png)
+        ![Finestra menu Start che punta a Esegui come amministratore](images/run-as-admin.png)
 
 4.  Digitare il percorso del file script. Se il file è stato copiato sul desktop, digitare: *%userprofile%\Desktop\WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd*
 
@@ -139,9 +139,9 @@ Per motivi di sicurezza, il pacchetto usato per i dispositivi offboard scadrà 3
 Il monitoraggio può essere eseguito anche direttamente nel portale o utilizzando i diversi strumenti di distribuzione.
 
 ### <a name="monitor-devices-using-the-portal"></a>Monitorare i dispositivi tramite il portale
-1. Vai a Microsoft Defender Security Center.
+1. Passare a Microsoft 365 Defender portale.
 
-2. Fare **clic su Elenco dispositivi**.
+2. Fare clic **su Inventario dispositivi**.
 
 3. Verificare che i dispositivi siano visualizzati.
 

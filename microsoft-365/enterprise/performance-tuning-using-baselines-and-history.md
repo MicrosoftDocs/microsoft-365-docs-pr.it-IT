@@ -23,12 +23,12 @@ ms.collection:
 - Ent_O365
 - SPO_Content
 description: Informazioni su come controllare la cronologia delle connessioni dei computer client per rilevare i problemi emergenti in anticipo.
-ms.openlocfilehash: 87b1d43df560fc7fea5aadfbf1c422eb22883067
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 314b1acea5935bfd6d93d1da3789657e21cd2d57
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50928145"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339371"
 ---
 # <a name="office-365-performance-tuning-using-baselines-and-performance-history"></a>Ottimizzazione delle prestazioni di Office 365 con le linee di base e la cronologia delle prestazioni
 
@@ -54,7 +54,7 @@ La risoluzione dei problemi di prestazioni non riguarda il rispetto di obiettivi
 
 Prima di tutto, è necessario assicurarsi che ciò che si sta verificando sia effettivamente un problema di prestazioni e non un evento imprevisto del servizio. Un problema di prestazioni è diverso da un evento imprevisto del servizio in Office 365. Ecco come distinguerli.
   
-Se il Office 365 si verifica un problema, si tratta di un evento imprevisto del servizio. Verranno visualizzate icone rosse  o gialle in Integrità corrente nell'interfaccia di amministrazione di Microsoft 365, è anche possibile notare prestazioni lente nei computer client che si connettono a Office 365. Ad esempio, se l'integrità corrente  segnala un'icona rossa e viene visualizzata l'opzione Analisi accanto a Exchange, è possibile ricevere anche un gruppo di chiamate da parte di persone dell'organizzazione che si lamentano del fatto che le cassette postali client che utilizzano Exchange Online hanno prestazioni non migliori. In tal caso, è ragionevole presupporre che le prestazioni Exchange Online siano diventate una vittima di problemi all'interno del servizio. 
+Se il Office 365 si verifica un problema, si tratta di un evento imprevisto del servizio. Verranno visualizzate icone rosse  o gialle in Integrità corrente nel interfaccia di amministrazione di Microsoft 365, è anche possibile notare un rallentamento delle prestazioni nei computer client che si connettono a Office 365. Ad esempio, se l'integrità corrente  segnala un'icona rossa e viene visualizzata l'opzione Analisi accanto a Exchange, è possibile ricevere anche un gruppo di chiamate da parte di persone dell'organizzazione che si lamentano del fatto che le cassette postali client che utilizzano Exchange Online hanno prestazioni non migliori. In tal caso, è ragionevole presupporre che le prestazioni Exchange Online siano diventate una vittima di problemi all'interno del servizio. 
   
 ![Il dashboard Office 365 integrità con tutti i carichi di lavoro in verde, ad Exchange, che mostra Servizio ripristinato.](../media/ec7f0325-9e61-4e1a-bec0-64b87f4469be.PNG)
   
@@ -162,7 +162,7 @@ Le opzioni sono elencate **come Semplici** **e** Avanzate a causa della quantit�
   
 ![Grafica che propone una soluzione per organizzare i dati delle prestazioni in cartelle.](../media/13e01ffa-f0f2-4d10-b89d-d5980ec89fae.png)
   
-È inoltre consigliabile scegliere una convenzione di denominazione per i file. Di seguito vengono descritti alcuni esempi:
+È inoltre consigliabile scegliere una convenzione di denominazione per i file. Ecco alcuni esempi:
   
 - Feb_09_2015_9amPST_PerfBaseline_Netmon_ClientToEgress_Normal
     
@@ -251,7 +251,7 @@ Il tempo di round trip, o RTT, è un valore numerico che misura il tempo necessa
     
 2. Passare alla cartella in cui è installato lo strumento (in questo caso PsPing) e testare Office 365 URL:
     
-  - psping portal.office.com:443
+  - psping admin.microsoft.com:443
     
   - psping microsoft-my.sharepoint.com:443
     

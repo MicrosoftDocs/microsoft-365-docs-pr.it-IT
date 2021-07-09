@@ -1,6 +1,6 @@
 ---
-title: Accedere al portale Microsoft Defender Security Center clienti MSSP
-description: Accedere al portale Microsoft Defender Security Center clienti MSSP
+title: Accedere al portale Microsoft 365 Defender clienti MSSP
+description: Accedere al portale Microsoft 365 Defender clienti MSSP
 keywords: provider di servizi di sicurezza gestiti, mssp, configurare, integrazione
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 97122decede91e8b4f059b3b66999ac12b300172
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 8583b28adecd892ec6875faa934fd7ab08e5db11
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51164858"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339587"
 ---
-# <a name="access-the-microsoft-defender-security-center-mssp-customer-portal"></a>Accedere al portale Microsoft Defender Security Center clienti MSSP
+# <a name="access-the-microsoft-365-defender-mssp-customer-portal"></a>Accedere al portale Microsoft 365 Defender clienti MSSP
 
 **Si applica a:**
 - [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)

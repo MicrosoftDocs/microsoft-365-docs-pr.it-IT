@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 0ed494cc29eb990430be590e62db5f0365ace494
-ms.sourcegitcommit: b0f464b6300e2977ed51395473a6b2e02b18fc9e
+ms.openlocfilehash: 0b6edbdcda61eaf402275ae0b6dc9a38c5fe19f7
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53322426"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339491"
 ---
 # <a name="microsoft-defender-for-endpoint-preview-features"></a>Funzionalità di anteprima di Microsoft Defender per Endpoint
 
@@ -54,7 +54,7 @@ Quando si lavora con le funzionalità in anteprima pubblica, queste funzionalit�
 - Sono completamente supportati da Microsoft.
 - Può essere disponibile solo in aree geografiche o ambienti cloud selezionati. Ad esempio, la funzionalità potrebbe non esistere nel cloud per enti pubblici.
 - Le singole funzionalità in anteprima possono avere più restrizioni di utilizzo e supporto. In tal caso, queste informazioni vengono in genere riportate nella documentazione relativa alle funzionalità.
-- Le versioni di anteprima sono fornite con un livello di supporto standard ed è consigliabile per i carichi di lavoro di produzione. 
+- Le versioni di anteprima sono fornite con un livello di supporto standard e possono essere utilizzate per gli ambienti di produzione. 
 
 
 

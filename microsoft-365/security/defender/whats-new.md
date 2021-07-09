@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 78783ab98c50252115c28008680197256bfd7aa5
-ms.sourcegitcommit: 8b79d276f71f22bcaeb150e78e35101cb1ae0375
+ms.openlocfilehash: af5efb669b1f73b4008ac2c3fae251a4d08511dd
+ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53114738"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53340985"
 ---
 # <a name="whats-new-in-microsoft-365-defender"></a>Novità di Microsoft 365 Defender
 
@@ -38,8 +38,10 @@ Feed RSS: ricevere una notifica quando questa pagina viene aggiornata copiando e
 ```http
 /api/search/rss?search=%22Lists+the+new+features+and+functionality+in+Microsoft+365+defender%22&locale=en-us
 ```
-## <a name="june-2021"></a>Giugno 2021
-- Tag delle minacce nel [Microsoft 365 Defender di analisi delle minacce](threat-analytics.md) <br> I tag per le minacce consentono di concentrarsi su categorie di minacce specifiche ed esaminare i report più rilevanti. 
+
+## <a name="july-2021"></a>Luglio 2021
+- [Professional dei servizi di distribuzione](https://sip.security.microsoft.com/interoperability/professional_services)<br>Migliorare le funzionalità di rilevamento, analisi e intelligence delle minacce della piattaforma con connessioni partner supportate.
+    
 
 ## <a name="may-2021"></a>Maggio 2021
 
@@ -81,6 +83,6 @@ Feed RSS: ricevere una notifica quando questa pagina viene aggiornata copiando e
 - [Miglioramenti avanzati per la ricerca](advanced-hunting-overview.md) <br> Ricerca proattiva delle minacce nell'area di lavoro moderna con Kusto Query Language e uno schema ottimizzato per la sicurezza.
 
 ## <a name="march-2019"></a>Marzo 2019
-- Ricerca avanzata <br> Pagina di destinazione per varie funzionalità di ricerca che consentono di individuare in modo proattivo minacce che interessano posta elettronica, dati, dispositivi e identità.
+- Rilevazione avanzata <br> Pagina di destinazione per varie funzionalità di ricerca che consentono di individuare in modo proattivo minacce che interessano posta elettronica, dati, dispositivi e identità.
 - [Microsoft Secure Score](microsoft-secure-score.md) <br> Misurazione della posizione di sicurezza di un'organizzazione, con un numero maggiore che indica più azioni di miglioramento intraprese. Seguendo i consigli di Microsoft Secure Score è possibile proteggere l'organizzazione dalle minacce. 
 - [Report](overview-security-center.md) <br>  Include una serie di schede che coprono un'ampia gamma di aree monitorate dagli analisti e dagli amministratori della sicurezza nell'ambito delle operazioni quotidiane.

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 7e453a40-66df-44ab-92a1-96786cb7fb34
 description: L'errore **Non è stato possibile trovare una cassetta postale per** indica che l'account usato per connettersi a Outlook sul web non ha una licenza di Exchange Online.
-ms.openlocfilehash: cb82f917adca8f1fc183fd9516321a524c63eb69
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: 54aa196b0b324054d6220d4437a672a3db2a45ec
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635787"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53338566"
 ---
 # <a name="getting-a-mailbox-not-found-error-in-outlook-on-the-web"></a>Si sta ricevendo l'errore "Non è stato possibile trovare una cassetta postale per" in Outlook sul web?
 
@@ -31,7 +31,7 @@ Se si usa Outlook sul web e viene visualizzato l'errore **Non è stato possibile
 
 L'amministratore può assegnare una licenza all'account seguendo questa procedura:
 
-1. Aprire l'[interfaccia di amministrazione di Microsoft 365](https://portal.office.com/adminportal/home#/homepage) e passare a **Utenti attivi** nella sezione **Utenti** e infine scegliere l'utente che sta visualizzando l'errore.
+1. Aprire l'[interfaccia di amministrazione di Microsoft 365](https://admin.microsoft.com/adminportal/home#/homepage) e passare a **Utenti attivi** nella sezione **Utenti** e infine scegliere l'utente che sta visualizzando l'errore.
 1. Nella pagina utente che si apre, passare alla sezione **Licenze e app**, selezionare il valore **Posizione** appropriato e assegnare una licenza contente Exchange Online (espandere la licenza per visualizzare i dettagli). 
 1. Al termine, fare clic su **Salva modifiche**.
 

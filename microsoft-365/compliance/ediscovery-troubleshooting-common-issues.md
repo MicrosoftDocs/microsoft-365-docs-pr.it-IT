@@ -19,12 +19,12 @@ ms.assetid: ''
 description: Informazioni sui passaggi di base per la risoluzione dei problemi che è possibile eseguire per risolvere i problemi comuni in Office 365 eDiscovery.
 siblings_only: true
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 28c092cefbdd8add46d3f36aa118e230d16a918a
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+ms.openlocfilehash: 0b118a97df765321704a995905de797e06a60108
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52822239"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339419"
 ---
 # <a name="investigate-troubleshoot-and-resolve-common-ediscovery-issues"></a>Analizzare, risolvere e risolvere i problemi comuni di eDiscovery
 
@@ -99,7 +99,7 @@ Aprire il percorso di SpO e verificare che il file non sia effettivamente presen
 La soluzione suggerita consiste nel reindicizzare manualmente il sito o attendere la reindicizzazione del sito in base al processo automatico in background.
 
 
-## <a name="errorissue-this-search-result-was-not-downloaded-as-it-is-a-folder-or-other-artefact-that-cant-be-downloaded-by-itself-any-items-inside-the-folder-or-library-will-be-downloaded"></a>Errore/problema: questo risultato della ricerca non è stato scaricato perché si tratta di una cartella o di un altro artefatto che non può essere scaricato da solo, verranno scaricati tutti gli elementi all'interno della cartella o della raccolta.
+## <a name="errorissue-this-search-result-was-not-downloaded-as-it-is-a-folder-or-other-artifact-that-cant-be-downloaded-by-itself-any-items-inside-the-folder-or-library-will-be-downloaded"></a>Errore/problema: questo risultato della ricerca non è stato scaricato perché si tratta di una cartella o di un altro elemento che non può essere scaricato da solo, verranno scaricati tutti gli elementi all'interno della cartella o della raccolta.
 
 È possibile che venga visualizzato questo errore quando si esegue una ricerca eDiscovery che include SharePoint online e one drive for business. Significa che si stava provando ad esportare l'elemento riportato nell'indice, ma si è scoperto che si tratta di una cartella, quindi non è stata esportata. Come accennato nell'errore, non esportiamo gli elementi delle cartelle, ma ne esportiamo il contenuto.
 
@@ -122,7 +122,7 @@ Una ricerca eDiscovery ha esito negativo con l'errore `recipient not found` . Qu
 
 ## <a name="errorissue-exporting-search-results-is-slow"></a>Errore/problema: l'esportazione dei risultati della ricerca è lenta
 
-Quando si esportano i risultati della ricerca da eDiscovery o Ricerca contenuto nel Centro sicurezza e conformità, il download richiede più tempo del previsto.  Puoi controllare la quantità di dati da scaricare ed eventualmente aumentare la velocità di esportazione.
+Quando si esportano i risultati della ricerca da Core eDiscovery o Ricerca contenuto nell'Centro conformità Microsoft 365, il download richiede più tempo del previsto.  Puoi controllare la quantità di dati da scaricare ed eventualmente aumentare la velocità di esportazione.
 
 ### <a name="resolution"></a>Risoluzione
 
@@ -145,6 +145,16 @@ Quando si esportano i risultati della ricerca da eDiscovery o Ricerca contenuto 
 5. Verificare la presenza di eventuali errori nel file trace.log presente nella directory in cui è stato esportato il contenuto.
 
 6. Se si verificano ancora problemi, è consigliabile suddividere le ricerche che restituiscono un set di risultati di grandi dimensioni in ricerche più piccole. È ad esempio possibile utilizzare intervalli di date nelle query di ricerca per restituire un set più piccolo di risultati che possono essere scaricati più velocemente.
+
+## <a name="errorissue-export-process-not-progressing-or-is-stuck"></a>Errore/problema: il processo di esportazione non è in corso o è bloccato
+
+Quando si esportano i risultati della ricerca da Core eDiscovery o Ricerca contenuto nel Centro conformità Microsoft 365, il processo di esportazione non è in corso o sembra bloccato.
+
+### <a name="resolution"></a>Risoluzione
+
+1. Se necessario, eseguire di nuovo la ricerca. Se l'ultima ricerca è stata eseguita più di 7 giorni fa, è necessario rieseguire la ricerca.
+
+2. Riavviare l'esportazione.
 
 ## <a name="errorissue-internal-server-error-500-occurred"></a>Errore/problema: "Errore interno del server (500) si è verificato"
 
@@ -222,7 +232,7 @@ Dopo un'esportazione completata, il download completato tramite lo strumento di 
 
 ### <a name="resolution"></a>Risoluzione
 
-Si tratta di un problema sul lato client e per risolvere il problema, provare a eseguire la procedura seguente:
+Si tratta di un problema sul lato client. Per correggere l'errore, attenersi alla seguente procedura:
 
 1. Prova a usare un altro client/computer per il download.
 
@@ -234,6 +244,6 @@ Si tratta di un problema sul lato client e per risolvere il problema, provare a 
 
 5. Assicurarsi che nessun'altra esportazione sia in download nella stessa cartella o in qualsiasi cartella padre.
 
-6. Se i passaggi precedenti non sono stati esatti, disabilitare la compressione e la deduplicazione.
+6. Se i passaggi precedenti non funzionano, disabilitare la compressione e la deduplicazione.
 
 7. Se funziona, il problema è dovuto a un programma antivirus locale o a un problema del disco.

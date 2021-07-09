@@ -1,6 +1,6 @@
 ---
 title: Campi API di rilevamento di Microsoft Defender per endpoint
-description: Comprendere come i campi dell'API di rilevamento vengono mappati ai valori in Microsoft Defender Security Center
+description: Comprendere come i campi dell'API di rilevamento vengono mappati ai valori in Microsoft 365 Defender
 keywords: rilevamenti, campi di rilevamento, campi, api, campi, rilevamenti pull, api rest, richiesta, risposta
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d6d2ad9abe88d0099b58dd2df486120082bb22c1
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: f9a0d4ddeee5c1dc49c53e324854cabccc5f79e5
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933638"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339551"
 ---
 # <a name="microsoft-defender-for-endpoint-detections-api-fields"></a>Campi API di rilevamento di Microsoft Defender per endpoint
 
@@ -33,11 +33,11 @@ ms.locfileid: "51933638"
 
 >Vuoi provare Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-apiportalmapping-abovefoldlink)
 
-Comprendere quali campi dati vengono esposti come parte dell'API di rilevamento e come vengono mappati Microsoft Defender Security Center.
+Comprendere quali campi dati vengono esposti come parte dell'API di rilevamento e come vengono mappati a Microsoft 365 Defender.
 
 >[!Note]
 >- [Defender for Endpoint Alert](alerts.md) è composto da uno o più rilevamenti.
->- **Microsoft Defender ATP rilevamento è** composto dall'evento sospetto che si è verificato nel dispositivo e dai relativi **dettagli di** avviso.
+>- **Il rilevamento di Microsoft Defender ATP** è composto dall'evento sospetto che si è verificato nel dispositivo e dai relativi **dettagli di** avviso.
 >- L'API microsoft Defender for Endpoint Alert è l'API più recente per il consumo di avvisi e contiene un elenco dettagliato di prove correlate per ogni avviso. Per ulteriori informazioni, vedere [Metodi e proprietà degli](alerts.md) avvisi e Avvisi [elenco.](get-alerts.md)
 
 ## <a name="detections-api-fields-and-portal-mapping"></a>Campi API di rilevamento e mapping del portale
@@ -52,18 +52,18 @@ I numeri di campo corrispondono ai numeri nelle immagini seguenti.
 > | Etichetta portale   | Nome campo SIEM           | Campo ArcSight      | Valore di esempio                                                                      | Descrizione                                                                                                                                                                    |
 > |------------------|---------------------------|---------------------|------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 > | 1                | AlertTitle                | name                | Microsoft Defender AV ha rilevato malware ad alta gravità "Mikatz" | Valore disponibile per ogni rilevamento.                                                                                                                                               |
-> | 2                | Gravità                  | deviceSeverity      | Fortemente                                                                             | Valore disponibile per ogni rilevamento.                                                                                                                                               |
-> | 3                | Categoria                  | deviceEventCategory | Malware                                                               | Valore disponibile per ogni rilevamento.                                                                                                                                               |
+> | 2                 | Gravità                  | deviceSeverity      | Alto                                                                             | Valore disponibile per ogni rilevamento.                                                                                                                                               |
+> | 3                 | Categoria                  | deviceEventCategory | Malware                                                               | Valore disponibile per ogni rilevamento.                                                                                                                                               |
 > | 4                 | Origine di rilevamento                    | sourceServiceName   | Antivirus                                                                 | Antivirus Microsoft Defender o Defender for Endpoint. Valore disponibile per ogni rilevamento.                                                                                         |
 > | 5                 | MachineName               | sourceHostName      | desktop-4a5ngd6                                                                           | Valore disponibile per ogni rilevamento.                                                                                                                                               |
 > | 6                 | FileName                  | fileName            | Robocopy.exe                                                                       | Disponibile per i rilevamenti associati a un file o a un processo.                                                                                                                      |
 > | 7                 | FilePath                  | filePath            | C:\Windows\System32\Robocopy.exe                                                   | Disponibile per i rilevamenti associati a un file o a un processo.                                                                                                                     |
 > | 8                 | UserDomain                | sourceNtDomain      | CONTOSO                                                                            | Dominio del contesto utente che esegue l'attività, disponibile per Defender per i rilevamenti basati sul comportamento dell'endpoint.                                                           |
 > | 9                 | UserName                  | sourceUserName      | liz.bean                                                                           | Contesto utente che esegue l'attività, disponibile per Defender per i rilevamenti basati sul comportamento dell'endpoint.                                                                           |
-> | 10                 | Sha1                      | fileHash            | 3da065e07b990034e9db7842167f70b63aa5329                                           | Disponibile per i rilevamenti associati a un file o a un processo.                                                                                                                      |
-> | 11               | Sha256                    | deviceCustomString6 | ebf54f745dc81e1958f75e4ca91dd0ab989fc9787bb6b0bf993e2f5                   | Disponibile per i rilevamenti di Microsoft Defender AV.                                                                                                                                    |
+> | 10                | Sha1                      | fileHash            | 3da065e07b990034e9db7842167f70b63aa5329                                           | Disponibile per i rilevamenti associati a un file o a un processo.                                                                                                                      |
+> | 11                | Sha256                    | deviceCustomString6 | ebf54f745dc81e1958f75e4ca91dd0ab989fc9787bb6b0bf993e2f5                   | Disponibile per i rilevamenti di Microsoft Defender AV.                                                                                                                                    |
 > | 12                | Md5                       | deviceCustomString5 | db979c04a99b96d370988325bb5a8b21                                                   | Disponibile per i rilevamenti di Microsoft Defender AV.                                                                                                                                    |
-> | 13               | ThreatName                | deviceCustomString1  | HackTool:Win32/Mikatz!dha                                                         | Disponibile per i rilevamenti di Microsoft Defender AV.                                                                                                                                    |
+> | 13                | ThreatName                | deviceCustomString1  | HackTool:Win32/Mikatz!dha                                                         | Disponibile per i rilevamenti di Microsoft Defender AV.                                                                                                                                    |
 > | 14                | IpAddress                 | sourceAddress       | 218.90.204.141                                                                     | Disponibile per i rilevamenti associati agli eventi di rete. Ad esempio, "Comunicazione con una destinazione di rete dannosa".                                                        |
 > | 15               | URL                       | requestUrl          | down.esales360.cn                                                                  | Disponibile per i rilevamenti associati agli eventi di rete. Ad esempio, "Comunicazione con una destinazione di rete dannosa".                                                         |
 > | 16                | RemediationIsSuccess      | deviceCustomNumber2 | TRUE                                                                               | Disponibile per i rilevamenti di Microsoft Defender AV. Il valore di ArcSight è 1 quando TRUE e 0 quando FALSE.                                                                                    |

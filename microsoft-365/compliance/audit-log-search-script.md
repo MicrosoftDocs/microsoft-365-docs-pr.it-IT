@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.custom: seo-marvel-apr2020
 description: Usare uno script di PowerShell che esegue il cmdlet Search-UnifiedAuditLog in Exchange Online per cercare il log di audit. Questo script è ottimizzato per restituire un set di record di controllo di grandi dimensioni (fino a 50.000). Lo script esporta questi record in un file CSV che è possibile visualizzare o trasformare usando Power Query in Excel.
-ms.openlocfilehash: df5e675e5e36603a73078bd5ecf5e64bc7a76f95
-ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
+ms.openlocfilehash: 8abea51bb1e7e1fa7bd513bea78708b06da62def
+ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51939566"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53341009"
 ---
 # <a name="use-a-powershell-script-to-search-the-audit-log"></a>Usare uno script PowerShell per la ricerca nel log di audit
 
@@ -48,7 +48,7 @@ In situazioni in cui è necessario recuperare manualmente i dati di controllo pe
 
   Il valore `True` per la proprietà **UnifiedAuditLogIngestionEnabled** indica che la ricerca nel log di audit è attivata.
 
-- È necessario avere il ruolo Log di audit di sola lettura o Log di audit in Exchange Online per poter eseguire correttamente lo script. Per impostazione predefinita, questi ruoli sono assegnati ai gruppi di ruoli Gestione conformità e Gestione organizzazione nella pagina Autorizzazioni nell'Interfaccia di amministrazione di Exchange. Per altre informazioni, vedere la sezione "Requisiti per eseguire ricerche nel log di audit" in [Eseguire una ricerca nel log di audit nel Centro conformità](search-the-audit-log-in-security-and-compliance.md#requirements-to-search-the-audit-log).
+- È necessario avere il ruolo Log di audit di sola lettura o Log di audit in Exchange Online per poter eseguire correttamente lo script. Per impostazione predefinita, questi ruoli sono assegnati ai gruppi di ruoli Gestione conformità e Gestione organizzazione nella pagina Autorizzazioni nell'Interfaccia di amministrazione di Exchange. Per altre informazioni, vedere la sezione "Requisiti per eseguire ricerche nel log di audit" in [Eseguire una ricerca nel log di audit nel Centro conformità](search-the-audit-log-in-security-and-compliance.md#before-you-search-the-audit-log).
 
 - Il completamento dello script può richiedere molto tempo. Il tempo necessario per l'esecuzione dipende dall'intervallo di date e dalle dimensioni dell'intervallo per cui si configura lo script per il recupero dei record di controllo. Date più distanziate con intervalli più piccoli comportano una durata di esecuzione maggiore. Per altre informazioni sull'intervallo di date e sugli intervalli, vedere la tabella del passaggio 2.
 

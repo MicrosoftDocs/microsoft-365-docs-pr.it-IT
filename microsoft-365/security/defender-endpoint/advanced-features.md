@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 7fd9ec25c21b2d70238bd5b0d6b58b60731088ea
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 2448b95e5c5c5da25a916b659f6b49d04ba8f0c1
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52845475"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339575"
 ---
 # <a name="configure-advanced-features-in-defender-for-endpoint"></a>Configurare le funzionalità avanzate in Defender for Endpoint
 
@@ -81,7 +81,7 @@ Il rilevamento e la risposta degli endpoint (EDR) in modalità blocco fornisce p
 
 ## <a name="autoresolve-remediated-alerts"></a>Risolvere in modo automatico gli avvisi corretti
 
-Per i tenant creati in o dopo Windows 10 versione 1809, la funzionalità di analisi e correzione automatizzata è configurata per impostazione predefinita per risolvere gli avvisi in cui lo stato del risultato dell'analisi automatica è "Nessuna minaccia trovata" o "Correzione".  Se non si desidera che gli avvisi vengono risolti automaticamente, è necessario disattivare manualmente la funzionalità.
+Per i tenant creati in o dopo Windows 10, versione 1809, la funzionalità di analisi e correzione automatica è configurata per impostazione predefinita per risolvere gli avvisi in cui lo stato dei risultati dell'analisi automatica è "Nessuna minaccia trovata" o "Correzione".  Se non si desidera che gli avvisi vengono risolti automaticamente, è necessario disattivare manualmente la funzionalità.
 
 > [!TIP]
 > Per i tenant creati prima di tale versione, è necessario attivare manualmente questa funzionalità dalla [pagina Funzionalità](https://securitycenter.windows.com/preferences2/integration) avanzate.
@@ -102,7 +102,7 @@ Questa funzionalità consente di bloccare i file potenzialmente dannosi nella re
 
 Per attivare **Consenti o blocca** file:
 
-1. Nel riquadro di spostamento selezionare **Impostazioni**  >  **Funzionalità avanzate**  >  **Consenti o blocca file.**
+1. Nel riquadro di spostamento selezionare **Impostazioni** Endpoint Funzionalità avanzate  >    >    >  **Consenti**  >  **o blocca file.**
 
 1. Attivare o disattivare **l'impostazione.** 
 
@@ -162,7 +162,7 @@ L'integrazione con Microsoft Defender for Identity consente di eseguire il pivot
 
 Questa funzionalità è disponibile solo se si dispone di un Office 365 E5 o del componente aggiuntivo Threat Intelligence. Per ulteriori informazioni, vedere la pagina Office 365 Enterprise prodotto E5.
 
-Quando abiliti questa funzionalità, potrai incorporare i dati di Microsoft Defender per Office 365 in Microsoft Defender Security Center per condurre un'indagine completa sulla sicurezza nelle cassette postali di Office 365 e nei dispositivi Windows.
+Quando abiliti questa funzionalità, potrai incorporare i dati di Microsoft Defender per Office 365 in Microsoft 365 Defender per condurre un'indagine completa sulla sicurezza tra le cassette postali di Office 365 e i dispositivi Windows.
 
 > [!NOTE]
 > Per abilitare questa funzionalità, è necessario disporre della licenza appropriata.
@@ -180,7 +180,7 @@ Tra i due componenti Microsoft Threat Expert, la notifica di attacco mirato è i
 L'abilitazione di questa impostazione inoltra i segnali di Defender for Endpoint Microsoft Cloud App Security per fornire una visibilità più approfondita sull'utilizzo delle applicazioni cloud. I dati inoltrati vengono archiviati ed elaborati nella stessa posizione dei Cloud App Security dati.
 
 > [!NOTE]
-> Questa funzionalità sarà disponibile con una licenza E5 per [Enterprise Mobility + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security) nei dispositivi che eseguono Windows 10 versione 1709 (OS Build 16299.1085 con [KB4493441),](https://support.microsoft.com/help/4493441)Windows 10, versione 1803 (OS Build 17134.704 con [KB4493464),](https://support.microsoft.com/help/4493464)Windows 10, versione 1809 (OS Build 17763.379 con [KB4489899](https://support.microsoft.com/help/4489899)) o versioni Windows 10 successive.
+> Questa funzionalità sarà disponibile con una licenza E5 per Enterprise Mobility + Security [nei](https://www.microsoft.com/cloud-platform/enterprise-mobility-security) dispositivi che eseguono Windows 10, versione 1709 (OS Build 16299.1085 con [KB4493441),](https://support.microsoft.com/help/4493441)Windows 10, versione 1803 (OS Build 17134.704 con [KB4493464),](https://support.microsoft.com/help/4493464)Windows 10, versione 1809 (OS Build 17763.379 con [KB4489899)](https://support.microsoft.com/help/4489899)o versioni successive Windows 10.
 
 ## <a name="microsoft-secure-score"></a>Microsoft Secure Score
 

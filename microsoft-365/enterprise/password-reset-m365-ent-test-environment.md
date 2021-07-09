@@ -18,12 +18,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: "Riepilogo: informazioni sulla configurazione e sul test di reimpostazione della password per l'ambiente di testing di Microsoft 365."
-ms.openlocfilehash: efcaaf9ed1873c0908bb0e64644b8e10de280a01
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 13169824866e91c1a09d412a875d2f4ce4391fa8
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50921493"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339383"
 ---
 # <a name="password-reset-for-your-microsoft-365-test-environment"></a>Reimpostazione della password per l'ambiente di testing di Microsoft 365
 
@@ -90,7 +90,7 @@ Testare quindi la reimpostazione della password per l'account Utente 3.
 1. Immettere il nome dell'account utente 3, immettere i caratteri da CAPTCHA e quindi selezionare **Avanti**.
 1. Per **il passaggio di verifica 1,** selezionare Invia **e-mail all'indirizzo di posta** elettronica alternativo, quindi selezionare Posta **elettronica**. Quando si riceve il messaggio di posta elettronica, immettere il codice di verifica e quindi selezionare **Avanti**.
 1. In **Torna all'account** immettere una nuova password per l'account Utente 3 e quindi selezionare **Fine.** Prendere nota della password cambiata dell'account utente 3 e conservarla in un luogo sicuro.
-1. In una scheda separata del browser stesso, passare a [https://portal.office.com](https://portal.office.com) e quindi accedere con il nome dell'account utente 3 e la nuova password. Verrà visualizzata la **Home Page Microsoft Office**.
+1. In una scheda separata del browser stesso, passare a [https://admin.microsoft.com](https://admin.microsoft.com) e quindi accedere con il nome dell'account utente 3 e la nuova password. Verrà visualizzata la **Home Page Microsoft Office**.
 
 ## <a name="next-step"></a>Passaggio successivo
 

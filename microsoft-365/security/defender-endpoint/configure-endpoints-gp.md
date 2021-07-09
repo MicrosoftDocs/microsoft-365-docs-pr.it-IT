@@ -1,6 +1,6 @@
 ---
 title: Onboard Windows 10 dispositivi a Microsoft Defender for Endpoint tramite Criteri di gruppo
-description: Usa Criteri di gruppo per distribuire il pacchetto di configurazione Windows 10 dispositivi in modo che siano onboarded nel servizio.
+description: Usa Criteri di gruppo per distribuire il pacchetto di configurazione nei dispositivi Windows 10 in modo che siano onboarded nel servizio.
 keywords: configurare i dispositivi usando Criteri di gruppo, gestione dei dispositivi, configurare Microsoft Defender per i dispositivi endpoint, onboard microsoft defender per dispositivi endpoint, criteri di gruppo
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,14 +17,14 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 454e60b26f84aca26a0f8f317105ec5457b55ca2
-ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
+ms.openlocfilehash: 26bdb0fbdb417d9e7fb01e4c3a863c44e57b7fb7
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53326964"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339623"
 ---
-# <a name="onboard-windows-10-devices-using-group-policy"></a>Onboardare Windows 10 dispositivi con Criteri di gruppo 
+# <a name="onboard-the-windows-10-devices-using-group-policy"></a>Onboard dei dispositivi Windows 10 usando Criteri di gruppo 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -47,9 +47,9 @@ ms.locfileid: "53326964"
 
 Vedi il [PDF o](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf) il [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx) per vedere i vari percorsi nella distribuzione di Defender per Endpoint.
 
-1. Aprire il file del pacchetto .zip criteri di gruppo (*WindowsDefenderATPOnboardingPackage.zip*) scaricato dall'onboarding guidato del servizio. Puoi anche ottenere il pacchetto da [Microsoft Defender Security Center:](https://securitycenter.windows.com/)
+1. Aprire il file del pacchetto .zip criteri di gruppo (*WindowsDefenderATPOnboardingPackage.zip*) scaricato dall'onboarding guidato del servizio. Puoi anche ottenere il pacchetto da [Microsoft 365 Defender portale:](https://security.microsoft.com/)
 
-    1. Nel riquadro di spostamento selezionare **Impostazioni**  >  **onboarding**.
+    1. Nel riquadro di spostamento seleziona **Impostazioni**  >    >     >  **Onboarding** gestione dispositivi degli endpoint.
 
     1. Seleziona Windows 10 come sistema operativo.
 
@@ -69,7 +69,7 @@ Vedi il [PDF o](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/m
 
 7. Selezionare **Esegui se l'utente è connesso o meno** e selezionare la casella di controllo Esegui con **privilegi** più elevati.
 
-8. Vai alla scheda **Azioni** e fai clic su **Nuovo...** Verificare che **l'opzione Avvia** un programma sia selezionata nel **campo** Azione. Immettere il nome e il percorso del file *WindowsDefenderATPOnboardingScript.cmd* condiviso.
+8. Vai alla scheda **Azioni** e fai clic su **Nuovo...** Verificare che **l'opzione Avvia** un programma sia selezionata nel **campo** Azione. Immettere il percorso NetBIOS del file  *WindowsDefenderATPOnboardingScript.cmd* condiviso.
 
 9. Fare **clic su OK** e chiudere tutte le finestre della Console Gestione Criteri di gruppo aperte.
 
@@ -77,7 +77,7 @@ Vedi il [PDF o](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/m
 > Dopo l'onboarding del dispositivo, puoi scegliere di eseguire un test di rilevamento per verificare che il dispositivo sia stato correttamente onboarding nel servizio. Per altre informazioni, vedi Eseguire un test di rilevamento in un dispositivo [Defender per endpoint appena onboarded.](run-detection-test.md)
 
 ## <a name="additional-defender-for-endpoint-configuration-settings"></a>Ulteriori impostazioni di configurazione di Defender per endpoint
-Per ogni dispositivo, puoi indicare se i campioni possono essere raccolti dal dispositivo quando viene effettuata una richiesta tramite Microsoft Defender Security Center per inviare un file per l'analisi approfondita.
+Per ogni dispositivo, puoi indicare se i campioni possono essere raccolti dal dispositivo quando viene effettuata una richiesta tramite Microsoft 365 Defender per inviare un file per l'analisi approfondita.
 
 È possibile utilizzare Criteri di gruppo per configurare le impostazioni, ad esempio le impostazioni per la condivisione di esempio utilizzata nella funzionalità di analisi approfondita.
 
@@ -189,9 +189,9 @@ Per motivi di sicurezza, il pacchetto usato per i dispositivi offboard scadrà 3
 > [!NOTE]
 > I criteri di onboarding e offboarding non devono essere distribuiti nello stesso dispositivo contemporaneamente, altrimenti ciò causerà collisioni imprevedibili.
 
-1. Ottenere il pacchetto di offboarding [da Microsoft Defender Security Center](https://securitycenter.windows.com/):
+1. Ottenere il pacchetto di offboarding [da Microsoft 365 Defender portale:](https://security.microsoft.com/)
 
-    1. Nel riquadro di spostamento selezionare **Impostazioni**  >  **offboarding**.
+    1. Nel riquadro di spostamento seleziona **Impostazioni**  >    >    >  **Offboarding** gestione dispositivi endpoint.
 
     1. Seleziona Windows 10 come sistema operativo.
 
@@ -224,8 +224,8 @@ Con Criteri di gruppo non è disponibile un'opzione per monitorare la distribuzi
 
 ## <a name="monitor-devices-using-the-portal"></a>Monitorare i dispositivi tramite il portale
 
-1. Vai a [Microsoft Defender Security Center](https://securitycenter.windows.com/).
-2. Fare **clic su Elenco dispositivi**.
+1. Passare a [Microsoft 365 Defender portale](https://security.microsoft.com/).
+2. Fare clic **su Inventario dispositivi**.
 3. Verificare che i dispositivi siano visualizzati.
 
 > [!NOTE]

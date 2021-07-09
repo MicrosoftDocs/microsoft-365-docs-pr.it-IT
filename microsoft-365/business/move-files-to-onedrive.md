@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: eb8244aa-a302-481a-b2b5-d34e88b18ec7
 description: Scopri come spostare i file di lavoro personali e i file aziendali sensibili OneDrive for Business in pochi semplici passaggi.
-ms.openlocfilehash: 4dadc87c0168a9fcdcc795a94df8ee5b7fc7fd91
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 6def1c733093417162ca37906c1d55c0eab23e7d
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245105"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339311"
 ---
 # <a name="move-files-to-onedrive-for-business"></a>Spostare file in OneDrive for Business
 
@@ -37,14 +37,14 @@ Guarda un breve video sullo spostamento di file in OneDrive for Business.<br><br
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/d74b083c-1f44-43ea-8a14-2e1fc600b341] 
 
-Se il video è stato utile, consultare la [serie di formazione completa per piccole imprese e nuovi utenti di Microsoft 365](../business-video/index.yml).
+Se il video è stato utile, consultare la [serie di formazione completa a Microsoft 365 per le piccole e nuove imprese](../business-video/index.yml).
 
 
 ## <a name="move-files-to-onedrive-for-business"></a>Spostare file in OneDrive for Business
 
 Se un utente ha un computer che contiene molti file personali, occorre prima spostarli in OneDrive for Business:
   
-1. Vai a portal.office.com e accedi con le credenziali dell'utente Microsoft 365 per le aziende.
+1. Vai a admin.microsoft.com e accedi con le credenziali dell'utente Microsoft 365 per le aziende.
 
 2. Fare clic sull'icona di avvio delle app ![The app launcher icon in Office 365](../media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png) e passare a OneDrive. 
     

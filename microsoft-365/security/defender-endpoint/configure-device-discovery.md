@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: ee56ed2949ea72771d8f08570d4352dbe7548d52
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 7125a6953b9be46af9073b50c9268ce65dc0cd30
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53286946"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339528"
 ---
 # <a name="configure-device-discovery"></a>Configurare device discovery
 
@@ -43,8 +43,8 @@ L'individuazione può essere configurata per essere in modalità standard o di b
 Puoi personalizzare l'elenco dei dispositivi usati per eseguire l'individuazione standard. Puoi abilitare l'individuazione standard in tutti i dispositivi onboarded che supportano anche questa funzionalità (attualmente - solo dispositivi Windows 10) oppure selezionare un sottoinsieme o sottoinsiemi dei dispositivi specificando i tag del dispositivo.
 
 > [!IMPORTANT]
-> Per l'anteprima, devi prima attivare le funzionalità di anteprima in Microsoft Defender Security Center.
-> Puoi quindi accedere alla configurazione di individuazione dei dispositivi nel centro sicurezza Microsoft 365 sicurezza. L'elenco dei dispositivi non gestiti e i suggerimenti per la sicurezza saranno disponibili sia nel Centro sicurezza Microsoft Defender Security Center che Microsoft 365, mentre i riquadri del dashboard saranno disponibili solo nel centro sicurezza Microsoft 365.
+> Per l'anteprima, devi prima attivare le funzionalità di anteprima in Microsoft 365 Defender.
+> Puoi quindi accedere alla configurazione di individuazione dei dispositivi nel centro sicurezza Microsoft 365 sicurezza. L'elenco dei dispositivi non gestiti e i suggerimenti per la sicurezza saranno disponibili sia nel Centro sicurezza Microsoft 365 Defender che Microsoft 365, mentre i riquadri del dashboard saranno disponibili solo nel centro sicurezza Microsoft 365.
 
 Eseguire i passaggi di configurazione seguenti nel Centro sicurezza Microsoft 365 sicurezza:
 

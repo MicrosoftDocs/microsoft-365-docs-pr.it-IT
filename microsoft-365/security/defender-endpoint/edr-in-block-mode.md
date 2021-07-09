@@ -20,12 +20,12 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: 402797b22e94129abbeb17f1a3454f95d5eae8fc
-ms.sourcegitcommit: 3e197d1ff7d8100faeaf1f5a33f1ad4ed2f72e99
+ms.openlocfilehash: ae170ecf0fc0f354c9975300e5f2f7cd014b0c47
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52908342"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339690"
 ---
 # <a name="endpoint-detection-and-response-edr-in-block-mode"></a>Rilevamento e risposta degli endpoint (EDR) in modalità blocco
 
@@ -43,7 +43,7 @@ ms.locfileid: "52908342"
 
 EDR in modalità blocco è integrato anche con l'& gestione delle vulnerabilità [.](next-gen-threat-and-vuln-mgt.md) Il team di sicurezza dell'organizzazione riceverà un consiglio di sicurezza per attivare EDR in modalità blocco se non è già abilitato. [](tvm-security-recommendation.md) 
 
-:::image type="content" source="images/edrblockmode-TVMrecommendation.png" alt-text="è consigliabile attivare EDR in modalità blocco":::
+:::image type="content" source="images/enable-edr-in-block-mode.png" alt-text="è consigliabile attivare EDR in modalità blocco":::
 
 > [!NOTE]
 > Per ottenere la protezione migliore, assicurati di distribuire **[Microsoft Defender for Endpoint baselines.](configure-machines-security-baseline.md)**
@@ -62,14 +62,14 @@ L'immagine seguente mostra un'istanza di software indesiderato rilevato e blocca
 > [!IMPORTANT]
 > Assicurati che i [requisiti siano](#requirements-for-edr-in-block-mode) soddisfatti prima di attivare EDR in modalità blocco.
 
-1. Passare al portale [Microsoft 365 Defender ed](microsoft-defender-security-center.md) eseguire l'accesso. 
+1. Vai al portale [Microsoft 365 Defender e](microsoft-defender-security-center.md) accedi. 
 
 2. Scegliere **Impostazioni**  >  **funzionalità avanzate.**
 
 3. Attivare EDR **in modalità blocco.**
 
 > [!NOTE]
-> EDR in modalità blocco può essere attivato solo nella Microsoft Defender Security Center. Non è possibile usare chiavi del Registro di sistema, Intune o criteri di gruppo per abilitare o disabilitare EDR in modalità blocco.
+> EDR in modalità blocco può essere attivato solo nel Microsoft 365 Defender portale. Non è possibile usare chiavi del Registro di sistema, Intune o criteri di gruppo per abilitare o disabilitare EDR in modalità blocco.
 
 ## <a name="requirements-for-edr-in-block-mode"></a>Requisiti per EDR in modalità blocco
 
@@ -115,7 +115,7 @@ Per verificare se Antivirus Microsoft Defender è in esecuzione in modalità att
 
 |Metodo  |Procedura  |
 |---------|---------|
-| PowerShell     | 1. Seleziona il menu Start, inizia a digitare `PowerShell` e quindi apri Windows PowerShell nei risultati. <p>2. Digitare `Get-MpComputerStatus` . <p>3. Nell'elenco dei risultati, nella riga **AMRunningMode** cercare uno dei valori seguenti: <br/>- `Normal` <br/>- `Passive Mode` <br/>- `SxS Passive Mode` <p>Per ulteriori informazioni, vedere [Get-MpComputerStatus.](/powershell/module/defender/get-mpcomputerstatus)        |
+| PowerShell     | 1. Selezionare il menu Start, iniziare a digitare e quindi aprire Windows PowerShell `PowerShell` nei risultati. <p>2. Digitare `Get-MpComputerStatus` . <p>3. Nell'elenco dei risultati, nella riga **AMRunningMode** cercare uno dei valori seguenti: <br/>- `Normal` <br/>- `Passive Mode` <br/>- `SxS Passive Mode` <p>Per ulteriori informazioni, vedere [Get-MpComputerStatus.](/powershell/module/defender/get-mpcomputerstatus)        |
 |Prompt dei comandi     | 1. Selezionare il menu Start, iniziare a digitare e quindi `Command Prompt` aprire Windows prompt dei comandi nei risultati. <p>2. Digitare `sc query windefend` . <p>3. Nell'elenco dei risultati, nella riga **STATE,** verificare che il servizio sia in esecuzione.         |
 
 ### <a name="how-much-time-does-it-take-for-edr-in-block-mode-to-be-disabled"></a>Quanto tempo è necessario per EDR in modalità blocco per essere disabilitata?

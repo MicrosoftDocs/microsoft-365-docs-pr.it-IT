@@ -21,12 +21,12 @@ ms.collection:
 ms.assetid: 50bbf89f-7870-4c2a-ae14-42635e0cfc01
 description: L'amministratore può imparare a usare il controllo di condivisione nel Microsoft 365 di controllo per identificare le risorse condivise con utenti esterni all'organizzazione.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d26a8022f8d59aeb56a03c50ae546777c882ef7a
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 302ad7665c83ee9061b2e1965ef03ec25d0aab58
+ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819296"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53341509"
 ---
 # <a name="use-sharing-auditing-in-the-audit-log"></a>Usare il controllo di condivisione nel log di controllo
 
@@ -96,26 +96,26 @@ Un requisito comune per gli amministratori è la creazione di un elenco di tutte
 
 Il primo passaggio consiste nel cercare gli eventi di condivisione nel log di controllo. Per ulteriori informazioni (incluse le autorizzazioni necessarie) sulla ricerca nel log di controllo, vedere [Search the audit log in the Security & Compliance Center.](search-the-audit-log-in-security-and-compliance.md)
   
-1. Passare a [https://protection.office.com](https://protection.office.com).
-    
-2. Accedere usando l'account di lavoro o della scuola.
-    
-3. Nel riquadro sinistro del Centro sicurezza e conformità fare clic su **Cerca**  > **Ricerca log di controllo**.
-    
-    Viene visualizzata la pagina **Ricerca log di controllo**. 
-    
+1. Passare a <https://compliance.microsoft.com>.
+
+2. Accedere usando l'account aziendale o dell'istituto di istruzione.
+
+3. Nel riquadro sinistro della finestra di Centro conformità Microsoft 365 fare clic su **Controlla.**
+
+    Viene visualizzata la pagina **Audit**.
+
 4. In **Attività** fare clic **su Attività di condivisione e richiesta di accesso** per cercare gli eventi correlati alla condivisione. 
-    
+
     ![In Attività selezionare Attività di condivisione e richiesta di accesso](../media/46bb25b7-1eb2-4adf-903a-cc9ab58639f9.png)
   
-5.  Selezionare un intervallo di data e ora per trovare gli eventi di condivisione che si sono verificati in tale periodo. 
-    
+5. Selezionare un intervallo di data e ora per trovare gli eventi di condivisione che si sono verificati in tale periodo. 
+
 6. Fare **clic su** Cerca per eseguire la ricerca. 
-    
+
 7. Al termine dell'esecuzione della ricerca e visualizzati i risultati, fare clic su **Esporta risultati** Scarica tutti \> **i risultati.**
-    
+
     Dopo aver selezionato l'opzione di esportazione, un messaggio nella parte inferiore della finestra richiede di aprire o salvare il file CSV.
-    
+
 8. Fare **clic su** Salva con nome e salvare il file CSV in una cartella nel computer \>  locale. 
 
 ### <a name="step-2-use-the-powerquery-editor-to-format-the-exported-audit-log"></a>Passaggio 2: Utilizzare l'Editor PowerQuery per formattare il log di controllo esportato

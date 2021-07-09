@@ -1,6 +1,6 @@
 ---
 title: Onboarding di dispositivi Windows 10 con gli strumenti di Gestione dispositivi mobili
-description: Usa gli strumenti di gestione dei dispositivi mobili per distribuire il pacchetto di configurazione nei dispositivi in modo che siano onboarded nel servizio.
+description: Usa gli strumenti di gestione dei dispositivi mobili per distribuire il pacchetto di configurazione nei dispositivi in modo che i dispositivi siano onboarded nel servizio.
 keywords: onboard dei dispositivi con mdm, gestione dei dispositivi, onboard microsoft defender per dispositivi endpoint, mdm
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 45aa406212fe39f088f58bf311b1aed3fed16498
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: f0a0a35d41d56abfcc7975c9e79ff7d537b72f40
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52843435"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53338578"
 ---
-# <a name="onboard-windows-10-devices-using-mobile-device-management-tools"></a>Onboarding di dispositivi Windows 10 con gli strumenti di Gestione dispositivi mobili
+# <a name="onboard-the-windows-10-devices-using-mobile-device-management-tools"></a>Onboardare i dispositivi Windows 10 usando gli strumenti di gestione dei dispositivi mobili
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -70,9 +70,9 @@ Per motivi di sicurezza, il pacchetto usato per i dispositivi offboard scadrà 3
 > [!NOTE]
 > I criteri di onboarding e offboarding non devono essere distribuiti nello stesso dispositivo contemporaneamente, altrimenti ciò causerà collisioni imprevedibili.
 
-1. Ottenere il pacchetto di offboarding [da Microsoft Defender Security Center](https://securitycenter.windows.com/):
+1. Ottenere il pacchetto di offboarding [da Microsoft 365 Defender portale:](https://security.microsoft.com/)
 
-   1. Nel riquadro di spostamento selezionare **Impostazioni**  >  **offboarding**.
+   1. Nel riquadro di spostamento seleziona **Impostazioni**  >    >    >  **Offboarding** gestione dispositivi endpoint.
 
    1. Seleziona Windows 10 come sistema operativo.
 

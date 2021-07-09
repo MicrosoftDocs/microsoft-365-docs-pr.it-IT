@@ -1,6 +1,6 @@
 ---
 title: Configurare l'accesso condizionale in Microsoft Defender per Endpoint
-description: Informazioni sui passaggi da eseguire in Intune, Microsoft Defender Security Center e Azure per implementare l'accesso condizionale
+description: Informazioni sui passaggi da eseguire in Intune, Microsoft 365 Defender Azure per implementare l'accesso condizionale
 keywords: accesso condizionale, condizionale, accesso, rischio del dispositivo, livello di rischio, integrazione, integrazione intune
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ceb69d59dc5208c0908e33d0880d9352562ec140
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 2c9462fa0d4be4d6ff78ba3e5db2cd4fa71fef0b
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52843975"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339515"
 ---
 # <a name="configure-conditional-access-in-microsoft-defender-for-endpoint"></a>Configurare l'accesso condizionale in Microsoft Defender per Endpoint
 
@@ -50,10 +50,10 @@ In questa sezione vengono descritti tutti i passaggi necessari per implementare 
 
 
 
-È necessario eseguire alcuni passaggi in Microsoft Defender Security Center, nel portale di Intune e nel portale di Azure AD.
+Ci sono passaggi che dovrai eseguire in Microsoft 365 Defender, nel portale di Intune e nel portale di Azure AD.
 
 È importante notare i ruoli necessari per accedere a questi portali e implementare l'accesso condizionale:
-- **Microsoft Defender Security Center:** è necessario accedere al portale con un ruolo di amministratore globale per attivare l'integrazione.
+- **Microsoft 365 Defender-** È necessario accedere al portale con un ruolo di amministratore globale per attivare l'integrazione.
 - **Intune:** è necessario accedere al portale con diritti di amministratore della sicurezza con autorizzazioni di gestione. 
 - **Portale di Azure AD:** è necessario accedere come amministratore globale, amministratore della sicurezza o amministratore di accesso condizionale.
 
@@ -62,7 +62,7 @@ In questa sezione vengono descritti tutti i passaggi necessari per implementare 
 > Avrai bisogno di un ambiente Microsoft Intune, con Intune gestito e Azure AD aggiunto Windows 10 dispositivi.
 
 Eseguire la procedura seguente per abilitare l'accesso condizionale:
-- Passaggio 1: attivare la connessione Microsoft Intune da Microsoft Defender Security Center
+- Passaggio 1: attivare la connessione Microsoft Intune da Microsoft 365 Defender
 - Passaggio 2: attivare l'integrazione di Defender for Endpoint in Intune
 - Passaggio 3: Creare i criteri di conformità in Intune
 - Passaggio 4: Assegnare il criterio 
@@ -70,15 +70,15 @@ Eseguire la procedura seguente per abilitare l'accesso condizionale:
 
 
 ### <a name="step-1-turn-on-the-microsoft-intune-connection"></a>Passaggio 1: attivare la Microsoft Intune connessione
-1. Nel riquadro di spostamento selezionare **Impostazioni**  >  **funzionalità avanzate**  >  **Microsoft Intune connessione.**
+1. Nel riquadro di spostamento, **selezionare** Impostazioni endpoint Funzionalità avanzate  >    >    >  **generali**  >  **Microsoft Intune connessione**.
 2. Attivare o disattivare Microsoft Intune'impostazione **di configurazione su Attivato.**
 3. Fare **clic su Salva preferenze.**
 
 
 ### <a name="step-2-turn-on-the-defender-for-endpoint-integration-in-intune"></a>Passaggio 2: attivare l'integrazione di Defender for Endpoint in Intune
 1. Accedere al [portale di Azure](https://portal.azure.com).
-2. Selezionare **Conformità dispositivo**  >  **Microsoft Defender ATP**.
-3. Imposta **Connessione Windows 10.0.15063+ dispositivi su Microsoft Defender Advanced Threat Protection** su **On**.
+2. Selezionare **Conformità dispositivo** Microsoft Defender  >  **ATP**.
+3. Imposta **Connessione Windows 10.0.15063+** dispositivi su Microsoft Defender Advanced Threat Protection su **On.**
 4. Fare clic su **Salva**.
 
 

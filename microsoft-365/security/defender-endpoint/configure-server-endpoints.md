@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 47d57e51eca4950f7a8f4284fbc916e9d030b2c7
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 08fe4314c1461710d83ea7aeba1fdf9a60dd33a8
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52844335"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339239"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>Onboard Windows server al servizio Microsoft Defender for Endpoint
 
@@ -38,7 +38,7 @@ ms.locfileid: "52844335"
 
 > Vuoi provare Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configserver-abovefoldlink)
 
-Defender for Endpoint estende il supporto per includere anche il sistema operativo Windows Server. Questo supporto offre funzionalità avanzate di rilevamento e analisi degli attacchi tramite la console Microsoft Defender Security Center avanzata.
+Defender for Endpoint estende il supporto per includere anche il sistema operativo Windows Server. Questo supporto offre funzionalità avanzate di rilevamento e analisi degli attacchi tramite la console Microsoft 365 Defender avanzata.
 
 Per una guida pratica su ciò che deve essere in atto per le licenze e l'infrastruttura, vedere [Protecting Windows Servers with Defender for Endpoint](https://techcommunity.microsoft.com/t5/What-s-New/Protecting-Windows-Server-with-Windows-Defender-ATP/m-p/267114#M128).
 
@@ -66,7 +66,7 @@ Se si usa già System Center Operations Manager (SCOM) o Azure Monitor (in prece
 In generale, è necessario eseguire la procedura seguente:
 
 1. Soddisfare i requisiti di onboarding descritti nella **sezione Prima di** iniziare.
-2. Attivare il monitoraggio dei server da Microsoft Defender Security Center.
+2. Attivare il monitoraggio dei server Microsoft 365 Defender portale.
 3. Installare e configurare MMA per il server per segnalare i dati del sensore a Defender per Endpoint.
 4. Configurare e aggiornare i System Center Endpoint Protection client.
 
@@ -121,7 +121,7 @@ Una volta completato, dovrebbe essere possibile visualizzare i server Windows ne
 
 ### <a name="option-2-onboard-windows-servers-through-azure-security-center"></a>Opzione 2: onboard Windows server tramite il Centro sicurezza di Azure
 
-1. Nel riquadro Microsoft Defender Security Center di spostamento selezionare **Impostazioni**  >    >  **Onboarding** gestione dispositivi .
+1. Nel riquadro Microsoft 365 Defender di spostamento selezionare **Impostazioni**  >    >    >  **Onboarding** gestione dispositivi endpoint.
 
 2. Selezionare **Windows Server 2008 R2 SP1, 2012 R2 e 2016** come sistema operativo.
 
@@ -200,7 +200,7 @@ In questa integrazione sono incluse le funzionalità seguenti:
     > L'integrazione tra Azure Defender for Servers e Microsoft Defender for Endpoint è stata estesa per supportare [Windows Server 2019 e Windows Virtual Desktop (WVD).](/azure/security-center/release-notes#microsoft-defender-for-endpoint-integration-with-azure-defender-now-supports-windows-server-2019-and-windows-10-virtual-desktop-wvd-in-preview)
 
 - Windows i server monitorati da Azure Defender saranno disponibili anche in Defender for Endpoint: Azure Defender si connette senza problemi al tenant Defender for Endpoint, fornendo una singola visualizzazione tra client e server.  Inoltre, gli avvisi defender per endpoint saranno disponibili nella console di Azure Defender.
-- Indagine server: i clienti di Azure Defender possono accedere Microsoft Defender Security Center per eseguire un'indagine dettagliata per scoprire l'ambito di una potenziale violazione.
+- Indagine server: i clienti di Azure Defender possono accedere Microsoft 365 Defender portale per eseguire un'indagine dettagliata per scoprire l'ambito di una potenziale violazione.
 
 > [!IMPORTANT]
 > - Quando usi Azure Defender per monitorare i server, viene creato automaticamente un tenant defender per endpoint (negli Stati Uniti per gli utenti statunitensi, nell'UE per gli utenti europei e del Regno Unito).<br>
@@ -255,7 +255,7 @@ Per eseguire l'offboard Windows server, è possibile utilizzare uno dei metodi s
 
 1. Ottenere l'ID area di lavoro:
 
-   1. Nel riquadro di spostamento selezionare **Impostazioni**  >  **onboarding**.
+   1. Nel riquadro Microsoft 365 Defender di spostamento selezionare **Impostazioni**  >    >    >  **Onboarding** gestione dispositivi endpoint.
 
    1. Selezionare **Windows Server 2008 R2 SP1, 2012 R2 e 2016** come sistema operativo e ottenere l'ID area di lavoro:
 

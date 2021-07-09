@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 72bbad69-035b-4d33-b8f4-549a2743e97d
 ROBOTS: NOINDEX, NOFOLLOW
 description: Aggiungere e gestire avvisi attività nel Centro sicurezza & conformità in modo che Microsoft 365 notifiche tramite posta elettronica quando gli utenti eseguono attività specifiche
-ms.openlocfilehash: d0daa9249a8ea69c376ef7bbc8b7a90253e411db
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: b48093de66fdefa9a298b6cdc0f0324ee720fbbf
+ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53227164"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53341605"
 ---
 # <a name="create-activity-alerts"></a>Creare avvisi attività
 
@@ -46,9 +46,9 @@ ms.locfileid: "53227164"
 
 ## <a name="create-an-activity-alert"></a>Creare un avviso attività
 
-1. Passare a [https://protection.office.com/managealerts](https://protection.office.com/managealerts).
+1. Passare a <https://compliance.microsoft.com/managealerts>.
 
-2. Accedere usando l'account di lavoro o della scuola.
+2. Accedere usando l'account aziendale o dell'istituto di istruzione.
 
 3. Nella pagina **Avvisi attività** fare clic su Aggiungi ![ icona ](../media/8ee52980-254b-440b-99a2-18d068de62d3.gif) **Nuovo**.
 
@@ -85,7 +85,7 @@ ms.locfileid: "53227164"
 
 Puoi disattivare un avviso attività in modo che non sia inviata una notifica tramite posta elettronica. Dopo aver disattivato l'avviso attività, questo viene comunque visualizzato nell'elenco degli avvisi attività per l'organizzazione ed è comunque possibile visualizzarne le proprietà.
 
-1. Passare a Vai a [https://protection.office.com/managealerts](https://protection.office.com/managealerts) .
+1. Passare a <https://compliance.microsoft.com/managealerts>.
 
 2. Accedere usando l'account aziendale o dell'istituto di istruzione.
 

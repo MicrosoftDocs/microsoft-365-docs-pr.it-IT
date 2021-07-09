@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 ms.assetid: f3433b6b-02f7-447f-9d62-306bf03638b0
 description: Scopri come convalidare le Microsoft 365 Business Premium di protezione delle app nei dispositivi Android o iOS.
-ms.openlocfilehash: a0a4a6e6cff59f66a506929e97c99d361472a68b
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 43e74b548711550090021c39096b1647cee9e039
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51578068"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339331"
 ---
 # <a name="validate-app-protection-settings-on-android-or-ios-devices"></a>Convalidare le impostazioni di protezione delle app nei dispositivi Android o iOS
 
@@ -42,7 +42,7 @@ Dopo avere [impostato le configurazioni delle app per dispositivi Android](app-p
   
 Prima di tutto, assicurati che il criterio si applii all'app in cui vuoi convalidarlo.
   
-1. Nell'Microsoft 365 Business Premium di [amministrazione](https://portal.office.com)passare a **Criteri** \> **Modifica criterio.**
+1. Nell'Microsoft 365 Business Premium di [amministrazione](https://admin.microsoft.com)passare a **Criteri** \> **Modifica criterio.**
     
 2. Scegli **Criteri applicazione per Android** per le impostazioni create durante l'installazione o un altro criterio creato e verifica che sia applicato per Outlook, ad esempio. 
     
@@ -131,7 +131,7 @@ Dopo avere [impostato le configurazioni delle app per dispositivi iOS](app-prote
   
 Prima di tutto, assicurati che il criterio si applii all'app in cui vuoi convalidarlo.
   
-1. Nell'Microsoft 365 Business Premium di [amministrazione](https://portal.office.com)passare a **Criteri** \> **Modifica criterio.**
+1. Nell'Microsoft 365 Business Premium di [amministrazione](https://admin.microsoft.com)passare a **Criteri** \> **Modifica criterio.**
     
 2. Scegliere **Criteri applicazione per iOS** per le impostazioni create durante l'installazione o un altro criterio creato e verificare ad esempio che sia applicato per Outlook. 
     

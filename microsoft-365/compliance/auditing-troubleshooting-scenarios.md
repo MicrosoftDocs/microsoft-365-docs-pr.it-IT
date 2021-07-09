@@ -18,12 +18,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Informazioni su come usare lo strumento di ricerca Microsoft 365 log di controllo per risolvere i problemi di supporto comuni per gli account di posta elettronica.
-ms.openlocfilehash: 5f753163b5d4d6c04c121a7ce3fae970690a57b0
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 22d511fa2ad538c4ec9729fb051caefad6c3e974
+ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50906094"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53341052"
 ---
 # <a name="search-the-audit-log-to-investigate-common-support-issues"></a>Cercare nel log di controllo per analizzare i problemi di supporto comuni
 
@@ -49,18 +49,18 @@ Ognuno degli scenari di risoluzione dei problemi descritti in questo articolo si
 
 In questa sezione vengono descritte le nozioni di base per la creazione e l'esecuzione di ricerche nei log di controllo. Utilizzare queste istruzioni come punto di partenza per ogni scenario di risoluzione dei problemi in questo articolo. Per istruzioni dettagliate, vedere Search [the audit log.](search-the-audit-log-in-security-and-compliance.md#step-1-run-an-audit-log-search)
 
-1. Passare a [https://protection.office.com/unifiedauditlog](https://protection.office.com/unifiedauditlog) e accedere usando l'account aziendale o dell'istituto di istruzione.
+1. Passare a <https://compliance.microsoft.com/auditlogsearch> e accedere usando l'account aziendale o dell'istituto di istruzione.
     
-    Viene visualizzata la pagina **Ricerca log di controllo**. 
+    Viene visualizzata la pagina **Audit**. 
     
-    ![Configurare i criteri e quindi selezionare Cerca per eseguire la ricerca](../media/8639d09c-2843-44e4-8b4b-9f45974ff7f1.png)
+    ![Configurare i criteri e quindi selezionare Cerca per eseguire la ricerca](../media/AuditLogSearchPage1.png)
   
 4. È possibile configurare i criteri di ricerca seguenti. Ogni scenario di risoluzione dei problemi in questo articolo consiglia indicazioni specifiche per la configurazione di questi campi.
     
-    a. **Attività:** Selezionare l'elenco a discesa per visualizzare le attività che è possibile cercare. Dopo aver eseguito la ricerca, vengono visualizzati solo i record di audit per le attività selezionate. Se **si seleziona Mostra risultati per tutte le attività,** verranno visualizzati i risultati di tutte le attività che soddisfano gli altri criteri di ricerca. È inoltre necessario lasciare vuoto questo campo in alcuni degli scenari di risoluzione dei problemi.
-    
-    b. **Data inizio** e **Data fine:** selezionare un intervallo di data e ora per visualizzare gli eventi che si sono verificati all'interno di tale periodo. Gli ultimi sette giorni sono selezionati per impostazione predefinita. La data e l'ora sono specificate in formato UTC (Coordinated Universal Time). L'intervallo massimo che è possibile specificare è 90 giorni.
+   a. **Data inizio** e **Data fine:** selezionare un intervallo di data e ora per visualizzare gli eventi che si sono verificati all'interno di tale periodo. Gli ultimi sette giorni sono selezionati per impostazione predefinita. La data e l'ora sono specificate in formato UTC (Coordinated Universal Time). L'intervallo massimo che è possibile specificare è 90 giorni.    
 
+   b. **Attività:** Selezionare l'elenco a discesa per visualizzare le attività che è possibile cercare. Dopo aver eseguito la ricerca, vengono visualizzati solo i record di audit per le attività selezionate. Se **si seleziona Mostra risultati per tutte le attività,** verranno visualizzati i risultati di tutte le attività che soddisfano gli altri criteri di ricerca. È inoltre necessario lasciare vuoto questo campo in alcuni degli scenari di risoluzione dei problemi.
+    
     c. **Utenti:** Fare clic in questa casella e quindi selezionare uno o più utenti per cui visualizzare i risultati della ricerca. I record di controllo per l'attività selezionata eseguita dagli utenti selezionati in questa casella vengono visualizzati nell'elenco dei risultati. Lasciare la casella vuota per restituire le voci per tutti gli utenti (e gli account del servizio) nell'organizzazione.
     
     d. **File, cartella o sito:** Digitare parte o tutto il nome di un file o di una cartella per cercare le attività correlate al file della cartella contenente la parola chiave specificata. È anche possibile specificare un URL di un file o una cartella. Se usi un URL, assicurati di digitare il percorso completo dell'URL oppure, se si digita solo una parte dell'URL, non includere spazi o caratteri speciali. Lasciare questa casella vuota per restituire le voci per tutti i file e le cartelle nell'organizzazione. Questo campo viene lasciato vuoto in tutti gli scenari di risoluzione dei problemi descritti in questo articolo.
@@ -164,7 +164,7 @@ Dopo aver eseguito la ricerca, è possibile filtrare i risultati della ricerca p
 
 ### <a name="recover-deleted-email-items"></a>Recuperare gli elementi di posta elettronica eliminati
 
-Se il periodo di conservazione degli elementi eliminati non è scaduto, gli utenti possono ripristinare gli elementi eliminati in modo reverso. In Exchange Online, il periodo di conservazione predefinito degli elementi eliminati è di 14 giorni, ma gli amministratori possono aumentare questa impostazione fino a un massimo di 30 giorni. Fare in modo che gli utenti puntino all'articolo Recuperare gli elementi eliminati o la posta elettronica [Outlook sul Web](https://support.office.com/article/Recover-deleted-items-or-email-in-Outlook-Web-App-C3D8FC15-EEEF-4F1C-81DF-E27964B7EDD4) per istruzioni sul ripristino degli elementi eliminati.
+Se il periodo di conservazione degli elementi eliminati non è scaduto, gli utenti possono ripristinare gli elementi eliminati in modo reverso. In Exchange Online, il periodo di conservazione predefinito degli elementi eliminati è di 14 giorni, ma gli amministratori possono aumentare questa impostazione fino a un massimo di 30 giorni. Per istruzioni su come ripristinare [gli elementi eliminati, fare](https://support.office.com/article/Recover-deleted-items-or-email-in-Outlook-Web-App-C3D8FC15-EEEF-4F1C-81DF-E27964B7EDD4) riferimento all'articolo Recuperare gli elementi eliminati o Outlook sul web posta elettronica.
 
 Come spiegato in precedenza, gli amministratori possono essere in grado di ripristinare gli elementi eliminati definitivamente se il periodo di conservazione degli elementi eliminati non è scaduto o se la cassetta postale è in attesa, nel qual caso gli elementi vengono mantenuti fino alla scadenza della durata del blocco. Quando si esegue una ricerca di contenuto, gli elementi eliminati in modo reversibile e eliminati definitivamente nella cartella Elementi ripristinabili vengono restituiti nei risultati della ricerca se corrispondono alla query di ricerca. Per ulteriori informazioni sull'esecuzione di ricerche di contenuto, vedere [Ricerca contenuto in Office 365](content-search.md).
 
@@ -175,7 +175,7 @@ Come spiegato in precedenza, gli amministratori possono essere in grado di ripri
 
 Quando gli utenti creano una regola di posta in arrivo per Exchange Online cassetta postale, un record di controllo corrispondente viene salvato nel registro di controllo. Per ulteriori informazioni sulle regole della posta in arrivo, vedere:
 
-- [Usare le regole di Posta in arrivo Outlook sul Web](https://support.office.com/article/use-inbox-rules-in-outlook-on-the-web-8400435c-f14e-4272-9004-1548bb1848f2)
+- [Usare le regole di Posta in arrivo in Outlook sul web](https://support.office.com/article/use-inbox-rules-in-outlook-on-the-web-8400435c-f14e-4272-9004-1548bb1848f2)
 - [Gestire i messaggi di posta elettronica Outlook tramite regole](https://support.office.com/article/Manage-email-messages-by-using-rules-C24F5DEA-9465-4DF4-AD17-A50704D66C59)
 
 Ecco come configurare una query di ricerca del log di controllo per questo scenario:

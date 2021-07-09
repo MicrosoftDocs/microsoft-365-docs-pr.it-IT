@@ -11,7 +11,7 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.collection:
 - m365-security-compliance
-- m365solution-aed
+- m365solution-ediscovery
 - m365initiative-compliance
 - m365solution-overview
 localization_priority: Normal
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 offre tre strumenti di eDiscovery che è possibile utilizzare per cercare ed esportare contenuto presente in posizioni diverse, ad esempio cassette postali di Exchange, siti SharePoint e OneDrive for Business, gruppi di Microsoft 365, Microsoft Teams e conversazioni Skype for Business. Core eDiscovery e Advanced eDiscovery offrono molte funzionalità aggiuntive che consentono di gestire le indagini.
-ms.openlocfilehash: dc332e1a399588e4a1e969af45da6cff92008461
-ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
+ms.openlocfilehash: a62c8a53081a79e4afd98c82bfaca486a6155a6b
+ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "53256357"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53341713"
 ---
 # <a name="ediscovery-solutions-in-microsoft-365"></a>Soluzioni eDiscovery in Microsoft 365
 
@@ -47,7 +47,7 @@ Microsoft 365 fornisce tre soluzioni eDiscovery: Ricerca contenuto, Core eDiscov
 
 Nella tabella seguente vengono confrontate le funzionalità principali disponibili in Ricerca contenuto, Core eDiscovery e Advanced eDiscovery.
 
-|Funzionalità|Ricerca contenuto|Core eDiscovery|Advanced eDiscovery|
+|Capacità|Ricerca contenuto|Core eDiscovery|Advanced eDiscovery|
 |:------|:-------------|:-------------|:-------------|
 |Cercare contenuto|![Supportato](../media/check-mark.png)|![Supportato](../media/check-mark.png)|![Supportato](../media/check-mark.png)|
 |Query con parole chiave e condizioni di ricerca|![Supportato](../media/check-mark.png)|![Supportato](../media/check-mark.png)|![Supportato](../media/check-mark.png)|

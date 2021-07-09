@@ -15,12 +15,12 @@ ms.author: dansimp
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
-ms.openlocfilehash: 5bf9f856e93ae1424373a917490a264c04e07feb
-ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
+ms.openlocfilehash: 9114a825ad011f0b2a17cea4929ab2a09bfa2172
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52861180"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339479"
 ---
 # <a name="onboard-windows-10-multi-session-devices-in-windows-virtual-desktop"></a>Aggiungere dispositivi Windows 10 multi-sessione in Windows Virtual Desktop 
 6 minuti per leggere 
@@ -54,7 +54,7 @@ Esistono diversi modi per eseguire l'onboard di un computer host WVD:There are s
 #### <a name="scenario-1-using-local-group-policy"></a>*Scenario 1: utilizzo di Criteri di gruppo locali*
 Questo scenario richiede l'inserimento dello script in un'immagine d'oro e usa Criteri di gruppo locali per l'esecuzione all'inizio del processo di avvio.
 
-Seguire le istruzioni riportate in [Onboard non persistent virtual desktop infrastructure VDI devices](configure-endpoints-vdi.md#onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices-1).
+Seguire le istruzioni riportate in [Onboard the non-persistent virtual desktop infrastructure (VDI) devices](configure-endpoints-vdi.md#onboard-the-non-persistent-virtual-desktop-infrastructure-vdi-devices).
 
 Segui le istruzioni per una singola voce per ogni dispositivo.
 

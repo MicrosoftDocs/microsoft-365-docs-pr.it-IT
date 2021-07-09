@@ -12,14 +12,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Informazioni su come configurare e usare un connettore nel Centro conformità Microsoft 365 per importare e archiviare i dati da Skype for Business a Microsoft 365.
-ms.openlocfilehash: 93128af0c7f305cb2bef55efd5520de77555a222
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: 4a66ee19530860bd482168297a8c935153442fee
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53054836"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339455"
 ---
-# <a name="set-up-a-connector-to-archive-skype-for-business-data-preview"></a>Configurare un connettore per archiviare Skype for Business dati (anteprima)
+# <a name="set-up-a-connector-to-archive-skype-for-business-data"></a>Configurare un connettore per archiviare i Skype for Business dati
 
 Utilizzare un connettore Veritas nell'Centro conformità Microsoft 365 per importare e archiviare i dati dalla piattaforma Skype for Business alle cassette postali degli utenti nell'Microsoft 365 organizzazione. Veritas fornisce un [connettore di](https://www.veritas.com/en/au/insights/merge1/skype-for-business) Skype for Business configurato per acquisire elementi dall'origine dati di terze parti (a intervalli regolari) e importare tali elementi in Microsoft 365. Il connettore converte il contenuto, ad esempio i messaggi tra utenti, chat persistenti e messaggi di conferenza da Skype for Business in un formato di messaggio di posta elettronica e quindi importa tali elementi nella cassetta postale dell'utente in Microsoft 365.
 

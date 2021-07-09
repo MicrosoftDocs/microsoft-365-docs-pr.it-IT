@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Descrive come iniziare a usare Core eDiscovery in Microsoft 365. Dopo aver assegnato le autorizzazioni di eDiscovery e aver creato un caso, è possibile aggiungere membri, creare blocchi di eDiscovery e quindi cercare ed esportare contenuto rilevante per l'indagine.
-ms.openlocfilehash: 00506c2f072fff6aa30c7d96bffdc18eb5eda20b
-ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
+ms.openlocfilehash: 9466b2e3268a447a4008363e88290d4d02558c76
+ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52311017"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53341473"
 ---
 # <a name="get-started-with-core-ediscovery-in-microsoft-365"></a>Introduzione a Core eDiscovery in Microsoft 365
 
@@ -34,7 +34,7 @@ In questo articolo vengono illustrati i passaggi necessari per configurare Core 
 
 Le licenze per Core eDiscovery richiedono l'abbonamento all'organizzazione appropriato e le licenze per utente.
 
-- **Sottoscrizione organizzazione:** Per accedere a Core eDiscovery nel Centro conformità Microsoft 365 o nel Centro sicurezza & di Office 365 e utilizzare le funzionalità di conservazione ed esportazione, l'organizzazione deve disporre di una sottoscrizione Microsoft 365 E3 o Office 365 E3 o successiva.
+- **Sottoscrizione organizzazione:** Per accedere a Core eDiscovery nel Centro conformità Microsoft 365 o nel Centro conformità Office 365 Sicurezza & e utilizzare le funzionalità di conservazione ed esportazione, l'organizzazione deve disporre di una sottoscrizione Microsoft 365 E3 o Office 365 E3 o successiva.
 
 - **Licenze per utente:** Per inserire un blocco di eDiscovery su cassette postali e siti, a un utente deve essere assegnata una delle licenze seguenti, a seconda della sottoscrizione dell'organizzazione:
 
@@ -42,11 +42,11 @@ Le licenze per Core eDiscovery richiedono l'abbonamento all'organizzazione appro
 
    OPPURE
 
-  - Office 365 Licenza E1 con una licenza Exchange Online Piano 2 o Archiviazione Exchange Online di componente aggiuntivo
+  - Office 365 E1 con una licenza Exchange Online Piano 2 o Archiviazione Exchange Online di componente aggiuntivo
 
   E
 
-  - Office 365 Licenza E1 con una licenza SharePoint online piano 2 o OneDrive for Business licenza del componente aggiuntivo Piano 2
+  - Office 365 E1 con una licenza del componente aggiuntivo SharePoint Online Piano 2 o OneDrive for Business Piano 2
   
   Per informazioni su come assegnare licenze, vedere [Assegnare licenze agli utenti.](../admin/manage/assign-licenses-to-users.md)
 
@@ -62,7 +62,7 @@ Per accedere a Core eDiscovery o essere aggiunto come membro di un caso di eDisc
 
 Completare la procedura seguente per aggiungere utenti al gruppo di ruoli Manager eDiscovery:
 
-1. Accedere a e accedere usando le credenziali per un account amministratore [https://protection.office.com/permissions](https://protection.office.com/permissions) nell'organizzazione Microsoft 365 o Office 365 aziendale.
+1. Accedere a e accedere usando le credenziali per un account amministratore <https://compliance.microsoft.com/permissions> nell'organizzazione Microsoft 365 o Office 365 aziendale.
 
 2. Nella pagina **Autorizzazioni** selezionare il gruppo di ruoli **Manager eDiscovery.**
 
@@ -100,7 +100,7 @@ Il passaggio successivo consiste nel creare un caso e iniziare a usare Core eDis
 
 1. Accedere a e accedere utilizzando le credenziali per un account utente a cui sono state assegnate [https://compliance.microsoft.com](https://compliance.microsoft.com) le autorizzazioni eDiscovery appropriate. I membri del gruppo di ruoli Gestione organizzazione possono anche creare casi di eDiscovery di base.
 
-2. Nel riquadro di spostamento sinistro del Centro Microsoft 365 conformità fare clic su **Mostra** tutto e quindi su **eDiscovery > Core**.
+2. Nel riquadro di spostamento sinistro del Centro conformità Microsoft 365, fare clic su **Mostra** tutto e quindi su **eDiscovery > Core**.
 
 3. Nella pagina **Core eDiscovery** fare clic **su Crea un caso.**
 
@@ -114,7 +114,7 @@ Il passaggio successivo consiste nel creare un caso e iniziare a usare Core eDis
 
 Se si crea un caso nel passaggio 3 e si è l'unica persona che utilizzerà il caso, non è necessario eseguire questo passaggio. È possibile iniziare a utilizzare il caso per creare blocchi di eDiscovery, cercare contenuto ed esportare i risultati della ricerca. Eseguire questo passaggio se si desidera concedere ad altri utenti (o gruppi di ruoli) l'accesso al caso.
 
-1. Nella pagina **Core eDiscovery** nel Centro Microsoft 365 conformità fare clic sul nome del caso a cui si desidera aggiungere membri.
+1. Nella pagina **Core eDiscovery** del Centro conformità Microsoft 365 fare clic sul nome del caso a cui si desidera aggiungere membri.
 
 2. Nella home page del caso, selezionare la **Impostazioni** e quindi selezionare Autorizzazioni **& accesso**.
 

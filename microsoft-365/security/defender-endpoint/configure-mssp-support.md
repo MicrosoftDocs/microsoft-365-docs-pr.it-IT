@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 6786d423d20ec90c12d2ea712003acc787ed599d
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: d82bffd6eea54256f2c6773f843030a19e27275d
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165250"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339359"
 ---
 # <a name="configure-managed-security-service-provider-integration"></a>Configurazione integrazione con il provider di servizi di sicurezza gestita
 
@@ -44,7 +44,7 @@ Per abilitare l'integrazione mssp (Managed Security Service Provider) è necessa
 
 L'integrazione consentirà agli MSSP di eseguire le azioni seguenti:
 
-- Ottenere l'accesso al portale Microsoft Defender Security Center clienti MSSP
+- Ottenere l'accesso al portale Microsoft 365 Defender clienti MSSP
 - Ricevere notifiche tramite posta elettronica e 
 - Recuperare gli avvisi tramite gli strumenti di gestione degli eventi e delle informazioni di sicurezza
 
@@ -57,7 +57,7 @@ In genere, i clienti MSSP esereranno la procedura di configurazione iniziale per
 In generale, è necessario eseguire i passaggi di configurazione seguenti:
 
 
-- **Concedere al provider MSSP l'accesso Microsoft Defender Security Center** <br>
+- **Concedere al provider mssp l'accesso Microsoft 365 Defender** <br>
 Questa azione deve essere eseguita dal cliente MSSP. Concede al provider mssp l'accesso al tenant Defender for Endpoint del cliente MSSP.
  
 

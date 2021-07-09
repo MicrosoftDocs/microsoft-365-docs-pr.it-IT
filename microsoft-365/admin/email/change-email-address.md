@@ -25,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: f4d8cae9-6d06-4c4b-b4e5-6581fd05ea82
 description: Modificare l'indirizzo di posta elettronica in un indirizzo di posta elettronica descrittivo come tom@fourthcoffee.com acquistando un nome di dominio e aggiungendolo a Microsoft 365.
-ms.openlocfilehash: 1a248cb67bab5d0467cad35dc5be8023b8013a12
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: 7fb113c0efd6462c4c703956a20c390f2d555d5f
+ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635523"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53341461"
 ---
 # <a name="change-your-email-address-to-use-your-custom-domain"></a>Cambiare l'indirizzo di posta elettronica per usare il dominio personalizzato
 
@@ -56,35 +56,37 @@ L'indirizzo di posta elettronica iniziale Office 365 gestito da 21Vianet include
 
 Quando si modifica la posta elettronica del dominio in modo che venga inviata Microsoft 365, aggiornando il record MX del dominio durante l'installazione, tutti i messaggi inviati a tale dominio inizieranno a essere inviati Microsoft 365. Assicurarsi di aver aggiunto utenti e creato cassette postali in Microsoft 365 per tutti gli utenti che hanno posta elettronica nel dominio prima di modificare il record MX. Non si desidera spostare la posta elettronica per tutti gli utenti del dominio in Microsoft 365? È possibile eseguire operazioni pilota [Microsoft 365 solo alcuni indirizzi di posta elettronica.](../misc/pilot-microsoft-365-from-my-custom-domain.md)
   
-## <a name="change-your-email-address-to-use-your-custom-domain-using-the-microsoft-365-admin-center"></a>Modificare l'indirizzo di posta elettronica per usare il dominio personalizzato tramite l'Microsoft 365 di amministrazione
+## <a name="change-your-email-address-to-use-your-custom-domain-using-the-microsoft-365-admin-center"></a>Modificare l'indirizzo di posta elettronica in modo che utilizzi il dominio personalizzato utilizzando il interfaccia di amministrazione di Microsoft 365
 
-Per eseguire questa procedura, è necessario disporre di un account amministratore globale. 
+Per eseguire questi passaggi, è necessario essere un amministratore globale.
 
 ::: moniker range="o365-worldwide"
 
-1. Passare all'interfaccia di amministrazione all'indirizzo <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>. 
+1. Passare all'interfaccia di amministrazione all'indirizzo <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.
 
 ::: moniker-end
-   
+
 ::: moniker range="o365-germany"
-    
-1. Passare all'interfaccia di amministrazione all'indirizzo <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de/adminportal</a>. 
-    
+
+1. Passare all'interfaccia di amministrazione all'indirizzo <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de/adminportal</a>.
+
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Passare all'interfaccia <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank"> https://portal.partner.microsoftonline.cn </a>di amministrazione all'indirizzo . 
+1. Passare all'interfaccia <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank"> https://portal.partner.microsoftonline.cn </a>di amministrazione all'indirizzo .
 
-::: moniker-end 
+::: moniker-end
 
-2. Passare alla **pagina Setup**  >  **Domains.** 
+2. Passare alla **pagina Setup**  >  **Domains.**
 
 3. Nella pagina **Domini**, selezionare **Aggiungere un dominio**.
-    
-4. Seguire i vari passaggi per confermare di essere proprietari del dominio e modificare l'indirizzo di posta elettronica.
-    
-Verrà indicato come configurare tutto correttamente con il dominio in Microsoft 365.
+
+4. Segui i passaggi per confermare di essere il proprietario del dominio. Verrà indicato come configurare tutto correttamente con il dominio in Microsoft 365.
+
+5. Vai a **Utenti**  >  **Utenti attivi**.
+
+6. Selezionare un utente per modificare il nome utente e modificarlo nel dominio appena aggiunto.
 
 > [!NOTE]
 > Se non si utilizza una licenza Exchange, non è possibile utilizzare il dominio per inviare o ricevere messaggi di posta elettronica dal tenant Microsoft 365 locale.

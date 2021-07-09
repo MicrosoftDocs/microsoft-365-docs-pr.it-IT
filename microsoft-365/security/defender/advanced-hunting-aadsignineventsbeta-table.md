@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: edc9a1e40275631752ca1252a16071f4b07f07f9
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 7fc5e0a37f57928b2ee1318d01e2a10b95a36108
+ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53286334"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53341665"
 ---
 # <a name="aadsignineventsbeta"></a>AADSignInEventsBeta
 
@@ -89,7 +89,6 @@ Utilizzare questo riferimento per creare query che forniscano informazioni dalla
 |`NetworkLocationDetails`|stringa|Dettagli percorso di rete del processore di autenticazione dell'evento di accesso|
 |`RequestId`|stringa|Identificatore univoco della richiesta|
 |`ReportId`|stringa|Identificatore univoco dell'evento|
-|
 
 ## <a name="related-articles"></a>Articoli correlati
 

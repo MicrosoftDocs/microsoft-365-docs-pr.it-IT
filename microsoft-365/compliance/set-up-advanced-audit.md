@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: In questo articolo viene descritto come configurare Advanced Audit in modo da poter eseguire indagini forensi quando gli account utente vengono compromessi o per indagare altri incidenti correlati alla sicurezza.
-ms.openlocfilehash: d1752ee7714056254a6c0e5c009aa9aa79ddff3b
-ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
+ms.openlocfilehash: 825dadee5260a263d005eb3a37f280381f9425a2
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52314360"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339227"
 ---
 # <a name="set-up-advanced-audit-in-microsoft-365"></a>Configurare il controllo avanzato in Microsoft 365
 
@@ -32,7 +32,7 @@ Se l'organizzazione dispone di una sottoscrizione e di una licenza per gli utent
 
 ![Flusso di lavoro per la configurazione di Audit avanzato](../media/AdvancedAuditWorkflow.png)
 
-## <a name="step1-set-up-advanced-audit-for-users"></a>Passaggio 1: Configurare il controllo avanzato per gli utenti
+## <a name="step-1-set-up-advanced-audit-for-users"></a>Passaggio 1: Configurare il controllo avanzato per gli utenti
 
 Le funzionalità di Audit avanzato, come la possibilità di registrare eventi cruciali come MailItemsAccessed e Send, richiedono una licenza E5 appropriata assegnata agli utenti. Inoltre, è necessario che per tali utenti siano abilitati l'app Controllo avanzato e/o il piano di servizio. Per verificare che l'app Controllo avanzato sia assegnata agli utenti, eseguire la procedura seguente per ogni utente:
 

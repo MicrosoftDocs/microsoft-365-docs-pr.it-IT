@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: af50e3c2a6db1a09d546bfa06b26c80dcf4481e5
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 6a3bbc46bb5859743d5170451b0d1c68793f93bf
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53290088"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53338722"
 ---
 # <a name="configure-device-proxy-and-internet-connectivity-settings"></a>Configurare le impostazioni di connettività Proxy e Internet del dispositivo
 
@@ -170,7 +170,7 @@ Vedere le indicazioni seguenti per eliminare il requisito dei caratteri jolly (*
 
 1. Onboard a previous operating system with the Microsoft Monitoring Agent (MMA) into Defender for Endpoint (for more information, see [Onboard previous versions of Windows on Defender for Endpoint and](https://go.microsoft.com/fwlink/p/?linkid=2010326) [Onboard Windows servers](configure-server-endpoints.md#windows-server-2008-r2-sp1-windows-server-2012-r2-and-windows-server-2016).
 
-2. Verificare che il computer eserciti correttamente la segnalazione nel Microsoft Defender Security Center portale.
+2. Verificare che il computer eserciti correttamente la segnalazione nel Microsoft 365 Defender portale.
 
 3. Eseguire lo strumento TestCloudConnection.exe da "C:\Programmi\Microsoft Monitoring Agent\Agente" per convalidare la connettività e visualizzare gli URL necessari per l'area di lavoro specifica.
 
@@ -178,7 +178,7 @@ Vedere le indicazioni seguenti per eliminare il requisito dei caratteri jolly (*
 
     ![Immagine dell'amministratore in Windows PowerShell](images/admin-powershell.png)
 
-I caratteri jolly ( ) utilizzati negli endpoint URL .ods.opinsights.azure.com, .oms.opinsights.azure.com e .agentsvc.azure-automation.net .agentsvc.azure-automation.net possono essere sostituiti con \* l'ID area di lavoro \* \* \* specifico. L'ID area di lavoro è specifico dell'ambiente e dell'area di lavoro ed è disponibile nella sezione Onboarding del tenant all'interno del Microsoft Defender Security Center portale.
+I caratteri jolly ( ) utilizzati negli endpoint URL .ods.opinsights.azure.com, .oms.opinsights.azure.com e .agentsvc.azure-automation.net .agentsvc.azure-automation.net possono essere sostituiti con \* l'ID area di lavoro \* \* \* specifico. L'ID area di lavoro è specifico dell'ambiente e dell'area di lavoro ed è disponibile nella sezione Onboarding del tenant all'interno del Microsoft 365 Defender portale.
 
 L'endpoint URL blob.core.windows.net .blob.core.windows.net può essere sostituito con gli URL visualizzati nella sezione \* "Regola firewall: \* .blob.core.windows.net" dei risultati del test.
 

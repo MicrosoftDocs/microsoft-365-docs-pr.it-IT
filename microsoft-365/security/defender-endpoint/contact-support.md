@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 3272ef182c4b08142490e8a1ac21c208023c50f5
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 6d4845163996dcc00ccfcc6c87eb27aff87268fc
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53228724"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339193"
 ---
 # <a name="contact-microsoft-defender-for-endpoint-support"></a>Contattare il supporto di Microsoft Defender per endpoint
 
@@ -58,9 +58,9 @@ L'accesso al nuovo widget di supporto può essere eseguito in due modi:
 
     ![Immagine del widget quando è selezionato il punto interrogativo](images/support-widget.png)
 
-2. Fare clic sul **pulsante Serve aiuto?**  nella parte inferiore destra del Microsoft Defender Security Center:
+2. Fare clic sul **pulsante Serve aiuto?**  nella parte inferiore destra del portale Microsoft 365 Defender:
 
-    ![Immagine del pulsante Serve aiuto](images/need-help.png)
+    ![Immagine del pulsante Serve aiuto](images/need-help-option.png)
 
 Nel widget verranno offerte due opzioni:
 
@@ -70,7 +70,7 @@ Nel widget verranno offerte due opzioni:
 ## <a name="find-solutions-to-common-problems"></a>Trovare soluzioni ai problemi comuni
 Questa opzione include articoli che potrebbero essere correlati alla domanda che potresti porre. Basta iniziare a digitare la domanda nella casella di ricerca e verranno riportati gli articoli relativi alla ricerca.
 
-![Immagine del widget Della Guida necessaria](images/Support3.png)
+![Immagine del widget Della Guida necessaria](images/information-on-help-screen.png)
 
 Nel caso in cui gli articoli suggeriti non siano sufficienti, è possibile aprire una richiesta di servizio.
 
@@ -85,7 +85,7 @@ Scopri come aprire i ticket di supporto contattando defender per il supporto end
 
 Questa opzione è disponibile facendo clic sull'icona che ha l'aspetto di una cuffia. Verrà quindi visualizzata la pagina seguente per inviare il caso di supporto:
 
-![Immagine del widget apri una richiesta di servizio](images/Support4.png)
+![Immagine del widget apri una richiesta di servizio](images/contact-support-screen.png)
 
 1. Compilare un titolo e una descrizione per il problema che si sta affrontando, nonché un numero di telefono e un indirizzo di posta elettronica in cui è possibile contattarti.
 

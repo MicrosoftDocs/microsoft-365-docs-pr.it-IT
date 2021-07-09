@@ -12,14 +12,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Gli amministratori possono configurare un connettore TeleMessage per importare e archiviare i dati delle comunicazioni di Telegram in Microsoft 365. In questo modo è possibile archiviare i dati da origini dati di terze parti in Microsoft 365 in modo da poter utilizzare funzionalità di conformità come il blocco legale, la ricerca di contenuto e i criteri di conservazione per gestire i dati di terze parti dell'organizzazione.
-ms.openlocfilehash: d3fbe02dce56bec01d66351aa69500a3d5d93a37
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: 5db1869a1c386ed75f3d8d1381f598d907d2b5ba
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53054843"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339443"
 ---
-# <a name="set-up-a-connector-to-archive-telegram-communications-data-preview"></a>Configurare un connettore per archiviare i dati delle comunicazioni di Telegram (anteprima)
+# <a name="set-up-a-connector-to-archive-telegram-communications-data"></a>Configurare un connettore per archiviare i dati delle comunicazioni di Telegram
 
 Utilizzare il connettore TeleMessage nel Centro conformità Microsoft 365 per importare e archiviare chat, allegati, file e messaggi e chiamate eliminati. Dopo aver configurato e configurato un connettore, il connettore si connette all'account TeleMessage dell'organizzazione e importa le comunicazioni mobili dei dipendenti che utilizzano l'archivio di Telegram nelle cassette postali in Microsoft 365.
 

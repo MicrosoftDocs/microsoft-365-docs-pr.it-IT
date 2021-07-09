@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Informazioni su come configurare un nuovo indirizzo di posta elettronica aziendale.
-ms.openlocfilehash: df984cbee8bdd1bdd40ca8d9b87c71222db0f69d
-ms.sourcegitcommit: ddb1bf56bcba4f03c803f79492e8cd0dc41a3d7a
+ms.openlocfilehash: 004cdd3abf9b8f8dec34dbfe9739102af081c769
+ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52065156"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53341545"
 ---
 # <a name="set-up-a-new-business-email-address"></a>Configurare un nuovo indirizzo di posta elettronica aziendale
 
@@ -55,7 +55,7 @@ Acquistare un nuovo nome di dominio per l'indirizzo di posta elettronica e confi
 
 Usa un nome di dominio già di tua proprietà per un indirizzo di sito Web o per un indirizzo di posta elettronica presso un altro provider. 
 
-## <a name="try-it"></a>Perché non provarlo?
+## <a name="give-it-a-try"></a>Provalo!
  
 1. Accedere al sito Web che ospita il dominio. Fare clic su un pulsante per verificare automaticamente o aggiornare manualmente il dominio. 
 1. Personalizzare l'indirizzo di posta elettronica o lasciarlo così come è. 

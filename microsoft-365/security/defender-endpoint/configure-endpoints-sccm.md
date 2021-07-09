@@ -1,6 +1,6 @@
 ---
 title: Onboarding di dispositivi Windows 10 con Configuration Manager
-description: Usa Configuration Manager per distribuire il pacchetto di configurazione nei dispositivi in modo che siano onboarded nel servizio.
+description: Usa Configuration Manager per distribuire il pacchetto di configurazione nei dispositivi in modo che i dispositivi siano onboarded nel servizio.
 keywords: onboard dei dispositivi con sccm, gestione dei dispositivi, configurare Microsoft Defender per i dispositivi endpoint
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,14 +17,14 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 02/07/2020
 ms.technology: mde
-ms.openlocfilehash: d827fb89a082286b1b7b77ea0a14e588ce171161
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: d7c319e37fb804ee4dac3b6bff402942bbc2fa79
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52842195"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339659"
 ---
-# <a name="onboard-windows-10-devices-using-configuration-manager"></a>Onboarding di dispositivi Windows 10 con Configuration Manager
+# <a name="onboard-the-windows-10-devices-using-configuration-manager"></a>Onboardare i dispositivi Windows 10 usando Configuration Manager
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -71,9 +71,9 @@ Consulta il [pdf o](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/publ
 
 
 
-1. Aprire il file del pacchetto di .zip configuration manager (*WindowsDefenderATPOnboardingPackage.zip*) scaricato dall'onboarding guidato del servizio. Puoi anche ottenere il pacchetto da [Microsoft Defender Security Center:](https://securitycenter.windows.com/)
+1. Aprire il file del pacchetto di .zip configuration manager (*WindowsDefenderATPOnboardingPackage.zip*) scaricato dall'onboarding guidato del servizio. Puoi anche ottenere il pacchetto da [Microsoft 365 Defender portale:](https://security.microsoft.com/)
 
-    1. Nel riquadro di spostamento selezionare **Impostazioni**  >  **onboarding**.
+    1. Nel riquadro di spostamento seleziona **Impostazioni**  >    >    >  **Onboarding** gestione dispositivi degli endpoint.
     
     1. Seleziona Windows 10 come sistema operativo.
 
@@ -102,10 +102,10 @@ Per ulteriori informazioni, vedere [Configure Detection Methods in System Center
 
 ### <a name="configure-sample-collection-settings"></a>Configurare le impostazioni della raccolta di esempio
 
-Per ogni dispositivo, puoi impostare un valore di configurazione per indicare se è possibile raccogliere campioni dal dispositivo quando viene effettuata una richiesta tramite Microsoft Defender Security Center per inviare un file per l'analisi approfondita.
+Per ogni dispositivo, puoi impostare un valore di configurazione per indicare se è possibile raccogliere campioni dal dispositivo quando viene effettuata una richiesta tramite Microsoft 365 Defender per inviare un file per l'analisi approfondita.
 
 >[!NOTE]
->Queste impostazioni di configurazione vengono in genere eseguite tramite Configuration Manager. 
+>Queste impostazioni di configurazione vengono in genere eseguite tramite Configuration Manager.
 
 Puoi impostare una regola di conformità per l'elemento di configurazione in Configuration Manager per modificare l'impostazione della condivisione di esempio in un dispositivo.
 
@@ -179,9 +179,9 @@ Se usi il Microsoft Endpoint Manager corrente, vedi Creare un file di [configura
 
 ### <a name="offboard-devices-using-system-center-2012-r2-configuration-manager"></a>Offboard devices using System Center 2012 R2 Configuration Manager
 
-1. Ottenere il pacchetto di offboarding [da Microsoft Defender Security Center](https://securitycenter.windows.com/):
+1. Ottenere il pacchetto di offboarding [da Microsoft 365 Defender portale:](https://security.microsoft.com/)
 
-    1. Nel riquadro di spostamento selezionare **Impostazioni**  >   **offboarding**.
+    1. Nel riquadro di spostamento seleziona **Impostazioni**  >    >    >   **Offboarding** gestione dispositivi endpoint.
 
     1. Seleziona Windows 10 come sistema operativo.
 

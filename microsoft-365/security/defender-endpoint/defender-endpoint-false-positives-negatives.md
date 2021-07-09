@@ -22,12 +22,12 @@ ms.collection:
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs, yonghree, jcedola
 ms.custom: FPFN
-ms.openlocfilehash: d3821f4f1f581da5353ee33bd406af8558c0e903
-ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
+ms.openlocfilehash: 7da28ea308994663549c2c490f53a3e0e75a0857
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53029958"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339263"
 ---
 # <a name="address-false-positivesnegatives-in-microsoft-defender-for-endpoint"></a>Indirizzare i falsi positivi/negativi in Microsoft Defender per Endpoint
 
@@ -78,7 +78,7 @@ Prima di classificare o eliminare un avviso, determinare se l'avviso è accurato
 
 ****
 
-|Stato avviso|Soluzione|
+|Stato degli avvisi|Soluzione|
 |---|---|
 |L'avviso è accurato|Assegnare l'avviso e quindi [analizzarlo ulteriormente.](investigate-alerts.md)|
 |L'avviso è un falso positivo|<ol><li>[Classificare l'avviso](#classify-an-alert) come falso positivo.</li><li>[Eliminare l'avviso](#suppress-an-alert).</li><li>[Crea un indicatore](#indicators-for-microsoft-defender-for-endpoint) per Microsoft Defender per Endpoint.</li><li>[Inviare un file a Microsoft per l'analisi](#part-4-submit-a-file-for-analysis).</li></ol>|
@@ -141,7 +141,7 @@ Al termine dell'analisi e dell'annullamento delle azioni eseguite a seguito di f
 
 ### <a name="review-completed-actions"></a>Rivedere le azioni completate
 
-1. Vai al centro notifiche ( <https://security.microsoft.com/action-center> ) e accedi.
+1. Nel riquadro di spostamento sinistro del portale Microsoft 365 Defender, fare clic su **Centro notifiche.**
 
 2. Selezionare la **scheda** Cronologia per visualizzare un elenco delle azioni eseguite.
 
@@ -149,7 +149,7 @@ Al termine dell'analisi e dell'annullamento delle azioni eseguite a seguito di f
 
 ### <a name="restore-a-quarantined-file-from-the-action-center"></a>Ripristinare un file in quarantena dal Centro notifiche
 
-1. Vai al centro notifiche ( <https://security.microsoft.com/action-center> ) e accedi.
+1. Nel riquadro di spostamento sinistro del portale Microsoft 365 Defender, fare clic su **Centro notifiche.**
 
 2. Nella scheda **Cronologia** selezionare un'azione che si desidera annullare.
 
@@ -157,7 +157,7 @@ Al termine dell'analisi e dell'annullamento delle azioni eseguite a seguito di f
 
 ### <a name="undo-multiple-actions-at-one-time"></a>Annullare più azioni contemporaneamente
 
-1. Vai al centro notifiche ( <https://security.microsoft.com/action-center> ) e accedi.
+1. Nel riquadro di spostamento sinistro del portale Microsoft 365 Defender, fare clic su **Centro notifiche.**
 
 2. Nella scheda **Cronologia** selezionare le azioni che si desidera annullare.
 
@@ -168,7 +168,7 @@ Al termine dell'analisi e dell'annullamento delle azioni eseguite a seguito di f
 > [!div class="mx-imgBorder"]
 > ![Quarantena del file](images/autoir-quarantine-file-1.png)
 
-1. Vai al centro notifiche ( <https://security.microsoft.com/action-center> ) e accedi.
+1. Nel riquadro di spostamento sinistro del portale Microsoft 365 Defender, fare clic su **Centro notifiche.**
 
 2. Nella scheda **Cronologia** selezionare un file con il tipo di azione **File quarantena.**
 
@@ -252,7 +252,7 @@ In generale, non è necessario definire le esclusioni per Antivirus Microsoft De
 
 [Gli](/microsoft-365/security/defender-endpoint/manage-indicators) indicatori (in particolare, indicatori di compromissione o ioc) consentono al team delle operazioni di sicurezza di definire il rilevamento, la prevenzione e l'esclusione delle entità. Ad esempio, puoi specificare determinati file da omettere dalle analisi e dalle azioni di correzione in Microsoft Defender per Endpoint. In caso contrario, gli indicatori possono essere utilizzati per generare avvisi per determinati file, indirizzi IP o URL.
 
-Per specificare le entità come esclusioni per Microsoft Defender for Endpoint, crea indicatori "consenti" per tali entità. Tali indicatori "consenti" in Microsoft Defender for Endpoint si applicano alla protezione [di](microsoft-defender-antivirus-in-windows-10.md)nuova [generazione,](overview-endpoint-detection-response.md)rilevamento e reazione dagli endpoint e all'indagine & [correzione automatica.](/microsoft-365/security/defender-endpoint/automated-investigations)
+Per specificare le entità come esclusioni per Microsoft Defender for Endpoint, crea indicatori "consenti" per tali entità. Tali indicatori "consenti" in Microsoft Defender for Endpoint si applicano alla protezione [di](microsoft-defender-antivirus-in-windows-10.md)nuova generazione, al rilevamento e alla risposta degli [endpoint](overview-endpoint-detection-response.md)e alle indagini automatizzate & [correzione](/microsoft-365/security/defender-endpoint/automated-investigations).
 
 Gli indicatori "Consenti" possono essere creati per:
 
@@ -344,7 +344,7 @@ Per verificare la disponibilità di aggiornamenti relativi all'invio, accedere a
 
 Microsoft Defender for Endpoint offre un'ampia gamma di opzioni, inclusa la possibilità di ottimizzare le impostazioni per diverse funzionalità e funzionalità. Se si verificano numerosi falsi positivi, verificare le impostazioni di protezione dalle minacce dell'organizzazione. Potrebbe essere necessario apportare alcune modifiche a:
 
-- [Protezione basata sul cloud](#cloud-delivered-protection)
+- [Protezione fornita dal cloud](#cloud-delivered-protection)
 - [Correzione per applicazioni potenzialmente indesiderate](#remediation-for-potentially-unwanted-applications)
 - [Analisi e correzione automatizzate](#automated-investigation-and-remediation)
 

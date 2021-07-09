@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: In questo articolo viene descritto come configurare Advanced eDiscovery per iniziare a creare e gestire i casi. Vengono inoltre descritte le sottoscrizioni e le licenze Microsoft necessarie. Dopo aver completato alcuni passaggi rapidi, lo strumento Advanced eDiscovery è pronto per l'uso.
-ms.openlocfilehash: 6c6aed482da8f203154d94313ec04519d6a330ea
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: be5e5aea03950d28889590004bd796455a71c5be
+ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50919747"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53341449"
 ---
 # <a name="set-up-microsoft-365-advanced-ediscovery"></a>Configurare Microsoft 365 Advanced eDiscovery
 
@@ -46,7 +46,7 @@ Per accedere Advanced eDiscovery o aggiunto come membro di un caso Advanced eDis
 
 Completare la procedura seguente per aggiungere utenti al gruppo di ruoli Manager eDiscovery:
 
-1. Accedere a e accedere utilizzando le credenziali per <https://protection.office.com/permissions> un account amministratore nell'Microsoft 365 aziendale.
+1. Accedere a e accedere utilizzando le credenziali per <https://compliance.microsoft.com/permissions> un account amministratore nell'Microsoft 365 aziendale.
 
 2. Nella pagina **Autorizzazioni** selezionare il gruppo di ruoli **Manager eDiscovery.**
 

@@ -17,14 +17,14 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/16/2020
 ms.technology: mde
-ms.openlocfilehash: d09967a18848365702f52f65a7f0624d2b2ae3d6
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 555f96dc1f45fb6a406b5993d0b8e4a3745c283b
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52843211"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339635"
 ---
-# <a name="onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices"></a>Onboarding di dispositivi VDI (Virtual Desktop Infrastructure) non persistenti
+# <a name="onboard-the-non-persistent-virtual-desktop-infrastructure-vdi-devices"></a>Onboard dei dispositivi VDI (Virtual Desktop Infrastructure) non persistenti
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -63,9 +63,9 @@ I passaggi seguenti ti guideranno nell'onboarding dei dispositivi VDI e indicher
 
 ### <a name="for-windows-10-or-windows-server-2019"></a>Per Windows 10 o Windows Server 2019
 
-1.  Apri il pacchetto di configurazione VDI .zip file (*WindowsDefenderATPOnboardingPackage.zip*) scaricato dall'onboarding guidato del servizio. Puoi anche ottenere il pacchetto da [Microsoft Defender Security Center:](https://securitycenter.windows.com/)
+1.  Apri il pacchetto di configurazione VDI .zip file (*WindowsDefenderATPOnboardingPackage.zip*) scaricato dall'onboarding guidato del servizio. Puoi anche ottenere il pacchetto da [Microsoft 365 Defender portale:](https://security.microsoft.com/)
 
-    1.  Nel riquadro di spostamento selezionare **Impostazioni**  >  **onboarding**.
+    1. Nel riquadro di spostamento seleziona **Impostazioni**  >    >    >  **Onboarding** gestione dispositivi degli endpoint.
 
     1. Seleziona Windows 10 come sistema operativo.
 
@@ -111,11 +111,11 @@ I passaggi seguenti ti guideranno nell'onboarding dei dispositivi VDI e indicher
    
       - Per una singola voce per ogni dispositivo: 
     
-        Controllare solo una voce in Microsoft Defender Security Center.
+        Controllare una sola voce in Microsoft 365 Defender portale.
 
       - Per più voci per ogni dispositivo: 
        
-        Controllare più voci in Microsoft Defender Security Center.
+        Controllare più voci nel Microsoft 365 Defender portale.
 
 6. Fare **clic su Elenco** dispositivi nel riquadro di spostamento.
 

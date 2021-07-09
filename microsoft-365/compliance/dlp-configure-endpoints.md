@@ -1,5 +1,5 @@
 ---
-title: Strumenti e metodi di onboarding per i dispositivi Windows 10
+title: Metodi e strumenti di onboarding per Windows 10 dispositivi
 f1.keywords: NOCSH
 ms.author: chrfox
 author: chrfox
@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Onboard Windows 10 dispositivi in modo che possano inviare i dati del sensore alle soluzioni Microsoft 365 conformità
-ms.openlocfilehash: 7cbadc343c5cee1aa7704bcb9da8be2a152726ab
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 676fb3a7ffcae8d108fd9b7fabe61bb78b7e1744
+ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50917852"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53341701"
 ---
 # <a name="onboarding-tools-and-methods-for-windows-10-devices"></a>Strumenti e metodi di onboarding per i dispositivi Windows 10
 

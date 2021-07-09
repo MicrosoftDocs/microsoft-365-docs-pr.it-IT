@@ -28,12 +28,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Informazioni su Microsoft 365 per le aziende, su come configurarlo e su come preparare i dispositivi e i PC degli utenti per assicurarsi che siano protetti da Microsoft 365 per le aziende.
-ms.openlocfilehash: be5f0e74b71f412bf647e4ef0e496cd932fc306a
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+ms.openlocfilehash: 2ab0079da7a8f30d481cdb3d3dc6d165b4a19e99
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52706459"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339291"
 ---
 # <a name="get-started-with-microsoft-365-for-business"></a>Introduzione a Microsoft 365 per le aziende
 
@@ -57,7 +57,7 @@ Microsoft 365 per le aziende è destinato a un massimo di 300 licenze. Se occorr
 
  **Panoramica della configurazione Microsoft 365 suite per le aziende**
   
-Nel diagramma seguente viene descritto come gli amministratori configurano Microsoft 365 per le aziende. Vengono inoltre descritti i passaggi per preparare Windows PC per Microsoft 365 per le aziende. Puoi anche aggiungere nuovi dispositivi nell'Microsoft 365 di amministrazione con [Windows AutoPilot.](add-autopilot-devices-and-profile.md) Puoi usare AutoPilot per configurare e pre-configurare i nuovi dispositivi in modo che siano pronti per l'uso produttivo non appena un utente accede con le credenziali Microsoft 365 per le aziende.
+Nel diagramma seguente viene descritto come gli amministratori configurano Microsoft 365 per le aziende. Vengono inoltre descritti i passaggi per preparare Windows PC per Microsoft 365 per le aziende. Puoi anche aggiungere nuovi dispositivi nella interfaccia di amministrazione di Microsoft 365 con [Windows AutoPilot.](add-autopilot-devices-and-profile.md) Puoi usare AutoPilot per configurare e pre-configurare i nuovi dispositivi in modo che siano pronti per l'uso produttivo non appena un utente accede con le credenziali Microsoft 365 per le aziende.
   
 ![A diagram that shows the setup and management flow for admins, and also for a user](../media/249f81fc-7e79-44c7-8425-3a0b7b651c3b.png)
 
@@ -65,12 +65,12 @@ Nel diagramma seguente viene descritto come gli amministratori configurano Micro
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FYSM] 
 
-Se il video è stato utile, consultare la [serie di formazione completa per piccole imprese e nuovi utenti di Microsoft 365](../business-video/index.yml).
+Se il video è stato utile, consultare la [serie di formazione completa a Microsoft 365 per le piccole e nuove imprese](../business-video/index.yml).
 
   
 ### <a name="1-set-up-microsoft-365-for-business-admin"></a>1: Configurare Microsoft 365 per le aziende (amministratore)
 
-Accedi [all'Microsoft 365 di amministrazione](https://portal.office.com/adminportal/home) con le credenziali di amministratore globale e completa i passaggi seguenti per configurare Microsoft 365 per le aziende. 
+Accedi a [interfaccia di amministrazione di Microsoft 365](https://admin.microsoft.com/adminportal/home) con le credenziali di amministratore globale e completa i passaggi seguenti per configurare Microsoft 365 per le aziende. 
   
 1. [Prerequisiti per la protezione dei dati nei dispositivi con Microsoft 365 per le aziende](pre-requisites-for-data-protection.md)
     
@@ -78,7 +78,7 @@ Accedi [all'Microsoft 365 di amministrazione](https://portal.office.com/adminpor
     
 2. [Utilizzare la configurazione guidata per configurare Microsoft 365 per le aziende](set-up.md)
     
-    Se si sta passando in modo permanente da active Directory locale al **cloud,** è possibile passare all'interfaccia di amministrazione di Microsoft 365 e usare la configurazione guidata per aggiungere manualmente gli utenti oppure eseguire una sincronizzazione una sola volta con Azure AD Connessione. È possibile eseguire questa operazione in due modi: 
+    Se si sta passando in modo permanente da active Directory locale al **cloud,** è possibile passare al interfaccia di amministrazione di Microsoft 365 e usare la configurazione guidata per aggiungere manualmente gli utenti oppure eseguire una sincronizzazione una sola volta con Azure AD Connessione. È possibile eseguire questa operazione in due modi: 
     
     - Se si dispone anche di un server Exchange 2010, Exchange 2013 o Exchange 2016, è possibile utilizzare [Minimal Hybrid](/Exchange/mailbox-migration/use-minimal-hybrid-to-quickly-migrate)per eseguire rapidamente la migrazione delle cassette postali di Exchange Microsoft 365 . I passaggi ibridi minimi includono una sincronizzazione unica degli utenti con Azure AD e la migrazione della posta elettronica da locale al cloud. Al termine della migrazione della posta elettronica, la sincronizzazione della directory viene disattivata automaticamente quando si utilizza questo metodo.
     
@@ -112,4 +112,4 @@ Se si conserva un Active Directory locale contenente alcune risorse locali (ad e
 [Microsoft 365 documentazione e risorse per le aziende](./index.yml) (pagina di collegamento)\
 [Gestire Microsoft 365 per le aziende](manage.md) (articolo)\
 [Eseguire la migrazione a Microsoft 365 per le aziende](migrate-to-microsoft-365-business.md) (articolo)\
-[video Microsoft 365 formazione su Microsoft 365](../business-video/index.yml) per le aziende (pagina dei collegamenti)
+[Video di formazione su Microsoft 365 per le aziende](../business-video/index.yml) (pagina collegamento)

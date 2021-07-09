@@ -17,12 +17,12 @@ ms.collection:
 description: Gli amministratori possono imparare a configurare una cassetta postale per raccogliere posta indesiderata e phishing segnalati dagli utenti.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2dded27d87ee5db0d1e71b643fe8244408ef1a24
-ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
+ms.openlocfilehash: 4f14f87355181e9b7f6c0b52aa6b122b560c5f23
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53096157"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53338686"
 ---
 # <a name="user-reported-message-settings"></a>Impostazioni dei messaggi segnalati dall'utente
 
@@ -69,15 +69,14 @@ Dopo aver verificato che la cassetta postale soddisfi tutti i prerequisiti appli
 - Per modificare la configurazione per gli invii di utenti, è necessario essere membri di uno dei gruppi di ruoli seguenti:
 
   - **Gestione dell'organizzazione** **o amministratore** della sicurezza [in Autorizzazioni nel Microsoft 365 Defender portale](permissions-microsoft-365-security-center.md).
-  - **Gestione organizzazione** in [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups).
-
+  
 - È necessario accedere a Exchange Online PowerShell. Se l'account che si sta tentando di utilizzare non ha accesso Exchange Online PowerShell, quando si specifica la cassetta postale degli invii verrà visualizzato un errore simile al seguente:
 
   > Specificare un indirizzo di posta elettronica nel dominio
 
   Per ulteriori informazioni sull'abilitazione o disabilitazione dell'accesso Exchange Online PowerShell, vedere gli argomenti seguenti:
 
-  - [Abilitare o disabilitare l'accesso Exchange Online PowerShell](/powershell/exchange/disable-access-to-exchange-online-powershell) 
+  - [Abilitare o disabilitare l'accesso a PowerShell per Exchange Online](/powershell/exchange/disable-access-to-exchange-online-powershell) 
   - [Regole di Accesso client in Exchange Online](/exchange/clients-and-mobile-in-exchange-online/client-access-rules/client-access-rules)
 
 ## <a name="use-the-microsoft-365-defender-portal-to-configure-the-user-submissions-mailbox"></a>Utilizzare il portale Microsoft 365 Defender per configurare la cassetta postale di invio degli utenti

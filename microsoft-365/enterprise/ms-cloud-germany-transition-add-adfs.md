@@ -18,17 +18,17 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Riepilogo: passaggi di migrazione di Active Directory Federation Services (AD FS) per la migrazione da Microsoft Cloud Deutschland.'
-ms.openlocfilehash: 12465acf5b4afe7e252586ddd076250628b57dd3
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: c8e784c8e582185b4bdebc0cb359cc4c19503d1a
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165658"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339611"
 ---
 # <a name="ad-fs-migration-steps-for-the-migration-from-microsoft-cloud-deutschland"></a>Passaggi di migrazione di AD FS per la migrazione da Microsoft Cloud Deutschland
 
 Questa modifica alla configurazione deve essere applicata ogni volta prima dell'avvio della fase 2.
-Una volta completata la fase 2, la modifica della configurazione funzionerà e sarà possibile accedere tramite Office 365 endpoint globali, ad esempio `https://portal.office.com` . Se si implementa la modifica della configurazione prima della fase 2, gli endpoint globali di Office 365 non funzionano ancora, ma la nuova relazione di trust della relying party fa ancora parte della configurazione di Active Directory Federation Services (AD FS). 
+Una volta completata la fase 2, la modifica della configurazione funzionerà e sarà possibile accedere tramite Office 365 endpoint globali, ad esempio `https://admin.microsoft.com` . Se si implementa la modifica della configurazione prima della fase 2, gli endpoint globali di Office 365 non funzionano ancora, ma la nuova relazione di trust della relying party fa ancora parte della configurazione di Active Directory Federation Services (AD FS). 
 
 I clienti che utilizzano l'autenticazione federata con Active Directory Federation Services (ADFS) non devono apportare modifiche agli URI dell'autorità emittente utilizzati per tutte le autenticazioni con Servizi di dominio Active Directory locale durante la migrazione. La modifica degli URI dell'autorità emittente causa errori di autenticazione per gli utenti nel dominio. Gli URI dell'autorità emittente possono essere modificati direttamente  in AD FS o quando un dominio viene convertito da gestito a _federato_ e viceversa. È consigliabile non aggiungere, rimuovere o convertire un dominio federato nel tenant di Azure AD di cui è stata eseguita la migrazione. Gli URI dell'autorità emittente possono essere modificati al termine della migrazione.
 

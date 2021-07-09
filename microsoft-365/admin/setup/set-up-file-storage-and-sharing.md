@@ -29,12 +29,12 @@ search.appverid:
 - ODB160
 ms.assetid: 7aa9cdc8-2245-4218-81ee-86fa7c35f1de
 description: Informazioni su come usare un OneDrive e un sito del team per Microsoft 365 e Microsoft 365 file condivisi.
-ms.openlocfilehash: 3ededbf2899ffd45915ad25370d5e5c93906c862
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 5ab0a192cb5706b6aff6cdeb30fa566de74dd510
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52924612"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53338662"
 ---
 # <a name="set-up-file-storage-and-sharing-in-microsoft-365"></a>Configurare l'archiviazione e la condivisione di file in Microsoft 365
 
@@ -44,7 +44,7 @@ Uno dei modi migliori per configurare l'archiviazione e la condivisione dei file
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FTHX] 
 
-Se il video è stato utile, consultare la [serie di formazione completa per piccole imprese e nuovi utenti di Microsoft 365](../../business-video/index.yml).
+Se il video è stato utile, consultare la [serie di formazione completa a Microsoft 365 per le piccole e nuove imprese](../../business-video/index.yml).
 
 ## <a name="microsoft-365-document-storage-and-management"></a>Microsoft 365 archiviazione e gestione dei documenti
 
@@ -62,7 +62,7 @@ Ecco alcuni suggerimenti su cosa archiviare in ogni posizione quando si usano si
 |Posizione di archiviazione|A cosa si può fare|Cosa archiviare|
 |:-----|:-----|:-----|
 |**OneDrive** |Archiviare il contenuto OneDrive è come archiviare i file nel computer; nessun altro può accedervi facilmente.<br/> Per altre info, vedi [Che cos'è OneDrive for Business?](https://support.microsoft.com/office/187f90af-056f-47c0-9656-cc0ddca7fdc2) <br/> |File aziendali a cui gli altri membri del team non devono lavorare o accedere regolarmente.<br/> |
-|**Siti del team di SharePoint** <br/> |Collaborazione. Quando si crea un gruppo di Microsoft 365, ad esempio nell'interfaccia di amministrazione di Microsoft 365, in Outlook o creando un team in Microsoft Teams, viene creato un sito del team di SharePoint per tale gruppo. Analogamente, quando si crea un nuovo sito del team di SharePoint dalla home page di SharePoint o dalla nuova interfaccia di amministrazione di SharePoint, viene creato anche un gruppo Microsoft 365. Per altre info, vedi [Che cos'è](https://support.microsoft.com/office/75545757-36c3-46a7-beed-0aaa74f0401e) un sito SharePoint team? e Creare un sito [del team in SharePoint Online.](https://support.microsoft.com/office/ef10c1e7-15f3-42a3-98aa-b5972711777d)  <br/> |File con proprietà condivisa. È consigliabile separare i siti del team per ogni unità di lavoro dell'organizzazione. Ad esempio, per mantenere privati il personale e i documenti finanziari per un team di piccole dimensioni, creare un sito del team separato.  <br/> |
+|**Siti del team di SharePoint** <br/> |Collaborazione. Quando si crea un gruppo di Microsoft 365, ad esempio nel interfaccia di amministrazione di Microsoft 365, in Outlook o creando un team in Microsoft Teams, viene creato un sito del team di SharePoint per tale gruppo. Analogamente, quando si crea un nuovo sito del team di SharePoint dalla home page di SharePoint o dalla nuova interfaccia di amministrazione di SharePoint, viene creato anche un gruppo Microsoft 365. Per altre info, vedi [Che cos'è](https://support.microsoft.com/office/75545757-36c3-46a7-beed-0aaa74f0401e) un sito SharePoint team? e Creare un sito [del team in SharePoint Online.](https://support.microsoft.com/office/ef10c1e7-15f3-42a3-98aa-b5972711777d)  <br/> |File con proprietà condivisa. È consigliabile separare i siti del team per ogni unità di lavoro dell'organizzazione. Ad esempio, per mantenere privati il personale e i documenti finanziari per un team di piccole dimensioni, creare un sito del team separato.  <br/> |
 
 > [!NOTE]
 > SharePoint sono disponibili anche altri tipi di siti che è possibile utilizzare per la propria azienda. È possibile utilizzare [i siti di comunicazione](https://support.microsoft.com/office/7fb44b20-a72f-4d2c-9173-fc8f59ba50eb) nella rete Intranet per pubblicare informazioni per un pubblico ampio. È inoltre possibile utilizzare i [siti hub](https://support.microsoft.com/office/fe26ae84-14b7-45b6-a6d1-948b3966427f) per connettere i siti nella rete Intranet.
@@ -77,7 +77,7 @@ I dipendenti possono anche condividere OneDrive file e cartelle. Se un dipendent
   
 Ecco come ogni persona del team può configurare OneDrive e condividere file.
 
-1. Vai al portale <a href="https://portal.office.com/ " target="_blank">Microsoft 365</a>e accedi con il nome utente e la password.
+1. Passare al <a href="https://admin.mirosoft.com/ " target="_blank">interfaccia di amministrazione di Microsoft 365</a>e accedere con il nome utente e la password.
 
 2. Nell'icona di avvio delle app seleziona **OneDrive**.
 

@@ -17,12 +17,12 @@ ms.assetid: 39e4654a-9588-41f6-892b-c33ab57bfbe2
 ms.custom:
 - seo-marvel-apr2020
 description: Utilizzare l'editor di ricerca in blocco nel Centro sicurezza e conformità per modificare rapidamente le posizioni di query e contenuto per una o più ricerche di contenuto.
-ms.openlocfilehash: f6331bad19e95fd1d7039d5da72349906d3614b8
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: be7e37ec22966e16dfa3c6d1f37a34e6441e632a
+ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53227388"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53341033"
 ---
 # <a name="bulk-edit-content-searches"></a>Modifica in blocco ricerche contenuto
 
@@ -32,7 +32,7 @@ Per ulteriori informazioni sull'utilizzo dello strumento Statistiche di ricerca,
 
 ## <a name="use-the-bulk-search-editor-to-change-queries"></a>Utilizzare l'editor di ricerca in blocco per modificare le query
 
-1. Passare a <https://protection.office.com> e quindi selezionare **Ricerca** \> **contenuto**.
+1. Passare a <https://compliance.microsoft.com> e quindi selezionare Ricerca **contenuto**.
 
 2. Nell'elenco delle ricerche, selezionare una o più ricerche e quindi selezionare il pulsante **Bulk Search Editor** Bulk Search Editor ![ ](../media/1ddb3d18-2f00-4a7b-98a6-817ca5ec7014.png) .
 
