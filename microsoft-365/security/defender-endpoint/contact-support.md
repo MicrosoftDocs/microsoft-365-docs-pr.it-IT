@@ -16,84 +16,84 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 3272ef182c4b08142490e8a1ac21c208023c50f5
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 6d4845163996dcc00ccfcc6c87eb27aff87268fc
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53228724"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339193"
 ---
-# <a name="contact-microsoft-defender-for-endpoint-support"></a><span data-ttu-id="e18d7-104">Contattare il supporto di Microsoft Defender per endpoint</span><span class="sxs-lookup"><span data-stu-id="e18d7-104">Contact Microsoft Defender for Endpoint support</span></span>
+# <a name="contact-microsoft-defender-for-endpoint-support"></a><span data-ttu-id="002bb-104">Contattare il supporto di Microsoft Defender per endpoint</span><span class="sxs-lookup"><span data-stu-id="002bb-104">Contact Microsoft Defender for Endpoint support</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-<span data-ttu-id="e18d7-105">**Si applica a:**</span><span class="sxs-lookup"><span data-stu-id="e18d7-105">**Applies to:**</span></span>
-- [<span data-ttu-id="e18d7-106">Microsoft Defender per endpoint</span><span class="sxs-lookup"><span data-stu-id="e18d7-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [<span data-ttu-id="e18d7-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="e18d7-107">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
+<span data-ttu-id="002bb-105">**Si applica a:**</span><span class="sxs-lookup"><span data-stu-id="002bb-105">**Applies to:**</span></span>
+- [<span data-ttu-id="002bb-106">Microsoft Defender per endpoint</span><span class="sxs-lookup"><span data-stu-id="002bb-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [<span data-ttu-id="002bb-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="002bb-107">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-><span data-ttu-id="e18d7-108">Vuoi provare Defender per Endpoint?</span><span class="sxs-lookup"><span data-stu-id="e18d7-108">Want to experience Defender for Endpoint?</span></span> [<span data-ttu-id="e18d7-109">Iscriversi per una versione di valutazione gratuita.</span><span class="sxs-lookup"><span data-stu-id="e18d7-109">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+><span data-ttu-id="002bb-108">Vuoi provare Defender per Endpoint?</span><span class="sxs-lookup"><span data-stu-id="002bb-108">Want to experience Defender for Endpoint?</span></span> [<span data-ttu-id="002bb-109">Iscriversi per una versione di valutazione gratuita.</span><span class="sxs-lookup"><span data-stu-id="002bb-109">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
-<span data-ttu-id="e18d7-110">Defender for Endpoint ha recentemente aggiornato il processo di supporto per offrire un'esperienza di supporto più moderna e avanzata.</span><span class="sxs-lookup"><span data-stu-id="e18d7-110">Defender for Endpoint has recently upgraded the support process to offer a more modern and advanced support experience.</span></span>
+<span data-ttu-id="002bb-110">Defender for Endpoint ha recentemente aggiornato il processo di supporto per offrire un'esperienza di supporto più moderna e avanzata.</span><span class="sxs-lookup"><span data-stu-id="002bb-110">Defender for Endpoint has recently upgraded the support process to offer a more modern and advanced support experience.</span></span>
 
-<span data-ttu-id="e18d7-111">Il nuovo widget consente ai clienti di:</span><span class="sxs-lookup"><span data-stu-id="e18d7-111">The new widget allows customers to:</span></span>
+<span data-ttu-id="002bb-111">Il nuovo widget consente ai clienti di:</span><span class="sxs-lookup"><span data-stu-id="002bb-111">The new widget allows customers to:</span></span>
 
-- <span data-ttu-id="e18d7-112">Trovare soluzioni ai problemi comuni</span><span class="sxs-lookup"><span data-stu-id="e18d7-112">Find solutions to common problems</span></span>
-- <span data-ttu-id="e18d7-113">Inviare un caso di supporto al team di supporto Microsoft</span><span class="sxs-lookup"><span data-stu-id="e18d7-113">Submit a support case to the Microsoft support team</span></span>
+- <span data-ttu-id="002bb-112">Trovare soluzioni ai problemi comuni</span><span class="sxs-lookup"><span data-stu-id="002bb-112">Find solutions to common problems</span></span>
+- <span data-ttu-id="002bb-113">Inviare un caso di supporto al team di supporto Microsoft</span><span class="sxs-lookup"><span data-stu-id="002bb-113">Submit a support case to the Microsoft support team</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="e18d7-114">Prerequisiti</span><span class="sxs-lookup"><span data-stu-id="e18d7-114">Prerequisites</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="002bb-114">Prerequisiti</span><span class="sxs-lookup"><span data-stu-id="002bb-114">Prerequisites</span></span>
 
-<span data-ttu-id="e18d7-115">È importante conoscere i ruoli specifici che dispongono dell'autorizzazione per aprire i casi di supporto.</span><span class="sxs-lookup"><span data-stu-id="e18d7-115">It's important to know the specific roles that have permission to open support cases.</span></span>
+<span data-ttu-id="002bb-115">È importante conoscere i ruoli specifici che dispongono dell'autorizzazione per aprire i casi di supporto.</span><span class="sxs-lookup"><span data-stu-id="002bb-115">It's important to know the specific roles that have permission to open support cases.</span></span>
 
-<span data-ttu-id="e18d7-116">Come minimo, è necessario disporre di un ruolo di amministratore del supporto **tecnico o** dell'helpdesk.</span><span class="sxs-lookup"><span data-stu-id="e18d7-116">At a minimum, you must have a Service Support Administrator **OR** Helpdesk Administrator role.</span></span>
+<span data-ttu-id="002bb-116">Come minimo, è necessario disporre di un ruolo di amministratore del supporto **tecnico o** dell'helpdesk.</span><span class="sxs-lookup"><span data-stu-id="002bb-116">At a minimum, you must have a Service Support Administrator **OR** Helpdesk Administrator role.</span></span>
 
-<span data-ttu-id="e18d7-117">Per ulteriori informazioni sui ruoli che dispongono dell'autorizzazione, vedere [Autorizzazioni di amministratore della sicurezza](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator-permissions).</span><span class="sxs-lookup"><span data-stu-id="e18d7-117">For more information on which roles have permission see, [Security Administrator permissions](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator-permissions).</span></span> <span data-ttu-id="e18d7-118">I ruoli che includono `microsoft.office365.supportTickets/allEntities/allTasks` l'azione possono inviare un caso.</span><span class="sxs-lookup"><span data-stu-id="e18d7-118">Roles that include the action `microsoft.office365.supportTickets/allEntities/allTasks` can submit a case.</span></span>
+<span data-ttu-id="002bb-117">Per ulteriori informazioni sui ruoli che dispongono dell'autorizzazione, vedere [Autorizzazioni di amministratore della sicurezza](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator-permissions).</span><span class="sxs-lookup"><span data-stu-id="002bb-117">For more information on which roles have permission see, [Security Administrator permissions](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator-permissions).</span></span> <span data-ttu-id="002bb-118">I ruoli che includono `microsoft.office365.supportTickets/allEntities/allTasks` l'azione possono inviare un caso.</span><span class="sxs-lookup"><span data-stu-id="002bb-118">Roles that include the action `microsoft.office365.supportTickets/allEntities/allTasks` can submit a case.</span></span>
 
-<span data-ttu-id="e18d7-119">Per informazioni generali sui ruoli di amministratore, vedere [Informazioni sui ruoli di amministratore.](/microsoft-365/admin/add-users/about-admin-roles)</span><span class="sxs-lookup"><span data-stu-id="e18d7-119">For general information on admin roles, see [About admin roles](/microsoft-365/admin/add-users/about-admin-roles).</span></span>
+<span data-ttu-id="002bb-119">Per informazioni generali sui ruoli di amministratore, vedere [Informazioni sui ruoli di amministratore.](/microsoft-365/admin/add-users/about-admin-roles)</span><span class="sxs-lookup"><span data-stu-id="002bb-119">For general information on admin roles, see [About admin roles](/microsoft-365/admin/add-users/about-admin-roles).</span></span>
 
-## <a name="access-the-widget"></a><span data-ttu-id="e18d7-120">Accedere al widget</span><span class="sxs-lookup"><span data-stu-id="e18d7-120">Access the widget</span></span>
-<span data-ttu-id="e18d7-121">L'accesso al nuovo widget di supporto può essere eseguito in due modi:</span><span class="sxs-lookup"><span data-stu-id="e18d7-121">Accessing the new support widget can be done in one of two ways:</span></span>
+## <a name="access-the-widget"></a><span data-ttu-id="002bb-120">Accedere al widget</span><span class="sxs-lookup"><span data-stu-id="002bb-120">Access the widget</span></span>
+<span data-ttu-id="002bb-121">L'accesso al nuovo widget di supporto può essere eseguito in due modi:</span><span class="sxs-lookup"><span data-stu-id="002bb-121">Accessing the new support widget can be done in one of two ways:</span></span>
 
-1. <span data-ttu-id="e18d7-122">Fare clic sul punto interrogativo in alto a destra del portale e quindi su "Supporto Microsoft":</span><span class="sxs-lookup"><span data-stu-id="e18d7-122">Clicking on the question mark on the top right of the portal and then clicking on "Microsoft support":</span></span>
+1. <span data-ttu-id="002bb-122">Fare clic sul punto interrogativo in alto a destra del portale e quindi su "Supporto Microsoft":</span><span class="sxs-lookup"><span data-stu-id="002bb-122">Clicking on the question mark on the top right of the portal and then clicking on "Microsoft support":</span></span>
 
     ![Immagine del widget quando è selezionato il punto interrogativo](images/support-widget.png)
 
-2. <span data-ttu-id="e18d7-124">Fare clic sul **pulsante Serve aiuto?**</span><span class="sxs-lookup"><span data-stu-id="e18d7-124">Clicking on the **Need help?**</span></span>  <span data-ttu-id="e18d7-125">nella parte inferiore destra del Microsoft Defender Security Center:</span><span class="sxs-lookup"><span data-stu-id="e18d7-125">button in the bottom right of the Microsoft Defender Security Center:</span></span>
+2. <span data-ttu-id="002bb-124">Fare clic sul **pulsante Serve aiuto?**</span><span class="sxs-lookup"><span data-stu-id="002bb-124">Clicking on the **Need help?**</span></span>  <span data-ttu-id="002bb-125">nella parte inferiore destra del portale Microsoft 365 Defender:</span><span class="sxs-lookup"><span data-stu-id="002bb-125">button in the bottom right of the Microsoft 365 Defender portal:</span></span>
 
-    ![Immagine del pulsante Serve aiuto](images/need-help.png)
+    ![Immagine del pulsante Serve aiuto](images/need-help-option.png)
 
-<span data-ttu-id="e18d7-127">Nel widget verranno offerte due opzioni:</span><span class="sxs-lookup"><span data-stu-id="e18d7-127">In the widget you will be offered two options:</span></span>
+<span data-ttu-id="002bb-127">Nel widget verranno offerte due opzioni:</span><span class="sxs-lookup"><span data-stu-id="002bb-127">In the widget you will be offered two options:</span></span>
 
-- <span data-ttu-id="e18d7-128">Trovare soluzioni ai problemi comuni</span><span class="sxs-lookup"><span data-stu-id="e18d7-128">Find solutions to common problems</span></span>
-- <span data-ttu-id="e18d7-129">Aprire una richiesta di servizio</span><span class="sxs-lookup"><span data-stu-id="e18d7-129">Open a service request</span></span>
+- <span data-ttu-id="002bb-128">Trovare soluzioni ai problemi comuni</span><span class="sxs-lookup"><span data-stu-id="002bb-128">Find solutions to common problems</span></span>
+- <span data-ttu-id="002bb-129">Aprire una richiesta di servizio</span><span class="sxs-lookup"><span data-stu-id="002bb-129">Open a service request</span></span>
 
-## <a name="find-solutions-to-common-problems"></a><span data-ttu-id="e18d7-130">Trovare soluzioni ai problemi comuni</span><span class="sxs-lookup"><span data-stu-id="e18d7-130">Find solutions to common problems</span></span>
-<span data-ttu-id="e18d7-131">Questa opzione include articoli che potrebbero essere correlati alla domanda che potresti porre.</span><span class="sxs-lookup"><span data-stu-id="e18d7-131">This option includes articles that might be related to the question you may ask.</span></span> <span data-ttu-id="e18d7-132">Basta iniziare a digitare la domanda nella casella di ricerca e verranno riportati gli articoli relativi alla ricerca.</span><span class="sxs-lookup"><span data-stu-id="e18d7-132">Just start typing the question in the search box and articles related to your search will be surfaced.</span></span>
+## <a name="find-solutions-to-common-problems"></a><span data-ttu-id="002bb-130">Trovare soluzioni ai problemi comuni</span><span class="sxs-lookup"><span data-stu-id="002bb-130">Find solutions to common problems</span></span>
+<span data-ttu-id="002bb-131">Questa opzione include articoli che potrebbero essere correlati alla domanda che potresti porre.</span><span class="sxs-lookup"><span data-stu-id="002bb-131">This option includes articles that might be related to the question you may ask.</span></span> <span data-ttu-id="002bb-132">Basta iniziare a digitare la domanda nella casella di ricerca e verranno riportati gli articoli relativi alla ricerca.</span><span class="sxs-lookup"><span data-stu-id="002bb-132">Just start typing the question in the search box and articles related to your search will be surfaced.</span></span>
 
-![Immagine del widget Della Guida necessaria](images/Support3.png)
+![Immagine del widget Della Guida necessaria](images/information-on-help-screen.png)
 
-<span data-ttu-id="e18d7-134">Nel caso in cui gli articoli suggeriti non siano sufficienti, è possibile aprire una richiesta di servizio.</span><span class="sxs-lookup"><span data-stu-id="e18d7-134">In case the suggested articles are not sufficient, you can open a service request.</span></span>
+<span data-ttu-id="002bb-134">Nel caso in cui gli articoli suggeriti non siano sufficienti, è possibile aprire una richiesta di servizio.</span><span class="sxs-lookup"><span data-stu-id="002bb-134">In case the suggested articles are not sufficient, you can open a service request.</span></span>
 
-## <a name="open-a-service-request"></a><span data-ttu-id="e18d7-135">Aprire una richiesta di servizio</span><span class="sxs-lookup"><span data-stu-id="e18d7-135">Open a service request</span></span>
+## <a name="open-a-service-request"></a><span data-ttu-id="002bb-135">Aprire una richiesta di servizio</span><span class="sxs-lookup"><span data-stu-id="002bb-135">Open a service request</span></span>
 
-<span data-ttu-id="e18d7-136">Scopri come aprire i ticket di supporto contattando defender per il supporto endpoint.</span><span class="sxs-lookup"><span data-stu-id="e18d7-136">Learn how to open support tickets by contacting Defender for Endpoint support.</span></span>
+<span data-ttu-id="002bb-136">Scopri come aprire i ticket di supporto contattando defender per il supporto endpoint.</span><span class="sxs-lookup"><span data-stu-id="002bb-136">Learn how to open support tickets by contacting Defender for Endpoint support.</span></span>
 
 > [!Note]
-> <span data-ttu-id="e18d7-137">Se hai un contratto di supporto con Microsoft, nel widget verrà visualizzato il tag premier.</span><span class="sxs-lookup"><span data-stu-id="e18d7-137">If you have a permier support contract with Microsoft, you will see the premier tag on the widget.</span></span> <span data-ttu-id="e18d7-138">In caso contrario, contattare il proprio account manager Microsoft.</span><span class="sxs-lookup"><span data-stu-id="e18d7-138">If not, contact your Microsoft account manager.</span></span>
+> <span data-ttu-id="002bb-137">Se hai un contratto di supporto con Microsoft, nel widget verrà visualizzato il tag premier.</span><span class="sxs-lookup"><span data-stu-id="002bb-137">If you have a permier support contract with Microsoft, you will see the premier tag on the widget.</span></span> <span data-ttu-id="002bb-138">In caso contrario, contattare il proprio account manager Microsoft.</span><span class="sxs-lookup"><span data-stu-id="002bb-138">If not, contact your Microsoft account manager.</span></span>
 
-### <a name="contact-support"></a><span data-ttu-id="e18d7-139">Contattare il supporto</span><span class="sxs-lookup"><span data-stu-id="e18d7-139">Contact support</span></span>
+### <a name="contact-support"></a><span data-ttu-id="002bb-139">Contattare il supporto</span><span class="sxs-lookup"><span data-stu-id="002bb-139">Contact support</span></span>
 
-<span data-ttu-id="e18d7-140">Questa opzione è disponibile facendo clic sull'icona che ha l'aspetto di una cuffia.</span><span class="sxs-lookup"><span data-stu-id="e18d7-140">This option is available by clicking the icon that looks like a headset.</span></span> <span data-ttu-id="e18d7-141">Verrà quindi visualizzata la pagina seguente per inviare il caso di supporto:</span><span class="sxs-lookup"><span data-stu-id="e18d7-141">You will then get the following page to submit your support case:</span></span>
+<span data-ttu-id="002bb-140">Questa opzione è disponibile facendo clic sull'icona che ha l'aspetto di una cuffia.</span><span class="sxs-lookup"><span data-stu-id="002bb-140">This option is available by clicking the icon that looks like a headset.</span></span> <span data-ttu-id="002bb-141">Verrà quindi visualizzata la pagina seguente per inviare il caso di supporto:</span><span class="sxs-lookup"><span data-stu-id="002bb-141">You will then get the following page to submit your support case:</span></span>
 
-![Immagine del widget apri una richiesta di servizio](images/Support4.png)
+![Immagine del widget apri una richiesta di servizio](images/contact-support-screen.png)
 
-1. <span data-ttu-id="e18d7-143">Compilare un titolo e una descrizione per il problema che si sta affrontando, nonché un numero di telefono e un indirizzo di posta elettronica in cui è possibile contattarti.</span><span class="sxs-lookup"><span data-stu-id="e18d7-143">Fill in a title and description for the issue you are facing, as well as a phone number and email address where we may reach you.</span></span>
+1. <span data-ttu-id="002bb-143">Compilare un titolo e una descrizione per il problema che si sta affrontando, nonché un numero di telefono e un indirizzo di posta elettronica in cui è possibile contattarti.</span><span class="sxs-lookup"><span data-stu-id="002bb-143">Fill in a title and description for the issue you are facing, as well as a phone number and email address where we may reach you.</span></span>
 
-2. <span data-ttu-id="e18d7-144">(Facoltativo) Includere fino a cinque allegati rilevanti per il problema per fornire un contesto aggiuntivo per il caso di supporto.</span><span class="sxs-lookup"><span data-stu-id="e18d7-144">(Optional) Include up to five attachments that are relevant to the issue in order to provide additional context for the support case.</span></span>
+2. <span data-ttu-id="002bb-144">(Facoltativo) Includere fino a cinque allegati rilevanti per il problema per fornire un contesto aggiuntivo per il caso di supporto.</span><span class="sxs-lookup"><span data-stu-id="002bb-144">(Optional) Include up to five attachments that are relevant to the issue in order to provide additional context for the support case.</span></span>
 
-3. <span data-ttu-id="e18d7-145">Selezionare il fuso orario e una lingua alternativa, se applicabile.</span><span class="sxs-lookup"><span data-stu-id="e18d7-145">Select your time zone and an alternative language, if applicable.</span></span> <span data-ttu-id="e18d7-146">La richiesta verrà inviata al team di supporto Microsoft.</span><span class="sxs-lookup"><span data-stu-id="e18d7-146">The request will be sent to Microsoft Support Team.</span></span> <span data-ttu-id="e18d7-147">Il team risponderà alla richiesta di servizio a breve.</span><span class="sxs-lookup"><span data-stu-id="e18d7-147">The team will respond to your service request shortly.</span></span>
+3. <span data-ttu-id="002bb-145">Selezionare il fuso orario e una lingua alternativa, se applicabile.</span><span class="sxs-lookup"><span data-stu-id="002bb-145">Select your time zone and an alternative language, if applicable.</span></span> <span data-ttu-id="002bb-146">La richiesta verrà inviata al team di supporto Microsoft.</span><span class="sxs-lookup"><span data-stu-id="002bb-146">The request will be sent to Microsoft Support Team.</span></span> <span data-ttu-id="002bb-147">Il team risponderà alla richiesta di servizio a breve.</span><span class="sxs-lookup"><span data-stu-id="002bb-147">The team will respond to your service request shortly.</span></span>
 
-## <a name="related-topics"></a><span data-ttu-id="e18d7-148">Argomenti correlati</span><span class="sxs-lookup"><span data-stu-id="e18d7-148">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="002bb-148">Argomenti correlati</span><span class="sxs-lookup"><span data-stu-id="002bb-148">Related topics</span></span>
 
-- [<span data-ttu-id="e18d7-149">Risolvere i problemi dei servizi</span><span class="sxs-lookup"><span data-stu-id="e18d7-149">Troubleshoot service issues</span></span>](troubleshoot-mdatp.md)
-- [<span data-ttu-id="e18d7-150">Verificare l'integrità dei servizi</span><span class="sxs-lookup"><span data-stu-id="e18d7-150">Check service health</span></span>](service-status.md)
+- [<span data-ttu-id="002bb-149">Risolvere i problemi dei servizi</span><span class="sxs-lookup"><span data-stu-id="002bb-149">Troubleshoot service issues</span></span>](troubleshoot-mdatp.md)
+- [<span data-ttu-id="002bb-150">Verificare l'integrità dei servizi</span><span class="sxs-lookup"><span data-stu-id="002bb-150">Check service health</span></span>](service-status.md)
