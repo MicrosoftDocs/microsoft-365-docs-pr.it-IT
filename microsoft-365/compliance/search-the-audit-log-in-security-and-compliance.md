@@ -1,5 +1,5 @@
 ---
-title: Eseguire una ricerca nel log di controllo nel Centro sicurezza e conformità
+title: Cercare il log di audit nel Centro conformità Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: Usare il Centro conformità Microsoft 365 per eseguire una ricerca nel log di controllo unificato e vedere le attività di utenti e amministratori nell'organizzazione.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 007881220c3bdf862e75464521733e64f0d6c5c0
-ms.sourcegitcommit: 17d82e5617f0466eb825e15ab88594afcdaf4437
+ms.openlocfilehash: 46f223953df65b75c0ecfe0d2c9fe92514b797ff
+ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "53300137"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53341653"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>Eseguire una ricerca nel log di controllo nel Centro conformità
 
@@ -48,11 +48,11 @@ Se è necessario verificare se un utente ha visualizzato un documento specifico 
 - Attività utente e amministratore per le etichette di riservatezza per siti che usano SharePoint Online o Microsoft Teams
 - Attività amministratore nelle e-mail di Briefing e in MyAnalytics
 
-## <a name="requirements-to-search-the-audit-log"></a>Requisiti per la ricerca nel log di controllo
+## <a name="before-you-search-the-audit-log"></a>Prima di cercare il log di audit
 
 Prima di iniziare la ricerca nel log di controllo, tenere presente quanto segue.
 
-- La ricerca nel registro di controllo è attivata per impostazione predefinita per le organizzazioni aziendali di Microsoft 365 e Office 365. Ciò include le organizzazioni con abbonamenti E3 / G3 o E5 / G5. Per verificare che la ricerca nel registro di controllo sia attivata, è possibile eseguire il comando seguente in Exchange Online PowerShell:
+- La ricerca nel registro di controllo è attivata per impostazione predefinita per le organizzazioni aziendali di Microsoft 365 e Office 365. Per verificare che la ricerca nel registro di controllo sia attivata, è possibile eseguire il comando seguente in Exchange Online PowerShell:
 
   ```powershell
   Get-AdminAuditLogConfig | FL UnifiedAuditLogIngestionEnabled
@@ -63,7 +63,7 @@ Prima di iniziare la ricerca nel log di controllo, tenere presente quanto segue.
 - È necessario avere il ruolo relativo ai log di controllo di sola lettura o ai log di controllo in Exchange Online per poter eseguire ricerche nel log di controllo. Per impostazione predefinita, questi ruoli sono assegnati ai gruppi di ruoli Gestione conformità e Gestione organizzazione nella pagina **Autorizzazioni** nell'Interfaccia di amministrazione di Exchange. Gli amministratori globali di Office 365 e Microsoft 365 vengono aggiunti automaticamente come membri del gruppo di ruoli Gestione organizzazione in Exchange Online. Per consentire a un utente di eseguire ricerche nel log di controllo con il livello minimo di privilegi, è possibile creare un gruppo di ruoli personalizzato in Exchange Online, aggiungere il ruolo relativo ai log di controllo di sola lettura o ai log di controllo e quindi aggiungere l'utente come membro del nuovo gruppo di ruoli. Per altre informazioni, vedere [Gestire i gruppi di ruoli in Exchange Online](/Exchange/permissions-exo/role-groups).
 
   > [!IMPORTANT]
-  > Se si assegna a un utente il ruolo relativo ai log di controllo di sola lettura o ai log di controllo nella pagina **Autorizzazioni** del Centro sicurezza e conformità, l'utente non potrà eseguire ricerche nel log di controllo. È necessario assegnare le autorizzazioni in Exchange Online. Ciò avviene perché il cmdlet sottostante usato per la ricerca nel log di controllo è un cmdlet di Exchange Online.
+  > Se si assegna a un utente il ruolo relativo ai log di audit di sola lettura o ai log di audit nella pagina **Autorizzazioni** del Centro conformità Microsoft 365, l'utente non potrà cercare il log di audit. È necessario assegnare le autorizzazioni in Exchange Online. Ciò avviene perché il cmdlet sottostante usato per la ricerca nel log di controllo è un cmdlet di Exchange Online.
 
 - Quando un'attività di controllo viene eseguita da un utente o da un amministratore, viene generato un record di controllo che viene archiviato nel log di controllo per l'organizzazione. Il periodo di tempo per cui il record di controllo viene conservato (ed è disponibile per la ricerca nel log di controllo) varia in base all'abbonamento a Office 365 o Microsoft 365 Enterprise e, in particolare, al tipo di licenza assegnata a un utente specifico.
 
@@ -75,7 +75,7 @@ Prima di iniziare la ricerca nel log di controllo, tenere presente quanto segue.
   - Per gli utenti con qualsiasi altra licenza di Office 365 o Microsoft 365 (non E5), i record di controllo vengono conservati per 90 giorni. Per un elenco degli abbonamenti a Office 365 e Microsoft 365 che supportano la registrazione di controllo unificato, vedere [la descrizione del servizio del Centro sicurezza e conformità](/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center).
 
     > [!NOTE]
-    > Anche se il controllo delle cassette postali è attivato per impostazione predefinita, si potrebbe notare che gli eventi di controllo delle cassette postali per alcuni utenti non sono inclusi nelle ricerche nei log di controllo nel Centro sicurezza e conformità o nell'API Office 365 Management Activity. Vedere la sezione [Altre informazioni sulla registrazione di controllo delle cassette postali](enable-mailbox-auditing.md#more-information).
+    > Anche se il controllo delle cassette postali è attivato per impostazione predefinita, si potrebbe notare che gli eventi di controllo delle cassette postali per alcuni utenti non sono inclusi nelle ricerche nei log di controllo nel Centro conformità Microsoft 365 o nell'API Office 365 Management Activity. Vedere la sezione [Altre informazioni sulla registrazione di controllo delle cassette postali](enable-mailbox-auditing.md#more-information).
 
 - Se si desidera disabilitare la ricerca nel log di controllo per la propria organizzazione, è possibile eseguire questo comando nell'istanza di PowerShell remota connessa all'organizzazione di Exchange Online:
 
@@ -91,7 +91,7 @@ Prima di iniziare la ricerca nel log di controllo, tenere presente quanto segue.
 
   Per altre informazioni, vedere [Disabilitare la ricerca nel log di controllo](turn-audit-log-search-on-or-off.md).
 
-- Come indicato in precedenza, il cmdlet sottostante usato per la ricerca nel log di controllo è un cmdlet di Exchange Online, ovvero **Search-UnifiedAuditLog**. Ciò significa che è possibile usare questo cmdlet anziché la pagina **Ricerca log di controllo** nel Centro sicurezza e conformità per eseguire una ricerca nel log di controllo. È necessario eseguire questo cmdlet in una sessione remota di PowerShell connessa all'organizzazione di Exchange Online. Per altre informazioni, vedere [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog).
+- Come indicato in precedenza, il cmdlet sottostante usato per la ricerca nel log di controllo è un cmdlet di Exchange Online, ovvero **Search-UnifiedAuditLog**. Ciò significa che è possibile usare questo cmdlet anziché la pagina **Ricerca log di audit** nel Centro conformità Microsoft 365 per cercare un log di audit. È necessario eseguire questo cmdlet in una sessione remota di PowerShell connessa all'organizzazione di Exchange Online. Per altre informazioni, vedere [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog).
 
   Per informazioni sull'esportazione dei risultati della ricerca restituiti dal cmdlet **Search-UnifiedAuditLog** in un file CSV, vedere la sezione "Suggerimenti per l'esportazione e la visualizzazione del log di controllo in [Esportare, configurare e visualizzare i record del log di controllo](export-view-audit-log-records.md#tips-for-exporting-and-viewing-the-audit-log).
 
@@ -118,7 +118,7 @@ Prima di iniziare la ricerca nel log di controllo, tenere presente quanto segue.
   |Microsoft Teams|![Segno di spunta](../media/checkmark.png)||
   |Power Apps||![Segno di spunta](../media/checkmark.png)|
   |Power BI|![Segno di spunta](../media/checkmark.png)||
-  |Centro sicurezza e conformità|![Segno di spunta](../media/checkmark.png)||
+  |Centro conformità Microsoft 365|![Segno di spunta](../media/checkmark.png)||
   |Etichette di riservatezza||![Segno di spunta](../media/checkmark.png)|
   |SharePoint Online e OneDrive for Business|![Segno di spunta](../media/checkmark.png)||
   |Workplace Analytics|![Segno di spunta](../media/checkmark.png)||
@@ -132,7 +132,7 @@ Prima di iniziare la ricerca nel log di controllo, tenere presente quanto segue.
 
 ## <a name="search-the-audit-log"></a>Eseguire ricerche nel log di controllo
 
-Ecco il processo per la ricerca nel log di controllo in Office 365.
+Ecco la procedura per la ricerca nel log di audit in Microsoft 365.
 
 [Passaggio 1: Eseguire una ricerca nel log di controllo](#step-1-run-an-audit-log-search)
 
@@ -144,48 +144,42 @@ Ecco il processo per la ricerca nel log di controllo in Office 365.
 
 ### <a name="step-1-run-an-audit-log-search"></a>Passaggio 1: Eseguire una ricerca nel log di controllo
 
-1. Passare a [https://protection.office.com](https://protection.office.com).
+1. Andare su <https://compliance.microsoft.com> ed eseguire l'accesso.
 
     > [!TIP]
-    > Usare una sessione di esplorazione privata (invece di una normale) per accedere al Centro sicurezza e conformità per impedire l'uso delle credenziali con cui si è attualmente connessi. Per aprire una sessione InPrivate Browsing in Internet Explorer o Microsoft Edge, premere CTRL+MAIUSC+P. Per aprire una sessione di esplorazione privata in Google Chrome (chiamata finestra di navigazione in incognito), premere CTRL+MAIUSC+N.
+    > Usare una sessione di esplorazione privata (invece di una normale) per accedere al Centro conformità Microsoft 365 per impedire l'uso delle credenziali con cui si è connessi al momento. Per aprire una sessione InPrivate Browsing in Internet Explorer o Microsoft Edge, premere CTRL+MAIUSC+P. Per aprire una sessione di esplorazione privata in Google Chrome (chiamata finestra di navigazione in incognito), premere CTRL+MAIUSC+N.
 
-2. Accedere usando l'account aziendale o dell'istituto di istruzione.
+2. Nel riquadro sinistro del Centro conformità Microsoft 365, fare clic su **Audit**.
 
-3. Nel riquadro sinistro del Centro sicurezza e conformità, fare clic su **Cerca**, quindi su **Ricerca log di controllo**.
+    Viene visualizzata la pagina **Audit**.
 
-    Viene visualizzata la pagina **Ricerca log di controllo**.
-
-    ![Configurare i criteri, quindi fare clic su Cerca per eseguire un report](../media/8639d09c-2843-44e4-8b4b-9f45974ff7f1.png)
+    ![Configurare i criteri, quindi fare clic su Cerca per eseguire un report](../media/AuditLogSearchPage1.png)
 
     > [!NOTE]
-    > È necessario attivare la registrazione di controllo per poter eseguire una ricerca nel log di controllo. Se è visualizzato il collegamento **Avviare la registrazione delle attività di utenti e amministratori**, fare clic su di esso per attivare il controllo. Se questo collegamento non è visualizzato, il controllo è già stato attivato per l'organizzazione.
+    > Se viene visualizzato il collegamento **Avviare la registrazione delle attività di utenti e amministratori**, fare clic su questo per attivare il controllo. Se questo collegamento non è visualizzato, il controllo è attivato per l'organizzazione.
 
-4. Configurare i criteri di ricerca seguenti: 
-
-   1. **Attività**: fare clic sull'elenco a discesa per visualizzare le attività che è possibile cercare. Le attività di utenti e amministratori sono organizzate in gruppi di attività correlate. È possibile selezionare attività specifiche oppure è possibile fare clic sul nome del gruppo di attività per selezionare tutte le attività del gruppo. È anche possibile fare clic su un'attività selezionata per annullare la selezione. Dopo aver eseguito la ricerca, vengono visualizzate solo le voci del log di controllo per le attività selezionate. Se si seleziona **Visualizza i risultati per tutte le attività**, vengono visualizzati i risultati per tutte le attività eseguite dall'utente o dal gruppo di utenti selezionato.
-
-      Nel log di controllo vengono registrate più di 100 attività di utenti e amministratori. Fare clic sulla scheda **Attività controllate** in questo articolo per visualizzare le descrizioni delle singole attività per i vari servizi.
+3. Nella scheda **Ricerca** configurare i criteri di ricerca seguenti:
 
    1. **Data inizio** e **Data fine**: per impostazione predefinita, sono selezionati gli ultimi sette giorni. Selezionare un intervallo di date e ore per visualizzare gli eventi che si sono verificati in quel periodo. La data e l'ora vengono visualizzati nel fuso orario locale. L'intervallo massimo che è possibile specificare è 90 giorni. Se l'intervallo di date selezionato è maggiore di 90 giorni, verrà visualizzato un errore.
 
-      > [!TIP]
-      > Se si usa l'intervallo di date massimo di 90 giorni, selezionare l'ora corrente per **Data inizio**. In caso contrario, verrà visualizzato un errore che indica che la data di inizio è precedente alla data di fine. Se è stato attivato il controllo negli ultimi 90 giorni, l'intervallo di date massimo non può iniziare prima della data in cui il controllo è stato attivato.
+    > [!TIP]
+    > Se si usa l'intervallo di date massimo di 90 giorni, selezionare l'ora corrente per **Data inizio**. In caso contrario, verrà visualizzato un errore che indica che la data di inizio è precedente alla data di fine. Se è stato attivato il controllo negli ultimi 90 giorni, l'intervallo di date massimo non può iniziare prima della data in cui il controllo è stato attivato.
 
-   1. **Utenti**: fare clic in questa casella e quindi selezionare uno o più utenti per cui visualizzare i risultati della ricerca. Nell'elenco di risultati vengono visualizzate le voci del log di controllo per l'attività selezionata eseguita dagli utenti specificati in questa casella. Lasciare la casella vuota per restituire le voci per tutti gli utenti (e gli account del servizio) nell'organizzazione.
+   2. **Attività**: fare clic sull'elenco a discesa per visualizzare le attività che è possibile cercare. Le attività di utenti e amministratori sono organizzate in gruppi di attività correlate. È possibile selezionare attività specifiche oppure è possibile fare clic sul nome del gruppo di attività per selezionare tutte le attività del gruppo. È anche possibile fare clic su un'attività selezionata per annullare la selezione. Dopo aver eseguito la ricerca, vengono visualizzate solo le voci del log di controllo per le attività selezionate. Se si seleziona **Visualizza i risultati per tutte le attività**, vengono visualizzati i risultati per tutte le attività eseguite dall'utente o dal gruppo di utenti selezionato.<br/><br/>Nel log di controllo vengono registrate più di 100 attività di utenti e amministratori. Fare clic sulla scheda **Attività controllate** in questo articolo per visualizzare le descrizioni delle singole attività per i vari servizi.
 
-   1. **File, cartella o sito**: digitare alcuni o tutti i nomi di file o cartelle per cercare l'attività relativa al file o alla cartella che contiene la parola chiave specificata. È anche possibile specificare un URL di un file o una cartella. Se si utilizza un URL, assicurarsi di digitare il percorso URL completo oppure, se si digita solo una parte dell'URL, di non includere spazi o caratteri speciali.
+   3. **Utenti**: fare clic in questa casella e quindi selezionare uno o più utenti per cui visualizzare i risultati della ricerca. Nell'elenco di risultati vengono visualizzate le voci del log di controllo per l'attività selezionata eseguita dagli utenti specificati in questa casella. Lasciare la casella vuota per restituire le voci per tutti gli utenti (e gli account del servizio) nell'organizzazione.
 
-      Lasciare questa casella vuota per restituire le voci per tutti i file e le cartelle nell'organizzazione.
+   4. **File, cartella o sito**: digitare alcuni o tutti i nomi di file o cartelle per cercare l'attività relativa al file o alla cartella che contiene la parola chiave specificata. È anche possibile specificare un URL di un file o una cartella. Se si utilizza un URL, assicurarsi di digitare il percorso URL completo oppure, se si digita solo una parte dell'URL, di non includere spazi o caratteri speciali.<br/><br/>Lasciare questa casella vuota per restituire le voci per tutti i file e le cartelle nell'organizzazione.
 
-      > [!TIP]
-      >
-      > - Se si stanno cercando tutte le attività correlate a un **sito**, aggiungere il simbolo jolly (\*) dopo l'URL per restituire tutte le voci per quel sito; ad esempio, `"https://contoso-my.sharepoint.com/personal*"`.
-      >
-      > - Se si stanno cercando tutte le attività correlate a un **file**, aggiungere il simbolo jolly (\*) prima del nome file per restituire tutte le voci per quel file; ad esempio, `"*Customer_Profitability_Sample.csv"`.
+    > [!TIP]
+    >
+    > - Se si stanno cercando tutte le attività correlate a un **sito**, aggiungere il simbolo jolly (\*) dopo l'URL per restituire tutte le voci per quel sito; ad esempio, `"https://contoso-my.sharepoint.com/personal*"`.
+    >
+    > - Se si stanno cercando tutte le attività correlate a un **file**, aggiungere il simbolo jolly (\*) prima del nome file per restituire tutte le voci per quel file; ad esempio, `"*Customer_Profitability_Sample.csv"`.
 
-5. Fare clic su **Cerca** per eseguire la ricerca usando i criteri di ricerca.
+4. Fare clic su **Cerca** per eseguire la ricerca usando i criteri di ricerca.
 
-   I risultati della ricerca vengono caricati e, dopo alcuni istanti, vengono visualizzati in **Risultati**. Al termine della ricerca, viene visualizzato il numero di risultati trovati. Nel riquadro **Risultati** verranno visualizzati al massimo 5.000 eventi in incrementi di 150 eventi. Se sono presenti più di 5.000 eventi che soddisfano i criteri di ricerca, verranno visualizzati i 5.000 eventi più recenti.
+   I risultati della ricerca vengono caricati e dopo alcuni istanti vengono visualizzati in una nuova pagina. Al termine della ricerca, viene visualizzato il numero di risultati trovati. Verrà visualizzato un massimo di 5.000 eventi in incrementi di 150 eventi. Se sono presenti più di 5.000 eventi che soddisfano i criteri di ricerca, verranno visualizzati i 5.000 eventi più recenti.
 
    ![Il numero di risultati viene visualizzato al termine della ricerca](../media/986216f1-ca2f-4747-9480-e232b5bf094c.png)
 
@@ -869,7 +863,7 @@ La tabella seguente elenca le attività degli utenti e degli amministratori di Y
 
 ### <a name="microsoft-power-automate-activities"></a>Attività di Microsoft Power Automate
 
-È possibile eseguire una ricerca nel log di controllo per le attività in Power Automate (prima denominato Microsoft Flow). Queste attività includono la creazione, la modifica e l'eliminazione di flussi e la modifica delle autorizzazioni di flusso. Per informazioni sul controllo delle attività di Power Automate, vedere il blog [Eventi di controllo di Microsoft Flow disponibili nel Centro sicurezza e conformità](https://flow.microsoft.com/blog/security-and-compliance-center).
+È possibile eseguire una ricerca nel log di controllo per le attività in Power Automate (prima denominato Microsoft Flow). Queste attività includono la creazione, la modifica e l'eliminazione di flussi e la modifica delle autorizzazioni di flusso. Per informazioni sul controllo delle attività di Power Automate, vedere il blog [Eventi di controllo di Microsoft Flow disponibili nel Centro conformità Microsoft 365](https://flow.microsoft.com/blog/security-and-compliance-center).
 
 ### <a name="microsoft-power-apps-activities"></a>Attività di Microsoft Power Apps
 
@@ -1072,7 +1066,7 @@ Per un elenco e una descrizione delle attività controllate, vedere la sezione [
 
 **Quanto tempo è necessario affinché un record di controllo sia disponibile dopo il verificarsi di un evento?**
 
-La maggior parte dei dati di controllo è disponibile nel giro di 30 minuti ma la visualizzazione della voce del registro di controllo corrispondente nei risultati della ricerca può richiedere fino a 24 ore. Vedere la tabella nella sezione [Requisiti per la ricerca nel log di controllo](#requirements-to-search-the-audit-log) di questo articolo, che mostra il tempo necessario affinché gli eventi dei diversi servizi divengano disponibili.
+La maggior parte dei dati di controllo è disponibile nel giro di 30 minuti ma la visualizzazione della voce del registro di controllo corrispondente nei risultati della ricerca può richiedere fino a 24 ore. Vedere la tabella nella sezione [Prima di cercare il log di audit](#before-you-search-the-audit-log) di questo articolo, che mostra il tempo necessario affinché gli eventi dei diversi servizi divengano disponibili.
 
 **Per quanto tempo vengono conservati i record di controllo?**
 
@@ -1088,7 +1082,7 @@ No. Questi sono gli unici due modi per ottenere dati dal servizio di controllo.
 
 **È necessario abilitare singolarmente il controllo in ogni servizio di cui si vogliono acquisire i log di controllo?**
 
-Nella maggior parte dei servizi, il controllo è abilitato per impostazione predefinita dopo l'attivazione del controllo per l'organizzazione (come descritto nella sezione [Requisiti per la ricerca nel log di controllo](#requirements-to-search-the-audit-log) di questo articolo).
+Nella maggior parte dei servizi, il controllo è abilitato per impostazione predefinita dopo l'attivazione del controllo per l'organizzazione (come descritto nella sezione [Prima di cercare il log di audit](#before-you-search-the-audit-log) di questo articolo).
 
 **Il servizio di controllo supporta la deduplicazione dei record?**
 

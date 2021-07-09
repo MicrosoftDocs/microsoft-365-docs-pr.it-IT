@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: f74972bcd5d0ddaab58d82b72a55991fda44e3b1
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: 6aa709fe4534bf049c6f8c097bc4bd85a9d6793b
+ms.sourcegitcommit: 93eeaefc0d509c75e4c2210029155298ecca7583
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52583545"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53347908"
 ---
 # <a name="aadspnsignineventsbeta"></a>AADSpnSignInEventsBeta
 
@@ -48,27 +48,27 @@ Per informazioni sulle altre tabelle nello schema per Ricerca avanzata vedere [l
 
 
 
-| Nome colonna     | Tipo di dati | Descrizione   |
-| ----- | ----- | ---- |
-| `Timestamp` | datetime      | Data e ora in cui è stato generato il record                                                                                                     |
-| `Application`          | stringa        | Applicazione che ha eseguito l'azione registrata                                                                                                   |
-| `ApplicationId`        | stringa        | Identificatore univoco dell'applicazione                                                                                                           |
-| `IsManagedIdentity`    | boolean       | Indica se l'accesso è stato avviato da un'identità gestita                                                                               |
-| `ErrorCode`            | int        | Contiene il codice di errore se si verifica un errore di accesso. Per trovare una descrizione di un codice di errore specifico, visitare <https://aka.ms/AADsigninsErrorCodes> . |
-| `CorrelationId`        | stringa        | Identificatore univoco dell'evento di accesso                                                                                                          |
-| `ServicePrincipalName` | stringa        | Nome dell'entità servizio che ha avviato l'accesso                                                                                        |
-| `ServicePrincipalId`   | stringa        | Identificatore univoco dell'entità servizio che ha avviato l'accesso                                                                           |
-| `ResourceDisplayName`  | stringa        | Nome visualizzato della risorsa a cui si accede                                                                                                           |
-| `ResourceId`           | stringa        | Identificatore univoco della risorsa a cui si accede                                                                                                      |
-| `ResourceTenantId`     | stringa        | Identificatore univoco del tenant della risorsa a cui si accede                                                                                        |
-| `IPAddress`            | stringa        | Indirizzo IP assegnato all'endpoint e utilizzato durante le comunicazioni di rete correlate                                                              |
-| `Country`          | stringa        | Codice di due lettere che indica il paese in cui l'indirizzo IP del client è geolocale                                                                |
-| `State`                | stringa        | Stato in cui si è verificato l'accesso, se disponibile                                                                                                  |
-| `City`                 | stringa        | Città in cui si trova l'utente dell'account                                                                                                          |
-| `Latitude`             | stringa        | Coordinate da nord a sud della posizione di accesso                                                                                          |
-| `Longitude`            | stringa        | Coordinate da est a ovest della posizione di accesso                                                                                            |
-| `RequestId`            | stringa        | Identificatore univoco della richiesta                                                                                                                |
-|`ReportId` | stringa | Identificatore univoco dell'evento | 
+| Nome colonna | Tipo di dati | Descrizione |
+|-----|-----|-----|
+| `Timestamp` | datetime | Data e ora in cui è stato generato il record |
+| `Application` | stringa | Applicazione che ha eseguito l'azione registrata |
+| `ApplicationId` | stringa | Identificatore univoco dell'applicazione |
+| `IsManagedIdentity`    | boolean       | Indica se l'accesso è stato avviato da un'identità gestita |
+| `ErrorCode`    | int | Contiene il codice di errore se si verifica un errore di accesso. Per trovare una descrizione di un codice di errore specifico, visitare <https://aka.ms/AADsigninsErrorCodes> . |
+| `CorrelationId`        | stringa        | Identificatore univoco dell'evento di accesso |
+| `ServicePrincipalName` | stringa        | Nome dell'entità servizio che ha avviato l'accesso  |
+| `ServicePrincipalId`   | stringa        | Identificatore univoco dell'entità servizio che ha avviato l'accesso  |
+| `ResourceDisplayName`  | stringa        | Nome visualizzato della risorsa a cui si accede  |
+| `ResourceId`           | stringa        | Identificatore univoco della risorsa a cui si accede  |
+| `ResourceTenantId`     | stringa        | Identificatore univoco del tenant della risorsa a cui si accede |
+| `IPAddress`            | stringa        | Indirizzo IP assegnato all'endpoint e utilizzato durante le comunicazioni di rete correlate  |
+| `Country`          | stringa        | Codice di due lettere che indica il paese in cui l'indirizzo IP del client è geolocale |
+| `State`                | stringa        | Stato in cui si è verificato l'accesso, se disponibile |
+| `City`                 | stringa        | Città in cui si trova l'utente dell'account  |
+| `Latitude`             | stringa        | Coordinate da nord a sud della posizione di accesso |
+| `Longitude`            | stringa        | Coordinate da est a ovest della posizione di accesso |
+| `RequestId`            | stringa        | Identificatore univoco della richiesta |
+|`ReportId` | stringa | Identificatore univoco dell'evento |
 
  
 
