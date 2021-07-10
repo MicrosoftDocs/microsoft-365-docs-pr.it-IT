@@ -1,5 +1,5 @@
 ---
-title: Supporto per Microsoft Managed Desktop
+title: Supporto amministratori
 description: Descrive la gestione degli eventi imprevisti proattiva e reattiva per Microsoft Managed Desktop.
 keywords: Microsoft Managed Desktop, Microsoft 365, servizio, documentazione
 ms.service: m365-md
@@ -9,14 +9,14 @@ manager: laurawi
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 90787ec28aa2c421df50757fc29bf20b2b5d55f7
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 1c4d94fb89aef76617ebd0995a6849de428afea4
+ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52925504"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53362475"
 ---
-# <a name="support-for-microsoft-managed-desktop"></a>Supporto per Microsoft Managed Desktop
+# <a name="admin-support"></a>Supporto amministratori
 
 Microsoft fornirà la gestione proattiva e reattiva degli incidenti. Microsoft tiene traccia degli eventi imprevisti nel Microsoft Managed Desktop di amministrazione. Sono classificati in base alle [definizioni di gravità](../working-with-managed-desktop/admin-support.md#sev).
 
@@ -38,7 +38,7 @@ Prodotti supportati:
 - Windows 10 con Microsoft Defender for Endpoint
 - Queste Microsoft 365 Apps for enterprise app: Outlook, Word, PowerPoint, Excel, Skype for Business client, Microsoft Teams 
 - Microsoft Store per le aziende 
-- OneDrive for Business client 
+- OneDrive client 
 
 Dettagli supporto:
 

@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 description: Informazioni su come configurare un Exchange Server locale per l'utilizzo dell'autenticazione moderna ibrida (HMA, Hybrid Modern Authentication), offrendo un'autenticazione e un'autorizzazione degli utenti più sicure.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d30d1b2b14efd66d973e9bf6d45b970d7af681bc
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 21ffec620ac3e262679fc0e2385f6f0f1b31933b
+ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52841631"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53362259"
 ---
 # <a name="how-to-configure-exchange-server-on-premises-to-use-hybrid-modern-authentication"></a>Come configurare Exchange Server locale per utilizzare l'autenticazione moderna ibrida
 
@@ -171,7 +171,7 @@ Set-OrganizationConfig -OAuth2ClientProfileEnabled $true
 
 ## <a name="verify"></a>Verificare
 
-Dopo aver abilitato HMA, l'accesso successivo di un client userà il nuovo flusso di autenticazione. Tieni presente che l'attivazione di HMA non attiverà una riautenticazione per alcun client. I client eserciteranno nuovamente l'autenticazione in base alla durata dei token di autenticazione e/o dei certificati di cui dispongono.
+Dopo aver abilitato HMA, l'accesso successivo di un client userà il nuovo flusso di autenticazione. Tieni presente che l'attivazione di HMA non attiverà una riautenticazione per alcun client e potrebbe essere necessario un po' Exchange per selezionare le nuove impostazioni.
 
 È inoltre consigliabile tenere premuto CTRL mentre si fa clic con il pulsante destro del mouse sull'icona del client Outlook (anche nella barra delle notifiche di Windows) e fare clic su "Stato connessione". Cercare l'indirizzo SMTP del client rispetto a un tipo "Authn" di "Bearer", che rappresenta il token del portatore \* utilizzato in OAuth.
 

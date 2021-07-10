@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Riepilogo: informazioni Azure Active Directory aggiuntive per il passaggio da Microsoft Cloud Germania (Microsoft Cloud Deutschland) a servizi Office 365 nella nuova area data center tedesca.'
-ms.openlocfilehash: 1e3871dc5a8a8a9ecbef29df21431aa3707871d0
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 0e7abd68945a9b685a33c120ff1e92fda62b2c56
+ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50923851"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53362727"
 ---
 # <a name="additional-azure-active-directory-information-for-the-migration-from-microsoft-cloud-deutschland"></a>Ulteriori Azure Active Directory per la migrazione da Microsoft Cloud Deutschland
 
@@ -80,6 +80,10 @@ Un'applicazione può essere una delle seguenti:
 **Informazioni sulle applicazioni pubblicate**
 
 Se si pubblica un'applicazione disponibile per gli utenti esterni al tenant, potrebbe essere necessario modificare la registrazione dell'applicazione per garantire la continuità. Gli altri tenant che usano l'applicazione possono essere spostati in un momento diverso rispetto al tenant. Per garantire che non perdano mai l'accesso all'applicazione, dovrai acconsentire alla sincronizzazione dell'app da Azure Germania a Azure pubblico.
+
+**Che dire dell'aggiunta di nuove applicazioni multi-tenant durante la migrazione?**
+
+Se si desidera utilizzare una nuova applicazione pubblicata da un'altra organizzazione (applicazione multi-tenant), sarà possibile aggiungere tale applicazione durante il processo di migrazione (fasi da 2 a fase 9).  È possibile eseguire questa attività quando l'organizzazione completa la fase 9 ed è completamente passata all'istanza pubblica di Azure.
 
 ## <a name="additional-considerations"></a>Considerazioni aggiuntive
 

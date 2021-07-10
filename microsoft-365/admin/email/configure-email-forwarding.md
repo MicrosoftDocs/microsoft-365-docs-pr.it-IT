@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: ab5eb117-0f22-4fa7-a662-3a6bdb0add74
 description: L'inoltro della posta elettronica consente di inoltrare i messaggi di posta elettronica inviati a una Microsoft 365 utente a un'altra cassetta postale all'interno o all'esterno dell'organizzazione.
-ms.openlocfilehash: e0043fe75eefe224c63fd23f352d4bd3ddf2c326
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 9d645c2b36bdac2ab53dcb8af4ff6ebdbd0ee601
+ms.sourcegitcommit: 7dc3b4dec05299abb4290a6e3d1ebe0fdc622ed7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53228052"
+ms.lasthandoff: 07/10/2021
+ms.locfileid: "53363792"
 ---
 # <a name="configure-email-forwarding-in-microsoft-365"></a>Configurare l'inoltro della posta elettronica in Microsoft 365
 
@@ -49,6 +49,8 @@ Prima di configurare l'inoltro della posta elettronica, tenere presente quanto s
 
 Per eseguire questa Microsoft 365, è necessario essere un amministratore Exchange o un amministratore globale. Per ulteriori informazioni, vedere l'argomento [Informazioni sui ruoli di amministratore.](../add-users/about-admin-roles.md)
 
+::: moniker range="o365-worldwide"
+
 1. Nell'interfaccia di amministrazione passare alla **pagina Utenti** \> **[utenti](https://go.microsoft.com/fwlink/p/?linkid=834822)** attivi.
 
 2. Selezionare il nome dell'utente di cui si desidera inoltrare la posta elettronica, quindi aprire la pagina delle proprietà.
@@ -59,8 +61,8 @@ Per eseguire questa Microsoft 365, è necessario essere un amministratore Exchan
 
     **Per inoltrare a più indirizzi di** posta elettronica, è possibile chiedere all'utente di configurare una regola in Outlook inoltrare agli indirizzi. 
     
-    1.  Aprire **Regole home** di Outlook  >    >   **>** **Selezionare Gestisci regole & avvisi**
-    1. Selezionare **Nuova regola** Selezionare Applica regola al messaggio ricevuto che si trova nella parte inferiore dell'elenco, quindi fare clic su  >   **Avanti.**
+    1.  Aprire **Regole home** di Outlook >  > **>** **Selezionare Gestisci regole & avvisi**  
+    1. Selezionare **Nuova regola** Selezionare Applica regola al messaggio ricevuto che si trova nella parte inferiore dell'elenco, quindi fare clic su >  **Avanti.**
     1. Fare **clic su Sì** quando richiesto Questa regola verrà applicata a ogni messaggio ricevuto. 
     1. Nell'elenco successivo selezionare le azioni **reindirizzarlo a utenti o gruppi pubblici** e interrompere **l'elaborazione di altre regole**
     1. Fare clic sulla frase sottolineata **persone o gruppi pubblici** nella parte inferiore della finestra.

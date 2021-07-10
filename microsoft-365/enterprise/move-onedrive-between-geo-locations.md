@@ -15,12 +15,12 @@ ms.collection:
 - SPO_Content
 localization_priority: Normal
 description: Informazioni sullo spostamento di un OneDrive in una posizione geografica diversa, inclusa la pianificazione degli spostamenti del sito e la comunicazione delle aspettative agli utenti.
-ms.openlocfilehash: 59b3fb47fd195967e7af056c7a71fb4e736471d1
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 9e75c8e4102f82d4ab6e0f99ea26e1c0ad8b4bab
+ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46690929"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53362247"
 ---
 # <a name="move-a-onedrive-site-to-a-different-geo-location"></a>Spostare un sito OneDrive in un'altra posizione geografica 
 
@@ -28,7 +28,7 @@ Con OneDrive geo, puoi spostare la posizione geografica di un OneDrive utente in
 
 Il servizio OneDrive usa i blob di Azure Archiviazione per archiviare il contenuto. Il Archiviazione BLOB associato al OneDrive dell'utente verrà spostato dall'origine alla posizione geografica di destinazione entro 40 giorni dalla disponibilità dell'OneDrive di destinazione per l'utente. L'accesso al OneDrive dell'utente verrà ripristinato non appena sarà disponibile OneDrive destinazione.
 
-Durante il periodo dello spostamento geografico di OneDrive (circa 2-6 ore), OneDrive dell'utente è in sola lettura. L'utente può comunque accedere ai propri file attraverso il client di sincronizzazione di OneDrive oppure il sito OneDrive in SharePoint Online. Al termine dello spostamento geografico di OneDrive, l'utente verrà automaticamente connesso al proprio OneDrive nella posizione geografica di destinazione quando accederà a OneDrive dall'icona di avvio dell'app di Microsoft 365. Il client di sincronizzazione inizierà automaticamente la sincronizzazione dalla nuova posizione.
+Durante OneDrive finestra di spostamento geografico (circa 2-6 ore) la OneDrive dell'utente è impostata su sola lettura. L'utente può comunque accedere ai propri file tramite l'app sincronizzazione OneDrive o il sito OneDrive in SharePoint Online. Dopo OneDrive spostamento geografico, l'utente verrà automaticamente connesso al proprio OneDrive nella posizione geografica di destinazione quando accede a OneDrive nell'icona di avvio delle app Microsoft 365. L'app di sincronizzazione inizierà automaticamente la sincronizzazione dalla nuova posizione.
 
 Le procedure descritte in questo articolo richiedono il [modulo PowerShell di Microsoft SharePoint Online](https://www.microsoft.com/download/details.aspx?id=35588).
 
@@ -118,13 +118,13 @@ Dove _UserPrincipalName_ è il nome dell'entità utente (UPN) dell'utente titola
 
 È possibile controllare lo stato di un OneDrive geo in o fuori dalla posizione geografica a cui si è connessi utilizzando il cmdlet Get-SPOUserAndContentMoveState.
 
-Gli stati dello spostamento sono descritti nella seguente tabella.
+Gli stati di trasferimento sono descritti nella tabella seguente.
 
 <table>
 <thead>
 <tr class="header">
-<th align="left"><strong>Stato</strong></th>
-<th align="left"><strong>Descrizione</strong></th>
+<th align="left">Stato</th>
+<th align="left">Descrizione</th>
 </tr>
 </thead>
 <tbody>
@@ -161,7 +161,7 @@ Per trovare lo stato di tutti gli spostamenti in ingresso o in uscita dalla posi
 
 Gli utenti di OneDrive dovrebbero riscontrare un'interruzione minima del proprio OneDrive durante lo spostamento a un'altra posizione geografica. A parte un breve periodo di disponibilità in sola lettura di OneDrive, i collegamenti e le autorizzazioni esistenti continueranno a funzionare come previsto al termine dello spostamento.
 
-### <a name="onedrive-for-business"></a>OneDrive for Business
+### <a name="users-onedrive"></a>Informazioni dell'OneDrive
 
 Mentre lo spostamento è in corso, la OneDrive dell'utente è impostata su sola lettura. Una volta completato lo spostamento, l'utente viene indirizzato al OneDrive nella nuova posizione geografica quando passa OneDrive'icona di avvio delle app di Microsoft 365 o a un Web browser.
 
@@ -169,11 +169,11 @@ Mentre lo spostamento è in corso, la OneDrive dell'utente è impostata su sola 
 
 Gli utenti con autorizzazioni OneDrive contenuto continueranno ad avere accesso al contenuto durante lo spostamento e dopo il completamento.
 
-### <a name="onedrive-sync-client"></a>Client di sincronizzazione di OneDrive 
+### <a name="onedrive-sync-app"></a>sincronizzazione OneDrive app 
 
-Il client di sincronizzazione di OneDrive rileverà automaticamente e trasferirà facilmente la sincronizzazione alla nuova posizione di OneDrive al termine del relativo spostamento geografico. L'utente non deve accedere di nuovo o eseguire altre operazioni. (È richiesta la versione 17.3.6943.0625 o successiva del client di sincronizzazione.)
+L sincronizzazione OneDrive app rileverà automaticamente e trasferirà senza problemi la sincronizzazione nella nuova posizione OneDrive una volta completato OneDrive spostamento geografico. L'utente non deve eseguire di nuovo l'accesso o eseguire altre azioni.  È necessaria la versione 17.3.6943.0625 o successiva dell'app di sincronizzazione.
 
-Se un utente aggiorna un file mentre lo spostamento geografico di OneDrive è in corso, il client di sincronizzazione lo informerà che i caricamenti file sono in sospeso poiché lo spostamento è in corso.
+Se un utente aggiorna un file mentre è OneDrive lo spostamento geografico, l'app di sincronizzazione informerà l'utente che i caricamenti di file sono in sospeso mentre lo spostamento è in corso.
 
 ### <a name="sharing-links"></a>Condivisione dei collegamenti 
 
@@ -193,7 +193,7 @@ Il client win32 di OneNote e l'app UWP (Universal Windows Platform) rileveranno 
 
 Al completamento dello spostamento geografico di OneDrive, gli utenti avranno accesso ai propri file di OneDrive nell'app Teams. Inoltre, i file condivisi tramite la chat di Teams dal proprio OneDrive, prima dello spostamento geografico, continueranno a funzionare anche al termine dello spostamento.
 
-### <a name="onedrive-for-business-mobile-app-ios"></a>App Mobile di OneDrive for Business (iOS) 
+### <a name="onedrive-mobile-app-ios"></a>OneDrive App per dispositivi mobili (iOS) 
 
 Al termine dello spostamento geografico di OneDrive, l'utente deve uscire e accedere di nuovo all'app Mobile per iOS per eseguire la sincronizzazione con la nuova posizione di OneDrive.
 

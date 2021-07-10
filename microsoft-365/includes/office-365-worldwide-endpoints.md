@@ -123,7 +123,7 @@ ID | Categoria | ER | Addresses | Porte
 148 | Predefiniti<BR>Obbligatorio | No | `cdnprod.myanalytics.microsoft.com, myanalytics.microsoft.com, myanalytics-gcc.microsoft.com` | **TCP:** 443, 80
 149 | Predefiniti<BR>Obbligatorio | No | `workplaceanalytics.cdn.office.net` | **TCP:** 443, 80
 150 | Predefiniti<BR>Facoltativo<BR>**Note:** il blocco di questi endpoint avrà effetto sulla possibilità di accedere alle caratteristiche di distribuzione e gestione di Office 365 ProPlus tramite il portale di. | No | `*.officeconfig.msocdn.com` | **TCP:** 443
-152 | Predefiniti<BR>Facoltativo<BR>**Notes:** questi endpoint abilitano la funzionalità degli script di Office nei client di Office disponibili tramite la scheda automatizza. Questa caratteristica può essere disabilitata anche attraverso il portale di amministrazione di Office 365. | No | `*.microsoftusercontent.com` | **TCP:** 443
+152 | Predefiniti<BR>Facoltativo<BR>**Note:** questi endpoint abilitano la funzionalità di Office Scripts nei client di Office disponibili tramite la scheda Automatizza. Questa funzionalità può essere disabilitata anche attraverso l'interfaccia di amministrazione di Microsoft 365. | No | `*.microsoftusercontent.com` | **TCP:** 443
 153 | Predefiniti<BR>Obbligatorio | No | `*.azure-apim.net, *.flow.microsoft.com, *.powerapps.com` | **TCP:** 443
 156 | Predefiniti<BR>Obbligatorio | No | `activity.windows.com` | **TCP:** 443
 157 | Predefiniti<BR>Obbligatorio | No | `ocsp.int-x3.letsencrypt.org` | **TCP:** 80

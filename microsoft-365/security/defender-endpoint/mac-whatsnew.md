@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: fc162939e12f0bd55da5847c6bc1bda4b3761fd7
-ms.sourcegitcommit: 8c6a5db0dab99a82a69dd8a0a7c56af1cb825931
+ms.openlocfilehash: 841f22421ac81ba447dad70a68c4c7bc95605b16
+ms.sourcegitcommit: 7dc3b4dec05299abb4290a6e3d1ebe0fdc622ed7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "53276906"
+ms.lasthandoff: 07/10/2021
+ms.locfileid: "53363896"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-mac"></a>Novità di Microsoft Defender per Endpoint su Mac
 
@@ -40,6 +40,7 @@ ms.locfileid: "53276906"
 
 ## <a name="1013420-20121051134200"></a>101.34.20 (20.121051.13420.0)
 
+- [Il controllo dei dispositivi per macOS](mac-device-control-overview.md) è ora disponibile in generale
 - È stato risolto un problema a causa del quale non è stato possibile eseguire un'analisi rapida dal menu di stato in macOS 11 (Big Sur)
 - Altre correzioni di bug
 

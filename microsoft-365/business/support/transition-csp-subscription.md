@@ -1,6 +1,6 @@
 ---
 title: Transizione di un abbonamento Microsoft 365 Business CSP
-description: Informazioni su come eseguire la transizione di una Microsoft 365 Business CSP dall'anteprima alla disponibilità generale.
+description: Informazioni su come eseguire la transizione di un Microsoft 365 business CSP dall'anteprima alla disponibilità generale.
 author: jasongroce
 f1.keywords:
 - NOCSH
@@ -15,12 +15,12 @@ localization_priority: Normal
 audience: microsoft-business
 keywords: Microsoft 365 Business, Microsoft 365, SMB, abbonamento CSP transizione
 ms.date: 11/01/2017
-ms.openlocfilehash: 3f6c71edb50cc3c5509e61a83efb64185c10648d
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 47b65b2de9db0fd27e29272937bab2041eb67300
+ms.sourcegitcommit: 7dc3b4dec05299abb4290a6e3d1ebe0fdc622ed7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52925004"
+ms.lasthandoff: 07/10/2021
+ms.locfileid: "53363820"
 ---
 # <a name="transition-a-microsoft-365-business-csp-subscription"></a>Transizione di un abbonamento Microsoft 365 Business CSP
 
@@ -36,7 +36,7 @@ Se hai un abbonamento Microsoft 365 Business Preview CSP, segui questa guida per
     ![Abbonamenti dei clienti nel Centro per i partner](../../media/pc_customer_subscriptions_1.png)
     
 3. Nella pagina Abbonamenti **della** società selezionare **Aggiungi sottoscrizione.**
-4. Nella pagina **Nuova sottoscrizione** selezionare **Small business** e quindi **selezionare** Microsoft 365 Business dall'elenco.
+4. Nella pagina **Nuova sottoscrizione** selezionare **Small Business** e quindi selezionare Microsoft 365 **Business dall'elenco.**
 5. Aggiungi il numero di licenze, quindi seleziona **Successivo: Revisione** per esaminare l'abbonamento, poi seleziona **Inoltra**.
 
     ![Esaminare la nuova sottoscrizione a Microsoft 365 Business](../../media/pc_customer_reviewnewsubscription.png)
@@ -44,20 +44,20 @@ Se hai un abbonamento Microsoft 365 Business Preview CSP, segui questa guida per
     **Sottoscrizioni basate su licenza** mostrerà **Microsoft 365 Business Preview** e **Microsoft 365 Business**. La sottoscrizione di anteprima verrà sospesa successivamente.
 
 6. Seleziona **Microsoft 365 Business Preview**.
-7. Nella pagina **Microsoft 365 Business Anteprima** selezionare **Sospeso per sospendere** la sottoscrizione di anteprima.
+7. Nella pagina **Microsoft 365 Business Preview** seleziona Sospeso **per** sospendere la sottoscrizione di anteprima.
 
     ![Sospendere la nuova sottoscrizione a Microsoft 365 Business](../../media/pc_customer_m365bpreview_suspend.png)
 
 8. Seleziona **Invia** per confermare.
 
-    Nella pagina **Sottoscrizioni** verificare che lo stato dell Microsoft 365 Business **Preview** sia **Sospeso.**
+    Nella pagina **Sottoscrizioni** verificare che lo stato Microsoft 365 **Business Preview** sia **Sospeso.**
 
     ![Conferma che lo stato della sottoscrizione dell'anteprima sia sospeso](../../media/pc_customer_m365bpreview_suspend_confirm.png)
 
 9. Facoltativamente, puoi convalidare il contratto di licenza. A tale scopo, attieniti alla seguente procedura:
     1. Seleziona **Utenti e licenze** dalla pagina **Sottoscrizioni** dell'azienda.
     2. Nella pagina **Utenti e licenze** selezionare un utente.
-    3. Nella pagina dell'utente, controlla la **sezione Assegna licenze** e verifica che sia visualizzata **Microsoft 365 Business**.
+    3. Nella pagina dell'utente, controlla la sezione **Assegna licenze** e verifica che sia visualizzata Microsoft 365 **Business.**
 
         ![Conferma che la licenza di Microsoft 365 Business è assegnata all'utente](../../media/pc_customer_userslicenses_m365b_validate.png)
 
@@ -73,7 +73,7 @@ La tabella seguente riepiloga le conseguenze per i clienti che non passano da un
 |-------|-----------------|--------------|---------------|---------------|
 | **Stato** | Periodo di tolleranza | Scaduto      | Disattivato      | Senza provisioning |
 | **Impatti del servizio**                                                        |
-| **Portale di amministrazione di Microsoft 365 Business** | Nessun impatto sulla funzionalità | Nessun impatto sulla funzionalità | Puoi aggiungere/eliminare gli utenti, acquistare sottoscrizioni.</br> Non è possibile assegnare/revocare licenze. | La sottoscrizione del cliente e tutti i dati verranno eliminati. L'amministratore può gestire altre sottoscrizioni a pagamento. |
+| **Interfaccia di amministrazione di Microsoft 365** | Nessun impatto sulla funzionalità | Nessun impatto sulla funzionalità | Puoi aggiungere/eliminare gli utenti, acquistare sottoscrizioni.</br> Non è possibile assegnare/revocare licenze. | La sottoscrizione del cliente e tutti i dati verranno eliminati. L'amministratore può gestire altre sottoscrizioni a pagamento. |
 | **App di Office**                         | Nessun impatto sull'utente finale | Nessun impatto sull'utente finale | Office entra in modalità con funzionalità ridotte.</br> Gli utenti possono visualizzare solo i file. | Office entra in modalità con funzionalità ridotte.</br> Gli utenti possono visualizzare solo i file. |
 | **Servizi cloud (SharePoint Online, Exchange Online, Skype, Teams e altro)** | Nessun impatto sull'utente finale | Nessun impatto sull'utente finale | Gli utenti finali e gli amministratori non hanno accesso ai dati nel cloud. | La sottoscrizione del cliente e tutti i dati verranno eliminati. |
 | **Componenti EM+S** | Nessun impatto sull'amministratore</br> Nessun impatto sull'utente finale | Nessun impatto sull'amministratore</br> Nessun impatto sull'utente finale | La funzionalità non viene più applicata.</br> Per altre info, vedi [Impatto dei dispositivi mobili dopo la scadenza della sottoscrizione](#mobile-device-impacts-upon-subscription-expiration) e [Impatto sui PC Windows 10 alla scadenza della sottoscrizione](#windows-10-pc-impacts-upon-subscription-expiration). | La funzionalità non viene più applicata.</br> Per altre info, vedi [Impatto dei dispositivi mobili dopo la scadenza della sottoscrizione](#mobile-device-impacts-upon-subscription-expiration) e [Impatto sui PC Windows 10 alla scadenza della sottoscrizione](#windows-10-pc-impacts-upon-subscription-expiration). |

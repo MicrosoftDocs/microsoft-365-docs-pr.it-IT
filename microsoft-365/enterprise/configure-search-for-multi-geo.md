@@ -12,13 +12,13 @@ ms.collection: Strat_SP_gtc
 localization_priority: Normal
 f1.keywords:
 - NOCSH
-description: Informazioni su come configurare la ricerca in un ambiente multi-geografico. Solo alcuni client, ad esempio OneDrive for Business, possono restituire risultati in un ambiente multi-geografico.
-ms.openlocfilehash: 31e0c4ae3fe73f2f6e113dbc38989726eb1ca590
-ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
+description: Informazioni su come configurare la ricerca in un ambiente multi-geografico. Solo alcuni client, ad esempio OneDrive, possono restituire risultati in un ambiente multi-geografico.
+ms.openlocfilehash: dfc9e3dd986132810f363ba47ba18eae45666fc7
+ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53022331"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53362271"
 ---
 # <a name="configure-search-for-microsoft-365-multi-geo"></a>Configurare la ricerca di Microsoft 365 Multi-Geo
 
@@ -30,13 +30,13 @@ Ad esempio, un utente in una posizione geografica può cercare contenuto archivi
 
 Questi client possono restituire i risultati di tutte le posizioni geografiche:
 
-- OneDrive for Business
+- OneDrive
 - Delve
 - Home page di SharePoint
 - Centro ricerche
 - Applicazioni di ricerca personalizzate che utilizzano l'API del servizio di ricerca di SharePoint
 
-### <a name="onedrive-for-business"></a>OneDrive for Business
+### <a name="onedrive"></a>OneDrive
 
 Non appena viene configurato l'ambiente multi-geografico, gli utenti che cercano in OneDrive ottengono i risultati di tutte le posizioni geografiche.
 
@@ -65,9 +65,9 @@ Alcune delle funzionalità di ricerca già note potrebbero funzionare diversamen
 <table>
 <thead>
 <tr class="header">
-<th align="left"><strong>Caratteristica</strong></th>
-<th align="left"><strong>Come funziona</strong></th>
-<th align="left"><strong>Soluzione</strong></th>
+<th align="left">Funzionalità</th>
+<th align="left">Funzionamento</th>
+<th align="left">Soluzione alternativa</th>
 </tr>
 </thead>
 <tbody>
@@ -111,8 +111,8 @@ Alcune delle funzionalità di ricerca già note non sono supportate in un ambien
 <table>
 <thead>
 <tr class="header">
-<th align="left"><strong>Funzionalità di ricerca</strong></th>
-<th align="left"><strong>Nota</strong></th>
+<th align="left">Funzionalità di ricerca</th>
+<th align="left">Nota</th>
 </tr>
 </thead>
 <tbody>
@@ -121,8 +121,8 @@ Alcune delle funzionalità di ricerca già note non sono supportate in un ambien
 <td align="left">L'autenticazione solo app (accesso con privilegi dai servizi) non è supportata nella ricerca multi-geografica.</td>
 </tr>
 <tr class="even">
-<td align="left">Utenti guest</td>
-<td align="left">Gli utenti guest ottengono solo i risultati della posizione geografica dove effettuano la ricerca.</td>
+<td align="left">Guest</td>
+<td align="left">Gli utenti guest ottengono risultati solo dalla posizione geografica da cui stanno effettuando la ricerca.</td>
 </tr>
 </tbody>
 </table>
@@ -253,18 +253,22 @@ Con una richiesta GET, si specificano i parametri di query nell'URL. Con una ric
 
 #### <a name="sample-get-request-thats-fanned-out-to-all-geo-locations"></a>Esempio di richiesta GET estesa a **tutte** le posizioni geografiche
 
-https:// \<tenant\> / \_ api/search/query?querytext='sharepoint'&Properties='EnableMultiGeoSearch:true'&ClientType='my \_ client \_ id'
+```http
+https:// \<tenant\>/\_api/search/query?querytext='sharepoint'&Properties='EnableMultiGeoSearch:true'&ClientType='my\_client\_id'
+```
 
 #### <a name="sample-get-request-to-fan-out-to-some-geo-locations"></a>Esempio di richiesta GET estesa ad **alcune** posizioni geografiche
 
-https:// \<tenant\> / \_ api/search/query?querytext='site'&ClientType='my_client_id'&Properties='EnableMultiGeoSearch:true, MultiGeoSearchConfiguration:[{DataLocation \\ :"NAM" \\ ,Endpoint \\ :"https \\ ://contosoNAM.sharepoint.com",SourceId \\ \\ :"B81EAB55-3140-4312-B0F4-9459D1B4FFEE"} \\ ,{DataLocation \\ :"CAN" \\ ,Endpoint \\ :"https \\ ://contosoCAN.sharepoint-df.com"}]'
+```http
+https:// \<tenant\>/\_api/search/query?querytext='site'&ClientType='my_client_id'&Properties='EnableMultiGeoSearch:true, MultiGeoSearchConfiguration:[{DataLocation\\:"NAM"\\,Endpoint\\:"https\\://contosoNAM.sharepoint.com"\\,SourceId\\:"B81EAB55-3140-4312-B0F4-9459D1B4FFEE"}\\,{DataLocation\\:"CAN"\\,Endpoint\\:"https\\://contosoCAN.sharepoint-df.com"}]'
+```
 
 > [!NOTE]
 > Le virgole e i due punti nell'elenco di posizioni geografiche per la proprietà MultiGeoSearchConfiguration sono preceduti dalla **barra rovesciata**. Questo perché le richieste GET usano i due punti per separare le proprietà e le virgole per separare gli argomenti delle proprietà. Senza la barra rovesciata come carattere di escape, la proprietà MultiGeoSearchConfiguration viene interpretata in modo errato.
 
 #### <a name="sample-post-request-thats-fanned-out-to-all-geo-locations"></a>Esempio di richiesta POST estesa a **tutte** le posizioni geografiche
 
-```text
+```http
     {
     "request": {
             "__metadata": {
@@ -289,7 +293,7 @@ https:// \<tenant\> / \_ api/search/query?querytext='site'&ClientType='my_client
 
 #### <a name="sample-post-request-thats-fanned-out-to-some-geo-locations"></a>Esempio di richiesta POST estesa ad **alcune** posizioni geografiche
 
-```text
+```http
     {
         "request": {
             "Querytext": "SharePoint",
@@ -320,7 +324,7 @@ https:// \<tenant\> / \_ api/search/query?querytext='site'&ClientType='my_client
 
 Esempio di query CSOM estesa a **tutte** le posizioni geografiche:
 
-```text
+```CSOM
 var keywordQuery = new KeywordQuery(ctx);
 keywordQuery.QueryText = query.SearchQueryText;
 keywordQuery.ClientType = <enter a string here>;

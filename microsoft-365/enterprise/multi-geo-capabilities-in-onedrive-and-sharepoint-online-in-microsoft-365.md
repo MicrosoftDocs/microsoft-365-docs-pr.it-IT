@@ -18,16 +18,16 @@ ms.collection:
 localization_priority: Normal
 ms.assetid: 094e86f2-9ff0-40ac-af31-28fcaba00c1d
 description: Con Multi-Geo Capabilities in OneDrive Online l'organizzazione può espandere la propria presenza Microsoft 365 a più paesi/aree geografiche.
-ms.openlocfilehash: 8f42b071abef0602304f1a468190c33700fe3e82
-ms.sourcegitcommit: 321610fd312e5c54ae8a757a71ab0c9fd2f1ac03
+ms.openlocfilehash: 405f876317a6cec6defdf3f1a49b0dc32ac0add2
+ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "48995910"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53362283"
 ---
 # <a name="multi-geo-capabilities-in-onedrive-and-sharepoint-online"></a>Multi-Geo Capabilities in OneDrive e SharePoint Online
 
-Le funzionalità Multi-Geo in OneDrive e SharePoint Online consentono il controllo delle risorse condivise, ad esempio i siti del team di SharePoint e le cassette postali di Microsoft 365 Group archiviate in un paese o in un'area geografica.
+Le funzionalità multi-geografiche in OneDrive e SharePoint Online consentono il controllo delle risorse condivise come i siti del team di SharePoint e le cassette postali di Microsoft 365 Group archiviate in una posizione geografica specificata.
 
 Ogni utente, ogni cassetta postale di Gruppi e ogni sito SharePoint ha una posizione dei dati preferita che indica la posizione geografica in cui i dati associati vengono archiviati. I dati personali degli utenti (cassetta postale di Exchange e OneDrive) insieme ai siti SharePoint o ai gruppi di Microsoft 365 creati, possono essere archiviati nella posizione geografica specificata per soddisfare i requisiti di residenza dei dati. È possibile [specificare amministratori diversi per ogni posizione geografica](add-a-sharepoint-geo-admin.md).
 
@@ -43,7 +43,7 @@ La gestione della funzionalità Multi-Geo è disponibile tramite l'interfaccia d
 
 Quando un utente crea un sito connesso a un gruppo di SharePoint in un ambiente multi-geografico, la posizione preferita dei dati viene usata per determinare la posizione geografica in cui viene creato il sito e la relativa cassetta postale di Gruppi. Se la posizione dei dati preferita dell'utente non è stata impostata o è stata impostata una posizione geografica non configurata come satellite, il sito e la cassetta postale vengono creati nella posizione centrale.
 
-Solo i servizi Exchange, OneDrive e SharePoint di Microsoft 365 dispongono della funzionalità Multi-Geo. Tuttavia, i gruppi di Microsoft 365 creati con questi servizi riportano la posizione dei dati preferita dell'autore e le cassette postali dei gruppi di Exchange e il sito SharePoint dei Gruppi di O365 verranno forniti nella posizione geografica corrispondente. 
+Microsoft 365 servizi diversi da Exchange, OneDrive, SharePoint e Teams non sono Multi-Geo. Tuttavia, Microsoft 365 i gruppi creati da questi servizi verranno configurati con il file PDL del creatore e la relativa cassetta postale del gruppo Exchange, SharePoint viene eseguito il provisioning del sito nel sito geografico corrispondente. 
 
 ## <a name="managing-the-multi-geo-environment"></a>Gestione dell'ambiente multi-geografico
 

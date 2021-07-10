@@ -9,69 +9,67 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: abd1b681f3d5900f846fde7922f2f4a2ca5821ef
-ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
+ms.openlocfilehash: 2eea02b0a891f65ccd7e4e993ca719b0f3aa1b8b
+ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49841364"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53362607"
 ---
 # <a name="getting-help-for-users"></a>Ottenere assistenza per gli utenti
 
-Esistono due modi in cui gli utenti dell'organizzazione possono ottenere assistenza con i propri Microsoft Managed Desktop **mobili:** Richiesta supporto'app o il supporto telefonico. Entrambe queste opzioni di supporto sono disponibili per gli utenti 24 ore al giorno, 7 giorni alla settimana.
+Se hai raggiunto il punto [](../service-description/user-support.md) del flusso di lavoro in cui devi richiedere l'accesso al dispositivo con privilegi elevati o l'escalation a Microsoft, segui questi passaggi:
  
 >[!NOTE]
 >Queste opzioni di supporto non sono disponibili per i dispositivi nel gruppo Test.
 
-## <a name="get-help-app"></a>Richiesta supporto app
+## <a name="elevation-requests"></a>Richieste di elevazione
 
-Il metodo preferito per fornire supporto agli utenti **è Richiesta supporto**, un'interfaccia facile da usare incorporata nel dispositivo dell'utente.  
+Prima di richiedere l'accesso con privilegi elevati a un dispositivo, è meglio esaminare le azioni più adatte.
 
-![Richiesta supporto'icona dell'app](../../media/get-help.png)
+- **Le azioni tipiche** sono l'obiettivo di questo processo e vengono eseguite di routine durante la risoluzione dei problemi Microsoft Managed Desktop dispositivi. Alcuni esempi:
+    - Elevazione degli strumenti di risoluzione dei problemi di sistema incorporati, del prompt dei comandi o Windows PowerShell
+    - Risoluzione dei problemi delle applicazioni line-of-business
+    - Uso di una soluzione alternativa per correggere un elemento che dovrebbe funzionare in base alla progettazione (ad esempio l'attivazione di BitLocker o l'ora di sistema non aggiornata)
+    - Elevazione di Gestione dispositivi per eseguire operazioni quali l'aggiornamento dei driver, la disinstallazione di un dispositivo o la ricerca di nuove modifiche
 
-Richiesta supporto è un'applicazione installata in tutti i Microsoft Managed Desktop e aggiunta alla barra delle applicazioni. 
+- **Le azioni non consigliate includono:**
+    - Installazione di software o browser
+    - Installazione di driver al di fuori delle Windows, incluse quelle per le periferiche
+    - Installazione di .msi o .exe file
+    - Installazione di Windows funzionalità
 
-- Gli utenti possono richiedere una richiamata a un numero di telefono specificato o chattare online con un rappresentante del servizio.
-- Le richieste che non rientrano Microsoft Managed Desktop ambito di supporto vengono reindirizzate all'helpdesk IT locale tramite chiamata telefonica.
+- **Le azioni non supportate includono:**
+    - Installazione di software o funzionalità in conflitto con Microsoft Managed Desktop di sicurezza o gestione o operazioni
+    - Disabilitazione di Windows funzionalità necessaria per Microsoft Managed Desktop, ad esempio BitLocker
+    - Modifica delle impostazioni gestite dall'organizzazione
+
+### <a name="to-request-elevation"></a>Per richiedere l'elevazione
+
+1. Accedere al portale [https://aka.ms/mmdelevationrequest](https://aka.ms/mmdelevationrequest) all'indirizzo e accedere con le credenziali Azure Active Directory utente.
+2. Selezionare **Nuova richiesta di elevazione**.
+3. Fornire questi dettagli:
+    - **ID ticket di** supporto dal proprio sistema di ticket di supporto.
+    - **Nome dispositivo:** immetti il numero di serie del dispositivo e quindi seleziona il dispositivo dal menu.
+    - **Categoria**: selezionare la categoria più adatta al problema. Se nessuna opzione sembra chiusa, seleziona **Altro** e fornisci altre informazioni nei campi **Titolo** **e Piano di** azione. È meglio selezionare una categoria, se possibile.
+    - **Sottocategoria:** selezionare quella più adatta al problema. Se nessuna opzione sembra chiusa, seleziona **Altro** e fornisci una breve descrizione in **Titolo.** In **Plan of action** fornire i passaggi per la risoluzione dei problemi che si prevede di eseguire dopo aver concesso l'elevazione.
+4. Selezionare **Invia**.
+
+
+## <a name="escalation-requests"></a>Richieste di escalation
+
+
+Se è necessario [inoltrare un](../service-description/user-support.md#escalation-portal) problema a Microsoft, attenersi alla seguente procedura:
+
+1. Accedere al portale [https://aka.ms/mmdelevationrequest](https://aka.ms/mmdelevationrequest) all'indirizzo e accedere con le credenziali Azure Active Directory utente.
+2. Selezionare **Richieste di escalation** e quindi Nuova richiesta di **escalation.**
+3. Fornire questi dettagli:
+    - **Categoria**: selezionare la categoria più adatta al problema.
+    - **Title**: Fornire una breve descrizione.
+    - **Descrizione:** aggiungere ulteriori dettagli che potrebbero aiutare il team a comprendere il problema. Se è necessario allegare file, è possibile farlo tornando alla richiesta dopo l'invio.
+    - **Informazioni di contatto principali:** fornire informazioni su come contattare la persona principale responsabile della collaborazione con il team.
+4. Selezionare **Invia**.
+5. Rivedere il ticket nello stesso portale per interagire con il team.
 
 > [!NOTE]
-> La lingua di visualizzazione per l Richiesta supporto app è solo inglese, anche se un utente ha selezionato una lingua diversa durante la configurazione del dispositivo o nelle impostazioni del dispositivo. 
-
-### <a name="prerequisites"></a>Prerequisiti
-Per consentire agli utenti di ottenere assistenza tramite l'app, assicurati che questi prerequisiti siano soddisfatti:
-
-- Il dispositivo deve essere registrato con Microsoft Managed Desktop usando uno dei metodi descritti in [Configurare](../get-started/set-up-devices.md)Microsoft Managed Desktop dispositivi , ad esempio Registrare manualmente [i nuovi dispositivi.](../get-started/register-devices-self.md)
-- La lingua di visualizzazione per il dispositivo deve essere impostata su una delle seguenti impostazioni locali in lingua inglese: en-us, en-gb, en-au, en-nz o en-ca.
-- L Richiesta supporto app deve essere aggiornata. Per confermarne lo stato, controlla la disponibilità di aggiornamenti dell'app nella Microsoft Store.
-- Alcuni [endpoint](../get-ready/network.md#endpoints-allowed-that-are-necessary-for-microsoft-managed-desktop) devono essere accessibili dal dispositivo.
-
-> [!NOTE]
-> L Richiesta supporto app può richiedere fino a un'ora dopo la distribuzione completa di un dispositivo.
-
-Se hai controllato questi prerequisiti e l'app Richiesta supporto non funziona ancora, l'amministratore IT deve archiviare una richiesta [di supporto.](admin-support.md)
-
-## <a name="phone-support"></a>Supporto telefonico
-
-Gli utenti con Microsoft Managed Desktop possono anche accedere ai numeri di telefono gratuiti che possono chiamare. I numeri devono essere utilizzati quando Richiesta supporto non è disponibile. Ad esempio, se non possono accedere al dispositivo o se il dispositivo è danneggiato. Ecco i numeri di telefono per il supporto telefonico:
-
-- Stati Uniti: +1 855 425 0216
-- Canada (escluso Quebec): +1 855 425 0216
-- Regno Unito: +44 800 026 0698
-- Belgio: +32 800 58533
-- Lussemburgo: +352 800 40119
-- Australia: +61 180 037 0619
-- Nuova Zelanda: +64 988 44380
-- Svezia: +46 20 120 3554
-- Norvegia: +47 800 62584
-- Islanda: +354 800 9006
-- Irlanda: +353 1 800 832272
-- Danimarca: +45 80 40 04 01
-- Finlandia: +358 800 525088
-
->[!NOTE]
->Dovrai avere l'indirizzo di posta elettronica dell'organizzazione pronto quando chiami per verificare la tua identità. 
-
-## <a name="more-resources"></a>Altre risorse
-- [Supporto dell'amministratore per Microsoft Managed Desktop](admin-support.md). 
-- [Supporto per Microsoft Managed Desktop](../service-description/support.md).
-- Se si è già abbonati a Microsoft Managed Desktop, è possibile trovare procedure dettagliate, flussi di processo, istruzioni  di lavoro e domande frequenti nella guida all'amministratore di Microsoft Managed Desktop nelle risorse online nella sezione Microsoft Managed Desktop del **menu** Amministrazione tenant in [Microsoft Endpoint Manager](https://endpoint.microsoft.com/).
+> Solo i problemi di gravità C possono essere inoltrati attraverso questo percorso. Per altri problemi, contattare l'amministratore IT per file la richiesta tramite il portale di amministrazione.

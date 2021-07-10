@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Informazioni sui commenti e suggerimenti che gli utenti possono inviare a Microsoft sui prodotti Microsoft.
-ms.openlocfilehash: 29fe6b7f43b3c888c3848daeb6ab4c2152a9c44c
-ms.sourcegitcommit: a46532bb422ee51331f478ff50cc5444586bf6a9
+ms.openlocfilehash: 7b8798847559e84a6ea10079aab010a08d8eaa42
+ms.sourcegitcommit: 7dc3b4dec05299abb4290a6e3d1ebe0fdc622ed7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/09/2021
-ms.locfileid: "51650066"
+ms.lasthandoff: 07/10/2021
+ms.locfileid: "53363932"
 ---
 # <a name="learn-about-microsoft-feedback-for-your-organization"></a>Informazioni sui commenti e suggerimenti Microsoft per l'organizzazione
 
@@ -84,13 +84,12 @@ Quando un utente invia feedback, le informazioni sull'app vengono in genere racc
 - **Allegati**   Sono stati allegati (ad esempio screenshot, file) raccolti come parte del feedback? (Sì/No).
 - **TenantId**   Se il feedback viene inviato da un account Azure Active Directory, a quale TenantId è stato associato.
 
-## <a name="data-handling-and-privacy"></a>Gestione dei dati e privacy
-
-Lavoriamo per guadagnare fiducia assicurando che ci concentriamo sulla gestione dei dati di base e sui principi di privacy dei dati.
-Ci assicuriamo che il feedback ricevuto sia archiviato e gestito in base alle regole di governance di Microsoft e che sia possibile accedervi solo per usi approvati.
-
-Abbiamo il controllo della privacy con strumenti facili da usare e scelte chiare. We're transparent about how we collect and use data, so you can make informed decisions about what you want to share. Microsoft protegge i dati che ci affida con sicurezza e crittografia avanzata. Rispettiamo le leggi sulla privacy locali e lottiamo per la protezione legale della privacy dell'utente come diritto umano. Non usiamo la posta elettronica, la chat, i file o altri contenuti personali per scegliere come target gli annunci. Quando raccogliamo i dati, li usiamo per migliorare le tue esperienze. Per altre informazioni sull'approccio di Microsoft alla [privacy, vedere](https://privacy.microsoft.com/). Altre informazioni sulla panoramica [sulla privacy.](/compliance/assurance/assurance-privacy)
-
 ## <a name="how-can-i-see-my-users-feedback"></a>Come posso vedere il feedback dell'utente?
 
-Presto, verranno condivisi i dati di feedback raccolti per i prodotti Microsoft. Stiamo lavorando a una nuova esperienza nell'Microsoft 365 di amministrazione che consente di visualizzare, eliminare ed esportare i dati di feedback per l'organizzazione. Ciò offre trasparenza diretta e informazioni utili sulle esperienze degli utenti con Microsoft 365 prodotti.
+Per soddisfare gli obblighi legali di Microsoft nei confronti dei clienti, stiamo lavorando a una nuova esperienza nel interfaccia di amministrazione di Microsoft 365 che consente agli amministratori di visualizzare, eliminare ed esportare i dati di feedback per le loro organizzazioni. Nell'ambito della responsabilità del responsabile del controllo dei dati, i clienti sono proprietari di tutti i dati di feedback degli utenti e questa funzionalità consentirà agli amministratori di fornire una trasparenza diretta nell'esperienza degli utenti con i prodotti Microsoft 365 e di fornire i dati di feedback degli utenti nell'ambito di qualsiasi richiesta dell'oggetto dei dati. Gli amministratori globali e gli amministratori dei dati di conformità potranno visualizzare, esportare ed eliminare il feedback degli utenti. Tutti gli altri amministratori, così come i lettori, potranno visualizzare ed esportare i dati di feedback, ma non potranno eseguire attività correlate alla conformità o visualizzare informazioni su chi ha pubblicato il feedback (ad esempio nome utente, posta elettronica o nome del dispositivo). Per accedere ai dati di feedback dell'organizzazione, accedere al interfaccia di amministrazione di Microsoft 365 e personalizzare la struttura di spostamento in modo da visualizzare il nodo di integrità. Accedere a questa esperienza selezionando **Feedback sul prodotto** nel nodo Integrità.
+
+## <a name="data-handling-and-privacy"></a>Gestione dei dati e privacy
+
+Siamo consapevoli del fatto che quando usi i nostri servizi cloud, ci stai affidando una delle risorse più importanti: i dati. Ci assicuriamo che il feedback ricevuto sia archiviato e gestito in base alle regole di governance di Microsoft e che sia possibile accedervi solo per usi approvati. Non usiamo la posta elettronica, la chat, i file o altri contenuti personali per scegliere come target gli annunci. Quando raccogliamo i dati, li usiamo per migliorare le tue esperienze.
+
+Per ulteriori informazioni su come proteggiamo la privacy e la riservatezza dei tuoi dati e come garantiamo che verranno usati solo in modo coerente con le tue aspettative, leggi i nostri principi di privacy nel Centro protezione [Microsoft.](https://www.microsoft.com/trust-center/privacy)

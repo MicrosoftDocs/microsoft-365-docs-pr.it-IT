@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 682f59729e06c63818491ad7540528d574380c8b
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: 5cb819daa11a50ef54c758a6aa696a5fc645029c
+ms.sourcegitcommit: 7dc3b4dec05299abb4290a6e3d1ebe0fdc622ed7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52877837"
+ms.lasthandoff: 07/10/2021
+ms.locfileid: "53363980"
 ---
 # <a name="device-control-for-macos"></a>Controllo dispositivo per macOS
 
@@ -35,38 +35,14 @@ ms.locfileid: "52877837"
 
 > Vuoi provare Microsoft Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-[!include[Prerelease information](../../includes/prerelease.md)]
-
 ## <a name="requirements"></a>Requisiti
 
 Il controllo del dispositivo per macOS presenta i prerequisiti seguenti:
 
 >[!div class="checklist"]
 > - Diritto di Microsoft Defender for Endpoint (può essere di prova)
-> - Versione minima del sistema operativo: macOS 10.15.4 o versione successiva
-> - Versione minima del prodotto: 101.24.59
-> - Il dispositivo deve essere in esecuzione con estensioni di sistema (questa è l'impostazione predefinita in macOS 11 Big Sur). 
-> 
->   Puoi verificare se il dispositivo è in esecuzione su estensioni di sistema eseguendo il comando seguente e verifica che sia in `endpoint_security_extension` stampa nella console: 
-> 
->   ```bash
->   mdatp health --field real_time_protection_subsystem 
->   ```
-> - Il dispositivo deve essere nel `Beta` canale di aggiornamento Microsoft AutoUpdate (denominato in `InsiderFast` precedenza). Per altre informazioni, vedi [Distribuire gli aggiornamenti per Microsoft Defender per Endpoint su Mac.](mac-updates.md)
-> 
->   Puoi controllare il canale di aggiornamento usando il comando seguente: 
-> 
->    ```bash
->    mdatp health --field release_ring 
->    ```
->
->    Se il comando precedente non stampa o `Beta` , eseguire il comando seguente dal `InsiderFast` terminale. L'aggiornamento del canale ha effetto al successivo avvio del prodotto (quando viene installato il successivo aggiornamento del prodotto o quando il dispositivo viene riavviato). 
-> 
->    ```bash
->    defaults write com.microsoft.autoupdate2 ChannelName -string Beta
->    ```
->
->    In alternativa, se si è in un ambiente gestito (JAMF o Intune), è possibile configurare il canale di aggiornamento in remoto. Per altre informazioni, vedi [Distribuire gli aggiornamenti per Microsoft Defender per Endpoint su Mac.](mac-updates.md) 
+> - Versione minima del sistema operativo: macOS 11 o versione successiva
+> - Versione minima del prodotto: 101.34.20
 
 ## <a name="device-control-policy"></a>Criteri di controllo dei dispositivi
 
@@ -142,6 +118,9 @@ Nella sezione Supporti rimovibili è disponibile un'opzione per impostare il liv
 
 - `audit` - Con questo livello di imposizione, se l'accesso a un dispositivo è limitato, viene visualizzata una notifica all'utente, ma il dispositivo può comunque essere usato. Questo livello di imposizione può essere utile per valutare l'efficacia di un criterio.
 - `block` - In questo livello di imposizione, le operazioni che l'utente può eseguire sul dispositivo sono limitate a quanto definito nel criterio. Inoltre, viene generata una notifica all'utente. 
+
+> [!NOTE] 
+> Per impostazione predefinita, il livello di imposizione è impostato su `audit` . 
 
 |Sezione|Valore|
 |:---|:---|

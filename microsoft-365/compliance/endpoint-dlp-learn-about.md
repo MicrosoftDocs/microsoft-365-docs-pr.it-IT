@@ -19,18 +19,21 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'La Prevenzione della perdita di dati degli endpoint di Microsoft 365 estende il monitoraggio delle attività dei file e le azioni di protezione agli endpoint. I file vengono resi visibili nelle soluzioni di conformità di Microsoft 365 '
-ms.openlocfilehash: 39474f54440ba33c8d7140981c1495a5c46bf0fc
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: c97368dd48515dc787dbac66aa93844889efbdbc
+ms.sourcegitcommit: 8b0718f5607ab509092cb80bda854010d885c54f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53226684"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53314417"
 ---
 # <a name="learn-about-microsoft-365-endpoint-data-loss-prevention"></a>Informazioni sulla prevenzione della perdita di dati degli endpoint di Microsoft 365
 
 È possibile usare la prevenzione della perdita dei dati (DLP) di Microsoft 365 per monitorare le azioni intraprese sugli elementi che si considerano sensibili e per evitare la condivisione involontaria di tali elementi. Per altre informazioni su DLP, vedere [Informazioni sulla prevenzione della perdita di dati](dlp-learn-about-dlp.md).
 
 La **prevenzione della perdita di dati degli endpoint** (Endpoint DLP) estende le funzionalità di monitoraggio e protezione delle attività di DLP agli elementi sensibili presenti nei dispositivi Windows 10. Dopo aver eseguito l'onboarding dei dispositivi nelle soluzioni del Centro conformità Microsoft 365, le informazioni sulle azioni che gli utenti stanno eseguendo sugli elementi sensibili sono rese visibili in [Esplora attività](data-classification-activity-explorer.md) ed è possibile applicare azioni di protezione su tali elementi tramite [criteri DLP](create-test-tune-dlp-policy.md).
+
+> [!TIP]
+> Se si sta cercando il controllo del dispositivo per l'archiviazione rimovibile, vedere [Controllo degli accessi alle risorse di archiviazione rimovibili di Microsoft Defender per endpoint](../security/defender-endpoint/device-control-removable-storage-access-control.md#microsoft-defender-for-endpoint-device-control-removable-storage-access-control).
 
 ## <a name="endpoint-activities-you-can-monitor-and-take-action-on"></a>Attività endpoint che è possibile monitorare e su cui si può intervenire
 

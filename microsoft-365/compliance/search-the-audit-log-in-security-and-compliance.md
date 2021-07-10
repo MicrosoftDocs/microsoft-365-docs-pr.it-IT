@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: Usare il Centro conformità Microsoft 365 per eseguire una ricerca nel log di controllo unificato e vedere le attività di utenti e amministratori nell'organizzazione.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 46f223953df65b75c0ecfe0d2c9fe92514b797ff
-ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
+ms.openlocfilehash: a3c7f88441b05d6c64470f6632b9c63ac67b295c
+ms.sourcegitcommit: 7dc3b4dec05299abb4290a6e3d1ebe0fdc622ed7
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53341653"
+ms.lasthandoff: 07/10/2021
+ms.locfileid: "53363956"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>Eseguire una ricerca nel log di controllo nel Centro conformità
 
@@ -620,7 +620,7 @@ Nella tabella seguente sono elencati gli eventi derivanti da attività di ammini
 |Amministratore dell'area geografica aggiunto|GeoAdminAdded|Un amministratore globale o di SharePoint ha aggiunto un utente come amministratore geografico di una posizione.|
 |Utente autorizzato a creare gruppi|AllowGroupCreationSet|Un proprietario o un amministratore del sito aggiunge un livello di autorizzazione a un sito che consente a un utente a cui viene assegnata tale autorizzazione di creare un gruppo per tale sito.|
 |È stato annullato lo spostamento geografico di un sito|SiteGeoMoveCancelled|Un amministratore globale o di SharePoint annulla correttamente uno spostamento geografico di un sito SharePoint o OneDrive. La funzionalità Multi-Geo Capabilities consente a un'organizzazione di utilizzare più aree geografiche dei data center di Microsoft, note anche come geo. Per altre informazioni, vedere [Multi-Geo Capabilities in OneDrive e SharePoint Online](../enterprise/multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-microsoft-365.md).|
-|Criterio di condivisione cambiato|SharingPolicyChanged|Un amministratore globale o di SharePoint ha modificato i criteri di condivisione di SharePoint usando il portale di amministrazione di Microsoft 365, il portale di amministrazione di SharePoint o SharePoint Online Management Shell. Qualsiasi modifica alle impostazioni dei criteri di condivisione dell'organizzazione verrà registrata. Il criterio modificato viene identificato nel campo **ModifiedProperties** nelle proprietà dettagliate del record dell'evento.|
+|Criterio di condivisione cambiato|SharingPolicyChanged|Un amministratore globale o di SharePoint ha modificato i criteri di condivisione di SharePoint usando l'interfaccia di amministrazione di Microsoft 365, l'interfaccia di amministrazione di SharePoint o SharePoint Online Management Shell. Qualsiasi modifica alle impostazioni dei criteri di condivisione dell'organizzazione verrà registrata. Il criterio modificato viene identificato nel campo **ModifiedProperties** nelle proprietà dettagliate del record dell'evento.|
 |I criteri di accesso per i dispositivi sono stati modificati|DeviceAccessPolicyChanged|Un amministratore di SharePoint o globale ha cambiato i criteri dei dispositivi non gestiti per l'organizzazione. Questo criterio controlla l'accesso a SharePoint, OneDrive e Microsoft 365 da dispositivi che non fanno parte dell'organizzazione. La configurazione di questo criterio richiede un abbonamento Enterprise Mobility + Security. Per altre informazioni, vedere [Controllare l'accesso da dispositivi non gestiti](/sharepoint/control-access-from-unmanaged-devices).|
 |Agenti utente esenti cambiati|CustomizeExemptUsers|Un amministratore di SharePoint o globale ha personalizzato l'elenco di agenti utente esenti nell'interfaccia di amministrazione di SharePoint. È possibile specificare quali agenti utente esentare dalla ricezione di un'intera pagina Web da indicizzare. Questo significa che quando un agente utente specificato come esente riscontra un modulo di InfoPath, tale modulo verrà restituito come file XML invece che come intera pagina Web. In questo modo, l'indicizzazione dei moduli di InfoPath sarà più veloce.|
 |Sono stati modificati i criteri di accesso alla rete|NetworkAccessPolicyChanged|Un amministratore di SharePoint o globale ha cambiato i criteri di accesso basati sulla posizione, denominati anche limite di rete attendibile, nell'interfaccia di amministrazione di SharePoint oppure usando PowerShell di SharePoint Online. Questi criteri controllano chi può accedere alle risorse di SharePoint e OneDrive nell'organizzazione in base a intervalli di indirizzi IP specificati dall'utente. Per altre informazioni, vedere [Controllare l'accesso ai dati di SharePoint Online e OneDrive in base a determinati percorsi di rete](/sharepoint/control-access-based-on-network-location).|

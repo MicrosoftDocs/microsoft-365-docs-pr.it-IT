@@ -15,12 +15,12 @@ f1.keywords:
 - NOCSH
 description: Scopri come spostare un sito SharePoint in una posizione geografica diversa all'interno dell'ambiente multi-geografico e comunicare le aspettative delle modifiche agli utenti.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: eed323b2e2b8f68a4a603052657e17495bb17690
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 5a49098045dbce94ef1c474497b8da1b397ac0b0
+ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50910931"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53362355"
 ---
 # <a name="move-a-sharepoint-site-to-a-different-geo-location"></a>Trasferire un sito di SharePoint in una posizione geografica diversa
 
@@ -28,7 +28,7 @@ Con il trasferimento geografico dei siti di SharePoint, è possibile spostare si
 
 È possibile trasferire da una posizione geografica a un'altra i tipi di siti seguenti:
 
-- Siti connessi a un gruppo di Microsoft 365
+- Microsoft 365 Siti connessi a gruppi, inclusi quelli associati a Microsoft Teams
 - Siti moderni non associati a gruppi di Microsoft 365
 - Siti di SharePoint classici
 - Siti di comunicazioni
@@ -177,11 +177,11 @@ Durante il trasferimento, il sito viene impostato come di sola lettura. Al termi
 
 Gli utenti con autorizzazioni per il sito continueranno ad avere accesso al contenuto durante il trasferimento e dopo il suo completamento.
 
-### <a name="sync-client"></a>Client di sincronizzazione
+### <a name="sync-app"></a>App di sincronizzazione
 
-Il client di sincronizzazione rileverà e trasferirà automaticamente la sincronizzazione alla nuova posizione del sito al termine del trasferimento. L'utente non deve accedere di nuovo o eseguire altre operazioni. È necessaria la versione 17.3.6943.0625 o successiva del client di sincronizzazione.
+L'app di sincronizzazione rileva e trasferisce automaticamente la sincronizzazione nella nuova posizione del sito al termine dello spostamento del sito. L'utente non deve accedere di nuovo o eseguire altre operazioni. È necessaria la versione 17.3.6943.0625 o successiva dell'app di sincronizzazione.
 
-Se un utente aggiorna un file durante il trasferimento, il client di sincronizzazione lo informerà che i caricamenti di file sono sospesi mentre è in corso il trasferimento.
+Se un utente aggiorna un file mentre lo spostamento è in corso, l'app di sincronizzazione informerà l'utente che i caricamenti di file sono in sospeso mentre lo spostamento è in corso.
 
 ### <a name="sharing-links"></a>Condivisione dei collegamenti
 

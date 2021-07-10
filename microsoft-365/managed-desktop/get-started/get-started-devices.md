@@ -1,6 +1,6 @@
 ---
 title: Preparare gli utenti a usare i dispositivi
-description: Informazioni che consentono agli utenti di prepararsi per l'uso dei dispositivi.
+description: Informazioni che consentono agli utenti di prepararsi per l'uso dei dispositivi
 keywords: Microsoft Managed Desktop, dispositivo, introduzione, Microsoft 365
 ms.service: m365-md
 author: jaimeo
@@ -11,24 +11,22 @@ manager: laurawi
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: fd730017a20f121281c0aba2c2ecca4cbd23a8a7
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 8a20a7103be799826cb848c71cb285b0884e9540
+ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52925720"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53362571"
 ---
 # <a name="get-your-users-ready-to-use-devices"></a>Preparare gli utenti a usare i dispositivi
 
 Quando un Microsoft Managed Desktop è nelle mani dell'utente, iniziare a usare questo dispositivo è facile e veloce. I dispositivi vengono preconfigurato con la versione corrente di Windows e le configurazioni e le app vengono installate dal cloud quando l'utente completa la configurazione. 
  
-Per semplificare ancora di più, è disponibile una guida che guida gli utenti nella configurazione iniziale e fornisce risorse di supporto sia per la configurazione che per l'utilizzo in un secondo momento, se necessario. È possibile personalizzare questa guida per includere alcuni dettagli specifici per l'organizzazione. La guida viene quindi distribuita direttamente agli utenti insieme al dispositivo. Esistono due versioni, una per le organizzazioni che usano il sistema di supporto di Microsoft (l'app Richiesta supporto), una per quelle che forniscono supporto alternativo per gli utenti.
+Per semplificare ancora di più, è disponibile una guida che guida gli utenti nella configurazione iniziale e fornisce risorse di supporto sia per la configurazione che per l'utilizzo in un secondo momento, se necessario. È possibile personalizzare questa guida per includere alcuni dettagli specifici per l'organizzazione. La guida viene quindi distribuita direttamente agli utenti insieme al dispositivo. 
 
 ## <a name="to-prepare-the-guide"></a>Per preparare la guida
 
-1. Scaricare la versione appropriata per l'organizzazione:
-- [Microsoft Managed Desktop - Introduzione al dispositivo (Richiesta supporto versione)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/microsoft-managed-desktop-user-guide-help-custom-v3.pdf) - Usa questa versione se gli utenti utilizzeranno il sistema di supporto di Microsoft.
-- [Microsoft Managed Desktop - Introduzione al dispositivo:](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/microsoft-managed-desktop-user-guide-no-help-custom-v2.pdf) usa questa versione se  gli utenti non useranno il sistema di supporto di Microsoft.
+1. Scarica la guida: [Microsoft Managed Desktop - Introduzione al dispositivo](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/microsoft-managed-desktop-user-guide-no-help-custom-v2.pdf).
 2. Usa qualsiasi app in grado di aprire file PDF per inserire i dettagli rilevanti per la tua organizzazione:
     - Nome della rete a cui gli utenti devono connettersi per continuare la configurazione (Passaggio 3 della guida)
     - Nome dell'account tenant di Azure dell'organizzazione (Passaggio 4 della guida)
@@ -37,10 +35,9 @@ Per semplificare ancora di più, è disponibile una guida che guida gli utenti n
 
 ## <a name="ready-to-use-guide"></a>"Guida pronta per l'uso"
 
-Forniamo anche una versione più generica della guida per le organizzazioni che non devono personalizzarla. Esistono due versioni, una per le organizzazioni che usano il sistema di supporto di Microsoft (l'app Richiesta supporto), una per quelle che forniscono supporto alternativo per gli utenti. 
+Forniamo anche una versione più generica della guida per le organizzazioni che non devono personalizzarla.
 
-- [Microsoft Managed Desktop - Introduzione](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/microsoft-managed-desktop-user-guide-help-v3.pdf) al dispositivo (versione Richiesta supporto - pronta per l'uso) - usa questa versione se gli utenti useranno il sistema di supporto di Microsoft.
-- [Microsoft Managed Desktop - Introduzione al](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/microsoft-managed-desktop-user-guide-no-help-v2.pdf) dispositivo (pronto per l'uso): usa questa  versione se gli utenti non useranno il sistema di supporto di Microsoft.
+Basta scaricare la guida: [Microsoft Managed Desktop - Introduzione al dispositivo (pronto per l'uso)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/microsoft-managed-desktop-user-guide-no-help-v2.pdf).
 
 A questo punto, sei pronto per passare alla distribuzione delle app:
 

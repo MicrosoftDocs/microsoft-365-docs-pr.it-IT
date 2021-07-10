@@ -174,6 +174,7 @@
 #### [Generale]()
 ##### [Verificare la posizione di archiviazione dei dati e aggiornare le impostazioni di conservazione dei dati](data-retention-settings.md)
 ##### [Configurare le notifiche di avviso](configure-email-notifications.md)
+##### [Configurare le notifiche tramite posta elettronica delle vulnerabilità](configure-vulnerability-email-notifications.md)
 ##### [Configurare le funzionalità avanzate](advanced-features.md)
 
 #### [Autorizzazioni]()

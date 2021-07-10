@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Il dashboard di classificazione dei dati offre visibilità sulla quantità di dati riservati che sono stati individuati e classificati nell'organizzazione.
-ms.openlocfilehash: d9c53d1f4679fbea9f5a7cded7f4bb6b6eb15b98
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: c0343117251d169d0284c2fdb3fc3b8bca5ff0df
+ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244384"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53362559"
 ---
 # <a name="learn-about-data-classification"></a>Informazioni sulla classificazione dei dati
 
@@ -65,6 +65,9 @@ Un determinato numero di sottoscrizioni supporta Endpoint DLP. Per vedere le opz
 - Amministratore di conformità
 - Amministratore della sicurezza
 - Amministratore dati di conformità
+
+> [!NOTE]
+> Come procedura consigliata, usare sempre il ruolo con meno privilegi per concedere l'accesso alla classificazione dati di Microsoft 365.
 
 ## <a name="sensitive-information-types-used-most-in-your-content"></a>Tipologie di informazioni riservate usate più di frequente nei contenuti
 

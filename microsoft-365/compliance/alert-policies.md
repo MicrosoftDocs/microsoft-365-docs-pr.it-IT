@@ -18,12 +18,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Creare criteri di avviso nell'Centro conformità Microsoft 365 per monitorare potenziali minacce, perdita di dati e problemi di autorizzazioni.
-ms.openlocfilehash: 4ae85f69eea5221945c531b2b63000be7eb43fb7
-ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
+ms.openlocfilehash: 02b5727f0c844fa6b825b4c0c032ea6c2633d6df
+ms.sourcegitcommit: 7dc3b4dec05299abb4290a6e3d1ebe0fdc622ed7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53341069"
+ms.lasthandoff: 07/10/2021
+ms.locfileid: "53363992"
 ---
 # <a name="alert-policies-in-the-microsoft-365-compliance-center"></a>Criteri di avviso nella Centro conformità Microsoft 365
 
@@ -62,6 +62,9 @@ Un criterio di avviso è costituito da un set di regole e condizioni che definis
 Vai a <https://compliance.microsoft.com> e quindi seleziona **Criteri**  >  **Criteri Avviso**  >  **Criteri** avviso . In alternativa, è possibile passare direttamente a <https://compliance.microsoft.com/alertpolicies> .
 
 ![Nel Centro conformità selezionare Criteri e in Avviso selezionare Criteri di avviso per visualizzare e creare criteri di avviso](../media/LaunchAlertPoliciesMCC.png)
+
+> [!NOTE]
+> È necessario essere assegnati al ruolo View-Only Gestisci avvisi per visualizzare i criteri di avviso nella Centro conformità Microsoft 365. Per creare e modificare i criteri di avviso, è necessario disporre del ruolo Gestisci avvisi. Per ulteriori informazioni, vedere [Autorizzazioni nel Centro sicurezza e conformità.](../security/office-365-security/permissions-in-the-security-and-compliance-center.md)
 
 Un criterio di avviso è costituito dalle impostazioni e dalle condizioni seguenti.
 
@@ -210,7 +213,7 @@ Tenere presente quanto segue sull'aggregazione degli avvisi:
 
 ## <a name="rbac-permissions-required-to-view-alerts"></a>Autorizzazioni RBAC necessarie per visualizzare gli avvisi
 
-Le autorizzazioni RBAC (Role Based Access Control) assegnate agli utenti dell'organizzazione determinano quali avvisi possono essere visualizzati da un utente nella **pagina** Avvisi. Come viene eseguita questa operazione? I ruoli di gestione assegnati agli utenti (in base all'appartenenza ai gruppi di ruoli nel Centro conformità Microsoft 365) determinano le categorie di avviso che un utente può visualizzare nella **pagina** Avvisi. Ecco alcuni esempi:
+Le autorizzazioni RBAC (Role Based Access Control) assegnate agli utenti dell'organizzazione determinano quali avvisi possono essere visualizzati da un utente nella **pagina** Avvisi. Come viene eseguita questa operazione? I ruoli di gestione assegnati agli utenti (in base all'appartenenza ai gruppi di ruoli nel Centro conformità Microsoft 365) determinano le categorie di avviso che un utente può visualizzare nella **pagina** Avvisi. Di seguito vengono descritti alcuni esempi:
 
 - I membri del gruppo di ruoli Gestione record possono visualizzare solo gli avvisi generati dai criteri di avviso assegnati alla **categoria Governance delle** informazioni.
 

@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a7521a31b0b31fb95d2729f7068bfc9de5717f01
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: f52d1e9ea0d3e4c2da2ec413085a0f14efc453c7
+ms.sourcegitcommit: 7dc3b4dec05299abb4290a6e3d1ebe0fdc622ed7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933818"
+ms.lasthandoff: 07/10/2021
+ms.locfileid: "53363804"
 ---
 # <a name="examples-of-device-control-policies-for-intune"></a>Esempi di criteri di controllo dei dispositivi per Intune
 
@@ -34,8 +34,6 @@ ms.locfileid: "51933818"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vuoi provare Microsoft Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
-
-[!include[Prerelease information](../../includes/prerelease.md)]
 
 Questo documento contiene esempi di criteri di controllo dei dispositivi che puoi personalizzare per la tua organizzazione. Questi esempi sono applicabili se si usa Intune per gestire i dispositivi nell'organizzazione.
 
