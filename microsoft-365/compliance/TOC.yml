@@ -429,7 +429,7 @@
               href: archive-salesforcechatter-data.md
             - name: ServiceNow
               href: archive-servicenow-data.md
-            - name: Skype for Business (anteprima)
+            - name: Skype for Business
               href: archive-skypeforbusiness-data.md
             - name: Margine di flessibilità eDiscovery
               href: archive-slack-data.md
@@ -463,9 +463,9 @@
               href: archive-enterprise-number-data.md
             - name: O2 Telefonica SMS e Voice Network Archiver
               href: archive-o2-network-data.md
-            - name: Signal (anteprima)
+            - name: Signal Archiver
               href: archive-signal-archiver-data.md
-            - name: Telegram (anteprima)
+            - name: Telegram Archiver
               href: archive-telegram-archiver-data.md
             - name: Rete TELUS
               href: archive-telus-network-data.md
