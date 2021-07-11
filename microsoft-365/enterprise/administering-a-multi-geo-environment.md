@@ -15,12 +15,12 @@ ms.collection:
 - SPO_Content
 localization_priority: Normal
 description: Gli amministratori possono informazioni su come amministrare SharePoint e OneDrive in un ambiente multi-geografico.
-ms.openlocfilehash: 4c5215b855b8ca1840035b39fcfbddde419c13d8
-ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
+ms.openlocfilehash: 9ef22a34881ef5c9c2ed72835bc88c1dbfe835b5
+ms.sourcegitcommit: 7dc3b4dec05299abb4290a6e3d1ebe0fdc622ed7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53362319"
+ms.lasthandoff: 07/10/2021
+ms.locfileid: "53363944"
 ---
 # <a name="administering-a-multi-geo-environment"></a>Amministrare un ambiente multi-geografico
 
@@ -72,15 +72,15 @@ Per impostazione predefinita, tutti i percorsi di un ambiente multi-geo condivid
 
 ## <a name="sharing"></a>Condivisione
 
-Gli amministratori possono impostare e gestire criteri di condivisione per ognuna delle posizioni. I siti di OneDrive e SharePoint in ogni posizione geografica rispetteranno solo le corrispondenti specifiche impostazioni geografiche di condivisione. (Ad esempio, è possibile consentire la [condivisione esterna](https://support.office.com/article/C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85) per la propria posizione centrale, ma non per la posizione satellite.) Si noti che le impostazioni di condivisione non consentono la configurazione delle limitazioni per la condivisione tra località geografiche.
+Gli amministratori possono impostare e gestire criteri di condivisione per ognuna delle posizioni. I OneDrive e SharePoint in ogni posizione geografica rispettano solo le impostazioni di condivisione specifiche geografici corrispondenti. (Ad esempio, è possibile consentire la [condivisione esterna](https://support.office.com/article/C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85) per la propria posizione centrale, ma non per la posizione satellite.) Si noti che le impostazioni di condivisione non consentono la configurazione delle limitazioni per la condivisione tra località geografiche.
 
 ## <a name="stream"></a>Stream
 
-I video caricati in Stream vengono archiviati nel OneDrive della persona che sta caricando. Le registrazioni delle riunioni vengono archiviate nel OneDrive di ogni partecipante che registra la riunione.
+I video caricati in Stream in una chat 1:1 vengono archiviati nella OneDrive della persona caricata. Le registrazioni delle riunioni vengono archiviate nel OneDrive di ogni partecipante che registra la riunione.
 
 ## <a name="taxonomy"></a>Tassonomia
 
-Microsoft offre supporto per una [tassonomia](/sharepoint/managed-metadata) univoca per l'organizzazione dei metadati gestiti tra le località geografiche, con lo schema contenuto nella posizione centrale per l'azienda. È consigliabile gestire la tassonomia globale da una posizione centrale e aggiungere solo termini specifici di una posizione alla posizione della tassonomia satellitare. I termini di tassonomia globale verranno sincronizzate con la posizione satellitare.
+Supportiamo una [tassonomia](/sharepoint/managed-metadata) unificata per i metadati gestiti dall'organizzazione in posizioni geografiche, con il master ospitato nella posizione centrale dell'azienda. È consigliabile gestire la tassonomia globale da una posizione centrale e aggiungere solo termini specifici di una posizione alla posizione della tassonomia satellitare. I termini di tassonomia globale verranno sincronizzate con la posizione satellitare.
 
 Vedere [Gestire i metadati in un tenant multi-geo](/sharepoint/dev/solution-guidance/multigeo-managedmetadata) per ulteriori informazioni e istruzioni per gli sviluppatori.
 
