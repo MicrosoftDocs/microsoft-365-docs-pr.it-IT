@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Usare i criteri di conservazione per mantenere il controllo in modo efficiente dei contenuti che gli utenti generano tramite posta elettronica, documenti e conversazioni. Mantenere il contenuto desiderato e liberarsi di quello che non serve.
-ms.openlocfilehash: a9b348d51f147d5f228e6dbb643b7bedd2eb8c8e
-ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
+ms.openlocfilehash: 97b90cc84e2b14e5c63779ea8b941a5ffe64bcd7
+ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "53256532"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53362331"
 ---
 # <a name="create-and-configure-retention-policies"></a>Creare e configurare criteri di conservazione
 
@@ -75,7 +75,7 @@ Se sono presenti più criteri di conservazione e quando si usano anche etichette
     - **Chat di Teams**: messaggi provenienti da chat private 1:1, chat di gruppo e chat di riunioni.
     - **Messaggi del canale privato di Teams**: messaggi provenienti da chat del canale privato e riunioni del canale privato. Questa opzione è attualmente in fase di distribuzione in anteprima e, se non viene visualizzata, riprovare tra qualche giorno.
     
-   Per impostazione predefinita, [tutti i team e gli utenti sono selezionati](#a-policy-that-applies-to-entire-locations), ma si può raffinare la ricerca selezionando le opzioni [**Scegli** ed **Escludi**](#a-policy-with-specific-inclusions-or-exclusions). Prima di modificare l'impostazione predefinita, tuttavia, tenere presente le conseguenze per i criteri di conservazione che eliminano i messaggi quando sono configurati su include o esclude:
+   Per impostazione predefinita, [tutti i team e tutti gli utenti vengono selezionati](#a-policy-that-applies-to-entire-locations), ma è possibile perfezionare questa opzione selezionando le opzioni **Modifica** per configurare un criterio di conservazione per [inclusioni o esclusioni specifiche](#a-policy-with-specific-inclusions-or-exclusions). Prima di modificare l'impostazione predefinita, tuttavia, tenere presente le conseguenze per i criteri di conservazione che eliminano i messaggi quando sono configurati su include o esclude:
     
     - Per i messaggi delle chat di gruppo e i messaggi di canali privati, poiché una copia dei messaggi viene salvata nella cassetta postale di ogni utente inclusa nella chat, nei risultati di eDiscovery continueranno a essere restituite copie dei messaggi dagli utenti a cui non è stato assegnato il criterio.
     - Per gli utenti a cui non è stato assegnato il criterio, i messaggi eliminati vengono restituiti nei risultati della ricerca di Teams, ma non visualizzano il contenuto del messaggio in seguito all'eliminazione definitiva dai criteri assegnati agli utenti.
@@ -94,9 +94,9 @@ Per informazioni tecniche sul funzionamento della conservazione per Teams, inclu
 
 - Anche se è possibile selezionare l'opzione per iniziare il periodo di conservazione alla data dell'ultima modifica degli elementi, il valore **Quando gli elementi sono stati creati** viene sempre utilizzato. Per i messaggi modificati, una copia del messaggio originale viene salvata con il timestamp originale per identificare quando è stato creato il messaggio pre-modifica. Il messaggio modificato ha un timestamp più recente.
 
-- Quando si seleziona **Scegli i team** per il percorso **Messaggi del canale di Teams**, potrebbero essere visualizzati gruppi di Microsoft 365 che non corrispondono anche a team. Non selezionare questi gruppi.
+- Quando si seleziona **Modifica** per il percorso **Messaggi del canale di Teams**, potrebbero essere visualizzati gruppi di Microsoft 365 che non corrispondono anche a team. Non selezionare questi gruppi.
 
-- Quando si seleziona il percorso **Scegli utenti per le chat di Teams**, potrebbero essere visualizzati utenti non della cassetta postale e utenti guest. I criteri di conservazione non sono progettati per questi utenti, perciò non devono essere selezionati.
+- Quando si seleziona il percorso **Modifica** per le chat di Teams, potrebbero essere visualizzati utenti non della cassetta postale e utenti guest. I criteri di conservazione non sono progettati per questi utenti, perciò non devono essere selezionati.
 
 
 #### <a name="additional-retention-policy-needed-to-support-teams"></a>Un altro criterio di conservazione necessario per supportare Teams
@@ -125,17 +125,22 @@ Se si hanno siti del team non connessi a un gruppo di Microsoft 365, è necessar
 
 2. Selezionare **Nuovo criterio di conservazione** per creare un nuovo criterio.
 
-3. Nella pagina **Decidere se si vuole conservare il contenuto, eliminarlo e entrambi** della procedura guidata specificare le opzioni di configurazione per la conservazione e l'eliminazione del contenuto. 
+3. Per **Scegliere le posizioni in cui applicare la pagina di** dei criteri, attivare una o entrambe le posizioni per Yammer: **dei messaggi della community di Yammer** e **i messaggi utente di Yammer**.
     
-    È possibile creare un criterio che si limita a conservare il contenuto senza eliminarlo, lo conserva e quindi lo elimina dopo un periodo di tempo specificato oppure semplicemente elimina il contenuto dopo un periodo di tempo specificato. Per altre informazioni, vedere [Impostazioni per la conservazione e l'eliminazione del contenuto](#settings-for-retaining-and-deleting-content) in questa pagina.
-
-4. Nella pagina **Scegli posizioni** selezionare **Consenti la scelta di posizioni specifiche**. Quindi, attivare una o entrambe le posizioni di Yammer: **Messaggi della community di Yammer** e **Messaggi utente di Yammer**.
+    > [!IMPORTANT]
+    > Anche se è possibile creare criteri di conservazione solo per i messaggi utente di Yammer, un criterio di conservazione per questa posizione può eliminare i messaggi della community dall'app Yammer per tutti i membri della community.
+    > 
+    > Se si sceglie questa opzione e i criteri di conservazione verranno configurati per eliminare i messaggi utente, assicurarsi di comprendere questa implicazione. Per altre informazioni, vedere [Funzionamento della conservazione con Yammer](retention-policies-yammer.md#how-retention-works-with-yammer).
     
     Per impostazione predefinita, vengono selezionate tutte le community e tutti gli utenti, ma si può modificare la selezione specificando community e utenti da includere o escludere.
     
     Per i messaggi utente di Yammer: 
     - Se si lascia il valore predefinito, **Tutti**, i guest di Azure B2B non sono inclusi. 
-    - Se si seleziona **Scegli utente**, si può applicare un criterio di conservazione agli utenti esterni, se il loro account è noto.
+    - Se si seleziona **Modifica** per la colonna **** incluso, si può applicare un criterio di conservazione agli utenti esterni, se il loro account è noto.
+
+4. Nella pagina **Decidere se si vuole conservare il contenuto, eliminarlo e entrambi** della procedura guidata specificare le opzioni di configurazione per la conservazione e l'eliminazione del contenuto. 
+    
+    È possibile creare un criterio che si limita a conservare il contenuto senza eliminarlo, lo conserva e quindi lo elimina dopo un periodo di tempo specificato oppure semplicemente elimina il contenuto dopo un periodo di tempo specificato. Per altre informazioni, vedere [Impostazioni per la conservazione e l'eliminazione del contenuto](#settings-for-retaining-and-deleting-content) in questa pagina.
 
 5. Completare la procedura guidata per salvare le impostazioni.
 
@@ -167,7 +172,7 @@ Usare le istruzioni seguenti per i criteri di conservazione che si applicano a u
 
 2. Selezionare **Nuovo criterio di conservazione** per avviare la procedura guidata Crea etichetta di conservazione, e assegnare un nome al nuovo criterio di conservazione.
 
-3. Nella pagina **Scegli posizioni**, attivare o disattivare le posizioni desiderate, tranne quelle di Teams. Per ogni posizione, è possibile lasciare la configurazione predefinita [applica il criterio all'intera posizione](#a-policy-that-applies-to-entire-locations), o [specifica cosa includere ed escludere](#a-policy-with-specific-inclusions-or-exclusions).
+3. Nella pagina **Scegli posizioni in cui applicare la pagina di**, attivare o disattivare le posizioni desiderate, tranne quelle di Teams. Per ogni posizione, è possibile lasciare la configurazione predefinita [applica il criterio all'intera posizione](#a-policy-that-applies-to-entire-locations), o [specifica cosa includere ed escludere](#a-policy-with-specific-inclusions-or-exclusions).
 
     Informazioni specifiche per le posizioni:
     - [Posta elettronica di Exchange e cartelle pubbliche di Exchange](#configuration-information-for-exchange-email-and-exchange-public-folders)
