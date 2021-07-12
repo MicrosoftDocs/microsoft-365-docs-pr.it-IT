@@ -41,8 +41,10 @@
           href: service-description/privacy-personal-data.md
         - name: Aggiornamenti
           href: service-description/updates.md
-        - name: Supporto
+        - name: Supporto amministratori
           href: service-description/support.md
+        - name: Supporto agli utenti
+          href: service-description/user-support.md
         - name: Operazioni e monitoraggio
           href: service-description/operations-and-monitoring.md
         - name: Registri diagnostici
@@ -115,6 +117,8 @@
                   href: get-started/register-devices-partner.md
             - name: Registrare manualmente i dispositivi già presenti
               href: get-started/register-reused-devices-self.md
+        - name: Abilitare le funzionalità di supporto utente
+          href: get-started/enable-support.md
         - name: Preparare gli utenti a usare i dispositivi
           href: get-started/get-started-devices.md
         - name: Esperienza iniziale con Autopilot e pagina stato registrazione
