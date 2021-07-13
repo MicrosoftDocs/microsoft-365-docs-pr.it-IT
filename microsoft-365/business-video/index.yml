@@ -12,7 +12,6 @@ metadata:
   ms.author: twernermsft
   ms.date: 12/16/2020
   localization_priority: Priority
-  ms.custom: null
 productDirectory:
   items:
     - title: Per iniziare
@@ -65,7 +64,7 @@ productDirectory:
       url: get-help-support.md
 additionalContent:
   sections:
-    - title: Altre informazioni
+    - title: Ulteriori informazioni
       items:
         - title: Informazioni su Office
           summary: 'Informazioni su come usare Word, Excel, PowerPoint e altre Office app.'

@@ -15,48 +15,49 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- AdminTemplateSet
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: L'organizzazione potrebbe avere bisogno di più domini in modo che i clienti possano trovarti. Informazioni su come aggiungere un altro dominio all'abbonamento.
-ms.openlocfilehash: 13fc3cf73a112945db4372231cce70c1837c1321
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+ms.openlocfilehash: 766d0f6c1e3c68a262bc01ba432e042f0d274ce8
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52706431"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394846"
 ---
-# <a name="add-another-domain"></a><span data-ttu-id="34878-104">Aggiungere un altro dominio</span><span class="sxs-lookup"><span data-stu-id="34878-104">Add another domain</span></span>
+# <a name="add-another-domain"></a><span data-ttu-id="f9b65-104">Aggiungere un altro dominio</span><span class="sxs-lookup"><span data-stu-id="f9b65-104">Add another domain</span></span>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4dN8c?autoplay=false]
 
-<span data-ttu-id="34878-105">L'azienda potrebbe avere bisogno di più nomi di dominio per scopi diversi.</span><span class="sxs-lookup"><span data-stu-id="34878-105">Your company might need multiple domain names for different purposes.</span></span> <span data-ttu-id="34878-106">Ad esempio, potresti voler aggiungere un'ortografia diversa del nome della società perché i clienti lo stanno già usando e le loro comunicazioni non sono riuscite a raggiungere l'utente.</span><span class="sxs-lookup"><span data-stu-id="34878-106">For example, you might want to add a different spelling of your company name because customers are already using it and their communications have failed to reach you.</span></span>
+<span data-ttu-id="f9b65-105">L'azienda potrebbe avere bisogno di più nomi di dominio per scopi diversi.</span><span class="sxs-lookup"><span data-stu-id="f9b65-105">Your company might need multiple domain names for different purposes.</span></span> <span data-ttu-id="f9b65-106">Ad esempio, potresti voler aggiungere un'ortografia diversa del nome della società perché i clienti lo stanno già usando e le loro comunicazioni non sono riuscite a raggiungere l'utente.</span><span class="sxs-lookup"><span data-stu-id="f9b65-106">For example, you might want to add a different spelling of your company name because customers are already using it and their communications have failed to reach you.</span></span>
 
-## <a name="try-it"></a><span data-ttu-id="34878-107">Perché non provarlo?</span><span class="sxs-lookup"><span data-stu-id="34878-107">Try it!</span></span>
+## <a name="try-it"></a><span data-ttu-id="f9b65-107">Perché non provarlo?</span><span class="sxs-lookup"><span data-stu-id="f9b65-107">Try it!</span></span>
 
-1. <span data-ttu-id="34878-108">Nell'Microsoft 365 di amministrazione scegliere **Installazione**.</span><span class="sxs-lookup"><span data-stu-id="34878-108">In the Microsoft 365 admin center, choose **Setup**.</span></span>
-1. <span data-ttu-id="34878-109">In **Configurare il dominio personalizzato** selezionare **Visualizza.**</span><span class="sxs-lookup"><span data-stu-id="34878-109">Under **Get your custom domain set up**, select **View**.</span></span>
-1. <span data-ttu-id="34878-110">Scegliere **Gestisci** e quindi **Aggiungi dominio**.</span><span class="sxs-lookup"><span data-stu-id="34878-110">Choose **Manage**, and then **Add domain**.</span></span>
-1. <span data-ttu-id="34878-111">Immettere il nuovo nome di dominio che si desidera aggiungere e quindi selezionare **Avanti.**</span><span class="sxs-lookup"><span data-stu-id="34878-111">Enter the new domain name that you want to add, and then select **Next**.</span></span>
-1. <span data-ttu-id="34878-112">Accedi al registrar, in questo caso GoDaddy, quindi seleziona **Avanti**.</span><span class="sxs-lookup"><span data-stu-id="34878-112">Sign in to your domain registrar, in this case GoDaddy, and then select **Next**.</span></span>
-1. <span data-ttu-id="34878-113">Se richiesto, accedere al registrar e quindi scegliere **Autorizza**.</span><span class="sxs-lookup"><span data-stu-id="34878-113">If prompted, sign in to your registrar, and then choose **Authorize**.</span></span>
-1. <span data-ttu-id="34878-114">Scegliere **Add the DNS records for me** e quindi selezionare **Next**.</span><span class="sxs-lookup"><span data-stu-id="34878-114">Choose **Add the DNS records for me**, and then select **Next**.</span></span>
-1. <span data-ttu-id="34878-115">Scegliere i servizi per il nuovo dominio e deselezionare le caselle di controllo per tutti i servizi che verranno gestiti da un dominio diverso.</span><span class="sxs-lookup"><span data-stu-id="34878-115">Choose the services for your new domain and clear the check boxes for any services that will be handled by a different domain.</span></span> <span data-ttu-id="34878-116">Ad esempio, se si desidera solo utilizzare il nuovo dominio per la posta elettronica, scegliere **Exchange** e deselezionare le caselle di controllo per Skype for Business **e** **Gestione dispositivi mobili per Office 365**.</span><span class="sxs-lookup"><span data-stu-id="34878-116">For example, if you just want to use the new domain for email, choose **Exchange**, and clear the check boxes for **Skype for Business** and **Mobile Device Management for Office 365**.</span></span>
-1. <span data-ttu-id="34878-117">Selezionare **Avanti**, **Autorizza**, **Avanti** e quindi **Fine**.</span><span class="sxs-lookup"><span data-stu-id="34878-117">Select **Next**, **Authorize**, **Next**,and then **Finish**.</span></span> <span data-ttu-id="34878-118">Il nuovo dominio è stato aggiunto.</span><span class="sxs-lookup"><span data-stu-id="34878-118">Your new domain has been added.</span></span>
+1. <span data-ttu-id="f9b65-108">Nella finestra interfaccia di amministrazione di Microsoft 365 scegliere **Setup**.</span><span class="sxs-lookup"><span data-stu-id="f9b65-108">In the Microsoft 365 admin center, choose **Setup**.</span></span>
+1. <span data-ttu-id="f9b65-109">In **Configurare il dominio personalizzato** selezionare **Visualizza.**</span><span class="sxs-lookup"><span data-stu-id="f9b65-109">Under **Get your custom domain set up**, select **View**.</span></span>
+1. <span data-ttu-id="f9b65-110">Scegliere **Gestisci** e quindi **Aggiungi dominio**.</span><span class="sxs-lookup"><span data-stu-id="f9b65-110">Choose **Manage**, and then **Add domain**.</span></span>
+1. <span data-ttu-id="f9b65-111">Immettere il nuovo nome di dominio che si desidera aggiungere e quindi selezionare **Avanti.**</span><span class="sxs-lookup"><span data-stu-id="f9b65-111">Enter the new domain name that you want to add, and then select **Next**.</span></span>
+1. <span data-ttu-id="f9b65-112">Accedi al registrar, in questo caso GoDaddy, quindi seleziona **Avanti**.</span><span class="sxs-lookup"><span data-stu-id="f9b65-112">Sign in to your domain registrar, in this case GoDaddy, and then select **Next**.</span></span>
+1. <span data-ttu-id="f9b65-113">Se richiesto, accedere al registrar e quindi scegliere **Autorizza**.</span><span class="sxs-lookup"><span data-stu-id="f9b65-113">If prompted, sign in to your registrar, and then choose **Authorize**.</span></span>
+1. <span data-ttu-id="f9b65-114">Scegliere **Add the DNS records for me** e quindi selezionare **Next**.</span><span class="sxs-lookup"><span data-stu-id="f9b65-114">Choose **Add the DNS records for me**, and then select **Next**.</span></span>
+1. <span data-ttu-id="f9b65-115">Scegliere i servizi per il nuovo dominio e deselezionare le caselle di controllo per tutti i servizi che verranno gestiti da un dominio diverso.</span><span class="sxs-lookup"><span data-stu-id="f9b65-115">Choose the services for your new domain and clear the check boxes for any services that will be handled by a different domain.</span></span> <span data-ttu-id="f9b65-116">Ad esempio, se si desidera solo utilizzare il nuovo dominio per la posta elettronica, scegliere **Exchange** e deselezionare le caselle di controllo per Skype for Business **e** **Gestione dispositivi mobili per Office 365**.</span><span class="sxs-lookup"><span data-stu-id="f9b65-116">For example, if you just want to use the new domain for email, choose **Exchange**, and clear the check boxes for **Skype for Business** and **Mobile Device Management for Office 365**.</span></span>
+1. <span data-ttu-id="f9b65-117">Selezionare **Avanti**, **Autorizza**, **Avanti** e quindi **Fine**.</span><span class="sxs-lookup"><span data-stu-id="f9b65-117">Select **Next**, **Authorize**, **Next**,and then **Finish**.</span></span> <span data-ttu-id="f9b65-118">Il nuovo dominio è stato aggiunto.</span><span class="sxs-lookup"><span data-stu-id="f9b65-118">Your new domain has been added.</span></span>
 
-<span data-ttu-id="34878-119">Per ricevere posta elettronica nel nuovo dominio, è necessario aggiungere un nuovo alias di posta elettronica per ogni utente:</span><span class="sxs-lookup"><span data-stu-id="34878-119">To receive email at your new domain, you'll need to add a new email alias for each user:</span></span>
+<span data-ttu-id="f9b65-119">Per ricevere posta elettronica nel nuovo dominio, è necessario aggiungere un nuovo alias di posta elettronica per ogni utente:</span><span class="sxs-lookup"><span data-stu-id="f9b65-119">To receive email at your new domain, you'll need to add a new email alias for each user:</span></span>
 
-1. <span data-ttu-id="34878-120">Selezionare **Utenti**, **Utenti attivi** e quindi selezionare l'utente a cui verrà assegnato il nuovo alias.</span><span class="sxs-lookup"><span data-stu-id="34878-120">Select **Users**, **Active users**, and then select the user who will be assigned the new alias.</span></span>
-1. <span data-ttu-id="34878-121">Scegliere **Gestisci alias di posta** elettronica e quindi Aggiungi un **alias.**</span><span class="sxs-lookup"><span data-stu-id="34878-121">Choose **Manage email aliases**, and then **Add an alias**.</span></span>
-1. <span data-ttu-id="34878-122">Immetti il nome utente e quindi scegli il nuovo dominio nell'elenco a discesa.</span><span class="sxs-lookup"><span data-stu-id="34878-122">Enter the username, and then choose the new domain from the drop-down list.</span></span>
-1. <span data-ttu-id="34878-123">Selezionare **Salva modifiche** e quindi chiudere la finestra.</span><span class="sxs-lookup"><span data-stu-id="34878-123">Select **Save changes**, and then close the window.</span></span>
-1. <span data-ttu-id="34878-124">Ripetere questi passaggi per ogni utente che deve ricevere posta elettronica nel nuovo dominio.</span><span class="sxs-lookup"><span data-stu-id="34878-124">Repeat these steps for each user who should receive email at the new domain.</span></span>
+1. <span data-ttu-id="f9b65-120">Selezionare **Utenti**, **Utenti attivi** e quindi selezionare l'utente a cui verrà assegnato il nuovo alias.</span><span class="sxs-lookup"><span data-stu-id="f9b65-120">Select **Users**, **Active users**, and then select the user who will be assigned the new alias.</span></span>
+1. <span data-ttu-id="f9b65-121">Scegliere **Gestisci alias di posta** elettronica e quindi Aggiungi un **alias.**</span><span class="sxs-lookup"><span data-stu-id="f9b65-121">Choose **Manage email aliases**, and then **Add an alias**.</span></span>
+1. <span data-ttu-id="f9b65-122">Immetti il nome utente e quindi scegli il nuovo dominio nell'elenco a discesa.</span><span class="sxs-lookup"><span data-stu-id="f9b65-122">Enter the username, and then choose the new domain from the drop-down list.</span></span>
+1. <span data-ttu-id="f9b65-123">Selezionare **Salva modifiche** e quindi chiudere la finestra.</span><span class="sxs-lookup"><span data-stu-id="f9b65-123">Select **Save changes**, and then close the window.</span></span>
+1. <span data-ttu-id="f9b65-124">Ripetere questi passaggi per ogni utente che deve ricevere posta elettronica nel nuovo dominio.</span><span class="sxs-lookup"><span data-stu-id="f9b65-124">Repeat these steps for each user who should receive email at the new domain.</span></span>
 
-## <a name="related-content"></a><span data-ttu-id="34878-125">Contenuto correlato</span><span class="sxs-lookup"><span data-stu-id="34878-125">Related content</span></span>
+## <a name="related-content"></a><span data-ttu-id="f9b65-125">Contenuto correlato</span><span class="sxs-lookup"><span data-stu-id="f9b65-125">Related content</span></span>
 
-<span data-ttu-id="34878-126">[Aggiungere un dominio a Microsoft 365](../admin/setup/add-domain.md) (articolo)</span><span class="sxs-lookup"><span data-stu-id="34878-126">[Add a domain to Microsoft 365](../admin/setup/add-domain.md) (article)</span></span>\
-<span data-ttu-id="34878-127">[Aggiungere record DNS per connettere il dominio](../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md) (articolo)</span><span class="sxs-lookup"><span data-stu-id="34878-127">[Add DNS records to connect your domain](../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md) (article)</span></span>\
-<span data-ttu-id="34878-128">[Modificare i server dei nomi per configurare Microsoft 365 con qualsiasi registrar del dominio](../admin/get-help-with-domains/change-nameservers-at-any-domain-registrar.md) (articolo)</span><span class="sxs-lookup"><span data-stu-id="34878-128">[Change nameservers to set up Microsoft 365 with any domain registrar](../admin/get-help-with-domains/change-nameservers-at-any-domain-registrar.md) (article)</span></span>\
-<span data-ttu-id="34878-129">[Domande frequenti sui domini](../admin/setup/domains-faq.yml) (articolo)</span><span class="sxs-lookup"><span data-stu-id="34878-129">[Domains FAQ](../admin/setup/domains-faq.yml) (article)</span></span>
+<span data-ttu-id="f9b65-126">[Aggiungere un dominio a Microsoft 365](../admin/setup/add-domain.md) (articolo)</span><span class="sxs-lookup"><span data-stu-id="f9b65-126">[Add a domain to Microsoft 365](../admin/setup/add-domain.md) (article)</span></span>\
+<span data-ttu-id="f9b65-127">[Aggiungere record DNS per connettere il dominio](../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md) (articolo)</span><span class="sxs-lookup"><span data-stu-id="f9b65-127">[Add DNS records to connect your domain](../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md) (article)</span></span>\
+<span data-ttu-id="f9b65-128">[Modificare i server dei nomi per configurare Microsoft 365 con qualsiasi registrar del dominio](../admin/get-help-with-domains/change-nameservers-at-any-domain-registrar.md) (articolo)</span><span class="sxs-lookup"><span data-stu-id="f9b65-128">[Change nameservers to set up Microsoft 365 with any domain registrar](../admin/get-help-with-domains/change-nameservers-at-any-domain-registrar.md) (article)</span></span>\
+<span data-ttu-id="f9b65-129">[Domande frequenti sui domini](../admin/setup/domains-faq.yml) (articolo)</span><span class="sxs-lookup"><span data-stu-id="f9b65-129">[Domains FAQ](../admin/setup/domains-faq.yml) (article)</span></span>
