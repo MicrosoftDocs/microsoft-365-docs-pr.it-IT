@@ -13,52 +13,54 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 767349fa-f646-46d9-9dab-4a65049bdd1f
 description: Aggiornare il numero di telefono e l'indirizzo di posta elettronica dell'amministratore nell'interfaccia di amministrazione se si desidera reimpostare la propria password di amministratore.
-ms.openlocfilehash: ab4e200ae680e40dea7ca7cc4d095be0690ad375
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: 1335f5ff7a39fab53e6f45f47bec293db5650336
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52624514"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53391304"
 ---
-# <a name="update-your-admin-phone-number-and-email-address"></a><span data-ttu-id="ae1d7-103">Aggiornare il numero di telefono e l'indirizzo di posta elettronica dell'amministratore</span><span class="sxs-lookup"><span data-stu-id="ae1d7-103">Update your admin phone number and email address</span></span>
+# <a name="update-your-admin-phone-number-and-email-address"></a><span data-ttu-id="6162d-103">Aggiornare il numero di telefono e l'indirizzo di posta elettronica dell'amministratore</span><span class="sxs-lookup"><span data-stu-id="6162d-103">Update your admin phone number and email address</span></span>
 
-<span data-ttu-id="ae1d7-104">Questo articolo spiega come l'amministratore può modificare il telefono aziendale e l'indirizzo di posta elettronica in Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="ae1d7-104">This article explains how you, the admin, can change your business phone and email address in Microsoft 365.</span></span>
+<span data-ttu-id="6162d-104">Questo articolo spiega come l'amministratore può modificare il telefono aziendale e l'indirizzo di posta elettronica in Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="6162d-104">This article explains how you, the admin, can change your business phone and email address in Microsoft 365.</span></span>
   
-<span data-ttu-id="ae1d7-105">Per sapere come cambiare le informazioni del profilo dell'organizzazione, ad esempio il nome, l'indirizzo e il numero di telefono della società e i dati del contatto tecnico, vedere [Cambiare l'indirizzo dell'organizzazione, l'indirizzo di posta elettronica del contatto tecnico e altre informazioni](change-address-contact-and-more.md).</span><span class="sxs-lookup"><span data-stu-id="ae1d7-105">If you're looking for how to change your company's profile information, such as company name and address, company phone number, and technical contact information, see [Change your organization's address, technical contact email, and other information](change-address-contact-and-more.md).</span></span>
+<span data-ttu-id="6162d-105">Per sapere come cambiare le informazioni del profilo dell'organizzazione, ad esempio il nome, l'indirizzo e il numero di telefono della società e i dati del contatto tecnico, vedere [Cambiare l'indirizzo dell'organizzazione, l'indirizzo di posta elettronica del contatto tecnico e altre informazioni](change-address-contact-and-more.md).</span><span class="sxs-lookup"><span data-stu-id="6162d-105">If you're looking for how to change your company's profile information, such as company name and address, company phone number, and technical contact information, see [Change your organization's address, technical contact email, and other information](change-address-contact-and-more.md).</span></span>
 
-<span data-ttu-id="ae1d7-106">Per ulteriori informazioni sulla modifica delle informazioni di contatto degli utenti o sulla rimozione di ex dipendenti, vedere [Contenuto correlato.](#related-content)</span><span class="sxs-lookup"><span data-stu-id="ae1d7-106">For more information about changing user contact information or removing former employees, see [Related content](#related-content).</span></span>
+<span data-ttu-id="6162d-106">Per ulteriori informazioni sulla modifica delle informazioni di contatto degli utenti o sulla rimozione di ex dipendenti, vedere [Contenuto correlato.](#related-content)</span><span class="sxs-lookup"><span data-stu-id="6162d-106">For more information about changing user contact information or removing former employees, see [Related content](#related-content).</span></span>
   
-## <a name="to-update-your-phone-number-and-email-address"></a><span data-ttu-id="ae1d7-107">Per aggiornare il numero di telefono e l'indirizzo di posta elettronica</span><span class="sxs-lookup"><span data-stu-id="ae1d7-107">To update your phone number and email address</span></span>
+## <a name="to-update-your-phone-number-and-email-address"></a><span data-ttu-id="6162d-107">Per aggiornare il numero di telefono e l'indirizzo di posta elettronica</span><span class="sxs-lookup"><span data-stu-id="6162d-107">To update your phone number and email address</span></span>
 
-<span data-ttu-id="ae1d7-108">Usare la **pagina Info sicurezza** per modificare il numero di cellulare e l'indirizzo di posta elettronica alternativo.</span><span class="sxs-lookup"><span data-stu-id="ae1d7-108">Use the **Security Info** page to change your mobile phone number and alternate email address.</span></span> <span data-ttu-id="ae1d7-109">L'indirizzo di posta elettronica alternativo viene utilizzato per le notifiche importanti, ad esempio la reimpostazione della password di amministratore (non la password dell'amministratore del computer).</span><span class="sxs-lookup"><span data-stu-id="ae1d7-109">The alternate email address is used for important notifications, such as resetting your admin password (not your computer admin password).</span></span> 
+<span data-ttu-id="6162d-108">Usare la **pagina Info sicurezza** per modificare il numero di cellulare e l'indirizzo di posta elettronica alternativo.</span><span class="sxs-lookup"><span data-stu-id="6162d-108">Use the **Security Info** page to change your mobile phone number and alternate email address.</span></span> <span data-ttu-id="6162d-109">L'indirizzo di posta elettronica alternativo viene utilizzato per le notifiche importanti, ad esempio la reimpostazione della password di amministratore (non la password dell'amministratore del computer).</span><span class="sxs-lookup"><span data-stu-id="6162d-109">The alternate email address is used for important notifications, such as resetting your admin password (not your computer admin password).</span></span> 
   
-1. <span data-ttu-id="ae1d7-110">Passare all'Microsoft 365 di amministrazione.</span><span class="sxs-lookup"><span data-stu-id="ae1d7-110">Browse to the Microsoft 365 admin center.</span></span>
+1. <span data-ttu-id="6162d-110">Passare al interfaccia di amministrazione di Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="6162d-110">Browse to the Microsoft 365 admin center.</span></span>
 
-2. <span data-ttu-id="ae1d7-111">Nell'intestazione seleziona l'icona del profilo \> **Info di sicurezza** \> **dell'account personale.**</span><span class="sxs-lookup"><span data-stu-id="ae1d7-111">In the header, select your profile icon \> **My account** \> **Security Info**.</span></span>
+2. <span data-ttu-id="6162d-111">Nell'intestazione seleziona l'icona del profilo \> **Info di sicurezza** \> **dell'account personale.**</span><span class="sxs-lookup"><span data-stu-id="6162d-111">In the header, select your profile icon \> **My account** \> **Security Info**.</span></span>
 
-3. <span data-ttu-id="ae1d7-112">Nella scheda **Info di sicurezza** seleziona Aggiungi **metodo** Telefono \>  \> **alternativa Telefono** **o Posta elettronica** per aggiungere dettagli.</span><span class="sxs-lookup"><span data-stu-id="ae1d7-112">In the **Security info** tab, select **Add Method** \> **Phone** \> **Alternate Phone** or **Email** to add details.</span></span> <span data-ttu-id="ae1d7-113">Per aggiornare i dettagli del cellulare, del telefono e dell'indirizzo di posta elettronica alternativo, selezionare **Cambia**.</span><span class="sxs-lookup"><span data-stu-id="ae1d7-113">To update your mobile, phone, and alternate email address details, select **Change**.</span></span> <span data-ttu-id="ae1d7-114">Assicurati di usare un indirizzo diverso dall'indirizzo di posta elettronica Microsoft per l'indirizzo di posta elettronica alternativo.</span><span class="sxs-lookup"><span data-stu-id="ae1d7-114">Make sure you use something other than your Microsoft email address for your alternate email address.</span></span>
+3. <span data-ttu-id="6162d-112">Nella scheda **Info di sicurezza** seleziona Aggiungi **metodo** Telefono \>  \> **alternativa Telefono** **o Posta elettronica** per aggiungere dettagli.</span><span class="sxs-lookup"><span data-stu-id="6162d-112">In the **Security info** tab, select **Add Method** \> **Phone** \> **Alternate Phone** or **Email** to add details.</span></span> <span data-ttu-id="6162d-113">Per aggiornare i dettagli del cellulare, del telefono e dell'indirizzo di posta elettronica alternativo, selezionare **Cambia**.</span><span class="sxs-lookup"><span data-stu-id="6162d-113">To update your mobile, phone, and alternate email address details, select **Change**.</span></span> <span data-ttu-id="6162d-114">Assicurati di usare un indirizzo diverso dall'indirizzo di posta elettronica Microsoft per l'indirizzo di posta elettronica alternativo.</span><span class="sxs-lookup"><span data-stu-id="6162d-114">Make sure you use something other than your Microsoft email address for your alternate email address.</span></span>
 
     > [!IMPORTANT]
-    > <span data-ttu-id="ae1d7-115">L'indirizzo di posta elettronica alternativo e il numero di cellulare sono necessari per reimpostare la password dell'amministratore (non la password dell'amministratore del computer).</span><span class="sxs-lookup"><span data-stu-id="ae1d7-115">The alternate email address and the mobile phone number are needed for resetting your admin password (not your computer admin password).</span></span>
+    > <span data-ttu-id="6162d-115">L'indirizzo di posta elettronica alternativo e il numero di cellulare sono necessari per reimpostare la password dell'amministratore (non la password dell'amministratore del computer).</span><span class="sxs-lookup"><span data-stu-id="6162d-115">The alternate email address and the mobile phone number are needed for resetting your admin password (not your computer admin password).</span></span>
 
-4. <span data-ttu-id="ae1d7-116">Al termine, selezionare **Salva**.</span><span class="sxs-lookup"><span data-stu-id="ae1d7-116">When you are finished, select **Save**.</span></span>
+4. <span data-ttu-id="6162d-116">Al termine, selezionare **Salva**.</span><span class="sxs-lookup"><span data-stu-id="6162d-116">When you are finished, select **Save**.</span></span>
   
-<span data-ttu-id="ae1d7-117">In caso di domande sulla fatturazione, vedere:</span><span class="sxs-lookup"><span data-stu-id="ae1d7-117">For answers to billing questions, see:</span></span>
+<span data-ttu-id="6162d-117">In caso di domande sulla fatturazione, vedere:</span><span class="sxs-lookup"><span data-stu-id="6162d-117">For answers to billing questions, see:</span></span>
   
-- [<span data-ttu-id="ae1d7-118">Modificare gli indirizzi di fatturazione per Microsoft 365 per le aziende</span><span class="sxs-lookup"><span data-stu-id="ae1d7-118">Change your billing addresses for Microsoft 365 for business</span></span>](../../commerce/billing-and-payments/change-your-billing-addresses.md)
+- [<span data-ttu-id="6162d-118">Modificare gli indirizzi di fatturazione per Microsoft 365 per le aziende</span><span class="sxs-lookup"><span data-stu-id="6162d-118">Change your billing addresses for Microsoft 365 for business</span></span>](../../commerce/billing-and-payments/change-your-billing-addresses.md)
 
-- [<span data-ttu-id="ae1d7-119">Gestione metodi di pagamento</span><span class="sxs-lookup"><span data-stu-id="ae1d7-119">Manage payment methods</span></span>](../../commerce/billing-and-payments/manage-payment-methods.md)
+- [<span data-ttu-id="6162d-119">Gestione metodi di pagamento</span><span class="sxs-lookup"><span data-stu-id="6162d-119">Manage payment methods</span></span>](../../commerce/billing-and-payments/manage-payment-methods.md)
 
-## <a name="related-content"></a><span data-ttu-id="ae1d7-120">Contenuto correlato</span><span class="sxs-lookup"><span data-stu-id="ae1d7-120">Related content</span></span>
+## <a name="related-content"></a><span data-ttu-id="6162d-120">Contenuto correlato</span><span class="sxs-lookup"><span data-stu-id="6162d-120">Related content</span></span>
 
-<span data-ttu-id="ae1d7-121">[Modificare un nome utente e un indirizzo di posta elettronica](../add-users/change-a-user-name-and-email-address.md) (video)</span><span class="sxs-lookup"><span data-stu-id="ae1d7-121">[Change a user name and email address](../add-users/change-a-user-name-and-email-address.md) (video)</span></span>\
-<span data-ttu-id="ae1d7-122">[Aggiungere un nuovo dipendente](../add-users/add-new-employee.md) (video)</span><span class="sxs-lookup"><span data-stu-id="ae1d7-122">[Add a new employee](../add-users/add-new-employee.md) (video)</span></span>\
-<span data-ttu-id="ae1d7-123">[Rimuovere un ex dipendente](../add-users/remove-former-employee.md) (video)</span><span class="sxs-lookup"><span data-stu-id="ae1d7-123">[Remove a former employee](../add-users/remove-former-employee.md) (video)</span></span>\
-<span data-ttu-id="ae1d7-124">[Accedere ed eseguire il backup dei dati di un](../add-users/get-access-to-and-back-up-a-former-user-s-data.md) ex utente (articolo)</span><span class="sxs-lookup"><span data-stu-id="ae1d7-124">[Access and back up a former user's data](../add-users/get-access-to-and-back-up-a-former-user-s-data.md) (article)</span></span>
+<span data-ttu-id="6162d-121">[Modificare un nome utente e un indirizzo di posta elettronica](../add-users/change-a-user-name-and-email-address.md) (video)</span><span class="sxs-lookup"><span data-stu-id="6162d-121">[Change a user name and email address](../add-users/change-a-user-name-and-email-address.md) (video)</span></span>\
+<span data-ttu-id="6162d-122">[Aggiungere un nuovo dipendente](../add-users/add-new-employee.md) (video)</span><span class="sxs-lookup"><span data-stu-id="6162d-122">[Add a new employee](../add-users/add-new-employee.md) (video)</span></span>\
+<span data-ttu-id="6162d-123">[Rimuovere un ex dipendente](../add-users/remove-former-employee.md) (video)</span><span class="sxs-lookup"><span data-stu-id="6162d-123">[Remove a former employee](../add-users/remove-former-employee.md) (video)</span></span>\
+<span data-ttu-id="6162d-124">[Accedere ed eseguire il backup dei dati di un](../add-users/get-access-to-and-back-up-a-former-user-s-data.md) ex utente (articolo)</span><span class="sxs-lookup"><span data-stu-id="6162d-124">[Access and back up a former user's data](../add-users/get-access-to-and-back-up-a-former-user-s-data.md) (article)</span></span>
