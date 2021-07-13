@@ -16,19 +16,20 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - commerce_purchase
+- AdminTemplateSet
 search.appverid: GEA150
-description: Iscriversi per una versione di valutazione gratuita di 30 giorni per Microsoft 365 Business Standard, Microsoft 365 Business Premium o App Microsoft 365 per le aziende.
+description: Iscriversi per una versione di valutazione gratuita di 30 giorni Microsoft 365 Business Standard, Microsoft 365 Business Premium o Microsoft 365 Apps for business.
 ms.date: 08/07/2020
-ms.openlocfilehash: c53f9eb64463eeb7c647bc63123aaac02598fd4c
-ms.sourcegitcommit: 959c3c3633e40b7b0f5e2c8372409778005a24db
+ms.openlocfilehash: 1ef3ceffb795a25ebad0bac1e37dd12df6f62d90
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "52950048"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394870"
 ---
 # <a name="try-or-buy-a-microsoft-365-for-business-subscription"></a>Provare o acquistare un abbonamento Microsoft 365 per le aziende
 
-Microsoft 365 per le aziende è un servizio di sottoscrizione che consente di eseguire l'organizzazione nel cloud mentre Microsoft si occupa dell'IT per te. Microsoft gestisce i dispositivi, protegge dalle minacce reali e fornisce all'organizzazione il software aziendale più recente. Puoi iscriverti a una sottoscrizione di valutazione gratuita per Microsoft 365 Business Standard, Microsoft 365 Business Premium o App Microsoft 365 per le aziende e provarla per 30 giorni.
+Microsoft 365 per le aziende è un servizio di sottoscrizione che consente di eseguire l'organizzazione nel cloud mentre Microsoft si occupa dell'IT per te. Microsoft gestisce i dispositivi, protegge dalle minacce reali e fornisce all'organizzazione il software aziendale più recente. Puoi iscriverti a una sottoscrizione di valutazione gratuita per Microsoft 365 Business Standard, Microsoft 365 Business Premium o Microsoft 365 Apps for business e provarla per 30 giorni.
 
 > [!NOTE]
 > È necessario utilizzare una carta di credito quando si effettua la registrazione per una versione di valutazione gratuita. Al termine del periodo di valutazione gratuito, l'abbonamento di valutazione viene convertito automaticamente in un abbonamento a pagamento. La carta di credito non viene fatturata fino alla fine del periodo di prova.
@@ -49,7 +50,7 @@ Non è necessario un account Microsoft esistente per iscriversi per una versione
 
 ## <a name="try-a-free-trial-subscription"></a>Provare una sottoscrizione di valutazione gratuita
 
-Sei un nuovo cliente e non hai già un account con Microsoft? Seguire questa procedura per creare un account e iscriversi a una sottoscrizione di valutazione gratuita di Microsoft 365 Business Standard, Microsoft 365 Business Premium o App Microsoft 365 per le aziende.
+Sei un nuovo cliente e non hai già un account con Microsoft? Seguire questa procedura per creare un account e iscriversi a una sottoscrizione di valutazione gratuita di Microsoft 365 Business Standard, Microsoft 365 Business Premium o Microsoft 365 Apps for business.
 
 1. Accedere al <a href="https://www.aka.ms/office365signup" target="_blank">sito Microsoft 365 prodotti</a>.
 2. Seleziona il piano a cui vuoi iscriverti, ad esempio **Microsoft 365 Business Standard,** scorri verso il basso nella pagina e seleziona Prova **gratuitamente per 1 mese.**

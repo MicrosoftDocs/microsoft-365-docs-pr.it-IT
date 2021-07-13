@@ -16,12 +16,12 @@ ms.collection:
 description: Gli amministratori possono imparare a configurare gli elementi consentiti e i blocchi nell'elenco Consenti/Blocca tenant nel portale di sicurezza.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1548eda760b7b6b19214cb834d7fc43357dc0357
-ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
+ms.openlocfilehash: dbd4694a7442b3898d24304dc78fc95c28c9a905
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52985493"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394954"
 ---
 # <a name="manage-the-tenant-allowblock-list"></a>Gestire l'elenco di tenant consentiti/bloccati
 
@@ -40,7 +40,7 @@ ms.locfileid: "52985493"
 
 Nelle Microsoft 365 con cassette postali in Exchange Online o in organizzazioni di Exchange Online Protection (EOP) autonome senza cassette postali di Exchange Online, è possibile che non si sia d'accordo con il verdetto del filtro EOP. Ad esempio, un buon messaggio potrebbe essere contrassegnato come non positivo (falso positivo) o un messaggio non positivo potrebbe essere consentito (un falso negativo).
 
-L'elenco Tenant consentiti/Microsoft 365 Defender consente di ignorare manualmente i Microsoft 365 di filtro. L'elenco tenant consentiti/bloccati viene utilizzato durante il flusso di posta e al momento dei clic dell'utente. È possibile specificare i seguenti tipi di sostituzioni:
+L'elenco Tenant consentiti/Microsoft 365 Defender consente di ignorare manualmente i Microsoft 365 di filtro. L'elenco tenant consenti/blocca viene utilizzato durante il flusso di posta per i messaggi in arrivo (non si applica ai messaggi intra-org) e al momento dei clic dell'utente. È possibile specificare i seguenti tipi di sostituzioni:
 
 - URL da bloccare.
 - File da bloccare.
@@ -217,7 +217,7 @@ In questo articolo viene descritto come configurare le voci nell'elenco tenant c
      - **Nota facoltativa**
    - **Spoofing**
      - **Azione**: è possibile modificare il valore in **Consenti** o **Blocca**.
-4. Al termine, scegliere **Salva**.
+4. Al termine, fare clic su **Salva**.
 
 ## <a name="use-the-microsoft-365-defender-portal-to-remove-entries-from-the-tenant-allowblock-list"></a>Utilizzare il portale Microsoft 365 Defender per rimuovere le voci dall'elenco tenant consentiti/bloccati
 

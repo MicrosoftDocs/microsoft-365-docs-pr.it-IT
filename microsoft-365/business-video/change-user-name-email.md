@@ -15,18 +15,19 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- AdminTemplateSet
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Informazioni su come modificare il nome o l'indirizzo di posta elettronica di un utente modificando un nome visualizzato, un alias o un indirizzo di posta elettronica.
-ms.openlocfilehash: e012923ebe12a04b07c9236f5ebbd30623cd2dd5
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+ms.openlocfilehash: c7d960daa8b1b83149db90b10b7af4236d535a9d
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52706419"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394834"
 ---
 # <a name="change-a-users-name-or-email-address"></a>Modificare il nome o l'indirizzo di posta elettronica di un utente
 
@@ -40,7 +41,7 @@ In alcuni casi, potrebbe essere necessario modificare il nome o l'indirizzo di p
 
 ### <a name="change-a-users-display-name"></a>Cambiare il nome visualizzato di un utente
 
-1. Nell'Microsoft 365 di amministrazione selezionare **Utenti** e quindi **Utenti attivi**.
+1. Nell'interfaccia di amministrazione di Microsoft 365 selezionare **Utenti** e quindi **Utenti attivi**.
 1. Selezionare l'utente dall'elenco degli utenti attivi.
 1. Selezionare **Gestisci informazioni di contatto**.
 1. Modificare il nome visualizzato e selezionare **Salva modifiche**.
@@ -49,14 +50,14 @@ In alcuni casi, potrebbe essere necessario modificare il nome o l'indirizzo di p
 
 ### <a name="add-an-email-alias"></a>Aggiungere un alias di posta elettronica
 
-1. Nell'Microsoft 365 di amministrazione selezionare **Utenti** e quindi **Utenti attivi**.
+1. Nell'interfaccia di amministrazione di Microsoft 365 selezionare **Utenti** e quindi **Utenti attivi**.
 1. Selezionare l'utente dall'elenco degli utenti attivi.
 1. Selezionare **Gestisci alias di posta elettronica**.
 1. Immettere il nuovo alias, verificare il dominio e selezionare **Salva modifiche**.
 
 ### <a name="change-a-username"></a>Modificare un nome utente
 
-1. Nell'Microsoft 365 di amministrazione selezionare **Utenti** e quindi **Utenti attivi**.
+1. Nell'interfaccia di amministrazione di Microsoft 365 selezionare **Utenti** e quindi **Utenti attivi**.
 1. Selezionare l'utente dall'elenco degli utenti attivi.
 1. Selezionare **Gestisci nome utente**.
 1. Immettere il nuovo nome utente, verificare il dominio e selezionare **Salva modifiche**.

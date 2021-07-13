@@ -15,18 +15,19 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- AdminTemplateSet
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Scopri come interrompere l'inoltro automatico dei messaggi di posta elettronica creando una regola del flusso di posta per evitare il furto di informazioni proprietarie.
-ms.openlocfilehash: 82e4c80b0edc501889e0fc4dc28f1ec1ad703568
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+ms.openlocfilehash: 23b1afa7a851c0b00fb9fca574ca0bb32057ea42
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52706475"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394798"
 ---
 # <a name="stop-email-auto-forward"></a>Arrestare l'inoltro automatico della posta elettronica
 
@@ -38,7 +39,7 @@ Se un pirata informatico ottiene l'accesso alla cassetta postale di un utente, p
 
 ## <a name="try-it"></a>Perché non provarlo?
 
-1. Nell'Microsoft 365 di amministrazione selezionare **Exchange ,** flusso di posta  **e** nella scheda regole selezionare il segno più e scegliere crea una nuova **regola**.
+1. Nell'interfaccia di amministrazione di Microsoft 365 selezionare **Exchange** **,** flusso di posta e  nella scheda regole selezionare il segno più e scegliere crea **una nuova regola**.
 1. Selezionare **Altre opzioni.** Assegnare un nome alla nuova regola.
 1. Aprire quindi l'elenco a discesa per **applicare questa regola se**, selezionare **il** mittente e quindi è **interno esterno.**
 1. Selezionare **All'interno dell'organizzazione** e quindi **OK.**

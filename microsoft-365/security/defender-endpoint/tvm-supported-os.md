@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 81b0594044e238f5855c627b2ce80baf8d8cb9c2
-ms.sourcegitcommit: 99e67bfe1d677c2f51712b05dcc54908b343cf6f
+ms.openlocfilehash: cb6e12e9b8ae32c13095239fe67012a520eb6e07
+ms.sourcegitcommit: 8c698d1a0c41baf5f35d07b0d765b4a5ead593d0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53203185"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "53408973"
 ---
 # <a name="supported-operating-systems-platforms-and-capabilities---for-threat-and-vulnerability-management"></a>Sistemi operativi, piattaforme e funzionalità supportati - per gestione di minacce e vulnerabilità
 
@@ -32,7 +32,7 @@ ms.locfileid: "53203185"
 **Si applica a:**
 
 - [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Minaccia e gestione delle vulnerabilità](next-gen-threat-and-vuln-mgt.md)
+- [Gestione di minacce e vulnerabilità](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 >Vuoi provare Microsoft Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
@@ -62,6 +62,9 @@ CentOS 7.2 o versione successiva | Sì | Sì | Sì | Sì | Sì
 Ubuntu 16,04 LTS o superiore | Sì | Sì | Sì | Sì | Sì
 Oracle Linux 7.2 o versione successiva | Sì | Sì | Sì | Sì | Sì
 SUSE Linux Enterprise Server 12 o versione successiva | Sì | Sì | Sì | Sì | Sì
+
+>[!NOTE]
+> Alcune funzionalità non sono disponibili per il sistema operativo di livello inferiore, consultare il portale Microsoft 365 Defender per ulteriori dettagli sul sistema operativo supportato.
 
 >[!IMPORTANT]
 > \*Red Hat Enterprise Linux: "I dati di vulnerabilità forniti e visualizzati come parte dei servizi Microsoft Defender for Endpoint sono resi disponibili nella sua forma non elaborata, "AS IS", di Red Hat, Inc., e potrebbero non essere aggiornati. I dati accessibili nell'API Red Hat Security Data sono concessi in licenza con la licenza internazionale Creative Commons Attribution 4.0. L'utilizzo di questi dati è rischioso. Microsoft e i suoi fornitori di terze parti non rilascino alcuna responsabilità per danni indiretti e indiretti e garanzie implicite, incluse garanzie implicite di non violazione, com commercializzabilità e idoneità per uno scopo specifico. © 2020 Red Hat. Tutti i diritti riservati. © 2020 Microsoft. Tutti i diritti riservati."

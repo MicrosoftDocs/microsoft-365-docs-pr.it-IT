@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Che si tratta dell'aggiunta di nuove soluzioni al Centro conformità, dell'aggiornamento delle funzionalità esistenti in base al feedback dell'utente o dell'implementazione di documentazione aggiornata e aggiornata, Microsoft 365 consente di rimanere al top del panorama di conformità in continua evoluzione. Scopri cosa abbiamo fatto fino a questo mese.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: aec9135a00b53f504d19a80e428d52f21b92cf9c
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 4e298a9dc8b23e3977db51d5a3b96f7b0723a0d1
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53288132"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394942"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Novità sulla conformità Microsoft 365
 
@@ -40,6 +40,28 @@ Che si tratta dell'aggiunta di nuove soluzioni al [Centro conformità Microsoft 
 > - [Novità di Microsoft 365 Defender](../security/defender/whats-new.md)
 >
 > E visitare la roadmap [Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap) per informazioni sulle Microsoft 365 che sono state avviate, sono in fase di implementazione, sono in fase di sviluppo, sono state annullate o rilasciate in precedenza.
+
+## <a name="june-2021"></a>Giugno 2021
+
+### <a name="customer-key"></a>Customer Key
+
+- [Crittografia del servizio con chiave cliente](customer-key-overview.md) (IPS a livello di tenant della chiave cliente ora crittografa la configurazione dell'etichetta di riservatezza per Microsoft Information Protection).
+
+### <a name="ediscovery"></a>eDiscovery
+
+- [Eseguire query e filtrare](review-set-search.md) il contenuto in un set di recensioni (nuove funzionalità di query e filtro in un nuovo formato UX per filtrare e cercare contenuto in un set di recensioni)
+- [Contrassegnare](tagging-documents.md) i documenti in un set di revisioni in Advanced eDiscovery (nuove funzionalità di tag ed esperienza utente per semplificare e velocizzare l'aggiunta di tag ai documenti in un set di revisioni; include nuove funzionalità di applicazione di tag ai documenti tramite una query e l'utilizzo di filtri per trovare o escludere rapidamente gli elementi del set di revisioni in base alla modalità di applicazione di tag a un elemento)
+- Configurare i limiti di conformità per le indagini [di eDiscovery](set-up-compliance-boundaries.md) (Microsoft ha rimosso il requisito di contattare il supporto tecnico microsoft per richiedere che un attributo di conformità sia sincronizzato con gli account OneDrive; ora viene utilizzato un filtro delle autorizzazioni di ricerca delle cassette postali per applicare i limiti di conformità per OneDrive)
+
+### <a name="sensitivity-labels"></a>Etichette di riservatezza
+
+- La procedura guidata dei criteri [](sensitivity-labels-office-apps.md#outlook-specific-options-for-default-label-and-mandatory-labeling) di etichetta di riservatezza ora supporta opzioni specifiche Outlook per l'etichetta predefinita e l'etichettatura obbligatoria come configurazione più semplice rispetto alle impostazioni avanzate di PowerShell (ancora supportate).
+- Il supporto [per i contrassegni dinamici con variabili](sensitivity-labels-office-apps.md#dynamic-markings-with-variables ) è ora in distribuzione per Word, Excel e PowerPoint sul web
+- Per [i criteri di etichettatura](apply-sensitivity-label-automatically.md) automatica per Exchange, se l'etichetta è configurata per la crittografia, tale crittografia non viene applicata. Inoltre, per Exchange criteri di etichettatura automatica, è ora possibile configurare le eccezioni e le nuove condizioni seguenti: oggetto, indirizzo del destinatario o indirizzo del mittente corrisponde a modelli; l'indirizzo del destinatario contiene parole; il dominio del mittente è, il destinatario è un membro di; sender is.
+- Quando si utilizzano etichette di riservatezza con team, gruppi e siti, è possibile utilizzare Set-SPOTenant con il parametro BlockSendLabelMismatchEmail per evitare che il messaggio di posta elettronica generato automaticamente quando viene registrato l'evento di controllo **Rilevata** mancata corrispondenza di riservatezza dei documenti.  Per ulteriori informazioni, vedere [Auditing sensitivity label activities.](sensitivity-labels-teams-groups-sites.md#auditing-sensitivity-label-activities )
+- [L'impostazione del contesto di](sensitivity-labels-teams-groups-sites.md#more-information-about-the-dependencies-for-the-authentication-context-option) autenticazione è ora completamente implementazione in anteprima per le etichette di riservatezza. Inoltre, questa configurazione è ora supportata da Microsoft Teams.
+- I file etichettati e crittografati da un nome di principio del servizio (ad esempio Microsoft Cloud App Security) e quindi caricati in SharePoint e OneDrive possono ora essere aperti in Office per il web dopo aver abilitato le etichette di riservatezza per i file [Office in SharePoint e OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
+- [La creazione](sensitivity-labels-coauthoring.md) condivisa e il salvataggio automatico non sono più limitati ai tenant di test e ora sono supportati in produzione quando si utilizza la versione 2105: 18 giugno per Windows e versione 16.50+ per macOS. Tieni presente che questa funzionalità non è ancora supportata da iOS e Android e rimane in anteprima.
 
 ## <a name="may-2021"></a>Maggio 2021
 
@@ -269,49 +291,3 @@ Le soluzioni di Microsoft 365 seguenti supportano ora il rilevamento del contenu
 
 - Le etichette di riservatezza sono ora supportate per i tenant del governo statunitense (GCC e GCC-H).
 - Nuovo [supporto per l'etichettatura](sensitivity-labels-office-apps.md) automatica per macOS.
-
-## <a name="december-2020"></a>Dicembre 2020
-
-### <a name="spotlight-new-content-for-insider-risk-solutions"></a>Contenuti in evidenza: nuovi contenuti per soluzioni di rischio insider
-
-Il team Microsoft 365 contenuto di conformità è al lavoro per creare documenti di "soluzione di contenuto" per promuovere il modo in cui le funzionalità di conformità possono essere utilizzate insieme per soddisfare gli obiettivi di conformità.
-
-Il primo è il contenuto che riunisce le nostre soluzioni di rischio insider: conformità delle comunicazioni, gestione dei rischi insider, barriere alle informazioni e gestione degli accessi privilegiati. Ecco un'occhiata a ciò che troverai:
-
-- [Nuova pagina di destinazione per le soluzioni di rischio insider.](insider-risk-solution-overview.md) Include informazioni dettagliate sui rischi che le soluzioni possono contribuire a ridurre, i requisiti di licenza, la sequenza di distribuzione, le illustrazioni dell'architettura, le risorse di formazione e altro ancora.
-- Nuovi articoli di panoramica per ogni soluzione di rischio insider. Linee guida e collegamenti ad articoli utili per informazioni su, pianificare, distribuire e gestire ogni soluzione:
-  - [Conformità delle comunicazioni](communication-compliance-solution-overview.md)
-  - [Gestione dei rischi insider](insider-risk-management-solution-overview.md)
-  - [Barriere informative](information-barriers-solution-overview.md)
-  - [Gestione accessi con privilegi](privileged-access-management-solution-overview.md)
-
-Presto saranno disponibili altri documenti sulle soluzioni di contenuto.
-
-### <a name="advanced-ediscovery"></a>Advanced eDiscovery
-
-Flusso di lavoro e funzionalità migliorate per [l'aggiunta](add-custodians-to-case.md) di custodi e origini dati [non](non-custodial-data-sources.md) Advanced eDiscovery caso.
-
-### <a name="data-connectors"></a>Connettori dati
-
-[Quattro nuovi connettori Veritas](archiving-third-party-data.md#third-party-data-connectors)rilasciati: Redtail Speak, Salesforce Chatter, ServiceNow e Yieldbroker.
-
-### <a name="encryption"></a>Crittografia
-
-Introduzione [al codice "Customer Key" Microsoft 365 a livello di tenant.](customer-key-tenant-level.md) Usando le chiavi fornite, è possibile creare un criterio di crittografia dei dati e assegnarlo al tenant. Protezione esecuzione programmi crittografa i dati nel tenant per questi carichi di lavoro:
-
-- Teams chat (chat 1:1, chat di gruppo, chat di riunione e conversazioni di canale)
-- Teams messaggi multimediali (immagini, frammenti di codice, video, immagini wiki)
-- Teams registrazioni di chiamate e riunioni archiviate in Teams archiviazione
-- Teams chat
-- Teams suggerimenti di chat da Cortana
-- Teams di stato
-- Informazioni sull'utente e sul segnale Exchange Online
-
-### <a name="records-management"></a>Gestione dei record
-
-Il [gruppo di ruoli amministratore](get-started-with-records-management.md#permissions-required-for-records-management) Gestione record concede ora le autorizzazioni per tutte le funzionalità di gestione dei record, inclusa la revisione dell'eliminazione.
-
-### <a name="sensitivity-labels"></a>Etichette di riservatezza
-
-- [Etichetta automaticamente i dati in Azure Purview (anteprima)](/azure/purview/create-sensitivity-label). È ora possibile creare e applicare automaticamente etichette di riservatezza agli asset in Azure Purview, ad esempio i file nell'archiviazione BLOB di Azure e le colonne di database in SQL Server.
-- [Richiedere agli utenti di applicare un'etichetta agli elementi](sensitivity-labels-office-apps.md#require-users-to-apply-a-label-to-their-email-and-documents). Nota anche come "etichettatura obbligatoria", questa nuova opzione richiede agli utenti di scegliere e applicare un'etichetta di riservatezza negli scenari specifici.

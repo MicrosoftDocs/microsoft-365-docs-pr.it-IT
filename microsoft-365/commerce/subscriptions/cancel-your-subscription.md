@@ -16,15 +16,16 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - commerce_subscriptions
+- AdminTemplateSet
 search.appverid: MET150
 description: Se si hanno meno di 25 licenze assegnate a utenti, è possibile annullare la versione di valutazione o l'abbonamento a pagamento di Microsoft 365 per le aziende nell'interfaccia di amministrazione.
 ms.date: 04/08/2021
-ms.openlocfilehash: e0b23d785a86102891f24cb16419794773d64356
-ms.sourcegitcommit: 17d82e5617f0466eb825e15ab88594afcdaf4437
+ms.openlocfilehash: 2d6fbe653c860c67f9897b80ffb68e6cb2859f53
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "53300041"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394930"
 ---
 # <a name="cancel-your-subscription"></a>Annullare l'abbonamento
 

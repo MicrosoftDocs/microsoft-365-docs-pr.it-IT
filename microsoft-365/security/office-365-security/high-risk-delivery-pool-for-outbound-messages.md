@@ -17,12 +17,12 @@ ms.collection:
 description: Informazioni su come vengono utilizzati i pool di recapito per proteggere la reputazione dei server di posta elettronica nei Microsoft 365 datacenter.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 85f200cf226a050762db4ea37255f71241d1f98c
-ms.sourcegitcommit: 410f6e1c6cf53c3d9013b89d6e0b40a050ee9cad
+ms.openlocfilehash: c5881b20eaed8387988d01b69a4acd022c5924a2
+ms.sourcegitcommit: 8c698d1a0c41baf5f35d07b0d765b4a5ead593d0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "53137719"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "53409141"
 ---
 # <a name="outbound-delivery-pools"></a>Pool di recapito in uscita
 
@@ -82,3 +82,6 @@ Nei casi in cui è possibile autenticare il mittente, viene utilizzato lo schema
 Per il funzionamento di DKIM, assicurati di abilitare DKIM per il dominio di invio. Ad esempio, fabrikam.com fa parte di contoso.com ed è definito nei domini accettati dell'organizzazione. Se il mittente del messaggio sender@fabrikam.com, DKIM deve essere abilitato per fabrikam.com. per informazioni su come abilitare l'utilizzo di DKIM per convalidare la posta elettronica in uscita inviata dal dominio personalizzato, vedere Use [DKIM to validate outbound email sent from your custom domain.](use-dkim-to-validate-outbound-email.md)
 
 Per aggiungere un dominio personalizzato, seguire la procedura descritta in [Aggiungere un dominio a Microsoft 365](../../admin/setup/add-domain.md).
+
+Se il record MX del dominio punta a un servizio di terze parti o a un server di posta elettronica locale, è consigliabile utilizzare il filtro avanzato [per i connettori.](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors) Il filtro avanzato garantisce che la convalida SPF sia corretta per la posta in ingresso ed eviti l'invio di posta elettronica tramite il pool di inoltro.
+

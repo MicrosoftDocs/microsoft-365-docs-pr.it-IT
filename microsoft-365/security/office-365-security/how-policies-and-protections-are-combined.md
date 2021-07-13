@@ -17,12 +17,12 @@ ms.custom:
 description: Gli amministratori possono ottenere informazioni sull'ordine di applicazione delle protezioni in Exchange Online Protection (EOP) e su come il valore di priorità nei criteri di protezione determina quale criterio viene applicato.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: df40ca6efaed5a1884e6dc453f2053f9bc1a84f1
-ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
+ms.openlocfilehash: 9dea01324e37a56fbff049e4e46cd5882f1fabad
+ms.sourcegitcommit: 8c698d1a0c41baf5f35d07b0d765b4a5ead593d0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53029286"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "53409129"
 ---
 # <a name="order-and-precedence-of-email-protection"></a>Ordine e precedenza della protezione della posta elettronica
 
@@ -47,9 +47,9 @@ Esistono due fattori principali che determinano quale criterio viene applicato a
 
   |Priorità|Protezione della posta elettronica|Categoria|Dove gestire|
   |---|---|---|---|
-  |1|Malware|CAT:MALW|[Configurare i criteri antimalware in EOP](configure-anti-malware-policies.md)|
-  |2|Phishing|CAT:PHSH|[Configurare criteri di protezione dalla posta indesiderata in EOP](configure-your-spam-filter-policies.md)|
-  |3|Alta probabilità di posta indesiderata|CAT:HSPM|[Configurare criteri di protezione dalla posta indesiderata in EOP](configure-your-spam-filter-policies.md)|
+  |1 |Malware|CAT:MALW|[Configurare i criteri antimalware in EOP](configure-anti-malware-policies.md)|
+  |2 |Phishing|CAT:PHSH|[Configurare criteri di protezione dalla posta indesiderata in EOP](configure-your-spam-filter-policies.md)|
+  |3 |Alta probabilità di posta indesiderata|CAT:HSPM|[Configurare criteri di protezione dalla posta indesiderata in EOP](configure-your-spam-filter-policies.md)|
   |4 |Spoofing|CAT:SPOOF|[Informazioni di intelligence di spoofing in EOP](learn-about-spoof-intelligence.md)|
   |5<sup>\*</sup>|Rappresentazione utente (utenti protetti)|UIMP|[Configurare i criteri anti-phishing in Microsoft Defender per Office 365](configure-mdo-anti-phishing-policies.md)|
   |6<sup>\*</sup>|Rappresentazione del dominio (domini protetti)|DIMP|[Configurare i criteri anti-phishing in Microsoft Defender per Office 365](configure-mdo-anti-phishing-policies.md)|
@@ -61,7 +61,8 @@ Esistono due fattori principali che determinano quale criterio viene applicato a
 
 - Priorità del **criterio:** per ogni tipo di criterio (protezione da posta indesiderata, antimalware, anti-phishing e così via), esiste un criterio predefinito che si applica a tutti gli utenti, ma è possibile creare criteri personalizzati che si applicano a utenti specifici. Ogni criterio personalizzato ha un valore di priorità che determina l'ordine in cui vengono applicati i criteri. Il criterio predefinito viene sempre applicato per ultimo.
 
-  Se un utente è definito in più criteri dello stesso tipo, viene applicato solo il criterio con la priorità più alta. Gli eventuali criteri rimanenti di quel tipo non vengono valutati per l'utente (incluso il criterio predefinito).
+  > [!IMPORTANT]
+  > Se un utente è definito in più criteri dello stesso tipo, viene applicato solo il criterio con la priorità più alta. Gli eventuali criteri rimanenti di quel tipo non vengono valutati per l'utente (incluso il criterio predefinito).
 
 Si considerino ad esempio i seguenti criteri anti-phishing in Microsoft Defender per Office 365 che si applicano agli stessi utenti e un messaggio identificato sia come rappresentazione utente che come spoofing: 
 
@@ -71,8 +72,8 @@ Si considerino ad esempio i seguenti criteri anti-phishing in Microsoft Defender
 
 |Nome criterio|Priorità|Rappresentazione utente|Anti-spoofing|
 |---|---|---|---|
-|Criterio A|1|Attivato|Disattivato|
-|Criterio B|2|Disattivato|Attivato|
+|Criterio A|1 |Attivato|Disattivato|
+|Criterio B|2 |Disattivato|Attivato|
 |
 
 1. Il messaggio viene contrassegnato e considerato spoofing, perché lo spoofing ha una priorità più alta (4) rispetto alla rappresentazione dell'utente (5).

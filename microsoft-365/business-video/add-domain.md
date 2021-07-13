@@ -15,18 +15,19 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- AdminTemplateSet
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: L'organizzazione potrebbe avere bisogno di più domini in modo che i clienti possano trovarti. Informazioni su come aggiungere un altro dominio all'abbonamento.
-ms.openlocfilehash: 13fc3cf73a112945db4372231cce70c1837c1321
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+ms.openlocfilehash: 766d0f6c1e3c68a262bc01ba432e042f0d274ce8
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52706431"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394846"
 ---
 # <a name="add-another-domain"></a>Aggiungere un altro dominio
 
@@ -36,7 +37,7 @@ L'azienda potrebbe avere bisogno di più nomi di dominio per scopi diversi. Ad e
 
 ## <a name="try-it"></a>Perché non provarlo?
 
-1. Nell'Microsoft 365 di amministrazione scegliere **Installazione**.
+1. Nella finestra interfaccia di amministrazione di Microsoft 365 scegliere **Setup**.
 1. In **Configurare il dominio personalizzato** selezionare **Visualizza.**
 1. Scegliere **Gestisci** e quindi **Aggiungi dominio**.
 1. Immettere il nuovo nome di dominio che si desidera aggiungere e quindi selezionare **Avanti.**

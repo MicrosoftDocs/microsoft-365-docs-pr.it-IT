@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: e64f17f2bedea89db1190e6c758c514f14fc3a68
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: c89de5fbf5d5b4d5d5e53074109bc8884a271eea
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52843579"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394894"
 ---
 # <a name="investigate-devices-in-the-microsoft-defender-for-endpoint-devices-list"></a>Analizzare i dispositivi nell'elenco Di Microsoft Defender per dispositivi endpoint
 
@@ -58,6 +58,10 @@ Quando indaghi su un dispositivo specifico, vedrai:
 - Schede (avvisi attivi, utenti connessi, valutazione della sicurezza)
 
 ![Immagine della visualizzazione del dispositivo](images/specific-device.png)
+
+> [!NOTE]
+> A causa delle costrizione del prodotto, il profilo del dispositivo non considera tutte le evidenze informatiche per determinare l'intervallo di tempo "Last Seen" (come visto anche nella pagina del dispositivo).
+> Ad esempio, il valore "Ultima visualizzazione" nella pagina Dispositivo potrebbe mostrare un intervallo di tempo precedente anche se nella sequenza temporale del computer sono disponibili avvisi o dati più recenti.
 
 ## <a name="device-details"></a>Dettagli dispositivo
 
@@ -184,6 +188,8 @@ La **scheda Azure Advanced Threat Protection** visualizza una panoramica general
 La **scheda Utenti connessi** mostra quanti utenti hanno effettuato l'accesso negli ultimi 30 giorni, insieme agli utenti più e meno frequenti. Se si seleziona il collegamento "Visualizza tutti gli utenti", verrà aperto il riquadro dei dettagli, in cui vengono visualizzate informazioni quali il tipo di utente, il tipo di accesso e la data e l'ultima visualizzazione dell'utente. Per ulteriori informazioni, vedere [Investigate user entities](investigate-user.md).
 
 ![Immagine del riquadro dei dettagli utente](images/logged-on-users.png)
+> [!NOTE]
+> Il valore utente "Più frequente" viene calcolato solo in base alle prove degli utenti che hanno eseguito l'accesso in modo interattivo. Tuttavia, nel riquadro laterale "Tutti gli utenti" vengono calcolati tutti i tipi di accessi degli utenti, pertanto è previsto che nel riquadro laterale siano visualizzati utenti più frequenti, dato che tali utenti potrebbero non essere interattivi.
 
 ### <a name="security-assessments"></a>Valutazioni sulla sicurezza
 
@@ -193,7 +199,7 @@ La **scheda Valutazioni della sicurezza** mostra il livello complessivo di espos
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-- [Visualizzare e organizzare la coda di Microsoft Defender for Endpoint Alerts](alerts-queue.md)
+- [Visualizzare e organizzare la coda degli avvisi di Microsoft Defender per endpoint](alerts-queue.md)
 - [Gestire gli avvisi di Microsoft Defender for Endpoint](manage-alerts.md)
 - [Analizzare gli avvisi di Microsoft Defender for Endpoint](investigate-alerts.md)
 - [Analizzare un file associato a un avviso di Defender for Endpoint](investigate-files.md)

@@ -18,15 +18,16 @@ ms.custom:
 - fwlink 874703
 - AdminSurgePortfolio
 - commerce_subscriptions
+- AdminTemplateSet
 search.appverid: MET150
 description: Gli amministratori possono riattivare una sottoscrizione alla scadenza, alla disabilitazione o all'annullamento oppure se è stata annullata a metà di un termine di sottoscrizione.
 ms.date: 04/07/2021
-ms.openlocfilehash: ad408648253b3805d66b0e7b51ad90107f4eab95
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: 1637e1db74e1b22de3739282f08e70e08b842fb9
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572514"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394918"
 ---
 # <a name="reactivate-your-subscription"></a>Riattivare l'abbonamento
 

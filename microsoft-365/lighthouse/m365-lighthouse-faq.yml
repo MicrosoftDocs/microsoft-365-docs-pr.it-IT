@@ -1,0 +1,76 @@
+### YamlMime:FAQ
+metadata:
+  title: Microsoft 365 Lighthouse domande frequenti
+  f1.keywords: NOCSH
+  ms.author: sharik
+  author: SKjerland
+  manager: scotv
+  audience: Admin
+  ms.topic: article
+  ms.prod: microsoft-365-lighthouse
+  localization_priority: Normal
+  ms.collection:
+  - M365-subscription-management
+  - Adm_O365
+  ms.custom:
+  - AdminSurgePortfolio
+  - M365-Lighthouse
+  search.appverid: MET150
+  description: Per i provider di servizi gestiti (MSP) che utilizzano Microsoft 365 Lighthouse, ottenere risposte alle domande frequenti (DOMANDE FREQUENTI) sulle Microsoft 365 Lighthouse.
+  ms.openlocfilehash: 05ed433a5f7afb6418cab77c99a401351f3a5565
+  ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+  ms.translationtype: MT
+  ms.contentlocale: it-IT
+  ms.lasthandoff: 07/12/2021
+  ms.locfileid: "53395124"
+title: Microsoft 365 Lighthouse domande frequenti
+summary: >
+  > [!NOTE]
+
+  > Le funzionalità descritte in questo articolo sono disponibili in Anteprima, sono soggette a modifiche e sono disponibili solo per i partner che soddisfano i [requisiti](m365-lighthouse-requirements.md). Se l'organizzazione non dispone di Microsoft 365 Lighthouse, vedere [Sign up for Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md).
+
+
+  In questo articolo sono contenute le risposte alle domande frequenti su Microsoft 365 Lighthouse.
+
+
+  Se non riesci a trovare una risposta alla tua domanda, contattaci lasciando un commento e lo aggiungeremo a questo articolo.
+sections:
+- name: Ignorato
+  questions:
+  - question: Che cos'è Microsoft 365 Lighthouse?
+    answer: >
+      Microsoft 365 Lighthouse è un portale di amministrazione che consente ai provider di servizi gestiti (MSP) di proteggere e gestire dispositivi, dati e utenti su larga scala per i clienti di piccole e medie imprese (SMB) che utilizzano Microsoft 365 Business Premium.  Microsoft 365 Lighthouse semplifica l'onboarding dei tenant consigliando linee di base di configurazione della sicurezza personalizzate per le piccole e medie imprese e fornendo visualizzazioni multi-tenant in tutti gli ambienti dei clienti. Per ulteriori informazioni, vedere [Overview of Microsoft 365 Lighthouse](m365-lighthouse-overview.md).
+  - question: Qual è la differenza tra Microsoft 365 Lighthouse Azure Lighthouse?
+    answer: >
+      Microsoft 365 Lighthouse è incentrato sui Microsoft 365 anziché sui servizi di Azure. Sebbene Azure Lighthouse sia integrato nel portale di Azure e consenta ai partner IT di gestire più tenant per Azure, Microsoft 365 Lighthouse è un portale autonomo che consente ai fornitori di servizi di gestione di gestire più tenant Microsoft 365 Business Premium clienti. Per ulteriori informazioni sulle Microsoft 365 Lighthouse, vedere [Overview of Microsoft 365 Lighthouse](m365-lighthouse-overview.md). Per altre informazioni su Azure Lighthouse, vedi [Che cos'è Azure Lighthouse?](/azure/lighthouse/overview)
+  - question: Quanto costa Microsoft 365 Lighthouse?
+    answer: >
+      Non sono associati costi aggiuntivi all'uso della versione di anteprima di Microsoft 365 Lighthouse per gestire i Microsoft 365 Business Premium e i dispositivi connessi. Microsoft 365 Lighthouse è attualmente disponibile in Anteprima e disponibile per i provider di servizi di manutenzione di piccole e medie imprese e che hanno una relazione Cloud Solution Provider (CSP) con i propri clienti. Si noti che i provider indiretti non sono attualmente supportati da Microsoft 365 Lighthouse. Per ulteriori informazioni, vedere [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).
+  - question: Quali sono i requisiti da usare Microsoft 365 Lighthouse?
+    answer: >
+      Per un elenco dei requisiti correnti, vedere [Requirements for Microsoft 365 Lighthouse.](m365-lighthouse-requirements.md)
+  - question: Come si effettua l'iscrizione Microsoft 365 Lighthouse?
+    answer: >
+      Per iscriversi Microsoft 365 Lighthouse, devi essere registrato con il programma CSP. Attualmente non è possibile supportare i provider indiretti. Per istruzioni su come eseguire l'iscrizione, vedere [Sign up for Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md). Per ulteriori informazioni sul programma CSP, vedere panoramica [Cloud Solution Provider programma.](/partner-center/csp-overview)
+  - question: La registrazione è stata completata, quindi perché non vengono visualizzati i dati del tenant del cliente?
+    answer: >
+      Il caricamento dei dati del tenant del cliente all'interno di Microsoft 365 Lighthouse può richiedere fino a 48 ore. Se sono state più di 48 ore da quando hai completato l'onboarding, contatta il team di supporto per assistenza. Dovrai far loro sapere quando hai completato l'onboarding e fornire eventuali screenshot e log pertinenti. Per ulteriori informazioni, vedere [Ottenere assistenza e supporto per Microsoft 365 Lighthouse](m365-lighthouse-get-help-and-support.md).
+  - question: Perché vengono visualizzati i dati per alcuni tenant dei clienti, ma non per altri?
+    answer: >
+      Perché i dati del tenant dei clienti Microsoft 365 Lighthouse, i partner devono stabilire privilegi di amministratore delegato (DAP) con i clienti tramite il Centro per i partner. Per altre informazioni, vedi [Richiedere una relazione di rivenditore con un cliente nel Centro per i partner.](/partner-center/request-a-relationship-with-a-customer) I tenant devono inoltre avere almeno una sottoscrizione Microsoft 365 Business Premium e meno di 500 utenti con licenza nel tenant. Per ulteriori informazioni, vedere [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).
+  - question: Cosa succede se non si desidera visualizzare determinati tenant in Microsoft 365 Lighthouse?
+    answer: >
+      Se non si desidera visualizzare determinati tenant e i relativi dati in Microsoft 365 Lighthouse, è possibile disattivarli. Per disattivare un tenant, eseguire la procedura seguente:
+
+
+      1. Selezionare **Tenant nel** riquadro di spostamento sinistro per aprire la pagina **Tenant.**
+
+      1. Individuare il tenant che si desidera disattivare, selezionare i tre puntini accanto al nome del tenant e quindi selezionare **Disattiva tenant**.
+
+      1. Nel messaggio di conferma visualizzato selezionare **Conferma** per disattivare il tenant.
+          > [!NOTE]
+          > Dopo aver disattivato un tenant, non è possibile eseguire un'azione sul tenant fino al completamento dell'inattivazione. Il completamento della disattivazione può richiedere fino a 48 ore.
+
+      Per ulteriori informazioni sui tenant, vedere panoramica [Microsoft 365 Lighthouse'elenco dei tenant.](m365-lighthouse-tenant-list-overview.md)
+  - question: Sarà Microsoft 365 Lighthouse se i tenant dei clienti hanno altre sottoscrizioni oltre a Microsoft 365 Business Premium?
+    answer: Microsoft 365 Lighthouse consente di gestire i tenant dei clienti con Microsoft 365 Business Premium per gli utenti. Per gli utenti nei tenant dei clienti che non dispongono di licenze business Premium, la funzionalità Microsoft 365 Lighthouse sarà limitata. Ad esempio, se un utente non ha una licenza che include Intune, i dispositivi dell'utente, lo stato di conformità del dispositivo e lo stato delle minacce non saranno disponibili. e se a un utente manca una licenza che include Azure AD P1, la password e la gestione dell'accesso dell'utente non saranno disponibili. Per ulteriori informazioni, vedere [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).

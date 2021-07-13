@@ -19,12 +19,12 @@ ms.custom:
 description: Gli amministratori possono imparare a usare il portale invii nel portale di Microsoft 365 Defender per inviare messaggi di posta elettronica sospetti, messaggi di phishing sospetti, posta indesiderata e altri messaggi, URL e allegati di posta elettronica potenzialmente dannosi a Microsoft per la nuova analisi.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: eecb635972be85e1a1a4f95c2786f209ee249745
-ms.sourcegitcommit: 99e67bfe1d677c2f51712b05dcc54908b343cf6f
+ms.openlocfilehash: 2d18dd7f5dc702f08a722652394aeb0102f100ef
+ms.sourcegitcommit: 8c698d1a0c41baf5f35d07b0d765b4a5ead593d0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53203281"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "53409057"
 ---
 # <a name="use-admin-submission-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>Usare l'Invio dell'amministratore per inviare posta indesiderata sospetta, phishing, URL e file a Microsoft
 
@@ -67,6 +67,9 @@ Per altri modi per inviare messaggi di posta elettronica, URL e allegati a Micro
 2. Nella pagina **Invii** verificare  che la scheda Inviato per l'analisi sia selezionata e quindi fare clic su Icona Annuncio ![ Invia a Microsoft per ](../../media/m365-cc-sc-create-icon.png) **l'analisi.**
 
 3. Usa il **riquadro a comparsa Invia** a Microsoft per la revisione che viene visualizzato per inviare il messaggio, l'URL o l'allegato di posta elettronica, come descritto nelle sezioni seguenti.
+
+   > [!NOTE]
+   > Gli invii di file e URL non sono disponibili nei cloud che non consentono ai dati di uscire dall'ambiente. La possibilità di selezionare File o URL verrà disattivata.
 
 ### <a name="submit-a-questionable-email-to-microsoft"></a>Inviare un messaggio di posta elettronica discutibile a Microsoft
 

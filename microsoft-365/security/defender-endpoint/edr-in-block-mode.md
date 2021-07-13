@@ -20,12 +20,12 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: ae170ecf0fc0f354c9975300e5f2f7cd014b0c47
-ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
+ms.openlocfilehash: 835195f0c35ada409ef632b2dbfa1b6de0291351
+ms.sourcegitcommit: 8c698d1a0c41baf5f35d07b0d765b4a5ead593d0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53339690"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "53409153"
 ---
 # <a name="endpoint-detection-and-response-edr-in-block-mode"></a>Rilevamento e risposta degli endpoint (EDR) in modalità blocco
 
@@ -68,8 +68,8 @@ L'immagine seguente mostra un'istanza di software indesiderato rilevato e blocca
 
 3. Attivare EDR **in modalità blocco.**
 
-> [!NOTE]
-> EDR in modalità blocco può essere attivato solo nel Microsoft 365 Defender portale. Non è possibile usare chiavi del Registro di sistema, Intune o criteri di gruppo per abilitare o disabilitare EDR in modalità blocco.
+   > [!NOTE]
+   > EDR in modalità blocco può essere attivato solo nel Microsoft 365 Defender portale. Non è possibile usare chiavi del Registro di sistema, Intune o criteri di gruppo per abilitare o disabilitare EDR in modalità blocco.
 
 ## <a name="requirements-for-edr-in-block-mode"></a>Requisiti per EDR in modalità blocco
 
@@ -77,7 +77,7 @@ L'immagine seguente mostra un'istanza di software indesiderato rilevato e blocca
 |---------|---------|
 |Autorizzazioni |Ruolo amministratore globale o amministratore della sicurezza assegnato in [Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal). Vedere [Autorizzazioni di base.](basic-permissions.md) |
 |Sistema operativo     |Una delle versioni seguenti: <br/>- Windows 10 (tutte le versioni) <br/>- Windows Server, versione 1803 o successiva <br/>- Windows Server 2019 <br/>- Windows Server 2016 (solo quando Antivirus Microsoft Defender in modalità attiva)     |
-|Windows Registrazione E5     |Windows E5 è incluso nelle sottoscrizioni seguenti: <br/>- Microsoft 365 E5 <br/>- Microsoft 365 E3 insieme all'offerta Identity & Threat Protection <br/><br/>Vedere [Componenti](/microsoft-365/enterprise/microsoft-365-overview#components) [e funzionalità e funzionalità per ogni piano.](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans)       |
+|Windows Registrazione E5     |Windows E5 è incluso nelle sottoscrizioni seguenti: <br/>- Microsoft 365 E5 <br/>- Microsoft 365 E3 insieme al Microsoft 365 E5 Security aggiuntivo <br/><br/>Vedere [Componenti](/microsoft-365/enterprise/microsoft-365-overview#components) [e funzionalità e funzionalità per ogni piano.](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans)       |
 |Antivirus Microsoft Defender  |Antivirus Microsoft Defender deve essere installato ed eseguito in modalità attiva o passiva. È possibile utilizzare Antivirus Microsoft Defender una soluzione antivirus non Microsoft. [Verificare Antivirus Microsoft Defender sia attiva o passiva.](#how-do-i-confirm-microsoft-defender-antivirus-is-in-active-or-passive-mode) |
 |Protezione fornita dal cloud |Assicurarsi che Antivirus Microsoft Defender sia configurata in modo che la protezione [recapitata nel cloud sia abilitata.](enable-cloud-protection-microsoft-defender-antivirus.md) |
 |Antivirus Microsoft Defender client antimalware |Assicurati che il client sia aggiornato. Utilizzando PowerShell, eseguire il cmdlet [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus) come amministratore. Nella riga **AMProductVersion** dovrebbe essere visualizzato **4.18.2001.10** o versione successiva. |

@@ -14,12 +14,12 @@ ms.custom:
 - it-pro
 ms.collection:
 - M365-subscription-management
-ms.openlocfilehash: 018c47076642d4ce51340aed5fcb25c1d25c6b4f
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 471682b6f830609ef4ff9241bdaa515c97ca2d8d
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53289164"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394906"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>Migrazione delle cassette postali tra tenant (anteprima)
 
@@ -304,7 +304,7 @@ Gli utenti che effettuano la migrazione devono essere presenti nel tenant di des
    - L'oggetto MailUser di destinazione deve disporre di questi attributi dalla cassetta postale di origine o assegnato con il nuovo oggetto User:
       - ExchangeGUID (flusso diretto dall'origine alla destinazione): il GUID della cassetta postale deve corrispondere. Il processo di spostamento non procede se non è presente nell'oggetto di destinazione.
       - ArchiveGUID (flusso diretto dall'origine alla destinazione): il GUID di archiviazione deve corrispondere. Il processo di spostamento non procede se non è presente nell'oggetto di destinazione. Questa operazione è necessaria solo se la cassetta postale di origine è abilitata per l'archiviazione.
-      - LegacyExchangeDN (flusso come proxyAddress, "x500: ") - Il LegacyExchangeDN deve essere presente nella destinazione <LegacyExchangeDN> MailUser come x500: proxyAddress. I processi di spostamento non procedono se non è presente nell'oggetto di destinazione.
+      - LegacyExchangeDN (flusso come proxyAddress, "x500: ") - Il LegacyExchangeDN deve essere presente nella destinazione <LegacyExchangeDN> MailUser come x500: proxyAddress. È inoltre necessario copiare tutti gli indirizzi x500 dalla cassetta postale di origine all'utente di posta di destinazione. I processi di spostamento non procedono se non sono presenti nell'oggetto di destinazione. 
       - UserPrincipalName : UPN verrà allineato all'identità NEW o alla società di destinazione dell'utente (ad esempio, user@northwindtraders.onmicrosoft.com).
       - Primary SMTPAddress : l'indirizzo SMTP primario verrà allineato alla nuova società dell'utente (ad esempio, user@northwind.com).
       - TargetAddress/ExternalEmailAddress - MailUser farà riferimento alla cassetta postale corrente dell'utente ospitata nel tenant di origine (ad esempio, user@contoso.onmicrosoft.com). Quando si assegna questo valore, verificare di disporre o anche assegnare PrimarySMTPAddress oppure questo valore imposta PrimarySMTPAddress che causerà errori di spostamento.

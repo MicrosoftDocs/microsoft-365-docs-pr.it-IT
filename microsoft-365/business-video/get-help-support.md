@@ -14,17 +14,18 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: È necessario essere un amministratore di un abbonamento aziendale per ottenere supporto amministrativo, online o telefonico in Microsoft 365 Business Premium.
-ms.openlocfilehash: 254e01894f430bdf6a8f666d1425af8705968647
-ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
+ms.openlocfilehash: c33506a17ea7c99902025b613e27168606e7ff03
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52984749"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394822"
 ---
 # <a name="get-support"></a>Ottieni supporto
 

@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: a27f1a99-3557-4f85-9560-a28e3d822a40
 description: Ottenere un Microsoft 365 dei gruppi per conoscere i gruppi e le relative attività.
-ms.openlocfilehash: ed598633205aab83920abef79e766ef16e248f43
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: a013e8fd7ff555cfb1700260cb26ce83f4d07339
+ms.sourcegitcommit: 8c698d1a0c41baf5f35d07b0d765b4a5ead593d0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53394136"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "53408949"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-365-groups"></a>Microsoft 365 Report nell'interfaccia di amministrazione - Microsoft 365 gruppi
 
@@ -37,37 +37,41 @@ Il dashboard Microsoft 365 **report mostra** la panoramica dell'attività tra i 
   
 ## <a name="how-to-get-to-the-groups-report"></a>Come accedere al report gruppi
 
-1. Nell'interfaccia di amministrazione passare alla pagina **Report** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Utilizzo</a>. 
+1. Nell'interfaccia di amministrazione passare alla pagina **Report** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Utilizzo</a>.
+
 2. Nella home page del  dashboard, fare clic sul pulsante Visualizza altro nella scheda Utenti attivi - Microsoft 365 Apps o Utenti attivi - Microsoft 365 Services per accedere alla pagina del report Office 365.
   
 ## <a name="interpret-the-groups-report"></a>Interpretare il report dei gruppi
 
-È possibile visualizzare le attivazioni nel report Office 365 selezionando la **scheda Attività** gruppi.<br/>![Microsoft 365 report- attività Microsoft Office 365 gruppi di lavoro.](../../media/ab90e30b-8938-4110-ab3d-ee472a4cfe21.png)
+È possibile visualizzare le attivazioni nel report Office 365 selezionando la **scheda Attività** gruppi.
 
-Selezionare **Scegli colonne** per aggiungere o rimuovere colonne dal report.  <br/> ![Office 365 attività gruppi di lavoro - scegliere le colonne](../../media/1600556a-f5f1-47d9-b325-cd77c78f4004.png)
+:::image type="content" alt-text="Microsoft 365 report- attività Microsoft Office 365 gruppi di lavoro." source="../../media/ab90e30b-8938-4110-ab3d-ee472a4cfe21.png" lightbox="../../media/ab90e30b-8938-4110-ab3d-ee472a4cfe21.png":::
+
+Selezionare **Scegli colonne** per aggiungere o rimuovere colonne dal report.
+
+:::image type="content" alt-text="Office 365 attività gruppi di lavoro - scegliere le colonne" source="../../media/1600556a-f5f1-47d9-b325-cd77c78f4004.png":::
 
 È inoltre possibile esportare i dati del report in Excel .csv file selezionando il **collegamento Esporta.** Vengono esportati i dati di tutti gli utenti, che possono poi essere ordinati e filtrati per ulteriore analisi. Se gli utenti sono meno di 2000, è possibile ordinarli e filtrarli direttamente nella tabella del report. Se invece gli utenti sono più di 2000, per ordinarli e filtrarli occorre esportare i dati. 
 
-|Elemento|Descrizione|
+|Metrica|Definizione|
 |:-----|:-----|
-|**Metrica**|**Definizione**|
-|Nome del gruppo  <br/> |Nome del gruppo.  <br/> |
-|Eliminato  <br/> |Numero di gruppi eliminati. Se il gruppo viene eliminato, ma c'è stata attività nel periodo della relazione, verrà visualizzato nella griglia con questo flag impostato su true.  <br/> |
-|Proprietario del gruppo  <br/> |Nome del proprietario del gruppo.  <br/> |
-|Data ultima attività (UTC)  <br/> |Data più recente in cui un messaggio è stato ricevuto dal gruppo. Si tratta dell'ultima data in cui si è verificata un'attività in una conversazione di posta elettronica, in Yammer o nel sito.  <br/> |
-|Tipo  <br/> |Tipo di gruppo. Può essere privato o pubblico.  <br/> |
-|Messaggi di posta elettronica ricevuti Exchange  <br/> |Numero di messaggi ricevuti dal gruppo.|
-|Messaggi di posta elettronica Exchange (totale)  <br/> |Numero totale di elementi nella cassetta postale del gruppo.  <br/> |
-|Archiviazione delle cassette postali utilizzata per Exchange (MB)  <br/> |Archiviazione utilizzata dalla cassetta postale del gruppo. <br/>|
-|SharePoint file (totale)  <br/> |Numero di file archiviati nei SharePoint di gruppo.  <br/> |
-|SharePoint file (attivi)  <br/> |Numero di file nel sito SharePoint gruppo su cui sono stati evasi (visualizzati o modificati, sincronizzati, condivisi internamente o esternamente) durante il periodo di reporting.  <br/> |
-|Spazio di archiviazione totale del sito SharePoint (MB)  <br/> |Quantità di spazio di archiviazione in MB utilizzata durante il periodo di reporting.  <br/> |
-|Messaggi in Yammer (inseriti)  <br/> |Numero di messaggi inseriti nel gruppo Yammer durante il periodo di reporting.  <br/> |
-|Messaggi in Yammer (lettura)  <br/> |Numero di conversazioni lette nel gruppo Yammer durante il periodo di reporting.  <br/> |
-|Messaggi in Yammer (mi piace)  <br/> |Numero di messaggi apprezzati nel gruppo Yammer durante il periodo di reporting.  <br/> |
-|Membri  <br/> |Numero di membri del gruppo.  <br/> |
+|Nome del gruppo |Nome del gruppo. |
+|Eliminato |Numero di gruppi eliminati. Se il gruppo viene eliminato, ma c'è stata attività nel periodo della relazione, verrà visualizzato nella griglia con questo flag impostato su true. |
+|Proprietario del gruppo |Nome del proprietario del gruppo. |
+|Data ultima attività (UTC) |Data più recente in cui un messaggio è stato ricevuto dal gruppo. Si tratta dell'ultima data in cui si è verificata un'attività in una conversazione di posta elettronica, in Yammer o nel sito. |
+|Tipo |Tipo di gruppo. Può essere privato o pubblico. |
+|Messaggi di posta elettronica ricevuti Exchange |Numero di messaggi ricevuti dal gruppo.|
+|Messaggi di posta elettronica Exchange (totale) |Numero totale di elementi nella cassetta postale del gruppo. |
+|Archiviazione delle cassette postali utilizzata per Exchange (MB) |Archiviazione utilizzata dalla cassetta postale del gruppo. |
+|SharePoint file (totale) |Numero di file archiviati nei SharePoint di gruppo. |
+|SharePoint file (attivi) |Numero di file nel sito SharePoint gruppo su cui sono stati evasi (visualizzati o modificati, sincronizzati, condivisi internamente o esternamente) durante il periodo di reporting. |
+|Spazio di archiviazione totale del sito SharePoint (MB) |Quantità di spazio di archiviazione in MB utilizzata durante il periodo di reporting. |
+|Messaggi in Yammer (inseriti) |Numero di messaggi inseriti nel gruppo Yammer durante il periodo di reporting. |
+|Messaggi in Yammer (lettura) |Numero di conversazioni lette nel gruppo Yammer durante il periodo di reporting. |
+|Messaggi in Yammer (mi piace) |Numero di messaggi apprezzati nel gruppo Yammer durante il periodo di reporting. |
+|Membri |Numero di membri del gruppo. |
 |Membri esterni |Numero di utenti esterni nel gruppo.|
-|||
+
 
 ## <a name="related-content"></a>Contenuto correlato
 
