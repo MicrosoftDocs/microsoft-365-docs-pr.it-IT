@@ -1,5 +1,5 @@
 ---
-title: Novità nell'interfaccia Microsoft 365 di amministrazione?
+title: Novità della interfaccia di amministrazione di Microsoft 365
 f1.keywords:
 - CSH
 ms.author: kwekua
@@ -17,18 +17,18 @@ search.appverid:
 - MET150
 - MOE150
 - FRP150
-description: 'L Microsoft 365 di amministrazione: informazioni sulle funzionalità aggiunte questo mese.'
+description: 'Il interfaccia di amministrazione di Microsoft 365 : informazioni sulle funzionalità aggiunte questo mese.'
 ms.custom:
 - MACDashWhatsNew
 - AdminSurgePortfolio
-ms.openlocfilehash: 5bb8377dd45714dcdf25533055159f8964acc558
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 497d1f78b2d0c17cfcaa23571838c4dc363b7017
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52841967"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394711"
 ---
-# <a name="whats-new-in-the-microsoft-365-admin-center"></a>Novità nell'interfaccia Microsoft 365 di amministrazione
+# <a name="whats-new-in-the-microsoft-365-admin-center"></a>Novità della interfaccia di amministrazione di Microsoft 365
 
 ::: moniker range="o365-21vianet"
 
@@ -37,22 +37,48 @@ ms.locfileid: "52841967"
 
 ::: moniker-end
 
-Stiamo continuamente aggiungendo nuove funzionalità all'interfaccia di amministrazione di [Microsoft 365,](../business-video/admin-center-overview.md)risolvendo i problemi che abbiamo appreso e apportando modifiche in base al tuo feedback. Dai un'occhiata qui sotto per vedere cosa è disponibile per te oggi. Alcune funzionalità vengono implementazioni a velocità diverse per i clienti. Se non vedi ancora una funzionalità, prova ad [aggiungerti alla versione mirata.](manage/release-options-in-office-365.md)
+Stiamo continuamente aggiungendo nuove funzionalità al [interfaccia di amministrazione di Microsoft 365,](../business-video/admin-center-overview.md)risolvendo i problemi che abbiamo appreso e apportando modifiche in base al tuo feedback. Dai un'occhiata qui sotto per vedere cosa è disponibile per te oggi. Alcune funzionalità vengono implementazioni a velocità diverse per i clienti. Se non vedi ancora una funzionalità, prova ad [aggiungerti alla versione mirata.](manage/release-options-in-office-365.md)
 
 E se si desidera sapere quali sono le novità con altri servizi cloud Microsoft:
 
 - [Novità di Azure Active Directory](/azure/active-directory/fundamentals/whats-new)
 - [Novità nell'interfaccia Exchange di amministrazione](/Exchange/whats-new)
 - [Novità di Microsoft Intune](/mem/intune/fundamentals/whats-new)
-- [Novità del Centro Microsoft 365 conformità](/Office365/SecurityCompliance/whats-new)
+- [Novità della Centro conformità Microsoft 365](/Office365/SecurityCompliance/whats-new)
 - [Novità di Microsoft 365 Defender](../security/mtp/whats-new.md)
 - [Novità nell'interfaccia SharePoint di amministrazione](/sharepoint/what-s-new-in-admin-center)
 - [Aggiornamenti di Office](/OfficeUpdates/)
 - [Come verificare l'integrità Windows rilascio](/windows/deployment/update/check-release-health)
 
+## <a name="july-2021"></a>Luglio 2021
+
+### <a name="microsoft-365-admin-center-search"></a>interfaccia di amministrazione di Microsoft 365 ricerca
+
+È ora possibile cercare gli ID evento imprevisto nella interfaccia di amministrazione di Microsoft 365. È possibile conoscere gli eventi imprevisti correnti tramite i social media, le pubblicazioni del settore o da altri amministratori. È ora possibile accedere all'interfaccia di amministrazione per cercare ulteriori dettagli sull'evento imprevisto e per comprendere l'impatto sull'organizzazione. Basta cercare l'ID evento imprevisto nell'interfaccia di amministrazione.
+
+:::image type="content" source="../media/incident-id.png" alt-text="Screenshot: Searching for incident ID in the admin center":::
+
+### <a name="support-ticket-insight-for-premier-organizations"></a>Informazioni dettagliate sui ticket di supporto per le organizzazioni Premier
+
+Sono stati aggiunti 2 grafici denominati Tendenza del **volume** e Tendenza del **volume** per prodotto per fornire informazioni visive sul volume di supporto.
+
+Il grafico liner nella scheda **Tendenza volume** evidenzia la tendenza se i casi di supporto aumentano o diminuiscono per l'organizzazione mese su mese. È possibile passare il mouse sul grafico per controllare il numero di casi di supporto creati in ogni mese.
+
+:::image type="content" source="../media/SuppInsight-voltrnd.PNG" alt-text="Screenshot: Graph che evidenzia la tendenza se i casi di supporto aumentano o diminuiscono per l'organizzazione mese su mese":::
+
+Il **grafico Tendenza del volume per** prodotto mostra i primi 3 prodotti di ogni mese con i casi di supporto più elevati. È stato abilitato il filtro nella tabella ed è ora possibile filtrare i risultati in base **a Product,** **Severity** e **Date.**
+
+:::image type="content" source="../media/SuppInsight-voltrndproduct.PNG" alt-text="Screenshot: Graph mostra i primi 3 prodotti di ogni mese con i casi di supporto più alti":::
+
+Abbiamo anche aggiunto 2 nuovi campi, **Severity** e **Closed Date** nella tabella View **Service Request** per fornire ulteriori informazioni sui ticket.
+
+:::image type="content" source="../media/SuppInsight-date-sev.PNG" alt-text="Screenshot: Tabella che mostra l'ordinamento dei ticket di supporto in base alla gravità e alla data.":::
+
+Per estrarre questi aggiornamenti in interfaccia di amministrazione di Microsoft 365, passare a **Support**  >  **View Service requests** in left navigation pane.
+
 ## <a name="june-2021"></a>Giugno 2021
 
-### <a name="microsoft-365-admin-center-search"></a>Microsoft 365 dell'interfaccia di amministrazione
+### <a name="microsoft-365-admin-center-search"></a>interfaccia di amministrazione di Microsoft 365 ricerca
 
 Abbiamo aggiunto un paio di nuove categorie alla funzionalità di ricerca.
 
@@ -60,7 +86,7 @@ Abbiamo aggiunto un paio di nuove categorie alla funzionalità di ricerca.
 
 - È ora possibile trovare esperienze di installazione semplificate tramite la ricerca globale. Questo può aiutare l'utente e il team a iniziare rapidamente a usare le nuove funzionalità. Ad esempio, cercare **imposta password in modo che non scada mai**.
 
-Per ulteriori informazioni sulla ricerca nell'interfaccia di amministrazione, vedere [Search in the Microsoft 365 admin center](manage/search-in-the-mac.md).
+Per ulteriori informazioni sulla ricerca nell'interfaccia di amministrazione, vedere [Search in the interfaccia di amministrazione di Microsoft 365.](manage/search-in-the-mac.md)
 
 ## <a name="may-2021"></a>Maggio 2021
 
@@ -142,7 +168,7 @@ Abbiamo sviluppato un set di funzionalità per amministratori multi-tenant come 
 
 ### <a name="monitor-your-most-important-accounts"></a>Monitorare gli account più importanti
 
-È possibile monitorare e tenere traccia dei messaggi di posta elettronica non riusciti o ritardati inviati agli utenti che hanno un impatto aziendale elevato, come il CEO. È possibile tenere traccia degli account con priorità aggiungendo gli utenti all'elenco degli account con priorità nell'Microsoft 365 di amministrazione. Aggiungere dirigenti, dirigenti, responsabili o altri utenti che hanno accesso a informazioni sensibili o ad alta priorità.
+È possibile monitorare e tenere traccia dei messaggi di posta elettronica non riusciti o ritardati inviati agli utenti che hanno un impatto aziendale elevato, come il CEO. È possibile tenere traccia degli account con priorità aggiungendo gli utenti all'elenco degli account con priorità nella interfaccia di amministrazione di Microsoft 365. Aggiungere dirigenti, dirigenti, responsabili o altri utenti che hanno accesso a informazioni sensibili o ad alta priorità.
 
 Gli account di priorità sono disponibili solo per le organizzazioni che soddisfano entrambi i requisiti seguenti:
 
@@ -162,7 +188,7 @@ Per altre info sugli account con priorità, consulta [Monitoraggio degli account
 
 Abbiamo iniziato la distribuzione di una nuova esperienza di ricerca per l'interfaccia di amministrazione e non vediamo l'ora di provarla. ![La casella di ricerca è stata spostata nell'area banner. ALT+S per eseguire la ricerca da qualsiasi pagina.](../media/MAC-WN-GlobalSearch.png)
 
-- La casella di ricerca è stata spostata nell'area di intestazione in cui è presente "interfaccia di amministrazione di Microsoft 365" in modo da eseguire la ricerca da qualsiasi pagina e non solo dalla home page. Abbiamo anche un collegamento: **ALT+S.**
+- La casella di ricerca è stata spostata nell'area dell'intestazione in cui è presente "interfaccia di amministrazione di Microsoft 365" in modo da eseguire la ricerca da qualsiasi pagina e non solo dalla home page. Abbiamo anche un collegamento: **ALT+S.**
 - La ricerca è più intelligente e consente di ottenere risultati migliori, anche più velocemente. Prova a digitare "2fa" per iniziare.
 - I risultati della ricerca sono organizzati in base al tipo di elemento o azione che è possibile eseguire.
   - **Utenti**: selezionare il nome dell'utente ed è possibile modificarlo qui. Se si seleziona il menu con tre puntini (altre azioni) accanto al nome, è possibile reimpostarne la password. È possibile eseguire la ricerca in base al nome visualizzato, al cognome, al nome, al nome utente o all'indirizzo di posta elettronica principale e agli alias di posta elettronica. Ma per ottenere una corrispondenza esatta, cercare in base all'indirizzo di posta elettronica principale o al nome utente.
@@ -207,7 +233,7 @@ Stiamo continuamente esaminando e aggiornando il contenuto e gli strumenti per t
 - Risolvere i problemi di installazione di DKIM
 - Diagnosticare gli errori di registrazione degli utenti di Intune
 
-Stiamo inoltre stendando l'esperienza di supporto nuova e migliorata già visualizzata nell'interfaccia di amministrazione di Microsoft 365 in alcune delle altre interfaccia di amministrazione. Teams L'interfaccia di amministrazione e le centri di amministrazione di sicurezza e conformità hanno già questa nuova esperienza. A breve, **Exchange'interfaccia** di amministrazione, **SharePoint** e **Office.com** verranno aggiornati insieme a questa nuova esperienza di assistenza per gli amministratori.
+Stiamo inoltre stentando l'esperienza di supporto nuova e migliorata già visualizzata nella interfaccia di amministrazione di Microsoft 365 ad alcune delle altre interfaccia di amministrazione. Teams L'interfaccia di amministrazione e le centri di amministrazione di sicurezza e conformità hanno già questa nuova esperienza. A breve, **Exchange'interfaccia** di amministrazione, **SharePoint** e **Office.com** verranno aggiornati insieme a questa nuova esperienza di assistenza per gli amministratori.
 
 ### <a name="manage-changes-with-microsoft-planner"></a>Gestire le modifiche con Microsoft Planner
 
@@ -269,7 +295,7 @@ Alcuni mesi fa, è stata aggiunta un'impostazione che consente di gestire i mess
 
 Il 12 maggio è stata annunciata la disponibilità di un nuovo canale di aggiornamento per Office: Canale Enterprise mensile. Questo canale di aggiornamento fornisce agli utenti nuove funzionalità Office una volta al mese, il secondo martedì del mese.
 
-Se si consente agli utenti di installare automaticamente Office dal portale, è possibile selezionare Canale Enterprise mensile. A tale scopo, accedere all'interfaccia di amministrazione Microsoft 365 e passare a **Mostra** tutte le Impostazioni  >   >  **impostazioni dell'organizzazione**  >  **Servizi**  >  **Office impostazioni di download software**. Se si seleziona Una volta al mese **(Canale** Enterprise mensile), tutte le nuove installazioni self-install di Office verranno configurate per l'utilizzo del Canale Enterprise mensile.
+Se si consente agli utenti di installare automaticamente Office dal portale, è possibile selezionare Canale Enterprise mensile. A tale scopo, accedere al interfaccia di amministrazione di Microsoft 365 e andare a **Mostra** tutte Impostazioni Impostazioni organizzazione  >   >    >  **Servizi**  >  **Office impostazioni di download software**. Se si seleziona Una volta al mese **(Canale** Enterprise mensile), tutte le nuove installazioni self-install di Office verranno configurate per l'utilizzo del Canale Enterprise mensile.
 
 In combinazione con il rilascio di Monthly Enterprise Channel, stiamo anche rivedendo i nomi dei canali di aggiornamento esistenti. Ad esempio, Canale mensile viene rinominato Canale corrente. I nuovi nomi hanno effetto il 9 giugno 2020.
 
@@ -277,7 +303,7 @@ Per altre informazioni, vedere [Modifiche ai canali di aggiornamento per Microso
 
 ### <a name="new-admin-roles"></a>Nuovi ruoli di amministratore
 
-Abbiamo aggiunto alcuni nuovi ruoli di Azure Active Directory'interfaccia Microsoft 365 di amministrazione.
+Sono stati aggiunti alcuni nuovi ruoli Azure Active Directory amministratore al interfaccia di amministrazione di Microsoft 365.
 
 - Il ruolo di amministratore dell'identità ibrida consente agli utenti di gestire il provisioning cloud e i servizi di autenticazione.
 - Il ruolo di amministratore di rete consente agli utenti di gestire i percorsi di rete ed esaminare le informazioni dettagliate di rete Microsoft 365 software come app di servizio.
@@ -302,7 +328,7 @@ Proprio questo mese è stato rilasciato un nuovo sito su docs.microsoft.com deno
 ### <a name="docs-training-and-videos-may"></a>Documenti, formazione e video (maggio)
 
 - Novità della serie di video Microsoft 365 : questo mese vengono trattate le nuove esperienze di supporto **nell'amministratore** di Teams e nei Centri sicurezza e conformità, integrazione di Planner con il Centro messaggi e il nuovo layout video 3x3 in Microsoft Teams. 
-- La [Microsoft 365 dell'hub dell'interfaccia](./index.yml) di amministrazione è stata aggiornata per aiutarti a trovare più rapidamente ciò di cui hai bisogno. E se vai a vedere la pagina in questo momento, abbiamo aggiunto una scheda per informarti degli aggiornamenti e delle modifiche importanti.
+- La [interfaccia di amministrazione di Microsoft 365 dell'hub](./index.yml) della Guida è stata aggiornata per aiutarti a trovare più rapidamente ciò di cui hai bisogno. E se vai a vedere la pagina in questo momento, abbiamo aggiunto una scheda per informarti degli aggiornamenti e delle modifiche importanti.
 
 ## <a name="april-2020"></a>Aprile 2020
 
@@ -310,7 +336,7 @@ Proprio questo mese è stato rilasciato un nuovo sito su docs.microsoft.com deno
 
 [Aprile 2020](#april-2020)
 
-Beh, l'abbiamo fatto! Abbiamo fatto il secondo passo verso un'esperienza di ruoli unificati e ora puoi gestire i ruoli di Intune nell'Microsoft 365 di amministrazione. È inoltre possibile sfruttare funzionalità quali la possibilità di cercare ruoli e visualizzare le autorizzazioni di ruolo. Ciò significa che non sono necessari due strumenti separati per gestire i ruoli per Microsoft 365 e Intune. Quando accedi all'interfaccia di amministrazione di Microsoft 365, vedrai che nella pagina Ruoli sono presenti due pivot, uno per Azure AD e uno per Intune.
+Beh, l'abbiamo fatto! Abbiamo fatto il secondo passo verso un'esperienza di ruoli unificati ed è ora possibile gestire i ruoli di Intune nell'interfaccia di amministrazione di Microsoft 365. È inoltre possibile sfruttare funzionalità quali la possibilità di cercare ruoli e visualizzare le autorizzazioni di ruolo. Ciò significa che non sono necessari due strumenti separati per gestire i ruoli per Microsoft 365 e Intune. Quando accedi al interfaccia di amministrazione di Microsoft 365, vedrai che nella pagina Ruoli sono presenti due pivot, uno per Azure AD e uno per Intune.
 
 ![Pagina Ruoli con il pivot di Intune selezionato](../media/MAC-WN-IntuneRoles.png)
 
@@ -322,11 +348,11 @@ A partire da maggio, gli amministratori in versione mirata inizieranno a vedere 
 
 ### <a name="need-help-launched-in-teams-admin-center--security-and-compliance-centers"></a>"Serve aiuto?" avviato nell'Teams di amministrazione & centro sicurezza e conformità
 
-L'Teams di amministrazione, il Centro sicurezza e il Centro conformità ora usano la stessa "Serve assistenza?" che l'Microsoft 365 di amministrazione usa per trovare assistenza e contattare il supporto. Abbiamo ricevuto molti feedback dagli amministratori che desiderano lo stesso livello di assistenza e supporto e siamo lieti di fornire questo feedback. Provalo e inviaci il tuo feedback.
+L'Teams di amministrazione, il Centro sicurezza e il Centro conformità ora usano la stessa "Serve assistenza?" funzionalità utilizzata dal interfaccia di amministrazione di Microsoft 365 per trovare assistenza e contattare il supporto tecnico. Abbiamo ricevuto molti feedback dagli amministratori che desiderano lo stesso livello di assistenza e supporto e siamo lieti di fornire questo feedback. Provalo e inviaci il tuo feedback.
 
 #### <a name="need-chat"></a>Hai bisogno di chat?
 
-I nostri agenti di supporto hanno lavorato da casa, pur continuando a prendere casi dei clienti e limitazioni sulla larghezza di banda Internet mentre lavorano da casa possono influire sulla qualità delle chiamate dei clienti. Per continuare a supportare l'utente, è stata avviata l'opzione di supporto chat live per i clienti commerciali nell'Microsoft 365 di amministrazione.
+I nostri agenti di supporto hanno lavorato da casa, pur continuando a prendere casi dei clienti e limitazioni sulla larghezza di banda Internet mentre lavorano da casa possono influire sulla qualità delle chiamate dei clienti. Per continuare a supportare l'utente, abbiamo avviato l'opzione di supporto chat live per i clienti commerciali nella interfaccia di amministrazione di Microsoft 365.
 
 Durante la creazione di una richiesta di servizio, ora vedrai la chat come opzione, oltre al telefono e alla posta elettronica. Seleziona la chat come canale di comunicazione preferito e crea la richiesta. Dopo aver creato la richiesta, puoi avviare la chat quando sei pronto per chattare con gli agenti Microsoft.
 
@@ -393,7 +419,7 @@ Con l'uptick nell'Teams, alcune organizzazioni riceveranno una scheda del dashbo
 
 ### <a name="customize-your-organizations-sharepoint-mobile-app-theme"></a>Personalizzare il tema dell'app SharePoint per dispositivi mobili dell'organizzazione
 
-Usando l'Microsoft 365 di amministrazione, ora puoi personalizzare il tema dell'organizzazione in SharePoint app per dispositivi mobili per iOS e SharePoint per dispositivi mobili per Android. Questa funzionalità offre comodamente un'esperienza di app Intranet per dispositivi mobili che può corrispondere al tuo SharePoint Online per i dipendenti in viaggio. La personalizzazione del tema include l'immagine del logo, il colore della barra di spostamento, i colori del testo e dell'icona e i colori principale, semplificando il riconoscimento.
+Usando il interfaccia di amministrazione di Microsoft 365, ora puoi personalizzare il tema dell'organizzazione in SharePoint app per dispositivi mobili per iOS e SharePoint per dispositivi mobili per Android. Questa funzionalità offre comodamente un'esperienza di app Intranet per dispositivi mobili che può corrispondere al tuo SharePoint Online per i dipendenti in viaggio. La personalizzazione del tema include l'immagine del logo, il colore della barra di spostamento, i colori del testo e dell'icona e i colori principale, semplificando il riconoscimento.
 
 ![Diagramma che mappa le impostazioni dell'interfaccia di amministrazione all'app per dispositivi mobili.](../media/MAC-WN-CustThemeSP.png)
 
@@ -429,7 +455,7 @@ Abbiamo ricevuto molti feedback da partner e amministratori sulle sfide della ge
 > [!TIP]
 > Non è necessario eseguire alcun'operazione per fare in modo che il commutatore dell'organizzazione venga visualizzato purché si sia il Partner of Record per almeno un'organizzazione.
 
-1. Nell'Microsoft 365 di amministrazione selezionare il nome dell'organizzazione.
+1. Nell'interfaccia di amministrazione di Microsoft 365 selezionare il nome dell'organizzazione.
 ![Acquisizione schermo: nella parte superiore della home page viene visualizzato il nome del profilo dell'organizzazione con l'icona del commutatore.](../media/MAC-Organization-switcher.png)
 
 2. Nel commutatore dell'organizzazione selezionare l'organizzazione che si desidera gestire.
@@ -442,7 +468,7 @@ Abbiamo ricevuto molti feedback da partner e amministratori sulle sfide della ge
 Un paio di modifiche nell'area dei gruppi questo mese:
 
 - **Ordina per nome gruppo**: è possibile ordinare l'elenco dei gruppi in ordine alfabetico selezionando la **colonna Nome** gruppo.
-- **Ripristinare i Microsoft 365** eliminati : non è più necessario accedere all'interfaccia di amministrazione di Exchange per ripristinare i gruppi Microsoft 365 eliminati. Vai a **Microsoft 365'interfaccia** di amministrazione Gruppi eliminati \>  \>  \> gruppi (selezionare un gruppo dall'elenco) \> **Ripristina gruppo**. Il gruppo verrà ripristinato  nell'elenco Gruppi e verrà ripristinato il messaggio di posta elettronica, le conversazioni, il blocco appunti, i file e il calendario del gruppo.
+- **Ripristinare i Microsoft 365** eliminati : non è più necessario accedere all'interfaccia di amministrazione di Exchange per ripristinare i gruppi Microsoft 365 eliminati. Vai a **interfaccia di amministrazione di Microsoft 365** \> **Gruppi** \> **Eliminati** \> (selezionare un gruppo dall'elenco) Ripristina \> **gruppo**. Il gruppo verrà ripristinato  nell'elenco Gruppi e verrà ripristinato il messaggio di posta elettronica, le conversazioni, il blocco appunti, i file e il calendario del gruppo.
 
 ### <a name="videos-training-and-docs-february"></a>Video, formazione e documenti (febbraio)
 

@@ -17,17 +17,18 @@ ms.custom:
 - MSStore_Link
 - AdminSurgePortfolio
 - okr_smb
+- AdminTemplateSet
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 9cdfa29d-7681-4af2-a79d-3e72e7ab9778
 description: Aggiungi nuovi dipendenti a Microsoft 365 per le aziende per la posta elettronica, Skype e Office app.
-ms.openlocfilehash: 2dbdb9cb931b95241b0bd3599fdae154ab72ea24
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+ms.openlocfilehash: 24b31e22423fe7f0d51da5a71c4c14b54f1525f0
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52706191"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394112"
 ---
 # <a name="add-a-new-employee-to-microsoft-365"></a>Aggiungere un nuovo dipendente a Microsoft 365
 

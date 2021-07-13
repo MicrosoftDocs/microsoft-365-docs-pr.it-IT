@@ -15,17 +15,18 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Informazioni su come creare un calendario condiviso.
-ms.openlocfilehash: cbc84523b52b7a38e25a35670abf6758a73d0a70
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+ms.openlocfilehash: 87b73b9b1bff2d56926c70e812515df3882edcf3
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52705643"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394208"
 ---
 # <a name="create-a-shared-calendar"></a>Creare un calendario condiviso
 
@@ -47,4 +48,4 @@ Un calendario condiviso consente di visualizzare rapidamente quando le persone s
 
 [Gestire il calendario e i contatti in Outlook](https://support.microsoft.com/office/manage-your-calendar-and-contacts-in-outlook-631a182a-21e0-4e41-8fa2-0d83e55da02d) (articolo)\
 [Collaborazione tramite posta](../admin/email/email-collaboration.md) elettronica (articolo)\
-[Panoramica dell'Microsoft 365 di amministrazione](admin-center-overview.md) (articolo)
+[Panoramica della interfaccia di amministrazione di Microsoft 365](admin-center-overview.md) (articolo)

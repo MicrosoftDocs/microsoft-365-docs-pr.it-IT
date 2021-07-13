@@ -20,17 +20,18 @@ ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 - commerce_signup
+- AdminTemplateSet
 search.appverid:
 - MET150
 ROBOTS: NOINDEX
 description: Comprendere cosa è necessario sapere prima di eseguire la procedura di iscrizione per Office 365.
 ms.date: 03/17/2021
-ms.openlocfilehash: 393c1304ba4e699c6bf7d09bf51f6c81bb7389d9
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+ms.openlocfilehash: 8c9598215b5f5da7b4a62ca89bbc0fa5a94fe12d
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52683104"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394232"
 ---
 # <a name="how-to-sign-up---admin-help"></a>Come iscriversi - Guida per gli amministratori
 
@@ -58,7 +59,7 @@ Prima di acquistare, pensa al piano a cui ti i iscriviti. Si eviteranno problemi
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/906be77d-ded6-48fb-a25f-da110f787282]
 
-Se il video è stato utile, consultare la [serie di formazione completa per piccole imprese e nuovi utenti di Microsoft 365](../../business-video/index.yml).
+Se il video è stato utile, consultare la [serie dei corsi di formazione completa per piccole imprese e nuovi utenti di Microsoft 365](../../business-video/index.yml).
 
 Serve assistenza per la scelta di un piano? I consulenti di vendita sono a disposizione per rispondere a qualsiasi domanda. Vai a [Confronta tutti i prodotti](https://products.office.com/compare-all-microsoft-office-products?tab=2) e scegli una delle opzioni di supporto per i contatti elencate a sinistra della pagina.
   
@@ -125,4 +126,4 @@ Non è necessario annullare la versione di valutazione. Se la sottoscrizione di 
 
 ## <a name="related-content"></a>Contenuto correlato
 
-[video Microsoft 365 formazione su Microsoft 365](../../business-video/index.yml) per le aziende (pagina dei collegamenti)
+[Video di formazione su Microsoft 365 per le aziende](../../business-video/index.yml) (pagina collegamento)

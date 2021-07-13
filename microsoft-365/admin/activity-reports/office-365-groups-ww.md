@@ -11,7 +11,9 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
@@ -19,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: a27f1a99-3557-4f85-9560-a28e3d822a40
 description: Ottenere un Microsoft 365 dei gruppi per conoscere i gruppi e le relative attività.
-ms.openlocfilehash: 9426f7a35dea6c0f4a34e78dd8b2c214a0619bdd
-ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
+ms.openlocfilehash: ed598633205aab83920abef79e766ef16e248f43
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51939231"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394136"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-365-groups"></a>Microsoft 365 Report nell'interfaccia di amministrazione - Microsoft 365 gruppi
 
@@ -69,5 +71,7 @@ Selezionare **Scegli colonne** per aggiungere o rimuovere colonne dal report.  <
 
 ## <a name="related-content"></a>Contenuto correlato
 
-[Microsoft 365 report nell'interfaccia](activity-reports.md) di amministrazione (articolo) Report nel Centro sicurezza [&](../../compliance/reports-in-security-and-compliance.md) Conformità (articolo) Microsoft 365 [Report nell'interfaccia](../../admin/activity-reports/active-users-ww.md) di amministrazione - Utenti attivi (articolo)
+[Microsoft 365 report nell'interfaccia di amministrazione](activity-reports.md) (articolo)\
+[Report nel Centro sicurezza & conformità](../../compliance/reports-in-security-and-compliance.md) (articolo)\
+[Microsoft 365 report nell'interfaccia di amministrazione - Utenti attivi](../../admin/activity-reports/active-users-ww.md) (articolo)
 

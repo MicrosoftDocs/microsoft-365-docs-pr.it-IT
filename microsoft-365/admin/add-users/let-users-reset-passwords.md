@@ -19,18 +19,19 @@ ms.custom:
 - OKR_SMB_Videos
 - AdminSurgePortfolio
 - okr_smb
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 5bc3f460-13cc-48c0-abd6-b80bae72d04a
 description: Informazioni su come impostare un criterio per consentire agli utenti di reimpostare le proprie password utilizzando lo strumento di reimpostazione delle password in modalità self-service.
-ms.openlocfilehash: 81fbe1949b8d5e4a601411703d86165f95cc7b7f
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: ac6d7f16cb35cec757340a94c262c3541bea927a
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52634269"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394316"
 ---
 # <a name="let-users-reset-their-own-passwords"></a>Consentire agli utenti di reimpostare le loro password
 
@@ -42,7 +43,7 @@ Come amministratore Microsoft 365, puoi consentire agli utenti di usare lo strum
 
 - Si basa su Azure. Questa funzionalità verrà scaricata automaticamente e **gratuitamente** in Azure quando si esegue questa procedura. L'attivazione della reimpostazione della password in modalità self-service non costa nulla se non si usano altre funzionalità di Azure.
 
-- **Se si utilizza un'istanza** di Active Directory locale, i due punti precedenti non sono applicabili. È invece possibile configurare questa impostazione, ma richiede una sottoscrizione a pagamento **ad Azure AD Premium**.
+- **Se si utilizza un'istanza** di Active Directory locale, i due punti precedenti non sono applicabili. È invece possibile configurare questa impostazione, **ma richiede una sottoscrizione a pagamento per Azure AD Premium**.
 
 Questo articolo è per le persone che impostano criteri di scadenza delle password in un'azienda, un istituto di istruzione o un'organizzazione no profit. Per completare questa procedura, è necessario accedere con l'account amministratore di Microsoft 365. [Che cos'è un account amministratore?](../../business-video/admin-center-overview.md)
 
@@ -52,7 +53,7 @@ Per eseguire questa [procedura, è](about-admin-roles.md) necessario essere un a
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3AY8S]
 
-Se il video è stato utile, consultare la [serie di formazione completa per piccole imprese e nuovi utenti di Microsoft 365](../../business-video/index.yml).
+Se il video è stato utile, consultare la [serie dei corsi di formazione completa per piccole imprese e nuovi utenti di Microsoft 365](../../business-video/index.yml).
 
 ## <a name="steps-let-people-reset-their-own-passwords"></a>Passaggi: consentire agli utenti di reimpostare le proprie password
 
@@ -76,4 +77,4 @@ Con questi passaggi si attiva la reimpostazione della password in modalità self
 
 [Impostare i criteri di scadenza delle password per l'organizzazione](../manage/set-password-expiration-policy.md) (articolo)\
 [Impostare la password di un singolo utente in modo che non scada mai](set-password-to-never-expire.md) (articolo)\
-[Microsoft 365 Business video di formazione (pagina](../../business-video/index.yml) di collegamento)
+[Microsoft 365 video di formazione business](../../business-video/index.yml) (pagina di collegamento)

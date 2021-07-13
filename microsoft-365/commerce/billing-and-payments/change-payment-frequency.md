@@ -18,15 +18,16 @@ ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 - commerce_billing
+- c
 search.appverid: MET150
 description: Informazioni su come modificare la frequenza di fatturazione per l'abbonamento aziendale.
 ms.date: 04/02/2021
-ms.openlocfilehash: 529003210e37897f8c1e0d30a692a6f3a1464a80
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+ms.openlocfilehash: 52bf7f3eda473e241f5fef7c5d7c8e7417ab841e
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52705571"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394666"
 ---
 # <a name="change-your-billing-frequency"></a>Modificare la frequenza di fatturazione
 

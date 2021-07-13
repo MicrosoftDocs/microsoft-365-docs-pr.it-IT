@@ -13,18 +13,20 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 9de497a9-2f5c-43d6-ae18-767f2e6fe6e0
 description: Informazioni su come aggiungere guest a un Microsoft 365, visualizzare gli utenti guest e usare PowerShell per controllare l'accesso guest.
-ms.openlocfilehash: 00a6353f02ae7f3675961c3ee2ee31e3715652f2
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: 41a42a0b4fc76b71892f758519db56f4c1adc897
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635763"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394064"
 ---
 # <a name="manage-guest-access-in-microsoft-365-groups"></a>Gestire l'accesso guest in Microsoft 365 gruppi
 
@@ -45,7 +47,7 @@ L'accesso guest nei gruppi viene spesso utilizzato come parte di uno scenario pi
 
 ## <a name="manage-groups-guest-access"></a>Gestire l'accesso guest ai gruppi
 
-Se si desidera abilitare o disabilitare l'accesso guest nei gruppi, è possibile farlo nell'Microsoft 365 di amministrazione.
+Se si desidera abilitare o disabilitare l'accesso guest nei gruppi, è possibile farlo nella interfaccia di amministrazione di Microsoft 365.
 
 1. Nell'interfaccia di amministrazione, andare a Mostra tutte **Impostazioni** impostazioni dell'organizzazione e nella scheda Servizi selezionare Microsoft 365 \>  \>  **gruppi**. 
   
@@ -53,7 +55,7 @@ Se si desidera abilitare o disabilitare l'accesso guest nei gruppi, è possibile
 
 ## <a name="add-guests-to-a-microsoft-365-group-from-the-admin-center"></a>Aggiungere utenti guest a un Microsoft 365 dall'interfaccia di amministrazione
 
-Se il guest esiste già nella directory, è possibile aggiungerlo ai gruppi dall'Microsoft 365 di amministrazione. I gruppi con appartenenza dinamica devono [essere gestiti in Azure Active Directory](/azure/active-directory/enterprise-users/groups-create-rule).
+Se il guest esiste già nella directory, è possibile aggiungerlo ai gruppi dall'interfaccia di amministrazione di Microsoft 365. I gruppi con appartenenza dinamica devono [essere gestiti in Azure Active Directory](/azure/active-directory/enterprise-users/groups-create-rule).
   
 1. Nell'interfaccia di amministrazione passare alla **pagina**  >  **Gruppi di** gruppi.
   
@@ -70,6 +72,6 @@ Se si desidera modificare le informazioni di un guest, è possibile aggiungere o
 ## <a name="related-content"></a>Contenuto correlato
 
 [Bloccare gli utenti guest da un gruppo specifico](../../solutions/per-group-guest-access.md) (articolo)\
-[Gestire l'appartenenza ai gruppi nell'Microsoft 365 di amministrazione](add-or-remove-members-from-groups.md) (articolo)\
+[Gestire l'appartenenza ai gruppi interfaccia di amministrazione di Microsoft 365](add-or-remove-members-from-groups.md) (articolo)\
 [Azure Active Directory access review](/azure/active-directory/active-directory-azure-ad-controls-perform-access-review) (articolo)\
 [Set-AzureADUser](/powershell/module/azuread/set-azureaduser) (articolo)

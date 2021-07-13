@@ -1,5 +1,5 @@
 ---
-title: Eseguire la migrazione a Microsoft 365 Business da Office 365 E3
+title: Eseguire la migrazione Microsoft 365 Business da Office 365 E3
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -18,20 +18,21 @@ ms.custom:
 - MSB365
 - OKR_SMB_M365
 - AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
-description: Se hai un abbonamento Office 365 E3 ma non hai più di 300 dipendenti, valuta la possibilità di passare a Microsoft 365 Business Premium.
-ms.openlocfilehash: d139d07c946ff3efed3db3a73eb5e1a4ae66c190
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+description: Se hai una sottoscrizione Office 365 E3 ma non hai più di 300 dipendenti, valuta la possibilità di passare a Microsoft 365 Business Premium.
+ms.openlocfilehash: c1b4da07b3bf28cce1a48424ab45cde6ea54d367
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52623606"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394172"
 ---
 # <a name="migrating-from-office-365-e3-to-microsoft-365-business-premium"></a>Migrazione da Office 365 E3 a Microsoft 365 Business Premium
 
-Microsoft 365 Business Premium ha tutto il necessario per la tua piccola azienda, combinando le migliori app di produttività basate sul cloud con semplici funzionalità di gestione e sicurezza dei dispositivi. Se attualmente si dispone di una sottoscrizione Office 365 E3, ma non si hanno più di 300 dipendenti, è consigliabile passare a Microsoft 365 Business Premium per aggiungere funzionalità di sicurezza.
+Microsoft 365 Business Premium ha tutto il necessario per la tua piccola azienda, combinando le migliori app di produttività basate sul cloud con semplici funzionalità di gestione e sicurezza dei dispositivi. Se attualmente si dispone di una sottoscrizione Office 365 E3, ma non si dispone di più di 300 dipendenti, è consigliabile passare a Microsoft 365 Business Premium per aggiungere funzionalità di sicurezza.
 
 La migrazione è semplice: prima di tutto si cambia licenza e vengono mantenuti tutti i dati e le informazioni utente nell'abbonamento corrente. Dopo la migrazione, è necessario configurare le funzionalità aggiunte in Microsoft 365 Business Premium.
 
@@ -59,7 +60,7 @@ Questa tabella mostra le differenze tra Microsoft 365 Business Premium e Office 
 | Aggiornare i diritti Windows 10 Pro licenze win 7/8.1 Pro licenze|     ![Incluso con Microsoft 365 Business Premium](../media/check-mark.png)    ||
 | **Protezione delle informazioni**        | | |
 |Prevenzione della perdita di dati di Office 365|    ![Incluso con Microsoft 365 Business Premium](../media/check-mark.png)|![Incluso con Office 365 E3](../media/check-mark.png)|
-|Azure Information Protection Piano 1, BitLocker sicurezza|![Incluso con Microsoft 365 Business Premium](../media/check-mark.png)||
+|Azure Information Protection Piano 1, applicazione BitLocker|![Incluso con Microsoft 365 Business Premium](../media/check-mark.png)||
 |Azure Information Protection Piano 1, etichette di riservatezza|![Incluso con Microsoft 365 Business Premium](../media/check-mark.png)||
 |**Licenza Accesso client (diritti CAL)**|||
 |Enterprise Cal Suite (Exchange, SharePoint, Skype)||![Incluso con Office 365 E3](../media/check-mark.png)|
@@ -71,7 +72,7 @@ Questa tabella mostra le differenze tra Microsoft 365 Business Premium e Office 
 Per eseguire la migrazione dell'abbonamento, vedere [Modificare](../commerce/subscriptions/change-plans-manually.md) i piani manualmente per istruzioni se si desidera spostare solo alcune persone Microsoft 365 Business Premium. È inoltre possibile [aggiornare automaticamente](../commerce/subscriptions/upgrade-to-different-plan.md)tutti gli utenti o collaborare con un partner per spostare la sottoscrizione e le licenze di E3 in una sottoscrizione Microsoft 365 Business Premium elettronica.
 Nelle sezioni seguenti vengono descritte le modifiche da apportare, se presenti, e le operazioni che è possibile eseguire dopo la migrazione.
 
-### <a name="office-365-e3-subscription-configuration-and-data"></a>Office 365 Dati e configurazione della sottoscrizione E3
+### <a name="office-365-e3-subscription-configuration-and-data"></a>Office 365 E3 configurazione e dati della sottoscrizione
 Non è necessario apportare modifiche alla sottoscrizione o ai dati correnti prima di eseguire la migrazione, tra cui:
 
 - Configurazione della sottoscrizione, ad esempio record DNS e nomi di dominio.
@@ -86,7 +87,7 @@ Se il Windows non è già in Windows Pro Creator, aggiornali [a Windows Pro Crea
 ### <a name="set-up-policies-to-protect-user-devices-and-files"></a>Configurare criteri per proteggere i dispositivi e i file degli utenti
 
 > [!NOTE]
-> Se si configurano Office 365 e dispositivi MDM, tali dispositivi  verranno elencati nella pagina Dispositivi nell'interfaccia di amministrazione Microsoft 365 aziendale. Tutti i criteri impostati verranno visualizzati nell'elenco dei criteri classici nel [portale di Intune.](https://portal.azure.com/#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview)
+> Se si configurano Office 365 e dispositivi MDM, tali dispositivi  verranno elencati nella pagina Dispositivi della interfaccia di amministrazione di Microsoft 365. Tutti i criteri impostati verranno visualizzati nell'elenco dei criteri classici nel [portale di Intune.](https://portal.azure.com/#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview)
 
 Dopo aver assegnato le licenze a Microsoft 365 Business Premium, puoi iniziare a proteggere i dispositivi e i file degli utenti.
 
@@ -120,7 +121,7 @@ Microsoft 365 Business Premium ha un limite di archiviazione di 50 GB in quanto 
 
 ### <a name="threat-protection"></a>Protezione dalle minacce
 
-Dopo la migrazione a Microsoft 365 Business Premium, hai Defender per Office 365. Per [una panoramica, vedi Microsoft Defender Office 365](../security/office-365-security/defender-for-office-365.md) informazioni generali. Per la configurazione, vedere [configurare collegamenti](https://support.microsoft.com/office/61492713-53c2-47da-a6e7-fa97479e97fa)sicuri, [configurare](https://support.microsoft.com/office/e7e68934-23dc-4b9c-b714-e82e27a8f8a5)allegati sicuri e configurare [anti-phishing in Defender per Office 365](https://support.microsoft.com/office/86c425e1-1686-430a-9151-f7176cce4f2c).
+Dopo la migrazione a Microsoft 365 Business Premium, hai Defender per Office 365. Per [una panoramica, vedi Microsoft Defender Office 365](../security/office-365-security/defender-for-office-365.md) informazioni generali. Per la configurazione, vedere [set up Cassaforte Links,](https://support.microsoft.com/office/61492713-53c2-47da-a6e7-fa97479e97fa) [set up Cassaforte Attachments](https://support.microsoft.com/office/e7e68934-23dc-4b9c-b714-e82e27a8f8a5)e set [up Anti-phishing in Defender for Office 365](https://support.microsoft.com/office/86c425e1-1686-430a-9151-f7176cce4f2c).
 
 ### <a name="sensitivity-labels"></a>Etichette di riservatezza
 

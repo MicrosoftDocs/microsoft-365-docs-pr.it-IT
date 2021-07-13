@@ -19,6 +19,7 @@ ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
 - AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
@@ -27,12 +28,12 @@ search.appverid:
 - GEA150
 ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
 description: Accedi con il tuo account Microsoft 365 amministratore per reimpostare le password per gli utenti in Microsoft 365 per le aziende.
-ms.openlocfilehash: 0cec6c7874b51c76fca60c6c237395c940c47bbe
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: 64382d94ae92373d8d814eae0e9f6aa7c6e0043b
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635571"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394280"
 ---
 # <a name="reset-passwords"></a>Reimpostare le password
 
@@ -50,7 +51,7 @@ Guarda un breve video sulla reimpostazione delle password degli utenti.<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FVVP]
 
-Se il video è stato utile, consultare la [serie di formazione completa per piccole imprese e nuovi utenti di Microsoft 365](../../business-video/index.yml).
+Se il video è stato utile, consultare la [serie dei corsi di formazione completa per piccole imprese e nuovi utenti di Microsoft 365](../../business-video/index.yml).
   
 ## <a name="steps-reset-a-business-password-for-a-user"></a>Passaggi: Reimpostare una password aziendale per un utente
 
@@ -126,4 +127,4 @@ Leggere questo articolo: [Si è dimenticato l'account o la password per l'accoun
 [Reimpostare la password](../add-users/reset-passwords.md) (articolo)\
 [Impostare la password di un singolo utente in modo che non scada mai](set-password-to-never-expire.md) (articolo)\
 [Impostare i criteri di scadenza delle password per l'organizzazione](../manage/set-password-expiration-policy.md) (articolo)\
-[video Microsoft 365 formazione su Microsoft 365](../../business-video/index.yml) per le aziende (pagina dei collegamenti)
+[Video di formazione su Microsoft 365 per le aziende](../../business-video/index.yml) (pagina collegamento)

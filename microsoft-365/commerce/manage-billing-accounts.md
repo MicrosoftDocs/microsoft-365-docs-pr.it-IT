@@ -16,21 +16,22 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - commerce_billing
+- AdminTemplateSet
 search.appverid: MET150
 description: Informazioni sugli account di fatturazione e su come vengono utilizzati per gestire le impostazioni dell'account, le fatture, i metodi di pagamento e gli acquisti.
 ms.date: 03/17/2021
-ms.openlocfilehash: 1eb01ace2fe8b84b813793168cb50db2508b4ebb
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 7b19c30a8a11a816d5cd8906cdb96da36688573c
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52535639"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394400"
 ---
 # <a name="understand-billing-accounts"></a>Informazioni sugli account di fatturazione
 
 Un account di fatturazione viene creato quando ti is iscriviti per provare o acquistare prodotti Microsoft. L'account di fatturazione viene utilizzato per gestire le impostazioni, le fatture, i metodi di pagamento e gli acquisti dell'account. È possibile avere accesso a più account di fatturazione. Ad esempio, si è effettuato l'Microsoft 365 direttamente o si ha accesso al contratto Enterprise Agreement, ai servizi di & microsoft o al Contratto per i clienti Microsoft dell'organizzazione. Per ognuno di questi scenari, si dispone di un account di fatturazione separato.
 
-L Microsoft 365 interno di amministrazione supporta attualmente il tipo di account di fatturazione seguente:
+Il interfaccia di amministrazione di Microsoft 365 attualmente supporta il tipo di account di fatturazione seguente:
 
 - Microsoft Online Services: questo account di fatturazione viene creato quando ti isti a un abbonamento Microsoft 365 direttamente.
 - Programma Microsoft Products & Services Agreement (MPSA): questo account di fatturazione viene creato quando l'organizzazione firma un contratto multilicenza MPSA per acquistare software e servizi online.
@@ -67,14 +68,14 @@ In questa sezione sono elencati gli indirizzi di spedizione associati all'accoun
 
 ## <a name="understand-access-to-billing-accounts"></a>Informazioni sull'accesso agli account di fatturazione
 
-È possibile fornire ad altri utenti l'accesso all'account di fatturazione nell'Microsoft 365 di amministrazione tramite ruoli e autorizzazioni. Solo il proprietario di un account di fatturazione può concedere l'accesso a un account di fatturazione. È possibile assegnare uno dei ruoli seguenti agli utenti:
+È possibile fornire ad altri utenti l'accesso all'account di fatturazione nel interfaccia di amministrazione di Microsoft 365 tramite ruoli e autorizzazioni. Solo il proprietario di un account di fatturazione può concedere l'accesso a un account di fatturazione. È possibile assegnare uno dei ruoli seguenti agli utenti:
 
 - **Proprietario dell'account di fatturazione** &mdash; Può assegnare autorizzazioni, modificare account, firmare contratti e visualizzare gli account.
 - **Collaboratore account di fatturazione** &mdash; Può modificare gli account, firmare contratti e visualizzare gli account.
 - **Lettore account di fatturazione** &mdash; Può visualizzare gli account.
 
 > [!Note]
-> I ruoli dell'account di fatturazione si applicano solo agli account di fatturazione e non ad altri scenari Microsoft 365'interfaccia di amministrazione.
+> I ruoli dell'account di fatturazione si applicano solo agli account di fatturazione e non ad altri scenari interfaccia di amministrazione di Microsoft 365 fatturazione.
 
 ## <a name="related-content"></a>Contenuto correlato
 

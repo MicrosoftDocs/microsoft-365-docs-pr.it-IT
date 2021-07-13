@@ -13,18 +13,20 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 77ff780d-ab19-4553-adea-09cb65ad0f1f
 description: Ottieni una panoramica del modo in cui l'organizzazione adotta Microsoft 365 servizi per comunicare e collaborare.
-ms.openlocfilehash: da2ac5f68bedd064e426531a9cd3c6cbc33f8277
-ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
+ms.openlocfilehash: 77c1d8a2d2fe0288e7fbe8534ef76760baeac0aa
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/18/2021
-ms.locfileid: "53007166"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394678"
 ---
 # <a name="microsoft-365-usage-analytics"></a>Analisi di utilizzo di Microsoft 365
 
@@ -68,7 +70,7 @@ Il Microsoft 365 di panoramica contiene i report seguenti. È possibile visualiz
 
 La pagina di attivazione e licenza offre report sull Microsoft 365 appliczione; cio? quanti utenti hanno scaricato e attivato Office app e quante licenze sono state assegnate dall'organizzazione. Il valore del mese verso la parte superiore si riferisce al mese corrente e le metriche riflettono i valori aggregati dall'inizio del mese alla data corrente.
 
-- **Attivazione** &ndash; Tenere traccia delle attivazioni del piano di servizio (ad esempio, App Microsoft 365 per grandi imprese, Project e Visio) nell'organizzazione. Ogni persona con una licenza di Office può installare prodotti in un totale di cinque dispositivi. Puoi anche usare i report in questa sezione per visualizzare i dispositivi in cui gli utenti hanno installato Office app. Tieni presente che per attivare un piano, un utente deve installare l'app e accedere con il proprio account.
+- **Attivazione** &ndash; Tenere traccia delle attivazioni del piano di servizio (ad esempio, Microsoft 365 Apps for enterprise, Project e Visio) nell'organizzazione. Ogni persona con una licenza di Office può installare prodotti in un totale di cinque dispositivi. Puoi anche usare i report in questa sezione per visualizzare i dispositivi in cui gli utenti hanno installato Office app. Tieni presente che per attivare un piano, un utente deve installare l'app e accedere con il proprio account.
 
 - **Licenze** &ndash; Questo report contiene una panoramica dei tipi di licenza, del numero di utenti a cui è stato assegnato ogni tipo di licenza e della distribuzione dell'assegnazione delle licenze per ogni mese. Il valore del mese verso la parte superiore si riferisce al mese corrente e le metriche riflettono i valori aggregati dall'inizio del mese alla data corrente.
 

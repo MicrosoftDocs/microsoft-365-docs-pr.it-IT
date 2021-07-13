@@ -17,15 +17,16 @@ ms.custom:
 - AdminSurgePortfolio
 - fwlink 2133922 to Delete subscription heading
 - commerce_subscription
+- AdminTemplateSet
 search.appverid: MET150
 description: Quando chiudi l'account con Microsoft, tutte le informazioni relative al tuo account vengono eliminate, incluse le licenze, gli utenti e i dati degli utenti.
 ms.date: 04/02/2021
-ms.openlocfilehash: b212911707b5d6a967ab833a5a06bc76f5ceeb3b
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: f46a35ca9a8b4ca0a68a3260f1a79bbf3717b552
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52624326"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394462"
 ---
 # <a name="close-your-account"></a>Chiudere il proprio account
 

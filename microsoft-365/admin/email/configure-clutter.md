@@ -13,19 +13,21 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 832276bd-d024-47b6-a80a-a6b884907a5b
 description: "Informazioni su come abilitare o disabilitare la funzionalità Messaggi secondari per tutti gli utenti o specifici dell'organizzazione, usando Exchange PowerShell. "
-ms.openlocfilehash: 059fb8e626a0b05e0224fc89931453aaae43be0b
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+ms.openlocfilehash: 91098047bdf2ab8190283990bdc6b0292e3e57ba
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52706113"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393980"
 ---
 # <a name="configure-clutter-for-your-organization"></a>Configurare Messaggi secondari per l'organizzazione
 
@@ -60,7 +62,7 @@ Se si usa PowerShell per creare gli utenti in blocco, occorre eseguire [Set-Clut
 
 In quanto amministratore, puoi ri abilitare messaggi secondari usando Exchange PowerShell. Dopo averlo fatto, la funzionalità Posta in arrivo evidenziata verrà disattivata e verrà riattivato Messaggi secondari. 
   
- **Se si usa un Outlook sul Web con un Microsoft 365 Business Premium abbonamento:**
+ **Se si usa un Outlook sul web con un Microsoft 365 Business Premium abbonamento:**
   
 - Se l'utente ha abilitato Messaggi secondari: 
     

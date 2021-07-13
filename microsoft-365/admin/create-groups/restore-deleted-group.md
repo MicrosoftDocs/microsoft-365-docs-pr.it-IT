@@ -13,19 +13,21 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: b7c66b59-657a-4e1a-8aa0-8163b1f4eb54
 description: Un gruppo eliminato viene conservato per 30 giorni ed è comunque possibile ripristinarlo. Dopo 30 giorni, il gruppo e il relativo contenuto vengono eliminati definitivamente.
-ms.openlocfilehash: 2c20c2bd3ce91331e7160132047dbf3ecd79c4b8
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: ddc3da57c05b7c5f54c10a0cc429c9a3f24b859c
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635739"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394052"
 ---
 # <a name="restore-a-deleted-microsoft-365-group"></a>Ripristinare un gruppo Microsoft 365 eliminato
 
@@ -56,7 +58,7 @@ Quando si ripristina un gruppo, vengono ripristinati anche i contenuti seguenti:
 
 # <a name="outlook"></a>[Outlook](#tab/outlook)
 
-Se si è il proprietario di un Microsoft 365, è possibile ripristinare il gruppo manualmente in Outlook sul Web seguendo la procedura seguente:
+Se si è il proprietario di un Microsoft 365, è possibile ripristinare il gruppo manualmente in Outlook sul web seguendo questa procedura:
 
 1. Nella pagina Gruppi [eliminati](https://outlook.office.com/people/group/deleted)selezionare l'opzione  **Gestisci** gruppi nel nodo Gruppi e quindi scegliere **Eliminato.**
 
@@ -66,7 +68,7 @@ Se il gruppo eliminato non viene visualizzato qui, contattare un amministratore.
 
 # <a name="admin-center"></a>[Interfaccia di amministrazione](#tab/admin-center)
 
-Se si è un amministratore globale o un amministratore di gruppi, è possibile ripristinare un gruppo eliminato nell'Microsoft 365 di amministrazione:
+Se si è un amministratore globale o un amministratore di gruppi, è possibile ripristinare un gruppo eliminato nell'interfaccia di amministrazione di Microsoft 365:
 
 1. Passare all'[interfaccia di amministrazione](https://admin.microsoft.com).
 2. Espandere **Gruppi** e quindi fare clic su **Gruppi eliminati.**

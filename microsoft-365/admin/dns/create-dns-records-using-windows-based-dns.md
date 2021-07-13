@@ -14,19 +14,21 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - Adm_O365_Setup
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 9eec911d-5773-422c-9593-40e1147ffbde
 description: Informazioni su come verificare il dominio e configurare i record DNS per la posta elettronica, Skype for Business Online e altri servizi in DNS Windows per Microsoft.
-ms.openlocfilehash: b9088fe3efd58700db0234a2839665a783731eb0
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+ms.openlocfilehash: 86deaac256c0d657ad9604be91349b113e9c0ded
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52706114"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393728"
 ---
 # <a name="create-dns-records-for-microsoft-using-windows-based-dns"></a>Creare record DNS per Microsoft Windows DNS basato su Windows
 
@@ -49,7 +51,7 @@ Aggiungere un record MX in modo che la posta elettronica per il dominio venga in
 - Dalla riga MX nella sezione Exchange Online della pagina Aggiungi record DNS in Microsoft, copiare il valore elencato in Indirizzo di puntamento. Questo valore verrà utilizzato nel record che si sta creando in questa attività. 
 - Nella pagina Dns Manager per il dominio, andare a **Azione**  >  **Mail Exchanger (MX)**. Per trovare questa pagina per il dominio, vedere [Find your DNS records in Windows-based DNS](#find-your-dns-records-in-windows-based-dns).  
 - Nella finestra **di dialogo Nuovo record** di risorse verificare che i campi siano impostati esattamente sui valori seguenti: 
-    - Nome host:  
+    - Nome host: 
     - @Address: incollare qui il valore indirizzo di puntamento copiato da Microsoft.  
     - Pref: 
 - Selezionare **Salva modifiche**.

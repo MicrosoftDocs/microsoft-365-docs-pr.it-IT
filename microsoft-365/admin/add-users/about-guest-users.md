@@ -1,5 +1,5 @@
 ---
-title: Utenti guest nell'Microsoft 365 di amministrazione
+title: Utenti guest nella interfaccia di amministrazione di Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -15,24 +15,25 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Informazioni su come viene popolato l'elenco utenti guest nell'Microsoft 365 di amministrazione.
-ms.openlocfilehash: f7a337b3ce4eb659cb4269f516345d7a24168ecc
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+description: Informazioni su come viene popolato l'elenco utenti guest nell'interfaccia di amministrazione di Microsoft 365.
+ms.openlocfilehash: 67b0a352f5492f474de39cb19811151bf212ff4e
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52841043"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394124"
 ---
-# <a name="guest-users-in-microsoft-365-admin-center"></a>Utenti guest nell'Microsoft 365 di amministrazione
+# <a name="guest-users-in-microsoft-365-admin-center"></a>Utenti guest in interfaccia di amministrazione di Microsoft 365
 
 Tutti gli utenti guest aggiunti al Microsoft Teams, SharePoint o Azure Active Directory vengono aggiunti anche all'elenco Utenti **guest** nell'interfaccia di amministrazione di Microsoft. Gli utenti guest possono partecipare alle riunioni, visualizzare documenti e chattare Teams a cui sono invitati.
 Una volta che un utente viene visualizzato **nell'elenco Utenti guest,** è possibile rimuoverlo.
 
-Per visualizzare gli utenti guest, nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft 365 espandere **Utenti** e quindi scegliere **Utenti guest.**
+Per visualizzare gli utenti guest, nella interfaccia di amministrazione di Microsoft 365, nel riquadro di spostamento sinistro, espandere **Utenti** e quindi scegliere **Utenti guest.**
 
 ## <a name="before-you-begin"></a>Prima di iniziare
 
@@ -50,8 +51,8 @@ Per eseguire questa attività, è necessario essere un amministratore globale.
 
 Per aggiungere utenti guest nella Azure Active Directory, vedere [aggiungere utenti guest.](/azure/active-directory/b2b/b2b-quickstart-add-guest-users-portal)
 
-Dopo aver aggiunto un utente, puoi anche assegnarlo a un gruppo o concedere loro l'accesso a un'app nell'organizzazione. Dopo aver aggiunto un utente nel portale di Azure AD, tale utente verrà anche elencato nella pagina **Utenti guest** nell'interfaccia Microsoft 365 di amministrazione.
-Dopo aver aggiunto un utente **all'elenco Utenti guest,** può essere [aggiunto](../create-groups/manage-guest-access-in-groups.md#add-guests-to-a-microsoft-365-group-from-the-admin-center) a Gruppi nell Microsoft 365 di amministrazione.
+Dopo aver aggiunto un utente, puoi anche assegnarlo a un gruppo o concedere loro l'accesso a un'app nell'organizzazione. Dopo aver aggiunto un utente nel portale di Azure AD, tale utente verrà elencato anche nella pagina **Utenti guest** nella interfaccia di amministrazione di Microsoft 365.
+Dopo aver aggiunto un utente **all'elenco Utenti guest,** può [essere aggiunto](../create-groups/manage-guest-access-in-groups.md#add-guests-to-a-microsoft-365-group-from-the-admin-center) a Gruppi nella interfaccia di amministrazione di Microsoft 365.
 
 Vedere [aggiungere utenti guest in blocco](/azure/active-directory/b2b/tutorial-bulk-invite) per invitare più utenti guest a collaborare con l'organizzazione.
 
@@ -59,7 +60,7 @@ Vedere [aggiungere utenti guest in blocco](/azure/active-directory/b2b/tutorial-
 
 Una volta completata la collaborazione con un utente guest, è possibile rimuoverli e non potranno più accedere all'organizzazione.
 
-1. Nell'Microsoft 365 di amministrazione espandere **Utenti** e quindi scegliere **Utenti guest.**
+1. Nella finestra interfaccia di amministrazione di Microsoft 365 espandere **Utenti** e quindi scegliere **Utenti guest.**
 1. Nella pagina **Utenti guest** scegliere l'utente che si desidera rimuovere e quindi scegliere Elimina **un utente.**
 
 Per rimuovere utenti nel portale di Azure AD, vedere [rimuovere un utente guest e le risorse](/azure/active-directory/b2b/b2b-quickstart-add-guest-users-portal#clean-up-resources).

@@ -13,19 +13,21 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: Determinare se il tenant e gli utenti soddisfano i requisiti, in modo da poter utilizzare la distribuzione centralizzata per distribuire Office componenti aggiuntivi.
-ms.openlocfilehash: 5d6f225acb56d1ec092046297d708444bb8d93d2
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: cb1cc019cfd87ee05112ea0ac1f0f1675316c6d3
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53227957"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393704"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>Determinare se la distribuzione centralizzata dei componenti aggiuntivi funziona per l'organizzazione
 
@@ -90,7 +92,7 @@ Utilizzando Verifica compatibilità distribuzione centralizzata, è possibile ve
 
 1. Avviare una finestra PowerShell.exe elevata.
 
-2. Eseguire il comando qui riportato:
+2. Eseguire il comando seguente:
 
    ```powershell
    Import-Module O365CompatibilityChecker

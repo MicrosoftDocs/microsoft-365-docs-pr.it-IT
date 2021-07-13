@@ -18,15 +18,16 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - commerce_billing
+- AdminTemplateSet
 search.appverid: MET150
 description: Informazioni su come i profili di fatturazione supportano le fatture.
 ms.date: 04/02/2021
-ms.openlocfilehash: e66efe12e05d2aaf286b689c955f17c8401144f1
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: ecea09a9ceea12fa92b92eac3e5a7595b2510042
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537332"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394630"
 ---
 # <a name="understand-billing-profiles"></a>Informazioni sui profili di fatturazione
 
@@ -34,7 +35,7 @@ Un profilo di fatturazione contiene una modalità di pagamento, informazioni di 
 
 > [!NOTE]
 >
-> I profili di fatturazione non sono disponibili per i clienti  che acquistano prodotti e servizi da Microsoft.com o nella pagina Acquista servizi dell'interfaccia Microsoft 365 di amministrazione.
+> I profili di fatturazione non sono disponibili per i clienti  che acquistano prodotti e servizi da Microsoft.com o nella pagina Acquista servizi del interfaccia di amministrazione di Microsoft 365.
 
 ## <a name="what-are-billing-profile-roles"></a>Che cosa sono i ruoli del profilo di fatturazione?
 
@@ -73,7 +74,7 @@ Ogni profilo di fatturazione include le informazioni seguenti:
 
 Se hai domande o hai bisogno di assistenza per i costi di Azure, <a href="https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest" target="_blank">crea una richiesta di supporto con il supporto di Azure.</a>
 
-Se hai domande o hai bisogno di assistenza con il profilo di fatturazione nell Microsoft 365 di amministrazione, [contatta il supporto](../../business-video/get-help-support.md).
+Se hai domande o hai bisogno di assistenza con il tuo profilo di fatturazione in interfaccia di amministrazione di Microsoft 365, contatta [il supporto](../../business-video/get-help-support.md).
 
 ## <a name="related-content"></a>Contenuto correlato
 

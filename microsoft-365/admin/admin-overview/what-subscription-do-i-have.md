@@ -18,15 +18,16 @@ ms.custom:
 - okr_smb
 - AdminSurgePortfolio
 - commerce_subscriptions
+- AdminTemplateSet
 search.appverid: MET150
 description: Informazioni su come verificare le sottoscrizioni dell'organizzazione andando alla pagina I tuoi prodotti.
 ms.date: 01/21/2021
-ms.openlocfilehash: b0f5f11f34ec4cf84648709ae5557bc5f637a55f
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+ms.openlocfilehash: bb11ab4fc8933e2e199998992f0c12ea8de0d23a
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52706299"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394220"
 ---
 # <a name="what-subscription-do-i-have"></a>Qual è l'abbonamento corrente?
 
@@ -41,7 +42,7 @@ Se si è un amministratore, è possibile verificare le sottoscrizioni dell'organ
 
 ## <a name="related-content"></a>Contenuto correlato
   
-[Abbonamenti e fatturazione](../../commerce/index.yml) (collegamenti)\
+[Abbonamenti e fatturazione](../../commerce/index.yml) (pagina di collegamento)\
 [Visualizzare l'estratto conto o la fattura](../../commerce/billing-and-payments/view-your-bill-or-invoice.md) (articolo)\
 [Pagamento dell'abbonamento](../../commerce/billing-and-payments/pay-for-your-subscription.md) (articolo)\
 [Modificare gli indirizzi di fatturazione](../../commerce/billing-and-payments/change-your-billing-addresses.md) (articolo)

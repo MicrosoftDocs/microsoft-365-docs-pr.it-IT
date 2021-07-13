@@ -17,15 +17,16 @@ ms.custom:
 - SaRA
 - AdminSurgePortfolio
 - commerce_subscriptions
+- AdminTemplateSet
 search.appverid: MET150
 description: Il modo più semplice per aggiornare i piani è usare la scheda Aggiornamento nell'interfaccia di amministrazione. Tuttavia, la scheda Aggiornamento non è sempre supportata.
 ms.date: 04/21/2021
-ms.openlocfilehash: da0b0a826087ea7e963dde85f9b4612acf0eaf99
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: a4db0934767beb7913939475d8615f2a0184d0a3
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52624314"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394762"
 ---
 # <a name="upgrade-to-a-different-plan"></a>Eseguire l'aggiornamento a un piano diverso
 

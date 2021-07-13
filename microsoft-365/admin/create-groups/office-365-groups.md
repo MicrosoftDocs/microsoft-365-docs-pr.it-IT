@@ -16,17 +16,18 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - okr_smb
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Con Microsoft 365 gruppi, è possibile guidare il lavoro di team Microsoft 365 offrendo a un gruppo di persone l'accesso a una raccolta di risorse condivise.
-ms.openlocfilehash: 69f7e47bcfb9e0704f8c373cf1addf98ef898cfa
-ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
+ms.openlocfilehash: 612884306b0b999de48f7168981d9c006335f0aa
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52782394"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393740"
 ---
 # <a name="overview-of-microsoft-365-groups-for-administrators"></a>Panoramica dei gruppi di Microsoft 365 per gli amministratori
 
@@ -53,7 +54,7 @@ I gruppi hanno i ruoli seguenti:
 - **Membri:** i membri possono accedere a tutti gli elementi del gruppo, ma non possono modificare le impostazioni del gruppo. Per impostazione predefinita, i membri del gruppo possono invitare gli utenti guest a partecipare al gruppo, anche se è possibile [controllare tale impostazione.](manage-guest-access-in-groups.md)
 - **Guest:** gli utenti guest del gruppo sono membri esterni all'organizzazione.
 
-Solo gli amministratori globali, gli amministratori utente e i gruppi gli amministratori possono creare e gestire i gruppi nell'Microsoft 365 di amministrazione. Non sono consentiti amministratori delegati, ad esempio consulenti con deleghe di amministratore per conto di altri.
+Solo gli amministratori globali, gli amministratori utente e i gruppi gli amministratori possono creare e gestire gruppi nella interfaccia di amministrazione di Microsoft 365. Non sono consentiti amministratori delegati, ad esempio consulenti con deleghe di amministratore per conto di altri.
 
 Gli amministratori possono:
 
@@ -65,7 +66,7 @@ Gli amministratori possono:
 
 Se si preferisce un modo più automatizzato per gestire il ciclo di vita dei gruppi di Microsoft 365, è possibile utilizzare i criteri di scadenza per scadere i gruppi a un intervallo di tempo specifico. I proprietari del gruppo riceveranno un messaggio di posta elettronica 30, 15 e 1 giorno prima della scadenza del gruppo che consente loro di rinnovare il gruppo se è ancora necessario. Vedere: Microsoft 365 [criteri di scadenza del gruppo](../../solutions/microsoft-365-groups-expiration-policy.md).
 
-È possibile amministrare i gruppi dall'Microsoft 365 di amministrazione o [tramite PowerShell.](../../enterprise/manage-microsoft-365-groups-with-powershell.md)
+È possibile amministrare i gruppi dall'interfaccia di amministrazione di Microsoft 365 [o tramite PowerShell.](../../enterprise/manage-microsoft-365-groups-with-powershell.md)
 
 Se si dispone di molti utenti, ad esempio in una grande azienda o in un'azienda, è possibile che molti utenti creino gruppi per vari scopi. È consigliabile consultare [Plan for governance in Microsoft 365 groups](../../solutions/collaboration-governance-overview.md) for best practices.
 
@@ -85,7 +86,7 @@ I limiti seguenti si applicano Microsoft 365 gruppi:
 
 Il numero massimo predefinito di Microsoft 365 che un'organizzazione può avere è 500.000. Per superare il limite predefinito, è necessario contattare il supporto tecnico Microsoft. Per ulteriori informazioni sui limiti Microsoft 365 gruppi, vedere Microsoft 365 [Groups - Guida per gli amministratori.](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)
 
-La gestione dei Microsoft 365 è più efficace quando si dispone di informazioni utili sull'utilizzo dei gruppi. L'Microsoft 365 di amministrazione dispone di uno strumento di creazione di report che consente di visualizzare l'uso dello spazio di archiviazione, il numero di gruppi attivi e il modo in cui gli utenti usano i gruppi. Vedi: [Microsoft 365 report nell'interfaccia di amministrazione](../activity-reports/office-365-groups.md) per altre informazioni.
+La gestione dei Microsoft 365 è più efficace quando si dispone di informazioni utili sull'utilizzo dei gruppi. Il interfaccia di amministrazione di Microsoft 365 dispone di uno strumento di creazione di report che consente di visualizzare l'utilizzo dello spazio di archiviazione, il numero di gruppi attivi e il modo in cui gli utenti usano i gruppi. Vedi: [Microsoft 365 report nell'interfaccia di amministrazione](../activity-reports/office-365-groups.md) per altre informazioni.
 
 ## <a name="sensitivity-labels"></a>Etichette di riservatezza
 
@@ -114,7 +115,7 @@ Se si dispone di un piano solo Exchange, è comunque possibile ottenere la posta
 Microsoft 365 gruppi funzionano con Azure Active Directory. Le funzionalità dei gruppi disponibili dipendono dall Azure Active Directory di sottoscrizione e dalle licenze assegnate all'organizzatore del gruppo.
 
 > [!IMPORTANT]
-> Per tutte le funzionalità dei gruppi, se si dispone di una sottoscrizione di Azure AD Premium, gli utenti possono partecipare al gruppo indipendentemente dal fatto che gli sia assegnata o meno una licenza AAD P1. Le licenze non vengono applicate.
+> Per tutte le funzionalità dei gruppi, se si dispone di una sottoscrizione Azure AD Premium, gli utenti possono partecipare al gruppo indipendentemente dal fatto che gli sia assegnata o meno una licenza AAD P1. Le licenze non vengono applicate.
 > Periodicamente verranno generati report sull'utilizzo che segnalano quali utenti mancano di una licenza e ne è necessaria una assegnata per essere conforme ai requisiti di licenza. Si supponga ad esempio che un utente non abbia una licenza e che sia stato aggiunto a un gruppo in cui viene applicato il criterio di denominazione. Il report contrassegnerà per l'utente la necessità di una licenza.
 
 ## <a name="related-content"></a>Contenuto correlato
