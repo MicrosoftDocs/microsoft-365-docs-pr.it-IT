@@ -15,12 +15,12 @@ ms.collection:
 description: Gli amministratori possono imparare ad applicare le impostazioni dei criteri Standard e Strict tra le funzionalità di protezione di Exchange Online Protection (EOP) e Microsoft Defender per Office 365
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e41edb6c2d77a69ee3d4fa28ff86e0e77410caa5
-ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
+ms.openlocfilehash: 61166c78f31a86882ef0e2dc2a79683aea794040
+ms.sourcegitcommit: 233989a02a3fc6db33c995ad06b1f820f08f8f0a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53108296"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53383463"
 ---
 # <a name="preset-security-policies-in-eop-and-microsoft-defender-for-office-365"></a>Criteri di sicurezza predefiniti in EOP e Microsoft Defender per Office 365
 
@@ -99,7 +99,9 @@ Quando vengono applicati più criteri a un utente, l'ordine seguente viene appli
 3. Criteri di sicurezza personalizzati
 4. Criteri di sicurezza predefiniti
 
-In altre parole, le  impostazioni del criterio di protezione Strict sostituiscono le impostazioni del criterio di protezione **Standard,** che sostituisce le impostazioni di un criterio personalizzato, che sostituisce le impostazioni del criterio predefinito.
+In altre parole, le  impostazioni del criterio di protezione Strict sostituiscono le impostazioni del criterio di protezione **Standard,** che sostituisce le impostazioni di un criterio personalizzato, che sostituisce le impostazioni del criterio predefinito. 
+
+Ad esempio, se in **Protezione standard** è presente un'impostazione di sicurezza e un amministratore ha abilitato la protezione **Standard** per un utente, verrà applicata l'impostazione Protezione **standard** anziché quella configurata per tale impostazione in un criterio personalizzato o nel criterio predefinito (per lo stesso utente). Si noti che potrebbe essere presente una parte dell'organizzazione a cui si desidera applicare solo i criteri di protezione **Standard** o **Strict** mentre si applica un criterio personalizzato ad altri utenti dell'organizzazione per soddisfare esigenze specifiche.
 
 ## <a name="assign-preset-security-policies-to-users"></a>Assegnare criteri di sicurezza predefiniti agli utenti
 
@@ -132,7 +134,7 @@ In altre parole, le  impostazioni del criterio di protezione Strict sostituiscon
 
    Per utenti o gruppi è possibile usare la maggior parte degli identificatori, ad esempio nome, nome visualizzato, alias, indirizzo di posta elettronica, nome dell'account e così via, ma il nome visualizzato corrispondente viene visualizzato nei risultati. Per gli utenti, immettere un asterisco (\*) da solo per visualizzare tutti i valori disponibili.
 
-   - **Escludere questi utenti, gruppi** e domini: per aggiungere eccezioni per i destinatari interni a cui si applica il criterio (eccezioni dei destinatari), selezionare questa opzione e configurare le eccezioni. Impostazioni e comportamento sono equivalenti alle condizioni.
+   - **Escludere questi utenti, gruppi e domini**: per aggiungere eccezioni ai destinatari interni a cui si applicano i criteri (eccezione destinatari), selezionare questa opzione e configurare le eccezioni. Impostazioni e comportamento sono equivalenti alle condizioni.
 
    Al termine dell'operazione, fare clic su **Avanti**.
 

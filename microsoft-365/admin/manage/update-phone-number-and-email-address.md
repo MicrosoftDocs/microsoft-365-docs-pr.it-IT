@@ -13,19 +13,21 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 767349fa-f646-46d9-9dab-4a65049bdd1f
 description: Aggiornare il numero di telefono e l'indirizzo di posta elettronica dell'amministratore nell'interfaccia di amministrazione se si desidera reimpostare la propria password di amministratore.
-ms.openlocfilehash: ab4e200ae680e40dea7ca7cc4d095be0690ad375
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: 1335f5ff7a39fab53e6f45f47bec293db5650336
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52624514"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53391304"
 ---
 # <a name="update-your-admin-phone-number-and-email-address"></a>Aggiornare il numero di telefono e l'indirizzo di posta elettronica dell'amministratore
 
@@ -39,7 +41,7 @@ Per ulteriori informazioni sulla modifica delle informazioni di contatto degli u
 
 Usare la **pagina Info sicurezza** per modificare il numero di cellulare e l'indirizzo di posta elettronica alternativo. L'indirizzo di posta elettronica alternativo viene utilizzato per le notifiche importanti, ad esempio la reimpostazione della password di amministratore (non la password dell'amministratore del computer). 
   
-1. Passare all'Microsoft 365 di amministrazione.
+1. Passare al interfaccia di amministrazione di Microsoft 365.
 
 2. Nell'intestazione seleziona l'icona del profilo \> **Info di sicurezza** \> **dell'account personale.**
 

@@ -16,29 +16,30 @@ ms.collection:
 ms.custom:
 - MSStore_Link
 - AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: fb00dd4e-2d5f-4e8d-8ff4-94b2cf002bdd
-description: Abilitare la condivisione dei calendari nell'Microsoft 365 di amministrazione per consentire agli utenti di condividere i propri calendari con chiunque all'interno o all'esterno dell'organizzazione.
-ms.openlocfilehash: ee2b48182efec3e8bc22f47fd1657cd123ec65f8
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+description: Abilitare la condivisione del calendario nel interfaccia di amministrazione di Microsoft 365 in modo che gli utenti possano condividere i propri calendari con chiunque all'interno o all'esterno dell'organizzazione.
+ms.openlocfilehash: 21dbf12ec495f3a22a45d8a23af807ffd34fef72
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635811"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53392456"
 ---
 # <a name="share-calendars-with-external-users"></a>Condividere calendari con utenti esterni
 
 A volte è necessario che gli utenti pianificano riunioni con persone esterne all'organizzazione. Per semplificare il processo di individuazione degli orari delle riunioni comuni, Microsoft 365 di rendere disponibili i calendari a queste persone. Si tratta di persone che devono visualizzare i periodi di disponibilità per gli utenti dell'organizzazione, ma non hanno account utente per l'Microsoft 365 organizzazione.
 
-È possibile abilitare la condivisione del calendario per tutti gli utenti dell'organizzazione nell'Microsoft 365 di amministrazione. Una volta abilitata la condivisione, gli utenti possono usare Outlook Web App per condividere i propri calendari con chiunque all'interno o all'esterno dell'organizzazione. Gli utenti all'interno dell'organizzazione possono visualizzare il calendario condiviso insieme al proprio calendario. Agli utenti esterni all'organizzazione verrà inviato un URL che può essere utilizzato per visualizzare il calendario. Gli utenti dell'organizzazione decidono quando condividere e quanto condividere.
+È possibile abilitare la condivisione del calendario per tutti gli utenti dell'organizzazione nella interfaccia di amministrazione di Microsoft 365. Una volta abilitata la condivisione, gli utenti possono usare Outlook Web App per condividere i propri calendari con chiunque all'interno o all'esterno dell'organizzazione. Gli utenti all'interno dell'organizzazione possono visualizzare il calendario condiviso insieme al proprio calendario. Agli utenti esterni all'organizzazione verrà inviato un URL che può essere utilizzato per visualizzare il calendario. Gli utenti dell'organizzazione decidono quando condividere e quanto condividere.
 
 > [!NOTE]
 > Se si desidera condividere calendari con un'organizzazione che utilizza Exchange Server 2013 (una soluzione locale), l'amministratore di Exchange dovrà configurare una relazione di autenticazione con il cloud. Questa operazione è nota come federazione e deve soddisfare i requisiti software minimi. Per [ulteriori informazioni,](/exchange/sharing-exchange-2013-help) vedere Condivisione.
   
-## <a name="enable-calendar-sharing-using-the-microsoft-365-admin-center"></a>Abilitare la condivisione del calendario tramite l'Microsoft 365 di amministrazione
+## <a name="enable-calendar-sharing-using-the-microsoft-365-admin-center"></a>Abilitare la condivisione del calendario tramite il interfaccia di amministrazione di Microsoft 365
 
 1. Nell'interfaccia di amministrazione passare a **Impostazioni** \> **Org Impostazioni**.
 
@@ -55,5 +56,5 @@ Una volta abilitata la condivisione, i proprietari del calendario possono estend
 ## <a name="related-content"></a>Contenuto correlato
 
 [Attivare o disattivare la condivisione esterna per un sito](/sharepoint/change-external-sharing-site) (articolo)\
-[Panoramica dell'Microsoft 365 di amministrazione](../../business-video/admin-center-overview.md) (video)\
+[Panoramica del interfaccia di amministrazione di Microsoft 365](../../business-video/admin-center-overview.md) (video)\
 [Gestire la posta elettronica e i calendari](../email/index.yml) (pagina dei collegamenti)

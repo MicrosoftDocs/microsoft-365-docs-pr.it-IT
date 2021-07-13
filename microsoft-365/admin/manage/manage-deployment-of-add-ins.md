@@ -16,22 +16,23 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - okr_smb
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: Informazioni su come distribuire componenti aggiuntivi a utenti e gruppi dell'organizzazione tramite distribuzione centralizzata nell'interfaccia di amministrazione.
-ms.openlocfilehash: 796517ba13a4718c38d5200fcf9cbe38b5dc62d0
-ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
+ms.openlocfilehash: 88613e593f3c8375073865ebe9b7e417c6b3f06f
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52779639"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53392852"
 ---
 # <a name="deploy-add-ins-in-the-admin-center"></a>Distribuire i componenti aggiuntivi nell'interfaccia di amministrazione
 
-Office componenti aggiuntivi consentono di personalizzare i documenti e semplificare il modo in cui si accede alle informazioni sul Web (vedere Iniziare a usare il Office [componente aggiuntivo](https://support.microsoft.com/office/82e665c4-6700-4b56-a3f3-ef5441996862)). Gli amministratori possono distribuire Office componenti aggiuntivi per gli utenti dell'organizzazione utilizzando la funzionalità distribuzione centralizzata nell'interfaccia di amministrazione di Microsoft 365 centrale. La distribuzione centralizzata è il modo consigliato e più ricco di funzionalità per la maggior parte degli amministratori di distribuire componenti aggiuntivi a utenti e gruppi all'interno di un'organizzazione.
+Office componenti aggiuntivi consentono di personalizzare i documenti e semplificare il modo in cui si accede alle informazioni sul Web (vedere Iniziare a usare il Office [componente aggiuntivo](https://support.microsoft.com/office/82e665c4-6700-4b56-a3f3-ef5441996862)). Gli amministratori possono distribuire Office componenti aggiuntivi per gli utenti dell'organizzazione utilizzando la funzionalità distribuzione centralizzata nella interfaccia di amministrazione di Microsoft 365. La distribuzione centralizzata è il modo consigliato e più ricco di funzionalità per la maggior parte degli amministratori di distribuire componenti aggiuntivi a utenti e gruppi all'interno di un'organizzazione.
 
 Per ulteriori informazioni su come determinare se l'organizzazione è in grado di supportare la distribuzione centralizzata, vedere [Determine if Centralized Deployment of add-ins works for your organization](centralized-deployment-of-add-ins.md).
 

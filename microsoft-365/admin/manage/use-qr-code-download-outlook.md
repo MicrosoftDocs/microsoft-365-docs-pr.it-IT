@@ -14,13 +14,14 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
+- AdminTemplateSet
 description: Scopri come usare un codice QR per autenticare e scaricare Outlook mobile.
-ms.openlocfilehash: a403fbbed90229300e707653062c552104c47d97
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: c13fbeabd320c64925165ba16797d5a3471961ad
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53286706"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53391340"
 ---
 # <a name="use-a-qr-code-to-sign-in-to-the-outlook-mobile-apps"></a>Usare un codice QR per accedere alle app Outlook mobili
 

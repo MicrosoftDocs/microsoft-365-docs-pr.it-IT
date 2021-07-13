@@ -15,15 +15,16 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - MET150
 description: Mobilità e sicurezza di base fanno parte dei piani Microsoft 365 sicurezza.
-ms.openlocfilehash: 869968fa46e09fbc7a983957a83a9ad308c9f40c
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 3404d2aeecd047fecec573bf1d60407ad3659efe
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53228268"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393296"
 ---
 # <a name="choose-between-basic-mobility-and-security-or-intune"></a>Scegliere tra Dispositivi mobili di base e sicurezza o Intune
 
@@ -33,7 +34,7 @@ ms.locfileid: "53228268"
 
 Sia Basic Mobility che Security e Intune sono inclusi in un'ampia gamma di piani, descritti nella tabella seguente.
 
-| Pianificare | Basic Mobility + Security | Microsoft Intune |
+| Piano | Basic Mobility + Security | Microsoft Intune |
 |:-----|:-----|:-----|
 |Microsoft 365 Apps|Sì|No|
 |Microsoft 365 Business Basic|Sì|No|

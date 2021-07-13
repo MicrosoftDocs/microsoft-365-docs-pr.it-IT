@@ -26,12 +26,12 @@ search.appverid:
 - MET150
 ms.assetid: d868561b-d340-4c04-a973-e2575d7f09bc
 description: Installa Office su un iPhone o un telefono Android e i file di lavoro nelle app Office saranno protetti da Microsoft 365 per le aziende.
-ms.openlocfilehash: 7b411b6ae1223963b8583e1e3cd0ee00e13ff958
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 477f0ee63b045ca8fd6d3cfc3023f4122661a3b6
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244797"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393400"
 ---
 # <a name="set-up-mobile-devices-for-microsoft-365-for-business-users"></a>Configurare i dispositivi mobili per Microsoft 365 per gli utenti aziendali
 
@@ -47,7 +47,7 @@ Guarda un breve video su come configurare app Office su dispositivi iOS con Micr
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWee2n] 
 
-Se il video è stato utile, consultare la [serie di formazione completa per piccole imprese e nuovi utenti di Microsoft 365](../business-video/index.yml).
+Se il video è stato utile, consultare la [serie dei corsi di formazione completa per piccole imprese e nuovi utenti di Microsoft 365](../business-video/index.yml).
 
 Accedere all' **App Store** e digitare Microsoft Outlook nel campo di ricerca.
   
@@ -79,7 +79,7 @@ Guarda un video sull'installazione di Outlook e Office nei dispositivi Android.<
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/ecc2e9c0-bc7e-4f26-8b14-91d84dbcfef0] 
 
-Se il video è stato utile, consultare la [serie di formazione completa per piccole imprese e nuovi utenti di Microsoft 365](../business-video/index.yml).
+Se il video è stato utile, consultare la [serie dei corsi di formazione completa per piccole imprese e nuovi utenti di Microsoft 365](../business-video/index.yml).
 
 Per iniziare la configurazione sul tuo telefono Android, vai al Play Store.
   
@@ -105,7 +105,7 @@ Aprire nuovamente Outlook, immettere il PIN e confermarlo. L'app Outlook è ora 
   
 ![Set  PIN for Outlook app in Android](../media/edb91afb-f1ed-451a-bc6b-8ccba664e055.png)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="related-content"></a>Contenuto correlato
 
 [Video di formazione su Microsoft 365 per le aziende](../business-video/index.yml)
 

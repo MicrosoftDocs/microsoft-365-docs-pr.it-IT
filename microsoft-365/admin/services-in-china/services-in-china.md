@@ -14,7 +14,9 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - SPO_Content
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - MET150
 - GEU150
@@ -22,12 +24,12 @@ search.appverid:
 ms.assetid: a8ab5061-3346-4da0-bb7c-5260822b53ae
 description: Ulteriori informazioni sulle Office 365 gestite da 21Vianet progettate per soddisfare le esigenze di servizi cloud sicuri, affidabili e scalabili in Cina.
 monikerRange: o365-21vianet
-ms.openlocfilehash: 75bf7c7a4d7e453fa2be711c7332878b8a8f1150
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: c8d43c385f44434e9ed4832a094ea4909bf505a4
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52924720"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393608"
 ---
 # <a name="office-365-operated-by-21vianet"></a>Office 365 gestito da 21Vianet
 
@@ -129,11 +131,11 @@ Per le organizzazioni che eseguono versioni precedenti o miste di Exchange Serve
 | 2013 SP1  <br/> | 2013 SP1  <br/> | Sì  <br/> | Tutti  <br/> |
 | Mixed 2013 SP1/2010 SP3  <br/> | CU5 2013  <br/> | Sì  <br/> | Tutti, ad eccezione di eDiscovery/Archiviazione sul posto, OWA accesso (vedere la tabella seguente)  <br/> |
 | Mixed 2013 SP1/2010 SP3  <br/> | 2013 SP1  <br/> | Sì  <br/> | Solo informazioni sulla disponibilità configurate manualmente  <br/> |
-| 2010 SP3  <br/> | 2010 SP3  <br/> | No  <br/> | Nessuno  <br/> |
+| 2010 SP3  <br/> | 2010 SP3  <br/> | No  <br/> | Nessuna  <br/> |
 | 2007  <br/> | CU5 2013  <br/> | Sì  <br/> | Solo informazioni sulla disponibilità  <br/> |
 | 2007  <br/> | 2013 SP1 o 2010 SP3No  <br/> | N/D  <br/> | Non supportato  <br/> |
 | 2003  <br/> | 2013 SP1/CU5  <br/> | N/D  <br/> | Non supportato  <br/> |
-| 2003  <br/> | 2010 SP3  <br/> | No  <br/> | Nessuno  <br/> |
+| 2003  <br/> | 2010 SP3  <br/> | No  <br/> | Nessuna  <br/> |
 
    
 > [!IMPORTANT]

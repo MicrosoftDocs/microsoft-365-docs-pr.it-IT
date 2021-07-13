@@ -13,19 +13,21 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid: MET150
 description: Informazioni su come gestire le Office script per gli utenti dell'organizzazione.
-ms.openlocfilehash: e0cb52c4a8f48ff2310c83ffce61e08a0236ed59
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: fea50838cf1089b73a6af5bbf86d490293831085
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572310"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53392672"
 ---
 # <a name="manage-office-scripts-settings"></a>Gestire le impostazioni di Office Scripts
 
-[Office consente](/office/dev/scripts)agli utenti di automatizzare le attività registrando, modificando ed eseguendo script in Excel sul Web. Office Gli script funzionano con Power Automate e gli utenti eseguono script nelle cartelle di lavoro utilizzando il connettore Excel Online (Business). Microsoft 365 amministratori possono gestire le impostazioni Office script dall'Microsoft 365 di amministrazione.
+[Office consente](/office/dev/scripts)agli utenti di automatizzare le attività registrando, modificando ed eseguendo script in Excel sul Web. Office Gli script funzionano con Power Automate e gli utenti eseguono script nelle cartelle di lavoro utilizzando il connettore Excel Online (Business). Microsoft 365 amministratori possono gestire le impostazioni Office script dal interfaccia di amministrazione di Microsoft 365.
 
 ## <a name="before-you-begin"></a>Prima di iniziare
 
@@ -43,7 +45,7 @@ ms.locfileid: "52572310"
 
 ## <a name="manage-availability-of-office-scripts-and-sharing-of-scripts"></a>Gestire la disponibilità Office script e la condivisione degli script
 
-1. Nell'Microsoft 365 di amministrazione passare alla scheda **Impostazioni** \> **Impostazioni** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">organizzazione.</a>
+1. Nella finestra interfaccia di amministrazione di Microsoft 365, passare alla scheda **Impostazioni** \> **Impostazioni organizzazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">Servizi.</a>
 
 2. Selezionare **Office script**.
 
@@ -94,11 +96,11 @@ ms.locfileid: "52572310"
 
 8. Selezionare **Salva**.
 
-    L'applicazione delle modifiche alle impostazioni Office script può richiedere fino a 48 ore.
+    L'applicazione delle modifiche alle impostazioni di Office Scripts può richiedere fino a 48 ore.
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-Poiché Office Scripts funziona con Power Automate, è consigliabile esaminare i criteri di prevenzione della perdita dei dati (DLP) esistenti per garantire che i dati dell'organizzazione rimangano protetti mentre gli utenti usano Office Script. Per ulteriori informazioni, vedere Criteri di [prevenzione della perdita dei dati (DLP).](/power-automate/prevent-data-loss)
+Poiché Office Scripts funziona con Power Automate, è consigliabile esaminare i criteri di prevenzione della perdita dei dati (DLP) esistenti per garantire che i dati dell'organizzazione rimangano protetti mentre gli utenti usano Office Script. Per altre informazioni, vedere [Criteri di prevenzione della perdita dei dati (DLP)](/power-automate/prevent-data-loss).
 
 ## <a name="related-content"></a>Contenuto correlato
 

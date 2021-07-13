@@ -16,15 +16,16 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - commcerce_billing
+- AdminTemplateSet
 search.appverid: MET150
 description: Apportare modifiche al profilo dell'organizzazione, ad esempio nome dell'organizzazione, indirizzo, telefono, contatto tecnico e posta elettronica.
 ms.date: 03/30/2021
-ms.openlocfilehash: 2646d2d83c72caa8a56f6658f005812f087101cb
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: 80f48c001cb4796e60f9ec3cc20c03ac231eccab
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635403"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393692"
 ---
 # <a name="change-your-organizations-address-technical-contact-and-more"></a>Modificare l'indirizzo dell'organizzazione, il contatto tecnico e altre informazioni
   
@@ -51,7 +52,7 @@ Di seguito è disponibile una descrizione di ogni campo.
 
 |**Campo**  |**Descrizione**  |
 |---------|---------|
-|Nome  <br/>   | Il nome immesso qui è quello che gli utenti vedranno nelle pagine seguenti:  <br/>  Pagina di accesso: se gli utenti hanno configurato altri account Microsoft con l'indirizzo di posta elettronica aziendale o dell'istituto di istruzione, potrebbero vedere il nome dell'organizzazione nella pagina di accesso. In questo modo possono distinguere tra l'account aziendale o dell'istituto di istruzione e gli altri account e identificare quello da usare per l'accesso.  <br/>  Collegamento e pagina del profilo dell'organizzazione: il collegamento al profilo dell'organizzazione mostra il nome dell'organizzazione.  <br/>  Yammer spostamento: in Yammer spostamento sinistro viene utilizzato il nome dell'organizzazione come nome della rete Yammer principale.  <br/> OneDrive client di sincronizzazione: il nome dell'organizzazione viene visualizzato in Esplora file in Windows e Nel Finder su Mac, i percorsi dei file, il centro attività di OneDrive, la descrizione comando dell'icona del cloud di OneDrive e la finestra delle impostazioni di OneDrive. Attualmente, l'aggiornamento del nome dell'organizzazione non lo aggiorna per i client configurati. <br/> MS Teams: Organization Switcher in Teams visualizza il nome dell'organizzazione <br/>  |
+|Nome  <br/>   | Il nome immesso qui è quello che gli utenti vedranno nelle pagine seguenti:  <br/>  Pagina di accesso: se gli utenti hanno configurato altri account Microsoft con l'indirizzo di posta elettronica aziendale o dell'istituto di istruzione, potrebbero vedere il nome dell'organizzazione nella pagina di accesso. In questo modo possono distinguere tra l'account aziendale o dell'istituto di istruzione e gli altri account e identificare quello da usare per l'accesso.  <br/>  Collegamento e pagina del profilo dell'organizzazione: il collegamento al profilo dell'organizzazione mostra il nome dell'organizzazione.  <br/>  Yammer spostamento: in Yammer spostamento sinistro viene utilizzato il nome dell'organizzazione come nome della rete Yammer principale.  <br/> sincronizzazione OneDrive client: il nome dell'organizzazione viene visualizzato in Esplora file su Windows e Nel Finder su Mac, i percorsi dei file, il centro attività di OneDrive, la descrizione comando dell'icona del cloud di OneDrive e la finestra delle impostazioni di OneDrive. Attualmente, l'aggiornamento del nome dell'organizzazione non lo aggiorna per i client configurati. <br/> MS Teams: Organization Switcher in Teams visualizza il nome dell'organizzazione <br/>  |
 |Indirizzo, Città, Provincia, Codice postale  <br/>     | L'indirizzo immesso qui è quello che verrà visualizzato nella fattura, in Venduto a: L'indirizzo Venduto a nella fattura corrisponde all'indirizzo dell'organizzazione nella pagina del profilo (vedere Informazioni sulla fattura o sulla fattura per Microsoft 365 per le [aziende).](../../commerce/billing-and-payments/understand-your-invoice2.md)  <br/>        |
 |Paese o area geografica  <br/>    | Questo è il paese o l'area geografica in cui risiede la società. Il paese o l'area geografica che si seleziona determina quali servizi sono disponibili, le imposte e la valuta della fatturazione per il paese o l'area geografica e la posizione del data center più vicino. Vedere [Informazioni sulle restrizioni di licenza](https://office.microsoft.com/redir/FX103037529).  <br/>NOTA: una volta selezionato, il paese o l'area geografica non può essere modificato. Se si vuole cambiare la selezione, è necessario annullare l'abbonamento e ripetere l'iscrizione. Per informazioni su questo processo, [contattare il supporto](../../business-video/get-help-support.md)tecnico.        |
 |Telefono  <br/>     | Numero principale per l'organizzazione. Si tratta in genere del numero della sede centrale.  <br/>        |
@@ -62,7 +63,7 @@ Di seguito è disponibile una descrizione di ogni campo.
 
 Gli amministratori possono modificare l'indirizzo di posta elettronica alternativo per reimpostare le password.
 
-1. Passare <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">all'Microsoft 365 di amministrazione .</a>
+1. Passare al <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">interfaccia di amministrazione di Microsoft 365</a>.
 
 2. Nell'intestazione seleziona l'icona del profilo, quindi seleziona **Visualizza account.**
 

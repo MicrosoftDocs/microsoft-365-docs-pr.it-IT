@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Gli amministratori possono abilitare il supporto delle etichette di riservatezza per i file di Word, Excel e PowerPoint in SharePoint e OneDrive.
-ms.openlocfilehash: 67aa69ef8505290b6fde47c4e523a09870312b97
-ms.sourcegitcommit: b0f464b6300e2977ed51395473a6b2e02b18fc9e
+ms.openlocfilehash: 61b6c366f76c25ab0b35df4314f63491be5ce5e6
+ms.sourcegitcommit: 022d9d91263994c48efcebe08a84319573dc3a8c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53322234"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53377230"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive"></a>Abilitare le etichette di riservatezza per i file di Office in SharePoint e OneDrive
 
@@ -90,6 +90,12 @@ Usa l'app sincronizzazione OneDrive versione 19.002.0121.0008 o successiva su Wi
     Per le etichette con una di queste configurazioni di crittografia, le etichette non vengono visualizzate agli utenti in Office per il web. Inoltre, le nuove funzionalità non possono essere usate con documenti etichettati che già dispongono di queste impostazioni di crittografia. Ad esempio, questi documenti non verranno restituiti nei risultati della ricerca, anche se vengono aggiornati.
 
 - Per motivi di prestazioni, quando si carica o si salva un documento in SharePoint  e l'etichetta del file non applica la crittografia, la colonna Riservatezza nella raccolta documenti può richiedere del tempo per visualizzare il nome dell'etichetta. Fattore in questo ritardo se si utilizzano script o automazione che dipendono dal nome dell'etichetta in questa colonna.
+
+- Se un documento viene etichettato durante l'estrazione in  [SharePoint](https://support.microsoft.com/office/check-out-check-in-or-discard-changes-to-files-in-a-library-7e2c12a9-a874-4393-9511-1378a700f6de), la colonna Riservatezza nella raccolta documenti non visualizza il nome dell'etichetta finché il documento non viene archiviato e quindi aperto in SharePoint.
+
+- Se un documento con etichetta e crittografato viene scaricato da SharePoint o OneDrive da un'app o un servizio che usa un nome dell'entità servizio e quindi caricato di nuovo con un'etichetta che applica impostazioni di crittografia diverse, il caricamento avrà esito negativo. Uno scenario di esempio è Microsoft Cloud App Security un'etichetta di riservatezza in un file da **Riservato** a Estremamente riservato **o** da **Riservato** a **Generale.**
+    
+    Il caricamento non ha esito negativo se l'app o il servizio esegue prima il cmdlet [Unlock-SPOSensitivityLabelEncryptedFile,](/powershell/module/sharepoint-online/unlock-sposensitivitylabelencryptedFile) come illustrato nella sezione Rimuovere la crittografia per un documento [etichettato.](#remove-encryption-for-a-labeled-document) Oppure, prima del caricamento, il file originale viene eliminato o il nome del file viene modificato.
 
 - Gli utenti potrebbero subire ritardi nell'apertura di documenti crittografati nel seguente scenario Salva con nome: utilizzando una versione desktop di Office, un utente sceglie Salva con nome per un documento con un'etichetta di riservatezza che applica la crittografia. L'utente seleziona SharePoint o OneDrive per il percorso e quindi tenta immediatamente di aprire il documento in Office per il web. Se il servizio sta ancora elaborando la crittografia, l'utente visualizza un messaggio che indica che il documento deve essere aperto nell'app desktop. Se si riprova tra un paio di minuti, il documento verrà aperto Office per il web.
 

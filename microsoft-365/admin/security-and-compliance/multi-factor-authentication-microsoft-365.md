@@ -16,6 +16,7 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - okr_smb
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
@@ -23,14 +24,14 @@ search.appverid:
 ms.assetid: 043807b2-21db-4d5c-b430-c8a6dee0e6ba
 ROBOTS: NOINDEX, NOFOLLOW
 description: L'autenticazione a più fattori (MFA) utilizza sia una password, che dovrebbe essere complessa, sia un metodo di verifica aggiuntivo.
-ms.openlocfilehash: d9af486cf5e53609557b519612f185a20729cf76
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 9b3347f1a8e7b1f62c9bbfe77a7f14c221ef28b5
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52924732"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393644"
 ---
-# <a name="multi-factor-authentication-for-microsoft-365"></a>Autenticazione a più fattori per Microsoft 365
+# <a name="multifactor-authentication-for-microsoft-365"></a>Autenticazione a più fattori per Microsoft 365
 
 Le password sono il metodo più comune per autenticare un accesso a un computer o a un servizio online, ma sono anche i più vulnerabili. Gli utenti possono scegliere password semplici e utilizzare le stesse password per più account di accesso a computer e servizi diversi.
 
@@ -61,7 +62,7 @@ Questi modi si basano sul piano Microsoft 365 pianificazione.
 |---|---|---|
 |Tutti Microsoft 365 piani|Usa le impostazioni predefinite di sicurezza, che richiedono l'autenticazione a più fattori per tutti gli account utente. <p> È anche possibile configurare l'autenticazione a più fattori per utente per singoli account utente, ma questa operazione non è consigliata.|Azienda di piccole dimensioni|
 |Microsoft 365 Business Premium <p> Microsoft 365 E3 <p> Azure Active Directory (Azure AD) Premium P1|Usa i criteri di accesso condizionale per richiedere l'autenticazione a più fattori per gli account utente in base all'appartenenza a gruppi, alle app o ad altri criteri.|Da piccole aziende a imprese|
-|Microsoft 365 E5 <p> Licenze di Azure AD Premium P2|Usare Azure AD Identity Protection per richiedere l'autenticazione a più fattori in base ai criteri di rischio di accesso.|Grandi aziende|
+|Microsoft 365 E5 <p> Azure AD Premium P2 licenze|Usare Azure AD Identity Protection per richiedere l'autenticazione a più fattori in base ai criteri di rischio di accesso.|Enterprise|
 ||||
 
 ### <a name="security-defaults"></a>Impostazioni predefinite per la sicurezza
@@ -101,7 +102,7 @@ Puoi anche usare i criteri di accesso condizionale per funzionalità più avanza
 
 - Microsoft 365 Business Premium
 - Microsoft 365 E3 e E5
-- Licenze di Azure AD Premium P1 e Azure AD Premium P2
+- Azure AD Premium P1 e Azure AD Premium P2 licenze
 
 Per le piccole imprese con Microsoft 365 Business Premium, è possibile utilizzare facilmente i criteri di accesso condizionale con i passaggi seguenti:
 
@@ -132,7 +133,7 @@ Con Azure AD Identity Protection, è possibile creare criteri di accesso condizi
 È possibile usare Azure AD Identity Protection e i criteri di accesso condizionale basati sui rischi con:
 
 - Microsoft 365 E5
-- Licenze di Azure AD Premium P2
+- Azure AD Premium P2 licenze
 
 Per ulteriori informazioni, vedere questa [panoramica di Azure AD Identity Protection](/azure/active-directory/identity-protection/overview-identity-protection).
 
@@ -140,7 +141,7 @@ Per ulteriori informazioni, vedere questa [panoramica di Azure AD Identity Prote
 
 È consigliabile utilizzare le impostazioni predefinite di sicurezza o i criteri di accesso condizionale per richiedere l'autenticazione a più fattori per gli accessi dell'account utente. Tuttavia, se uno di questi non può essere utilizzato, Microsoft consiglia vivamente L'autenticazione a più fattori per gli account utente con ruoli di amministratore, in particolare il ruolo di amministratore globale, per qualsiasi sottoscrizione di dimensione.
 
-L'autenticazione a più fattori  per i singoli account utente viene abilitata dal riquadro Utenti attivi dell'Microsoft 365 di amministrazione.
+L'autenticazione a più fattori viene abilitata per singoli account utente dal riquadro **Utenti** attivi della interfaccia di amministrazione di Microsoft 365.
 
 ![Immagine dell'opzione Autenticazione a più fattori nella pagina Utenti attivi](../../media/multi-factor-authentication-microsoft-365/per-user-mfa.png)
 
@@ -168,7 +169,7 @@ Nel portale di Azure è possibile:
 - Abilitare e disabilitare le impostazioni predefinite di sicurezza
 - Configurare i criteri di accesso condizionale
 
-Nell'Microsoft 365 di amministrazione è possibile configurare le impostazioni MFA per utente e servizio.
+Nell'interfaccia di amministrazione di Microsoft 365, è possibile configurare le impostazioni MFA per utente e servizio.
 
 ## <a name="next-steps"></a>Passaggi successivi
 
@@ -176,5 +177,5 @@ Nell'Microsoft 365 di amministrazione è possibile configurare le impostazioni M
 
 ## <a name="related-content"></a>Contenuto correlato
 
-[Attivare l'autenticazione a più fattori](../../business-video/turn-on-mfa.md) (video)\
+[Attivare l'autenticazione a più](../../business-video/turn-on-mfa.md) fattori (video)\
 [Attivare l'autenticazione a più fattori per il telefono](../../business-video/set-up-mfa.md) (video)

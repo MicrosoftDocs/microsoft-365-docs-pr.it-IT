@@ -15,16 +15,16 @@ ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: Fornire agli utenti notizie aggiornate sul proprio settore e informazioni dell'organizzazione, usare il servizio Notizie per abilitare un feed di notizie personalizzato per l'organizzazione.
-ms.openlocfilehash: 4282cb71bd5b2847528d651e0ab94b5fe966cedf
-ms.sourcegitcommit: a46532bb422ee51331f478ff50cc5444586bf6a9
+ms.openlocfilehash: dedc39d9c82f66d64660f66be8e77ba954246e09
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/09/2021
-ms.locfileid: "51650035"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53392840"
 ---
 # <a name="manage-industry-news"></a>Gestire le notizie del settore
 
-Per fornire agli utenti notizie aggiornate sul settore e sulle informazioni dell'organizzazione, usare il servizio Notizie per abilitare un feed di notizie personalizzato per l'organizzazione. Puoi anche abilitare un'e-mail giornaliera per gli aggiornamenti del settore e gestire le impostazioni per la home page di Bing e la nuova scheda Microsoft Edge (a partire dal rilascio di Edge 87). 
+Per fornire agli utenti notizie aggiornate sul settore e sulle informazioni dell'organizzazione, usare il servizio Notizie per abilitare un feed di notizie personalizzato per l'organizzazione. Puoi anche abilitare un messaggio di posta elettronica giornaliero per gli aggiornamenti del settore e gestire le impostazioni per la home page Bing e Microsoft Edge nuova scheda. 
 
 ## <a name="what-your-users-will-see"></a>Cosa verranno visualizzati dagli utenti
 
@@ -44,7 +44,7 @@ Possono anche visualizzare notizie aziendali, del settore e interne o informazio
 
 Gli amministratori controllano le impostazioni dei feed notizie per l'organizzazione, tra cui il settore selezionato e la home page di Bing, la pagina nuova scheda di Microsoft Edge (a partire dal rilascio di Edge 87) e le esperienze di posta elettronica. 
 
-1. Nell'Microsoft 365 di amministrazione, andare **a** Impostazioni  >  **Impostazioni organizzazione**  >  **Servizi**  >  [**Notizie.**](https://admin.microsoft.com/adminportal/home?#/Settings/Services/:/Settings/L1/BingNews) 
+1. Nel interfaccia di amministrazione di Microsoft 365, andare **a** Impostazioni  >  **Impostazioni organizzazione**  >  **Servizi**  >  [**Notizie.**](https://admin.microsoft.com/adminportal/home?#/Settings/Services/:/Settings/L1/BingNews) 
 
 1. Nel riquadro **Notizie** fare clic sulla **scheda** Generale.
 
@@ -60,7 +60,7 @@ Gli amministratori controllano le impostazioni dei feed notizie per l'organizzaz
 
 È possibile inviare un aggiornamento giornaliero della posta elettronica con notizie del settore rilevanti alle cartelle Posta in arrivo degli utenti. Per impostare gli aggiornamenti giornalieri della posta elettronica per gli utenti: 
 
-1. Nell'Microsoft 365 di amministrazione, andare **a** Impostazioni  >  **Impostazioni organizzazione**  >  **Servizi**  >  [**Notizie.**](https://admin.microsoft.com/adminportal/home?#/Settings/Services/:/Settings/L1/BingNews) 
+1. Nel interfaccia di amministrazione di Microsoft 365, andare **a** Impostazioni  >  **Impostazioni organizzazione**  >  **Servizi**  >  [**Notizie.**](https://admin.microsoft.com/adminportal/home?#/Settings/Services/:/Settings/L1/BingNews) 
 
 1. Nel riquadro **Notizie** fai clic sulla **scheda Aggiornamenti del** settore. 
 
@@ -72,7 +72,7 @@ Gli amministratori controllano le impostazioni dei feed notizie per l'organizzaz
 
 Puoi personalizzare la home page Bing per includere notizie sul tuo settore. 
 
-1. Nell'Microsoft 365 di amministrazione, andare **a** Impostazioni  >  **Impostazioni organizzazione**  >  **Servizi**  >  [**Notizie.**](https://admin.microsoft.com/adminportal/home?#/Settings/Services/:/Settings/L1/BingNews) 
+1. Nel interfaccia di amministrazione di Microsoft 365, andare **a** Impostazioni  >  **Impostazioni organizzazione**  >  **Servizi**  >  [**Notizie.**](https://admin.microsoft.com/adminportal/home?#/Settings/Services/:/Settings/L1/BingNews) 
 
 1. Nel riquadro **Notizie** fai clic sulla **Bing home page** e seleziona Includi nella home page **Bing pagina** iniziale. 
 
@@ -81,7 +81,7 @@ Puoi personalizzare la home page Bing per includere notizie sul tuo settore.
 ## <a name="microsoft-edge-new-tab-page"></a>Microsoft Edge nuova scheda 
 Quando gli utenti a questo Microsoft Edge (versione 87 o successiva) con un account aziendale o dell'istituto di istruzione valido, possono visualizzare notizie personalizzate per l'organizzazione.
 
-1. Nell'Microsoft 365 di amministrazione, andare **a** Impostazioni  >  **Impostazioni organizzazione**  >  **Servizi**  >  [Notizie.](https://admin.microsoft.com/adminportal/home?#/Settings/Services/:/Settings/L1/BingNews)
+1. Nel interfaccia di amministrazione di Microsoft 365, andare **a** Impostazioni  >  **Impostazioni organizzazione**  >  **Servizi**  >  [Notizie.](https://admin.microsoft.com/adminportal/home?#/Settings/Services/:/Settings/L1/BingNews)
 2. Nel riquadro **Notizie** fare clic su **Microsoft Edge nuova scheda**.
 3. Selezionare **Consenti Office 365 contenuto nella nuova scheda**. Se abilitati, gli utenti possono personalizzare la nuova scheda per visualizzare le informazioni di Office 365, inclusi i file consigliati e recenti, insieme ai siti di SharePoint usati di frequente e ad altre informazioni.
 4. Selezionare **Mostra informazioni sulla società e notizie del settore nella nuova scheda pagina.** Gli articoli relativi all'organizzazione e al settore vengono visualizzati per gli utenti che scelgono di visualizzare gli articoli nella nuova scheda.

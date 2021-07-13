@@ -21,18 +21,19 @@ ms.custom:
 - MiniMaven
 - MSB365
 - seo-marvel-mar
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 018a2a96-3811-4b5d-b751-3b6330b34256
 description: Informazioni su come rimuovere i dati aziendali dai dispositivi gestiti tramite i criteri di protezione e reimpostare Windows 10 dispositivi alle impostazioni di fabbrica.
-ms.openlocfilehash: 0b757172ed337e9b2b68b4fcbdf5b102a8c76710
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: 2bb982d0530c47270b0edb230d08b80b5edc2706
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52624286"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393420"
 ---
 # <a name="manage-protected-devices-with-microsoft-365-business-premium"></a>Gestire i dispositivi protetti con Microsoft 365 Business Premium
 

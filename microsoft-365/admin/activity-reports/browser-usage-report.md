@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - GEA150
 description: Informazioni su come ottenere un report sull'utilizzo del browser Microsoft usando il dashboard Microsoft 365 report nella interfaccia di amministrazione di Microsoft 365.
-ms.openlocfilehash: f2d8d8347e7b71375958c56f6649fbb911155d46
-ms.sourcegitcommit: b42dd3e706ebf9638cd893b35f75eaa56dd8fd7e
+ms.openlocfilehash: 2f6f287e5a8642d94c9581fc73525b7bfaafb41b
+ms.sourcegitcommit: 022d9d91263994c48efcebe08a84319573dc3a8c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "53125415"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53377206"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-browser-usage"></a>Microsoft 365 Report nell'interfaccia di amministrazione - Utilizzo del browser Microsoft
 
@@ -36,16 +36,6 @@ Il dashboard Microsoft 365 **report** mostra una panoramica delle attività tra 
 
 1. Nell'interfaccia di amministrazione passare alla pagina **Report** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Utilizzo</a>. 
 2. Nella home page del dashboard fai clic sul **pulsante Visualizza** altro nella scheda di utilizzo del browser Microsoft.
-
-## <a name="how-to-notify-users-to-upgrade-their-browser"></a>Come inviare una notifica agli utenti per aggiornare il browser
-
-![Flusso di azione del report di utilizzo del browser Microsoft](../../media/1ef4eb08-18b8-4dda-aa15-1aad013ecd70.png)
-
-Gli amministratori globali possono acconsentire esplicitamente all'invio di messaggi agli utenti tramite i servizi Microsoft 365 su Edge Legacy (non supportato) e Internet Explorer (presto non supportato). Questo messaggio mirato informa gli utenti che il supporto per questi browser terminerà a breve e collega a un articolo di supporto con informazioni su Microsoft Edge e semplici passaggi da seguire per cambiare browser. 
-
-Questa funzionalità è disponibile nella pagina del report. Una volta creato il messaggio, agli utenti viene notificata la frequenza specificata fino al 17 agosto 2021. Puoi disattivare questa funzionalità in qualsiasi momento per interrompere l'invio di notifiche agli utenti. Per iniziare di nuovo a inviare notifiche, riattivare la funzionalità.
-
-Per ulteriori informazioni, vedere [Microsoft Edge guida & apprendimento](https://support.microsoft.com/microsoft-edge).
 
 ## <a name="interpret-the-microsoft-browser-usage-report"></a>Interpretare il report sull'utilizzo del browser Microsoft
 

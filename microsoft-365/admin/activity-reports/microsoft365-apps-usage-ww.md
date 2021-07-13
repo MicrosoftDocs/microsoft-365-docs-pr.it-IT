@@ -17,13 +17,13 @@ search.appverid:
 - MET150
 - MOE150
 - GEA150
-description: Informazioni su come ottenere un Microsoft 365 Apps per i report di utilizzo usando il dashboard Microsoft 365 report nell'interfaccia Microsoft 365 di amministrazione.
-ms.openlocfilehash: d41a1680b46709c3f41b5238d309794c68101cee
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+description: Informazioni su come ottenere un Microsoft 365 Apps per i report di utilizzo usando il dashboard dei Microsoft 365 report nella interfaccia di amministrazione di Microsoft 365.
+ms.openlocfilehash: 3147aebc10ff774b8af3ff10f9a76d52a2db87b2
+ms.sourcegitcommit: 022d9d91263994c48efcebe08a84319573dc3a8c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51860750"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53377242"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-365-apps-usage"></a>Microsoft 365 Report nell'interfaccia di amministrazione - Microsoft 365 Apps utilizzo
 
@@ -55,6 +55,6 @@ Puoi ottenere una visualizzazione dell'attività Microsoft 365 Apps utente esami
  |4. <br/> |La **visualizzazione** Piattaforme mostra la tendenza degli utenti attivi in tutte le app per ogni piattaforma, Windows, Mac, Web e Mobile. <br/> |
  |5.<br/>|Nel grafico **Utenti,** l'asse Y è il numero di utenti attivi univoci per la rispettiva app. Nel grafico **Piattaforme,**   l'asse Y è il numero di utenti univoci per la rispettiva piattaforma. L'asse X in entrambi i grafici è la data in cui un'app è stata usata in una determinata piattaforma.<br/>|
  6.<br/>|È possibile filtrare la serie visualizzata nel grafico selezionando un elemento nella legenda. Ad esempio,  nel grafico Utenti selezionare Outlook, Word, Excel, PowerPoint, OneDrive o Teams per visualizzare solo le informazioni correlate a ognuno di essi. La modifica di questa selezione non modifica le informazioni nella tabella griglia sottostante.|
- |7.<br/>|La tabella visualizza un'analisi dei dati a livello di utente. È possibile aggiungere o rimuovere colonne in una tabella.  <br/><br/>**Nome utente** è l'indirizzo di posta elettronica dell'utente che ha eseguito l'attività Microsoft Apps.<br><br/>**Data ultima attivazione (UTC)** è l'ultima data in cui l'utente ha attivato la sottoscrizione Microsoft 365 Apps abbonamento.<br/><br/>**Data ultima attività (UTC)** è la data più recente in cui un'attività intenzionale è stata eseguita dall'utente. Per visualizzare l'attività relativa a una data specifica, selezionare la data direttamente nel grafico.<br/><br/>Le altre colonne identificano se l'utente era attivo nella piattaforma per l'app (entro Microsoft 365 Apps) nel periodo selezionato. |
+ |7.<br/>|La tabella visualizza un'analisi dei dati a livello di utente. È possibile aggiungere o rimuovere colonne in una tabella.  <br/><br/>**Nome utente** è l'indirizzo di posta elettronica dell'utente che ha eseguito l'attività Microsoft Apps.<br><br/>**Data ultima attivazione (UTC)** è l'ultima data in cui l'utente ha attivato la sottoscrizione Microsoft 365 Apps in un computer o accede a un computer condiviso e avvia l'app con il proprio account. <br/><br/>**Data ultima attività (UTC)** è la data più recente in cui un'attività intenzionale è stata eseguita dall'utente. Per visualizzare l'attività relativa a una data specifica, selezionare la data direttamente nel grafico.<br/><br/>Le altre colonne identificano se l'utente era attivo nella piattaforma per l'app (entro Microsoft 365 Apps) nel periodo selezionato. |
  |8.<br/>|Selezionare **l'icona Scegli** colonne per aggiungere o rimuovere colonne dal report.|
  |9.<br/>|È inoltre possibile esportare i dati del report in Excel .csv file selezionando il **collegamento Esporta.** In questo modo vengono esportati i dati per tutti gli utenti e è possibile eseguire semplici operazioni di aggregazione, ordinamento e filtro per un'ulteriore analisi. Se si dispone di meno di 100 utenti, è possibile ordinare e filtrare all'interno della tabella del report stesso. Se si dispone di più di 100 utenti, per filtrare e ordinare, sarà necessario esportare i dati.|

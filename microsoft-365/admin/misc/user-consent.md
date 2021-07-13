@@ -13,19 +13,21 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 7e453a40-66df-44ab-92a1-96786cb7fb34
 description: Informazioni sul consenso dell'utente alle app e su come attivarle per consentire alle app di terze parti di accedere alle informazioni Microsoft 365 degli utenti.
-ms.openlocfilehash: b8f65b50e50b0e0b4d978388463bbd380ca60d4e
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: 629e64494c6d72a13c3b155370a8f47505e9fa20
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52624502"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53391232"
 ---
 # <a name="managing-user-consent-to-apps-in-microsoft-365"></a>Gestione del consenso dell'utente alle app in Microsoft 365
 
@@ -36,7 +38,6 @@ Se attivi questa impostazione, queste app chiederanno agli utenti l'autorizzazio
 Ogni utente può concedere l'accesso solo alle app di cui è proprietario e che accedono alle proprie informazioni di Office 365. Non può invece concedere l'accesso alle informazioni degli altri utenti.
 
 ## <a name="turning-user-consent-on-or-off"></a>Attivazione o disattivazione del consenso dell'utente
-<a name="__toc379982114"> </a>
 
 Ecco come attivare o disattivare il consenso dell'utente per le app.
 
@@ -45,7 +46,6 @@ Ecco come attivare o disattivare il consenso dell'utente per le app.
 2. Nella pagina **Consenso utente alle app** seleziona l'opzione per attivare o disattivare il consenso dell'utente.
 
 ## <a name="related-content"></a>Contenuto correlato 
-<a name="__toc379982114"> </a>
 
 [Configurare il flusso di lavoro del consenso dell'amministratore](/azure/active-directory/manage-apps/configure-admin-consent-workflow) (articolo)\
 [Gestione del consenso alle applicazioni e valutazione delle richieste di consenso](/azure/active-directory/manage-apps/manage-consent-requests) (articolo)

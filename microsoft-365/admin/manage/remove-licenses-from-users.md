@@ -18,15 +18,16 @@ ms.custom:
 - okr_smb
 - manage_licenses
 - commerce_licensing
+- AdminTemplateSet
 search.appverid: MET150
 description: Il metodo utilizzato per annullare l'assegnazione delle licenze di prodotto dipende dall'annullamento dell'assegnazione delle licenze da utenti specifici o da un prodotto specifico.
 ms.date: 06/07/2021
-ms.openlocfilehash: 6220ddc15e7b3381da1d78ad3ac4f3c2204bda78
-ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
+ms.openlocfilehash: 8a67d7e690ff07631f696a97d6ed59925bc871df
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "53256832"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53392492"
 ---
 # <a name="unassign-licenses-from-users"></a>Annullare l'assegnazione delle licenze agli utenti
 

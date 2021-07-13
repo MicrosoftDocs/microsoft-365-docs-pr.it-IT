@@ -16,18 +16,19 @@ ms.custom:
 - MSStore_Link
 - AdminSurgePortfolio
 - okr_smb
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
 description: Come proteggere la posta elettronica aziendale e i dati da minacce informatiche, tra cui ransomware, phishing e allegati dannosi.
-ms.openlocfilehash: a5d87c907d47be2d8edc12642ad4e93afb0eb142
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 8ee8e34ef984cb466f472e5503ad7cc14c181030
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52924624"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393632"
 ---
 # <a name="top-10-ways-to-secure-microsoft-365-for-business-plans"></a>I 10 modi principali per proteggere i Microsoft 365 per le aziende
 
@@ -37,16 +38,16 @@ Microsoft consiglia di completare le attività elencate nella tabella seguente c
 
 |*Numero*|Attività|Microsoft 365 Business Standard|Microsoft 365 Business Premium|
 |---|---|---|---|
-|1|[Configurare l'autenticazione a più fattori](secure-your-business-data.md#setup)|![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|2|[Formazione degli utenti](secure-your-business-data.md#train)|![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|3|[Usare account amministratore dedicati](secure-your-business-data.md#admin)|![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|1 |[Configurare l'autenticazione a più fattori](secure-your-business-data.md#setup)|![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|2 |[Formazione degli utenti](secure-your-business-data.md#train)|![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|3 |[Usare account amministratore dedicati](secure-your-business-data.md#admin)|![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |4 |[Aumentare il livello di protezione dal malware nella posta](secure-your-business-data.md#malware)|![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |5 |[Proteggere l'ambiente da ransomware](secure-your-business-data.md#ransomware)|![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |6 |[Interrompere l'inoltro automatico per la posta elettronica](secure-your-business-data.md#forwarding)|![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |7 |[Utilizzare Office crittografia dei messaggi](secure-your-business-data.md#encryption)||![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |8 |[Proteggere la posta elettronica da attacchi di phishing](secure-your-business-data.md#phishing)||![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|9 |[Proteggere da allegati e file dannosi con allegati sicuri](secure-your-business-data.md#atp)||![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|10  |[Proteggere da attacchi di phishing con collegamenti sicuri](secure-your-business-data.md#phishingatp)||![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|9 |[Proteggere da allegati e file dannosi con Cassaforte allegati](secure-your-business-data.md#atp)||![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|10 |[Proteggere da attacchi di phishing con Cassaforte collegamenti](secure-your-business-data.md#phishingatp)||![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 
 Se si ha Microsoft Business Premium, il modo più rapido per configurare la sicurezza e iniziare a collaborare in modo sicuro consiste nel seguire le indicazioni fornite in questa raccolta: [Microsoft 365 per piccole imprese e campagne](../../campaigns/index.md). Queste indicazioni sono state sviluppate in collaborazione con il team Microsoft Defending Democracy per proteggere tutti i clienti delle piccole imprese dalle minacce informatiche lanciate da hacker sofisticati.
 
@@ -152,7 +153,7 @@ Per creare una regola di trasporto della posta, visualizzare [un breve video di 
 
 5. Applicare le impostazioni nella tabella seguente per ogni regola. Lasciare il resto delle impostazioni come predefinito, a meno che non si desideri modificarle.
 
-6. Seleziona **Salva**.
+6. Selezionare **Salva**.
     
 | Impostazione | Avvisare gli utenti prima di aprire allegati Office file | Bloccare i tipi di file che potrebbero contenere ransomware o altro codice dannoso |
 |:-----|:-----|:-----|
@@ -165,7 +166,7 @@ Per creare una regola di trasporto della posta, visualizzare [un breve video di 
 > [!TIP]
 > È inoltre possibile aggiungere i file che si desidera bloccare all'elenco antimalware [nel passaggio 4.](#4-raise-the-level-of-protection-against-malware-in-mail)
 
-Per altre informazioni, vedere:
+Per altre informazioni, vedi:
 
 - [Ransomware: come ridurre i rischi](https://www.microsoft.com/security/blog/2020/04/28/ransomware-groups-continue-to-target-healthcare-critical-services-heres-how-to-reduce-risk/)
 
@@ -188,7 +189,7 @@ Per creare una regola di trasporto della posta:
 
 5. Applicare le impostazioni nella tabella seguente. Lasciare il resto delle impostazioni come predefinito, a meno che non si desideri modificarle.
 
-6. Seleziona **Salva**.
+6. Selezionare **Salva**.
 
 |Impostazione|Rifiutare i messaggi di posta elettronica di inoltro automatico ai domini esterni|
 |---|---|
@@ -267,20 +268,20 @@ Per creare un criterio anti-phishing in Defender for Office 365, visualizzare un
 
 Per altre informazioni, vedi [Configurare i criteri anti-phishing in Defender per Office 365](../../security/office-365-security/configure-atp-anti-phishing-policies.md).
 
-## <a name="9-protect-against-malicious-attachments-and-files-with-safe-attachments"></a>9: Proteggere da allegati e file dannosi con allegati sicuri
+## <a name="9-protect-against-malicious-attachments-and-files-with-safe-attachments"></a>9: Proteggere da allegati e file dannosi con Cassaforte allegati
 <a name="atp"> </a>
 
-Gli utenti inviano, ricevono e condividono regolarmente allegati, ad esempio documenti, presentazioni, fogli di calcolo e altro ancora. Non è sempre facile stabilire se un allegato è sicuro o dannoso semplicemente esaminando un messaggio di posta elettronica. Microsoft Defender per Office 365 include la protezione degli allegati sicuri, ma questa protezione non è attivata per impostazione predefinita. È consigliabile creare una nuova regola per iniziare a usare questa protezione. Questa protezione si estende ai file SharePoint, OneDrive e Microsoft Teams.
+Gli utenti inviano, ricevono e condividono regolarmente allegati, ad esempio documenti, presentazioni, fogli di calcolo e altro ancora. Non è sempre facile stabilire se un allegato è sicuro o dannoso semplicemente esaminando un messaggio di posta elettronica. Microsoft Defender per Office 365 include Cassaforte protezione degli allegati, ma questa protezione non è attivata per impostazione predefinita. È consigliabile creare una nuova regola per iniziare a usare questa protezione. Questa protezione si estende ai file SharePoint, OneDrive e Microsoft Teams.
 
-Per creare un criterio allegati sicuri, visualizzare un [breve video di formazione](../../business-video/safe-attachments.md)o completare la procedura seguente:
+Per creare un criterio Cassaforte allegati, visualizzare un [breve video](../../business-video/safe-attachments.md)di formazione o completare i passaggi seguenti:
 
 1. Vai a <https://protection.office.com> e accedi con il tuo account amministratore.
 
 2. Nel Centro sicurezza & conformità, nel riquadro di spostamento sinistro, in **Gestione delle minacce,** selezionare **Criterio.**
 
-3. Nella pagina Criterio selezionare **Allegati sicuri.**
+3. Nella pagina Criteri selezionare Cassaforte **allegati**.
 
-4. Nella pagina Allegati sicuri applicare questa protezione in modo generale selezionando la casella di controllo Attiva ATP per **SharePoint, OneDrive** e Microsoft Teams controllo.
+4. Nella pagina Cassaforte allegati selezionare la casella di controllo Attiva ATP per **SharePoint, OneDrive** e Microsoft Teams.
 
 5. Selezionare **+** questa opzione per creare un nuovo criterio.
 
@@ -299,10 +300,10 @@ Per creare un criterio allegati sicuri, visualizzare un [breve video di formazio
 
 Per altre informazioni, vedi [Configurare i criteri anti-phishing in Defender per Office 365](../../security/office-365-security/configure-atp-anti-phishing-policies.md).
 
-## <a name="10-protect-against-phishing-attacks-with-safe-links"></a>10: Proteggere da attacchi di phishing con collegamenti sicuri
+## <a name="10-protect-against-phishing-attacks-with-safe-links"></a>10: Proteggere da attacchi di phishing con Cassaforte collegamenti
 <a name="phishingatp"> </a>
 
-Gli hacker a volte nascondono siti Web dannosi nei collegamenti nella posta elettronica o in altri file. Collegamenti sicuri, parte di Microsoft Defender per Office 365, può aiutare a proteggere l'organizzazione fornendo la verifica time-of-click degli indirizzi Web (URL) nei messaggi di posta elettronica e nei documenti Office. La protezione viene definita tramite i criteri collegamenti sicuri.
+Gli hacker a volte nascondono siti Web dannosi nei collegamenti nella posta elettronica o in altri file. Cassaforte I collegamenti, parte di Microsoft Defender per Office 365, possono aiutare a proteggere l'organizzazione fornendo la verifica time-of-click degli indirizzi Web (URL) nei messaggi di posta elettronica e nei documenti Office. La protezione viene definita tramite i criteri Cassaforte collegamenti.
 
 È consigliabile eseguire le operazioni seguenti:
 
@@ -310,41 +311,41 @@ Gli hacker a volte nascondono siti Web dannosi nei collegamenti nella posta elet
 
 - Aggiungere un nuovo criterio destinato a tutti i destinatari del dominio.
 
-Per accedere a Collegamenti sicuri, visualizzare un [breve video di formazione](../../business-video/safe-links.md)o completare i passaggi seguenti:
+Per accedere a Cassaforte collegamenti, visualizzare un [breve video di formazione](../../business-video/safe-links.md)o completare la procedura seguente:
 
 1. Vai a <https://protection.office.com> e accedi con il tuo account amministratore.
 
 2. Nel Centro sicurezza & conformità, nel riquadro di spostamento sinistro, in **Gestione delle minacce,** selezionare **Criterio.**
 
-3. Nella pagina Criteri selezionare **Collegamenti sicuri.**
+3. Nella pagina Criteri selezionare Cassaforte **collegamenti**.
 
 Per modificare il criterio predefinito:
 
-1. Nella pagina Collegamenti sicuri, in Criteri **applicabili all'intera organizzazione,** fare doppio clic sul **criterio** Predefinito.
+1. Nella pagina Cassaforte collegamenti, in Criteri applicabili all'intera **organizzazione,** fare doppio clic sul **criterio** Predefinito.
 
 2. In **Impostazioni che si applicano** al contenuto Office 365 , immettere un URL da bloccare, ad esempio _example.com_ e selezionare **+** .
 
 3. In **Impostazioni** che si applicano **al** contenuto ad eccezione della posta elettronica, selezionare Office 365 applications , Do not track when users click **safe links** e Do not let users click through safe links to original **URL**.
 
-4. Seleziona **Salva**.
+4. Selezionare **Salva**.
 
 Per creare un nuovo criterio destinato a tutti i destinatari del dominio:
 
-1. Nella pagina Collegamenti sicuri, in Criteri applicabili a **destinatari specifici,** selezionare **+** per creare un nuovo criterio.
+1. Nella pagina Cassaforte, in Criteri **applicabili** a destinatari specifici, selezionare **+** per creare un nuovo criterio.
 
 2. Applicare le impostazioni elencate nella tabella seguente.
 
-3. Seleziona **Salva**.
+3. Selezionare **Salva**.
 
 |Impostazione o opzione|Impostazione consigliata|
 |---|---|
-|Nome|Criteri collegamenti sicuri per tutti i destinatari nel dominio|
+|Nome|Cassaforte dei collegamenti per tutti i destinatari nel dominio|
 |Selezionare l'azione per URL sconosciuti potenzialmente dannosi nei messaggi|Seleziona **Sì : gli URL verranno riscritti** e controllati in base a un elenco di collegamenti dannosi noti quando l'utente fa clic sul collegamento.|
 |Applicare l'analisi degli URL in tempo reale per i collegamenti sospetti e i collegamenti che puntano ai file|Selezionare questa casella.|
 |Applicato a|Il dominio del destinatario è . . . selezionare il dominio.|
 |
 
-Per altre informazioni, vedi [Collegamenti sicuri in Microsoft Defender per Office 365](../../security/office-365-security/atp-safe-links.md).
+Per ulteriori informazioni, vedere [Cassaforte collegamenti in Microsoft Defender per Office 365](../../security/office-365-security/atp-safe-links.md).
 
 ## <a name="related-content"></a>Contenuto correlato
 

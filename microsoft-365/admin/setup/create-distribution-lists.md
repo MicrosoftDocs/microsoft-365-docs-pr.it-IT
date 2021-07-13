@@ -22,15 +22,16 @@ ms.custom:
 - seo-marvel-may2020
 - AdminSurgePortfolio
 - okr_smb
-description: Creare gruppi di distribuzione o elenchi nell'Microsoft 365 di amministrazione per poter inviare messaggi di posta elettronica a un gruppo senza digitare il nome di ogni destinatario.
-ms.openlocfilehash: 845aa04e5e26beb14fca0fa3bc08c0599077b152
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+- AdminTemplateSet
+description: Creare gruppi di distribuzione o elenchi nel interfaccia di amministrazione di Microsoft 365 in modo da poter inviare messaggi di posta elettronica a un gruppo senza digitare il nome di ogni destinatario.
+ms.openlocfilehash: 87b3f375f5e90ec7fc97332abb801d814bf4939b
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635667"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393572"
 ---
-# <a name="create-distribution-groups-in-the-microsoft-365-admin-center"></a>Creare gruppi di distribuzione nell'Microsoft 365 di amministrazione
+# <a name="create-distribution-groups-in-the-microsoft-365-admin-center"></a>Creare gruppi di distribuzione nella interfaccia di amministrazione di Microsoft 365
   
 Utilizzato quando si desidera inviare messaggi di posta elettronica a un gruppo di persone senza dover digitare il nome di ogni singolo destinatario, i gruppi di distribuzione (liste di distribuzione) sono organizzati da un particolare oggetto di discussione (ad esempio "Marketing") o da utenti che condividono attività comuni che richiedono loro di comunicare frequentemente. Le liste di distribuzione consentono anche di inoltrare automaticamente messaggi a più indirizzi di posta elettronica.
 
@@ -70,12 +71,12 @@ Passare all'interfaccia di amministrazione all'indirizzo <a href="https://go.mic
     
 6. Per aggiungere utenti alla lista di distribuzione, vedere [Aggiungere un utente o un contatto a un gruppo di distribuzione.](../email/add-user-or-contact-to-distribution-list.md)
     
-Per informazioni su come usare il gruppo in Outlook 2016 e Outlook sul Web, vedere Usare gruppi di contatti (in precedenza liste di [distribuzione) in Outlook](https://support.microsoft.com/office/1c97fcb2-0ed4-41e6-b401-58f9d7d40e39). 
+Vedere come usare il gruppo in Outlook 2016 e Outlook sul web in Usare gruppi di contatti (in precedenza liste di [distribuzione) in Outlook](https://support.microsoft.com/office/1c97fcb2-0ed4-41e6-b401-58f9d7d40e39). 
   
 Per informazioni sui [problemi relativi alle liste di](/office365/troubleshoot/groups/distribution-list-issues) distribuzione, vedere Problemi relativi al gruppo di distribuzione. 
 
 ## <a name="related-content"></a>Contenuto correlato
 
 [Impostazioni di posta elettronica utente](../email/office-365-user-email-settings.md) (articolo)\
-[Creare, modificare o eliminare un gruppo di sicurezza nell'Microsoft 365 di amministrazione](../email/create-edit-or-delete-a-security-group.md) (articolo)\
+[Creare, modificare o eliminare un gruppo di sicurezza nell'interfaccia di amministrazione di Microsoft 365](../email/create-edit-or-delete-a-security-group.md) (articolo)\
 [Creare una cassetta postale condivisa](../email/create-a-shared-mailbox.md) (articolo)

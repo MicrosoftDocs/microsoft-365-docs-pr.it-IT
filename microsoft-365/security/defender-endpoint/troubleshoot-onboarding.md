@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: b3ee2f2dcf13402e506b299935459e435fd2f89a
-ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
+ms.openlocfilehash: fa9592dccd806ad14e609df073c855170dcb2c76
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53326904"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53391448"
 ---
 # <a name="troubleshoot-microsoft-defender-for-endpoint-onboarding-issues"></a>Risolvere i problemi di onboarding di Microsoft Defender per endpoint
 
@@ -113,8 +113,8 @@ Codice di errore Hex | Codice di errore Dec | Description | URI OMA | Possibili 
 0x87D1FDE8 | -2016281112 | Correzione non riuscita | Onboarding <br> Offboarding | **Causa possibile:** Onboarding o offboarding non riuscito in un BLOB errato: firma errata o campi PreviousOrgIds mancanti. <br><br> **Passaggi per la risoluzione dei problemi:** <br> Controlla gli ID evento nella sezione Visualizzare gli errori [di onboarding](#view-agent-onboarding-errors-in-the-device-event-log) dell'agente nel registro eventi del dispositivo. <br><br> Controlla i registri eventi MDM nella tabella seguente o segui le istruzioni in [Diagnosticare](/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10)gli errori MDM in Windows 10 .
  | | | | Onboarding <br> Offboarding <br> SampleSharing | **Causa possibile:** La chiave del Registro di sistema di Microsoft Defender for Endpoint Policy non esiste o il client OMA DM non dispone delle autorizzazioni per scriverlo. <br><br> **Passaggi per la risoluzione dei problemi:** Verificare che esista la seguente chiave del Registro di sistema: `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection` <br> <br> Se non esiste, aprire un comando con privilegi elevati e aggiungere la chiave.
  | | | | SenseIsRunning <br> OnboardingState <br> OrgId |  **Causa possibile:** Tentativo di correzione tramite proprietà di sola lettura. Onboarding non riuscito. <br><br> **Passaggi per la risoluzione dei problemi:** Controlla la procedura di risoluzione dei problemi in [Risolvere i problemi di onboarding nel dispositivo](#troubleshoot-onboarding-issues-on-the-device). <br><br> Controlla i registri eventi MDM nella tabella seguente o segui le istruzioni in [Diagnosticare](/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10)gli errori MDM in Windows 10 .
- | | | | Tutto | **Causa possibile:** Tenta di distribuire Microsoft Defender per Endpoint su SKU/Piattaforma non supportati, in particolare SKU olografico. <br><br> Piattaforme attualmente supportate:<br> Enterprise, Education e Professional.<br> Server non supportato.
- 0x87D101A9 | -2016345687 |SyncML(425): il comando richiesto non è riuscito perché il mittente non dispone di autorizzazioni di controllo di accesso (ACL) adeguate per il destinatario. | Tutto |  **Causa possibile:** Tenta di distribuire Microsoft Defender per Endpoint su SKU/Piattaforma non supportati, in particolare SKU olografico.<br><br> Piattaforme attualmente supportate:<br>  Enterprise, Education e Professional.
+ | | | | Tutti | **Causa possibile:** Tenta di distribuire Microsoft Defender per Endpoint su SKU/Piattaforma non supportati, in particolare SKU olografico. <br><br> Piattaforme attualmente supportate:<br> Enterprise, Education e Professional.<br> Server non supportato.
+ 0x87D101A9 | -2016345687 |SyncML(425): il comando richiesto non è riuscito perché il mittente non dispone di autorizzazioni di controllo di accesso (ACL) adeguate per il destinatario. | Tutti |  **Causa possibile:** Tenta di distribuire Microsoft Defender per Endpoint su SKU/Piattaforma non supportati, in particolare SKU olografico.<br><br> Piattaforme attualmente supportate:<br>  Enterprise, Education e Professional.
 
 #### <a name="known-issues-with-non-compliance"></a>Problemi noti relativi alla non conformità
 
@@ -337,8 +337,10 @@ I passaggi seguenti forniscono indicazioni per lo scenario seguente:
 - Il dispositivo viene disattivato o riavviato prima che l'utente finale esegua il primo accesso
 - In questo scenario, il servizio SENSE non verrà avviato automaticamente anche se il pacchetto di onboarding è stato distribuito
 
-<div class="alert"><b>NOTA:</b> L'accesso utente dopo la configurazione non è più necessario per l'avvio del servizio SENSE nelle versioni di Windows seguenti o più recenti: Windows 10, versione 1809 o Windows Server 2019 con aggiornamento cumulativo del 22 aprile [2021](https://support.microsoft.com/kb/5001384) </br> Windows 10, versione 1909 con aggiornamento cumulativo [di aprile 2021](https://support.microsoft.com/kb/5001396) </br> Windows 10, versione 2004/20H2 con aggiornamento [cumulativo del 28 aprile 2021](https://support.microsoft.com/kb/5001391) </div> 
-<br></br>
+> [!NOTE]
+> L'accesso utente dopo la configurazione non è più necessario per l'avvio del servizio SENSE nelle versioni di Windows seguenti o più recenti: Windows 10, versione 1809 o Windows Server 2019 con aggiornamento cumulativo del 22 aprile [2021.](https://support.microsoft.com/kb/5001384) Windows 10, versione 1909 con aggiornamento cumulativo [di aprile 2021](https://support.microsoft.com/kb/5001396). Windows 10, versione 2004/20H2 con aggiornamento cumulativo [del 28 aprile 2021](https://support.microsoft.com/kb/5001391). 
+
+
 > [!NOTE]
 > I passaggi seguenti sono rilevanti solo quando si usa Microsoft Endpoint Configuration Manager. Per altri dettagli sull'onboarding Microsoft Endpoint Configuration Manager, vedi [Microsoft Defender for Endpoint.](/mem/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection)
 

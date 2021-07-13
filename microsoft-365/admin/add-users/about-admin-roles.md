@@ -16,18 +16,19 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - okr_smb
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
 description: I ruoli di amministratore, quale Amministratore dei servizi, sono associati a funzioni aziendali e forniscono le autorizzazioni per eseguire determinate attività nell'interfaccia di amministrazione.
-ms.openlocfilehash: 073e82971906ea817da9971ba737874711dc43d3
-ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
+ms.openlocfilehash: cc9f5d019864c82e38bdb7bb061f1491d1ad8a11
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53177454"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393320"
 ---
 # <a name="about-admin-roles"></a>Informazioni sui ruoli di amministratore
 

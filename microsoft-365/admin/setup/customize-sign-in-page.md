@@ -16,18 +16,19 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - okr_smb
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: a1229cdb-ce19-4da5-90c7-2b9b146aef0a
 description: Personalizzare la Microsoft 365 di accesso tramite il Azure Active Directory. Puoi aggiungere un'illustrazione, un logo e testo alla pagina di accesso.
-ms.openlocfilehash: 6c873409a06d824c7b63f5ea02e178e22337a345
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: 1c805e8f37081b2d09e821b24ce2f83816b23e3d
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635939"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393548"
 ---
 # <a name="add-your-company-branding-to-the-sign-in-page"></a>Aggiungere il marchio aziendale alla pagina Di accesso
 

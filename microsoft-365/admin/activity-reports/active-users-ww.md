@@ -11,20 +11,22 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 - GEA150
 ms.assetid: fc1cf1d0-cd84-43fd-adb7-a4c4dfa8112d
-description: Informazioni su come ottenere un report Utenti attivi usando il dashboard Microsoft 365 Report nell'interfaccia di amministrazione di Microsoft 365 e scoprire quante licenze di prodotto vengono usate.
-ms.openlocfilehash: 8ea9feeb18cb1885023ec14f1ffb4d77b2775877
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+description: Informazioni su come ottenere un report Utenti attivi usando il dashboard dei Microsoft 365 report nel interfaccia di amministrazione di Microsoft 365 e individuare il numero di licenze di prodotto in uso.
+ms.openlocfilehash: d127ddccd4944279052c628cbee9cc37dd3c8358
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52924372"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53391364"
 ---
 # <a name="assess-the-microsoft-365-active-users-report"></a>Valutare il Microsoft 365 utenti attivi
 
@@ -65,4 +67,4 @@ Se l'abbonamento è gestito da 21Vianet, non verrà visualizzato Yammer.
 
 
 
-Se i criteri dell'organizzazione impediscono la visualizzazione dei report in cui le informazioni degli utenti sono identificabili, è possibile modificare l'impostazione della privacy per tutti questi report. Vedere la sezione **Come nascondere i dettagli a** livello di utente in Report attività [nell'Microsoft 365 di amministrazione.](activity-reports.md)  
+Se i criteri dell'organizzazione impediscono la visualizzazione dei report in cui le informazioni degli utenti sono identificabili, è possibile modificare l'impostazione della privacy per tutti questi report. Vedere la **sezione Come nascondere i dettagli a** livello di utente in Report attività [nella](activity-reports.md)interfaccia di amministrazione di Microsoft 365 .  

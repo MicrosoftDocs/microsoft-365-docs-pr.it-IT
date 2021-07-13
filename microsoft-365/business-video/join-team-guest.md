@@ -15,17 +15,18 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Scopri come entrare a far parte di un team come guest in Microsoft Teams.
-ms.openlocfilehash: 04ee1a32e63c6cbff1f6352362ed04b06a9791fa
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+ms.openlocfilehash: b551a681680f38f9f6c540cf5ea2b5f8a45fab5b
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52706239"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393488"
 ---
 # <a name="join-a-team-as-a-guest"></a>Partecipare a un team come Guest
 
