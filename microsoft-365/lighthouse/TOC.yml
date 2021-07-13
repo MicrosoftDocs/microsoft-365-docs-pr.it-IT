@@ -15,7 +15,7 @@
 - name: Proteggere i clienti con le linee di base
   items:
     - name: Panoramica dell'utilizzo delle linee di base per distribuire configurazioni tenant standard
-      href: m365-lighthouse-deploying-standard-tenant-configurations-overview.md
+      href: m365-lighthouse-deploy-standard-tenant-configurations-overview.md
     - name: Distribuire le linee di base
       href: m365-lighthouse-deploy-baselines.md
 - name: Gestire i tenant
