@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Per i provider di servizi gestiti (MSP, Managed Service Provider), scopri come iscriversi per Microsoft 365 Lighthouse.
-ms.openlocfilehash: 08ef5dabaad8e35cfff611325641b99b5a86ad18
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 01e17b9c1f3f4e8a877f0b8489288e57ae9fa392
+ms.sourcegitcommit: 8c698d1a0c41baf5f35d07b0d765b4a5ead593d0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53395184"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "53409009"
 ---
 # <a name="sign-up-for-microsoft-365-lighthouse"></a>Iscriversi per Microsoft 365 Lighthouse
 
@@ -62,7 +62,7 @@ ms.locfileid: "53395184"
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-[Configurare Microsoft 365 Lighthouse sicurezza del portale]() 
+[Configurare Microsoft 365 Lighthouse sicurezza del portale](m365-lighthouse-configure-portal-security.md) 
 
 ## <a name="related-content"></a>Contenuto correlato
 
