@@ -15,12 +15,12 @@ ms.collection:
 description: Microsoft 365 amministratori possono imparare a eseguire il ripristino da un attacco ransomware.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6c3664cb2a60a7173e345de4abaddefefea6e2b1
-ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
+ms.openlocfilehash: 608fac50fc65f20a612b80ed151252eb2a0c2e01
+ms.sourcegitcommit: 4046c2c390851dffcdb430e1ba38c4df23fe2e69
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53341437"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "53415554"
 ---
 # <a name="recover-from-a-ransomware-attack-in-microsoft-365"></a>Ripristino da un attacco ransomware in Microsoft 365
 
@@ -143,16 +143,19 @@ Se il paese non è elencato, chiedere alle forze dell'ordine locali o federali.
 
 ## <a name="additional-ransomware-resources"></a>Risorse ransomware aggiuntive
 
-[Panoramica del ransomware gestito dall'utente](/security/compass/human-operated-ransomware)
+Informazioni chiave del settore:
 
-[Proteggere rapidamente da ransomware ed estorsioni](/security/compass/protect-against-ransomware)
+- [Panoramica del ransomware gestito dall'utente](/security/compass/human-operated-ransomware)
 
-[Il PDF Intelligence di sicurezza Microsoft report più recente)](https://www.microsoft.com/securityinsights/) (cercare "ransomware")
+- [Proteggere rapidamente da ransomware ed estorsioni](/security/compass/protect-against-ransomware)
 
-**Ransomware: un report sulle minacce pervasivo** e continuo nel nodo **Analisi** delle minacce del portale Microsoft 365 Defender sicurezza
+- [L'Intelligence di sicurezza Microsoft report](https://www.microsoft.com/securityinsights/) più recente (vedere pagine 22-24)
+
+- **Ransomware: un report sulle minacce pervasivo** e continuo nel nodo **Analisi** delle minacce del portale Microsoft 365 Defender (vedere questi [requisiti di licenza](/microsoft-365/security/defender/prerequisites#licensing-requirements))
 
 Microsoft 365 protezione:
 
+- [Protezione da malware e ransomware](/compliance/assurance/assurance-malware-and-ransomware-protection)
 - [Rilevamento ransomware e ripristino dei file in OneDrive](https://support.microsoft.com/office/0d90ec50-6bfd-40f4-acc7-b8c12c73637f)
 - [Abilitare o disabilitare le macro nei Office file](https://support.microsoft.com/office/12b036fd-d140-4e74-b45e-16fed1a7e5c6)
 - [Impostazioni consigliate per EOP e Microsoft Defender per Office 365 sicurezza](recommended-settings-for-eop-and-office365.md)

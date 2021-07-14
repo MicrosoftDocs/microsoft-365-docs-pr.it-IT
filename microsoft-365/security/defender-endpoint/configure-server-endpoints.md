@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 08fe4314c1461710d83ea7aeba1fdf9a60dd33a8
-ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
+ms.openlocfilehash: ff4c44199e4b6f8f1b3ca4806908813d7e710e4b
+ms.sourcegitcommit: 4046c2c390851dffcdb430e1ba38c4df23fe2e69
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53339239"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "53415612"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>Onboard Windows server al servizio Microsoft Defender for Endpoint
 
@@ -222,6 +222,12 @@ Per abilitare questa integrazione, sono necessari i passaggi seguenti:
 ## <a name="offboard-windows-servers"></a>Offboard Windows server
 
 È possibile eseguire l'offboard dell'edizione Windows Server (SAC), Windows Server 2019 e Windows Server 2019 Core nello stesso metodo disponibile per i dispositivi client Windows 10.
+
+- [Offboarding tramite Criteri di gruppo](configure-endpoints-gp.md#offboard-devices-using-group-policy)
+- [Dispositivi offboard con Configuration Manager](configure-endpoints-sccm.md#offboard-devices-using-configuration-manager)
+- [Offboard e monitora i dispositivi con gli strumenti di gestione dei dispositivi mobili](configure-endpoints-mdm.md#offboard-and-monitor-devices-using-mobile-device-management-tools)
+- [Dispositivi offboard con uno script locale](configure-endpoints-script.md#offboard-devices-using-a-local-script)
+
 
 Per altre Windows server, sono disponibili due opzioni per eseguire l'offboard Windows server dal servizio:
 

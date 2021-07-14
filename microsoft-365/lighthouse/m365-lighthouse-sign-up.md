@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Per i provider di servizi gestiti (MSP, Managed Service Provider), scopri come iscriversi per Microsoft 365 Lighthouse.
-ms.openlocfilehash: 01e17b9c1f3f4e8a877f0b8489288e57ae9fa392
-ms.sourcegitcommit: 8c698d1a0c41baf5f35d07b0d765b4a5ead593d0
+ms.openlocfilehash: f0e67dc6cab0ac135a8ff752e1d2b97aff846cf2
+ms.sourcegitcommit: 4046c2c390851dffcdb430e1ba38c4df23fe2e69
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 07/13/2021
-ms.locfileid: "53409009"
+ms.locfileid: "53415636"
 ---
 # <a name="sign-up-for-microsoft-365-lighthouse"></a>Iscriversi per Microsoft 365 Lighthouse
 
@@ -53,7 +53,7 @@ ms.locfileid: "53409009"
 
     Per verificare che la Microsoft 365 Lighthouse sia stata aggiunta correttamente al tenant, cercare Microsoft 365 Lighthouse **in Fatturazione > Prodotti** nell'interfaccia di amministrazione di Microsoft 365.
 
-1. Se non si viene reindirizzati al portale Microsoft 365 Lighthouse, passare a `https://lighthouse.microsoft.com/` .
+1. Se non si viene reindirizzati al portale Microsoft 365 Lighthouse, passare a <a href="https://lighthouse.microsoft.com" target="_blank">https://lighthouse.microsoft.com</a> .
 
 1. Seleziona **Accetto & continua per** completare la modifica del contratto per i partner.
 

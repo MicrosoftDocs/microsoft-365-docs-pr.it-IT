@@ -11,17 +11,17 @@ localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 05/06/2021
+ms.date: 07/13/2021
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 2265f3680e425ade062d444685fbd8873eaa02ca
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: f9ecade23964db88076347b3a89085b25c1b1538
+ms.sourcegitcommit: 4046c2c390851dffcdb430e1ba38c4df23fe2e69
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274968"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "53415564"
 ---
 # <a name="manage-microsoft-defender-antivirus-in-your-business"></a>Gestire Antivirus Microsoft Defender nell'azienda
 
@@ -31,6 +31,7 @@ ms.locfileid: "52274968"
 **Si applica a:**
 
 - [Microsoft Defender per endpoint](/microsoft-365/security/defender-endpoint/)
+- [Antivirus Microsoft Defender](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-windows)
 
 È possibile gestire e configurare Antivirus Microsoft Defender con gli strumenti seguenti:
 
@@ -49,4 +50,4 @@ Gli articoli seguenti forniscono ulteriori informazioni, collegamenti e risorse 
 |[Gestire Antivirus Microsoft Defender con le impostazioni di Criteri di gruppo](use-group-policy-microsoft-defender-antivirus.md)|Elenco di tutte le impostazioni di Criteri di gruppo disponibili nei modelli ADMX |
 |[Gestire Antivirus Microsoft Defender con i cmdlet di PowerShell](use-powershell-cmdlets-microsoft-defender-antivirus.md)|Istruzioni per l'utilizzo dei cmdlet di PowerShell per gestire Antivirus Microsoft Defender, oltre a collegamenti alla documentazione per tutti i cmdlet e i parametri consentiti |
 |[Gestire Antivirus Microsoft Defender con Windows Management Instrumentation (WMI)](use-wmi-microsoft-defender-antivirus.md)| Istruzioni per l'utilizzo di WMI per gestire Antivirus Microsoft Defender, oltre a collegamenti alla documentazione per le API WMIv2 (incluse tutte le classi, i metodi e le proprietà) |
-|[Gestire Antivirus Microsoft Defender con lo mpcmdrun.exe da riga di comando](command-line-arguments-microsoft-defender-antivirus.md)|Istruzioni sull'utilizzo dello strumento da riga di comando dedicato per gestire e usare Antivirus Microsoft Defender |
+|[Gestire Antivirus Microsoft Defender con lo MpCmdRun.exe da riga di comando](command-line-arguments-microsoft-defender-antivirus.md)| Istruzioni sull'utilizzo dello strumento da riga di comando dedicato per gestire e usare Antivirus Microsoft Defender |

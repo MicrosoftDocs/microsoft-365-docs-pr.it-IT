@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Dettagli della collaborazione contenuto - Esperienze utente Punteggio di produttività.
-ms.openlocfilehash: 2921cc738d1325416a0a5a8ab4a8eea9456b3269
-ms.sourcegitcommit: 17d82e5617f0466eb825e15ab88594afcdaf4437
+ms.openlocfilehash: d403f533fd69ee47fb48907f11d4752985daea1a
+ms.sourcegitcommit: 4046c2c390851dffcdb430e1ba38c4df23fe2e69
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "53300084"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "53415624"
 ---
 # <a name="content-collaboration--people-experiences"></a>Collaborazione contenuto - Esperienze utente
 
@@ -137,7 +137,7 @@ Vengono inoltre fornite informazioni che consentono di acquisire visibilità sul
         - Numeratore: numero di persone che allegano file alla posta elettronica che non sono stati salvati OneDrive o SharePoint negli ultimi 28 giorni.
         - Denominatore: numero di persone che hanno avuto accesso a Exchange e OneDrive, SharePoint o a entrambi negli ultimi 28 giorni.
       - **Collegamenti a file online:** La parte blu (colorata) della barra e la frazione (numeratore/denominatore) sulla barra rappresentano la percentuale di persone che utilizzano allegati e allegano collegamenti a file nei messaggi di posta elettronica.
-        - Numeratore: numero di persone che allegano collegamenti a file online (salvati in OneDrive o SharePoint) ai messaggi di posta elettronica negli ultimi 28 giorni.
+        - Numeratore: numero di persone che allegano collegamenti ai file online ai messaggi di posta elettronica negli ultimi 28 giorni.
         - Denominatore: numero di persone che hanno accesso a Exchange e OneDrive, SharePoint o a entrambi negli ultimi 28 giorni.
 4. **Collegamento alle risorse:** Selezionare questo collegamento per visualizzare il contenuto della Guida.
 
