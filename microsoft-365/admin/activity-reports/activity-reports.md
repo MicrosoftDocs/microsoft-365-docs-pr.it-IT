@@ -20,16 +20,16 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: Ottenere un report periodico sulle modalità di utilizzo dei servizi di Microsoft 365 da parte delle persone dell'organizzazione e analizzare ogni grafico per altri dati analitici.
-ms.openlocfilehash: 66cb3436fe6903c429e3c1950eee040b21c6dc9d
-ms.sourcegitcommit: e1e275eb88153bafddf93327adf8f82318913a8d
+ms.openlocfilehash: 89182ddc317bfefdf0e82632bbe8ec8f78f81ada
+ms.sourcegitcommit: 022d9d91263994c48efcebe08a84319573dc3a8c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52809000"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53377218"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>Report di Microsoft 365 nell'interfaccia di amministrazione
 
-È possibile vedere facilmente come vengono usati i servizi di Microsoft 365 dalle persone nell'azienda. Ad esempio, è possibile identificare chi usa molto un servizio e raggiunge le quote o chi potrebbe non avere necessità di una licenza di Microsoft 365.
+È possibile vedere facilmente come vengono usati i servizi di Microsoft 365 dalle persone nell'azienda. Ad esempio, è possibile identificare chi usa molto un servizio e raggiunge le quote o chi potrebbe non avere necessità di una licenza di Microsoft 365. Il modello di licenza perpetua non verrà incluso nei report. 
   
 I report sono disponibili per gli ultimi 7, 30, 90 e 180 giorni. I dati per tutti i periodi di riferimento non saranno subito disponibili. I report diventeranno disponibili entro 48 ore.
   

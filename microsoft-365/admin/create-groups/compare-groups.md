@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 758759ad-63ee-4ea9-90a3-39f941897b7d
 description: I membri di un gruppo di Microsoft 365 ottengono un indirizzo e-mail di gruppo e un'area di lavoro condivisa per conversazioni, file ed eventi del calendario, Stream e un Planner.
-ms.openlocfilehash: 038c4b9f6d9d28e62c0fb9b8f117db96ac42ddfb
-ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
+ms.openlocfilehash: 37bead3ab878aac087c5ec16016dc2c8ddce410c
+ms.sourcegitcommit: 022d9d91263994c48efcebe08a84319573dc3a8c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52903841"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53377182"
 ---
 # <a name="compare-groups"></a>Confrontare i gruppi
 
@@ -61,6 +61,8 @@ I gruppi di distribuzione possono essere [aggiornati ai gruppi di Microsoft 365]
 
 È possibile aggiungere gruppi di distribuzione a un team in Microsoft Teams.
 
+I gruppi di Microsoft 365 non possono essere membri dei gruppi di distribuzione.
+
 ## <a name="security-groups"></a>Gruppi di sicurezza
 
 [I gruppi di sicurezza](../email/create-edit-or-delete-a-security-group.md) vengono usati per concedere l'accesso alle risorse di Microsoft 365, ad esempio SharePoint. Consentono di semplificare l'amministrazione perché è necessario gestire solo il gruppo anziché aggiungere utenti a ogni risorsa singolarmente.
@@ -70,6 +72,8 @@ I gruppi di sicurezza possono contenere utenti o dispositivi. La creazione di un
 I gruppi di sicurezza possono essere [configurati per l'appartenenza dinamica in Azure Active Directory](/azure/active-directory/users-groups-roles/groups-change-type), consentendo l'aggiunta o la rimozione dei membri o dei dispositivi del gruppo in base agli attributi degli utenti, ad esempio reparto, posizione o titolo oppure gli attributi del dispositivo come la versione del sistema operativo.
 
 I gruppi di sicurezza possono essere aggiunti a un team.
+
+I gruppi di Microsoft 365 non possono essere membri dei gruppi di sicurezza.
 
 ## <a name="mail-enabled-security-groups"></a>Gruppi di sicurezza abilitati alla posta elettronica
 
