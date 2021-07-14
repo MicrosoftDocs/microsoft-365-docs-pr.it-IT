@@ -17,12 +17,12 @@ metadata:
   - M365-Lighthouse
   search.appverid: MET150
   description: Per i provider di servizi gestiti (MSP) che utilizzano Microsoft 365 Lighthouse, ottenere risposte alle domande frequenti (DOMANDE FREQUENTI) sulle Microsoft 365 Lighthouse.
-  ms.openlocfilehash: 05ed433a5f7afb6418cab77c99a401351f3a5565
-  ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+  ms.openlocfilehash: 5f15453f21ef48fcc1f8266d9474fc0cbc4190c2
+  ms.sourcegitcommit: 4046c2c390851dffcdb430e1ba38c4df23fe2e69
   ms.translationtype: MT
   ms.contentlocale: it-IT
-  ms.lasthandoff: 07/12/2021
-  ms.locfileid: "53395124"
+  ms.lasthandoff: 07/13/2021
+  ms.locfileid: "53415535"
 title: Microsoft 365 Lighthouse domande frequenti
 summary: >
   > [!NOTE]
@@ -49,6 +49,12 @@ sections:
   - question: Quali sono i requisiti da usare Microsoft 365 Lighthouse?
     answer: >
       Per un elenco dei requisiti correnti, vedere [Requirements for Microsoft 365 Lighthouse.](m365-lighthouse-requirements.md)
+  - question: In quali paesi e aree geografiche Microsoft 365 Lighthouse disponibili?
+    answer: >
+      Microsoft 365 Lighthouse è disponibile in tutti i paesi in cui Microsoft 365, ad eccezione della Cina e dell'Autorità palestinese. Tuttavia, le funzionalità di Microsoft 365 Lighthouse come la gestione dei dispositivi e la gestione delle minacce si basano su Microsoft Intune e la gestione degli utenti si basa su Azure Active Directory (Azure AD) e Intune e Azure AD potrebbero non essere disponibili in alcuni paesi e aree geografiche. Per un elenco completo della disponibilità Microsoft 365, Azure AD e Intune, vedere [Disponibilità internazionale.](https://www.microsoft.com/microsoft-365/business/international-availability)
+
+
+      Microsoft 365 Lighthouse non è disponibile nei cloud nazionali.
   - question: Come si effettua l'iscrizione Microsoft 365 Lighthouse?
     answer: >
       Per iscriversi Microsoft 365 Lighthouse, devi essere registrato con il programma CSP. Attualmente non è possibile supportare i provider indiretti. Per istruzioni su come eseguire l'iscrizione, vedere [Sign up for Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md). Per ulteriori informazioni sul programma CSP, vedere panoramica [Cloud Solution Provider programma.](/partner-center/csp-overview)
