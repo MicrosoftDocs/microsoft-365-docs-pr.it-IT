@@ -16,22 +16,22 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Quando un responsabile viene aggiunto a un caso Advanced eDiscovery, qualsiasi contenuto considerato parzialmente indicizzato viene rielaborato per renderlo completamente ricercabile.
-ms.openlocfilehash: 904c8fe626ce8ece8f4b48bd5504e4011e9f4fb2
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: f510b7e9c0fa2c5c181709c96907610066a4b1cf
+ms.sourcegitcommit: 997a21b83795789cda0a6b4a77f9985a3233d0c0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911210"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53430508"
 ---
 # <a name="advanced-indexing-of-custodian-data"></a>Indicizzazione avanzata dei dati dei responsabili
 
-Quando un responsabile viene aggiunto a un caso Advanced eDiscovery, qualsiasi contenuto considerato parzialmente indicizzato viene rielaborato per renderlo completamente ricercabile.  Questo processo è denominato *indicizzazione avanzata.* Il contenuto può essere parzialmente indicizzato per diversi motivi, tra cui l'esistenza di immagini, tipi di file non supportati o quando vengono rilevati limiti di dimensione dei file di indicizzazione.
+Quando un responsabile viene aggiunto a un caso Advanced eDiscovery, tutti i contenuti che sono stati considerati parzialmente indicizzati o con cui si sono verificati errori di indicizzazione vengono reindicizzati per renderlo completamente ricercabile.  Questo processo di reindicizzazione è denominato *indicizzazione avanzata.* Esistono diversi motivi per cui il contenuto è parzialmente indicizzato o presenta errori di indicizzazione. Sono inclusi i file di immagine o la presenza di immagini in un file, tipi di file non supportati o limiti di indicizzazione delle dimensioni dei file. Per SharePoint file, l'indicizzazione avanzata viene eseguita solo sugli elementi contrassegnati come parzialmente indicizzati o con errori di indicizzazione. In Exchange, i messaggi di posta elettronica con allegati di immagine non vengono contrassegnati come parzialmente indicizzati o con errori di indicizzazione. Ciò significa che tali file non verranno reindicizzati dal processo di indicizzazione avanzato.
 
 Per ulteriori informazioni sul supporto dell'elaborazione e sugli elementi parzialmente indicizzati, vedere:
 
 - [Tipi di file supportati in Advanced eDiscovery](supported-filetypes-ediscovery20.md)
 
-- [Elementi parzialmente indicizzati in Ricerca contenuto in Office 365](partially-indexed-items-in-content-search.md)
+- [Partially indexed items in Content Search in Office 365](partially-indexed-items-in-content-search.md) (Elementi parzialmente indicizzati in Ricerca contenuto in Office 365)
 
 - [Formati di file indicizzati dalla ricerca di Exchange](/exchange/file-formats-indexed-by-exchange-search-exchange-2013-help)
 
@@ -41,7 +41,7 @@ Per ulteriori informazioni sul supporto dell'elaborazione e sugli elementi parzi
 
 Al termine del processo di indicizzazione avanzata, è possibile comprendere l'efficacia della rielaborazione.  Nella visualizzazione Risultati di indicizzazione avanzata della scheda **Elaborazione** di un caso, nel grafico viene elencato il numero di elementi aggiunti all'indice *ibrido.*  L'indice ibrido è il Advanced eDiscovery il contenuto rielaborato.
 
-Questa visualizzazione include anche il numero di elementi che richiedono la correzione e un altro grafico di errori per tipo di file. Per altre informazioni, vedere:
+Questa visualizzazione include anche il numero di elementi che richiedono la correzione e un altro grafico di errori per tipo di file. Per ulteriori informazioni, vedere:
 
 - [Correzione degli errori durante l'elaborazione dei dati](error-remediation-when-processing-data-in-advanced-ediscovery.md)
 

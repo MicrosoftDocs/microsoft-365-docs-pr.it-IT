@@ -20,15 +20,16 @@ ms.custom:
 - okr_SMB
 - manage_licenses
 - commerce_licensing
+- AdminTemplateSet
 search.appverid: MET150
 description: Assegnare licenze a seconda che si vogliano assegnare licenze di prodotto a utenti specifici o assegnare licenze utente a prodotti specifici.
 ms.date: 04/26/2021
-ms.openlocfilehash: c8e5c6a648f08aaba97fe05e19a5cfa0cada2174
-ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
+ms.openlocfilehash: 987572ae15ffdf6d2042c6e54eba586cd39ebcb9
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/18/2021
-ms.locfileid: "53007010"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393716"
 ---
 # <a name="assign-licenses-to-users"></a>Assegnare licenze agli utenti
 
@@ -132,7 +133,7 @@ Nella pagina **Utenti attivi** si assegnano licenze utente ai prodotti.
 3. Nella parte superiore selezionare **Gestisci le licenze dei prodotti**.
 4. Nel riquadro **Gestisci le licenze dei prodotti**, seleziona **Assegna altre: Mantieni le licenze esistenti e assegnane altre** \> **Avanti**.
 5. Nella sezione **Licenze**, selezionare le caselle per le licenze da assegnare agli utenti.\
-    Per impostazione predefinita, tutti i servizi associati a tali licenze vengono automaticamente assegnati agli utenti. È possibile porre limiti ai servizi disponibili agli utenti. Deselezionare le caselle per i servizi che gli utenti non dovrebbero avere.
+    Per impostazione predefinita, tutti i servizi associati a queste licenze vengono automaticamente assegnati agli utenti. È possibile limitare i servizi disponibili per l'utente deselezionando le caselle per i servizi che non si vuole rendere disponibili all'utente.
 6. Nella parte inferiore del riquadro selezionare **Salva modifiche**.  
     Se non si dispone di licenze sufficienti per tutti, potrebbe essere necessario acquistarne altre.
 

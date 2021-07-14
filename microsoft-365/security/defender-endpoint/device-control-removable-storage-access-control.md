@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 0b0f7c5a4a75fdc80509dbc02a43d28f7c93fd7c
-ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
+ms.openlocfilehash: 801d94eb769c6b738a1d4c011b67f8a2a7cf81f1
+ms.sourcegitcommit: 997a21b83795789cda0a6b4a77f9985a3233d0c0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53327048"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53430805"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>Microsoft Defender for Endpoint Device Control Removable Archiviazione Access Control
 
@@ -33,12 +33,19 @@ Microsoft Defender for Endpoint Device Control Removable Archiviazione Access Co
 
 |Privilegio |Autorizzazione  |
 |---------|---------|
-|Access    |  Lettura, scrittura ed esecuzione       |
+|Accesso    |  Lettura, scrittura ed esecuzione       |
 |Modalità azione    |    Controllo, Consenti, Impedisci     |
 |Supporto CSP   |   Sì      |
 |Supporto oggetti Criteri di gruppo    |   Sì      |
 |Supporto basato sull'utente     |   Sì      |
 |Supporto basato su computer    |    Sì     |
+
+## <a name="licensing"></a>Licenze
+
+Prima di iniziare a utilizzare Removable Archiviazione Access Control, è consigliabile [confermare l'Microsoft 365 abbonamento.](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1) Per accedere a Removable Archiviazione Access Control, è necessario disporre di quanto segue:
+
+- Microsoft 365 E3 per la distribuzione di funzionalità/criteri.
+- Microsoft 365 E5 per la creazione di report.
 
 ## <a name="prepare-your-endpoints"></a>Preparare gli endpoint
 
@@ -272,8 +279,6 @@ Per la distribuzione dei criteri in Intune, l'account deve disporre delle autori
       ./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyGroups/%7b9b28fae8-72f7-4267-a1a5-685f747a7146%7d/GroupData
 
     - Tipo di dati: String (file XML)
-    
-      :::image type="content" source="images/xml-data-type-string.png" alt-text="File XML per il tipo di dati STRING":::
 
 2. Per ogni criterio, crea anche un URI OMA:
 
@@ -287,7 +292,6 @@ Per la distribuzione dei criteri in Intune, l'account deve disporre delle autori
 
     - Tipo di dati: String (file XML)
 
-      :::image type="content" source="images/xml-data-type-string-2.png" lightbox="images/xml-data-type-string-2.png" alt-text="Visualizzazione del file XML per il tipo di dati STRING":::
 
 ## <a name="deploying-and-managing-policy-by-using-intune-user-interface"></a>Distribuzione e gestione dei criteri tramite l'interfaccia utente di Intune
 

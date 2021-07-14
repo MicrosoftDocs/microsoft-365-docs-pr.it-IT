@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 description: Informazioni su Office 365 gli amministratori globali possono applicare la personalizzazione dell'organizzazione ai messaggi di posta elettronica crittografati & contenuto del portale di crittografia.
-ms.openlocfilehash: 2898e12ad00d11cd9eb2f3be5d817ef113607e79
-ms.sourcegitcommit: 94fa3e57fa6505551d84ae7b458150dceff30db7
+ms.openlocfilehash: 95320e9f268f19cedd993efe4fa0e68fd75af125
+ms.sourcegitcommit: 997a21b83795789cda0a6b4a77f9985a3233d0c0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51394714"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53430733"
 ---
 # <a name="add-your-organizations-brand-to-your-microsoft-365-for-business-message-encryption-encrypted-messages"></a>Aggiungere il marchio dell'organizzazione ai messaggi crittografati di Microsoft 365 per le aziende
 
@@ -153,9 +153,12 @@ Per rimuovere un modello di personalizzazione personalizzato:
 
 ## <a name="create-an-exchange-mail-flow-rule-that-applies-your-custom-branding-to-encrypted-emails"></a>Creare una regola Exchange flusso di posta elettronica che applica la personalizzazione ai messaggi di posta elettronica crittografati
 
+> [!IMPORTANT]
+> Le applicazioni di terze parti che analizzano e modificano la posta possono impedire che la personalizzazione OME venga applicata correttamente.
+
 Dopo aver modificato il modello predefinito o aver creato nuovi modelli di personalizzazione, è possibile creare regole del flusso di posta Exchange per applicare la personalizzazione in base a determinate condizioni. Una regola di questo tipo applierà la personalizzazione negli scenari seguenti:
 
-- Se il messaggio di posta elettronica è stato crittografato manualmente dall'utente finale Outlook o Outlook sul Web, in precedenza Outlook Web App
+- Se il messaggio di posta elettronica è stato crittografato manualmente dall'utente finale Outlook o Outlook sul web, in precedenza Outlook Web App
 
 - Se il messaggio di posta elettronica è stato crittografato automaticamente da una regola Exchange flusso di posta elettronica o da un criterio di prevenzione della perdita di dati
 
@@ -165,7 +168,7 @@ Per informazioni su come creare una regola del flusso Exchange di posta elettron
 
 2. Scegliere il **riquadro** Amministratore.
 
-3. Nell'Microsoft 365 di amministrazione scegliere **Interfaccia di amministrazione** \> **Exchange**.
+3. Nella finestra interfaccia di amministrazione di Microsoft 365, scegliere **Interfaccia di amministrazione** \> **Exchange**.
 
 4. Nell'interfaccia di amministrazione di Exchange, andare a **Flusso** di posta \> **Regole** e selezionare **Nuova** icona Crea una ![ nuova ](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **regola.** Per ulteriori informazioni sull'utilizzo dell'interfaccia di amministrazione di Exchange, [vedere Exchange di amministrazione in Exchange Online](/exchange/exchange-admin-center).
 

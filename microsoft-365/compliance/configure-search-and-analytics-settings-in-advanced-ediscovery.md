@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 ms.custom: seo-marvel-mar2020
 description: Configurare Advanced eDiscovery che si applicano a tutti i set di revisione in un caso. Sono incluse le impostazioni per l'analisi e il riconoscimento ottico dei caratteri.
-ms.openlocfilehash: 11932d2172d797ae1913cf28e713d57805ace122
-ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
+ms.openlocfilehash: e0ad41354b265016ba67632162a8ead62f11068b
+ms.sourcegitcommit: 997a21b83795789cda0a6b4a77f9985a3233d0c0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49751303"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53430553"
 ---
 # <a name="configure-search-and-analytics-settings-in-advanced-ediscovery"></a>Configurare le impostazioni di ricerca e analisi in Advanced eDiscovery
 
@@ -86,11 +86,11 @@ Esistono situazioni in cui determinati testi diminuiscono la qualità dell'anali
 
 Quando questa impostazione è attivata, l'elaborazione OCR verrà eseguita sui file di immagine. L'elaborazione OCR viene eseguita nelle situazioni seguenti:
 
-- Quando i custodi e le origini dati [non depositario](non-custodial-data-sources.md) vengono aggiunti a un caso. L'elaborazione OCR viene eseguita durante il processo di indicizzazione avanzata. Ciò significa che il testo nei file di immagine che corrisponde ai criteri di ricerca verrà restituito in una ricerca di raccolta.
+- Quando i custodi e le origini dati [non depositario](non-custodial-data-sources.md) vengono aggiunti a un caso. L'elaborazione OCR viene eseguita durante [il processo di indicizzazione](indexing-custodian-data.md) avanzata. L'OCR viene eseguito solo sugli elementi elaborati durante l'indicizzazione avanzata. Ad esempio, se durante l'indicizzazione avanzata viene elaborato un file PDF di grandi dimensioni parzialmente indicizzato o con altri errori di indicizzazione, verrà applicato anche il riconoscimento OCR. In altre parole, l'elaborazione OCR si verifica solo sui file che vengono indicizzati di nuovo durante il processo di indicizzazione avanzata. Ciò significa che le situazioni in cui i custodi vengono aggiunti a un caso, alcuni allegati di posta elettronica non verranno elaborati per L'OCR perché tali file non vengono elaborati durante l'indicizzazione avanzata. Quando vengono applicati file di immagine OCR, il testo in tali file di immagine sarà disponibile per la ricerca durante una raccolta.
 
 - Quando il contenuto di altre origini dati (che non sono associate a un responsabile e che vengono aggiunti al caso in un'origine dati non depositale) viene aggiunto a un set di revisione.
 
-Dopo l'aggiunta dei dati a un set di recensioni, il testo dell'immagine può essere esaminato, cercato, taggato e analizzato. È possibile visualizzare il testo estratto nel visualizzatore di testo del file di immagine selezionato nel set di revisioni. Per altre informazioni, vedere:
+Dopo l'aggiunta dei dati a un set di recensioni, il testo dell'immagine può essere esaminato, cercato, taggato e analizzato. È possibile visualizzare il testo estratto nel visualizzatore di testo del file di immagine selezionato nel set di revisioni. Per ulteriori informazioni, vedere:
 
 - [Indicizzazione avanzata dei dati dei responsabili](indexing-custodian-data.md)
 

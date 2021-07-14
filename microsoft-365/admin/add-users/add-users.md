@@ -15,16 +15,17 @@ ms.collection:
 ms.custom:
 - okr_smb
 - AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - MET150
 description: Ogni membro del team deve disporre di un account utente per poter accedere a Microsoft 365 for Business. Informazioni su come aggiungere utenti e assegnare licenze.
 ms.date: 07/01/2020
-ms.openlocfilehash: 390576f46bed57929471b16848f9e1fd7e95304d
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: aaba152e73fc7284f54a9f307783a66fb055a55c
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52535999"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394100"
 ---
 # <a name="add-users-and-assign-licenses-at-the-same-time"></a>Aggiungere utenti e assegnare licenze contemporaneamente
 

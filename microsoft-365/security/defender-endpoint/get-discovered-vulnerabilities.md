@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 73d9803736df546f2381b7a84c9089d2460c4c44
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: cd3b1343711a5bed9ad606a6b8dc754f223ed279
+ms.sourcegitcommit: 997a21b83795789cda0a6b4a77f9985a3233d0c0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52843083"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53430781"
 ---
 # <a name="get-discovered-vulnerabilities"></a>Individuare le vulnerabilità
 
@@ -60,7 +60,7 @@ GET /api/machines/{machineId}/vulnerabilities
 
 ## <a name="request-headers"></a>Intestazioni di richiesta
 
-Name | Tipo | Descrizione
+Nome | Tipo | Descrizione
 :---|:---|:---
 Autorizzazione | Stringa | Bearer {token}. **Obbligatorio**.
 
@@ -105,6 +105,7 @@ Ecco un esempio di risposta.
             "exploitTypes": [],
             "exploitUris": []
         }
+    ]
 }
 ```
 

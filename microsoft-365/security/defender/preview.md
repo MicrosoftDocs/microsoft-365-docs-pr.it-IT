@@ -20,19 +20,16 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: b852071c3fbfe12aac62e1d309fa130a4cd81e9c
-ms.sourcegitcommit: b42dd3e706ebf9638cd893b35f75eaa56dd8fd7e
+ms.openlocfilehash: 088dbd16c3667331843ff934c80f85aa8d3a837f
+ms.sourcegitcommit: 997a21b83795789cda0a6b4a77f9985a3233d0c0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "53125399"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53430817"
 ---
 # <a name="microsoft-365-defender-preview-features"></a>Microsoft 365 Defender funzionalità di anteprima
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
-
-> [!IMPORTANT]
-> Le versioni di anteprima vengono fornite senza un contratto di servizio e non sono consigliate per i carichi di lavoro di produzione. Alcune funzionalità potrebbero non essere supportate o avere funzionalità vincolate.
 
 **Si applica a:**
 - Microsoft 365 Defender
@@ -42,6 +39,19 @@ Il Microsoft 365 Defender viene costantemente aggiornato per includere nuovi mig
 Informazioni sulle nuove funzionalità nella versione Microsoft 365 Defender anteprima ed essere tra i primi a provare le funzionalità future attivando l'esperienza di anteprima.
 
 Per ulteriori informazioni sulle nuove funzionalità disponibili in genere, vedere [Novità di Microsoft 365 Defender](whats-new.md).
+
+ ## <a name="what-you-need-to-know"></a>Cosa è necessario sapere
+
+Quando si lavora con le funzionalità in anteprima pubblica, queste funzionalità:
+
+- Può avere funzionalità limitate o limitate. Ad esempio, la funzionalità può essere applicata solo a una piattaforma.
+- In genere, le modifiche delle funzionalità vengono apportate prima che siano disponibili in genere.
+- Sono completamente supportati da Microsoft.
+- Può essere disponibile solo in aree geografiche o ambienti cloud selezionati. Ad esempio, la funzionalità potrebbe non esistere nel cloud per enti pubblici.
+- Le singole funzionalità in anteprima possono avere più restrizioni di utilizzo e supporto. In tal caso, queste informazioni vengono in genere riportate nella documentazione relativa alle funzionalità.
+- Le versioni di anteprima sono fornite con un livello di supporto standard e possono essere utilizzate per gli ambienti di produzione. 
+
+
 
 ## <a name="required-permissions"></a>Autorizzazioni necessarie
 

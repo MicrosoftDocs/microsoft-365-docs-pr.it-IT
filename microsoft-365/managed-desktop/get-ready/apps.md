@@ -1,7 +1,7 @@
 ---
 title: App in Microsoft Managed Desktop
 description: Spiega come vengono gestite le app, incluso come creare un pacchetto, distribuirle e supportarle.
-keywords: Microsoft Managed Desktop, Microsoft 365, servizio, documentazione
+keywords: Microsoft Managed Desktop, Microsoft 365, servizi, documentazione
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
@@ -10,12 +10,12 @@ ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 571acc9c240fc0243998050ac3013258a2f85a3e
-ms.sourcegitcommit: e02cf5702af178ddd2968877a808874ecb49ed2c
+ms.openlocfilehash: 37f533f34753d66d975cb557239b2b168ac78f8e
+ms.sourcegitcommit: 997a21b83795789cda0a6b4a77f9985a3233d0c0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52028945"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53430769"
 ---
 # <a name="apps-in-microsoft-managed-desktop"></a>App in Microsoft Managed Desktop
 
@@ -31,7 +31,7 @@ Puoi anche distribuire altre app non Microsoft agli utenti per il self-service t
 
 ## <a name="apps-provided-by-microsoft"></a>App fornite da Microsoft
 
-Nella licenza Microsoft Managed Desktop sono incluse le versioni a 64 bit delle app in Microsoft 365 Apps for enterprise Standard Suite (Word, Excel, PowerPoint, Outlook, Publisher, Access, Skype for Business e OneNote). Le versioni A livello di Microsoft Project e Visio non  sono incluse per impostazione predefinita, ma è possibile richiederle di essere aggiunte. Per altre informazioni su queste app, vedi [Installare Microsoft Project o Microsoft Visio su Microsoft Managed Desktop dispositivi](../get-started/project-visio.md).
+Nella licenza Microsoft Managed Desktop sono incluse le versioni a 64 bit delle app in Microsoft 365 Apps for enterprise Standard Suite (Word, Excel, PowerPoint, Outlook, Publisher, Access, Teams e OneNote). Le versioni A livello di Microsoft Project e Visio non  sono incluse per impostazione predefinita, ma è possibile richiederle di essere aggiunte. Per altre informazioni su queste app, vedi [Installare Microsoft Project o Microsoft Visio su Microsoft Managed Desktop dispositivi](../get-started/project-visio.md).
 
 ### <a name="what-microsoft-does-to-support-the-apps-we-provide"></a>Cosa fa Microsoft per supportare le app fornite
 

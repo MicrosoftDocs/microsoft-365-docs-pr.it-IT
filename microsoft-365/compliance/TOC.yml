@@ -932,6 +932,18 @@
           href: ../solutions/financial-services-secure-collaboration.md
         - name: Sicurezza e conformità dei servizi energetici
           href: ../solutions/energy-secure-collaboration.md
+- name: Gestire livelli di privacy
+  items:
+    - name: Informazioni sulla gestione della privacy
+      href: privacy-management.md
+    - name: Introduzione alla gestione della privacy
+      href: privacy-management-setup.md
+    - name: Trovare e visualizzare i dati personali nella gestione della privacy
+      href: privacy-management-data-profile.md
+    - name: Creare e gestire i criteri nella gestione della privacy
+      href: privacy-management-policies.md
+    - name: Gestire le richieste di diritti dell'oggetto nella gestione della privacy
+      href: privacy-management-subject-rights-requests.md
 - name: Funzionalità per la conformità ibrida
   items:
     - name: Crittografia della posta di Exchange Online con AD RMS

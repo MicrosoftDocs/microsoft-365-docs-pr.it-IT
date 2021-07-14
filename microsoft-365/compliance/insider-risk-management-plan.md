@@ -12,16 +12,22 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: a6a0ebb6ef15a6d4746d72a73feb16e53f89354e
-ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
+ms.openlocfilehash: 19149c7f53cee537450ac12ce5a346a12d43bd91
+ms.sourcegitcommit: 997a21b83795789cda0a6b4a77f9985a3233d0c0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53326784"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53430514"
 ---
 # <a name="plan-for-insider-risk-management"></a>Piano per la gestione dei rischi Insider
 
 Prima di iniziare [a](insider-risk-management.md) usare la gestione dei rischi insider nell'organizzazione, esistono importanti attività e considerazioni di pianificazione che devono essere esaminate dai team di information technology e di gestione della conformità. La comprensione approfondita e la pianificazione della distribuzione nelle aree seguenti consentono di garantire che l'implementazione e l'utilizzo delle funzionalità di gestione dei rischi insider siano uniformi e siano allineati alle procedure consigliate per la soluzione.
+
+Guarda il video seguente per scoprire in che modo il flusso di lavoro insider risk management può aiutare l'organizzazione a prevenire, rilevare e contenere rischi, assegnando la priorità ai valori, alla cultura e all'esperienza utente dell'organizzazione:
+<br>
+<br>
+
+>[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4OUXB]
 
 ## <a name="work-with-stakeholders-in-your-organization"></a>Collaborare con le parti interessate nell'organizzazione
 
@@ -82,7 +88,7 @@ Se non vengono visualizzati avvisi subito dopo la configurazione di un criterio 
 Condividere la documentazione sulla gestione dei rischi insider con gli stakeholder dell'organizzazione inclusi nel flusso di lavoro di gestione e correzione:
 
 - [Creare e gestire i criteri dei rischi Insider](insider-risk-management-policies.md)
-- [Analizzare le attività di rischio insider](insider-risk-management-activities.md)
+- [Esaminare gli avvisi relativi ai rischi Insider](insider-risk-management-activities.md)
 - [Intervenire riguardo ai casi di rischio Insider](insider-risk-management-cases.md)
 - [Esaminare i dati del caso con Il rischio insider Esplora contenuto](insider-risk-management-content-explorer.md)
 - [Creare modelli di avviso relativi ai rischi Insider](insider-risk-management-notices.md)

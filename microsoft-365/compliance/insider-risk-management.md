@@ -15,21 +15,27 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 0dae2d65e88c8a5ad4bc6c39e8ea540f55d0f822
-ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
+ms.openlocfilehash: e033142567c0eb33987cae6d840abf5f6422365e
+ms.sourcegitcommit: 997a21b83795789cda0a6b4a77f9985a3233d0c0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53326748"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53430601"
 ---
 # <a name="learn-about-insider-risk-management-in-microsoft-365"></a>Informazioni sulla gestione dei rischi insider in Microsoft 365
 
 La gestione dei rischi insider è una soluzione di conformità in Microsoft 365 che consente di ridurre al minimo i rischi interni consentendo di rilevare, analizzare e agire su attività dannose e involontarie nell'organizzazione. I criteri di rischio Insider consentono di definire i tipi di rischi da identificare e rilevare nell'organizzazione, inclusa l'azione sui casi e l'escalation dei casi a Microsoft Advanced eDiscovery se necessario. Gli analisti dei rischi nell'organizzazione possono intraprendere rapidamente azioni appropriate per assicurarsi che gli utenti siano conformi agli standard di conformità dell'organizzazione.
 
-Guarda il video seguente per scoprire in che modo la gestione dei rischi insider può aiutare l'organizzazione a prevenire, rilevare e contenere rischi, assegnando al tempo stesso la priorità ai valori, alla cultura e all'esperienza utente dell'organizzazione:
+Guarda i video seguenti per scoprire in che modo la gestione dei rischi insider può aiutare l'organizzazione a prevenire, rilevare e contenere rischi, assegnando al tempo stesso la priorità ai valori, alla cultura e all'esperienza utente dell'organizzazione:
 <br>
 <br>
+
+**Soluzione di gestione dei rischi insider & sviluppo**:
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4j9CN]
+<br>
+
+**Flusso di lavoro per la gestione dei rischi Insider**:
+>[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4OUXB]
 
 ## <a name="modern-risk-pain-points"></a>Punti di rischio moderni
 
@@ -104,7 +110,7 @@ Gli avvisi vengono risolti aprendo un nuovo caso, assegnando l'avviso a un caso 
 
 ![Valutazione della gestione dei rischi insider](../media/insider-risk-triage.png)
 
-### <a name="investigate"></a>Investigare
+### <a name="investigate"></a>Esame
 
 Analizzare rapidamente tutte le attività per un utente selezionato con [Report attività utente (anteprima).](insider-risk-management-activities.md#user-activity-reports-preview) Questi report consentono ai ricercatori dell'organizzazione di esaminare le attività per utenti specifici per un periodo di tempo definito senza doverli assegnare temporaneamente o esplicitamente a un criterio di gestione dei rischi insider. Dopo aver esaminato le attività per un utente, gli investigatori possono ignorare le singole attività come benigne, condividere o inviare tramite posta elettronica un collegamento al report con altri investigatori oppure scegliere di assegnare l'utente temporaneamente o esplicitamente a un criterio di gestione dei rischi insider.
 

@@ -16,6 +16,7 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - okr_smb
+- AdminTemplateSet
 search.appverid:
 - MET150
 - MOE150
@@ -24,12 +25,12 @@ search.appverid:
 ms.assetid: 854b6b2b-0255-4089-8019-b765cff70377
 ROBOTS: NOINDEX
 description: Il Domain Name System mappa i nomi host del computer agli indirizzi IP e la comprensione dei concetti fondamentali relativi al DNS e ai registrar faciliterà la gestione dei domini.
-ms.openlocfilehash: 19fc444c056bbf3e1ea1f601d20a9b9cbd75bec8
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: 68b9b82d52e9bb2c4105237f0a29e8137623138e
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635427"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393908"
 ---
 # <a name="dns-basics"></a>Informazioni di base sul DNS
 

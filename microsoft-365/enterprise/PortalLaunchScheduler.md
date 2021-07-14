@@ -17,12 +17,12 @@ search.appverid:
 - SPO160
 - MET150
 description: In questo articolo viene descritto come avviare il portale tramite l'utilità di pianificazione di avvio del portale
-ms.openlocfilehash: a0ba40849b47af93f45bcc9c77f2ba6d8f715dc5
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: dd2b6bdabae5f4d24882912709d6f16a637a9721
+ms.sourcegitcommit: 997a21b83795789cda0a6b4a77f9985a3233d0c0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53229552"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53430421"
 ---
 # <a name="launch-your-portal-using-the-sharepoint-portal-launch-scheduler"></a>Avviare il portale usando l'utilità di SharePoint di avvio del portale
 
@@ -117,9 +117,8 @@ In precedenza, gli avvii del portale potevano essere pianificati solo SharePoint
 
     > [!NOTE]
     > È possibile utilizzare fino a 50 utenti o gruppi di sicurezza distinti per l'intero avvio. Ogni avvio è indipendente l'uno dall'altro, quindi se si pianifica un avvio in un altro portale, è possibile utilizzare fino a 50 utenti/gruppi di sicurezza per tale avvio. Inoltre, è possibile utilizzare fino a 20 utenti o gruppi di sicurezza distinti per ogni ondata. 
-
->L'utilità di pianificazione dell'avvio del portale supporta i gruppi di sicurezza e i gruppi di sicurezza abilitati alla posta elettronica. 
-
+    >
+    > L'utilità di pianificazione dell'avvio del portale supporta i gruppi di sicurezza e i gruppi di sicurezza abilitati alla posta elettronica. 
 
 8. Confermare i dettagli di avvio del portale e selezionare **Pianifica**. Dopo la pianificazione dell'avvio, tutte le modifiche apportate alla home page del portale di SharePoint dovranno ricevere un risultato di diagnostica integro prima della ripresa dell'avvio del portale.
 
@@ -127,7 +126,14 @@ In precedenza, gli avvii del portale potevano essere pianificati solo SharePoint
 
 Se si prevede di avviare un portale con più di 100.000 utenti, inviare una richiesta di supporto seguendo i passaggi elencati di seguito. Assicurati di includere tutte le informazioni richieste.
 
-**attenersi alla seguente procedura:**
+> [!NOTE]
+>
+> - Questo processo deve essere seguito solo se si soddisfano i requisiti seguenti:
+> - La pagina di avvio è stata completata.
+> - [Sono state seguite indicazioni sull'integrità](https://aka.ms/portalhealth) del portale.
+> - La data di avvio è entro 14 giorni.
+
+**Eseguire la procedura seguente:**
 
 1. Passare a <https://admin.microsoft.com>.
 2. Assicurati di usare la nuova anteprima dell'interfaccia di amministrazione
@@ -160,7 +166,7 @@ Gli avvii pianificati tramite lo strumento Utilità di pianificazione di avvio p
 
 2. Selezionare quindi **Elimina** e quindi, quando viene visualizzato il messaggio seguente, selezionare **di nuovo Elimina.**
 
-   ![Immagine dello strumento utilità di pianificazione di avvio del portale](../media/portal-launch-delete-2.png)
+   ![Immagine del prompt che chiede se si desidera eliminare o mantenere un avvio pianificato](../media/portal-launch-delete-2.png)
 
 ## <a name="use-the-powershell-portal-launch-scheduler"></a>Usare l'utilità di pianificazione di avvio del portale di PowerShell
 
