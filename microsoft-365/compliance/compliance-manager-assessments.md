@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Creare valutazioni in Microsoft Compliance Manager per soddisfare i requisiti di normative e certificazioni importanti per l'organizzazione.
-ms.openlocfilehash: 4530f8544834c672b3ae1ebb70625ffe8f2ae4ae
-ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
+ms.openlocfilehash: 7014e294454095456acdac8e2c60895c400ced3f
+ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/26/2021
-ms.locfileid: "53148939"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53419608"
 ---
 # <a name="build-and-manage-assessments-in-compliance-manager"></a>Creare e gestire valutazioni in Compliance Manager
 
@@ -27,7 +27,7 @@ ms.locfileid: "53148939"
 
 ## <a name="introduction-to-assessments"></a>Introduzione alle valutazioni
 
-Compliance Manager consente di creare valutazioni che valutano la conformità con le normative del settore e regionali applicabili all'organizzazione. Le valutazioni si basano sul framework dei modelli di valutazione, che contengono i controlli necessari, le azioni di miglioramento e le azioni Microsoft per completare la valutazione. L'impostazione delle valutazioni più rilevanti per l'organizzazione consente di implementare criteri e procedure operative per limitare i rischi di conformità.
+Compliance Manager consente di creare valutazioni che valutano la conformità con le normative del settore e regionali applicabili all'organizzazione. Le valutazioni si basano sul framework dei modelli di valutazione, che contengono i controlli necessari, le azioni di miglioramento e, se applicabile, le azioni Microsoft per completare la valutazione. L'impostazione delle valutazioni più rilevanti per l'organizzazione consente di implementare criteri e procedure operative per limitare i rischi di conformità.
 
 Tutte le valutazioni sono elencate nella scheda valutazioni di Compliance Manager. Ulteriori informazioni su [come filtrare la visualizzazione delle valutazioni e interpretare gli stati di stato.](compliance-manager-setup.md#assessments-page)
 
@@ -54,7 +54,7 @@ Di seguito sono riportati esempi di due gruppi e delle relative valutazioni sott
   - ISO 27001:2013
   - ISO 27018:2014
 
-Quando due valutazioni diverse nello stesso gruppo condividono azioni di miglioramento gestite, tutti gli aggiornamenti apportati ai dettagli o allo stato di implementazione di un'azione verranno sincronizzati automaticamente in tutto il gruppo. Questa sincronizzazione consente di implementare un'unica azione di miglioramento e soddisfare diversi requisiti contemporaneamente.
+Valutazioni diverse all'interno di uno o più gruppi possono condividere azioni di miglioramento. Le azioni di miglioramento possono essere modifiche apportate all'interno di soluzioni tecniche mappate al tenant, ad esempio l'attivazione dell'autenticazione a due fattori o azioni non tecniche eseguite all'esterno del sistema, ad esempio l'attivazione di un nuovo criterio aziendale. Eventuali aggiornamenti nei dettagli o nello stato apportati a un'azione di miglioramento tecnico verranno raccolti dalle valutazioni in tutti i gruppi. Gli aggiornamenti delle azioni di miglioramento non tecnico verranno riconosciuti dalle valutazioni all'interno del gruppo in cui vengono applicati. In questo modo è possibile implementare un'unica azione di miglioramento e soddisfare diversi requisiti contemporaneamente.
 
 ### <a name="create-a-group"></a>Creare un gruppo
 
@@ -68,12 +68,13 @@ Quando due valutazioni diverse nello stesso gruppo condividono azioni di miglior
 - Dopo aver aggiunto una valutazione a un gruppo, il raggruppamento non può essere modificato.
 - Se si aggiunge una nuova valutazione a un gruppo esistente, le informazioni comuni delle valutazioni in tale gruppo vengono copiate nella nuova valutazione.
 - I controlli di valutazione correlati in valutazioni diverse all'interno dello stesso gruppo vengono aggiornati automaticamente al termine.
-- Quando viene apportata una modifica a un miglioramento visualizzato in più gruppi, tale modifica viene riflessa in tutte le istanze di tale azione di miglioramento.
 - I gruppi possono contenere valutazioni per la stessa certificazione o regolamento, ma ogni gruppo può contenere solo una valutazione per una coppia di certificazione di prodotto specifica. Ad esempio, un gruppo non può contenere due valutazioni per Office 365 e NIST CSF. Un gruppo può contenere più valutazioni per lo stesso prodotto solo se la certificazione o il regolamento corrispondente per ognuno di essi è diverso.
 - L'eliminazione di una valutazione interrompe la relazione tra tale valutazione e il gruppo.
 - I gruppi non possono essere eliminati manualmente.
 
 ## <a name="create-assessments"></a>Creare valutazioni
+
+Per creare una valutazione, verrà utilizzata una procedura guidata per selezionare il modello da utilizzare e impostare le proprietà della valutazione. I modelli contengono i controlli e i consigli di azione per la valutazione, in base alle certificazioni per normative e standard diversi sulla privacy. I modelli disponibili dell'organizzazione possono includere uno o più modelli inclusi nel contratto di licenza, insieme a eventuali modelli premium aggiuntivi acquistati. Ogni modello, incluso o premium, è disponibile in due versioni: una per l'utilizzo con Microsoft 365 e una versione universale che può essere adattata ad altri prodotti utilizzati. Per ulteriori informazioni sui modelli, vedere [Utilizzo dei modelli di valutazione.](compliance-manager-templates.md)
 
 > [!NOTE]
 > Solo gli utenti che hanno un ruolo di amministratore globale, di amministrazione di Compliance Manager o di assessore di Compliance Manager possono creare e modificare le valutazioni. Ulteriori informazioni sui [ruoli e sulle autorizzazioni](compliance-manager-setup.md#set-user-permissions-and-assign-roles).
@@ -88,7 +89,9 @@ Per iniziare a creare valutazioni, eseguire la procedura seguente.
 
 3. **Selezionare un modello:** se non è già stato scelto un modello nel passaggio 2, scegliere un modello da utilizzare come base per la valutazione. Vedrai l'elenco dei modelli suddivisi in categorie incluse e premium (vedi [Tipi di modelli](compliance-manager-templates.md#template-availability-and-licensing) per ulteriori informazioni). Seleziona il pulsante di opzione accanto al modello scelto, quindi seleziona **Avanti.**
 
-4. **Nome e gruppo:** Impostare queste proprietà per identificare la valutazione e assegnarla a un gruppo.
+4. **Prodotto, nome e gruppo:** Impostare queste proprietà per identificare la valutazione, scegliere il prodotto da valutare e assegnarlo a un gruppo.
+
+    - **Product**: se si utilizza un modello universale, selezionare se si sta creando questa valutazione per un nuovo prodotto o un prodotto personalizzato esistente già definito in Compliance Manager. Se scegli un nuovo prodotto, immettine il nome. Si noti che non è possibile Microsoft 365 come prodotto quando si utilizza un modello universale. Se si utilizza un modello Microsoft 365, questo campo verrà popolato automaticamente per indicare Microsoft 365 e non potrà essere modificato.
     - **Nome**: immettere un nome per la valutazione nel **campo Nome valutazione.** I nomi di valutazione devono essere univoci all'interno dei gruppi. Se il nome della valutazione corrisponde al nome di un'altra valutazione in un determinato gruppo, verrà visualizzato un errore che richiede di creare un nome diverso.
     - **Gruppo**: assegnare la valutazione a un gruppo. È possibile:
         - Selezionare **Usa gruppo esistente** per assegnarlo a un gruppo già creato. o
@@ -134,11 +137,11 @@ Sotto il grafico, una tabella elenca informazioni dettagliate su ogni controllo 
 - **ID controllo**: numero di identificazione del controllo, assegnato in base al corrispondente regolamento, standard o criterio
 - **Punti ottenuti**: numero di punti ottenuti completando le azioni, al di fuori del numero totale di punti raggiungibili 
 - **Azioni:** numero di azioni completate dal numero totale di azioni da eseguire
-- **Azioni Microsoft**: numero di azioni completate da Microsoft 
+- **Azioni Microsoft**: numero di azioni completate da Microsoft
 
 Per visualizzare i dettagli di un controllo, selezionarlo dalla relativa riga nella tabella. La pagina dei dettagli del controllo mostra un grafico che indica lo stato del test delle azioni all'interno di tale controllo. Una tabella sotto il grafico mostra le principali azioni di miglioramento per tale controllo.
 
-Selezionare un'azione di miglioramento dall'elenco per esaminare la pagina dei dettagli dell'azione di miglioramento. Le pagine dei dettagli mostrano lo stato del test, le note sull'implementazione e l'avvio nella soluzione consigliata.
+Selezionare un'azione di miglioramento dall'elenco per esaminare la pagina dei dettagli dell'azione di miglioramento. La pagina dei dettagli mostra lo stato del test e le note sull'implementazione e viene avviata nella soluzione consigliata.
 
 ### <a name="your-improvement-actions-tab"></a>Scheda Azioni di miglioramento
 
@@ -148,7 +151,7 @@ Selezionare un'azione di miglioramento per visualizzarne la pagina dei dettagli 
 
 ### <a name="microsoft-actions-tab"></a>Scheda Azioni Microsoft
 
-Nella scheda Azioni Microsoft sono elencate tutte le azioni della valutazione gestite da Microsoft. L'elenco mostra i dettagli principali dell'azione, tra cui: stato del test, punti che contribuiscono al punteggio di conformità complessivo, normative e standard associati, soluzione applicabile, tipo di azione e famiglia di controlli. Selezionare un'azione di miglioramento per visualizzarne la pagina dei dettagli.
+Viene visualizzata la scheda Azioni Microsoft per le valutazioni basate Microsoft 365 versioni dei modelli. Vengono elencate tutte le azioni della valutazione gestite da Microsoft. L'elenco mostra i dettagli principali dell'azione, tra cui: stato del test, punti che contribuiscono al punteggio di conformità complessivo, normative e standard associati, soluzione applicabile, tipo di azione e famiglia di controlli. Selezionare un'azione di miglioramento per visualizzarne la pagina dei dettagli.
 
 Altre informazioni su [come vengono monitorati e](compliance-score-calculation.md) segnati i controlli e le azioni di miglioramento.
 

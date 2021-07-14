@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 - m365initiative-coredeploy
 description: Panoramica della connettività di rete in Amministrazione Microsoft 365 Center
-ms.openlocfilehash: 8ad589ede747975ca9dcd3c81e661a2147fc1b88
-ms.sourcegitcommit: 8c6a5db0dab99a82a69dd8a0a7c56af1cb825931
+ms.openlocfilehash: 05247c73bec3a11905890d26db84f8fe1a288a99
+ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "53277002"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53419800"
 ---
 # <a name="network-connectivity-in-the-microsoft-365-admin-center"></a>Connettività di rete nel Amministrazione Microsoft 365 Center
 
@@ -78,7 +78,7 @@ I report di test sono collegati a una posizione se sono stati aggiunti con infor
 I campioni di misurazione e le posizioni degli uffici dovrebbero iniziare a comparire 2-3 minuti dopo il completamento di un report di test. Per ulteriori informazioni, vedere test [Microsoft 365 connettività di rete](office-365-network-mac-perf-onboarding-tool.md).
 
 > [!NOTE]
-> Quando si aggiungono le posizioni dell'ufficio Microsoft 365 connettività di rete nel interfaccia di amministrazione di Microsoft 365, è possibile fornire indirizzi IPv4 o IPv6 per le subnet LAN. Egress Gli indirizzi IP devono utilizzare IPv4.
+> Attualmente, wQuando si aggiungono le posizioni dell'ufficio Microsoft 365 connettività di rete nel interfaccia di amministrazione di Microsoft 365, è possibile fornire solo indirizzi IPv4 per le subnet LAN. Egress Gli indirizzi IP devono utilizzare IPv4.
 
 ## <a name="how-do-i-use-this-information"></a>Come si usano queste informazioni?
 
@@ -149,7 +149,7 @@ Una mappa della rete perimetrale per gli utenti dell'organizzazione nella posizi
 - **SharePoint di servizio** ottimale - Una delle porte anteriori del servizio di SharePoint consigliate a cui gli utenti in questa sede devono connettersi
 - **SharePoint di servizio sotto-ottimale** - Porta d'ingresso del servizio SharePoint a cui gli utenti sono connessi, ma non è consigliabile
 - **Server resolver** ricorsivo DNS - Posizione da un database IP geografico del resolver ricorsivo DNS rilevato utilizzato per Exchange Online (se disponibile)
-- **Server proxy** - Posizione da un database IP geografico del server proxy rilevato (se disponibile) 
+- **Server proxy** - Posizione da un database IP geografico del server proxy rilevato (se disponibile)
 
 La pagina di riepilogo della posizione dell'ufficio mostra inoltre la valutazione della rete della posizione, la cronologia di valutazione della rete, un confronto della valutazione di questa posizione con altri clienti nella stessa città e un elenco di approfondimenti e consigli specifici che è possibile intraprendere per migliorare le prestazioni e l'affidabilità della rete.
 
@@ -161,7 +161,6 @@ Nella scheda dettagli della pagina della posizione dell'ufficio vengono mostrati
 
 > [!div class="mx-imgBorder"]
 > ![Dettagli specifici della posizione](../media/m365-mac-perf/m365-mac-perf-locations-plan-details-all.png)
-
 
 ## <a name="sharing-network-assessment-data-with-microsoft"></a>Condivisione dei dati di valutazione della rete con Microsoft
 
@@ -189,9 +188,9 @@ Nel file CSV, la posizione di una città individuata viene visualizzata nella co
    1. **Indirizzo** (obbligatorio): l'indirizzo fisico dell'ufficio
    1. **Latitude** (facoltativo): popolato da Bing mappe di ricerca dell'indirizzo se vuoto
    1. **Longitudine** (facoltativo): popolata da Bing mappe di ricerca dell'indirizzo se vuota
-   1. **Egress intervalli** di indirizzi IP da 1 a 5 (facoltativo): per ogni intervallo, immettere il nome del circuito seguito da un elenco separato da spazi di indirizzi CIDR IPv4 o IPv6 validi. Questi valori vengono utilizzati per differenziare più sedi di uffici in cui si utilizzano gli stessi indirizzi IP della subnet LAN. Egress Gli intervalli di indirizzi IP devono avere tutte le dimensioni di rete /24 e /24 non è incluso nell'input.
+   1. **Egress intervalli di** indirizzi IP da 1 a 5 (facoltativo): per ogni intervallo immettere il nome del circuito seguito da un elenco di indirizzi CIDR IPv4 validi separati da spazi. Questi valori vengono utilizzati per differenziare più sedi di uffici in cui si utilizzano gli stessi indirizzi IP della subnet LAN. Egress Gli intervalli di indirizzi IP devono avere tutte le dimensioni di rete /24 e /24 non è incluso nell'input.
    1. **LanIps** (obbligatorio): elencare gli intervalli di subnet LAN in uso in questa sede. Gli ID subnet LAN devono avere una dimensione di rete CIDR in cui le dimensioni della rete possono essere comprese tra /8 e /29. Più intervalli di subnet LAN possono essere separati da una virgola o da un punto e virgola.
-   
+
 1. Dopo aver aggiunto le posizioni dell'ufficio  e salvato il file, fare clic sul pulsante Sfoglia **accanto** al campo Upload il campo completato e selezionare il file CSV salvato.
 
 1. Il file verrà convalidato automaticamente. Se sono presenti errori di convalida, verrà visualizzato il messaggio di errore: Sono presenti _alcuni errori nel file di importazione. Esaminare gli errori, correggere il file di importazione e quindi riprovare._ Fare clic sul collegamento **Apri dettagli errore** per un elenco di errori di convalida di campi specifici.

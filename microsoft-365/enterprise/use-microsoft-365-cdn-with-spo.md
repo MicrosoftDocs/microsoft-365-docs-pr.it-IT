@@ -3,7 +3,7 @@ title: Usare Office 365 rete per la distribuzione di contenuti (rete CDN) con Sh
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 2/19/2020
+ms.date: 07/13/2021
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -21,12 +21,12 @@ search.appverid:
 - SPO160
 ms.assetid: bebb285f-1d54-4f79-90a5-94985afc6af8
 description: Scopri come usare il Office 365 rete per la distribuzione di contenuti (rete CDN) per velocizzare la distribuzione delle risorse SharePoint Online.
-ms.openlocfilehash: 5e9ed00462b7073c7e03f62a5de6bf26f1e586af
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 24b86f059e5a59d3b6dadf989bef0ab38ad8e010
+ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53289452"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53419563"
 ---
 # <a name="use-the-office-365-content-delivery-network-cdn-with-sharepoint-online"></a>Usare la rete per la distribuzione di contenuti di Office 365 con SharePoint Online
 
@@ -37,7 +37,7 @@ ms.locfileid: "53289452"
 
 La rete per la distribuzione di contenuti di Office 365 è costituita da diverse reti per la distribuzione di contenuti che consentono di ospitare le risorse statiche in più località o _origini_ e gestirle da reti globali ad alta velocità. In base al tipo di contenuto che si vuole ospitare nella rete per la distribuzione di contenuti di Office 365, è possibile aggiungere origini **pubbliche**, origini **private** o entrambi. Per ulteriori informazioni sulla differenza tra origini pubbliche e [private,](use-microsoft-365-cdn-with-spo.md#CDNOriginChoosePublicPrivate) vedere Scegliere se ogni origine deve essere pubblica o privata.
 
-![Office 365 rete CDN concettuale](../media/O365-CDN/o365-cdn-flow-transparent.svg "Office 365 rete CDN concettuale")
+![Office 365 rete CDN concettuale](../media/O365-CDN/o365-cdn-flow-transparent.png "Office 365 rete CDN concettuale")
 
 Se si ha già familiarità con il funzionamento delle reti CDN, è necessario eseguire solo alcuni passaggi per abilitare il Office 365 rete CDN per il tenant. In questo argomento viene descritto come. Continua a leggere per informazioni su come iniziare a ospitare gli asset statici.
 
@@ -920,7 +920,7 @@ Di seguito è riportata una panoramica dei collegamenti riscritti automaticament
 
 Il diagramma seguente illustra il flusso di lavoro quando SharePoint una richiesta per una pagina contenente risorse da un'origine pubblica.
 
-![Diagramma del flusso di lavoro: recupero Office 365 rete CDN risorse da un'origine pubblica](../media/O365-CDN/o365-cdn-public-steps-transparent.svg "Flusso di lavoro: recupero di Office 365 rete CDN risorse da un'origine pubblica")
+![Diagramma del flusso di lavoro: recupero Office 365 rete CDN risorse da un'origine pubblica](../media/O365-CDN/o365-cdn-public-steps-transparent.png "Flusso di lavoro: recupero di Office 365 rete CDN risorse da un'origine pubblica")
 
 > [!TIP]
 > Se si desidera disabilitare la riscrittura automatica per URL specifici in una pagina, è possibile estrarre la pagina e aggiungere il parametro della stringa di query **? NoAutoReWrites=true** alla fine di ogni collegamento che si desidera disabilitare.
@@ -956,7 +956,7 @@ L'accesso agli asset in origini private è protetto da token generati dinamicame
 
 Il diagramma seguente illustra il flusso di lavoro quando SharePoint una richiesta per una pagina contenente risorse da un'origine privata.
 
-![Diagramma del flusso di lavoro: recupero Office 365 rete CDN risorse da un'origine privata](../media/O365-CDN/o365-cdn-private-steps-transparent.svg "Flusso di lavoro: recupero Office 365 rete CDN risorse da un'origine privata")
+![Diagramma del flusso di lavoro: recupero Office 365 rete CDN risorse da un'origine privata](../media/O365-CDN/o365-cdn-private-steps-transparent.png "Flusso di lavoro: recupero Office 365 rete CDN risorse da un'origine privata")
 
 #### <a name="token-based-authorization-in-private-origins"></a>Autorizzazione basata su token in origini private
 

@@ -14,16 +14,20 @@ search.appverid:
 - MOE150
 - MET150
 description: Scopri le novità di Compliance Manger e le novità a venire. Informazioni sulle valutazioni aggiornate, nuovi modelli di valutazione, nuove azioni e altro ancora.
-ms.openlocfilehash: 72390f167e0f573223210a02a4b08e1b0efdf3dd
-ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
+ms.openlocfilehash: 823df0ac274dad0ae278ce981a0dca0f0ad8a9ed
+ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/26/2021
-ms.locfileid: "53149023"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53419524"
 ---
 # <a name="whats-new-in-microsoft-compliance-manager"></a>Novità di Microsoft Compliance Manager
 
 **In questo articolo:** Informazioni sugli aggiornamenti recenti in Compliance Manager.
+
+## <a name="july-2021"></a>Luglio 2021
+
+È stata aggiunta la possibilità di creare valutazioni per prodotti diversi da Microsoft 365, in base alle nuove versioni universali dei modelli. Per ulteriori informazioni, iniziare con [Utilizzo dei modelli di valutazione.](compliance-manager-templates.md)
 
 ## <a name="may-2021"></a>Maggio 2021
 

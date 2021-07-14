@@ -1,7 +1,7 @@
 ---
 title: Immagini dispositivo
 description: Requisiti di immagine per l'ordinamento di nuovi dispositivi o il riutilizzo di dispositivi esistenti
-keywords: Microsoft Managed Desktop, Microsoft 365, servizio, documentazione
+keywords: Microsoft Managed Desktop, Microsoft 365, servizi, documentazione
 ms.service: m365-md
 author: jaimeo
 f1.keywords:
@@ -12,12 +12,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 211e26035ad8bdf73defde85c33a631af3a193d0
-ms.sourcegitcommit: 17d82e5617f0466eb825e15ab88594afcdaf4437
+ms.openlocfilehash: fb3646e2ff339115d3fe6043ed45ea8f2140105a
+ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "53300107"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53419512"
 ---
 # <a name="device-images"></a>Immagini dispositivo
 
@@ -41,23 +41,7 @@ Se stai ordinando un dispositivo da HP che [](customizing.md) è stato approvato
 - Globale: mmd@hp.com
 
 ### <a name="lenovo"></a>Lenovo
-Quando ordini i dispositivi da Lenovo per l'uso in Microsoft Managed Desktop, dovrai indicare un numero di parte specifico incluso nell'ordine. Contatta il tuo rappresentante commerciale Lenovo o il partner di canale Lenovo e chiedi loro di creare un "*modello* di offerta speciale " con un sistema che soddisfi i requisiti [del dispositivo.](device-requirements.md#minimum-requirements) Per includere un'immagine precaricata compatibile con Microsoft Managed Desktop, chiedere al venditore di fare riferimento al " numero parte blocco predefinito del sistema *SBB0Q94938 – MmD Enablement*".
-
-I prodotti seguenti sono attualmente abilitati per Microsoft Managed Desktop supporto tecnico:
-
-- L13 Gen 1
-- L13 Yoga Gen 1
-- L14 Gen 1 (Intel)
-- L14 Gen 1 (AMD)
-- L15 Gen 1 (Intel)
-- L15 Gen 1 (AMD)
-- X1 Carbon Gen 8
-- X1 Yoga Gen 5
-- T14 Gen 1 (Intel)
-- T14 Gen 1 (AMD)
-- T15 Gen 1
-- X13 Gen 1 (Intel)
-
+Quando ordini i dispositivi da Lenovo per l'uso in Microsoft Managed Desktop, dovrai indicare un numero di parte specifico incluso nell'ordine. Contatta il tuo rappresentante commerciale Lenovo o il partner di canale Lenovo e chiedi loro di creare un "*modello* di offerta speciale " con un sistema che soddisfi i requisiti [del dispositivo.](device-requirements.md#minimum-requirements) Per includere un'immagine precaricata compatibile con Microsoft Managed Desktop, chiedere al venditore di fare riferimento al " numero parte blocco predefinito del sistema *SBB0Q94938 – MmD Enablement*". Collaborare con il proprio rappresentante commerciale Lenovo o con il partner di canale Lenovo per i servizi consigliati, il supporto e i servizi di creazione di immagini.
 
 ### <a name="microsoft"></a>Microsoft
 Tutti i dispositivi Microsoft che soddisfano i requisiti del dispositivo sono disponibili con un'immagine che funziona con Microsoft Managed Desktop. Non sono necessari altri passaggi.

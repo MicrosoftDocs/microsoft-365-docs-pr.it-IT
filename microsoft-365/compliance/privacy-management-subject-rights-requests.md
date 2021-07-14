@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: La soluzione di richiesta dei diritti dell'oggetto nella gestione della privacy Microsoft consente di trovare i dati personali e collaborare alla revisione del contenuto e alla creazione di report.
-ms.openlocfilehash: b1f92aa7b5e6f8117d8e3a4af758f13d6c91fe99
-ms.sourcegitcommit: 022d9d91263994c48efcebe08a84319573dc3a8c
+ms.openlocfilehash: b266708c97ee4b81af6ba61dfa6716c57ff6026e
+ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53378530"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53419776"
 ---
 # <a name="manage-subject-rights-requests-in-privacy-management-preview"></a>Gestire le richieste di diritti dell'oggetto nella gestione della privacy (anteprima)
 
@@ -47,7 +47,7 @@ Per aprire una nuova richiesta, vedere [Create a request](#create-a-request).
 
 ## <a name="create-a-request"></a>Creare una richiesta
 
-Gli amministratori di Subject Rights Management possono utilizzare la procedura guidata di gestione della privacy per creare richieste. Questa procedura guidata guiderà l'utente attraverso il processo di ricerca dei dati personali su un soggetto di dati e l'adempimento della loro richiesta.
+Gli amministratori di Subject Rights Management possono utilizzare la procedura guidata di gestione della privacy per creare richieste. La procedura guidata guiderà l'utente attraverso il processo di ricerca dei dati personali su un soggetto di dati e l'adempimento della loro richiesta.
 
 I quattro passaggi principali includono i seguenti.
 
@@ -67,7 +67,7 @@ Scegli un tipo di richiesta in base alle attività che l'utente vuole che tu fac
 
 Questo passaggio consente di confermare il nome di questa richiesta e aggiungere una descrizione facoltativa come riferimento.
 
-### <a name="review-and-finish"></a>Anteprima e completamento
+### <a name="review-and-finish"></a>Rivedere e completare 
 
 Riepilogo degli elementi immessi durante i passaggi precedenti. È possibile modificare qualsiasi campo prima di selezionare **Crea richiesta.**
 

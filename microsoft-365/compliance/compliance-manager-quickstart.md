@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Usare la guida introduttiva di Compliance Manager per facilitare il percorso di comprensione, configurazione e utilizzo di Compliance Manager.
-ms.openlocfilehash: 8ac4245da95192516c57d51d740531fd4af10647
-ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
+ms.openlocfilehash: 59d833c74c0d56d82d3f4ae4170e1bbd32638a49
+ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/26/2021
-ms.locfileid: "53149047"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53419596"
 ---
 # <a name="compliance-manager-quickstart"></a>Guida rapida a Compliance Manager
 
@@ -63,7 +63,7 @@ Quando si ha familiarità con la gestione delle valutazioni in Compliance Manage
 
 È inoltre possibile configurare test automatizzati di tutte le azioni di miglioramento o di un sottoinsieme. Visitare i collegamenti seguenti per informazioni sulle funzionalità più avanzate in Compliance Manager:
 
-- [Estendere un modello di Compliance Manager aggiungendo controlli personalizzati e azioni di miglioramento](compliance-manager-templates.md#extend-an-assessment-template)
+- [Estendere un modello di Compliance Manager aggiungendo controlli personalizzati e azioni di miglioramento](compliance-manager-templates.md#extend-microsoft-365-assessment-templates)
 - [Creare un modello personalizzato](compliance-manager-templates.md#create-an-assessment-template)
 - [Modificare un modello esistente per aggiungere o rimuovere controlli e azioni](compliance-manager-templates.md#modify-a-template)
 - [Configurare test automatizzati delle azioni di miglioramento](compliance-manager-setup.md#set-up-automated-testing)

@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informazioni su come usare e gestire i modelli per la creazione di valutazioni in Microsoft Compliance Manager. Creare e modificare modelli utilizzando un file Excel formattato.
-ms.openlocfilehash: 2d20fa69345f2ff2624252972cb0e017e401f0dd
-ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
+ms.openlocfilehash: 4386f5be67d01d3d6961ccc4bd51ecf729bc8a38
+ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/26/2021
-ms.locfileid: "53149131"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53419584"
 ---
 # <a name="working-with-assessment-templates-in-compliance-manager"></a>Utilizzo dei modelli di valutazione in Compliance Manager
 
@@ -30,7 +30,7 @@ ms.locfileid: "53149131"
 
 ## <a name="templates-overview"></a>Panoramica dei modelli
 
-Un modello è un framework di controlli per la creazione di una valutazione in Compliance Manager. Il nostro set completo di modelli può aiutare l'organizzazione a rispettare i requisiti nazionali, regionali e specifici del settore che regolano la raccolta e l'uso dei dati. Ci riferiamo ai modelli con lo stesso nome della certificazione o del regolamento sottostante, ad esempio il modello GDPR dell'UE e il modello ISO/IEC 27701:2019.
+Un modello è un framework di controlli per la creazione di una valutazione in Compliance Manager. Il nostro set completo di modelli può aiutare l'organizzazione a rispettare i requisiti nazionali, regionali e specifici del settore che regolano la raccolta e l'uso dei dati. Ci riferiamo ai modelli con lo stesso nome della certificazione o del regolamento sottostante, ad esempio il modello GDPR dell'UE e il modello ISO/IEC 27701:2019. Poiché Compliance Manger può essere utilizzato per valutare diversi tipi di prodotti, ogni modello è disponibile in due versioni: una applicabile a Microsoft 365 e una versione universale che può essere personalizzata in base al prodotto scelto.
 
 ## <a name="template-availability-and-licensing"></a>Disponibilità e licenze dei modelli
 
@@ -50,7 +50,7 @@ I modelli visualizzano lo stato di attivazione attivo o inattivo:
 - Un modello viene considerato **attivo** dopo aver creato una valutazione da tale modello.
 - Un modello viene considerato **inattivo** se l'organizzazione non lo usa per una valutazione.
 
-Quando acquisti un modello premium e crei una valutazione da esso, tale modello è attivo per un anno. L'acquisto verrà rinnovato automaticamente a meno che non venga annullato.
+Se si collegano valutazioni a un modello premium acquistato, tale modello sarà attivo per un anno. L'acquisto verrà rinnovato automaticamente a meno che non venga annullato.
 
 Puoi anche provare i modelli premium in base alla versione di valutazione. Le licenze di valutazione sono valide per un massimo di 25 modelli per 30 giorni. Una volta avviata la versione di valutazione, i modelli dovrebbero diventare disponibili nel tenant entro 48 ore. Le versioni di valutazione possono essere attivate tramite interfaccia di amministrazione di Microsoft 365.
 
@@ -61,6 +61,8 @@ La pagina di valutazione e la pagina dei modelli di valutazione hanno un **conta
 Ad esempio, se il contatore mostra 2/5, significa che l'organizzazione ha attivato 2 modelli dei 5 disponibili per l'utilizzo.
 
 Se il contatore indica 5/2, significa che l'organizzazione supera i limiti e deve acquistare 3 dei modelli premium in uso.
+
+Microsoft 365 e le versioni universali dei modelli dispongono di licenze congiunte, in modo da poter usare la stessa certificazione sottostante in più prodotti. L'utilizzo di una o di entrambe le versioni dello stesso modello verrà conteggiato solo come un modello attivato.
 
 Per ulteriori dettagli, vedere [Linee guida sulla gestione delle licenze di Compliance Manager.](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager)
 
@@ -123,7 +125,7 @@ La **scheda Azioni** è obbligatoria.  Designa le azioni di miglioramento gestit
 
 - **actionScore**: in questo campo obbligatorio, fornisci un valore di punteggio numerico per l'azione. Il valore deve essere un numero intero compreso tra 1 e 99. non può essere 0, null o vuoto. Maggiore è il numero, maggiore è il valore per migliorare la postura di conformità. L'immagine seguente mostra come Compliance Manager punteggia i controlli:
 
-![Valori dei punti dei controlli di Compliance Manager](../media/compliance-score-action-scoring.png "Valori dei punti dei controlli di Compliance Manager")
+  ![Valori dei punti dei controlli di Compliance Manager](../media/compliance-score-action-scoring.png "Valori dei punti dei controlli di Compliance Manager")
 
 - **actionDescriptionTitle**: questo è il titolo della descrizione ed è obbligatorio. Questo titolo della descrizione consente di eseguire la stessa azione in più modelli e di visualizzare una descrizione diversa in ogni modello.  Questo campo consente di chiarire il modello a cui fa riferimento la descrizione. Nella maggior parte dei casi, è possibile inserire il nome del modello che si sta creando in questo campo.
 
@@ -160,9 +162,13 @@ Solo gli utenti che hanno un ruolo amministratore globale o amministratore di Co
 7. L'ultima schermata conferma la creazione di un nuovo modello. Selezionare **Fine** per uscire dalla procedura guidata.
 8. Verrà visualizzata la pagina dei dettagli del nuovo modello, in cui è possibile [creare la valutazione.](compliance-manager-assessments.md#create-assessments)
 
-## <a name="extend-an-assessment-template"></a>Estendere un modello di valutazione
+## <a name="extend-microsoft-365-assessment-templates"></a>Estendere Microsoft 365 modelli di valutazione
 
 Compliance Manager offre la possibilità di aggiungere controlli personalizzati e azioni di miglioramento a un modello fornito da Microsoft esistente. Questo processo è denominato estensione di un modello Microsoft. Quando estendi un modello, può comunque ricevere gli aggiornamenti rilasciati da Microsoft, cosa che può verificarsi quando vengono apportate modifiche al regolamento o al prodotto correlato (vedi Accettare aggiornamenti [per le valutazioni).](compliance-manager-assessments.md#accept-updates-to-assessments)
+
+Tieni presente che se stai configurando valutazioni per prodotti diversi da Microsoft 365, il processo sarà diverso. Per ulteriori informazioni, vedere [Extend universal assessment templates.](#extend-universal-assessment-templates)
+
+### <a name="prepare-template-data-and-create-extension"></a>Preparare i dati del modello e creare l'estensione
 
 Per prepararti, dovrai assemblare un foglio di calcolo Excel formato specifico per importare i dati del modello necessari. I Excel file seguono lo stesso formato generale descritto in precedenza, ma esistono requisiti speciali per le estensioni. Vedi questi punti aggiuntivi per evitare errori:
 
@@ -195,6 +201,12 @@ Dopo aver formattato il foglio di calcolo, eseguire la procedura seguente.
 10. L'ultima schermata conferma la creazione di un nuovo modello. Selezionare **Fine** per uscire dalla procedura guidata.
 
 11. Arriverai alla pagina dei dettagli del nuovo modello. Da qui è possibile creare la valutazione selezionando **Crea valutazione**. Per istruzioni, vedere [Creare e gestire valutazioni.](compliance-manager-assessments.md#create-assessments)
+
+## <a name="extend-universal-assessment-templates"></a>Estendere i modelli di valutazione universali
+
+È inoltre possibile estendere le versioni universali dei modelli per personalizzare le valutazioni specifiche del prodotto. Riceverai un modello di estensione speciale quando crei una valutazione usando un modello universale e la valutazione ha una combinazione di prodotto e certificazione univoca. Questo può essere modificato in base alle proprie esigenze. Per indicazioni su come modificare il modello, vedi le istruzioni seguenti su come modificare un modello.
+
+Quando si modifica un modello universale, tutto il contenuto del modello può essere modificato, ma questa operazione interromperà l'ereditarietà con il modello padre. Ciò significa che non riceverà più automaticamente gli aggiornamenti da Microsoft se il modello padre viene aggiornato.
 
 ## <a name="modify-a-template"></a>Modificare un modello
 
@@ -233,7 +245,7 @@ Non è possibile modificare **l'azioneTitle** (colonna A) perché in tal caso, C
 
 #### <a name="change-an-improvement-actions-name"></a>Modificare il nome di un'azione di miglioramento
 
-Se si desidera modificare il nome di un'azione di miglioramento, è necessario indicare esplicitamente nel foglio di calcolo che si sta sostituendo un nome esistente con un nuovo nome. attenersi alla seguente procedura:
+Se si desidera modificare il nome di un'azione di miglioramento, è necessario indicare esplicitamente nel foglio di calcolo che si sta sostituendo un nome esistente con un nuovo nome. Eseguire la procedura seguente:
 
 1. Nella scheda **Azioni** del foglio di calcolo aggiungere una nuova colonna al foglio di calcolo dopo la colonna A.
 2. In questa nuova colonna, che ora è la colonna B, inserire come intestazione nella riga 1: **oldActionTitle**.
@@ -282,11 +294,11 @@ Dopo aver Excel il file di configurazione e salvato, eseguire la procedura segue
 Il modello includerà le modifiche apportate. Tutte le valutazioni che utilizzano questo modello modificato ora mostreranno gli aggiornamenti in sospeso e dovrai accettare gli aggiornamenti per le valutazioni per riflettere le modifiche apportate nel modello. Ulteriori informazioni sugli [aggiornamenti per le valutazioni](compliance-manager-assessments.md#accept-updates-to-assessments).
 
 > [!NOTE]
-> Se si utilizza Compliance Manager in una lingua diversa dall'inglese, si noterà che parte del testo viene visualizzato in inglese quando si esporta un modello in Excel. I titoli delle azioni (sia le azioni di miglioramento che le azioni microsoft) devono essere in inglese per essere riconosciuti dai controlli. Se si apportano modifiche al titolo di un'azione, assicurarsi di scriverlo in inglese in modo che il file venga importato correttamente.
+> Se si utilizza Compliance Manager in una lingua diversa dall'inglese, si noterà che parte del testo viene visualizzato in inglese quando si esporta un modello in Excel. I titoli delle azioni (sia le azioni di miglioramento che, se applicabile, le azioni Microsoft) devono essere in inglese per essere riconosciuti dai controlli. Se si apportano modifiche al titolo di un'azione, assicurarsi di scriverlo in inglese in modo che il file venga importato correttamente.
 
 ## <a name="export-a-template"></a>Esportare un modello
 
-È possibile esportare Excel file contenente tutti i dati di un modello. Dovrai esportare un modello per modificarlo, poiché questo sarà il file Excel che modificherai e carichi nel processo [di modifica.](#modify-a-template)
+È possibile esportare Excel file contenente tutti i dati di un modello. Dovrai esportare un modello per modificarlo, poiché questo sarà il file Excel che modificherai e carichi nel processo [di modifica.](#modify-a-template) Puoi anche esportare un modello come riferimento se vuoi usare i dati da esso durante la creazione di un nuovo modello personalizzato.
 
 Per esportare il modello, passare alla pagina dei dettagli del modello e selezionare il pulsante **Esporta in Excel.**
 
