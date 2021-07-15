@@ -1,7 +1,7 @@
 ---
 title: Requisiti dei dispositivi
 description: Riepilogo dei requisiti hardware e software minimi per i dispositivi che funzionano con Microsoft Managed Desktop
-keywords: Microsoft Managed Desktop, Microsoft 365, servizio, documentazione
+keywords: Microsoft Managed Desktop, Microsoft 365, servizi, documentazione
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: fcd7f192ba0846e3bf3051cde927095088f32d26
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: b17585f7449f1151c7a5f5cd75d06b8e723fbe4b
+ms.sourcegitcommit: 2fd60871975d61e60d4827b36cd689021fd2a4c8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245793"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53438013"
 ---
 # <a name="device-requirements"></a>Requisiti dei dispositivi
 
@@ -49,7 +49,9 @@ Il dispositivo deve avere questo software preinstallato:
 - la versione a 64 bit di Microsoft 365 Apps for enterprise 
 - Tutti i driver di dispositivo applicabili
 
-
+> [!NOTE]
+> Windows 11 sarà un'opzione aggiuntiva per il software preinstallato una volta raggiunta la disponibilità generale.
+>
 ### <a name="physical-features"></a>Funzionalità fisiche
 
 I dispositivi devono disporre di queste funzionalità:
@@ -62,7 +64,8 @@ I dispositivi devono disporre di queste funzionalità:
 Per ulteriori informazioni su queste funzionalità e sulle tecnologie correlate a esse utilizzate dal servizio, vedere [Microsoft Managed Desktop technologies](../intro/technologies.md).
 
 > [!NOTE]
-> ARM processori non sono supportati.
+>- ARM processori non sono supportati.
+>- Windows 11 ha requisiti [hardware aggiuntivi.](/windows/whats-new/windows-11-requirements)
 
 I dispositivi devono soddisfare o superare i seguenti limiti per l'archiviazione e la memoria:
 
@@ -70,7 +73,7 @@ I dispositivi devono soddisfare o superare i seguenti limiti per l'archiviazione
 - L'unità di avvio deve avere una capacità di almeno 128 GB.
 - La memoria interna del dispositivo (RAM) deve essere uguale o superiore a 8 GB.
 
-Se il dispositivo è stato creato dopo il 1° luglio 2020, deve avere anche una fotocamera IR, un lettore di impronte digitali [o entrambi,](/windows-hardware/design/device-experiences/windows-hello-enhanced-sign-in-security)per supportare Windows Hello.
+Se il dispositivo è stato creato dopo il 1° [luglio](/windows-hardware/design/device-experiences/windows-hello-enhanced-sign-in-security)2020, deve disporre anche di una fotocamera AR, di un lettore di impronte digitali o di entrambi i dispositivi, per supportare Windows Hello .
 
 ## <a name="recommended-features"></a>Funzionalità consigliate
 

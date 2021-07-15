@@ -16,16 +16,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Quando un responsabile viene aggiunto a un caso Advanced eDiscovery, qualsiasi contenuto considerato parzialmente indicizzato viene rielaborato per renderlo completamente ricercabile.
-ms.openlocfilehash: f510b7e9c0fa2c5c181709c96907610066a4b1cf
-ms.sourcegitcommit: 997a21b83795789cda0a6b4a77f9985a3233d0c0
+ms.openlocfilehash: 34855eb168dd10fc500e2e57fe1d57ad81449452
+ms.sourcegitcommit: 2fd60871975d61e60d4827b36cd689021fd2a4c8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "53430508"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53437977"
 ---
 # <a name="advanced-indexing-of-custodian-data"></a>Indicizzazione avanzata dei dati dei responsabili
 
-Quando un responsabile viene aggiunto a un caso Advanced eDiscovery, tutti i contenuti che sono stati considerati parzialmente indicizzati o con cui si sono verificati errori di indicizzazione vengono reindicizzati per renderlo completamente ricercabile.  Questo processo di reindicizzazione è denominato *indicizzazione avanzata.* Esistono diversi motivi per cui il contenuto è parzialmente indicizzato o presenta errori di indicizzazione. Sono inclusi i file di immagine o la presenza di immagini in un file, tipi di file non supportati o limiti di indicizzazione delle dimensioni dei file. Per SharePoint file, l'indicizzazione avanzata viene eseguita solo sugli elementi contrassegnati come parzialmente indicizzati o con errori di indicizzazione. In Exchange, i messaggi di posta elettronica con allegati di immagine non vengono contrassegnati come parzialmente indicizzati o con errori di indicizzazione. Ciò significa che tali file non verranno reindicizzati dal processo di indicizzazione avanzato.
+Quando un responsabile viene aggiunto a un caso Advanced eDiscovery, tutti i contenuti che sono stati considerati parzialmente indicizzati o con cui si sono verificati errori di indicizzazione vengono reindicizzati per renderlo completamente ricercabile.  Questo processo di reindicizzazione è denominato *indicizzazione avanzata.* Esistono diversi motivi per cui il contenuto è parzialmente indicizzato o presenta errori di indicizzazione. Sono inclusi i file di immagine o la presenza di immagini in un file, tipi di file non supportati o limiti di indicizzazione delle dimensioni dei file. Per SharePoint file, l'indicizzazione avanzata viene eseguita solo sugli elementi contrassegnati come parzialmente indicizzati o con errori di indicizzazione. In Exchange, i messaggi di posta elettronica con allegati di immagine non vengono contrassegnati come parzialmente indicizzati o con errori di indicizzazione. Ciò significa che tali file non verranno reindicizzati dal processo di indicizzazione avanzata.
 
 Per ulteriori informazioni sul supporto dell'elaborazione e sugli elementi parzialmente indicizzati, vedere:
 

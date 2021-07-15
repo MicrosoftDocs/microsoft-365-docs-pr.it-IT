@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 2b75a9f4446c875e73245aa7d51e8fcc15e8d23c
-ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
+ms.openlocfilehash: 3579e9dab975d8776a53d400121d98fe119fe6cc
+ms.sourcegitcommit: 2fd60871975d61e60d4827b36cd689021fd2a4c8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53195022"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53438073"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-manually"></a>Distribuire manualmente Microsoft Defender per Endpoint su Linux
 
@@ -305,7 +305,12 @@ Scaricare il pacchetto di onboarding da Microsoft Defender Security Center:
     mdatp health --field org_id
     ```
 
-2. Esegui MicrosoftDefenderATPOnboardingLinuxServer.py e tieni presente che, per eseguire questo comando, devi aver `python` installato nel dispositivo:
+2. Eseguire MicrosoftDefenderATPOnboardingLinuxServer.py. 
+   
+    >[!NOTE]
+    >Per eseguire questo comando, devi `python` aver installato nel dispositivo. Se stai eseguendo RHEL 8.x o Ubuntu 20.04 o versioni successive, dovrai usare Python 3 invece di Python.
+
+
 
     ```bash
     python MicrosoftDefenderATPOnboardingLinuxServer.py
