@@ -6,7 +6,7 @@ metadata:
   ms.author: krowley
   author: kccross
   manager: laurawi
-  ms.date: 05/22/2020
+  ms.date: 07/14/2021
   audience: ITPro
   ms.topic: overview
   ms.service: O365-seccomp
@@ -16,12 +16,12 @@ metadata:
   ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
   description: Hai una domanda sul funzionamento delle nuove funzionalità di protezione dei messaggi? Verificare la disponibilità di una risposta qui.
   ms.custom: seo-marvel-apr2020
-  ms.openlocfilehash: 386f37e2e6ebff820f4f6385281783daf41243b2
-  ms.sourcegitcommit: 997a21b83795789cda0a6b4a77f9985a3233d0c0
+  ms.openlocfilehash: 809f31682fbcb690aaaf2483ec8b72c766282cf5
+  ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
   ms.translationtype: MT
   ms.contentlocale: it-IT
-  ms.lasthandoff: 07/14/2021
-  ms.locfileid: "53430445"
+  ms.lasthandoff: 07/15/2021
+  ms.locfileid: "53453826"
 title: Domande frequenti sulla crittografia dei messaggi
 summary: >
   Hai una domanda sul funzionamento delle nuove funzionalità di protezione dei messaggi? Verificare la disponibilità di una risposta qui. Inoltre, esaminare le domande frequenti sulla protezione dei dati [in Azure Information Protection](/information-protection/get-started/faqs-rms) per risposte a domande sul servizio di protezione dei dati, Azure Rights Management, in Azure Information Protection.
@@ -35,23 +35,23 @@ sections:
     answer: "È possibile utilizzare le nuove funzionalità per OME nelle condizioni seguenti:\n  \n- Se non è mai stato configurato OME o IRM per Exchange Online in Office 365.\n\n- Se sono stati impostati OME e IRM, è possibile utilizzare questi passaggi se si utilizza il servizio Azure Rights Management da Azure Information Protection.\n\n- Se si utilizza Exchange Online con Active Directory Rights Management Service (AD RMS), non è possibile abilitare subito queste nuove funzionalità. È invece necessario eseguire prima [la migrazione di AD RMS ad Azure Information Protection.](/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms) Al termine della migrazione, è possibile configurare correttamente OME.\n\n  Se si sceglie di continuare a usare AD RMS locale con Exchange Online anziché eseguire la migrazione ad Azure Information Protection, non sarà possibile usare queste nuove funzionalità.\n"
   - question: >
       Quali sottoscrizioni sono necessarie per usare le nuove funzionalità OME?
-    answer: "Per usare le nuove funzionalità OME, è necessario uno dei piani seguenti:\n  \n- Office 365 Message Encryption è disponibile come parte di Office 365 Enterprise E3 ed E5, Microsoft Enterprise E3 ed E5, Microsoft 365 Business Premium, Office 365 A1, A3 e A5 e Office 365 Government G3 e G5. I clienti non hanno bisogno di licenze aggiuntive per usufruire delle nuove funzionalità di protezione con tecnologia Azure Information Protection.\n\n- È inoltre possibile aggiungere Azure Information Protection Piano 1 ai piani seguenti per ricevere le nuove funzionalità di Office 365 Message Encryption: Exchange Online Piano 1, Exchange Online Piano 2, Office 365 F1, Microsoft 365 Business Basic, Microsoft 365 Business Standard o Office 365 Enterprise E1.\n\n- Ogni utente che beneficia Office 365 Message Encryption deve essere concesso in licenza per essere coperto dalla funzionalità.\n\n- Per l'elenco completo, vedere le [Exchange Online dei servizi per](/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description) Office 365 Message Encryption.\n"
+    answer: "Per usare le nuove funzionalità OME, è necessario uno dei piani seguenti:\n  \n- Office 365 Message Encryption è disponibile come parte di Office 365 Enterprise E3 ed E5, Microsoft Enterprise E3 ed E5, Microsoft 365 Business Premium, Office 365 A1, A3 e A5 e Office 365 Government G3 e G5. Non sono necessarie licenze aggiuntive per ricevere le nuove funzionalità di protezione basate su Azure Information Protection.\n\n- È inoltre possibile aggiungere Azure Information Protection Piano 1 ai piani seguenti per ricevere le nuove funzionalità di Office 365 Message Encryption: Exchange Online Piano 1, Exchange Online Piano 2, Office 365 F1, Microsoft 365 Business Basic, Microsoft 365 Business Standard o Office 365 Enterprise E1.\n\n- Ogni utente che beneficia Office 365 Message Encryption deve essere concesso in licenza per essere coperto dalla funzionalità.\n\n- Per l'elenco completo, vedere le [Exchange Online dei servizi per](/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description) Office 365 Message Encryption.\n"
   - question: >
       È possibile usare Exchange Online con bring your own key (BYOK) in Azure Information Protection?
     answer: "Sì. Microsoft consiglia di completare la procedura per configurare BYOK prima di configurare OME.\n  \nPer ulteriori informazioni su BYOK, vedere [Planning and implementing your Azure Information Protection tenant key.](/information-protection/plan-design/plan-implement-tenant-key)\n  \n"
   - question: >
       OME e BYOK con Azure Information Protection modificano l'approccio di Microsoft alle richieste di dati di terze parti, ad esempio i mandati di comparizione?
-    answer: "No. OME e l'opzione per fornire e controllare le proprie chiavi di crittografia, denominate BYOK, da Azure Information Protection non sono state progettate per rispondere alle richieste di comparizione delle forze dell'ordine. OME, con BYOK per Azure Information Protection, è stato progettato per i clienti incentrati sulla conformità. Microsoft prende sul serio le richieste di terze parti per i dati dei clienti. In qualità di provider di servizi cloud, sosteniamo sempre la privacy dei dati dei clienti. Nel caso in cui riceviamo un mandato di comparizione, tentiamo sempre di reindirizzare la terza parte al cliente per ottenere le informazioni. (Leggere il blog di Brad Smith: [Protezione dei dati dei clienti dallo snooping governativo](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/)). Microsoft pubblica periodicamente informazioni dettagliate sulla richiesta ricevuta. Per ulteriori informazioni sulle richieste di dati di terze parti, vedere [Risposta alle](https://www.microsoft.com/trustcenter/privacy/govt-requests-for-data) richieste del governo e delle forze dell'ordine per accedere ai dati dei clienti nel Centro protezione Microsoft. Vedere anche \"Divulgazione dei dati dei clienti\" nelle Condizioni [dei servizi online (OST).](https://www.microsoft.com/Licensing/product-licensing/products.aspx)\n  \n"
+    answer: "No. OME e l'opzione per fornire e controllare le proprie chiavi di crittografia, denominate BYOK, da Azure Information Protection non sono state progettate per rispondere alle richieste di comparizione delle forze dell'ordine. OME, con BYOK per Azure Information Protection, è stato progettato per le organizzazioni incentrate sulla conformità. Microsoft prende sul serio le richieste di terze parti per i dati dei clienti. In qualità di provider di servizi cloud, sosteniamo sempre la privacy dei tuoi dati. Nel caso in cui riceviamo un mandato di comparizione, tentiamo sempre di reindirizzare la terza parte direttamente all'utente per ottenere le informazioni. (Leggere il blog di Brad Smith: [Protezione dei dati dei clienti dallo snooping governativo](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/)). Microsoft pubblica periodicamente informazioni dettagliate sulla richiesta ricevuta. Per ulteriori informazioni sulle richieste di dati di terze parti, vedere [Risposta alle](https://www.microsoft.com/trustcenter/privacy/govt-requests-for-data) richieste del governo e delle forze dell'ordine per accedere ai dati dei clienti nel Centro protezione Microsoft. Vedere anche \"Divulgazione dei dati dei clienti\" nelle Condizioni [dei servizi online (OST).](https://www.microsoft.com/Licensing/product-licensing/products.aspx)\n  \n"
   - question: >
       In che modo questa funzionalità è correlata alle funzionalità legacy Office 365 Message Encryption (OME) e Information Rights Management (IRM) ?
-    answer: "Le nuove funzionalità per Office 365 Message Encryption sono un'evoluzione delle soluzioni IRM e OME legacy esistenti. Nella tabella seguente sono disponibili ulteriori dettagli.\n  \n**Confronto tra OME legacy, IRM e nuove funzionalità OME**\n\n| Capacità | Versioni precedenti di OME | IRM | Nuove funzionalità OME |\n|:-----|:-----|:-----|:-----|\n|**Invio di un messaggio di posta elettronica crittografato**|Solo tramite regole Exchange flusso di posta elettronica|Utente finale avviato da Outlook per Windows, Outlook per Mac o Outlook sul web; o tramite regole Exchange flusso di posta|Utente finale avviato da Outlook per Windows, Outlook per Mac o Outlook sul web; o tramite regole del flusso di posta|\n|**Gestione dei diritti**|-|Opzione Non inoltrare e modelli personalizzati|Opzione Non inoltrare, opzione di sola crittografia, modelli predefiniti e personalizzati|\n|**Tipo di destinatario supportato**|Solo destinatari esterni|Solo destinatari interni|Destinatari interni ed esterni|\n|**Esperienza per il destinatario**|I destinatari esterni hanno ricevuto un messaggio HTML che hanno scaricato e aperto in un browser o in un'app per dispositivi mobili scaricata.|I destinatari interni hanno ricevuto solo messaggi di posta elettronica crittografati Outlook per Windows, Outlook per Mac e Outlook sul web.|I destinatari interni ed esterni ricevono messaggi di posta elettronica in Outlook per Windows, Outlook per Mac, Outlook sul web, Outlook per Android e Outlook per iOS o tramite un portale Web, indipendentemente dal fatto che siano o meno nella stessa organizzazione o in qualsiasi organizzazione. Il portale OME non richiede alcun download separato.|\n|**Supporto per Bring Your Own Key**|Non disponibile|Non disponibile| BYOK supportato|\n"
+    answer: "Le nuove funzionalità per Office 365 Message Encryption sono un'evoluzione delle soluzioni IRM e OME legacy esistenti. Nella tabella seguente sono disponibili ulteriori dettagli.\n  \n**Confronto tra OME legacy, IRM e nuove funzionalità OME**\n\n| Funzionalità | Versioni precedenti di OME | IRM | Nuove funzionalità OME |\n|:-----|:-----|:-----|:-----|\n|**Invio di un messaggio di posta elettronica crittografato**|Solo tramite regole Exchange flusso di posta elettronica|Utente finale avviato da Outlook per Windows, Outlook per Mac o Outlook sul web; o tramite regole Exchange flusso di posta|Utente finale avviato da Outlook per Windows, Outlook per Mac o Outlook sul web; o tramite regole del flusso di posta|\n|**Gestione dei diritti**|-|Opzione Non inoltrare e modelli personalizzati|Opzione Non inoltrare, opzione di sola crittografia, modelli predefiniti e personalizzati|\n|**Tipo di destinatario supportato**|Solo destinatari esterni|Solo destinatari interni|Destinatari interni ed esterni|\n|**Esperienza per il destinatario**|I destinatari esterni hanno ricevuto un messaggio HTML che hanno scaricato e aperto in un browser o in un'app per dispositivi mobili scaricata.|I destinatari interni hanno ricevuto solo messaggi di posta elettronica crittografati Outlook per Windows, Outlook per Mac e Outlook sul web.|I destinatari interni ed esterni ricevono messaggi di posta elettronica in Outlook per Windows, Outlook per Mac, Outlook sul web, Outlook per Android e Outlook per iOS o tramite un portale Web, indipendentemente dal fatto che siano o meno nella stessa organizzazione o in qualsiasi organizzazione. Il portale OME non richiede alcun download separato.|\n|**Supporto per Bring Your Own Key**|Non disponibile|Non disponibile| BYOK supportato|\n"
   - question: >
       Come si abilitano le nuove funzionalità OME per l'organizzazione?
     answer: "Vedi [Configurare nuove funzionalità Office 365 Message Encryption.](set-up-new-message-encryption-capabilities.md)\n  \n"
   - question: >
       La versione precedente di OME verrà deprecata?
     answer: >
-      È comunque possibile utilizzare la versione precedente di OME, non sarà deprecata al momento. Tuttavia, è consigliabile incoraggiare le organizzazioni a utilizzare la soluzione OME nuova e migliorata. I clienti che non hanno già distribuito OME non possono configurare una nuova distribuzione della versione precedente di OME.
+      È comunque possibile utilizzare la versione precedente di OME, non sarà deprecata al momento. Tuttavia, è consigliabile incoraggiare le organizzazioni a utilizzare la soluzione OME nuova e migliorata. Se non è già stato distribuito OME, non è possibile configurare una nuova distribuzione della versione precedente di OME.
   - question: >
       L'organizzazione utilizza Active Directory Rights Management, è possibile utilizzare questa funzionalità?
     answer: "No. Se si utilizza Exchange Online con Active Directory Rights Management Service (AD RMS), non è possibile abilitare subito queste nuove funzionalità. È invece necessario eseguire prima [la migrazione di AD RMS ad Azure Information Protection.](/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms)\n  \n"
@@ -135,7 +135,7 @@ sections:
   - question: >
       È possibile utilizzare la crittografia dei messaggi con funzionalità di conformità come eDiscovery?
     answer: >
-      Sì. Tutti i messaggi di posta elettronica crittografati sono individuabili Microsoft 365 funzionalità di conformità.
+      Sì. Microsoft 365 funzionalità di conformità possono individuare tutti i messaggi di posta elettronica crittografati. Per [informazioni dettagliate, vedere Attività di eDiscovery che supportano gli elementi](/microsoft-365/compliance/ediscovery-decryption#ediscovery-activities-that-support-encrypted-items) crittografati.
   - question: >
       È possibile rimuovere la crittografia dalla posta elettronica?
     answer: >
@@ -151,7 +151,7 @@ sections:
   - question: >
       È possibile aprire i messaggi crittografati inviati a una cassetta postale condivisa?
     answer: >
-      Sì. I messaggi crittografati sono supportati per una cassetta postale condivisa.
+      Sì. È possibile aprire i messaggi crittografati per una cassetta postale condivisa quando si è connessi a un client Outlook supportato.
 
 
       - Gli utenti possono aprire i messaggi protetti in una cassetta postale condivisa in cui la cassetta postale condivisa ha ricevuto una posta protetta come parte di un gruppo di distribuzione.
@@ -203,7 +203,7 @@ sections:
   - question: >
       È possibile aprire i messaggi crittografati inviati alla cassetta postale di un altro utente con Accesso completo?
     answer: >
-      Gli utenti possono aprire i messaggi crittografati purché gli sia stato assegnato l'accesso diretto e il mapping automatico sia attivato. L'accesso non è consentito se l'accesso viene concesso tramite un gruppo di sicurezza abilitato alla posta elettronica.
+      No. È possibile aprire solo i messaggi crittografati in una cassetta postale condivisa.
   - question: >
       Cosa fare se non si riceve il pass code una sola volta dopo che è stato richiesto?
     answer: >-
