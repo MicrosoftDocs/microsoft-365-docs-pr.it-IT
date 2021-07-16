@@ -1,15 +1,15 @@
 ---
-title: Configurare il lab di Microsoft 365 o l'ambiente pilota di Defender
-description: Accedere Microsoft 365 Security Center e quindi configurare l'ambiente di testing di Microsoft 365 Defender
-keywords: Microsoft 365 Configurazione della versione di valutazione di Defender, Microsoft 365 configurazione pilota di Defender, prova Microsoft 365 Defender, Microsoft 365 configurazione del lab di valutazione di Defender
+title: Configurare il laboratorio di Microsoft 365 Defender o l'ambiente pilota
+description: Accedere Microsoft 365 Security Center e quindi configurare l'Microsoft 365 Defender lab di valutazione
+keywords: Microsoft 365 Defender di prova, Microsoft 365 Defender installazione pilota, provare a Microsoft 365 Defender, Microsoft 365 Defender di valutazione
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: dolmont
-author: DulceMontemayor
+ms.author: v-lsaldanha
+author: lovina-saldanha
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -19,14 +19,14 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: ae81f6be0a83d5d0141f0f0c8c89f8f2207cc56c
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 6db3003aa6465df90a3d2e4af55b28ccccf44100
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935426"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53454734"
 ---
-# <a name="set-up-your-microsoft-365-defender-trial-lab-environment"></a>Configurare l'ambiente di Microsoft 365 lab di valutazione di Microsoft 365 Defender 
+# <a name="set-up-your-microsoft-365-defender-trial-in-a-lab-environment"></a>Configurare la versione Microsoft 365 Defender in un ambiente lab 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -34,31 +34,13 @@ ms.locfileid: "51935426"
 **Si applica a:**
 - Microsoft 365 Defender 
 
+In questo argomento viene illustrato come configurare un ambiente lab dedicato. Per informazioni sulla configurazione di una versione di valutazione in produzione, vedere la nuova guida di valutazione [e Microsoft 365 Defender](eval-overview.md) pilota. 
 
-La creazione Microsoft 365 lab di valutazione o un ambiente pilota di Defender e la distribuzione è un processo in tre fasi:
-
-|[![Fase 1: preparazione](../../media/phase-diagrams/prepare.png)](prepare-m365d-eval.md)<br/>[Fase 1: preparazione](prepare-m365d-eval.md) |![Fase 2: configurazione](../../media/phase-diagrams/setup.png)<br/>Fase 2: configurazione |[![Fase 3: onboarding](../../media/phase-diagrams/onboard.png)](config-m365d-eval.md)<br/>[Fase 3: onboarding](config-m365d-eval.md) | [![Torna al progetto pilota](../../media/phase-diagrams/backtopilot.png)](m365d-pilot.md)<br/>[Torna al playbook pilota](m365d-pilot.md) |
-|--|--|--|--|
-||*Sei qui!*  | | |
-
-
-Si è attualmente in fase di configurazione. Eseguire i passaggi iniziali per accedere Microsoft 365 Security Center e quindi configurare il laboratorio di valutazione o l'ambiente pilota.
-
-Iscriversi a una sottoscrizione Office 365 o Azure Active Directory per generare un tenant *.onmicrosoft.com* che è possibile usare per iscriversi alla licenza Microsoft 365 E5. 
-
+## <a name="create-an-office-365-e5-trial-tenant"></a>Creare un tenant Office 365 E5 di valutazione
 >[!NOTE]
->Se si dispone già di una sottoscrizione Office 365 o Azure Active Directory, è possibile ignorare i passaggi di creazione del tenant Office 365 E5 o pilota.
+>Se si dispone già di una sottoscrizione Office 365 o Azure Active Directory, è possibile ignorare i passaggi Office 365 E5 creazione del tenant di valutazione.
 
-In questa fase, si verrà guidati a:
-- Creare un tenant Office 365 di valutazione di E5
-- Abilitare Microsoft 365 di valutazione
-
-
-## <a name="create-an-office-365-e5-trial-tenant"></a>Creare un tenant Office 365 di valutazione di E5
->[!NOTE]
->Se si dispone già di una sottoscrizione Office 365 o Azure Active Directory, è possibile ignorare i passaggi di creazione del tenant di Office 365 E5.
-
-1. Accedere al portale [del Office 365 E5 e](https://www.microsoft.com/microsoft-365/business/office-365-enterprise-e5-business-software?activetab=pivot%3aoverviewtab) selezionare Versione di valutazione **gratuita.**
+1. Vai al portale [Office 365 E5 prodotto e](https://www.microsoft.com/microsoft-365/business/office-365-enterprise-e5-business-software?activetab=pivot%3aoverviewtab) seleziona Versione di valutazione **gratuita.**
 
    ![Pagina di valutazione of_Office 365 E5 gratuita di Image of_Office 365 E5](../../media/mtp-eval-9.png)
   
@@ -85,9 +67,9 @@ In questa fase, si verrà guidati a:
 
    ![Immagine of_Office configurazione della registrazione della versione di valutazione di 365 E5 in cui è possibile impostare l'identità aziendale](../../media/mtp-eval-14.png)
 
-7. Fare **clic su Vai al programma di** installazione per completare il provisioning Office 365 tenant di valutazione E5.
+7. Fare **clic su Vai a Installazione** per completare il provisioning Office 365 E5 tenant di valutazione.
 
-   ![Immagine della pagina Office 365 di configurazione della registrazione della versione di valutazione di E5 che richiede di fare clic sul pulsante Vai all'installazione](../../media/mtp-eval-15.png)
+   ![Immagine della pagina Office 365 E5 di installazione della registrazione della versione di valutazione che richiede di fare clic sul pulsante Vai all'installazione](../../media/mtp-eval-15.png)
 
 8. Connessione dominio aziendale al tenant Office 365 aziendale. [Facoltativo] Scegliere **Connessione un dominio di cui si è già proprietari** e digitare il nome di dominio. Fare clic su **Avanti**.
 
@@ -126,7 +108,7 @@ In questa fase, si verrà guidati a:
 >[!NOTE]
 >La registrazione a una versione di valutazione offre 25 licenze utente da usare per un mese. Per [informazioni dettagliate, vedere Try or Buy an M365 subscription.](../../commerce/try-or-buy-microsoft-365.md)
 
-1. Da [Microsoft 365 Admin Center,](https://admin.microsoft.com/)fare clic su **Fatturazione** e quindi passare a **Acquista servizi.**
+1. Da [Amministrazione Microsoft 365,](https://admin.microsoft.com/)fare clic su **Fatturazione** e quindi passare a **Acquista servizi.**
 
 2. Seleziona **Microsoft 365 E5** e fai clic su **Avvia versione di valutazione gratuita.** 
 
@@ -144,7 +126,7 @@ In questa fase, si verrà guidati a:
 
    ![Image of_Microsoft 365 E5 Start free trial page where you should clock the Try now button to start](../../media/mtp-eval-27.png)
  
-6. Passare **all'Microsoft 365 Admin Center**  >  **Utenti**  >  **attivi**. Seleziona l'account utente, seleziona **Gestisci licenze prodotto,** quindi scambia la licenza da Office 365 E5 a **Microsoft 365 E5**. Fare clic su **Salva**.
+6. Passare al Centro **Amministrazione Microsoft 365**  >  **utenti Utenti**  >  **attivi**. Seleziona l'account utente, seleziona **Gestisci licenze prodotto,** quindi scambia la licenza da Office 365 E5 a **Microsoft 365 E5**. Fare clic su **Salva**.
 
    ![Immagine of_Microsoft pagina dell'interfaccia di amministrazione di 365 in cui è possibile selezionare Microsoft 365 E5 licenza](../../media/mtp-eval-28.png)
  
@@ -159,5 +141,5 @@ In questa fase, si verrà guidati a:
 
 
 ## <a name="next-step"></a>Passaggio successivo
-|[Fase 3: configurare & onboard](config-m365d-eval.md) | Configurare ogni pilastro Microsoft 365 Defender per il lab di Microsoft 365 di valutazione o l'ambiente pilota di Defender e l'onboardboard degli endpoint.
+|[Fase 3: configurare & onboard](config-m365d-eval.md) | Configurare ogni Microsoft 365 Defender pilastro per il Microsoft 365 Defender di prova o l'ambiente pilota e l'onboardboard degli endpoint.
 |:-------|:-----|

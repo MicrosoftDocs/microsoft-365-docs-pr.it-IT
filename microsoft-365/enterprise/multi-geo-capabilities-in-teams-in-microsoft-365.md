@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-spintranet
 localization_priority: Normal
 description: Informazioni su come Teams con Microsoft 365 Multi-Geo.
-ms.openlocfilehash: 9fe9b289b0ffbef12327c4232b9deb6727b6d718
-ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
+ms.openlocfilehash: 7da2032e1106d03178eccf3bcfb4f37fc63780d7
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53362667"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53453526"
 ---
 # <a name="multi-geo-capabilities-in-microsoft-teams"></a>Funzionalità multi-geografiche in Microsoft Teams
 
@@ -48,7 +48,7 @@ Get-MultiGeoRegion -EntityType User -EntityId <UPN>
 
 ## <a name="channel-messages"></a>Messaggi di canale
 
-Ogni Microsoft 365 ha una posizione dati preferita (PDL, Preferred Data Location) che indica la posizione geografica in cui devono essere archiviati i dati correlati. Teams il file PDL per il gruppo associato a ogni team per determinare dove archiviare i dati di messaggistica del canale per tale team. Sono incluse le chat che si verificano all'interno di una riunione di canale.
+Ogni Microsoft 365 ha una posizione dati preferita (PDL, Preferred Data Location) che indica la posizione geografica in cui devono essere archiviati i dati correlati. Teams il file PDL per il gruppo associato a ogni team per determinare dove archiviare i dati di messaggistica del canale per tale team. Sono inclusi i canali privati e le chat che si verificano all'interno di una riunione di canale.
 
 Quando un utente crea un nuovo team, il PDL dell'utente determina quale file PDL viene assegnato al Microsoft 365 gruppo. Il file PDL del gruppo determina dove vengono archiviati i dati del team. Se il PDL dell'utente in un secondo momento cambia, il PDL del gruppo non viene modificato.
 

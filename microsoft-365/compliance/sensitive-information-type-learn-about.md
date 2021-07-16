@@ -15,13 +15,13 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
-description: ''
-ms.openlocfilehash: 3f64b981b60db9f9089af0555e4bf734864913b9
-ms.sourcegitcommit: 17d82e5617f0466eb825e15ab88594afcdaf4437
+description: In questo articolo viene fornita una panoramica dei tipi di informazioni riservate e del modo in cui rilevano informazioni riservate come la previdenza sociale, la carta di credito o i numeri di conto corrente bancario per identificare gli elementi sensibili
+ms.openlocfilehash: dee4ec59ce5fe6140c4aef33d147e89e11facd59
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "53300382"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53453622"
 ---
 # <a name="learn-about-sensitive-information-types"></a>Ulteriori informazioni sui tipi di informazioni riservate
 
@@ -35,12 +35,13 @@ I tipi di informazioni riservate sono classificatori basati su modelli. Rilevano
 
 ## <a name="sensitive-information-types-are-used-in"></a>I tipi di informazioni riservate vengono utilizzati in
 
-- [Criteri di prevenzione della perdita di dati](dlp-learn-about-dlp.md) 
+- [Criteri di prevenzione della perdita di dati](dlp-learn-about-dlp.md)
 - [Etichette di riservatezza](sensitivity-labels.md)
 - [Etichette di conservazione](retention.md)
 - [Gestione dei rischi Insider](insider-risk-management.md)
 - [Conformità delle comunicazioni](communication-compliance.md)
 - [Criteri di etichettatura automatica](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps)
+- [Gestione della privacy (anteprima)](privacy-management.md)
 
 ## <a name="fundamental-parts-of-a-sensitive-information-type"></a>Parti fondamentali di un tipo di informazioni riservate
 
@@ -70,7 +71,7 @@ Scopri di più sui livelli di confidenza in questo video
 
 Otto cifre separate da spazi
 
-### <a name="pattern"></a>Modello
+### <a name="pattern"></a>Criterio
 
 Otto cifre
 - due cifre
@@ -104,7 +105,7 @@ Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo d
 #### <a name="keyword_argentina_national_id"></a>Keyword_argentina_national_id
 
 - Argentina - Numero di identità nazionale 
-- Identity 
+- Identità 
 - Carta d'identità nazionale di identificazione 
 - DNI 
 - NIC National Registry of Persons 

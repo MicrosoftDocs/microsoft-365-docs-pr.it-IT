@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c8935368e4439221f2ce21cfa620e540c02165f8
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: b7d330388dd698cb524c1f4a8edaf9039ba4d16e
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185850"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53454830"
 ---
 # <a name="manage-automation-file-uploads"></a>Gestire il caricamento di file di automazione
 
@@ -41,7 +41,7 @@ Ad esempio, se si aggiungono *exe* e *bat* come nomi di estensione di file o all
 
 ## <a name="add-file-extension-names-and-attachment-extension-names"></a>Aggiungere i nomi delle estensioni di file e i nomi delle estensioni degli allegati.
 
-1. Nel riquadro di spostamento seleziona **Impostazioni**  >  **caricamenti di file di automazione**. 
+1. Nel riquadro di spostamento, **selezionare** Impostazioni  >    >  **Endpoints Rules Automation**  >  **uploads**.
 
 2. Attiva e disattiva l'impostazione **di** analisi **del contenuto.**
 

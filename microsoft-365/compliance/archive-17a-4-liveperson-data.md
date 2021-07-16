@@ -12,14 +12,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Informazioni su come configurare e usare un connettore LivePerson Conversational Cloud DataParser da 17a a 4 per importare e archiviare i dati di LivePerson Conversational Cloud in Microsoft 365.
-ms.openlocfilehash: 3a4156d817e1b7471f769a2365c5af9d58ade991
-ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
+ms.openlocfilehash: 70b8e8bd1c8c411894a90e0f919581b3faf58cae
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53097293"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53454458"
 ---
-# <a name="set-up-a-connector-to-archive-liveperson-conversational-cloud-data-preview"></a>Configurare un connettore per archiviare i dati liveperson conversational cloud (anteprima)
+# <a name="set-up-a-connector-to-archive-liveperson-conversational-cloud-data"></a>Configurare un connettore per archiviare i dati liveperson conversational cloud
 
 Usa [LivePerson Conversational Cloud DataParser](https://www.17a-4.com/liveperson-dataparser/) da 17a-4 LLC per importare e archiviare i dati da LivePerson Conversational Cloud alle cassette postali degli utenti nella tua Microsoft 365 organizzazione. DataParser include un connettore LivePerson Conversational Cloud configurato per acquisire elementi da un'origine dati di terze parti e importare tali elementi in Microsoft 365. Il connettore LivePerson Conversational Cloud DataParser converte i dati in un formato di messaggio di posta elettronica e quindi importa tali elementi nelle cassette postali degli utenti in Microsoft 365.
 

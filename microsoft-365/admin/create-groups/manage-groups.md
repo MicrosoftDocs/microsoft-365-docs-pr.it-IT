@@ -19,18 +19,18 @@ search.appverid:
 - MOE150
 ms.assetid: 74a1ef8b-3844-4d08-9980-9f8f7a36000f
 description: Informazioni su come gestire Microsoft 365, tra cui l'aggiunta di membri del gruppo di rimozione, la modifica dell'indirizzo di posta elettronica, il nome o la descrizione del gruppo e la personalizzazione del funzionamento del gruppo.
-ms.openlocfilehash: 3ba3dd36ed3929e956ce6359e678d6b684f64bb9
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 2ec8198b7e28b47bcbbf40818fbe624b2744f0ee
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50908711"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53454578"
 ---
-# <a name="manage-a-group-in-the-microsoft-365-admin-center"></a>Gestire un gruppo nell'Microsoft 365 di amministrazione
+# <a name="manage-a-group-in-the-microsoft-365-admin-center"></a>Gestire un gruppo nella interfaccia di amministrazione di Microsoft 365
 
 Dopo aver creato [un gruppo Microsoft 365 e](create-groups.md) aver aggiunto i membri del gruppo, è possibile configurare il gruppo. È possibile modificare il nome o la descrizione del gruppo, gestire proprietari o membri e specificare se i mittenti esterni possono inviare un messaggio di posta elettronica al gruppo e se inviare copie delle conversazioni di gruppo ai membri.
 
-Passare all'Microsoft 365 di amministrazione di [https://admin.microsoft.com](https://admin.microsoft.com) .
+Passare al interfaccia di amministrazione di Microsoft 365 all'indirizzo [https://admin.microsoft.com](https://admin.microsoft.com) .
 
 ## <a name="edit-the-group-name-or-description"></a>Modificare il nome o la descrizione del gruppo
 
@@ -54,7 +54,7 @@ Passare all'Microsoft 365 di amministrazione di [https://admin.microsoft.com](ht
 
 ## <a name="send-copies-of-conversations-to-group-members-inboxes"></a>Inviare copie delle conversazioni alle cartelle Posta in arrivo dei membri del gruppo
   
-Quando si utilizza l'interfaccia di amministrazione per creare un gruppo, per impostazione predefinita gli utenti non ottengono copie dei messaggi di posta elettronica di gruppo e degli inviti alle riunioni inviati alle proprie cartelle Posta in arrivo. Dovranno passare al gruppo per visualizzare le conversazioni e le riunioni. È possibile modificare questa impostazione nell'interfaccia di amministrazione.
+Quando si utilizza l'interfaccia di amministrazione per creare un gruppo, per impostazione predefinita gli utenti non ottengono copie dei messaggi di posta elettronica di gruppo inviati alle proprie cartelle posta in arrivo, anche se gli utenti ottengono copie degli inviti alle riunioni di gruppo inviate alle proprie cartelle Posta in arrivo. Dovranno passare al gruppo per visualizzare le conversazioni. È possibile modificare questa impostazione nell'interfaccia di amministrazione.
 
 Quando si attiva questa impostazione, i membri del gruppo riceveranno una copia dei messaggi di posta elettronica di gruppo e degli inviti alle riunioni inviati alla posta Outlook posta in arrivo. I membri potranno leggere ed eliminare questa copia del messaggio senza influire sugli altri utenti. Nella cartella Posta in arrivo del gruppo è ancora presente una copia del messaggio di posta elettronica.
 
@@ -66,7 +66,7 @@ I membri del gruppo possono rifiutare esplicitamente di ricevere questi messaggi
 
 3. Nella scheda **Impostazioni** selezionare Invia **copie** di conversazioni ed eventi di gruppo ai membri del gruppo se si desidera che i membri ricevano copie dei messaggi di gruppo e degli elementi del calendario nella propria posta in arrivo.
 
-4. Selezionare **Salva**.
+4. Seleziona **Salva**.
 
 ## <a name="let-people-outside-the-organization-email-the-group"></a>Consentire agli utenti esterni all'organizzazione di inviare un messaggio di posta elettronica al gruppo
 
@@ -78,7 +78,7 @@ Questa opzione è ideale se si desidera avere un indirizzo di posta elettronica 
 
 3. Nell'elenco gruppi dell'interfaccia di amministrazione selezionare il nome del gruppo che si desidera modificare e quindi nella scheda Impostazioni selezionare Consenti ai mittenti esterni di inviare il gruppo **tramite** posta **elettronica.**
     
-4. Selezionare **Salva**.
+4. Seleziona **Salva**.
 
 ## <a name="permanently-delete-a-microsoft-365-group"></a>Eliminare definitivamente un gruppo Microsoft 365 gruppo
 
@@ -103,7 +103,7 @@ Per verificare che il gruppo sia stato eliminato correttamente, eseguire di nuov
   
 ## <a name="related-articles"></a>Articoli correlati
 
-[Creare un Microsoft 365 gruppo](create-groups.md)
+[Creare un gruppo di Microsoft 365](create-groups.md)
 
 [Gestire l'accesso guest ai gruppi di Microsoft 365](https://support.microsoft.com/office/bfc7a840-868f-4fd6-a390-f347bf51aff6)
 

@@ -12,14 +12,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Informazioni su come configurare e usare un connettore Bloomberg DataParser 17a-4 per importare e archiviare i dati di Bloomberg in Microsoft 365.
-ms.openlocfilehash: 7fcc02384ce7bea6b9903fddef1256b97b8e340c
-ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
+ms.openlocfilehash: 2d4005468d7df7987d1794e8d61262c8fde70b5f
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53096420"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53454542"
 ---
-# <a name="set-up-a-connector-to-archive-bloomberg-data-preview"></a>Configurare un connettore per archiviare i dati bloomberg (anteprima)
+# <a name="set-up-a-connector-to-archive-bloomberg-data"></a>Configurare un connettore per archiviare i dati bloomberg
 
 Utilizzare [Bloomberg DataParser](https://www.17a-4.com/Bloomberg-dataparser/) da 17a-4 LLC per importare e archiviare i dati da Bloomberg alle cassette postali degli utenti nell'organizzazione Microsoft 365 locale. DataParser include un connettore Bloomberg configurato per acquisire elementi da un'origine dati di terze parti e importare tali elementi in Microsoft 365. Il connettore Bloomberg DataParser converte i dati bloomberg in un formato di messaggio di posta elettronica e quindi importa tali elementi nelle cassette postali degli utenti in Microsoft 365.
 

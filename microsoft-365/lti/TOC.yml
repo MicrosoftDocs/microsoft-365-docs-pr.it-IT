@@ -1,10 +1,10 @@
-- name: M365 Office LTI (Anteprima)
+- name: M365 Office LTI
   href: index.md
-- name: Usare Microsoft OneDrive LTI con Canvas (anteprima)
+- name: Usare Microsoft OneDrive LTI con Canvas
   href: onedrive-lti.md
-- name: Usare Microsoft Teams classi con Canvas (anteprima)
+- name: Usare Microsoft Teams classi con Canvas
   href: teams-classes-with-canvas.md
-- name: Usare Microsoft Teams riunioni con Canvas (anteprima)
+- name: Usare Microsoft Teams riunioni con Canvas
   href: teams-meetings-with-canvas.md
-- name: Usare Microsoft Teams con Blackboard Learn Ultra (anteprima)
+- name: Usare Microsoft Teams classi con Blackboard Learn Ultra
   href: teams-classes-with-blackboard.md

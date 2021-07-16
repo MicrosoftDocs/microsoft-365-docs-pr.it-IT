@@ -555,6 +555,44 @@
           href: record-versioning.md
         - name: Risorse per i requisiti normativi
           href: retention-regulatory-requirements.md
+- name: Gestire la governance delle app
+  items:
+    - name: Proteggere e gestire le app
+      href: app-governance-manage-app-protection-governance.md
+    - name: Introduzione alla governance delle app
+      href: app-governance-get-started.md
+    - name: Inviare feedback sulla governance delle app
+      href: app-governance-feedback.md
+    - name: Ottenere visibilità e informazioni dettagliate
+      items:
+        - name: Informazioni su visibilità e dati analitici
+          href: app-governance-visibility-insights-overview.md
+        - name: Introduzione
+          href: app-governance-visibility-insights-get-started.md
+        - name: Visualizzare le app
+          href: app-governance-visibility-insights-view-apps.md
+        - name: Determinare il profilo di conformità
+          href: app-governance-visibility-insights-compliance-posture.md
+    - name: Implementare i criteri delle app
+      items:
+        - name: Informazioni sui criteri delle applicazioni
+          href: app-governance-app-policies-overview.md
+        - name: Introduzione
+          href: app-governance-app-policies-get-started.md
+        - name: Creare criteri per le app
+          href: app-governance-app-policies-create.md
+        - name: Gestire i criteri delle app
+          href: app-governance-app-policies-manage.md
+    - name: Rilevare e risolvere le minacce delle app
+      items:
+        - name: Informazioni sul rilevamento e la correzione
+          href: app-governance-detect-remediate-overview.md
+        - name: Introduzione
+          href: app-governance-detect-remediate-get-started.md
+        - name: Analizzare gli avvisi di rilevamento delle anomalie
+          href: app-governance-anomaly-detection-alerts.md
+        - name: Risolvere le minacce dell’app
+          href: app-governance-detect-remediate-detect-threats.md
 - name: Gestione di eDiscovery
   items:
     - name: Soluzioni Microsoft 365

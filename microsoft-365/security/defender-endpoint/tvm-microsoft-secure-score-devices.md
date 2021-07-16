@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: f2c799d477c400482c16b09b4d8a5cdc01106dfa
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 13307d3205818d41e7b2219b4e3a4ed6e9f2d5bb
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934082"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53454793"
 ---
 # <a name="microsoft-secure-score-for-devices"></a>Punteggio di sicurezza Microsoft per dispositivi
 
@@ -32,7 +32,7 @@ ms.locfileid: "51934082"
 **Si applica a:**
 
 - [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Minaccia e gestione delle vulnerabilità](next-gen-threat-and-vuln-mgt.md)
+- [Gestione di minacce e vulnerabilità](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vuoi provare Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 
@@ -41,7 +41,7 @@ ms.locfileid: "51934082"
 >[!NOTE]
 > Il punteggio di configurazione fa ora parte gestione di minacce e vulnerabilità microsoft secure score per i dispositivi.
 
-Il punteggio per i dispositivi è visibile [nel dashboard gestione di minacce e vulnerabilità della](tvm-dashboard-insights.md) Microsoft Defender Security Center. Un punteggio microsoft sicuro più alto per i dispositivi significa che gli endpoint sono più resilienti dagli attacchi di minacce alla cybersecurity. Riflette lo stato di configurazione della sicurezza collettiva dei dispositivi nelle categorie seguenti:
+Il punteggio per i dispositivi è visibile [nel dashboard gestione di minacce e vulnerabilità del](tvm-dashboard-insights.md) Microsoft 365 Defender portale. Un punteggio microsoft sicuro più alto per i dispositivi significa che gli endpoint sono più resilienti dagli attacchi di minacce alla cybersecurity. Riflette lo stato di configurazione della sicurezza collettiva dei dispositivi nelle categorie seguenti:
 
 - Applicazione
 - Sistema operativo
@@ -57,13 +57,13 @@ Inoltra i segnali di Microsoft Defender for Endpoint, offrendo a Microsoft Secur
 
 Le modifiche potrebbero richiedere fino a poche ore per riflettere nel dashboard.
 
-1. Nel riquadro di spostamento passare a **Impostazioni**  >  **funzionalità avanzate** 
+1. Nel riquadro di spostamento, andare **a** Impostazioni  >  **Endpoint generali**  >    >  **Funzionalità avanzate** 
 
 2. Scorrere verso il basso **fino a Microsoft Secure Score** e attivare o disattivare l'impostazione su **Attivato.**
 
 3. Selezionare **Salva preferenze.**
 
-## <a name="how-it-works"></a>Come funziona
+## <a name="how-it-works"></a>Funzionamento
 
 >[!NOTE]
 > Microsoft Secure Score per i dispositivi attualmente supporta le configurazioni impostate tramite Criteri di gruppo. A causa dell'attuale supporto parziale di Intune, le configurazioni che potrebbero essere state impostate tramite Intune potrebbero risultare non configurate correttamente. Contattare l'amministratore IT per verificare lo stato di configurazione effettivo nel caso in cui l'organizzazione utilizzi Intune per la gestione sicura della configurazione.
@@ -83,15 +83,17 @@ Migliorare la configurazione della sicurezza corredando i problemi dall'elenco d
 
 2. Selezionare un elemento nell'elenco. Il riquadro a comparsa si aprirà con i dettagli relativi al suggerimento. Selezionare **Opzioni di correzione.**
 
-   ![Suggerimenti sulla sicurezza correlati ai controlli di sicurezza](images/tvm_security_controls.png)
+   :::image type="content" alt-text="Suggerimenti sulla sicurezza correlati ai controlli di sicurezza." source="images/security-controls.png":::
 
 3. Leggere la descrizione per comprendere il contesto del problema e le operazioni da eseguire. Selezionare una data di scadenza, aggiungere note e selezionare Esporta tutti i dati **dell'attività** di correzione in CSV in modo da poterli allegare a un messaggio di posta elettronica per il follow-up.
 
 4. **Invia richiesta**. Verrà visualizzato un messaggio di conferma che l'attività di correzione è stata creata.
-   ![Conferma creazione attività di correzione](images/tvm_remediation_task_created.png)
+
+   :::image type="content" alt-text="Conferma creazione attività di correzione." source="images/remediation-task-created.png":::
 
 5. Salvare il file CSV.
-   ![Salvare il file csv](images/tvm_save_csv_file.png)
+
+   :::image type="content" alt-text="Salvare il file csv." source="images/tvm_save_csv_file.png":::
 
 6. Inviare un messaggio di posta elettronica di follow-up all'amministratore IT e consentire la propagazione nel sistema del tempo assegnato per la correzione.
 
@@ -112,5 +114,5 @@ Migliorare la configurazione della sicurezza corredando i problemi dall'elenco d
 
 - [Panoramica delle minacce gestione delle vulnerabilità sicurezza](next-gen-threat-and-vuln-mgt.md)
 - [Dashboard](tvm-dashboard-insights.md)
-- [Punteggio di esposizione.](tvm-exposure-score.md)
+- [Punteggio di esposizione](tvm-exposure-score.md)
 - [Consigli sulla sicurezza](tvm-security-recommendation.md)

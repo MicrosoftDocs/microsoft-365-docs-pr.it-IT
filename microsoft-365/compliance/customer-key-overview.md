@@ -15,20 +15,20 @@ ms.collection:
 - m365initiative-compliance
 ms.custom: seo-marvel-apr2020
 description: In questo articolo verranno informazioni sul funzionamento della crittografia del servizio con customer key in Microsoft 365.
-ms.openlocfilehash: d12a5d2f80de11a69fc4a36146a511c5f9a306f8
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 9a8558a0cf36f2040614ca3ffb61e7ba9936d40f
+ms.sourcegitcommit: 84e70051bb61b1171cebfbabe500b4904dfac04f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52769450"
+ms.lasthandoff: 07/16/2021
+ms.locfileid: "53463962"
 ---
 # <a name="service-encryption-with-customer-key"></a>Crittografia del servizio con Customer Key
 
 Microsoft 365 fornisce la crittografia di base a livello di volume abilitata tramite BitLocker e Distributed Key Manager (DKM). Microsoft 365 offre un ulteriore livello di crittografia per il contenuto. Questo contenuto include i dati Exchange Online, Skype for Business, SharePoint Online, OneDrive for Business e Microsoft Teams.
 
-## <a name="how-service-encryption-bitlocker-and-customer-key-work-together"></a>Modalità di collaborazione tra crittografia BitLocker servizio e Chiave cliente
+## <a name="how-service-encryption-bitlocker-and-customer-key-work-together"></a>Modalità di collaborazione tra crittografia del servizio, BitLocker e Chiave cliente
 
-I dati vengono sempre crittografati a riposo nel servizio Microsoft 365 con BitLocker e DKM. Per ulteriori informazioni, vedere [How Exchange Online secures your email secrets](exchange-online-secures-email-secrets.md). Customer Key offre una protezione aggiuntiva dalla visualizzazione dei dati da parte di sistemi o personale non autorizzati e integra la crittografia BitLocker del disco nei data center Microsoft. La crittografia del servizio non ha lo scopo di impedire al personale Microsoft di accedere ai dati. Customer Key consente invece di soddisfare gli obblighi normativi o di conformità per il controllo delle chiavi radice. I servizi di Microsoft 365 vengono esplicitamente autorizzato a utilizzare le chiavi di crittografia per fornire servizi cloud a valore aggiunto, ad esempio eDiscovery, antimalware, protezione da posta indesiderata, indicizzazione della ricerca e così via.
+I dati vengono sempre crittografati a riposo nel servizio Microsoft 365 con BitLocker e DKM. Per ulteriori informazioni, vedere [How Exchange Online secures your email secrets](exchange-online-secures-email-secrets.md). Customer Key offre una protezione aggiuntiva dalla visualizzazione dei dati da parte di sistemi o personale non autorizzati e integra la crittografia del disco BitLocker nei data center Microsoft. La crittografia del servizio non ha lo scopo di impedire al personale Microsoft di accedere ai dati. Customer Key consente invece di soddisfare gli obblighi normativi o di conformità per il controllo delle chiavi radice. I servizi di Microsoft 365 vengono esplicitamente autorizzato a utilizzare le chiavi di crittografia per fornire servizi cloud a valore aggiunto, ad esempio eDiscovery, antimalware, protezione da posta indesiderata, indicizzazione della ricerca e così via.
 
 Customer Key è basato sulla crittografia del servizio e consente di fornire e controllare le chiavi di crittografia. Microsoft 365 quindi usa queste chiavi per crittografare i dati in stato di inaltere, come descritto nelle Condizioni per i [Servizi online (OST).](https://www.microsoft.com/licensing/product-licensing/products.aspx) Customer Key ti aiuta a rispettare gli obblighi di conformità perché controlli le chiavi di crittografia Microsoft 365 per crittografare e decrittografare i dati.
   
@@ -36,7 +36,7 @@ Customer Key migliora la capacità dell'organizzazione di soddisfare le esigenze
 
 ## <a name="customer-key-with-hybrid-deployments"></a>Customer Key con distribuzioni ibride
 
-Customer Key crittografa solo i dati in pausa nel cloud. Customer Key non funziona per proteggere le cassette postali e i file locali. È possibile crittografare i dati locali utilizzando un altro metodo, ad esempio BitLocker.
+Customer Key crittografa solo i dati in pausa nel cloud. Customer Key non funziona per proteggere le cassette postali e i file locali. Puoi crittografare i dati locali usando un altro metodo, ad esempio BitLocker.
 
 ## <a name="about-data-encryption-policies"></a>Informazioni sui criteri di crittografia dei dati
 
@@ -48,7 +48,7 @@ Un criterio di crittografia dei dati definisce la gerarchia di crittografia. Que
 - Teams multimediali (immagini, frammenti di codice, messaggi video, messaggi audio, immagini wiki)
 - Teams registrazioni di chiamate e riunioni archiviate in Teams archiviazione
 - Teams chat
-- Teams suggerimenti di chat di Cortana
+- Teams suggerimenti di chat da Cortana
 - Teams di stato
 - Informazioni sull'utente e sul segnale Exchange Online
 - Exchange Online cassette postali che non sono già crittografate dai DEP delle cassette postali
@@ -63,7 +63,7 @@ I DEP multi-carico di lavoro non crittografano i tipi di dati seguenti. Al contr
 - SharePoint e OneDrive for Business dati.
 - Microsoft Teams file e alcune registrazioni Teams chiamate e riunioni salvate in OneDrive for Business e SharePoint Online vengono crittografate tramite protezione esecuzione programmi SharePoint Online.
 - Altri Microsoft 365 carichi di lavoro, ad esempio Yammer e Planner, attualmente non supportati da Customer Key.
-- Teams Eventi live e domande&A in eventi live. Ad Teams, questo scenario è l'unico che non è crittografato da Customer Key usando Protezione esecuzione programmi con più carichi di lavoro.
+- Teams Dati degli eventi live.
 
 È possibile creare più criteri di protezione esecuzione per tenant, ma assegnare solo una protezione esecuzione programmi alla volta. Quando si assegna Protezione esecuzione programmi, la crittografia inizia automaticamente, ma richiede del tempo a seconda delle dimensioni del tenant.
 

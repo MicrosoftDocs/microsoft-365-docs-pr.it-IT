@@ -20,12 +20,12 @@ description: Gli amministratori possono scoprire come trovare e usare Defender p
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f7eab856f22ac1c2282e83897db6e3f93d4d97e6
-ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
+ms.openlocfilehash: e8bb03202139137adf55c4c10230b1c4e99253ba
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53083513"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53454722"
 ---
 # <a name="view-defender-for-office-365-reports-in-the-microsoft-365-defender-portal"></a>Visualizzare i report di Defender Office 365 nel Microsoft 365 Defender portale
 
@@ -191,11 +191,24 @@ Oltre ai report descritti in questo articolo, sono disponibili diversi altri rep
 |Report|Argomento|
 |---|---|
 |**Explorer** (Microsoft Defender per Office 365 Piano 2) o rilevamenti in tempo reale **(Microsoft** Defender per Office 365 Piano 1)|[Esplora minacce (e rilevamenti in tempo reale)](threat-explorer.md)|
-|**Report di sicurezza della** posta elettronica, ad esempio il report Mittenti e destinatari principali, il rapporto Spoofing della posta elettronica e il report Rilevamenti posta indesiderata.|[Visualizzare i report di sicurezza della posta elettronica nel portale Microsoft 365 Defender posta elettronica](view-email-security-reports.md)|
-|**Rapporti del flusso di** posta, ad esempio il rapporto inoltro, il rapporto sullo stato del flusso di posta e il rapporto Mittenti e destinatari principali.|[Rapporti del flusso di posta nella nuova Exchange di amministrazione](/exchange/monitoring/mail-flow-reports/mail-flow-reports)|
-|**Traccia URL per Cassaforte collegamenti** (solo PowerShell). L'output di questo cmdlet mostra i risultati delle azioni Cassaforte collegamenti negli ultimi sette giorni.|[Get-UrlTrace](/powershell/module/exchange/get-urltrace)|
-|**Risultati del traffico di posta per EOP e Microsoft Defender per Office 365** (solo PowerShell). L'output di questo cmdlet contiene informazioni su Domain, Date, Event Type, Direction, Action e Message Count.|[Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport)|
-|**Rapporti dettagli posta per EOP e Defender per Office 365** di posta elettronica (solo PowerShell). L'output di questo cmdlet contiene dettagli su file o URL dannosi, tentativi di phishing, rappresentazione e altre potenziali minacce nei messaggi di posta elettronica o nei file.|[Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|
+|Rapporti di sicurezza della posta elettronica che non richiedono Defender per Office 365|[Visualizzare i report di sicurezza della posta elettronica nel portale Microsoft 365 Defender posta elettronica](view-email-security-reports.md)|
+|Rapporti del flusso di posta nell Exchange ac (EAC)|[Rapporti del flusso di posta nella nuova Exchange di amministrazione](/exchange/monitoring/mail-flow-reports/mail-flow-reports)|
+|
+
+Cmdlet per la creazione di report di PowerShell:
+
+<br>
+
+****
+
+|Report|Argomento|
+|---|---|
+|Destinatari e mittenti principali|[Get-MailTrafficTopReport](/powershell/module/exchange/get-mailtraffictopreport) <p> [Get-MailTrafficSummaryReport](/powershell/module/exchange/get-mailtrafficsummaryreport)|
+|Malware principale|[Get-MailTrafficSummaryReport](/powershell/module/exchange/get-mailtrafficsummaryreport)|
+|Traffico di posta|[Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <p> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|
+|Collegamenti sicuri|[Get-SafeLinksAggregateReport](/powershell/module/exchange/get-safelinksaggregatereport) <p> [Get-SafeLinksDetailReport](/powershell/module/exchange/get-safelinksdetailreport)|
+|Utenti compromessi|[Get-CompromisedUserAggregateReport](/powershell/module/exchange/get-compromiseduseraggregatereport) <p> [Get-CompromisedUserDetailReport](/powershell/module/exchange/get-compromiseduserdetailreport)|
+|Stato del flusso di posta|[Get-MailflowStatusReport](/powershell/module/exchange/get-mailflowstatusreport)|
 |
 
 ## <a name="what-permissions-are-needed-to-view-the-defender-for-office-365-reports"></a>Quali autorizzazioni sono necessarie per visualizzare defender per Office 365 report?
@@ -204,8 +217,8 @@ Per visualizzare e utilizzare i report descritti in questo articolo, è necessar
 
 - **Gestione organizzazione**
 - **Amministratore della sicurezza**
-- **Lettore sicurezza**
-- **Lettore globale**
+- **Ruolo con autorizzazioni di lettura per la sicurezza**
+- **Ruolo con autorizzazioni di lettura globali**
 
 Per altre informazioni, vedere [Autorizzazioni nel portale di Microsoft 365 Defender](permissions-microsoft-365-security-center.md).
 

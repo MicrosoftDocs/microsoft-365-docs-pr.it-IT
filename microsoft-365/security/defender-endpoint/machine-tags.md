@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ffe7d13ca0943e8927d0d9ce663527fedf880e48
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 83dd2483b93b2f4fe520973ce05346f59baf2f28
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187590"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53453584"
 ---
 # <a name="create-and-manage-device-tags"></a>Creare e gestire tag di dispositivi
 
@@ -58,11 +58,11 @@ Per aggiungere tag del dispositivo usando l'API, vedere [Aggiungere o rimuovere 
 
 2. Selezionare **Gestisci tag** dalla riga Azioni di risposta.
 
-    ![Immagine del pulsante Gestisci tag](images/manage-tags.png)
+    :::image type="content" alt-text="Immagine del pulsante Gestisci tag." source="images/manage-tags-option.png":::
 
 3. Digitare per trovare o creare tag
 
-    ![Immagine dell'aggiunta di tag in un dispositivo1](images/new-tags.png)
+    :::image type="content" alt-text="Immagine dell'aggiunta di tag in un dispositivo1." source="images/create-new-tag.png":::
 
 I tag vengono aggiunti alla visualizzazione del dispositivo e verranno visualizzati anche nella **visualizzazione elenco** Dispositivi. Puoi quindi usare il filtro **Tag** per visualizzare l'elenco pertinente dei dispositivi.
 
@@ -72,7 +72,7 @@ I tag vengono aggiunti alla visualizzazione del dispositivo e verranno visualizz
 
 È inoltre possibile eliminare i tag da questa visualizzazione.
 
-![Immagine dell'aggiunta di tag in un dispositivo2](images/more-manage-tags.png)
+:::image type="content" alt-text="Immagine dell'aggiunta di tag in un dispositivo2." source="images/new-tag-label-display.png":::
 
 ## <a name="add-device-tags-by-setting-a-registry-key-value"></a>Aggiungere tag dispositivo impostando un valore di chiave del Registro di sistema
 

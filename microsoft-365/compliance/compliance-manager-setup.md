@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Impostare le autorizzazioni e i ruoli utente di Microsoft Compliance Manager e configurare test automatizzati delle azioni. Gestire la cronologia utente e filtrare la visualizzazione del dashboard.
-ms.openlocfilehash: 7e29dd0eff7b05cb55a1fb0e071632353dadbdf8
-ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
+ms.openlocfilehash: 4791948f6fe3ca6df620a0e93851dbf4e11edd98
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/26/2021
-ms.locfileid: "53148903"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53454018"
 ---
 # <a name="get-started-with-compliance-manager"></a>Introduzione a Compliance Manager
 
@@ -49,32 +49,30 @@ Compliance Manager usa un modello di autorizzazione RBAC (Role-Based Access Cont
 
 ### <a name="where-to-set-permissions"></a>Dove impostare le autorizzazioni
 
-La persona che ha il ruolo di amministratore globale per l'organizzazione può impostare le autorizzazioni utente per Compliance Manager. Le autorizzazioni possono essere impostate nel Office 365 Sicurezza & centro conformità e in Azure Active Directory (Azure AD).
+La persona che ha il ruolo di amministratore globale per l'organizzazione può impostare le autorizzazioni utente per Compliance Manager. Le autorizzazioni possono essere impostate nella Centro conformità Microsoft 365 e in Azure Active Directory (Azure AD).
 
 > [!NOTE]
 > I clienti negli ambienti DoD (High and Department of Defense) di Us Government Community (GCC) possono impostare solo le autorizzazioni utente e i ruoli per Compliance Manager in Azure AD. Vedi di seguito per le istruzioni di Azure AD e le definizioni dei tipi di ruolo.
 
-Per impostare le autorizzazioni e assegnare Office 365 ruoli nel Centro sicurezza & conformità, attenersi alla procedura seguente:
+Per impostare le autorizzazioni e assegnare ruoli nella Centro conformità Microsoft 365, eseguire la procedura seguente:
 
-1. Passare al Centro [Office 365 sicurezza & e](https://protection.office.com/) selezionare **Autorizzazioni** nel riquadro di spostamento a sinistra.
+1. Vai al riquadro [Centro conformità Microsoft 365](https://compliance.microsoft.com/compliancemanager) e seleziona **Autorizzazioni** nel riquadro di spostamento a sinistra.
 
-2. Individuare il gruppo di ruoli a cui si desidera aggiungere uno o più utenti e selezionare la casella a sinistra del nome del gruppo. Vedere [l'elenco dei ruoli e delle funzioni correlate di seguito.](#role-types) I nomi dei gruppi di ruoli imitano il nome del ruolo.
+2. **Nell'elenco a discesa Centro** conformità selezionare **Ruoli**. 
 
-3. Nel riquadro a comparsa del gruppo selezionare **Modifica nell'intestazione** Membri. 
+3. Individuare il gruppo di ruoli a cui si desidera aggiungere uno o più utenti e selezionare la casella a sinistra del nome del gruppo. Vedere [l'elenco dei ruoli e delle funzioni correlate di seguito.](#role-types) I nomi dei gruppi di ruoli imitano il nome del ruolo.
 
-4. Selezionare **Scegli membri**. Verrà visualizzata un'altra finestra a comparsa.
+4. Nel riquadro a comparsa del gruppo selezionare **Modifica nell'intestazione** Membri. 
 
-5. Selezionare **+ Aggiungi** per scegliere uno o più utenti da aggiungere al gruppo.
+5. Selezionare **Scegli membri**. Verrà visualizzata un'altra finestra a comparsa.
 
-6. Seleziona la casella di controllo accanto ai nomi che vuoi aggiungere, quindi seleziona il **pulsante** Aggiungi nella parte inferiore.
+6. Selezionare **+ Aggiungi** per scegliere uno o più utenti da aggiungere al gruppo.
 
-7. Al termine dell'assegnazione degli utenti, selezionare **Fine,** quindi **salva** e **chiudi.**
+7. Seleziona la casella di controllo accanto ai nomi che vuoi aggiungere, quindi seleziona il **pulsante** Aggiungi nella parte inferiore.
 
-##### <a name="more-about-the-office-365-security--compliance-center"></a>Altre informazioni sul Centro Office 365 sicurezza & Conformità
+8. Al termine dell'assegnazione degli utenti, selezionare **Fine,** quindi **salva** e **chiudi.**
 
-Per ulteriori informazioni [sulle autorizzazioni, vedere Office 365 Sicurezza & Centro conformità.](../security/office-365-security/permissions-in-the-security-and-compliance-center.md)
-
-Se non si dispone dell'accesso al Centro sicurezza e conformità di Office 365 o se è necessario accedere alla versione classica di Compliance Manager in Microsoft Service Trust Portal, le impostazioni di amministrazione nel Service Trust Portal forniscono un altro modo per assegnare ruoli[(](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#assigning-compliance-manager-roles-to-users)visualizzare le istruzioni ). Tenere presente che tali ruoli sono più limitati nelle loro funzionalità.
+Se è necessario accedere alla versione classica di Compliance Manager in Microsoft Service Trust Portal, le impostazioni di amministrazione nel Service Trust Portal forniscono un altro modo per assegnare i ruoli ([visualizzare le istruzioni](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#assigning-compliance-manager-roles-to-users)). Tenere presente che tali ruoli sono più limitati nelle loro funzionalità.
 
 ##### <a name="more-about-azure-ad"></a>Altre informazioni su Azure AD
 
@@ -187,7 +185,7 @@ Il report riflette lo stato dell'azione di miglioramento alla data di creazione.
 8. Al termine della riassegnazione, nel riquadro a comparsa verrà visualizzato un messaggio di conferma che conferma che tutte le azioni di miglioramento dell'utente precedente sono state riassegnate al nuovo utente. Se si riceve un avviso di errore di riassegnazione, chiudere la finestra e riprovare. Per chiudere il riquadro a comparsa, selezionare **Fatto.**
 
 Il nuovo assegnatare riceve un messaggio di posta elettronica assegnato a un'azione di miglioramento. Il messaggio di posta elettronica contiene un collegamento diretto alla pagina dei dettagli dell'azione di miglioramento.
- 
+
  > [!NOTE]
 > Se si riassegna un'azione con un aggiornamento in sospeso, il collegamento diretto all'azione nel messaggio di posta elettronica di riassegnazione si interromperà se l'aggiornamento viene accettato dopo la riassegnazione. È possibile risolvere il problema assegnando nuovamente l'azione all'utente dopo l'accettazione dell'aggiornamento. Ulteriori informazioni sugli [aggiornamenti per le azioni di miglioramento.](compliance-manager-improvement-actions.md#accepting-updates-to-improvement-actions)
 
@@ -215,7 +213,7 @@ Per eliminare la cronologia di un utente, eseguire la procedura seguente:
 
 Il dashboard di Compliance Manager è progettato per fornire una panoramica della posizione di conformità corrente.
 
-![Compliance Manager - dashboard](../media/compliance-manager-dashboard.png "Dashboard di Compliance Manager")
+:::image type="content" alt-text="Compliance Manager - dashboard." source="../media/compliance-manager-dashboard.png" lightbox="../media/compliance-manager-dashboard.png":::
 
 ### <a name="overall-compliance-score"></a>Punteggio di conformità complessivo
 

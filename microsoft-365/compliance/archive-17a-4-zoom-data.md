@@ -12,14 +12,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Informazioni su come configurare e usare un connettore Zoom DataParser da 17a a 4 per importare e archiviare i dati di Zoom in Microsoft 365.
-ms.openlocfilehash: dffececb0719999abf19ea58eab1a52afdb3daea
-ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
+ms.openlocfilehash: 1c70099efa17b5ff6c1c4dfcd71c6bf6790535c8
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53097067"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53453946"
 ---
-# <a name="set-up-a-connector-to-archive-zoom-data-preview"></a>Configurare un connettore per archiviare i dati di Zoom (anteprima)
+# <a name="set-up-a-connector-to-archive-zoom-data"></a>Configurare un connettore per archiviare i dati di Zoom
 
 Utilizzare [Zoom DataParser](https://www.17a-4.com/dataparser/) da 17a-4 LLC per importare e archiviare i dati dalla piattaforma Zoom alle cassette postali degli utenti nell'Microsoft 365 organizzazione. DataParser include un connettore zoom configurato per acquisire elementi da un'origine dati di terze parti e importare tali elementi in Microsoft 365. Il connettore Zoom DataParser converte i dati di Zoom in un formato di messaggio di posta elettronica e quindi importa tali elementi nelle cassette postali degli utenti in Microsoft 365.
 

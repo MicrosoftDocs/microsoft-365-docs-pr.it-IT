@@ -1,5 +1,5 @@
 ---
-title: Integrare Microsoft Teams classi con Blackboard Learn Ultra
+title: Usare Microsoft Teams classi con Blackboard Learn Ultra
 ms.author: v-cichur
 author: cichur
 manager: serdars
@@ -12,13 +12,13 @@ f1.keywords:
 ms.collection: M365-modern-desktop
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
-description: Integrare Microsoft Teams classi con Blackboard Learn Ultra
-ms.openlocfilehash: da98fae3fa5d6be2513147be58747512bea99e16
-ms.sourcegitcommit: 8b0718f5607ab509092cb80bda854010d885c54f
+description: Usare Microsoft Teams classi con Blackboard Learn Ultra
+ms.openlocfilehash: a97d5bf56e1e045ccb0ef7cc66ecef7dfba4041a
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53314492"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53454639"
 ---
 # <a name="use-microsoft-teams-classes-with-blackboard-learn-ultra"></a>Usare Microsoft Teams classi con Blackboard Learn Ultra
 
@@ -27,15 +27,15 @@ Il lavoro in team è alla base di ogni organizzazione moderna. Promuovendo la co
 Le classi possono includere conversazioni in tempo reale, riunioni video o interazioni asincrone. Puoi aggiungere esperienze di condivisione e creazione di file per gli studenti, tutte in un'unica posizione. Microsoft Teams con Learn Ultra ridefinire le dinamiche dell'insegnamento e il significato dell'apprendimento efficace.
 
 > [!IMPORTANT]
-> Assicurarsi di aver configurato correttamente il campo E-mail dell'istituto nel sistema sis (Sis) degli studenti `help.blackboard.com/Learn/Administrator/SaaS/Integrations/Student\_Information\_System/SIS\_Planning`
+> Assicurarsi di aver configurato correttamente il campo E-mail dell'istituto nel sistema [sis (Sis)](https://help.blackboard.com/Learn/Administrator/SaaS/Integrations/Student_Information_System/SIS_Planning) degli studenti
 >
->L'Microsoft Teams delle classi di autenticazione si basa sul campo di posta elettronica dell'istituto nel SIS per eseguire il mapping al nome dell'entità utente (UPN) del Microsoft Azure Active Directory (AAD) corretto. Se non è stato effettuato il provisioning dei messaggi di posta elettronica dell'istituto, per impostazione predefinita verrà utilizzato il messaggio di posta elettronica esistente. È consigliabile impostare questo campo per ogni utente per assicurarsi che i dati siano sincronizzati correttamente e che non vi sia alcun conflitto di dati di posta elettronica tra Microsoft AAD e Blackboard Learn Ultra.
+>L Microsoft Teams integrazione delle classi di Microsoft Azure Active Directory si basa sul campo di posta elettronica dell'istituto nel SIS per il mapping al nome del principio utente (UPN) del Microsoft Azure Active Directory [(AAD) corretto.](/azure/active-directory/hybrid/howto-troubleshoot-upn-changes) Se non è stato effettuato il provisioning dei messaggi di posta elettronica dell'istituto, per impostazione predefinita verrà utilizzato il messaggio di posta elettronica esistente. È consigliabile impostare questo campo per ogni utente per assicurarsi che i dati siano sincronizzati correttamente e che non vi sia alcun conflitto di dati di posta elettronica tra AAD e Blackboard Learn Ultra.
 >
 > Se questo campo non è stato impostato in modo appropriato nel mapping SIS, l'integrazione continuerà a funzionare, ma gli utenti potrebbero non essere visualizzati nelle classi Teams create e potrebbero verificarsi errori.
 
 ## <a name="supporting-institutional-data-mapping--institution-email-sis-field"></a>Supporto del mapping dei dati istituzionali - Campo SIS di posta elettronica dell'istituto
 
-Come parte dell'evoluzione con le integrazioni dei provider  cloud, Blackboard Learn Ultra ha creato un nuovo campo e-mail dell'istituto, sia nell'integrazione di Student Information System Framework che nelle API REST pubbliche, consentendo agli istituti di gestire in modo efficace il processo di sincronizzazione dei dati tra Blackboard Learn Ultra e Microsoft AAD.
+Come parte dell'evoluzione con le integrazioni dei provider  cloud, Blackboard Learn Ultra ha creato un nuovo campo e-mail dell'istituto, sia nell'integrazione di Student Information System Framework che nelle API REST pubbliche, consentendo agli istituti di gestire in modo efficace il processo di sincronizzazione dei dati tra Blackboard Learn Ultra e AAD.
 
 ### <a name="what-does-the-institution-email-mean-and-what-does-it-support"></a>Cosa significa e cosa supporta l'e-mail dell'istituto?
 
@@ -59,6 +59,8 @@ Il **mapping del campo e-mail** institution è ora disponibile per tutti i tipi 
 L Microsoft Teams di integrazione delle classi di corsi è disponibile solo per i corsi **Di visualizzazione corso Ultra.** L'istituto deve completare questi requisiti per usarlo:
 
 - Avere Blackboard Learn Ultra Learn SaaS con l'opzione Di spostamento di base ultra abilitata
+
+  ![un esempio della funzionalità è abilitato nei corsi](media/feature-availability.png)
 
 - Abilita LTI per l'uso nei corsi.
 
@@ -157,6 +159,10 @@ Se si sceglie di approvare l'app Azure Learn Ultra Teams Classes di Blackboard p
 > [!NOTE]
 > Devi sostituire **{Tenant} con il** tuo ID tenant Microsoft Azure istituzionale specifico.
 
+Vedrai una finestra delle autorizzazioni che spiega che stai dando l'autorizzazione a Blackboard Learn Ultra per accedere a Microsoft Teams.
+
+![finestra delle autorizzazioni per Microsoft e Blackboard](media/permissions1.png)
+
 ### <a name="after-configuring-the-lti-applications"></a>Dopo aver configurato le applicazioni LTI
 
 1. Nel Pannello **di amministrazione,** accedere a **Strumenti e utilità** e selezionare Microsoft Teams Amministratore **integrazione.**
@@ -172,3 +178,5 @@ Se si sceglie di approvare l'app Azure Learn Ultra Teams Classes di Blackboard p
    - Se il consenso non è stato approvato, seguire la procedura descritta per generare l'URL per il consenso e inviarlo all'amministratore globale Microsoft 365 per l'approvazione.
 
 5. Dopo aver confermato l'approvazione, selezionare **Riprova** per confermare e quindi selezionare **Invia**.
+
+   ![Finestra di dialogo che indica che l'accesso è stato bloccato](media/blocked-access.png)

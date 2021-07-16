@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d4f62acde4e7d790c7a7c8635f51c99f0823687d
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 49bd90d8a082f55622e54976cc8fc78229d8c646
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52842771"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53453538"
 ---
 # <a name="create-and-manage-device-groups"></a>Creazione e gestione di gruppi di dispositivi
 
@@ -59,7 +59,7 @@ Come parte del processo di creazione di un gruppo di dispositivi, dovrai:
 
 ## <a name="create-a-device-group"></a>Creare un gruppo di dispositivi
 
-1. Nel riquadro di spostamento, **selezionare** Impostazioni  >  **gruppi di dispositivi**.
+1. Nel riquadro di spostamento, **selezionare** Impostazioni  >  **endpoint**  >  **Autorizzazioni Gruppi** di  >  **dispositivi**.
 
 2. Fai **clic su Aggiungi gruppo di dispositivi.**
 

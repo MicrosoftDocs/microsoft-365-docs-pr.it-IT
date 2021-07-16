@@ -22,12 +22,12 @@ description: Usare le etichette di riservatezza di Microsoft Information Protect
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 972282713e21c0e1f99a66e696de32531e68d4a7
-ms.sourcegitcommit: 8b79d276f71f22bcaeb150e78e35101cb1ae0375
+ms.openlocfilehash: 130b264735d00083116a5cf18cc0c4bf6b1a764c
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53114777"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53453634"
 ---
 # <a name="learn-about-sensitivity-labels"></a>Informazioni sulle etichette di riservatezza
 
@@ -184,13 +184,16 @@ Quando si configura un criterio di etichetta, è possibile:
 
 - **Specificare un'etichetta predefinita** per nuovi documenti, messaggi di posta elettronica senza etichetta e nuovi contenitori (dopo aver [abilitato etichette di riservatezza per Microsoft Teams, Gruppi di Microsoft 365 e siti SharePoint](sensitivity-labels-teams-groups-sites.md)). È possibile specificare la stessa etichetta per tutti e tre i tipi di elementi oppure etichette diverse. Quando si specifica un'etichetta predefinita per i documenti, il client di etichettatura unificata di Azure Information Protection la applica anche ai documenti esistenti senza etichetta. Gli utenti possono sempre modificare l'etichetta predefinita, se non è quella giusta per il documento o la posta elettronica.
     
+    > [!IMPORTANT]
+    > Quando sono presenti [etichette secondarie](#sublabels-grouping-labels), prestare attenzione a non configurare l'etichetta padre come etichetta predefinita.
+    
     Considerare l'uso di un'etichetta predefinita per impostare un livello di impostazioni di sicurezza di base da applicare a tutto il contenuto. Tuttavia, in mancanza di formazione per gli utenti e di altri controlli, questa impostazione può anche risultare nell'applicazione di etichette non corrette. In genere non è consigliabile selezionare un'etichetta che applica la crittografia come etichetta predefinita dei documenti. Ad esempio, molte organizzazioni devono inviare e condividere documenti con utenti esterni che potrebbero non avere app che supportano la crittografia o che potrebbero non usare un  account che può essere autorizzato. Per altre informazioni su questo scenario, vedere [Condivisione di documenti crittografati con utenti esterni](sensitivity-labels-office-apps.md#sharing-encrypted-documents-with-external-users).
 
 - **Richiedere una motivazione per la modifica di un'etichetta.** Se un utente prova a rimuovere un'etichetta o a sostituirla con un'etichetta che ha un numero d'ordine inferiore, è possibile richiedere all'utente di fornire una motivazione per eseguire questa operazione. Ad esempio, un utente apre un documento con l'etichetta Riservato (numero d'ordine 3) e sostituisce tale etichetta con un'altra denominata Pubblico (numero d'ordine 1). Per le app Office, la richiesta di giustificazione viene attivata per ogni sessione dell'app quando si usa l'etichettatura predefinita e per ogni file quando si usa il client di etichettatura unificata Azure Information Protection. Gli amministratori possono leggere il motivo della motivazione insieme alla modifica dell'etichetta in [Esplora attività](data-classification-activity-explorer.md).
 
     ![Finestra in cui gli utenti immettono una motivazione](../media/Sensitivity-label-justification-required.png)
 
-- **Richiedere agli utenti di applicare un'etichetta** per documenti e messaggi di posta elettronica, solo documenti e per contenitori. Questa opzione, nota anche come etichettatura obbligatoria, assicura l'applicazione di un'etichetta prima che gli utenti possano salvare documenti, inviare messaggi di posta elettronica e creare nuovi gruppi o siti.
+- **Richiedere agli utenti di applicare un'etichetta** per documenti e messaggi di posta elettronica, solo documenti, per contenitori e contenuti di Power BI. Questa opzione, nota anche come etichettatura obbligatoria, assicura l'applicazione di un'etichetta prima che gli utenti possano salvare documenti, inviare messaggi di posta elettronica, creare nuovi gruppi o siti e quando gli utenti utilizzano contenuti non etichettati per Power BI.
     
     Per i documenti e i messaggi di posta elettronica, l'etichetta può essere assegnata manualmente dall'utente, automaticamente in seguito a una condizione configurata oppure assegnata per impostazione predefinita ( l'opzione per l'etichetta predefinita descritta in precedenza). Esempio di messaggio di richiesta mostrato in Outlook quando un utente deve assegnare un'etichetta:
 
@@ -199,6 +202,8 @@ Quando si configura un criterio di etichetta, è possibile:
     Per altre informazioni sull'etichettatura obbligatoria per documenti e posta elettronica, vedere [Richiedere agli utenti di applicare un'etichetta alla posta elettronica e ai documenti](sensitivity-labels-office-apps.md#require-users-to-apply-a-label-to-their-email-and-documents).
     
     Per i contenitori, l'etichetta deve essere assegnata al momento della creazione del gruppo o del sito.
+    
+    Per ulteriori informazioni sull'etichettatura obbligatoria per Power BI, vedere [Criterio di etichetta obbligatoria per Power BI](/power-bi/admin/service-security-sensitivity-label-mandatory-label-policy).
     
     Valutare l'uso di questa opzione per ampliare la portata dell'etichettatura. Tuttavia, in mancanza di formazione per gli utenti, queste impostazioni possono risultare nell'applicazione di etichette non corrette. Inoltre, a meno che non si imposti anche un'etichetta corrispondente predefinita, l'etichettatura obbligatoria può infastidire gli utenti con messaggi di richiesta frequenti.
 

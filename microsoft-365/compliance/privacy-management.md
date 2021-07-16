@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: La gestione della privacy Microsoft offre soluzioni per la valutazione dei dati personali archiviati nell'organizzazione in Microsoft 365 e consente di identificare e correggere i rischi per la privacy.
-ms.openlocfilehash: 4f98a5c867b232e3eca298a163fe4b6b4855f7a9
-ms.sourcegitcommit: 022d9d91263994c48efcebe08a84319573dc3a8c
+ms.openlocfilehash: df3fa07271321d6bc1fedb4e0d06b40b3483b238
+ms.sourcegitcommit: 9856f86532bdcf0befbcdbdb7c6dc6bf89fe63b5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53378529"
+ms.lasthandoff: 07/16/2021
+ms.locfileid: "53455386"
 ---
 # <a name="microsoft-privacy-management-preview"></a>Gestione della privacy Microsoft (anteprima)
 
@@ -70,7 +70,7 @@ In conformità a determinate normative sulla privacy, ad esempio il Regolamento 
 
 La gestione della privacy Microsoft 365 può aiutarti a gestire queste richieste tramite la soluzione di richiesta dei diritti dell'oggetto. Offre funzionalità di automazione e flusso di lavoro che consentono di cercare i dati dell'oggetto archiviati in Microsoft 365, esaminare i risultati, selezionare i file appropriati e generare report. Lungo il percorso, è possibile collaborare in modo sicuro con altri esperti dell'organizzazione per completare la richiesta.
 
-Si noti che questa soluzione di richiesta dei diritti dell'oggetto offre funzionalità che vanno oltre la soluzione DSR (Data Subject Requests) originale nel Centro conformità e non esiste alcuna connessione o condivisione di flussi di lavoro tra i due. La pagina DSR legacy verrà ritirata in un secondo momento.
+Si noti che questa soluzione di richiesta dei diritti dell'oggetto offre funzionalità che vanno oltre la soluzione DSR (Data Subject Requests) originale nel Centro conformità e non esiste alcuna connessione o condivisione di flussi di lavoro tra i due.
 
 Per ulteriori informazioni, vedere [Manage subject rights requests](privacy-management-subject-rights-requests.md).
 

@@ -14,18 +14,18 @@ search.appverid:
 - MOE150
 - MET150
 description: Determinare il profilo di conformità dell'app.
-ms.openlocfilehash: 3d7cac319c31bac40a3aad2f6b9a4c16303f6a20
-ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
+ms.openlocfilehash: 152f68e8fe0e7d7340d2e048bc73684bc079386f
+ms.sourcegitcommit: 2fd60871975d61e60d4827b36cd689021fd2a4c8
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "53420125"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53438025"
 ---
 # <a name="determine-your-app-compliance-posture"></a>Determinare il profilo di conformità dell'app
 
 >*[Indicazioni per l'assegnazione di licenze di Microsoft 365 per sicurezza e conformità](https://aka.ms/ComplianceSD).*
 
-La governance delle app di Microsoft consente di valutare rapidamente il profilo di conformità delle app di terze parti e il relativo accesso ai dati nel tenant di Microsoft 365 dalla pagina Panoramica della governance delle app nel [Centro conformità Microsoft 365](https://compliance.microsoft.com/appgovernance).
+La governance delle app di Microsoft consente di valutare rapidamente il profilo di conformità delle app di terze parti e il relativo accesso ai dati nel tenant di Microsoft 365 dalla pagina Panoramica della governance delle app nel [Centro conformità Microsoft 365](https://aka.ms/appgovernance).
 
 ![La pagina Panoramica della governance delle app nel Centro conformità Microsoft 365](..\media\manage-app-protection-governance\mapg-cc-overview.png)
 
@@ -54,7 +54,7 @@ In questa pagina puoi visualizzare:
 
 - Per l’accesso ai dati e alle risorse:
 
-  - L’accesso ai dati dell'API dell'applicazione negli ultimi 90 giorni
-  - L’utilizzo complessivo delle risorse principali negli ultimi 90 giorni
+  - Totale dei dati a cui accedono le app nel tenant tramite API Graph nei tre mesi di calendario correnti e precedenti. (Attualmente include solo l'utilizzo del caricamento e del download di Posta di Outlook e file)
+  - Consumo dati nei tre mesi di calendario correnti e precedenti, suddivisi per tipo di risorsa. (Attualmente include solo l'utilizzo del caricamento e del download di Posta di Outlook e file)
 
   Da queste informazioni è possibile determinare il verificarsi di picchi anomali relativi all'accesso ai dati nel tenant di Microsoft 365.

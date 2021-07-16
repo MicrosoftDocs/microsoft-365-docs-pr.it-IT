@@ -12,14 +12,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Informazioni su come configurare e usare un connettore dati CellTrust SL2 per importare e archiviare i dati delle comunicazioni mobili.
-ms.openlocfilehash: 0929a92978f9b48d40153b3cc7328e5e05b54fd0
-ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
+ms.openlocfilehash: 191160921c9e949aa7b82520d72dc7a18bfb26ef
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53097070"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53453973"
 ---
-# <a name="archive-data-from-celltrust-sl2-to-microsoft-365-preview"></a>Archiviare i dati da CellTrust SL2 a Microsoft 365 (anteprima)
+# <a name="archive-data-from-celltrust-sl2-to-microsoft-365"></a>Archiviare i dati da CellTrust SL2 a Microsoft 365
 
 CellTrust SL2 acquisisce i dati delle comunicazioni mobili e si integra con le tecnologie di archiviazione leader per soddisfare i requisiti di individuazione elettronica per normative come FINRA, HIPAA, FOIA e TCPA. Il connettore dati SL2 importa gli elementi di comunicazione mobile Microsoft 365. In questo articolo viene descritto il processo di integrazione di SL2 con Microsoft 365 utilizzando cellTrust SL2 Data Connector per l'archiviazione. Il completamento di questo processo presuppone che tu abbia sottoscritto il servizio CellTrust SL2 e abbia familiarità con l'architettura SL2. Per informazioni su SL2, vedere <www.celltrust.com>.
 
@@ -99,7 +99,7 @@ L'ultimo passaggio consiste nel mappare gli utenti e completare la configurazion
 
 Per informazioni dettagliate sulla configurazione di un connettore dati CellTrust SL2, vedere la pagina [CellTrust Customer Support.](https://www.celltrust.com/contact-us/#support)
 
-## <a name="more-information"></a>Ulteriori informazioni
+## <a name="more-information"></a>Altre informazioni
 
 - Un amministratore di dominio può configurare un connettore per il dominio o qualsiasi unità organizzativa in tale dominio. Se si utilizza l'account amministratore dell'unità organizzativa, è possibile configurare solo un connettore per tale unità organizzativa specifica.
 

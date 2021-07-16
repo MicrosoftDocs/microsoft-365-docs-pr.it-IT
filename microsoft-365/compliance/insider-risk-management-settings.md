@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 1dd61570a0695124fdd675241535dec7d288a627
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 4e4edb24d0cc63e2cd014d4b16b0aabaa274c4d3
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53226384"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53454042"
 ---
 # <a name="get-started-with-insider-risk-management-settings"></a>Introduzione alle impostazioni di gestione dei rischi insider
 
@@ -241,7 +241,7 @@ I campi e i valori seguenti vengono esportati per gli avvisi di gestione dei ris
 |:------------------|:----------------|
 | AlertType | Il tipo dell'avviso è *Personalizzato.*  |
 | AlertId | GUID dell'avviso. Gli avvisi per la gestione dei rischi insider sono modificabili. Quando lo stato dell'avviso cambia, viene generato un nuovo registro con lo stesso AlertID. Questo AlertID può essere usato per correlare gli aggiornamenti per un avviso. |
-| Categoria | La categoria dell'avviso è *InsiderRiskManagement.* Questa categoria può essere usata per distinguere questi avvisi da altri avvisi di sicurezza & conformità. |
+| Category | La categoria dell'avviso è *InsiderRiskManagement.* Questa categoria può essere usata per distinguere questi avvisi da altri avvisi di sicurezza & conformità. |
 | Commenti | Commenti predefiniti per l'avviso. I valori *sono Nuovo avviso* (registrato quando viene creato un avviso) e Avviso *aggiornato* (registrato quando è presente un aggiornamento di un avviso). Utilizzare AlertID per correlare gli aggiornamenti per un avviso. |
 | Dati | I dati dell'avviso includono l'ID utente univoco, il nome dell'entità utente e la data e l'ora (UTC) quando l'utente è stato attivato in un criterio. |
 | Nome | Nome dei criteri per i criteri di gestione dei rischi insider che hanno generato l'avviso. |
@@ -268,7 +268,9 @@ Gli utenti dell'organizzazione possono avere livelli di rischio diversi a second
 
 ![Impostazioni del gruppo di utenti con priorità di gestione dei rischi Insider](../media/insider-risk-settings-priority-users.png)
 
-Ad esempio, è necessario proteggere da perdite di dati per un progetto estremamente riservato in cui gli utenti hanno accesso alle informazioni riservate. Si sceglie di creare *un gruppo di Project* *utenti* con priorità Riservato per gli utenti dell'organizzazione che lavorano a questo progetto. Utilizzando la procedura  guidata dei criteri e il modello di criteri Perdite di dati per utenti con priorità, è possibile creare un nuovo criterio e assegnare il gruppo *utenti* con priorità Utenti Project riservato al criterio. Le attività esaminate dal criterio per i membri del gruppo di utenti con priorità Project Riservato gli utenti sono più sensibili ai rischi e le attività di questi utenti saranno più propense *a* generare un avviso e a ricevere avvisi con livelli di gravità più elevati.
+Invece di essere aperti alla revisione da parte di tutti gli analisti e gli investigatori, i gruppi di utenti con priorità potrebbero anche dover limitare le attività di revisione a utenti specifici o gruppi di ruoli di rischio insider. È possibile scegliere di assegnare singoli utenti e gruppi di ruoli per esaminare utenti, avvisi, casi e report per ogni gruppo di utenti con priorità. I gruppi di utenti con priorità possono disporre delle autorizzazioni di revisione assegnate ai gruppi di ruoli Insider *Risk Management,* *Insider Risk Management Analysts* e *Insider Risk Management Investigators,* a uno o più di questi gruppi di ruoli o a una selezione personalizzata di utenti.
+
+Ad esempio, è necessario proteggere da perdite di dati per un progetto estremamente riservato in cui gli utenti hanno accesso alle informazioni riservate. Si sceglie di creare *un gruppo di Project* *utenti* con priorità Riservato per gli utenti dell'organizzazione che lavorano a questo progetto. Inoltre, questo gruppo di utenti con priorità non deve avere utenti, avvisi, casi e report associati al gruppo visibili a tutti gli amministratori, gli analisti e gli investigatori della gestione dei rischi insider predefiniti. In **Impostazioni**, si crea il gruppo *Utenti* con priorità Project utenti riservati e si assegnano due utenti come revisori in grado di visualizzare i dati relativi ai gruppi. Utilizzando la procedura  guidata dei criteri e il modello di criteri Perdite di dati per utenti con priorità, è possibile creare un nuovo criterio e assegnare il gruppo *utenti* con priorità Utenti Project riservato al criterio. Le attività esaminate dal criterio per i membri del gruppo di utenti con priorità Project Riservato gli utenti sono più sensibili ai rischi e le attività di questi utenti saranno più propense *a* generare un avviso e a ricevere avvisi con livelli di gravità più elevati.
 
 ### <a name="create-a-priority-user-group"></a>Creare un gruppo di utenti con priorità
 
@@ -277,16 +279,18 @@ Per creare un nuovo gruppo di utenti con priorità, userai i controlli di impost
 Completare la procedura seguente per creare un gruppo di utenti con priorità:
 
 1. Nella finestra [Centro conformità Microsoft 365](https://compliance.microsoft.com), vai a **Gestione dei rischi Insider** e seleziona Impostazioni rischio **Insider**.
-2. Selezionare la **scheda Priorità gruppi di** utenti
-3. Nella scheda **Gruppi di utenti con priorità** selezionare Crea gruppo di utenti con priorità **per** avviare la creazione guidata del gruppo.
-4. Nella pagina **Definisci gruppo** completare i campi seguenti:
+2. Selezionare la **scheda Priorità gruppi di utenti (anteprima).**
+3. Nella scheda **Priorità gruppi di utenti (anteprima)** selezionare Crea gruppo di utenti con **priorità** per avviare la creazione guidata del gruppo.
+4. Nella pagina **Nome e descrizione** completare i campi seguenti:
     - **Nome (obbligatorio):** immettere un nome descrittivo per il gruppo di utenti con priorità. Non è possibile modificare il nome del gruppo di utenti con priorità dopo aver completato la procedura guidata.
     - **Descrizione (facoltativo):** immettere una descrizione per il gruppo di utenti con priorità.
 5. Selezionare **Avanti** per continuare.
 6. Nella pagina **Scegli** membri  selezionare Scegliere i membri da cercare e selezionare gli account  utente abilitati alla posta elettronica inclusi nel gruppo oppure selezionare la casella di controllo Seleziona tutto per aggiungere al gruppo tutti gli utenti dell'organizzazione. Selezionare **Aggiungi** per continuare o **Annulla** per chiudere senza aggiungere utenti al gruppo.
 7. Selezionare **Avanti** per continuare.
-8. Nella pagina **Revisione** esaminare le impostazioni scelte per il gruppo di utenti con priorità. Selezionare **Modifica** per modificare uno qualsiasi dei valori del gruppo oppure selezionare **Invia** per creare e attivare il gruppo di utenti con priorità.
-9. Nella pagina di conferma, selezionare **Fatto per** uscire dalla procedura guidata.
+8. Nella pagina **Scegliere chi può visualizzare questo** gruppo è necessario definire chi può esaminare utenti, avvisi, casi e report per il gruppo di utenti con priorità. È necessario assegnare almeno un utente o un gruppo di ruoli di gestione dei rischi insider. Selezionare **Scegli utenti e gruppi di ruoli** e selezionare gli utenti o i gruppi di ruoli di gestione dei rischi insider che si desidera assegnare al gruppo di utenti con priorità. Selezionare **Aggiungi** per assegnare gli utenti o i gruppi di ruoli selezionati al gruppo.
+9. Selezionare Avanti per continuare.
+10. Nella pagina **Revisione** esaminare le impostazioni scelte per il gruppo di utenti con priorità. Selezionare i **collegamenti** Modifica per modificare i valori del gruppo o selezionare **Invia** per creare e attivare il gruppo di utenti con priorità.
+11. Nella pagina di conferma, selezionare **Fatto per** uscire dalla procedura guidata.
 
 ### <a name="update-a-priority-user-group"></a>Aggiornare un gruppo di utenti con priorità
 
@@ -295,12 +299,14 @@ Per aggiornare un gruppo di utenti con priorità esistente, userai i controlli d
 Completare la procedura seguente per modificare un gruppo di utenti con priorità:
 
 1. Nella finestra [Centro conformità Microsoft 365](https://compliance.microsoft.com), vai a **Gestione dei rischi Insider** e seleziona Impostazioni rischio **Insider**.
-2. Selezionare la **scheda Priorità gruppi di** utenti
+2. Selezionare la **scheda Priorità gruppi di utenti (anteprima).**
 3. Selezionare il gruppo di utenti con priorità che si desidera modificare e selezionare **Modifica gruppo.**
-4. Nella pagina **Definisci gruppo** aggiornare il campo Descrizione, se necessario. Non è possibile aggiornare il nome del gruppo di utenti con priorità. Selezionare **Avanti** per continuare.
+4. Nella pagina **Nome e descrizione** aggiornare il campo Descrizione, se necessario. Non è possibile aggiornare il nome del gruppo di utenti con priorità. Selezionare **Avanti** per continuare.
 5. Nella pagina **Scegli membri** aggiungere nuovi membri al gruppo utilizzando il **controllo Scegli** membri. Per rimuovere un utente dal gruppo, selezionare la "X" accanto all'utente che si desidera rimuovere. Selezionare **Avanti** per continuare.
-6. Nella pagina **Revisione** esaminare le impostazioni di aggiornamento scelte per il gruppo di utenti con priorità. Selezionare **Modifica** per modificare uno qualsiasi dei valori del gruppo o selezionare **Invia** per aggiornare il gruppo di utenti con priorità.
-7. Nella pagina di conferma, selezionare **Fatto per** uscire dalla procedura guidata.
+6. Nella pagina **Scegliere chi può visualizzare** questo gruppo aggiungere o rimuovere utenti o gruppi di ruoli che possono esaminare utenti, avvisi, casi e report per il gruppo di utenti con priorità.
+7. Selezionare **Avanti** per continuare.
+8. Nella pagina **Revisione** esaminare le impostazioni di aggiornamento scelte per il gruppo di utenti con priorità. Selezionare i **collegamenti** Modifica per modificare i valori del gruppo o selezionare **Invia** per aggiornare il gruppo di utenti con priorità.
+9. Nella pagina di conferma, selezionare **Fatto per** uscire dalla procedura guidata.
 
 ### <a name="delete-a-priority-user-group"></a>Eliminare un gruppo di utenti con priorità
 
@@ -312,7 +318,7 @@ Per eliminare un gruppo di utenti con priorità esistente, userai i controlli di
 Completare la procedura seguente per eliminare un gruppo di utenti con priorità:
 
 1. Nella finestra [Centro conformità Microsoft 365](https://compliance.microsoft.com), vai a **Gestione dei rischi Insider** e seleziona Impostazioni rischio **Insider**.
-2. Selezionare la **scheda Priorità gruppi di** utenti
+2. Selezionare la **scheda Priorità gruppi di utenti (anteprima).**
 3. Selezionare il gruppo di utenti con priorità che si desidera modificare e scegliere **Elimina** dal menu dashboard.
 4. Nella finestra **di dialogo** Elimina selezionare **Sì** per eliminare il gruppo di utenti con priorità oppure **scegliere Annulla** per tornare al dashboard.
 
@@ -367,7 +373,7 @@ I clienti con Microsoft 365 che includono la gestione dei rischi insider non nec
 
 I modelli di Power Automate seguenti vengono forniti ai clienti per supportare l'automazione dei processi per gli utenti e i casi di gestione dei rischi insider:
 
-- **Informare** gli utenti quando vengono aggiunti a un criterio di rischio Insider: questo modello è per le organizzazioni con criteri interni, privacy o requisiti normativi che gli utenti devono ricevere una notifica quando sono soggetti a criteri di gestione dei rischi insider. Quando questo flusso viene configurato e selezionato per un utente nella pagina degli utenti, agli utenti e ai relativi responsabili viene inviato un messaggio di posta elettronica quando l'utente viene aggiunto a un criterio di gestione dei rischi insider. Questo modello supporta anche l'aggiornamento di un SharePoint di posta elettronica ospitato in un sito di SharePoint per tenere traccia dei dettagli del messaggio di notifica, ad esempio data/ora e destinatario del messaggio. Se si è scelto di anonimizzare gli utenti in **Impostazioni** privacy, i flussi creati da questo modello non funzioneranno come previsto in modo che la privacy degli utenti sia mantenuta. Power Automate flussi che usano questo modello sono disponibili nel **dashboard Utenti.**
+- **Informare** gli utenti quando vengono aggiunti a un criterio di rischio Insider: questo modello è per le organizzazioni con criteri interni, privacy o requisiti normativi che gli utenti devono ricevere una notifica quando sono soggetti a criteri di gestione dei rischi insider. Quando questo flusso viene configurato e  selezionato per un utente nella pagina Utenti, agli utenti e ai relativi responsabili viene inviato un messaggio di posta elettronica quando l'utente viene aggiunto a un criterio di gestione dei rischi insider. Questo modello supporta anche l'aggiornamento di un SharePoint di posta elettronica ospitato in un sito di SharePoint per tenere traccia dei dettagli del messaggio di notifica, ad esempio data/ora e destinatario del messaggio. Se si è scelto di anonimizzare gli utenti in **Impostazioni** privacy, i flussi creati da questo modello non funzioneranno come previsto in modo che la privacy degli utenti sia mantenuta. Power Automate flussi che usano questo modello sono disponibili nel **dashboard Utenti.**
 - **Richiedere** informazioni alle risorse umane o aziendali su un utente in un caso di rischio insider: quando agiscono su un caso, gli analisti e gli investigatori del rischio insider potrebbero dover consultare le risorse umane o altri stakeholder per comprendere il contesto delle attività del caso. Quando questo flusso è configurato e selezionato per un caso, analisti e investigatori inviano un messaggio di posta elettronica alle risorse umane e agli stakeholder aziendali configurati per questo flusso. A ogni destinatario viene inviato un messaggio con opzioni di risposta preconfigurato o personalizzabile. Quando i destinatari selezionano un'opzione di risposta, la risposta viene registrata come nota del caso e include informazioni su destinatario e data/ora. Se si è scelto di anonimizzare gli utenti in **Impostazioni** privacy, i flussi creati da questo modello non funzioneranno come previsto in modo che la privacy degli utenti sia mantenuta. Power Automate flussi di lavoro che usano questo modello sono disponibili nel **dashboard Casi.**
 - **Notificare al responsabile quando un utente** ha un avviso per i rischi insider: alcune organizzazioni potrebbero dover ricevere una notifica di gestione immediata quando un utente ha un avviso per la gestione dei rischi insider. Quando questo flusso è configurato e selezionato, al responsabile del caso all'utente viene inviato un messaggio di posta elettronica con le informazioni seguenti su tutti gli avvisi caso:
     - Criteri applicabili per l'avviso

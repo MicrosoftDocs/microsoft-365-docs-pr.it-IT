@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'La Prevenzione della perdita di dati degli endpoint di Microsoft 365 estende il monitoraggio delle attività dei file e le azioni di protezione agli endpoint. I file vengono resi visibili nelle soluzioni di conformità di Microsoft 365 '
-ms.openlocfilehash: c97368dd48515dc787dbac66aa93844889efbdbc
-ms.sourcegitcommit: 8b0718f5607ab509092cb80bda854010d885c54f
+ms.openlocfilehash: 3da15f1ac35ca448a76638c31f047c6a2132ad7a
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53314417"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53454006"
 ---
 # <a name="learn-about-microsoft-365-endpoint-data-loss-prevention"></a>Informazioni sulla prevenzione della perdita di dati degli endpoint di Microsoft 365
 
@@ -53,7 +53,7 @@ Microsoft Endpoint DLP consente di controllare e gestire i tipi di attività seg
 
 ## <a name="monitored-files"></a>File monitorati
 
-Endpoint DLP supporta il monitoraggio di questi tipi di file:
+Endpoint DLP supporta il monitoraggio di questi tipi di file. DLP controlla le attività per questi tipi di file anche in mancanza di una corrispondenza dei criteri. 
 
 - File di Word
 - File di PowerPoint
@@ -69,8 +69,11 @@ Endpoint DLP supporta il monitoraggio di questi tipi di file:
 - File CS
 - File H
 - File Java
+ 
+Se si vogliono monitorare i dati solo se c'è una corrispondenza dei criteri, è possibile disattivare l'opzione **Controllare sempre le attività dei file per i dispositivi** nelle impostazioni globali di Endpoint DLP.
 
-Per impostazione predefinita, Endpoint DLP controlla le attività per questi tipi di file anche in mancanza di una corrispondenza dei criteri. Se si vogliono monitorare i dati solo se c'è una corrispondenza dei criteri, è possibile disattivare l'opzione **Controllare sempre le attività dei file per i dispositivi** nelle impostazioni globali di Endpoint DLP. Se questa impostazione è attiva, le attività su qualsiasi file Word, PowerPoint, Excel, PDF e .csv vengono sempre controllate, anche se il dispositivo non dispone di alcun criterio.
+> [!NOTE]
+> Se l'impostazione **Controllare sempre le attività dei file per i dispositivi** è attiva, le attività su qualsiasi file Word, PowerPoint, Excel, PDF e CSV vengono sempre controllate, anche se il dispositivo non dispone di alcun criterio.
 
 Endpoint DLP monitora le attività in base al tipo MIME, pertanto le attività verranno acquisite anche se l'estensione del file viene cambiata.
 

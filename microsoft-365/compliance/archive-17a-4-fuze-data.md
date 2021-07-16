@@ -12,14 +12,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Informazioni su come configurare e usare un connettore Fuze DataParser 17a-4 per importare e archiviare i dati fuze in Microsoft 365.
-ms.openlocfilehash: eb7e66bf3a8d00431ad7e393471110b36efa8e65
-ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
+ms.openlocfilehash: 9f3c7590a033c2c19d9b588167d67c24f917ec5f
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53096431"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53454506"
 ---
-# <a name="set-up-a-connector-to-archive-fuze-data-preview"></a>Configurare un connettore per archiviare i dati fuze (anteprima)
+# <a name="set-up-a-connector-to-archive-fuze-data"></a>Configurare un connettore per archiviare i dati fuze
 
 Utilizzare [Fuze DataParser](https://www.17a-4.com/fuze-dataparser/) da 17a-4 LLC per importare e archiviare i dati da Fuze alle cassette postali degli utenti nell'organizzazione Microsoft 365 locale. DataParser include un connettore Fuze configurato per acquisire elementi da un'origine dati di terze parti e importare tali elementi in Microsoft 365. Il connettore Fuze DataParser converte i dati fuze in un formato di messaggio di posta elettronica e quindi importa tali elementi nelle cassette postali degli utenti in Microsoft 365.
 

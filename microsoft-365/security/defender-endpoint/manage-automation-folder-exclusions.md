@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 37a251acd3b7631cffffaf2eb76bf0f2b4954ee6
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 05c103cba051c7d5e7f45e5dd3feb288013ee367
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185838"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53454818"
 ---
 # <a name="manage-automation-folder-exclusions"></a>Gestione le esclusioni delle cartelle di automazione 
 
@@ -59,7 +59,7 @@ Le esclusioni delle cartelle di automazione consentono di specificare le cartell
 
 
 ## <a name="add-an-automation-folder-exclusion"></a>Aggiungere un'esclusione di cartella di automazione
-1. Nel riquadro di spostamento selezionare **Impostazioni**  >  **cartelle di automazione**.  
+1. Nel riquadro di spostamento, **selezionare** Impostazioni esclusioni della cartella  >  **Endpoints**  >    >  **Automation**.  
 
 2. Fare **clic su Esclusione nuova cartella.**  
 
@@ -69,7 +69,6 @@ Le esclusioni delle cartelle di automazione consentono di specificare le cartell
     - Estensioni
     - Nomi di file
     - Descrizione
-    
 
 4. Fare clic su **Salva**.
 
@@ -77,14 +76,14 @@ Le esclusioni delle cartelle di automazione consentono di specificare le cartell
 > I comandi di Live Response per raccogliere o esaminare i file esclusi avranno esito negativo con l'errore: "File escluso". Inoltre, le indagini automatizzate ignoreranno gli elementi esclusi.
 
 ## <a name="edit-an-automation-folder-exclusion"></a>Modificare l'esclusione di una cartella di automazione 
-1. Nel riquadro di spostamento selezionare **Impostazioni**  >  **cartelle di automazione**. 
+1. Nel riquadro di spostamento, **selezionare** Impostazioni esclusioni della cartella  >  **Endpoints**  >    >  **Automation**. 
 
 2. Fare **clic su** Modifica nell'esclusione della cartella.  
 
 3. Aggiornare i dettagli della regola e fare clic su **Salva.**
 
 ## <a name="remove-an-automation-folder-exclusion"></a>Rimuovere un'esclusione di cartelle di automazione 
-1. Nel riquadro di spostamento selezionare **Impostazioni**  >  **cartelle di automazione**.  
+1. Nel riquadro di spostamento, **selezionare** Impostazioni esclusioni della cartella  >  **Endpoints**  >    >  **Automation**.  
 2. Fare clic **su Rimuovi esclusione.** 
 
 

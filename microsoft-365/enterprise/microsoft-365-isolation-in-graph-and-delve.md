@@ -17,11 +17,11 @@ f1.keywords:
 description: In questo articolo, trovare una spiegazione del funzionamento Microsoft 365'isolamento del tenant nell'Office Graph e in Delve.
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: 966f02726a2cce18e30e4d5bc7ab0beb5db51a29
-ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
+ms.sourcegitcommit: 27addd4dac07926528b788215d2dcd0e46301eb1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47332389"
+ms.lasthandoff: 07/16/2021
+ms.locfileid: "53464088"
 ---
 # <a name="microsoft-365-tenant-isolation-in-the-microsoft-graph-and-delve"></a>Microsoft 365 Isolamento tenant in Microsoft Graph e Delve
 

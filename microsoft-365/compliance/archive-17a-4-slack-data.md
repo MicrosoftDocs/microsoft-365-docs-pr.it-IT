@@ -12,14 +12,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Informazioni su come configurare e usare un connettore Slack DataParser da 17a a 4 per importare e archiviare i dati di Slack in Microsoft 365.
-ms.openlocfilehash: 0eb9564ac5a6e8a3fa76cf1a336f266a456b272a
-ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
+ms.openlocfilehash: 66c1db3f37512ec6988fc9385f50b2df1dc6d8ed
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53097037"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53454410"
 ---
-# <a name="set-up-a-connector-to-archive-slack-data-preview"></a>Configurare un connettore per archiviare i dati di Slack (anteprima)
+# <a name="set-up-a-connector-to-archive-slack-data"></a>Configurare un connettore per archiviare i dati di Slack
 
 Utilizzare [DataParser da 17a-4 LLC](https://www.17a-4.com/slack-dataparser/) per importare e archiviare i dati dalla piattaforma Slack alle cassette postali degli utenti nell'Microsoft 365 organizzativa. DataParser include un connettore Slack configurato per acquisire elementi da un'origine dati di terze parti e importare tali elementi in Microsoft 365. Il connettore Slack DataParser converte i dati di Slack in un formato di messaggio di posta elettronica e quindi importa tali elementi nelle cassette postali degli utenti in Microsoft 365.
 

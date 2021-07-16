@@ -10,12 +10,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Informazioni sulla chiave di disponibilità utilizzata per recuperare le chiavi cliente perse.
-ms.openlocfilehash: a4db6eab78feebd171dbfd5c8b45252837f229d0
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 0f65721856cd046f28a399701e625239decbd9b6
+ms.sourcegitcommit: 84e70051bb61b1171cebfbabe500b4904dfac04f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53227080"
+ms.lasthandoff: 07/16/2021
+ms.locfileid: "53463998"
 ---
 # <a name="learn-about-the-availability-key-for-customer-key"></a>Informazioni sulle chiavi di disponibilità per Customer Key
 
@@ -65,7 +65,7 @@ Microsoft si avvale di una strategia di difesa approfondita per impedire a malin
 
 Microsoft 365 è stato creato per evitare un uso improprio della chiave di disponibilità. Il livello dell'applicazione è l'unico metodo tramite il quale le chiavi, inclusa la chiave di disponibilità, possono essere usate per crittografare e decrittografare i dati. Solo Microsoft 365 codice del servizio può interpretare e attraversare la gerarchia delle chiavi per le attività di crittografia e decrittografia. L'isolamento logico esiste tra le posizioni di archiviazione delle chiavi dei clienti, le chiavi di disponibilità, altre chiavi gerarchiche e i dati dei clienti. Questo isolamento riduce il rischio di esposizione dei dati in caso di compromissione di una o più posizioni. Ogni livello della gerarchia include funzionalità di rilevamento delle intrusioni 24x7 per proteggere i dati e i segreti archiviati.
 
-I controlli di accesso vengono implementati per impedire l'accesso non autorizzato ai sistemi interni, inclusi gli archivi segreti delle chiavi di disponibilità. I tecnici Microsoft non hanno accesso diretto agli archivi segreti delle chiavi di disponibilità. Per ulteriori dettagli sui controlli di accesso, vedere [Administrative Access Controls in Microsoft 365](/Office365/securitycompliance/office-365-administrative-access-controls-overview).
+I controlli di accesso vengono implementati per impedire l'accesso non autorizzato ai sistemi interni, inclusi gli archivi segreti delle chiavi di disponibilità. I tecnici Microsoft non hanno accesso diretto agli archivi segreti delle chiavi di disponibilità. Per ulteriori dettagli sui controlli di accesso, vedere [Administrative Access Controls in Microsoft 365](/compliance/office-365-administrative-access-controls-overview).
 
 I controlli tecnici impediscono al personale Microsoft di accedere ad account di servizio con privilegi elevati, che potrebbero altrimenti essere utilizzati da utenti malintenzionati per rappresentare servizi Microsoft. Ad esempio, questi controlli impediscono l'accesso interattivo.
 

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f1549512a02fe3af71d32c6b33c69cc705de99a8
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 74b89d86b770cb47a0855b45d457ea8ce5fb9802
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51862128"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53454758"
 ---
 # <a name="manage-suppression-rules"></a>Gestire le regole di eliminazione
 
@@ -40,7 +40,7 @@ Potrebbero essere presenti scenari in cui è necessario eliminare la visualizzaz
 È possibile visualizzare un elenco di tutte le regole di eliminazione e gestirle in un'unica posizione. È inoltre possibile attivare o disattivare una regola di eliminazione degli avvisi.
 
 
-1. Nel riquadro di spostamento selezionare **Impostazioni**  >  **avviso.** Viene visualizzato l'elenco delle regole di eliminazione create dagli utenti dell'organizzazione.
+1. Nel riquadro di spostamento, **selezionare** Impostazioni  >  **Endpoint Regole**  >    >  **Eliminazione avviso**. Viene visualizzato l'elenco delle regole di eliminazione create dagli utenti dell'organizzazione.
 
 2. Selezionare una regola facendo clic sulla casella di controllo accanto al nome della regola.
 
@@ -49,7 +49,7 @@ Potrebbero essere presenti scenari in cui è necessario eliminare la visualizzaz
 
 ## <a name="view-details-of-a-suppression-rule"></a>Visualizzare i dettagli di una regola di eliminazione
 
-1. Nel riquadro di spostamento selezionare **Impostazioni**  >  **avviso.** Viene visualizzato l'elenco delle regole di eliminazione create dagli utenti dell'organizzazione.
+1. Nel riquadro di spostamento, **selezionare** Impostazioni  >  **Endpoint Regole**  >    >  **Eliminazione avviso**. Viene visualizzato l'elenco delle regole di eliminazione create dagli utenti dell'organizzazione.
 
 2. Fare clic sul nome di una regola. Vengono visualizzati i dettagli della regola. Verranno visualizzati i dettagli della regola, ad esempio stato, ambito, azione, numero di avvisi corrispondenti, creati da e data di creazione della regola. È inoltre possibile visualizzare gli avvisi associati e le condizioni della regola.
 

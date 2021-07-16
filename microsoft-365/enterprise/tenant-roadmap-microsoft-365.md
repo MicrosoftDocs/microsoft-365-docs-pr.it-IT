@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-coredeploy
 ms.custom: it-pro
 description: La roadmap per configurare i tenant per Microsoft 365.
-ms.openlocfilehash: fb3b6eecd893a5ab9b71bfa7bdfaea53af43470d
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 4b94540293b86bd922ce4b29f970e52eb1245a01
+ms.sourcegitcommit: 84e70051bb61b1171cebfbabe500b4904dfac04f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50909455"
+ms.lasthandoff: 07/16/2021
+ms.locfileid: "53464034"
 ---
 # <a name="tenant-roadmap-for-microsoft-365"></a>Roadmap tenant per Microsoft 365
 
@@ -43,14 +43,14 @@ Per pianificare l'implementazione del tenant:
 - [Pianificare il supporto delle app client](microsoft-365-client-support-certificate-based-authentication.md)
 - [Determinare come usare l'autenticazione moderna ibrida](hybrid-modern-auth-overview.md)
 - [Pianificare gli Office 2007 e Office 2010](plan-upgrade-previous-versions-office.md)
-- [Comprendere l'isolamento del tenant](microsoft-365-tenant-isolation-overview.md)
+- [Comprendere l'isolamento del tenant](/compliance/assurance/microsoft-365-isolation-controls)
 
 ### <a name="deploy"></a>Distribuzione
 
 Per distribuire il tenant: 
 
 - Aggiungere i [domini DNS](../admin/setup/add-domain.md) per l'organizzazione.
-- Usare le [guide alla configurazione nell'Microsoft 365 di amministrazione.](setup-guides-for-microsoft-365.md)
+- Utilizzare le [guide all'installazione nella interfaccia di amministrazione di Microsoft 365](setup-guides-for-microsoft-365.md).
 - Creare [l'infrastruttura di identità](identity-roadmap-microsoft-365.md) e proteggere gli account di accesso degli [utenti.](microsoft-365-secure-sign-in.md)
 
 ### <a name="move-a-tenants-geographic-locations"></a>Spostare le posizioni geografiche di un tenant

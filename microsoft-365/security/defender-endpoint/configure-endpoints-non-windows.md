@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 777f5f63c4739f277ec24f826bc8a61a226fb65f
-ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
+ms.openlocfilehash: 4aff505f9f35b6144360eed5992ac36cf0847617
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53339671"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53454710"
 ---
 # <a name="onboard-non-windows-devices"></a>Aggiungere dispositivi non Windows
 
@@ -40,7 +40,7 @@ ms.locfileid: "53339671"
 
 Defender for Endpoint offre un'esperienza operativa di sicurezza centralizzata per Windows e piattaforme non Windows. Sarà possibile visualizzare gli avvisi di vari sistemi operativi supportati in Microsoft 365 Defender e proteggere meglio la rete dell'organizzazione. 
 
-Per il funzionamento dell'integrazione, devi conoscere esattamente le versioni di Linux e macOS compatibili con Defender for Endpoint. Per altre informazioni, vedi:
+Per il funzionamento dell'integrazione, devi conoscere esattamente le versioni di Linux e macOS compatibili con Defender for Endpoint. Per ulteriori informazioni, vedere:
 - [Requisiti di sistema di Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md#system-requirements)  
 - Requisiti di sistema di [Microsoft Defender per Endpoint su macOS](microsoft-defender-endpoint-mac.md#system-requirements).
 
@@ -50,7 +50,7 @@ Dovrai eseguire la procedura seguente per eseguire l'onboard di dispositivi non 
 
    - Per i dispositivi macOS, puoi scegliere di eseguire l'onboard tramite Microsoft Defender for Endpoint o tramite una soluzione di terze parti. Per altre informazioni, vedi [Microsoft Defender per Endpoint su Mac.](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-mac)
 
-   - Per altri dispositivi non Windows scegliere Onboard non Windows dispositivi **tramite l'integrazione di terze parti.**   
+   - Per altri dispositivi non Windows, scegli Onboard non Windows dispositivi **tramite l'integrazione di terze parti.**   
     1. Nel riquadro di spostamento selezionare **Partner di**  >  **interoperabilità**. Verificare che la soluzione di terze parti sia elencata.
     2. Nella scheda **Applicazioni partner** seleziona il partner che supporta i dispositivi non Windows partner.
     3. Seleziona **Apri pagina partner** per aprire la pagina del partner. Segui le istruzioni fornite nella pagina.

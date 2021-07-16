@@ -17,11 +17,11 @@ f1.keywords:
 description: Questo articolo contiene un riepilogo di come Microsoft applica l'isolamento dei tenant in servizi cloud come Microsoft 365.
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: b52d936bb00ac0adef0baf428cbc5f9a8f8aba49
-ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
+ms.sourcegitcommit: 27addd4dac07926528b788215d2dcd0e46301eb1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53194650"
+ms.lasthandoff: 07/16/2021
+ms.locfileid: "53464093"
 ---
 # <a name="tenant-isolation-in-microsoft-365"></a>Isolamento tenant in Microsoft 365
 

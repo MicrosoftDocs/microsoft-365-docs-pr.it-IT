@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: Il piano di archiviazione offre funzionalità di gestione avanzate per le etichette di conservazione.
 ms.custom: seo-marvel-may2020
-ms.openlocfilehash: 422a76db5705e80c67803b798275e1faedd1d7aa
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 920a613cdc3a32267415d42cebe962e62ff6831a
+ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50906876"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53419764"
 ---
 # <a name="use-file-plan-to-manage-retention-labels"></a>Usare il piano di archiviazione per gestire le etichette di conservazione
 
@@ -32,7 +32,7 @@ Anche se è possibile creare e gestire le etichette di conservazione dalla **Gov
 
 - È possibile creare etichette di conservazione in blocco importando le informazioni rilevanti da un foglio di calcolo.
 
-- È possibile esportare le informazioni dalle etichette di conservazione esistenti per l'analisi e la collaborazione offline o per la modifica in blocco.
+- È possibile esportare le informazioni dalle etichette di conservazione esistenti per l'analisi e la collaborazione offline.
 
 - Sono disponibili ulteriori informazioni sulle etichette di conservazione per semplificarne l'uso nelle varie impostazioni da una sola visualizzazione.
 
@@ -99,7 +99,7 @@ Tutte le colonne tranne l'etichetta **Nome** possono essere visualizzate o nasco
 
 Il piano di archiviazione consente di includere più informazioni nell'ambito delle etichette di conservazione. I descrittori del piano di archiviazione offrono altre opzioni per migliorare la gestibilità e l'organizzazione del contenuto che è necessario etichettare.
 
-Per impostazione predefinita, a partire da **ID riferimento**, le colonne successive mostrano i descrittori del piano di archiviazione che è possibile specificare quando si crea un'etichetta di conservazione o si modifica un'etichetta esistente. 
+Per impostazione predefinita, a partire da **ID riferimento**, le colonne successive mostrano i descrittori facoltativi del piano di archiviazione che è possibile specificare quando si crea un'etichetta di conservazione o si modifica un'etichetta esistente. 
 
 Per iniziare, esistono alcuni valori preesistenti per i seguenti descrittori del piano di archiviazione: 
 - Funzione/reparto aziendale
@@ -129,7 +129,7 @@ Viene visualizzato un file CSV che contiene tutte le etichette di conservazione 
 
 ## <a name="import-retention-labels-into-your-file-plan"></a>Importare le etichette di conservazione nel piano di archiviazione
 
-Nel piano di archiviazione è possibile importare in blocco nuove etichette di conservazione, nonché modificare le etichette di conservazione esistenti usando lo stesso metodo.
+Nel piano di archiviazione, è possibile importare in blocco nuove etichette di conservazione usando un file CSV con un formato specifico. Dopo aver importato le etichette, è possibile apportare modifiche nel file CSV e importarlo di nuovo per semplificare la modifica in blocco delle etichette di conservazione esistenti.
 
 Per importare nuove etichette di conservazione e modificare le etichette di conservazione esistenti: 
 
@@ -139,7 +139,7 @@ Per importare nuove etichette di conservazione e modificare le etichette di cons
 
    ![Opzione per scaricare un modello di piano file vuoto](../media/file-plan-blank-template-option.png)
 
-2. Scaricare un modello vuoto per importare le nuove etichette di conservazione. In alternativa, è possibile iniziare con il file CSV esportato durante l'esportazione delle etichette di conservazione esistenti nell'organizzazione.
+2. Scaricare un modello vuoto come indicato:
 
    ![Modello di piano di archiviazione vuoto aperto in Excel](../media/file-plan-blank-template.png)
 
@@ -150,41 +150,45 @@ Per importare nuove etichette di conservazione e modificare le etichette di cons
     - Tutti gli altri valori: lunghezza illimitata
     <br/>
     
-   |Proprietà|Tipo|Valori validi|
-   |:-----|:-----|:-----|
-   |LabelName|Stringa|Questa proprietà specifica il nome dell'etichetta di conservazione.|
-   |Comment|Stringa|Usare questa proprietà per aggiungere una descrizione relativa all'etichetta di conservazione per gli amministratori. Questa descrizione viene visualizzata solo dagli amministratori che gestiscono l'etichetta di conservazione nel centro conformità.|
-   |Notes|Stringa|Usare questa proprietà per aggiungere una descrizione relativa all'etichetta di conservazione per gli utenti. Questa descrizione viene visualizzata quando gli utenti passano con il mouse sull'etichetta in app quali Outlook, SharePoint e OneDrive. Se si lascia vuota questa proprietà, viene visualizzata una descrizione predefinita, che illustra le impostazioni di conservazione dell'etichetta. |
-   |IsRecordLabel|Stringa|Questa proprietà specifica se l'etichetta contrassegna il contenuto come record. I valori validi sono: </br>**TRUE**: l'etichetta contrassegna l'elemento come record e, di conseguenza, l'elemento non può essere eliminato. </br>**FALSE**: l'etichetta non contrassegna il contenuto come record. Questo è il valore predefinito.|
-   |RetentionAction|Stringa|Questa proprietà specifica l'azione da intraprendere dopo la scadenza del valore specificato dalla proprietà RetentionDuration. I valori validi sono: </br>**Delete**: gli elementi più vecchi del valore specificato dalla proprietà RetentionDuration vengono eliminati.</br>**Keep**: gli elementi vengono mantenuti per la durata specificata dalla proprietà RetentionDuration e non viene eseguita alcuna azione alla scadenza del periodo definito per la durata. </br>**KeepAndDelete**: gli elementi vengono mantenuti per la durata specificata dalla proprietà RetentionDuration e quindi vengono eliminati alla scadenza del periodo definito per la durata.   |
-   |RetentionDuration|Stringa|La proprietà specifica per quanti giorni mantenere il contenuto. I valori validi sono: </br>**Unlimited**: gli elementi verranno mantenuti a tempo indeterminato. </br>**_n_*_: un numero intero positivo, ad esempio _* 365**. 
-   |RetentionType|Stringa|Questa proprietà specifica se la durata del periodo di conservazione è stata calcolata a partire dalla data di creazione del contenuto, dalla data dell'evento, dalla data di etichettatura o dalla data dell'ultima modifica. I valori validi sono: </br>**CreationAgeInDays**</br>**EventAgeInDays**</br>**TaggedAgeInDays**</br>**ModificationAgeInDays** |
-   |ReviewerEmail|SmtpAddress|Quando questa proprietà è popolata, verrà attivata una revisione delle clausole alla scadenza della durata della conservazione. Questa proprietà consente di specificare l'indirizzo di posta elettronica del revisore per l'azione di conservazione **KeepAndDelete**. È possibile includere l'indirizzo di posta elettronica di singoli utenti, gruppi di distribuzione o gruppi di sicurezza. È possibile indicare più indirizzi di posta elettronica separati da punto e virgola.|
-   |ReferenceId|Stringa|Questa proprietà specifica il valore visualizzato nel descrittore **ID riferimento** del piano di archiviazione, che è possibile utilizzare come valore univoco per l'organizzazione.| 
-   |DepartmentName|Stringa|Questa proprietà specifica il valore visualizzato nel descrittore **Funzione/reparto** del piano di archiviazione.|
-   |Category|Stringa|Questa proprietà specifica il valore visualizzato nel descrittore **Categoria** del piano di archiviazione.|
-   |SubCategory|Stringa|Questa proprietà specifica il valore visualizzato nel descrittore **Sottocategoria** del piano di archiviazione.|
-   |AuthorityType|Stringa|Questa proprietà specifica il valore visualizzato nel descrittore **Tipo di autorità** del piano di archiviazione.|
-   |CitationName|Stringa|Questa proprietà specifica il nome della citazione visualizzata nel descrittore **Clausola/citazione** del piano di archiviazione. Ad esempio, "Sarbanes-Oxley Act del 2002". |
-   |CitationUrl|Stringa|Questa proprietà specifica l'URL visualizzato nel descrittore **Clausola/citazione** del piano di archiviazione.|
-   |CitationJurisdiction|Stringa|Questa proprietà specifica il settore di competenza o agenzia visualizzati nel descrittore **Clausola/citazione** del piano di archiviazione. Ad esempio, "U.S. Securities and Exchange Commission (SEC)".|
-   |Regulatory|Stringa|Lasciare vuota. Questa proprietà non viene usata al momento.|
-   |EventType|Stringa|Questa proprietà specifica la regola di conservazione associata all'etichetta. È possibile utilizzare qualsiasi valore che identifichi la regola in modo univoco. Ad esempio:</br>**Nome**</br>**Nome distinto (DN)**</br>**GUID** </br>È possibile usare il cmdlet [Get-RetentionComplianceRule](/powershell/module/exchange/get-retentioncompliancerule) per visualizzare le regole di conservazione disponibili. Tenere presente che, poiché i valori EventType sono univoci per l'organizzazione, se si esportano etichette da un'organizzazione, non è possibile usare i valori per la proprietà EventType di tale organizzazione durante l'importazione delle etichette in un'altra organizzazione.|
+   |Proprietà|Tipo|Obbligatorio|Valori validi|
+   |:-----|:-----|:-----|:-----|
+   |LabelName|Stringa|Sì|Questa proprietà specifica il nome dell'etichetta di conservazione e deve essere univoca nel tenant.|
+   |Comment|Stringa|No|Usare questa proprietà per aggiungere una descrizione relativa all'etichetta di conservazione per gli amministratori. Questa descrizione viene visualizzata solo dagli amministratori che gestiscono l'etichetta di conservazione nel centro conformità.|
+   |Notes|Stringa|No|Usare questa proprietà per aggiungere una descrizione relativa all'etichetta di conservazione per gli utenti. Questa descrizione viene visualizzata quando gli utenti passano con il mouse sull'etichetta in app quali Outlook, SharePoint e OneDrive. Se si lascia vuota questa proprietà, viene visualizzata una descrizione predefinita, che illustra le impostazioni di conservazione dell'etichetta. |
+   |IsRecordLabel|Stringa|No, solo se **Regulatory** è **TRUE**|Questa proprietà specifica se l'etichetta contrassegna il contenuto come record. I valori validi sono:</br>**TRUE**: l'etichetta contrassegna l'elemento come record e, di conseguenza, l'elemento non può essere eliminato. </br>**FALSE**: l'etichetta non contrassegna il contenuto come record. Questo è il valore predefinito. </br> </br> Dipendenze del gruppo: quando questa proprietà viene specificata, è necessario specificare anche RetentionAction, RetentionDuration e RetentionType.|
+   |RetentionAction|Stringa|No, solo se vengono specificati **RetentionDuration**, **RetentionType** o **ReviewerEmail**|Questa proprietà specifica l'azione da intraprendere dopo la scadenza del valore specificato dalla proprietà RetentionDuration (se specificato). I valori validi sono:</br>**Delete**: gli elementi più vecchi del valore specificato dalla proprietà RetentionDuration vengono eliminati.</br>**Keep**: gli elementi vengono mantenuti per la durata specificata dalla proprietà RetentionDuration e non viene eseguita alcuna azione alla scadenza del periodo definito per la durata. </br>**KeepAndDelete**: gli elementi vengono mantenuti per la durata specificata dalla proprietà RetentionDuration e quindi vengono eliminati alla scadenza del periodo definito per la durata. </br> </br> Dipendenze del gruppo: quando questa proprietà viene specificata, è necessario specificare anche RetentionDuration e RetentionType. |
+   |RetentionDuration|Stringa|No, solo se vengono specificati **RetentionAction** o **RetentionType**|Questa proprietà specifica per quanti giorni mantenere il contenuto. I valori validi sono:</br>**Unlimited**: gli elementi verranno mantenuti a tempo indeterminato. </br>**_n_*: un numero intero positivo, ad esempio **365**. Il numero massimo supportato è 24.855, ovvero 68 anni. Se è necessario un numero maggiore del valore massimo supportato, usare Unlimited al suo posto.</br> </br> Dipendenze del gruppo: quando questa proprietà viene specificata, è necessario specificare anche RetentionAction e RetentionType.
+   |RetentionType|Stringa|No, solo se vengono specificati **RetentionAction** o **RetentionDuration**|Questa proprietà specifica se la durata del periodo di conservazione (se specificata) è stata calcolata a partire dalla data di creazione del contenuto, dalla data dell'evento, dalla data di etichettatura o dalla data dell'ultima modifica. I valori validi sono:</br>**CreationAgeInDays**</br>**EventAgeInDays**</br>**TaggedAgeInDays**</br>**ModificationAgeInDays** </br> </br> Dipendenze del gruppo: quando questa proprietà viene specificata, è necessario specificare anche RetentionAction e RetentionDuration.|
+   |ReviewerEmail|SmtpAddress|No|Quando questa proprietà è specificata, verrà attivata una revisione per l’eliminazione alla scadenza della durata della conservazione. Questa proprietà consente di specificare l'indirizzo di posta elettronica del revisore per l'azione di conservazione **KeepAndDelete**. </br> </br> È possibile includere l'indirizzo di posta elettronica di singoli utenti, gruppi di distribuzione o gruppi di sicurezza nel tenant. È possibile indicare più indirizzi di posta elettronica separandoli da punto e virgola. </br> </br> Dipendenze del gruppo: quando questa proprietà viene specificata, è necessario specificare **RetentionAction** (deve essere **KeepAndDelete**), **RetentionDuration**, e **RetentionType**.|
+   |ReferenceId|Stringa|No|Questa proprietà specifica il valore visualizzato nel descrittore **ID riferimento** del piano di archiviazione, che è possibile utilizzare come valore univoco per l'organizzazione.| 
+   |DepartmentName|Stringa|No|Questa proprietà specifica il valore visualizzato nel descrittore **Funzione/reparto** del piano di archiviazione.|
+   |Category|Stringa|No|Questa proprietà specifica il valore visualizzato nel descrittore **Categoria** del piano di archiviazione.|
+   |SubCategory|Stringa|No|Questa proprietà specifica il valore visualizzato nel descrittore **Sottocategoria** del piano di archiviazione.|
+   |AuthorityType|Stringa|No|Questa proprietà specifica il valore visualizzato nel descrittore **Tipo di autorità** del piano di archiviazione.|
+   |CitationName|Stringa|No|Questa proprietà specifica il nome della citazione visualizzata nel descrittore **Clausola/citazione** del piano di archiviazione. Ad esempio, "Sarbanes-Oxley Act del 2002". |
+   |CitationUrl|Stringa|No|Questa proprietà specifica l'URL visualizzato nel descrittore **Clausola/citazione** del piano di archiviazione.|
+   |CitationJurisdiction|Stringa|No|Questa proprietà specifica la giurisdizione o l'agenzia visualizzata nel descrittore **Clausola/citazione** del piano di archiviazione, ad esempio "U.S. Securities and Exchange Commission (SEC)".|
+   |Regulatory|Stringa|No|Questa proprietà specifica se l'etichetta contrassegna il contenuto come record normativo, [più restrittivo](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked) di un record. Per usare questa configurazione dell’etichetta, è necessario configurare il tenant in modo da [visualizzare l’opzione per contrassegnare il contenuto come record normativo](declare-records.md#how-to-display-the-option-to-mark-content-as-a-regulatory-record) oppure la convalida dell’importazione non andrà a buon fine. I valori validi sono: </br>**TRUE**: l'etichetta contrassegna l'elemento come record normativo. È inoltre necessario impostare la proprietà **IsRecordLabel** su TRUE.</br>**FALSE**: l'etichetta non contrassegna il contenuto come record normativo. Questo è il valore predefinito.|
+   |EventType|Stringa|No, solo se **RetentionType** è **EventAgeInDays**|Questa proprietà specifica un tipo di evento utilizzato per [conservazione basata su eventi](event-driven-retention.md). Specificare un tipo di evento esistente visualizzato in **Gestione record** > **Eventi** > **Gestisci tipi di evento**. In alternativa, usare il cmdlet [Get-ComplianceRetentionEventType](/powershell/module/exchange/get-complianceretentioneventtype) per visualizzare i tipi di evento disponibili. Anche se esistono alcuni tipi di evento predefiniti, ad esempio **Attività dipendente** e **Durata del prodotto**, è anche possibile creare tipi di evento personalizzati. </br> </br> Se si specifica un tipo di evento personalizzato, deve esistere prima dell'importazione perché il nome viene convalidato come parte del processo di importazione.|
    |||
 
    Ecco un esempio di modello che contiene informazioni sulle etichette di conservazione.
 
    ![Modello del piano di archiviazione compilato con le informazioni](../media/file-plan-filled-out-template.png)
 
-4. Al passaggio 3 della pagina **Compila e importa il piano di archiviazione**, fare clic su **Cerca file** per caricare il modello compilato. 
+4. Al passaggio 3 della pagina **Compila e importa il piano di archiviazione**, fare clic su **Cerca file** per caricare il modello compilato e poi selezionare **Avanti**.
 
-   Il piano di archiviazione convaliderà le voci e visualizzerà le statistiche di importazione.
+   Il piano di archiviazione carica il file e convalida le voci, visualizzando le statistiche di importazione.
 
    ![Statistiche di importazione del piano di archiviazione](../media/file-plan-import-statistics.png)
 
-   Se è presente un errore di convalida, l'importazione del piano di archiviazione continuerà a convalidare ogni voce nel file di importazione e mostrerà tutti gli errori che fanno riferimento ai numeri di linea e di riga del file di importazione. Copiare i risultati di errore visualizzati per correggerli nel file di importazione.
+5. A seconda dei risultati della convalida:
+    
+    - Se la convalida non va a buon fine: prendere nota del numero della riga e del nome della colonna da correggere nel file di importazione. Selezionare **Chiudi**, e successivamente **Sì** per confermare. Correggere gli errori nel file e salvarlo, selezionare di nuovo l'opzione **Importa** e tornare al passaggio 4.
+    
+    - Se la convalida va a buon fine: è possibile selezionare **Go Live** per rendere disponibili le etichette di conservazione nel tenant. In alternativa, selezionare l'icona Chiudi per la pagina e **Sì** per confermare di voler chiudere la procedura guidata senza rendere attualmente disponibili le etichette di conservazione nel tenant.
 
-Una volta completata l'importazione, è possibile aggiungere le etichette di conservazione a un nuovo criterio di etichetta di conservazione oppure applicarle automaticamente. È possibile eseguire questa operazione direttamente nella pagina **Piano di archiviazione**, selezionando l'elenco a discesa da **+ Crea un'etichetta**, quindi **Criteri per la pubblicazione di etichette** o **Criteri per l'applicazione automatica di un'etichetta**.
+Una volta che le etichette importate sono state aggiunte al tenant, è possibile aggiungerle a un nuovo criterio di etichetta di conservazione oppure applicarle automaticamente. È possibile eseguire questa operazione direttamente nella pagina **Piano di archiviazione**, selezionando l'elenco a discesa da **+ Crea un'etichetta**, quindi **Criteri per la pubblicazione di etichette** o **Criteri per l'applicazione automatica di un'etichetta**.
 
 ## <a name="next-steps"></a>Passaggi successivi
 

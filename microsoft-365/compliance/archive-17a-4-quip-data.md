@@ -12,14 +12,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Informazioni su come configurare e usare un connettore Quip DataParser da 17a-4 per importare e archiviare i dati quip in Microsoft 365.
-ms.openlocfilehash: 6db47d79cdab0f130d2b7b3483d37c08b267cdfd
-ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
+ms.openlocfilehash: e3379e238b0142522d4161149fd38892843e6eae
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53097292"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53454446"
 ---
-# <a name="set-up-a-connector-to-archive-quip-data-preview"></a>Configurare un connettore per archiviare i dati quip (anteprima)
+# <a name="set-up-a-connector-to-archive-quip-data"></a>Configurare un connettore per archiviare i dati quip
 
 Utilizzare [Quip DataParser](https://www.17a-4.com/quip-dataparser/) da 17a-4 LLC per importare e archiviare i dati da Quip alle cassette postali degli utenti nell'organizzazione Microsoft 365 locale. DataParser include un connettore Quip configurato per acquisire elementi da un'origine dati di terze parti e importare tali elementi in Microsoft 365. Il connettore Quip DataParser converte i dati quip in un formato di messaggio di posta elettronica e quindi importa tali elementi nelle cassette postali degli utenti in Microsoft 365.
 

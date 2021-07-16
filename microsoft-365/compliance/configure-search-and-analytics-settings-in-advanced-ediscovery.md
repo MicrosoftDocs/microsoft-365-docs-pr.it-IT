@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 ms.custom: seo-marvel-mar2020
 description: Configurare Advanced eDiscovery che si applicano a tutti i set di revisione in un caso. Sono incluse le impostazioni per l'analisi e il riconoscimento ottico dei caratteri.
-ms.openlocfilehash: e0ad41354b265016ba67632162a8ead62f11068b
-ms.sourcegitcommit: 997a21b83795789cda0a6b4a77f9985a3233d0c0
+ms.openlocfilehash: 2b9c438e28b8d9b84ec8cc29bf85911e5bdc3c8d
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "53430553"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53453898"
 ---
 # <a name="configure-search-and-analytics-settings-in-advanced-ediscovery"></a>Configurare le impostazioni di ricerca e analisi in Advanced eDiscovery
 
@@ -80,13 +80,13 @@ Questa query filtra fondamentalmente gli elementi duplicati dal set di revisioni
 
 ## <a name="ignore-text"></a>Testo da ignorare
 
-Esistono situazioni in cui determinati testi diminuiscono la qualità dell'analisi, ad esempio dichiarazioni di non responsabilità lunghe che vengono aggiunte ai messaggi di posta elettronica indipendentemente dal contenuto del messaggio di posta elettronica. È possibile escludere la parte di testo da ignorare dall'analisi specificando la stringa di testo e la funzionalità di analisi (Documenti simili, Threading posta elettronica, Temi e Rilevanza) per cui escludere il testo. È inoltre supportato l'utilizzo di espressioni regolari (RegEx) come testo ignorato. 
+Esistono situazioni in cui determinati testi diminuiscono la qualità dell'analisi, ad esempio dichiarazioni di non responsabilità lunghe che vengono aggiunte ai messaggi di posta elettronica indipendentemente dal contenuto del messaggio di posta elettronica. È possibile escludere la parte di testo da ignorare dall'analisi specificando la stringa di testo e la funzionalità di analisi (Documenti simili, Threading posta elettronica, Temi e Rilevanza) per cui escludere il testo. È inoltre supportato l'utilizzo di espressioni regolari (RegEx) come testo ignorato.
 
 ## <a name="optical-character-recognition-ocr"></a>Riconoscimento ottico dei caratteri (OCR)
 
 Quando questa impostazione è attivata, l'elaborazione OCR verrà eseguita sui file di immagine. L'elaborazione OCR viene eseguita nelle situazioni seguenti:
 
-- Quando i custodi e le origini dati [non depositario](non-custodial-data-sources.md) vengono aggiunti a un caso. L'elaborazione OCR viene eseguita durante [il processo di indicizzazione](indexing-custodian-data.md) avanzata. L'OCR viene eseguito solo sugli elementi elaborati durante l'indicizzazione avanzata. Ad esempio, se durante l'indicizzazione avanzata viene elaborato un file PDF di grandi dimensioni parzialmente indicizzato o con altri errori di indicizzazione, verrà applicato anche il riconoscimento OCR. In altre parole, l'elaborazione OCR si verifica solo sui file che vengono indicizzati di nuovo durante il processo di indicizzazione avanzata. Ciò significa che le situazioni in cui i custodi vengono aggiunti a un caso, alcuni allegati di posta elettronica non verranno elaborati per L'OCR perché tali file non vengono elaborati durante l'indicizzazione avanzata. Quando vengono applicati file di immagine OCR, il testo in tali file di immagine sarà disponibile per la ricerca durante una raccolta.
+- Quando i custodi e le origini dati [non depositario](non-custodial-data-sources.md) vengono aggiunti a un caso. Quando l'OCR viene applicato ai file di immagine, il testo in tali file sarà disponibile per la ricerca durante una raccolta. L'elaborazione OCR viene eseguita durante [il processo di indicizzazione](indexing-custodian-data.md) avanzata. L'OCR viene eseguito solo sugli elementi elaborati durante l'indicizzazione avanzata. Ad esempio, se durante l'indicizzazione avanzata viene elaborato un file PDF di grandi dimensioni parzialmente indicizzato o con altri errori di indicizzazione, verrà applicato anche il riconoscimento OCR. In altre parole, l'elaborazione OCR si verifica solo sui file che vengono indicizzati di nuovo durante il processo di indicizzazione avanzata. Ciò significa che possono verificarsi situazioni in cui i custodi vengono aggiunti a un caso, ma alcuni allegati di posta elettronica non verranno elaborati per L'OCR perché tali file non vengono elaborati durante l'indicizzazione avanzata.
 
 - Quando il contenuto di altre origini dati (che non sono associate a un responsabile e che vengono aggiunti al caso in un'origine dati non depositale) viene aggiunto a un set di revisione.
 

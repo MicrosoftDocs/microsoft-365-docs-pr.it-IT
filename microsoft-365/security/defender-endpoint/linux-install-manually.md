@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 3579e9dab975d8776a53d400121d98fe119fe6cc
-ms.sourcegitcommit: 2fd60871975d61e60d4827b36cd689021fd2a4c8
+ms.openlocfilehash: 4c4ed845a31f044e17c97e0b43adfc86dd3f68ba
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 07/15/2021
-ms.locfileid: "53438073"
+ms.locfileid: "53454806"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-manually"></a>Distribuire manualmente Microsoft Defender per Endpoint su Linux
 
@@ -266,13 +266,13 @@ Per visualizzare in anteprima le nuove funzionalità e fornire feedback anticipa
 
 ## <a name="download-the-onboarding-package"></a>Scaricare il pacchetto di onboarding
 
-Scaricare il pacchetto di onboarding da Microsoft Defender Security Center:
+Scaricare il pacchetto di onboarding da Microsoft 365 Defender portale:
 
-1. In Microsoft Defender Security Center passare a Gestione **Impostazioni > dispositivi > onboarding**.
-2. Nel primo menu a discesa seleziona **Linux Server** come sistema operativo. Nel secondo menu a discesa seleziona Script locale (per un massimo **di 10 dispositivi)** come metodo di distribuzione.
+1. Nel portale Microsoft 365 Defender, passare a Impostazioni > Endpoint > gestione dei **dispositivi > Onboarding**.
+2. Nel primo menu a discesa seleziona **Linux Server** come sistema operativo. Nel secondo menu a discesa seleziona **Script locale** come metodo di distribuzione.
 3. Seleziona **Scarica pacchetto di onboarding.** Salvare il file come WindowsDefenderATPOnboardingPackage.zip.
 
-    ![Microsoft Defender Security Center screenshot](images/atp-portal-onboarding-linux.png)
+    ![Microsoft 365 Defender screenshot del portale](images/atp-portal-onboarding-linux.png)
 
 4. Da un prompt dei comandi, verificare di disporre del file.
     Estrarre il contenuto dell'archivio:
@@ -359,11 +359,11 @@ Scaricare il pacchetto di onboarding da Microsoft Defender Security Center:
 
 Per testare le funzionalità di EDR per Linux, seguire la procedura seguente per simulare un rilevamento nel server Linux e analizzare il caso. 
 
-1.  Verificare che il server Linux onboarded sia visualizzato Microsoft Defender Security Center. Se si tratta del primo onboarding del computer, può essere necessario attendere fino a 20 minuti prima che venga visualizzato. 
+1.  Verificare che il server Linux onboarded sia visualizzato Microsoft 365 Defender. Se si tratta del primo onboarding del computer, può essere necessario attendere fino a 20 minuti prima che venga visualizzato. 
 
 2.  Scaricare ed estrarre il [file script](https://aka.ms/LinuxDIY) in un server Linux onboarded ed eseguire il comando seguente: `./mde_linux_edr_diy.sh`
 
-3.  Dopo alcuni minuti, deve essere generato un rilevamento in Microsoft Defender Security Center.
+3.  Dopo alcuni minuti, deve essere generato un rilevamento in Microsoft 365 Defender.
 
 4.  Esaminare i dettagli dell'avviso, la sequenza temporale del computer ed eseguire i passaggi di analisi tipici.
 

@@ -24,12 +24,12 @@ ms.custom: migrationguides
 ms.date: 06/14/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ms.technology: mde
-ms.openlocfilehash: 2953103cb3812103740f98a6db5b8f4d369731e3
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: cff0810a4469d3c2d9ff2fe0fe5100b7a37408ae
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52930308"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53454746"
 ---
 # <a name="make-the-switch-from-non-microsoft-endpoint-protection-to-microsoft-defender-for-endpoint"></a>Passare da Protezione endpoint non Microsoft a Microsoft Defender for Endpoint
 
@@ -47,7 +47,7 @@ Il processo di migrazione a Defender for Endpoint può essere suddiviso in tre f
 
 |Fase |Descrizione |
 |--|--|
-|[Preparare la migrazione](switch-to-microsoft-defender-prepare.md) |Durante [la fase **di** preparazione](switch-to-microsoft-defender-prepare.md): <p>1. Aggiornare i dispositivi dell'organizzazione. <p>2. Ottenere Defender per Endpoint. <p>3. Pianificare i ruoli e le autorizzazioni e concedere l'accesso alla Microsoft Defender Security Center. <p>4. Configurare il proxy del dispositivo e le impostazioni Internet per abilitare la comunicazione tra i dispositivi dell'organizzazione e Defender for Endpoint. |
+|[Preparare la migrazione](switch-to-microsoft-defender-prepare.md) |Durante [la fase **di** preparazione](switch-to-microsoft-defender-prepare.md): <p>1. Aggiornare i dispositivi dell'organizzazione. <p>2. Ottenere Defender per Endpoint. <p>3. Pianificare i ruoli e le autorizzazioni e concedere l'accesso al Microsoft 365 Defender portale. <p>4. Configurare il proxy del dispositivo e le impostazioni Internet per abilitare la comunicazione tra i dispositivi dell'organizzazione e Defender for Endpoint. |
 |[Configurare Defender per Endpoint](switch-to-microsoft-defender-setup.md) |Durante [la fase **di** installazione](switch-to-microsoft-defender-setup.md): <p>1. Abilitare/reinstallare Antivirus Microsoft Defender. <p>2. Configurare Defender per Endpoint. <p>3. Aggiungere Defender for Endpoint all'elenco di esclusione per la soluzione esistente. <p>4. Aggiungere la soluzione esistente all'elenco di esclusione per Antivirus Microsoft Defender. <p>5. Configurare i gruppi di dispositivi, le raccolte e le unità organizzative. <p>6. Configurare i criteri antimalware e le impostazioni di protezione in tempo reale.|
 |[Onboard to Defender for Endpoint](switch-to-microsoft-defender-onboard.md) |Durante [la fase di **onboard:**](switch-to-microsoft-defender-onboard.md) <p>1. Onboard dei dispositivi a Defender for Endpoint. <p>2. Eseguire un test di rilevamento. <p>3. Verificare che Antivirus Microsoft Defender in esecuzione in modalità passiva. <p>4. Ottenere gli aggiornamenti per Antivirus Microsoft Defender. <p>5. Disinstallare la soluzione di endpoint protection esistente. <p>6. Verificare che Defender for Endpoint funzioni correttamente. |
 
@@ -57,7 +57,7 @@ In questa guida alla migrazione ci concentriamo [sulle](microsoft-defender-antiv
 
 | Funzionalità/funzionalità | Descrizione |
 |---|---|
-| [Gestione di minacce e vulnerabilità.](next-gen-threat-and-vuln-mgt.md) | Le & gestione delle vulnerabilità consentono di identificare, valutare e correggere i punti deboli degli endpoint (ad esempio i dispositivi). |
+| [Gestione di minacce e vulnerabilità](next-gen-threat-and-vuln-mgt.md) | Le & gestione delle vulnerabilità consentono di identificare, valutare e correggere i punti deboli degli endpoint (ad esempio i dispositivi). |
 | [Riduzione della superficie di attacco](overview-attack-surface-reduction.md) | Le regole di riduzione della superficie di attacco consentono di proteggere i dispositivi e le applicazioni dell'organizzazione da attacchi e minacce informatiche. |
 | [Protezione di nuova generazione](microsoft-defender-antivirus-in-windows-10.md) | La protezione di nuova generazione include Antivirus Microsoft Defender per bloccare minacce e malware. |
 | [Rilevamento e risposta di endpoint](overview-endpoint-detection-response.md) | Le funzionalità di rilevamento e risposta degli endpoint rilevano, analizzano e rispondono ai tentativi di intrusione e alle violazioni attive.  |
