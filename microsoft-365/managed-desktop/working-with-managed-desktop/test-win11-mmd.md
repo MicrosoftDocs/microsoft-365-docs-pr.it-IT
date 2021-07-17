@@ -9,12 +9,12 @@ manager: laurawi
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 3ee0ca72f0eb3623755c9b342966915f520c485d
-ms.sourcegitcommit: 2abc6bf9939b14a427647e88f319dbb70de49ca6
+ms.openlocfilehash: 8dee18909d82656bcfb3e63fdc078328c678e660
+ms.sourcegitcommit: ea8de1b48adb6df92fb9351ea862184a9f16cbbb
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 07/16/2021
-ms.locfileid: "53458487"
+ms.locfileid: "53461388"
 ---
 # <a name="preview-and-test-windows-11-with-microsoft-managed-desktop"></a>Anteprima e test Windows 11 con Microsoft Managed Desktop
 
@@ -24,7 +24,7 @@ ms.locfileid: "53458487"
 
 Ad oggi, più del 95% dei Microsoft Managed Desktop soddisfa i criteri di idoneità per [Windows 11](/windows/whats-new/windows-11-requirements). Puoi richiedere dettagli sullo stato di idoneità dei dispositivi da Microsoft Managed Desktop. Per descrizione della richiesta, attenersi alla seguente procedura:
 
-1. Aprire una nuova richiesta di servizio con il team Microsoft Managed Desktop Service Engineering. Se hai bisogno di altre info su come eseguire la richiesta, vedi [Supporto per gli amministratori.](admin-support.md)
+1. Aprire una nuova richiesta di servizio con il team Microsoft Managed Desktop Service Engineering. Se hai bisogno di altre info su come determinare la richiesta, vedi [Supporto per gli amministratori.](admin-support.md)
 2. Utilizzare questi valori per i campi:
     - Title: Windows 11 device eligibility
     - Tipo di richiesta: Richiesta di informazioni
@@ -52,7 +52,7 @@ Per registrare i dispositivi nel gruppo di test non definitiva:
 
 Le applicazioni business-critical sono i candidati migliori per una maggiore convalida in un ambiente Windows 11. Possiamo aiutarti a definire la priorità delle app per Windows 11 test in base ai dati di utilizzo e affidabilità. Per richiedere i suggerimenti, attenersi alla seguente procedura:
 
-1. Aprire una nuova richiesta di servizio con il team Microsoft Managed Desktop Service Engineering. Se hai bisogno di altre info su come eseguire la richiesta, vedi [Supporto per gli amministratori.](admin-support.md)
+1. Aprire una nuova richiesta di servizio con il team Microsoft Managed Desktop Service Engineering. Se hai bisogno di altre info su come determinare la richiesta, vedi [Supporto per gli amministratori.](admin-support.md)
 2. Utilizzare questi valori per i campi:
     - Title: Windows 11 Test Base candidates
     - Tipo di richiesta: Richiesta di informazioni
