@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 - BCS160
 description: Informazioni su come usare l'indirizzo IP e il servizio Web URL di Office 365 per identificare e distinguere meglio il traffico di rete di Office 365.
-ms.openlocfilehash: 4de78934a76a7dba16f79cb9cc6f93a7c935a314
-ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
+ms.openlocfilehash: 6a8786d99c92fae43113d550b76a87281cde0c5b
+ms.sourcegitcommit: ea8de1b48adb6df92fb9351ea862184a9f16cbbb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "53419788"
+ms.lasthandoff: 07/16/2021
+ms.locfileid: "53461292"
 ---
 # <a name="office-365-ip-address-and-url-web-service"></a>Servizio Web per URL e indirizzi IP di Office 365
 
@@ -131,7 +131,7 @@ Questo URI restituisce l'ultima versione dell'istanza del servizio di Office 365
 }
 ```
 
-URI della richiesta di esempio 3: <https://endpoints.office.com/version/Worldwide?Format=CSV&amp;ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7>
+URI della richiesta di esempio 3: <https://endpoints.office.com/version/Worldwide?Format=CSV&ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7>
 
 Questo URI mostra l'output in formato CSV. Risultato dell'esempio:
 
@@ -140,7 +140,7 @@ instance,latest
 Worldwide,2018063000
 ```
 
-URI della richiesta di esempio 4: <https://endpoints.office.com/version/Worldwide?AllVersions=true&amp;ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7>
+URI della richiesta di esempio 4: <https://endpoints.office.com/version/Worldwide?AllVersions=true&ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7>
 
 Questo URI mostra tutte le versioni precedenti che sono state pubblicate per l'istanza del servizio mondiale di Office 365. Risultato dell'esempio:
 

@@ -22,12 +22,12 @@ description: Usare le etichette di riservatezza di Microsoft Information Protect
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 130b264735d00083116a5cf18cc0c4bf6b1a764c
-ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
+ms.openlocfilehash: e1de507dd5ec9508df0318c8ba2ef30af795e25b
+ms.sourcegitcommit: 997a21b83795789cda0a6b4a77f9985a3233d0c0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53453634"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53430793"
 ---
 # <a name="learn-about-sensitivity-labels"></a>Informazioni sulle etichette di riservatezza
 
@@ -183,9 +183,6 @@ Quando si configura un criterio di etichetta, è possibile:
 - **Scegliere gli utenti e i gruppi che vedranno le etichette.** Le etichette possono essere pubblicate per qualsiasi utente specifico, gruppo di sicurezza abilitato per la posta elettronica, gruppo di distribuzione o gruppo di Microsoft 365, che può avere [appartenenza dinamica](/azure/active-directory/users-groups-roles/groups-create-rule) in Azure AD.
 
 - **Specificare un'etichetta predefinita** per nuovi documenti, messaggi di posta elettronica senza etichetta e nuovi contenitori (dopo aver [abilitato etichette di riservatezza per Microsoft Teams, Gruppi di Microsoft 365 e siti SharePoint](sensitivity-labels-teams-groups-sites.md)). È possibile specificare la stessa etichetta per tutti e tre i tipi di elementi oppure etichette diverse. Quando si specifica un'etichetta predefinita per i documenti, il client di etichettatura unificata di Azure Information Protection la applica anche ai documenti esistenti senza etichetta. Gli utenti possono sempre modificare l'etichetta predefinita, se non è quella giusta per il documento o la posta elettronica.
-    
-    > [!IMPORTANT]
-    > Quando sono presenti [etichette secondarie](#sublabels-grouping-labels), prestare attenzione a non configurare l'etichetta padre come etichetta predefinita.
     
     Considerare l'uso di un'etichetta predefinita per impostare un livello di impostazioni di sicurezza di base da applicare a tutto il contenuto. Tuttavia, in mancanza di formazione per gli utenti e di altri controlli, questa impostazione può anche risultare nell'applicazione di etichette non corrette. In genere non è consigliabile selezionare un'etichetta che applica la crittografia come etichetta predefinita dei documenti. Ad esempio, molte organizzazioni devono inviare e condividere documenti con utenti esterni che potrebbero non avere app che supportano la crittografia o che potrebbero non usare un  account che può essere autorizzato. Per altre informazioni su questo scenario, vedere [Condivisione di documenti crittografati con utenti esterni](sensitivity-labels-office-apps.md#sharing-encrypted-documents-with-external-users).
 

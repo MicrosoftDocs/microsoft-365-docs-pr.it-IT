@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informazioni sul rilevamento e la correzione delle minacce di app.
-ms.openlocfilehash: 26cd8501fdd8bd828357f8adb7d4e90f96e70114
-ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
+ms.openlocfilehash: 574688e67b7562c8df6aec7d2242e68485239479
+ms.sourcegitcommit: 2fd60871975d61e60d4827b36cd689021fd2a4c8
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "53420328"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53438049"
 ---
 # <a name="learn-about-app-threat-detection-and-remediation"></a>Informazioni sul rilevamento e la correzione delle minacce di app
 
@@ -42,9 +42,9 @@ Vedere i [ruoli di amministratore](app-governance-get-started.md#administrator-r
 
 Governance delle app, Azure Active Directory (Azure AD) e Microsoft Cloud App Security raccolgono e forniscono insiemi di dati diversi:
 
-- Azure AD fornisce metadati di base dell’app e informazioni dettagliate sugli accessi alle app.
 - La governance delle app fornisce informazioni dettagliate sull'attività di un'app a livello di API.
-- Microsoft Cloud App Security fornisce informationi sul rischio dell’app.
+- Azure AD fornisce metadati di base dell’app e informazioni dettagliate sugli accessi alle app.
+- Microsoft Cloud App Security fornisce informazioni sul rischio dell’app.
 
 Condividendo le informazioni tra governance delle app, Azure AD e Microsoft Cloud App Security, è possibile visualizzare informazioni aggregate in un portale e collegarsi facilmente a un altro portale per altre informazioni. Ecco alcuni esempi:
 

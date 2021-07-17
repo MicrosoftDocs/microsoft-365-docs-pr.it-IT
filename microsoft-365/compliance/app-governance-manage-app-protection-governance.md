@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Implementare le funzionalità di governance delle app di Microsoft per gestire le app.
-ms.openlocfilehash: bc8c739132de52abb69c15479cd851462e9f6ce7
-ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
+ms.openlocfilehash: 63bd6684bc041c3c82ba6b8ddcc28c2600182b26
+ms.sourcegitcommit: 997a21b83795789cda0a6b4a77f9985a3233d0c0
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 07/14/2021
-ms.locfileid: "53420313"
+ms.locfileid: "53430697"
 ---
 # <a name="app-governance-add-on-to-microsoft-cloud-app-security-in-preview"></a>Componente aggiuntivo di governance delle app a Microsoft Cloud App Security (in anteprima)
 
@@ -53,7 +53,7 @@ Microsoft allows developers to build cloud applications using Azure Active Direc
 
 ## <a name="a-first-glimpse-at-app-governance"></a>Primo sguardo alla governance delle app
 
-Per visualizzare il dashboard di governance delle app, passare a [https://compliance.microsoft.com/appgovernance](https://compliance.microsoft.com/appgovernance). Tenere presente che l'account di accesso deve disporre di uno dei [ ruoli di amministratore](app-governance-get-started.md#administrator-roles) per visualizzare i dati di governance.
+Per visualizzare il dashboard di governance delle app, passare a [https://aka.ms/appgovernance](https://aka.ms/appgovernance). Tenere presente che l'account di accesso deve disporre di uno dei [ ruoli di amministratore](app-governance-get-started.md#administrator-roles) per visualizzare i dati di governance.
 
 ## <a name="app-governance-integration-with-azure-ad-and-microsoft-cloud-app-security"></a>Integrazione della governance delle app con Azure AD e Microsoft Cloud App Security
 

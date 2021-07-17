@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informazioni sui criteri delle applicazioni.
-ms.openlocfilehash: 6d4ff23ca0e09f5e410d32d6ced144afc0c4bb15
-ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
+ms.openlocfilehash: b5d36d6597de54d7936bc542d37d91d0fac0ba45
+ms.sourcegitcommit: 2fd60871975d61e60d4827b36cd689021fd2a4c8
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "53420361"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53437965"
 ---
 # <a name="learn-about-app-policies"></a>Informazioni sui criteri delle applicazioni
 
@@ -29,18 +29,7 @@ La governance delle app Microsoft rileva il comportamento anomalo delle app nel 
 
 Questi criteri per i modelli e i comportamenti delle app e utenti possono proteggere gli utenti dall'uso di app non conformi o dannose e limitare l'accesso delle app rischiose ai dati del tenant.
 
-Ecco una rapida revisione dei ruoli di amministratore necessari per la gestione dei criteri delle app.
-
-| Ruolo | Lettura dei criteri | Creare, aggiornare o eliminare criteri |
-|:-------|:-----|:-------|
-| Amministratore di conformità | ![Segno di spunta](..\media\checkmark.png) | ![Segno di spunta](..\media\checkmark.png) |
-| Lettore di conformità | ![Segno di spunta](..\media\checkmark.png) |  |
-| Amministratore globale | ![Segno di spunta](..\media\checkmark.png) | ![Segno di spunta](..\media\checkmark.png) |
-| Ruolo con autorizzazioni di lettura globali  | ![Segno di spunta](..\media\checkmark.png) |  |
-| Amministratore della sicurezza | ![Segno di spunta](..\media\checkmark.png) | ![Segno di spunta](..\media\checkmark.png) |
-| Ruolo con autorizzazioni di lettura per la sicurezza  | ![Segno di spunta](..\media\checkmark.png) |  |
-| Operatore della sicurezza | ![Segno di spunta](..\media\checkmark.png) | ![Segno di spunta](..\media\checkmark.png) |
-||||
+Vedere [Ruoli di amministratore](app-governance-get-started.md#administrator-roles) per informazioni sui ruoli che possono modificare i criteri.
 
 <!--
 How app policies are the method by which MAPG detects app anomolies resulting in detection (alerts) and remediation (manual or automatic) 

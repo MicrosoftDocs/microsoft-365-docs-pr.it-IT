@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: Il piano di archiviazione offre funzionalità di gestione avanzate per le etichette di conservazione.
 ms.custom: seo-marvel-may2020
-ms.openlocfilehash: 920a613cdc3a32267415d42cebe962e62ff6831a
-ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
+ms.openlocfilehash: 6aa47048d9654c46694e8a8eb0626b18b8b52f69
+ms.sourcegitcommit: 997a21b83795789cda0a6b4a77f9985a3233d0c0
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 07/14/2021
-ms.locfileid: "53419764"
+ms.locfileid: "53430639"
 ---
 # <a name="use-file-plan-to-manage-retention-labels"></a>Usare il piano di archiviazione per gestire le etichette di conservazione
 
@@ -39,8 +39,6 @@ Anche se è possibile creare e gestire le etichette di conservazione dalla **Gov
 - I descrittori del piano di archiviazione supportano informazioni aggiuntive e facoltative per ogni etichetta.
 
 Il piano di archiviazione può essere usato per tutte le etichette di conservazione, anche per quelle che non contrassegnano il contenuto come record.
-
-![Pagina del piano di archiviazione](../media/compliance-file-plan.png)
 
 Per informazioni sulle etichette di conservazione e sul loro utilizzo, vedere [Informazioni sui criteri di conservazione e sulle etichette di conservazione](retention.md).
 
@@ -111,9 +109,9 @@ Esempio di descrittori del piano di archiviazione quando si crea o si modifica u
 
 ![Descrittori del piano di archiviazione quando si crea o si modifica un'etichetta di conservazione](../media/file-plan-descriptors.png)
 
-Esempio di come vengono visualizzate le colonne dei descrittori del piano di archiviazione:
+Quando si seleziona **Scegliere** per ognuno di questi descrittori facoltativi, è possibile selezionare uno dei valori predefiniti oppure crearne uno personalizzato e quindi selezionarlo. Ad esempio: 
 
-![Colonne dei descrittori del piano di archiviazione](../media/file-plan-descriptors-on-labels-tab.png)
+![Creare un nuovo descrittore del piano di file per il provisioning/la citazione](../media/file-plan-descriptors-create.png)
 
 ## <a name="export-all-retention-labels-to-analyze-or-enable-offline-reviews"></a>Esportare tutte le etichette di conservazione per analizzare o abilitare le revisioni offline
 
@@ -129,9 +127,7 @@ Viene visualizzato un file CSV che contiene tutte le etichette di conservazione 
 
 ## <a name="import-retention-labels-into-your-file-plan"></a>Importare le etichette di conservazione nel piano di archiviazione
 
-Nel piano di archiviazione, è possibile importare in blocco nuove etichette di conservazione usando un file CSV con un formato specifico. Dopo aver importato le etichette, è possibile apportare modifiche nel file CSV e importarlo di nuovo per semplificare la modifica in blocco delle etichette di conservazione esistenti.
-
-Per importare nuove etichette di conservazione e modificare le etichette di conservazione esistenti: 
+Nel piano di archiviazione, è possibile importare in blocco nuove etichette di conservazione usando un file CSV con un formato specifico: 
 
 1. Nella pagina **Piano di archiviazione**, fare clic su **Importa** per usare la pagina **Compila e importa il piano di archiviazione**:
 
@@ -188,7 +184,7 @@ Per importare nuove etichette di conservazione e modificare le etichette di cons
     
     - Se la convalida va a buon fine: è possibile selezionare **Go Live** per rendere disponibili le etichette di conservazione nel tenant. In alternativa, selezionare l'icona Chiudi per la pagina e **Sì** per confermare di voler chiudere la procedura guidata senza rendere attualmente disponibili le etichette di conservazione nel tenant.
 
-Una volta che le etichette importate sono state aggiunte al tenant, è possibile aggiungerle a un nuovo criterio di etichetta di conservazione oppure applicarle automaticamente. È possibile eseguire questa operazione direttamente nella pagina **Piano di archiviazione**, selezionando l'elenco a discesa da **+ Crea un'etichetta**, quindi **Criteri per la pubblicazione di etichette** o **Criteri per l'applicazione automatica di un'etichetta**.
+Quando le etichette importate vengono aggiunte al tenant, è ora possibile renderle disponibili agli utenti pubblicandole o applicarle automaticamente. È possibile eseguire entrambe le operazioni dalla scheda **Criteri etichetta** e quindi selezionare **Pubblica etichette** oppure **Applica automaticamente un'etichetta**.
 
 ## <a name="next-steps"></a>Passaggi successivi
 

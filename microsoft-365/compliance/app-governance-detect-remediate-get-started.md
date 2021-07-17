@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Introduzione al rilevamento e alla correzione delle minacce dell'app.
-ms.openlocfilehash: 6229d2cf94ec1ba892929f399fe49cf88da608d1
-ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
+ms.openlocfilehash: 77de3676a9a486bbed572a4a16bf62ad4d038406
+ms.sourcegitcommit: 997a21b83795789cda0a6b4a77f9985a3233d0c0
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 07/14/2021
-ms.locfileid: "53420340"
+ms.locfileid: "53430721"
 ---
 # <a name="get-started-with-app-threat-detection-and-remediation"></a>Introduzione al rilevamento e alla correzione delle minacce dell'app
 
@@ -27,7 +27,7 @@ ms.locfileid: "53420340"
 
 La governance delle app Microsoft raccoglie gli avvisi delle minacce generati dai metodi predefiniti di rilevamento della governance delle app basati sulle attività dannose delle app e da avvisi basati su criteri generati dai criteri attivi delle app creati dall'utente.
 
-Per visualizzare gli avvisi delle app, è necessario iniziare dalla dashboard di governance delle app in [https://compliance.microsoft.com/appgovernance](https://compliance.microsoft.com/appgovernance).
+Per visualizzare gli avvisi delle app, è necessario iniziare dalla dashboard di governance delle app in [https://aka.ms/appgovernance](https://aka.ms/appgovernance).
 
 ![La pagina di panoramica della governance delle app nel Centro conformità Microsoft 365 con la sezione Rilevamento e avvisi dei criteri evidenziata](..\media\manage-app-protection-governance\mapg-cc-overview-alerts.png)
 

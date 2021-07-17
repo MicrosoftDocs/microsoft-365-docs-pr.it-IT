@@ -14,18 +14,18 @@ search.appverid:
 - MOE150
 - MET150
 description: Introduzione a visibilità e dati analitici.
-ms.openlocfilehash: 12c1a01667b1bda545b619e931d99132e6611e35
-ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
+ms.openlocfilehash: 93be3557c32345e81c7126b669ead8edf8ebac21
+ms.sourcegitcommit: 997a21b83795789cda0a6b4a77f9985a3233d0c0
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 07/14/2021
-ms.locfileid: "53420132"
+ms.locfileid: "53430481"
 ---
 # <a name="get-started-with-visibility-and-insights"></a>Introduzione a visibilità e dati analitici
 
 >*[Indicazioni sulle licenze Microsoft 365 per la sicurezza e la conformità](https://aka.ms/ComplianceSD).*
 
-Il primo punto da cui iniziare è il dashboard di governance delle app in [https://compliance.microsoft.com/appgovernance](https://compliance.microsoft.com/appgovernance). Tenere presente che l'account di accesso deve disporre di uno di [questi ruoli di amministratore della governance delle app](app-governance-get-started.md#administrator-roles) per visualizzare i dati di governance.
+Il primo punto da cui iniziare è il dashboard di governance delle app in [https://aka.ms/appgovernance](https://aka.ms/appgovernance). Tenere presente che l'account di accesso deve disporre di uno di [questi ruoli di amministratore della governance delle app](app-governance-get-started.md#administrator-roles) per visualizzare i dati di governance.
 
 ![Pagina della governance delle app nel Centro conformità Microsoft 365](..\media\manage-app-protection-governance\mapg-cc-overview.png)
 

@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Creare criteri per le app.
-ms.openlocfilehash: 17417d7fac80f2763edbbaa8dbb2c8be16e47371
-ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
+ms.openlocfilehash: 66d8dda7c9cd768d6971e2b58dca4c9c5437e5bb
+ms.sourcegitcommit: 2fd60871975d61e60d4827b36cd689021fd2a4c8
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "53420424"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53438061"
 ---
 # <a name="create-app-policies"></a>Creare criteri per le app
 
@@ -32,7 +32,7 @@ Oltre a un set predefinito di funzionalità per rilevare il comportamento anomal
 
 È possibile creare criteri per le app dai modelli forniti personalizzabili oppure è possibile creare criteri personalizzati per le app.
 
-Per creare un nuovo criterio dell'app, passare a **Centro conformità Microsoft 365 > Protezione e governance dell'app > Panoramica > Criteri**:
+Per creare un nuovo criterio dell'app, passare a **Centro conformità Microsoft 365 > Governance delle app > Panoramica > Criteri**:
 
 - Per creare un nuovo criterio dell'app con modelli progettati per l'utilizzo dell'app, selezionare **Crea criterio** in **Crea un criterio di utilizzo delle app**.
 - Per creare un nuovo criterio dell'app con modelli progettati per il permesso dell'app, selezionare **Crea criterio** in **Crea un criterio di permesso delle app**.

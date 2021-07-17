@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Informazioni utili agli amministratori IT per gestire le etichette di riservatezza nelle app di Office per desktop, dispositivi mobili e Web.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1cdfe9d106a55cef79a63b42b47f28b2d9bb9c53
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 2484aed7dd5f70a92b1199f472c983848326db7c
+ms.sourcegitcommit: 997a21b83795789cda0a6b4a77f9985a3233d0c0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53228592"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53430757"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Gestire le etichette di riservatezza nelle app di Office
 
@@ -361,6 +361,8 @@ Esempi:
 > Il [client di etichettatura unificata di Azure Information Protection](/azure/information-protection/rms-client/install-unifiedlabelingclient-app) supporta questa configurazione, nota anche come etichettatura obbligatoria. Per l'etichettatura integrata nelle app Office, vedere le tabelle nella sezione [funzionalità](#support-for-sensitivity-label-capabilities-in-apps) di questa pagina per le versioni minime.
 >
 > Per usare l'etichettatura obbligatoria per i documenti ma non per i messaggi di posta elettronica, vedere le istruzioni nella sezione successiva, in cui viene spiegato come configurare le opzioni specifiche di Outlook.
+> 
+> Per usare l'etichettatura obbligatoria per Power BI, vedere [Criterio di etichetta obbligatoria per Power BI](/power-bi/admin/service-security-sensitivity-label-mandatory-label-policy).
 
 Quando l'impostazione dei criteri **Richiedere agli utenti di applicare un'etichetta alla posta elettronica e ai documenti** è selezionata, gli utenti a cui è assegnato il criterio devono selezionare e applicare un'etichetta di riservatezza negli scenari seguenti:
 

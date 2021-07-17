@@ -20,13 +20,13 @@ search.appverid:
 - MET150
 description: Informazioni su come usare il cmdlet Di PowerShell AllowSelfServicePurchase per attivare o disattivare l'acquisto in modalità self-service.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.date: 03/18/2021
-ms.openlocfilehash: fbba7f4385684a8a34f9feebc28a27e8e867bacb
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.date: 07/16/2021
+ms.openlocfilehash: 77cb1c753db22929ea2c3d14226a3927e6406b89
+ms.sourcegitcommit: ea8de1b48adb6df92fb9351ea862184a9f16cbbb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53227476"
+ms.lasthandoff: 07/16/2021
+ms.locfileid: "53461364"
 ---
 # <a name="use-allowselfservicepurchase-for-the-mscommerce-powershell-module"></a>Usare AllowSelfServicePurchase per il modulo di PowerShell MSCommerce
 
@@ -103,8 +103,10 @@ Nella tabella seguente sono elencati i prodotti disponibili e il **relativo Prod
 | Project - Piano 1 | CFQ7TTC0KXND |
 | Project - Piano 3 | CFQ7TTC0KXNC |
 | Visio - Piano 1 | CFQ7TTC0KXN9 |
-| Visio - Piano 2 | CFQ7TTC0KXN8 |
-
+| Visio Piano 2 | CFQ7TTC0KXN8 |
+| Windows 365 Enterprise | CFQ7TTC0HHS9 |
+| Windows 365 Business | CFQ7TTC0J203 |
+| Windows 365 Business con Windows Hybrid Benefit | CFQ7TTC0HX99 |
 ## <a name="view-or-set-the-status-for-allowselfservicepurchase"></a>Visualizzare o impostare lo stato per AllowSelfServicePurchase
 
 Dopo aver visualizzato l'elenco dei prodotti disponibili per l'acquisto in self-service, è possibile visualizzare o modificare l'impostazione per un prodotto specifico.
